@@ -828,14 +828,18 @@ function stopActiveAudio(){
 function playAudioBlob(blob, token, done){
   if(token!==playToken){ done(false); return; }
   try{
-    const audio=getSharedMp3Audio();
-    try{ audio.pause(); }catch(e){}
+    // v25_11_90: Create NEW audio element (not shared) - like test file
+    // This fixes screen-off playback by avoiding shared element state corruption
+    const audio = new Audio();
+
     if(activeAudioUrl){ try{ URL.revokeObjectURL(activeAudioUrl); }catch(e){} activeAudioUrl=null; }
     const url=URL.createObjectURL(blob);
     activeAudio=audio; activeAudioUrl=url;
+
     audio.onended=()=>{ if(token!==playToken) return; done(true); };
     audio.onerror=()=>{ if(token!==playToken) return; done(false); };
     audio.src=url;
+
     try{
       audio.playbackRate = getGlobalTtsSpeed();
       audio.defaultPlaybackRate = getGlobalTtsSpeed();
@@ -843,6 +847,7 @@ function playAudioBlob(blob, token, done){
       if('mozPreservesPitch' in audio) audio.mozPreservesPitch = true;
       if('webkitPreservesPitch' in audio) audio.webkitPreservesPitch = true;
     }catch(e){}
+
     audio.load();
     const p=audio.play();
     if(p && typeof p.catch==='function') p.catch(()=>{ if(token!==playToken) return; done(false); });
@@ -1292,22 +1297,29 @@ function playAllSequence(tid, modes, btn){
   let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
   setUploadMsg('▶ Sequence play berjalan. Tekan Pause / Stop.');
+  // v25_11_90: Simplified playback (like test file - linear, direct onended chaining)
   function playModeSequence(tr, tds, idx, hadPlayed, done){
     if(token!==playToken){ finishPlay(token); return; }
     if(idx>=modes.length){ done(hadPlayed); return; }
+
     const mode=modes[idx];
     if(!canPlayMode(table,tr,tds,mode)){
+      // Skip this mode, try next
       playModeSequence(tr, tds, idx+1, hadPlayed, done);
       return;
     }
-    // Screen-off fix v25_11_89: Chain directly via onended callback
-    const playNow = ()=>speakMode(table, tr, tds, mode, token, (played)=>{
-      if(token!==playToken){ finishPlay(token); return; }
-      // Direct chain to next mode (no setTimeout between modes)
-      playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
-    });
+
+    // KEY: Delay BEFORE play (not after onended)
     const delay = hadPlayed ? getDelayBeforeVoice(idx) : 0;
-    if(delay>0) playTimer=setTimeout(playNow, delay);
+    const playNow = () => {
+      speakMode(table, tr, tds, mode, token, (played)=>{
+        if(token!==playToken){ finishPlay(token); return; }
+        // KEY: Chain directly to next mode (NO setTimeout in between)
+        playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
+      });
+    };
+
+    if(delay > 0) playTimer = setTimeout(playNow, delay);
     else playNow();
   }
   function nextRow(){
@@ -1320,16 +1332,23 @@ function playAllSequence(tid, modes, btn){
     const tr=rows[i++];
     const tds=tr.querySelectorAll('td');
     setPlayingRowHighlight(tr);
-    announceRowNumber(tr, token, ()=>{
+    // v25_11_90 CRITICAL FIX: Skip TTS for MP3 mode (screen-off safe)
+    const doPlayModeSequence = ()=>{
     if(token!==playToken){ finishPlay(token); return; }
     playModeSequence(tr, tds, 0, false, (rowPlayed)=>{
       if(token!==playToken){ finishPlay(token); return; }
-      // Screen-off fix: Minimize setTimeout throttling
-      const delayMs = rowPlayed ? getNextDelayMs() : 0;
-      if(delayMs > 0) playTimer=setTimeout(nextRow, delayMs);
-      else nextRow();  // No setTimeout if delay is 0 (was setTimeout(..., 0) which gets throttled)
+      // v25_11_90: Avoid setTimeout(fn, 0) throttling screen-off
+      const nextDelay = rowPlayed ? getNextDelayMs() : 0;
+      if(nextDelay > 0) playTimer = setTimeout(nextRow, nextDelay);
+      else nextRow();  // Direct call, no setTimeout
     });
-    });
+    };
+    // If MP3 mode: skip TTS announcement (fails screen-off), go straight to play
+    if(getAudioMode() === 'mp3') {
+      doPlayModeSequence();
+    } else {
+      announceRowNumber(tr, token, doPlayModeSequence);
+    }
   }
   playTimer=setTimeout(nextRow, 80); return false;
 }
