@@ -40,12 +40,16 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .ab{min-width:28px;height:26px;border-radius:13px;border:none;background:#555;color:white;font-size:.62rem;padding:0 5px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,.2);margin-left:2px}.ab.kw{background:#8e44ad}.ab.sent{background:#2471a3}.ab.en{background:#2471a3}.ab:hover{opacity:.85;transform:scale(1.1)}.ab.playing,.btn.playing{background:var(--gold)!important;color:white!important}
 .btn[data-clear-accum]:active{transform:none;box-shadow:none}
 .btn-html{background:#4a4a4a;color:white;border:1px solid #333}
+.btn-ytube{background:var(--red);color:white;min-width:20px}
+.btn-ytube-empty{color:var(--red);cursor:default}
+.btn-ytube-empty:hover{opacity:1;transform:none;box-shadow:0 1px 4px rgba(0,0,0,.12)}
 #globalClearClip:hover{transform:none;box-shadow:0 1px 4px rgba(0,0,0,.12)}
 #globalClearClip:active{transform:none;box-shadow:none}
 .btn-icon{padding:8px 10px;min-width:36px;font-size:.95rem;line-height:1}
 .btn-stop-gap{margin-left:8px}
 #adminPanel{position:fixed;right:12px;top:12px;z-index:99999;background:white;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:10px;max-width:320px;font-size:.78rem;color:var(--ink);display:none}#adminPanel.active{display:block}.lock-title{font-weight:700;color:var(--red);margin-bottom:6px}.lock-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.admin-delay{margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.admin-delay-title{font-weight:700;color:var(--blue);margin-bottom:6px}.delay-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.delay-row label{display:flex;align-items:center;gap:4px;white-space:nowrap}.delay-row input{width:72px;border:1px solid var(--border);border-radius:8px;padding:4px 6px;font-family:inherit;font-size:.76rem}
 #uploadFilterOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#uploadFilterOverlay.active{display:flex}#uploadFilterModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#uploadFilterModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#uploadFilterModal .ufm-files{font-size:.74rem;color:#777;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:6px 8px;margin-bottom:14px;max-height:72px;overflow-y:auto;word-break:break-all}#uploadFilterModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#uploadFilterModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+#csvFillOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#csvFillOverlay.active{display:flex}#csvFillModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#csvFillModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#csvFillModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#csvFillModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sr input[data-filter-from], .sr input[data-filter-to] {
   width:52px; padding:4px 4px; border:1px solid var(--border); border-radius:4px;
   font-size:.75rem; font-family:inherit; text-align:center; background:white; outline:none;
@@ -384,7 +388,8 @@ td:nth-child(2), th:nth-child(2) {
       <label class="tts-top-control">CSV: <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)"></label>
       <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
-      <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option></select></label>
+      <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
+      <button class="btn btn-check" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Combine</button>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
       <label class="tts-top-control" style="display:none"><input id="readRowNumberToggle" type="checkbox"> 🔢 Baca No</label>
       <span class="mp3-status" id="mp3FolderMsg" style="display:none">MP3 belum dipilih</span>
@@ -392,8 +397,8 @@ td:nth-child(2), th:nth-child(2) {
       <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
       <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
       <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
-      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button">↓ Download</button>
-      <span class="sm" id="uploadMsg">■ Play all dihentikan.</span>
+      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓ Download</button>
+      <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
       <span style="font-size:.72rem;color:#888;font-weight:600;margin-right:4px;">📋 Kolom:</span>
@@ -445,6 +450,17 @@ td:nth-child(2), th:nth-child(2) {
     </div>
   </div>
 </div>
+<div id="csvFillOverlay">
+  <div id="csvFillModal">
+    <div class="ufm-title">📄 Download CSV</div>
+    <div class="ufm-desc">Isi semua kalimat kosong? (kalimat kosong akan diisi otomatis dari baris lain dengan No. group yang sama)</div>
+    <div class="ufm-btns">
+      <button class="btn btn-exp" id="csvFillYesBtn" type="button">Ya, Isi Kosong</button>
+      <button class="btn btn-en" id="csvFillNoBtn" type="button">Tidak, Apa Adanya</button>
+      <button class="btn btn-check" id="csvFillCancelBtn" type="button">✕ Batal</button>
+    </div>
+  </div>
+</div>
 <script id="lockConfigJson" type="application/json">{"version":1,"passwordHash":"5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5","lockedIds":["dyn_000textcontoh1"]}</script>
 <script>
 const TTS_SPEEDS = [0.4,0.6,0.8,1.0,1.2,1.4,1.6];
@@ -477,6 +493,10 @@ let lastPlayedTr = null;
 let adminUnlocked = false;
 let titleClicks = 0;
 let titleClickTimer = null;
+let combinedBlobCache = null;
+let lastCombineRowsHash = null;
+let combineReadyFlag = false;
+let isCombining = false; // re-entrancy guard so a second Pre-Comb click can't start a duplicate run mid-process
 
 function qa(sel, root=document){ return Array.from(root.querySelectorAll(sel)); }
 function q(sel, root=document){ return root.querySelector(sel); }
@@ -485,14 +505,20 @@ function normalizeTabId(name){ let s=cleanTitle(name).toLowerCase(); try{s=s.nor
 function escapeHTML(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 function getTabs(root=document){ return qa('.tabs .tab', root); }
 function getPanels(root=document){ return qa('body > .panel', root); }
-function setUploadMsg(text){ const el=document.getElementById('uploadMsg'); if(el) el.textContent=text; }
+function setUploadMsg(text){ document.querySelectorAll('#uploadMsg').forEach(el=>{ el.textContent=text; }); }
+// Force the browser to actually paint before continuing a long synchronous-ish task
+// (setUploadMsg alone can go unpainted if the next work is a tight await-chain with no real yield).
+// Uses setTimeout, not requestAnimationFrame: rAF can stop firing entirely when the page isn't
+// actively compositing (backgrounded tab, screen off) which would hang the whole combine forever.
+function nextPaint(){ return new Promise(r=>setTimeout(r,0)); }
 
 function getGlobalTtsSpeed(){ const el=document.getElementById('ttsSpeedSelect'); const n=parseFloat(el && el.value); return TTS_SPEEDS.includes(n) ? n : 1.0; }
 window.getGlobalTtsSpeed = getGlobalTtsSpeed;
 
 function getAudioMode(){
   const el=document.getElementById('audioModeSelect');
-  return el && el.value === 'mp3' ? 'mp3' : 'tts';
+  const mode = el?.value || 'tts';
+  return ['tts', 'mp3', 'combine'].includes(mode) ? mode : 'tts';
 }
 function isReadRowNumberOn(){
   const cb=document.getElementById('readRowNumberToggle');
@@ -531,6 +557,44 @@ function announceRowNumber(tr, token, done){
     }
   }
   speakOne(group, 'zh-CN', token, ()=>{ afterAnnounce(); }, 1.2);
+}
+function announceAllRowNumbers(rows, token, done){
+  if(!isReadRowNumberOn()){ done(); return; }
+  lastAnnouncedRowNumber = null;
+  const uniqueNumbers = [];
+  const seenNumbers = new Set();
+  for(const tr of rows){
+    const raw = getRowNumberText(tr);
+    const group = getRowNumberGroup(raw);
+    if(group && !seenNumbers.has(group)){
+      seenNumbers.add(group);
+      uniqueNumbers.push(group);
+    }
+  }
+  if(!uniqueNumbers.length){ done(); return; }
+  const isCombin = getAudioMode() === 'combine';
+  let idx = 0;
+  function announceNext(){
+    if(token!==playToken){ done(); return; }
+    if(idx >= uniqueNumbers.length){ done(); return; }
+    const num = uniqueNumbers[idx++];
+    const src=findNumberMp3(num);
+    if(!src){
+      if(isCombin){ announceNext(); return; }
+      const afterAnnounce=()=>{
+        if(token!==playToken){ done(); return; }
+        playTimer=setTimeout(announceNext, 300);
+      };
+      speakOne(num, 'zh-CN', token, ()=>{ afterAnnounce(); }, 1.2);
+      return;
+    }
+    const afterAnnounce=()=>{
+      if(token!==playToken){ done(); return; }
+      playTimer=setTimeout(announceNext, 300);
+    };
+    playMp3Source(src, token, ()=>{ afterAnnounce(); });
+  }
+  announceNext();
 }
 function modeToMp3Key(mode){
   const map={
@@ -578,25 +642,30 @@ function getSheetPrefixFromTable(table){
   return safeFileName(title).replace(/[^A-Za-z0-9]+/g,'_').replace(/^_+|_+$/g,'').slice(0,20) || 'text';
 }
 function getRowIndexFromTr(tr){
+  // Returns the raw "No" cell value as-is (e.g. "1a"), not parseInt()'d — parseInt("1a")
+  // silently truncates to 1 in JS (unlike Python's int(), which raises), which used to collapse
+  // every letter-suffixed row in the same numeric group onto the same MP3 filename. Falls back
+  // to physical row position only when "No" is blank. "Ref." is no longer read here (reverted
+  // 2026-07-25 — MP3 Generator already keys off "No" too; "Ref." is now free for other use).
+  // See mp3_no_based_naming_migration_plan.md.
   const cells = tr?.querySelectorAll('td.cn');
-  const refText = cells && cells[1] ? String(cells[1].textContent||'').trim() : '';
-  const n = parseInt(refText, 10);
-  if(Number.isFinite(n) && n>0) return n;
+  const noText = cells && cells[0] ? String(cells[0].textContent||'').trim() : '';
+  if(noText) return noText.replace(/[<>:"/\\|?*]/g, '_');
   const table=tr?.closest('table');
-  return qa('tbody tr', table).indexOf(tr)+1;
+  return String(qa('tbody tr', table).indexOf(tr)+1);
 }
 function expectedMp3Name(table,tr,mode){
   const key=modeToMp3Key(mode);
   if(!key) return '';
   const prefix=getSheetPrefixFromTable(table);
-  const row=String(getRowIndexFromTr(tr)).padStart(3,'0');
+  const row=getRowIndexFromTr(tr);
   return `${prefix}_${row}_${key}.mp3`.toLowerCase();
 }
 function mp3CandidateNames(table,tr,mode){
   const key=modeToMp3Key(mode);
   if(!key) return [];
   const sheetPrefix=getSheetPrefixFromTable(table);
-  const row=String(getRowIndexFromTr(tr)).padStart(3,'0');
+  const row=getRowIndexFromTr(tr);
   const aliases = {
     mandkw: ['mandkw','mand_kw','mand-kw','mand kw','hanzikw','hanzi_kw','hanzi-kw','hanzi kw'],
     mandarin: ['mandarin','sentence_mandarin','mand_sentence','hanzi_sentence','mandarin_sentence','kalimat_mandarin'],
@@ -644,7 +713,7 @@ function warnMissingMp3(table,tr,mode){
   const expected=expectedMp3Name(table,tr,mode);
   if(!expected || expected===lastMissingMp3Name) return;
   lastMissingMp3Name=expected;
-  const row=String(getRowIndexFromTr(tr)).padStart(3,'0');
+  const row=getRowIndexFromTr(tr);
   const key=modeToMp3Key(mode) || mode;
   const sheetName=sheetFolderNameFromTable(table);
   const available=([...new Set([...Object.keys(mp3SheetCounts), ...Object.keys(mp3ZipCounts)])]).sort().slice(0,6).join(', ') || 'belum dipilih';
@@ -825,20 +894,38 @@ function stopActiveAudio(){
   if(activeAudioUrl){ try{ URL.revokeObjectURL(activeAudioUrl); }catch(e){} }
   activeAudio=null; activeAudioUrl=null;
 }
-async function combineAudioBlobs(audioBlobs, delayMs=500){
+async function combineAudioBlobs(audioBlobs, delayMs=500, onProgress){
   if(!audioBlobs.length) return null;
   try{
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    let totalDuration = 0;
-    const decodedBuffers = [];
-    for(const blob of audioBlobs){
-      const arrayBuffer = await blob.arrayBuffer();
-      const decodedBuffer = await audioCtx.decodeAudioData(arrayBuffer);
-      decodedBuffers.push(decodedBuffer);
-      totalDuration += decodedBuffer.duration + (delayMs / 1000);
+    // Source MP3 (edge-tts) is mono 24kHz - decode/render at that rate instead of the
+    // browser's default (44.1/48kHz stereo) to avoid pointless upsample/channel-doubling.
+    const TARGET_SAMPLE_RATE = 24000;
+    let audioCtx;
+    try{ audioCtx = new (window.AudioContext || window.webkitAudioContext)({sampleRate: TARGET_SAMPLE_RATE}); }
+    catch(e){ audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+    // Decode in small batches (not all-at-once, not fully sequential): enough concurrency to
+    // help, but bounded so weak/older phones don't get hit with 100s of decode jobs simultaneously.
+    const BATCH_SIZE = 8;
+    const decodedBuffers = new Array(audioBlobs.length);
+    let decodedCount = 0;
+    for(let i=0; i<audioBlobs.length; i+=BATCH_SIZE){
+      const batch = audioBlobs.slice(i, i+BATCH_SIZE);
+      const batchResults = await Promise.all(batch.map(async blob=>{
+        const arrayBuffer = await blob.arrayBuffer();
+        const buf = await audioCtx.decodeAudioData(arrayBuffer);
+        decodedCount++;
+        if(onProgress) onProgress(decodedCount, audioBlobs.length, 'decode');
+        return buf;
+      }));
+      batchResults.forEach((buf, j)=>{ decodedBuffers[i+j] = buf; });
+      await nextPaint();
     }
+    if(onProgress) onProgress(audioBlobs.length, audioBlobs.length, 'render');
+    await nextPaint();
+    let totalDuration = 0;
+    for(const buffer of decodedBuffers) totalDuration += buffer.duration + (delayMs / 1000);
     const sampleRate = audioCtx.sampleRate;
-    const offlineCtx = new OfflineAudioContext(2, totalDuration * sampleRate, sampleRate);
+    const offlineCtx = new OfflineAudioContext(1, Math.ceil(totalDuration * sampleRate), sampleRate);
     let offset = 0;
     for(const buffer of decodedBuffers){
       const source = offlineCtx.createBufferSource();
@@ -861,44 +948,38 @@ function audioBufferToWav(audioBuffer){
   const format = 1;
   const bitDepth = 16;
   const bytesPerSample = bitDepth / 8;
-  const blockAlign = numberOfChannels * bytesPerSample;
-  const channelData = [];
-  for(let i=0; i<numberOfChannels; i++){
-    channelData.push(audioBuffer.getChannelData(i));
-  }
-  const length = audioBuffer.length * numberOfChannels * bytesPerSample;
-  const arrayBuffer = new ArrayBuffer(44 + length);
+  const length = audioBuffer.length * numberOfChannels * bytesPerSample + 44;
+  const arrayBuffer = new ArrayBuffer(length);
   const view = new DataView(arrayBuffer);
-  const writeString=(offset, string)=>{
-    for(let i=0; i<string.length; i++) view.setUint8(offset+i, string.charCodeAt(i));
-  };
-  const writeFloat32=(offset, input)=>{
-    for(let i=0; i<input.length; i++, offset+=4) view.setFloat32(offset, input[i], true);
-  };
-  writeString(0, 'RIFF');
-  view.setUint32(4, 36+length, true);
-  writeString(8, 'WAVE');
-  writeString(12, 'fmt ');
-  view.setUint32(16, 16, true);
-  view.setUint16(20, format, true);
-  view.setUint16(22, numberOfChannels, true);
-  view.setUint32(24, sampleRate, true);
-  view.setUint32(28, sampleRate*blockAlign, true);
-  view.setUint16(32, blockAlign, true);
-  view.setUint16(34, bitDepth, true);
-  writeString(36, 'data');
-  view.setUint32(40, length, true);
-  const audioData = new Float32Array(audioBuffer.length * numberOfChannels);
-  for(let i=0; i<audioBuffer.length; i++){
-    for(let ch=0; ch<numberOfChannels; ch++){
-      audioData[i*numberOfChannels+ch] = channelData[ch][i];
+  const channels = [];
+  for (let i = 0; i < numberOfChannels; i++) channels.push(audioBuffer.getChannelData(i));
+  let offset = 0;
+  const setUint16 = (data) => { view.setUint16(offset, data, true); offset += 2; };
+  const setUint32 = (data) => { view.setUint32(offset, data, true); offset += 4; };
+  setUint32(0x46464952);
+  setUint32(length - 8);
+  setUint32(0x45564157);
+  setUint32(0x20746d66);
+  setUint32(16);
+  setUint16(format);
+  setUint16(numberOfChannels);
+  setUint32(sampleRate);
+  setUint32(sampleRate * numberOfChannels * bytesPerSample);
+  setUint16(numberOfChannels * bytesPerSample);
+  setUint16(bitDepth);
+  setUint32(0x61746164);
+  setUint32(length - offset - 4);
+  const volume = 0.8;
+  let index = offset;
+  const sample = new Int16Array(arrayBuffer, index);
+  let sampleIndex = 0;
+  for (let i = 0; i < audioBuffer.length; i++) {
+    for (let channelIndex = 0; channelIndex < numberOfChannels; channelIndex++) {
+      sample[sampleIndex] = Math.max(-1, Math.min(1, channels[channelIndex][i])) < 0 ? sample[sampleIndex] = Math.max(-1, Math.min(1, channels[channelIndex][i])) * 0x8000 : Math.max(-1, Math.min(1, channels[channelIndex][i])) * 0x7FFF;
+      sampleIndex++;
     }
   }
-  const int16Data = new Int16Array(arrayBuffer, 44, length/2);
-  for(let i=0; i<audioData.length; i++){
-    int16Data[i] = audioData[i] < 0 ? audioData[i]*0x8000 : audioData[i]*0x7FFF;
-  }
-  return new Blob([arrayBuffer], {type: 'audio/wav'});
+  return new Blob([arrayBuffer], { type: 'audio/wav' });
 }
 function playAudioBlob(blob, token, done){
   if(token!==playToken){ done(false); return; }
@@ -1212,10 +1293,10 @@ let allAccum = [];
 function isAccumOn(){ const cb=document.getElementById('globalAccumClip'); return !!(cb && cb.checked); }
 function addHanAccum(text){ hanAccum.push(text); return hanAccum; }
 function addEngAccum(text){ engAccum.push(text); return engAccum; }
-function addAllAccum(text){ allAccum.push(text); return allAccum; }
+function addAllAccum(entry){ allAccum.push(entry); return allAccum; }
 function clearAllAccum(){ hanAccum=[]; engAccum=[]; allAccum=[]; }
 function saveAllToClip(btn){
-  const panel = btn?.closest('.panel') || document.querySelector('.panel');
+  const panel = btn?.closest('.panel') || document.querySelector('.panel.active') || document.querySelector('.panel');
   if(!panel) return;
   const table = panel.querySelector('table');
   if(!table) return;
@@ -1227,23 +1308,36 @@ function saveAllToClip(btn){
       visibleColIndexes.push(i);
   });
   const rows = qa('tbody tr', table).filter(r=>!r.classList.contains('hidden'));
-  const lines = rows.map(tr=>{
+  const entries = rows.map(tr=>{
     const tds = qa('td', tr);
     const vals = visibleColIndexes.map(i=>String(tds[i]?.textContent||'').trim());
     // Remove trailing empty values
     while(vals.length > 1 && vals[vals.length-1]==='') vals.pop();
     // Skip if only No column (index 0) has content, rest empty
-    if(vals.length <= 1) return '';
+    if(vals.length <= 1) return null;
     const noVal = vals[0];
-    const rest = vals.slice(1);
-    // Use space between No and content, semicolons between content columns
-    return noVal + ' ' + rest.join('   ;   ');
+    // Drop empty columns entirely so remaining content sits close to the number
+    const rest = vals.slice(1).filter(v=>v!=='');
+    return { no: noVal, line: noVal + '  ' + rest.join('     ') };
   }).filter(Boolean);
-  if(!lines.length) return;
+  if(!entries.length) return;
+  // Insert blank line whenever the row number changes (groups same-number rows together)
+  const lines = [];
+  let prevNo = null;
+  entries.forEach(e=>{
+    if(prevNo !== null && e.no !== prevNo) lines.push('');
+    lines.push(e.line);
+    prevNo = e.no;
+  });
   const text = lines.join('\n');
+  const sheetTitle = panel.dataset.sheetTitle || '';
   const feedback = ()=>{ btn.style.opacity='0.5'; setTimeout(()=>{ btn.style.opacity=''; },400); };
   if(isAccumOn()){
-    copyToClipboard(addAllAccum(text).join('\n'), null, '');
+    const entries = addAllAccum({ title: sheetTitle, text });
+    // "_ _ _   TITLE   _ _ _" makes the sheet boundary visible when scrolling fast through
+    // the combined clipboard text; join with 4 newlines = 3 blank lines between sheets.
+    const combined = entries.map(e => (e.title ? `_ _ _          ${e.title}          _ _ _` + '\n\n' : '') + e.text).join('\n\n\n\n');
+    copyToClipboard(combined, null, '');
     feedback();
   } else {
     copyToClipboard(text, null, '');
@@ -1359,73 +1453,86 @@ function getDropdownModes(tid, panel){
   if(byPanel.length) return byPanel;
   return [1,2,3,4].map(n=>root.querySelector(`[data-final-voice${n}="${tid}"]`)?.value || '').filter(Boolean);
 }
-async function playAllSequence(tid, modes, btn){
+function hashRows(rows){
+  return rows.map(r=>r.id || String(r.innerHTML).slice(0,50)).join('|');
+}
+// Full "is the cached combine still valid" signature: row selection + which V1-V4 modes +
+// delay between rows. Switching Audio Mode away and back doesn't change any of this, so the
+// cache stays valid across mode switches; it only goes stale if one of these actually changes.
+function combineSignature(tbl, modes){
+  const rows = rowCycle(tbl, modes);
+  return hashRows(rows) + '||' + modes.join(',') + '||' + (getNextDelayMs()||500);
+}
+async function playAllCombineMode(tid, modes, btn, token){
+  const table=tableForTid(tid);
+  if(!combineReadyFlag || !combinedBlobCache || combineSignature(table, modes) !== lastCombineRowsHash){
+    setUploadMsg('Mode Alt. Audio Combine belum ada.');
+    finishPlay(token);
+    return;
+  }
+  const rows=rowCycle(table, modes);
+  lastAnnouncedRowNumber=null;
+
+  function doCombinePlay(){
+    if(token!==playToken){ finishPlay(token); return; }
+    setUploadMsg('▶ Playing Pre-Combine audio...');
+    announceAllRowNumbers(rows, token, ()=>{
+      if(token!==playToken){ finishPlay(token); return; }
+      playAudioBlob(combinedBlobCache, token, (ok)=>{
+        if(token!==playToken) return;
+        if(!ok){ setUploadMsg('Play dihentikan.'); finishPlay(token); return; }
+        if(!isLoopOn(table)){ setUploadMsg('✓ Selesai.'); finishPlay(token); return; }
+        doCombinePlay();
+      });
+    });
+  }
+  doCombinePlay();
+}
+function playAllSequence(tid, modes, btn){
   stopPlayAll(); const token=++playToken; activePlayButton=btn||null; if(activePlayButton) activePlayButton.classList.add('playing'); lastAnnouncedRowNumber=null;
   const table=tableForTid(tid); if(!table){ setUploadMsg('Tabel tidak ditemukan.'); return false; }
+  if(getAudioMode()==='combine'){ playAllCombineMode(tid, modes, btn, token); return false; }
   const cols=modes.map(mode=>getModeColumn(table, mode));
   if(cols.some(c=>c<0)){ setUploadMsg('Kolom tidak ditemukan.'); finishPlay(token); return false; }
-  let rows=rowCycle(table, modes), i=getStartIndex(rows, table);
+  let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('⏳ Menyiapkan audio...');
-
-  const rowBoundaries=[];
-  const audioBlobs=[];
-
-  for(const tr of rows){
-    const tds=tr.querySelectorAll('td');
-    let rowHasAudio=false;
-    for(const mode of modes){
-      if(!canPlayMode(table,tr,tds,mode)) continue;
-      const src=findMp3For(table,tr,mode);
-      if(!src){ warnMissingMp3(table,tr,mode); continue; }
-      try{
-        let blob;
-        if(src.type==='file') blob=src.file;
-        else if(src.type==='zip'){
-          const data=await readZipEntry(src.entry);
-          blob=new Blob([data], {type:'audio/mpeg'});
-        }
-        if(blob){ audioBlobs.push(blob); rowHasAudio=true; }
-      }catch(e){ setUploadMsg('Error read MP3: '+e.message); }
+  setUploadMsg('▶ Sequence play berjalan. Tekan Pause / Stop.');
+  function playModeSequence(tr, tds, idx, hadPlayed, done){
+    if(token!==playToken){ finishPlay(token); return; }
+    if(idx>=modes.length){ done(hadPlayed); return; }
+    const mode=modes[idx];
+    if(!canPlayMode(table,tr,tds,mode)){
+      playModeSequence(tr, tds, idx+1, hadPlayed, done);
+      return;
     }
-    if(rowHasAudio) rowBoundaries.push(tr);
+    const start=()=>speakMode(table, tr, tds, mode, token, (played)=>{
+      if(token!==playToken){ finishPlay(token); return; }
+      playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
+    });
+    const delay = hadPlayed ? getDelayBeforeVoice(idx) : 0;
+    if(delay>0) playTimer=setTimeout(start, delay);
+    else start();
   }
-
-  if(!audioBlobs.length){ setUploadMsg('Tidak ada MP3 yang bisa diplay.'); finishPlay(token); return false; }
-  setUploadMsg('⏳ Combining audio files...');
-  const combinedBlob=await combineAudioBlobs(audioBlobs, getDelayBeforeVoice(0)||500);
-  if(!combinedBlob){ setUploadMsg('Gagal combine audio.'); finishPlay(token); return false; }
-
-  setUploadMsg('▶ Play all berjalan...');
-  lastPlayedTr=rows[rows.length-1];
-
-  const playHandler=(ok)=>{
-    if(token!==playToken) return;
-    if(ok && isLoopOn(table)){
-      setUploadMsg('↻ Loop...');
-      rows=rowCycle(table, modes);
-      getSharedMp3Audio().currentTime=0;
-      getSharedMp3Audio().play().catch(()=>{});
-    }else{
-      if(ok) setUploadMsg('✓ Play all selesai.');
-      else setUploadMsg('Play all dihentikan.');
-      finishPlay(token);
+  function nextRow(){
+    if(token!==playToken){ finishPlay(token); return; }
+    if(i>=rows.length){
+      if(!isLoopOn(table)){ finishPlay(token); setUploadMsg('✓ Play all selesai.'); return; }
+      if(!playedInCycle){ finishPlay(token); setUploadMsg('Tidak ada audio MP3 yang bisa diputar pada baris terpilih.'); return; }
+      rows=rowCycle(table, modes); i=0; playedInCycle=false;
     }
-  };
-
-  playAudioBlob(combinedBlob, token, playHandler);
-
-  getSharedMp3Audio().ontimeupdate=()=>{
-    if(token!==playToken) return;
-    const ct=getSharedMp3Audio().currentTime;
-    const dur=getSharedMp3Audio().duration;
-    if(dur<=0 || rowBoundaries.length===0) return;
-    const progress=Math.min(ct/dur, 0.999);
-    const idx=Math.floor(progress*rowBoundaries.length);
-    if(idx<rowBoundaries.length) setPlayingRowHighlight(rowBoundaries[idx]);
-  };
-
-  return false;
+    const tr=rows[i++];
+    const tds=tr.querySelectorAll('td');
+    setPlayingRowHighlight(tr);
+    announceRowNumber(tr, token, ()=>{
+    if(token!==playToken){ finishPlay(token); return; }
+    playModeSequence(tr, tds, 0, false, (rowPlayed)=>{
+      if(token!==playToken){ finishPlay(token); return; }
+      if(rowPlayed){ playedInCycle=true; playTimer=setTimeout(nextRow, getNextDelayMs()); }
+      else playTimer=setTimeout(nextRow, 0);
+    });
+    });
+  }
+  playTimer=setTimeout(nextRow, 80); return false;
 }
 function playAllDropdown(tid, btn){
   const panel = btn?.closest('.panel') || activePanel() || document;
@@ -1648,6 +1755,13 @@ function parseDelimitedText(raw){
   let start=lines.findIndex(l=>/\bNo\b/i.test(l)&&/Pilih/i.test(l)&&(/Pin\s*Yin\s*KW/i.test(l)||/Mand\s+KW/i.test(l)||/Eng\s*KW/i.test(l)));
   if(start<0) start=lines.findIndex(l=>/Pin\s*Yin\s*KW|Mand\s+KW|Eng\s*KW|Mandarin|English/i.test(l));
   if(start<0) start=0;
+  // YouTube link convention: sits in the first cell of a line before the header row (e.g.
+  // "https://www.youtube.com/watch?v=XD80CAchuFA;;;;;;;;;;;"). Scan those pre-header lines only.
+  let youtubeUrl='';
+  for(let i=0;i<start;i++){
+    const firstCell=(splitLineSmart(lines[i]||'')[0]||'').trim();
+    if(/^https?:\/\/(www\.)?(youtube\.com|youtu\.be)\//i.test(firstCell)){ youtubeUrl=firstCell; break; }
+  }
   const header=splitLineSmart(lines[start]||''); const map={}; header.forEach((h,i)=>map[normalizeHeader(h)]=i);
   const idx={ 
     no: colIndex(map,['No'],0), 
@@ -1682,6 +1796,7 @@ function parseDelimitedText(raw){
       note2:c[idx.note2]||''
     });
   });
+  rows.youtubeUrl=youtubeUrl;
   return rows;
 }
 window.parseDelimitedText = parseDelimitedText;
@@ -1732,11 +1847,15 @@ function voiceOptionsHTML(selected){
   return opts.map(([v,t])=>`<option value="${v}" ${v===selected?'selected':''}>${t}</option>`).join('');
 }
 
-function dropdownPlayControlsHTML(tid){
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
+function dropdownPlayControlsHTML(tid, youtubeUrl){
+  const ytUrl=youtubeUrl||'';
+  // Text always rendered (even with no link) so the button never shrinks — when there's no
+  // link the text color is set to match the button background, making it look blank instead.
+  const ytBtn=`<button class="btn btn-ytube${ytUrl?'':' btn-ytube-empty'}" data-ytube-open="${tid}" data-ytube-url="${escapeHTML(ytUrl)}" type="button" style="margin-left:8px" title="${ytUrl?'Buka video YouTube sheet ini':'Tidak ada link YouTube untuk sheet ini'}">Ytube</button>`;
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label>${ytBtn}<label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
 }
 
-function toolbarHTML(tid){
+function toolbarHTML(tid, youtubeUrl){
   return `<div class="toolbar-header">
     <div style="display:flex;align-items:center;gap:6px;">
       <span class="toolbar-toggle-icon">▼</span>
@@ -1758,21 +1877,22 @@ function toolbarHTML(tid){
       </label>
       <button class="btn btn-check" data-check-all="${tid}" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="${tid}" type="button">Untick All</button>
-      ${dropdownPlayControlsHTML(tid)}
+      ${dropdownPlayControlsHTML(tid, youtubeUrl)}
       <span class="sm"></span>
     </div>
   </div>`;
 }
 
-function addOrReplaceTextTab(title, rows){
+function addOrReplaceTextTab(title, rows, youtubeUrl){
   title=cleanTitle(title); const tid=normalizeTabId(title);
   let table=document.getElementById(tid); let panel=table?.closest('.panel'); let tab=null;
   if(panel){ const idx=getPanels().indexOf(panel); tab=getTabs()[idx]; }
   if(!panel){ panel=document.createElement('div'); panel.className='panel'; document.body.appendChild(panel); tab=document.createElement('div'); tab.className='tab'; document.querySelector('.tabs').appendChild(tab); }
   tab.dataset.sheetTitle=title; tab.innerHTML=`${escapeHTML(title)} <span class="badge">${rows.length}</span><button class="tab-close" title="Hapus tab" type="button">×</button>`;
   panel.dataset.sheetTitle=title; panel.dataset.loop='1'; panel.dataset.random='0';
+  panel.dataset.youtubeUrl=youtubeUrl||'';
   const body=rows.map((r,i)=>buildRowHTML(tid,r,i)).join('\n');
-  panel.innerHTML=`<div class="ph">${toolbarHTML(tid)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
+  panel.innerHTML=`<div class="ph">${toolbarHTML(tid, panel.dataset.youtubeUrl)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
   refreshTabs(); 
   attachPanelEvents(panel); 
   switchTab(getPanels().indexOf(panel)); 
@@ -1939,12 +2059,13 @@ async function handleTextUpload(files){
   for(const file of files){
     const raw=await file.text();
     let rows=parseDelimitedText(raw);
+    const youtubeUrl=rows.youtubeUrl||'';
     if(mode==='checked'){
       const all=rows.length;
       rows=rows.filter(r=>r.pilih);
       if(rows.length===0) warnings.push(`"${file.name}": tidak ada baris ber-X (${all} baris dilewati)`);
     }
-    addOrReplaceTextTab(cleanTitle(file.name), rows);
+    addOrReplaceTextTab(cleanTitle(file.name), rows, youtubeUrl);
     count++;
   }
   const input=document.getElementById('txtUpload'); if(input) input.value='';
@@ -2076,7 +2197,11 @@ function panelTitle(panel){
   const idx = getPanels().indexOf(panel);
   return panel?.dataset.sheetTitle || getTabs()[idx]?.dataset.sheetTitle || ('Text ' + (idx+1));
 }
-function panelToCSV(panel, includeHeader=true, includeSource=false){
+function sourceFileFormat(title){
+  const m = String(title||'').match(/^(\d+)/);
+  return m ? m[1] + '_' : String(title||'');
+}
+function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=true){
   const table = panel?.querySelector('table');
   if(!table) return '';
   const title = panelTitle(panel);
@@ -2085,28 +2210,32 @@ function panelToCSV(panel, includeHeader=true, includeSource=false){
   const rows = qa('tbody tr', table);
   // First pass: collect first non-empty sentence per No. group
   const sentenceMap = new Map();
-  rows.forEach(tr=>{
-    const tds = qa('td', tr);
-    const rowNo = tds[0]?.textContent.trim() || '';
-    if(!sentenceMap.has(rowNo)){
-      const py=tds[6]?.textContent.trim()||'';
-      const id=tds[7]?.textContent.trim()||'';
-      const zh=tds[8]?.textContent.trim()||'';
-      const en=tds[9]?.textContent.trim()||'';
-      if(py||zh) sentenceMap.set(rowNo,{py,id,zh,en});
-    }
-  });
+  if(fillEmpty){
+    rows.forEach(tr=>{
+      const tds = qa('td', tr);
+      const rowNo = tds[0]?.textContent.trim() || '';
+      if(!sentenceMap.has(rowNo)){
+        const py=tds[6]?.textContent.trim()||'';
+        const id=tds[7]?.textContent.trim()||'';
+        const zh=tds[8]?.textContent.trim()||'';
+        const en=tds[9]?.textContent.trim()||'';
+        if(py||zh) sentenceMap.set(rowNo,{py,id,zh,en});
+      }
+    });
+  }
   // Second pass: build CSV rows, override sentences with group's first values, auto-generate if empty
   rows.forEach((tr,i)=>{
     const tds = qa('td', tr);
     const rowNo = tds[0]?.textContent.trim()||(i+1);
-    const vals = tableRowValues(tr, rowNo, includeSource ? title : undefined);
-    const s = sentenceMap.get(String(rowNo));
-    if(s){ vals[6]=s.py; vals[7]=s.id; vals[8]=s.zh; vals[9]=s.en; }
-    // Auto-generate sentences if empty (v25_11_87 improvement)
-    if(!vals[8] && (vals[4] || vals[2])){ vals[8]=(vals[4]||'')+(vals[4]&&vals[2]?' ':'')+(vals[2]||''); } // Auto-gen Mandarin from Mand KW + Pin Yin KW
-    if(!vals[7] && vals[3]){ vals[7]=vals[3]; } // Auto-gen Indonesia from Indo KW
-    if(!vals[9] && vals[5]){ vals[9]=vals[5]; } // Auto-gen English from Eng KW
+    const vals = tableRowValues(tr, rowNo, includeSource ? sourceFileFormat(title) : undefined);
+    if(fillEmpty){
+      const s = sentenceMap.get(String(rowNo));
+      if(s){ vals[6]=s.py; vals[7]=s.id; vals[8]=s.zh; vals[9]=s.en; }
+      // Auto-generate sentences if empty (v25_11_87 improvement)
+      if(!vals[8] && (vals[4] || vals[2])){ vals[8]=(vals[4]||'')+(vals[4]&&vals[2]?' ':'')+(vals[2]||''); } // Auto-gen Mandarin from Mand KW + Pin Yin KW
+      if(!vals[7] && vals[3]){ vals[7]=vals[3]; } // Auto-gen Indonesia from Indo KW
+      if(!vals[9] && vals[5]){ vals[9]=vals[5]; } // Auto-gen English from Eng KW
+    }
     lines.push(valuesToCsvLine(vals));
   });
   return lines.join('\n');
@@ -2124,28 +2253,54 @@ function downloadCSVFile(filename, content){
 function activePanel(){
   return getPanels().find(p=>p.classList.contains('active')) || getPanels().find(p=>!p.classList.contains('locked-hidden')) || getPanels()[0];
 }
-function downloadActiveTabCSV(){
+function showCsvFillModal(){
+  return new Promise(resolve=>{
+    const overlay=document.getElementById('csvFillOverlay');
+    const btnYes=document.getElementById('csvFillYesBtn');
+    const btnNo=document.getElementById('csvFillNoBtn');
+    const btnCancel=document.getElementById('csvFillCancelBtn');
+    overlay.classList.add('active');
+    function close(val){ overlay.classList.remove('active'); btnYes.onclick=null; btnNo.onclick=null; btnCancel.onclick=null; resolve(val); }
+    btnYes.onclick=()=>close(true);
+    btnNo.onclick=()=>close(false);
+    btnCancel.onclick=()=>close(null);
+  });
+}
+// Matches the original source-file convention: row1=URL(or "xxx" placeholder), row2=blank,
+// row3=header, row4+=data. numCols must match the header's column count for that export.
+function topUrlLine(youtubeUrl, numCols){
+  return valuesToCsvLine([youtubeUrl || 'xxx', ...Array(numCols-1).fill('')]);
+}
+async function downloadActiveTabCSV(){
+  const fillEmpty = await showCsvFillModal();
+  if(fillEmpty===null){ setUploadMsg('Download dibatalkan.'); return false; }
   stopPlayAll();
   syncAttributes(document);
   const panel = activePanel();
   if(!panel){ setUploadMsg('Tidak ada tab untuk di-download.'); return false; }
   const title = panelTitle(panel);
-  downloadCSVFile(safeFileName(title) + '.csv', panelToCSV(panel, true, false));
+  const csv = panelToCSV(panel, true, false, fillEmpty);
+  const urlLine = topUrlLine(panel.dataset.youtubeUrl || '', exportHeaders(false).length);
+  downloadCSVFile(safeFileName(title) + '.csv', [urlLine, '', csv].join('\n'));
   setUploadMsg('✓ CSV tab aktif di-download.');
   return false;
 }
-function downloadMergeCSV(){
+async function downloadMergeCSV(){
+  const fillEmpty = await showCsvFillModal();
+  if(fillEmpty===null){ setUploadMsg('Download dibatalkan.'); return false; }
   stopPlayAll();
   syncAttributes(document);
   const panels = getPanels();
   if(!panels.length){ setUploadMsg('Tidak ada tab untuk di-download.'); return false; }
-  const lines = [valuesToCsvLine(exportHeaders(true))];
+  // Merge combines multiple sheets (each with its own or no YouTube URL), so there's no single
+  // link to put on row 1 — always "xxx" here, same placeholder used for any single sheet lacking one.
+  const lines = [topUrlLine('', exportHeaders(true).length), '', valuesToCsvLine(exportHeaders(true))];
   panels.forEach(panel=>{
-    const csv = panelToCSV(panel, false, true);
+    const csv = panelToCSV(panel, false, true, fillEmpty);
     if(csv){
       lines.push(csv);
       const sepValues = Array(12).fill('');
-      sepValues.push(panelTitle(panel));
+      sepValues.push(sourceFileFormat(panelTitle(panel)));
       lines.push(valuesToCsvLine(sepValues));
     }
   });
@@ -2189,7 +2344,28 @@ function init(){
   const mp3ZipInput=document.getElementById('mp3ZipInput');
   if(mp3ZipInput){ mp3ZipInput.onchange = e=>handleMp3ZipFiles(e.target.files); }
   const audioMode=document.getElementById('audioModeSelect');
-  if(audioMode){ audioMode.onchange = ()=>setUploadMsg(audioMode.value==='mp3'?'Mode MP3 aktif. Pilih folder sheet aktif, mis. 001 Text.':'Mode TTS aktif.'); }
+  if(audioMode){ audioMode.onchange = ()=>{
+    const v = audioMode.value;
+    if(v==='mp3') setUploadMsg('Mode MP3. Pilih MP3 ZIP yang sesuai nama sheet.');
+    else if(v==='combine'){
+      // Don't blanket-tell the user to re-Pre-Comb: the cache survives mode switches (see
+      // combineSignature()), so if it's still valid for the current selection, say so instead.
+      const panel = activePanel ? activePanel() : document.querySelector('.panel.active');
+      const table = panel ? panel.querySelector('table') : null;
+      const tid = table?.id;
+      let cacheValid = false;
+      if(tid && table){
+        const modes = getDropdownModes(tid, panel);
+        if(combineReadyFlag && combinedBlobCache && modes.length){
+          cacheValid = combineSignature(table, modes) === lastCombineRowsHash;
+        }
+      }
+      setUploadMsg(cacheValid
+        ? 'Mode Alt. Audio Combine sudah ada.'
+        : 'Mode Alt. Audio Combine belum ada.');
+    }
+    else setUploadMsg('Mode TTS');
+  }; }
   refreshTabs();
   rebuildExistingRowButtons(document);
   getPanels().forEach(panel=>{ 
@@ -2272,9 +2448,10 @@ function init(){
     if(saveAllBtn){ e.preventDefault(); saveAllToClip(saveAllBtn); return; }
     const clearGlobal = e.target.closest('#globalClearClip');
     if(clearGlobal){ e.preventDefault(); clearAllAccum(); clearGlobal.style.opacity='0.5'; setTimeout(()=>{ clearGlobal.style.opacity=''; }, 400); return; }
-    const t=e.target.closest('[data-check-all],[data-uncheck-all],[data-final-play],[data-final-pair],[data-final-dropdown],[data-final-pause],[data-final-stop],[data-clear-accum]');
+    const t=e.target.closest('[data-check-all],[data-uncheck-all],[data-final-play],[data-final-pair],[data-final-dropdown],[data-final-pause],[data-final-stop],[data-clear-accum],[data-ytube-open]');
     if(!t) return;
     e.preventDefault(); e.stopPropagation();
+    if(t.hasAttribute('data-ytube-open')){ const url=t.dataset.ytubeUrl; if(url) window.open(url, '_blank', 'noopener'); return; }
     if(t.dataset.clearAccum!==undefined){ const tid=t.dataset.clearAccum; clearAccum(tid); copyToClipboard('', t, 'Clear Clip'); return; }
     if(t.dataset.checkAll) return setAllPilih(t.dataset.checkAll, true);
     if(t.dataset.uncheckAll) return setAllPilih(t.dataset.uncheckAll, false);
@@ -2347,6 +2524,119 @@ document.addEventListener('touchmove', (e) => {
     e.preventDefault();
   }
 }, { passive: false, capture: true });
+
+// Pre-Combine button - trigger combining
+document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)=>{
+  if(isCombining){
+    setUploadMsg('⏳ Masih proses combine sebelumnya, tunggu sebentar...');
+    return;
+  }
+  if(getAudioMode()!=='combine'){
+    setUploadMsg('Select "Alt" mode dulu.');
+    return;
+  }
+  const panel = activePanel ? activePanel() : document.querySelector('.panel.active');
+  const table = panel ? panel.querySelector('table') : null;
+  const tid = table?.id;
+  if(!tid){ setUploadMsg('Tabel tidak ditemukan.'); return; }
+  const modes = getDropdownModes(tid, panel);
+  if(!modes.length){ setUploadMsg('Pilih V1, V2, V3, atau V4 dulu.'); return; }
+
+  // Lock the button for the whole run: prevents a second click from starting a duplicate
+  // combine (which looked like the first one "batal/restart" because both wrote to the
+  // same status message and shared cache variables).
+  isCombining = true;
+  const btn = e.currentTarget;
+  const originalBtnHtml = btn.innerHTML;
+  btn.disabled = true;
+  let renderSpinnerTimer = null;
+  try{
+    setUploadMsg('⏳ Pre-Combining audio...');
+    await nextPaint(); // make sure this message is actually on screen before the long extract loop hogs the main thread
+    const t = ++playToken;
+    const tbl = tableForTid(tid);
+    const rows = rowCycle(tbl, modes);
+    if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang.'); return; }
+
+    const rowsHash = combineSignature(tbl, modes);
+    const audioBlobs = [];
+    let rowsDone = 0;
+    for(const tr of rows){
+      const tds = tr.querySelectorAll('td');
+      for(const mode of modes){
+        if(!canPlayMode(tbl,tr,tds,mode)) continue;
+        const src = findMp3For(tbl,tr,mode);
+        if(!src) continue;
+        try{
+          let blob;
+          if(src.type==='file') blob=src.file;
+          else if(src.type==='zip'){
+            const data=await readZipEntry(src.entry);
+            blob=new Blob([data], {type:'audio/mpeg'});
+          }
+          if(blob) audioBlobs.push(blob);
+        }catch(e){ setUploadMsg('Error: '+e.message); }
+      }
+      rowsDone++;
+      if(rowsDone % 15 === 0 || rowsDone === rows.length){
+        setUploadMsg(`⏳ Membaca MP3... ${rowsDone}/${rows.length} baris`);
+        await nextPaint();
+      }
+    }
+    if(!audioBlobs.length){ setUploadMsg('Tidak ada MP3 untuk dikombinasi.'); return; }
+
+    setUploadMsg('⏳ Decoding 0/'+audioBlobs.length+' files...');
+    await nextPaint();
+    const combined = await combineAudioBlobs(audioBlobs, getNextDelayMs()||500, (done,total,stage)=>{
+      if(stage==='render'){
+        if(renderSpinnerTimer) return; // already animating
+        const frames=['>','>>','>>>'];
+        let f=0;
+        setUploadMsg(`⏳ Merender audio gabungan (${total} files) ${frames[f]}`);
+        renderSpinnerTimer = setInterval(()=>{
+          f=(f+1)%frames.length;
+          setUploadMsg(`⏳ Merender audio gabungan (${total} files) ${frames[f]}`);
+        }, 400);
+      } else {
+        setUploadMsg(`⏳ Decoding ${done}/${total} files...`);
+      }
+    });
+    if(renderSpinnerTimer){ clearInterval(renderSpinnerTimer); renderSpinnerTimer=null; }
+    if(!combined){ setUploadMsg('Gagal combine.'); return; }
+
+    combinedBlobCache = combined;
+    lastCombineRowsHash = rowsHash;
+    combineReadyFlag = true;
+    setUploadMsg('✓ Pre-Combine ready! Click Play All untuk mainkan.');
+  } finally {
+    if(renderSpinnerTimer) clearInterval(renderSpinnerTimer);
+    isCombining = false;
+    btn.disabled = false;
+    btn.innerHTML = originalBtnHtml;
+  }
+});
+
+// Show/hide refresh button on mode change. Deliberately does NOT clear combinedBlobCache/
+// combineReadyFlag: switching mode away and back (e.g. Alt -> MP3 -> Alt) shouldn't throw away
+// a valid pre-combined file. Staleness is instead checked properly in playAllCombineMode() via
+// combineSignature() (rows + modes + delay) right before playback.
+document.getElementById('audioModeSelect').addEventListener('change', ()=>{
+  const btn=document.getElementById('preCombRefreshBtn');
+  btn.style.display = getAudioMode()==='combine' ? 'inline-flex' : 'none';
+});
+
+// Reset combine flag saat checkbox berubah
+document.addEventListener('change', (e)=>{
+  if(e.target.classList.contains('ck-box')){
+    combineReadyFlag = false;
+    if(getAudioMode()==='combine'){
+      setUploadMsg('Selection berubah. Click Pre-Comb lagi.');
+    }
+  }
+});
+
+// Initial state
+document.getElementById('preCombRefreshBtn').style.display = 'none';
 </script>
 
 <!-- ===== PANEL 1 ===== -->
