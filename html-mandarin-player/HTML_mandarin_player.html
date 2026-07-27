@@ -413,6 +413,7 @@ td:nth-child(2), th:nth-child(2) {
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
+      <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
       <span style="font-size:.55rem;color:#aaa;margin-left:2px;">(No,Pilih,▶ tetap)</span>
     </div>
   </div>
@@ -1055,8 +1056,26 @@ function switchTab(index){
   const panels = getPanels();
   tabs.forEach((tab,i)=>tab.classList.toggle('active', i===index && !tab.classList.contains('locked-hidden')));
   panels.forEach((panel,i)=>panel.classList.toggle('active', i===index && !panel.classList.contains('locked-hidden')));
+  updateGlobalYtubeButton();
 }
 window.switchTab = switchTab;
+
+// Global Ytube button (moved out of per-sheet toolbar, next to the column-toggle Reset button)
+// reflects whichever sheet/tab is currently active, and hides itself when that sheet has no link.
+function updateGlobalYtubeButton(){
+  const btn = document.getElementById('globalYtubeBtn');
+  if(!btn) return;
+  const panel = document.querySelector('body > .panel.active');
+  const url = panel?.dataset.youtubeUrl || '';
+  if(url){
+    btn.style.display = '';
+    btn.dataset.ytubeUrl = url;
+  } else {
+    btn.style.display = 'none';
+    btn.dataset.ytubeUrl = '';
+  }
+}
+window.updateGlobalYtubeButton = updateGlobalYtubeButton;
 
 function refreshTabs(){
   getTabs().forEach((tab,i)=>{
@@ -1847,15 +1866,11 @@ function voiceOptionsHTML(selected){
   return opts.map(([v,t])=>`<option value="${v}" ${v===selected?'selected':''}>${t}</option>`).join('');
 }
 
-function dropdownPlayControlsHTML(tid, youtubeUrl){
-  const ytUrl=youtubeUrl||'';
-  // Text always rendered (even with no link) so the button never shrinks — when there's no
-  // link the text color is set to match the button background, making it look blank instead.
-  const ytBtn=`<button class="btn btn-ytube${ytUrl?'':' btn-ytube-empty'}" data-ytube-open="${tid}" data-ytube-url="${escapeHTML(ytUrl)}" type="button" style="margin-left:8px" title="${ytUrl?'Buka video YouTube sheet ini':'Tidak ada link YouTube untuk sheet ini'}">Ytube</button>`;
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label>${ytBtn}<label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
+function dropdownPlayControlsHTML(tid){
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
 }
 
-function toolbarHTML(tid, youtubeUrl){
+function toolbarHTML(tid){
   return `<div class="toolbar-header">
     <div style="display:flex;align-items:center;gap:6px;">
       <span class="toolbar-toggle-icon">▼</span>
@@ -1877,7 +1892,7 @@ function toolbarHTML(tid, youtubeUrl){
       </label>
       <button class="btn btn-check" data-check-all="${tid}" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="${tid}" type="button">Untick All</button>
-      ${dropdownPlayControlsHTML(tid, youtubeUrl)}
+      ${dropdownPlayControlsHTML(tid)}
       <span class="sm"></span>
     </div>
   </div>`;
@@ -1892,7 +1907,7 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   panel.dataset.sheetTitle=title; panel.dataset.loop='1'; panel.dataset.random='0';
   panel.dataset.youtubeUrl=youtubeUrl||'';
   const body=rows.map((r,i)=>buildRowHTML(tid,r,i)).join('\n');
-  panel.innerHTML=`<div class="ph">${toolbarHTML(tid, panel.dataset.youtubeUrl)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
+  panel.innerHTML=`<div class="ph">${toolbarHTML(tid)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
   refreshTabs(); 
   attachPanelEvents(panel); 
   switchTab(getPanels().indexOf(panel)); 
@@ -2375,6 +2390,7 @@ function init(){
   });
   initUploadCollapse();
   initGlobalColumnToggles();
+  updateGlobalYtubeButton();
   document.addEventListener('change', e=>{
     const proxy = e.target.closest('.baca-no-proxy');
     if(proxy){
