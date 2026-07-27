@@ -381,7 +381,7 @@ td:nth-child(2), th:nth-child(2) {
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <strong style="font-size:.76rem;color:var(--red)">＋ Upload</strong>
-      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="display:none">
+      <label class="tts-top-control">CSV: <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)"></label>
       <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
       <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option></select></label>
@@ -458,6 +458,7 @@ let activePlayButton = null;
 let activeAudio = null;
 let activeAudioUrl = null;
 let sharedMp3Audio = null;
+let nextAudioQueue = null;
 let mp3FileMap = new Map();
 let mp3NormFileMap = new Map();
 let mp3SheetFileMap = new Map();
@@ -834,7 +835,18 @@ function playAudioBlob(blob, token, done){
     const url=URL.createObjectURL(blob);
     activeAudio=audio; activeAudioUrl=url;
     let ended=false;
-    audio.onended=()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(true); };
+    audio.onended=()=>{
+      if(token!==playToken) return;
+      if(ended) return;
+      ended=true;
+      if(nextAudioQueue){
+        const queued=nextAudioQueue;
+        nextAudioQueue=null;
+        queued();
+      } else {
+        done(true);
+      }
+    };
     audio.onerror=()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(false); };
     audio.src=url;
     try{
@@ -847,9 +859,6 @@ function playAudioBlob(blob, token, done){
     audio.load();
     const p=audio.play();
     if(p && typeof p.catch==='function') p.catch(()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(false); });
-    const checkDuration=()=>{ if(token!==playToken || ended) return; if(audio.duration && audio.duration>0) { setTimeout(()=>{ if(token===playToken && !ended && Math.abs(audio.currentTime - audio.duration) < 0.5) { ended=true; done(true); } }, audio.duration*1000+500); } };
-    audio.onloadedmetadata=checkDuration;
-    checkDuration();
   }catch(e){ done(false); }
 }
 function playMp3File(file, token, done){ playAudioBlob(file, token, done); }
@@ -1220,10 +1229,15 @@ function playAllSingle(tid, mode, btn){
     setPlayingRowHighlight(tr);
     announceRowNumber(tr, token, ()=>{
     if(token!==playToken){ finishPlay(token); return; }
+    let rowWasPlayed=false;
+    const nextRowCall=()=>{
+      if(rowWasPlayed){ playedInCycle=true; }
+      next();
+    };
+    nextAudioQueue=nextRowCall;
     speakMode(table, tr, tds, mode, token, (played)=>{
       if(token!==playToken){ finishPlay(token); return; }
-      if(played){ playedInCycle=true; playTimer=setTimeout(next, getNextDelayMs()); }
-      else { next(); }
+      rowWasPlayed=played;
     });
     });
   }
@@ -1296,19 +1310,26 @@ function playAllSequence(tid, modes, btn){
   let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
   setUploadMsg('▶ Sequence play berjalan. Tekan Pause / Stop.');
-  function playModeSequence(tr, tds, idx, hadPlayed, done){
+  function playModeSequence(tr, tds, idx, hadPlayed, done, isQueued){
     if(token!==playToken){ finishPlay(token); return; }
     if(idx>=modes.length){ done(hadPlayed); return; }
     const mode=modes[idx];
     if(!canPlayMode(table,tr,tds,mode)){
-      playModeSequence(tr, tds, idx+1, hadPlayed, done);
+      playModeSequence(tr, tds, idx+1, hadPlayed, done, isQueued);
       return;
     }
-    const start=()=>speakMode(table, tr, tds, mode, token, (played)=>{
-      if(token!==playToken){ finishPlay(token); return; }
-      playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
-    });
-    const delay = hadPlayed ? getDelayBeforeVoice(idx) : 0;
+    let modeWasPlayed=false;
+    const nextModeCall=()=>{
+      playModeSequence(tr, tds, idx+1, hadPlayed || modeWasPlayed, done, true);
+    };
+    const start=()=>{
+      nextAudioQueue=nextModeCall;
+      speakMode(table, tr, tds, mode, token, (played)=>{
+        if(token!==playToken){ finishPlay(token); return; }
+        modeWasPlayed=played;
+      });
+    };
+    const delay = (hadPlayed && !isQueued) ? getDelayBeforeVoice(idx) : 0;
     if(delay>0) playTimer=setTimeout(start, delay);
     else start();
   }
@@ -1398,18 +1419,15 @@ function playRowSequence(btn) {
     if (col < 0) { currentModeIndex++; playNextMode(); return; }
     const text = String(tds[col]?.textContent || '').trim();
     if (!text) { currentModeIndex++; playNextMode(); return; }
+    let modeWasPlayed=false;
+    const nextModeQueue=()=>{
+      currentModeIndex++;
+      playNextMode();
+    };
+    nextAudioQueue=nextModeQueue;
     speakMode(table, tr, tds, mode, token, (played) => {
       if (token !== playToken) { return; }
-      let delay = 0;
-      if (played) {
-        if (currentModeIndex === 1) delay = getDelayInputMs('delayVoice2', 1000);
-        else if (currentModeIndex === 2) delay = getDelayInputMs('delayVoice3', 1000);
-        else if (currentModeIndex === 3) delay = getDelayInputMs('delayVoice4', 1000);
-        else delay = 0;
-      }
-      currentModeIndex++;
-      if (delay > 0) { playTimer = setTimeout(playNextMode, delay); }
-      else { playNextMode(); }
+      modeWasPlayed=played;
     });
   }
   playTimer = setTimeout(playNextMode, 80);
