@@ -381,16 +381,18 @@ td:nth-child(2), th:nth-child(2) {
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <strong style="font-size:.76rem;color:var(--red)">＋ Upload</strong>
-      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)">
+      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="display:none">
+      <label class="tts-top-control"><input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""> MP3 ZIP</label>
       <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button">↓ Download</button>
-      <label class="tts-top-control">TTS: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
+      <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
       <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option></select></label>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
-      <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
+      <label class="tts-top-control" style="display:none">MP3 ZIP (old): <input class="mp3-folder-input" id="mp3ZipInputHidden" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="display:none"></label>
       <label class="tts-top-control" style="display:none"><input id="readRowNumberToggle" type="checkbox"> 🔢 Baca No</label>
       <span class="mp3-status" id="mp3FolderMsg">MP3 belum dipilih</span>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
       <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
+      <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
       <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
       <span class="sm" id="uploadMsg">■ Play all dihentikan.</span>
     </div>
@@ -1131,14 +1133,46 @@ function clearPlayingRowHighlight(){
 }
 let hanAccum = [];
 let engAccum = [];
+let allAccum = [];
 
 function isAccumOn(){ const cb=document.getElementById('globalAccumClip'); return !!(cb && cb.checked); }
 function addHanAccum(text){ hanAccum.push(text); return hanAccum; }
 function addEngAccum(text){ engAccum.push(text); return engAccum; }
-function clearAllAccum(){ hanAccum=[]; engAccum=[]; }
+function addAllAccum(text){ allAccum.push(text); return allAccum; }
+function clearAllAccum(){ hanAccum=[]; engAccum=[]; allAccum=[]; }
+function saveAllToClip(btn){
+  const panel = btn?.closest('.panel') || document.querySelector('.panel');
+  if(!panel) return;
+  const table = panel.querySelector('table');
+  if(!table) return;
+  const headers = qa('thead th', table);
+  const skipCols = new Set([1, headers.length-1]);
+  const visibleColIndexes = [];
+  headers.forEach((th,i)=>{
+    if(!skipCols.has(i) && !th.classList.contains('col-hidden'))
+      visibleColIndexes.push(i);
+  });
+  const rows = qa('tbody tr', table).filter(r=>!r.classList.contains('hidden'));
+  const lines = rows.map(tr=>{
+    const tds = qa('td', tr);
+    const vals = visibleColIndexes.map(i=>String(tds[i]?.textContent||'').trim());
+    while(vals.length > 1 && vals[vals.length-1]==='') vals.pop();
+    return vals.join('   ;   ');
+  }).filter(Boolean);
+  if(!lines.length) return;
+  const text = lines.join('\n');
+  const feedback = ()=>{ btn.style.opacity='0.5'; setTimeout(()=>{ btn.style.opacity=''; },400); };
+  if(isAccumOn()){
+    copyToClipboard(addAllAccum(text).join('\n'), null, '');
+    feedback();
+  } else {
+    copyToClipboard(text, null, '');
+    feedback();
+  }
+}
 function copyToClipboard(text, btn, label){
-  const ok=()=>{ btn.textContent='✓'; setTimeout(()=>{ btn.textContent=label; }, 1200); };
-  const fail=()=>{ btn.textContent='✗'; setTimeout(()=>{ btn.textContent=label; }, 1200); };
+  const ok=()=>{ if(btn){ btn.textContent='✓'; setTimeout(()=>{ btn.textContent=label; }, 1200); } };
+  const fail=()=>{ if(btn){ btn.textContent='✗'; setTimeout(()=>{ btn.textContent=label; }, 1200); } };
   if(navigator.clipboard && location.protocol !== 'file:'){
     navigator.clipboard.writeText(text).then(ok).catch(()=>{
       try{ const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); ok(); }catch(e){ fail(); }
@@ -2115,6 +2149,8 @@ function init(){
       speakButton(cellBtn); 
       return; 
     }
+    const saveAllBtn = e.target.closest('#globalSaveAll');
+    if(saveAllBtn){ e.preventDefault(); saveAllToClip(saveAllBtn); return; }
     const clearGlobal = e.target.closest('#globalClearClip');
     if(clearGlobal){ e.preventDefault(); clearAllAccum(); clearGlobal.style.opacity='0.5'; setTimeout(()=>{ clearGlobal.style.opacity=''; }, 400); return; }
     const t=e.target.closest('[data-check-all],[data-uncheck-all],[data-final-play],[data-final-pair],[data-final-dropdown],[data-final-pause],[data-final-stop],[data-clear-accum]');
