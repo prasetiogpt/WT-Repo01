@@ -1364,38 +1364,58 @@ async function playAllSequence(tid, modes, btn){
   const table=tableForTid(tid); if(!table){ setUploadMsg('Tabel tidak ditemukan.'); return false; }
   const cols=modes.map(mode=>getModeColumn(table, mode));
   if(cols.some(c=>c<0)){ setUploadMsg('Kolom tidak ditemukan.'); finishPlay(token); return false; }
-  let rows=rowCycle(table, modes), i=getStartIndex(rows, table);
+  let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('⏳ Menyiapkan audio... (combine files)');
-  const audioBlobs=[];
-  for(const tr of rows){
-    const tds=tr.querySelectorAll('td');
-    for(const mode of modes){
-      if(!canPlayMode(table,tr,tds,mode)) continue;
-      const src=findMp3For(table,tr,mode);
-      if(!src){ warnMissingMp3(table,tr,mode); continue; }
-      try{
-        let blob;
-        if(src.type==='file') blob=src.file;
-        else if(src.type==='zip'){
-          const data=await readZipEntry(src.entry);
-          blob=new Blob([data], {type:'audio/mpeg'});
-        }
-        if(blob) audioBlobs.push(blob);
-      }catch(e){ setUploadMsg('Error read MP3: '+e.message); }
+  setUploadMsg('▶ Preparing play all...');
+
+  const playNextRowCombined = async ()=>{
+    if(token!==playToken){ finishPlay(token); return; }
+    if(i>=rows.length){
+      if(!isLoopOn(table)){ finishPlay(token); setUploadMsg('✓ Play all selesai.'); lastPlayedTr=null; return; }
+      if(!playedInCycle){ finishPlay(token); setUploadMsg('Tidak ada audio MP3 yang bisa diputar pada baris terpilih.'); return; }
+      rows=rowCycle(table, modes); i=0; playedInCycle=false;
     }
-  }
-  if(!audioBlobs.length){ setUploadMsg('Tidak ada MP3 yang bisa diplay.'); finishPlay(token); return false; }
-  setUploadMsg('⏳ Combining '+audioBlobs.length+' audio files...');
-  const combinedBlob=await combineAudioBlobs(audioBlobs, getDelayBeforeVoice(0)||500);
-  if(!combinedBlob){ setUploadMsg('Gagal combine audio files.'); finishPlay(token); return false; }
-  setUploadMsg('▶ Playing combined audio ('+Math.round(audioBlobs.length*10/60)+'s)...');
-  playAudioBlob(combinedBlob, token, (ok)=>{
-    if(ok) setUploadMsg('✓ Play all selesai.');
-    else setUploadMsg('Play all dihentikan.');
-    finishPlay(token);
-  });
-  return false;
+    const tr=rows[i++];
+    const tds=tr.querySelectorAll('td');
+    lastPlayedTr=tr;
+    setPlayingRowHighlight(tr);
+
+    announceRowNumber(tr, token, async ()=>{
+      if(token!==playToken){ finishPlay(token); return; }
+      const audioBlobs=[];
+      for(const mode of modes){
+        if(!canPlayMode(table,tr,tds,mode)) continue;
+        const src=findMp3For(table,tr,mode);
+        if(!src){ warnMissingMp3(table,tr,mode); continue; }
+        try{
+          let blob;
+          if(src.type==='file') blob=src.file;
+          else if(src.type==='zip'){
+            const data=await readZipEntry(src.entry);
+            blob=new Blob([data], {type:'audio/mpeg'});
+          }
+          if(blob) audioBlobs.push(blob);
+        }catch(e){ setUploadMsg('Error read MP3: '+e.message); }
+      }
+
+      if(audioBlobs.length){
+        playedInCycle=true;
+        const combinedBlob=await combineAudioBlobs(audioBlobs, getDelayBeforeVoice(0)||500);
+        if(combinedBlob){
+          playAudioBlob(combinedBlob, token, ()=>{
+            if(token!==playToken) return;
+            playTimer=setTimeout(playNextRowCombined, getNextDelayMs());
+          });
+        }else{
+          playTimer=setTimeout(playNextRowCombined, 0);
+        }
+      }else{
+        playTimer=setTimeout(playNextRowCombined, 0);
+      }
+    });
+  };
+
+  playTimer=setTimeout(playNextRowCombined, 80); return false;
 }
 function playAllDropdown(tid, btn){
   const panel = btn?.closest('.panel') || activePanel() || document;
