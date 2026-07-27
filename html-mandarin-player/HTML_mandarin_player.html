@@ -1364,17 +1364,16 @@ async function playAllSequence(tid, modes, btn){
   const table=tableForTid(tid); if(!table){ setUploadMsg('Tabel tidak ditemukan.'); return false; }
   const cols=modes.map(mode=>getModeColumn(table, mode));
   if(cols.some(c=>c<0)){ setUploadMsg('Kolom tidak ditemukan.'); finishPlay(token); return false; }
-  let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
+  let rows=rowCycle(table, modes), i=getStartIndex(rows, table);
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('⏳ Preparing audio...');
+  setUploadMsg('⏳ Menyiapkan audio...');
 
-  const rowBoundaries=[{row:null, startTime:0}];
-  const allAudioBlobs=[];
-  let totalDuration=0;
+  const rowBoundaries=[];
+  const audioBlobs=[];
 
   for(const tr of rows){
     const tds=tr.querySelectorAll('td');
-    const rowAudioBlobs=[];
+    let rowHasAudio=false;
     for(const mode of modes){
       if(!canPlayMode(table,tr,tds,mode)) continue;
       const src=findMp3For(table,tr,mode);
@@ -1386,47 +1385,44 @@ async function playAllSequence(tid, modes, btn){
           const data=await readZipEntry(src.entry);
           blob=new Blob([data], {type:'audio/mpeg'});
         }
-        if(blob) rowAudioBlobs.push(blob);
+        if(blob){ audioBlobs.push(blob); rowHasAudio=true; }
       }catch(e){ setUploadMsg('Error read MP3: '+e.message); }
     }
-
-    if(rowAudioBlobs.length===modes.filter(m=>canPlayMode(table,tr,tds,m)).length){
-      const combinedRowBlob=await combineAudioBlobs(rowAudioBlobs, getDelayBeforeVoice(0)||500);
-      if(combinedRowBlob){
-        allAudioBlobs.push(combinedRowBlob);
-        const audioCtx=new (window.AudioContext || window.webkitAudioContext)();
-        const buf=await audioCtx.decodeAudioData(await combinedRowBlob.arrayBuffer());
-        rowBoundaries.push({row:tr, startTime:totalDuration});
-        totalDuration+=buf.duration+(getNextDelayMs()/1000);
-        playedInCycle=true;
-      }
-    }
+    if(rowHasAudio) rowBoundaries.push(tr);
   }
 
-  if(!allAudioBlobs.length){ setUploadMsg('Tidak ada MP3 yang bisa diplay.'); finishPlay(token); return false; }
+  if(!audioBlobs.length){ setUploadMsg('Tidak ada MP3 yang bisa diplay.'); finishPlay(token); return false; }
+  setUploadMsg('⏳ Combining audio files...');
+  const combinedBlob=await combineAudioBlobs(audioBlobs, getDelayBeforeVoice(0)||500);
+  if(!combinedBlob){ setUploadMsg('Gagal combine audio.'); finishPlay(token); return false; }
 
-  setUploadMsg('▶ Playing combined audio...');
-  const combinedAllBlob=await combineAudioBlobs(allAudioBlobs, getNextDelayMs()||1000);
-  if(!combinedAllBlob){ setUploadMsg('Gagal combine audio.'); finishPlay(token); return false; }
-
+  setUploadMsg('▶ Play all berjalan...');
   lastPlayedTr=rows[rows.length-1];
 
-  playAudioBlob(combinedAllBlob, token, (ok)=>{
-    if(ok) setUploadMsg('✓ Play all selesai.');
-    else setUploadMsg('Play all dihentikan.');
-    finishPlay(token);
-  });
+  const playHandler=(ok)=>{
+    if(token!==playToken) return;
+    if(ok && isLoopOn(table)){
+      setUploadMsg('↻ Loop...');
+      rows=rowCycle(table, modes);
+      getSharedMp3Audio().currentTime=0;
+      getSharedMp3Audio().play().catch(()=>{});
+    }else{
+      if(ok) setUploadMsg('✓ Play all selesai.');
+      else setUploadMsg('Play all dihentikan.');
+      finishPlay(token);
+    }
+  };
 
-  if(getSharedMp3Audio().ontimeupdate) return false;
+  playAudioBlob(combinedBlob, token, playHandler);
+
   getSharedMp3Audio().ontimeupdate=()=>{
     if(token!==playToken) return;
     const ct=getSharedMp3Audio().currentTime;
-    for(let j=rowBoundaries.length-1; j>=0; j--){
-      if(ct>=rowBoundaries[j].startTime && rowBoundaries[j].row){
-        setPlayingRowHighlight(rowBoundaries[j].row);
-        break;
-      }
-    }
+    const dur=getSharedMp3Audio().duration;
+    if(dur<=0 || rowBoundaries.length===0) return;
+    const progress=Math.min(ct/dur, 0.999);
+    const idx=Math.floor(progress*rowBoundaries.length);
+    if(idx<rowBoundaries.length) setPlayingRowHighlight(rowBoundaries[idx]);
   };
 
   return false;
