@@ -828,18 +828,15 @@ function stopActiveAudio(){
 function playAudioBlob(blob, token, done){
   if(token!==playToken){ done(false); return; }
   try{
-    // v25_11_90: Create NEW audio element (not shared) - like test file
-    // This fixes screen-off playback by avoiding shared element state corruption
-    const audio = new Audio();
-
+    const audio=getSharedMp3Audio();
+    try{ audio.pause(); }catch(e){}
     if(activeAudioUrl){ try{ URL.revokeObjectURL(activeAudioUrl); }catch(e){} activeAudioUrl=null; }
     const url=URL.createObjectURL(blob);
     activeAudio=audio; activeAudioUrl=url;
-
-    audio.onended=()=>{ if(token!==playToken) return; done(true); };
-    audio.onerror=()=>{ if(token!==playToken) return; done(false); };
+    let ended=false;
+    audio.onended=()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(true); };
+    audio.onerror=()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(false); };
     audio.src=url;
-
     try{
       audio.playbackRate = getGlobalTtsSpeed();
       audio.defaultPlaybackRate = getGlobalTtsSpeed();
@@ -847,10 +844,12 @@ function playAudioBlob(blob, token, done){
       if('mozPreservesPitch' in audio) audio.mozPreservesPitch = true;
       if('webkitPreservesPitch' in audio) audio.webkitPreservesPitch = true;
     }catch(e){}
-
     audio.load();
     const p=audio.play();
-    if(p && typeof p.catch==='function') p.catch(()=>{ if(token!==playToken) return; done(false); });
+    if(p && typeof p.catch==='function') p.catch(()=>{ if(token!==playToken) return; if(ended) return; ended=true; done(false); });
+    const checkDuration=()=>{ if(token!==playToken || ended) return; if(audio.duration && audio.duration>0) { setTimeout(()=>{ if(token===playToken && !ended && Math.abs(audio.currentTime - audio.duration) < 0.5) { ended=true; done(true); } }, audio.duration*1000+500); } };
+    audio.onloadedmetadata=checkDuration;
+    checkDuration();
   }catch(e){ done(false); }
 }
 function playMp3File(file, token, done){ playAudioBlob(file, token, done); }
@@ -1224,7 +1223,7 @@ function playAllSingle(tid, mode, btn){
     speakMode(table, tr, tds, mode, token, (played)=>{
       if(token!==playToken){ finishPlay(token); return; }
       if(played){ playedInCycle=true; playTimer=setTimeout(next, getNextDelayMs()); }
-      else { playTimer=setTimeout(next, 0); }
+      else { next(); }
     });
     });
   }
@@ -1297,30 +1296,21 @@ function playAllSequence(tid, modes, btn){
   let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
   setUploadMsg('▶ Sequence play berjalan. Tekan Pause / Stop.');
-  // v25_11_90: Simplified playback (like test file - linear, direct onended chaining)
   function playModeSequence(tr, tds, idx, hadPlayed, done){
     if(token!==playToken){ finishPlay(token); return; }
     if(idx>=modes.length){ done(hadPlayed); return; }
-
     const mode=modes[idx];
     if(!canPlayMode(table,tr,tds,mode)){
-      // Skip this mode, try next
       playModeSequence(tr, tds, idx+1, hadPlayed, done);
       return;
     }
-
-    // KEY: Delay BEFORE play (not after onended)
+    const start=()=>speakMode(table, tr, tds, mode, token, (played)=>{
+      if(token!==playToken){ finishPlay(token); return; }
+      playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
+    });
     const delay = hadPlayed ? getDelayBeforeVoice(idx) : 0;
-    const playNow = () => {
-      speakMode(table, tr, tds, mode, token, (played)=>{
-        if(token!==playToken){ finishPlay(token); return; }
-        // KEY: Chain directly to next mode (NO setTimeout in between)
-        playModeSequence(tr, tds, idx+1, hadPlayed || played, done);
-      });
-    };
-
-    if(delay > 0) playTimer = setTimeout(playNow, delay);
-    else playNow();
+    if(delay>0) playTimer=setTimeout(start, delay);
+    else start();
   }
   function nextRow(){
     if(token!==playToken){ finishPlay(token); return; }
@@ -1332,23 +1322,14 @@ function playAllSequence(tid, modes, btn){
     const tr=rows[i++];
     const tds=tr.querySelectorAll('td');
     setPlayingRowHighlight(tr);
-    // v25_11_90 CRITICAL FIX: Skip TTS for MP3 mode (screen-off safe)
-    const doPlayModeSequence = ()=>{
+    announceRowNumber(tr, token, ()=>{
     if(token!==playToken){ finishPlay(token); return; }
     playModeSequence(tr, tds, 0, false, (rowPlayed)=>{
       if(token!==playToken){ finishPlay(token); return; }
-      // v25_11_90: Avoid setTimeout(fn, 0) throttling screen-off
-      const nextDelay = rowPlayed ? getNextDelayMs() : 0;
-      if(nextDelay > 0) playTimer = setTimeout(nextRow, nextDelay);
-      else nextRow();  // Direct call, no setTimeout
+      if(rowPlayed){ playedInCycle=true; playTimer=setTimeout(nextRow, getNextDelayMs()); }
+      else nextRow();
     });
-    };
-    // If MP3 mode: skip TTS announcement (fails screen-off), go straight to play
-    if(getAudioMode() === 'mp3') {
-      doPlayModeSequence();
-    } else {
-      announceRowNumber(tr, token, doPlayModeSequence);
-    }
+    });
   }
   playTimer=setTimeout(nextRow, 80); return false;
 }
@@ -1414,9 +1395,9 @@ function playRowSequence(btn) {
     }
     const mode = modes[currentModeIndex];
     const col = getModeColumn(table, mode);
-    if (col < 0) { currentModeIndex++; playTimer = setTimeout(playNextMode, 0); return; }
+    if (col < 0) { currentModeIndex++; playNextMode(); return; }
     const text = String(tds[col]?.textContent || '').trim();
-    if (!text) { currentModeIndex++; playTimer = setTimeout(playNextMode, 0); return; }
+    if (!text) { currentModeIndex++; playNextMode(); return; }
     speakMode(table, tr, tds, mode, token, (played) => {
       if (token !== playToken) { return; }
       let delay = 0;
@@ -1428,7 +1409,7 @@ function playRowSequence(btn) {
       }
       currentModeIndex++;
       if (delay > 0) { playTimer = setTimeout(playNextMode, delay); }
-      else { playTimer = setTimeout(playNextMode, 0); }
+      else { playNextMode(); }
     });
   }
   playTimer = setTimeout(playNextMode, 80);
