@@ -475,6 +475,9 @@ let paused = false;
 let audioPollingTimer = null;
 let lastAudioDuration = 0;
 let audioEndedFlag = false;
+let pendingAudioDone = null;
+let pendingAudioToken = null;
+let pendingRowFunction = null;
 let lastAnnouncedRowNumber = null;
 let lastPlayedTr = null;
 let adminUnlocked = false;
@@ -839,10 +842,14 @@ function playAudioBlob(blob, token, done){
     audioEndedFlag=false;
     lastAudioDuration=0;
     if(audioPollingTimer) clearInterval(audioPollingTimer);
+    pendingAudioDone=done;
+    pendingAudioToken=token;
     const finishAudio=()=>{
       if(token!==playToken || audioEndedFlag) return;
       audioEndedFlag=true;
       if(audioPollingTimer){ clearInterval(audioPollingTimer); audioPollingTimer=null; }
+      pendingAudioDone=null;
+      pendingAudioToken=null;
       done(true);
     };
     audio.onended=()=>{ if(token!==playToken) return; finishAudio(); };
@@ -1348,8 +1355,16 @@ function playAllSequence(tid, modes, btn){
     if(token!==playToken){ finishPlay(token); return; }
     playModeSequence(tr, tds, 0, false, (rowPlayed)=>{
       if(token!==playToken){ finishPlay(token); return; }
-      if(rowPlayed){ playedInCycle=true; playTimer=setTimeout(nextRow, getNextDelayMs()); }
-      else playTimer=setTimeout(nextRow, 0);
+      if(rowPlayed){ playedInCycle=true; }
+      const delay = rowPlayed ? getNextDelayMs() : 0;
+      const queueNextRow = ()=>{
+        pendingRowFunction=null;
+        if(delay>0) playTimer=setTimeout(nextRow, delay);
+        else nextRow();
+      };
+      pendingRowFunction=queueNextRow;
+      if(delay>0) playTimer=setTimeout(queueNextRow, delay);
+      else queueNextRow();
     });
     });
   }
@@ -2275,6 +2290,27 @@ document.addEventListener('touchmove', (e) => {
     e.preventDefault();
   }
 }, { passive: false, capture: true });
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) {
+    if (pendingRowFunction && pendingAudioToken === playToken) {
+      const fn = pendingRowFunction;
+      pendingRowFunction = null;
+      fn();
+    } else if (pendingAudioDone && pendingAudioToken === playToken && activeAudio) {
+      if (activeAudio.ended || (activeAudio.duration > 0 && Math.abs(activeAudio.currentTime - activeAudio.duration) < 0.2)) {
+        if (!audioEndedFlag) {
+          audioEndedFlag = true;
+          if (audioPollingTimer) { clearInterval(audioPollingTimer); audioPollingTimer = null; }
+          const done = pendingAudioDone;
+          pendingAudioDone = null;
+          pendingAudioToken = null;
+          done(true);
+        }
+      }
+    }
+  }
+});
 </script>
 
 <!-- ===== PANEL 1 ===== -->
