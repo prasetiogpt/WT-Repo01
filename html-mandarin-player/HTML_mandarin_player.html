@@ -382,18 +382,17 @@ td:nth-child(2), th:nth-child(2) {
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <strong style="font-size:.76rem;color:var(--red)">＋ Upload</strong>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="display:none">
-      <label class="tts-top-control"><input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""> MP3 ZIP</label>
-      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button">↓ Download</button>
+      <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
       <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option></select></label>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
-      <label class="tts-top-control" style="display:none">MP3 ZIP (old): <input class="mp3-folder-input" id="mp3ZipInputHidden" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="display:none"></label>
       <label class="tts-top-control" style="display:none"><input id="readRowNumberToggle" type="checkbox"> 🔢 Baca No</label>
-      <span class="mp3-status" id="mp3FolderMsg">MP3 belum dipilih</span>
+      <span class="mp3-status" id="mp3FolderMsg" style="display:none">MP3 belum dipilih</span>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
       <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
       <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
       <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
+      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button">↓ Download</button>
       <span class="sm" id="uploadMsg">■ Play all dihentikan.</span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
@@ -406,8 +405,8 @@ td:nth-child(2), th:nth-child(2) {
       <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">Indonesia</span></label>
       <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">Mandarin</span></label>
       <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">English</span></label>
-      <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10" checked=""> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
-      <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
+      <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
+      <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
       <span style="font-size:.55rem;color:#aaa;margin-left:2px;">(No,Pilih,▶ tetap)</span>
     </div>
@@ -1156,8 +1155,14 @@ function saveAllToClip(btn){
   const lines = rows.map(tr=>{
     const tds = qa('td', tr);
     const vals = visibleColIndexes.map(i=>String(tds[i]?.textContent||'').trim());
+    // Remove trailing empty values
     while(vals.length > 1 && vals[vals.length-1]==='') vals.pop();
-    return vals.join('   ;   ');
+    // Skip if only No column (index 0) has content, rest empty
+    if(vals.length <= 1) return '';
+    const noVal = vals[0];
+    const rest = vals.slice(1);
+    // Use space between No and content, semicolons between content columns
+    return noVal + ' ' + rest.join('   ;   ');
   }).filter(Boolean);
   if(!lines.length) return;
   const text = lines.join('\n');
@@ -2245,7 +2250,7 @@ if(document.readyState!=='loading') init();
       <label class="final-play-select">V1: <select data-final-voice1="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_010text" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_010text"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_010text" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_010text" type="button">■</button>
       <span class="sm"></span>
     </div>
-  </div><div class="tw"><table id="dyn_010text" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th class="">Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th class="">Mandarin</th><th>English</th><th class="">Ref.</th><th class="">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="0" class="hidden">
+  </div><div class="tw"><table id="dyn_010text" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th class="">Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th class="">Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="0" class="hidden">
     <td class="cn">1.</td>
     <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_0"><label for="dyn_010text_0"></label></td>
     <td class="ck">rén</td>
@@ -2256,8 +2261,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">1</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">1</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="0" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2271,8 +2276,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">2</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">2</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="1" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2286,8 +2291,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">3</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">3</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="2" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2301,8 +2306,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">4</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">4</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="3" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2316,8 +2321,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">5</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">5</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="4" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2331,8 +2336,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">6</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">6</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="5" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2346,8 +2351,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">7</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">7</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="6" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2361,8 +2366,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Setelah orang tua, apa yang disebut bahagia</td>
     <td class="ch">人老了之后什么才叫幸福</td>
     <td class="ce">What is called happiness after people get old</td>
-    <td class="cn">8</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">8</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="7" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2376,8 +2381,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">9</td>
-    <td class="cn">005_</td>
+    <td class="cn col-hidden">9</td>
+    <td class="cn col-hidden">005_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="8" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2391,8 +2396,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">10</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">10</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="9" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2406,8 +2411,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">11</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">11</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="10" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2421,8 +2426,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">12</td>
-    <td class="cn">008_</td>
+    <td class="cn col-hidden">12</td>
+    <td class="cn col-hidden">008_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="11" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2436,8 +2441,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">13</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">13</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="12" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2451,8 +2456,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">14</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">14</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="13" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2466,8 +2471,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Bukan karena punya uang, tapi tubuh masih mampu bertahan</td>
     <td class="ch">不是有钱是身体还能顶住</td>
     <td class="ce">It's not about having money, it's about the body still being able to hold up</td>
-    <td class="cn">15</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">15</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="14" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2481,8 +2486,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">16</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">16</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="15" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2496,8 +2501,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">17</td>
-    <td class="cn">002_</td>
+    <td class="cn col-hidden">17</td>
+    <td class="cn col-hidden">002_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="16" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2511,8 +2516,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Bisa berjalan sendiri</td>
     <td class="ch">能自己走走路</td>
     <td class="ce">Can walk by oneself</td>
-    <td class="cn">18</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">18</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="17" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2526,8 +2531,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">19</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">19</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="18" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2541,8 +2546,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">20</td>
-    <td class="cn">002_</td>
+    <td class="cn col-hidden">20</td>
+    <td class="cn col-hidden">002_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="19" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2556,8 +2561,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Bisa memasak sendiri</td>
     <td class="ch">能自己下下厨</td>
     <td class="ce">Can cook by oneself</td>
-    <td class="cn">21</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">21</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="20" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2571,8 +2576,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">22</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">22</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="21" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2586,8 +2591,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">23</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">23</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="22" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2601,8 +2606,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">24</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">24</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="23" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2616,8 +2621,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">25</td>
-    <td class="cn">005_</td>
+    <td class="cn col-hidden">25</td>
+    <td class="cn col-hidden">005_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="24" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2631,8 +2636,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">26</td>
-    <td class="cn">008_*</td>
+    <td class="cn col-hidden">26</td>
+    <td class="cn col-hidden">008_*</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="25" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2646,8 +2651,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">27</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">27</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="26" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2661,8 +2666,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Paling takut makan minum buang air besar kecil semua harus bergantung pada orang lain</td>
     <td class="ch">最怕吃喝拉撒都得靠别人扶</td>
     <td class="ce">Most afraid that eating, drinking, peeing, pooping all have to rely on others to help</td>
-    <td class="cn">28</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">28</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="27" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2676,8 +2681,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">29</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">29</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="28" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2691,8 +2696,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">30</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">30</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="29" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2706,8 +2711,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">31</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">31</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="30" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2721,8 +2726,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">32</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">32</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="31" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2736,8 +2741,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">33</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">33</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="32" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2751,8 +2756,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">34</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">34</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="33" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2766,8 +2771,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">35</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">35</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="34" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2781,8 +2786,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Setelah orang tua, apa yang disebut bahagia</td>
     <td class="ch">人老了之后什么才叫幸福</td>
     <td class="ce">What is called happiness after people get old</td>
-    <td class="cn">36</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">36</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="35" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2796,8 +2801,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">37</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">37</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="36" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2811,8 +2816,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">38</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">38</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="37" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2826,8 +2831,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">39</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">39</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="38" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2841,8 +2846,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">40</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">40</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="39" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2856,8 +2861,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">41</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">41</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="40" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2871,8 +2876,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">42</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">42</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="41" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2886,8 +2891,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">43</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">43</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="42" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2901,8 +2906,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Anak-anak sekalipun berbakti, tidak bisa menggantikanmu menderita sakit</td>
     <td class="ch">儿女再孝顺 替不了你受病苦</td>
     <td class="ce">No matter how filial the children are, they can't take your illness suffering for you</td>
-    <td class="cn">44</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">44</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="43" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2916,8 +2921,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">45</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">45</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="44" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2931,8 +2936,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">46</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">46</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="45" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2946,8 +2951,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">47</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">47</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="46" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -2961,8 +2966,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">48</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">48</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="47" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -2976,8 +2981,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Kuat tegar seumur hidup, badai kehidupan semua ditahan</td>
     <td class="ch">刚强一辈子风风雨雨都扛住</td>
     <td class="ce">Tough and strong all life, weathered all storms</td>
-    <td class="cn">49</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">49</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="48" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -2991,8 +2996,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">50</td>
-    <td class="cn">009_*</td>
+    <td class="cn col-hidden">50</td>
+    <td class="cn col-hidden">009_*</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="49" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3006,8 +3011,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">51</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">51</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="50" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3021,8 +3026,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">52</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">52</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="51" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3036,8 +3041,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">53</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">53</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="52" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3051,8 +3056,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">54</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">54</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="53" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -3066,8 +3071,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Akhirnya malah martabat pun tidak bisa dipertahankan</td>
     <td class="ch">最后却连尊严都保不住</td>
     <td class="ce">Finally even dignity can't be preserved</td>
-    <td class="cn">55</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">55</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="54" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3081,8 +3086,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">56</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">56</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="55" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3096,8 +3101,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">57</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">57</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="56" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3111,8 +3116,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">58</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">58</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="57" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3126,8 +3131,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">59</td>
-    <td class="cn">009_</td>
+    <td class="cn col-hidden">59</td>
+    <td class="cn col-hidden">009_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="58" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3141,8 +3146,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">60</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">60</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="59" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3156,8 +3161,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">61</td>
-    <td class="cn">008_*</td>
+    <td class="cn col-hidden">61</td>
+    <td class="cn col-hidden">008_*</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="60" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3171,8 +3176,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">62</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">62</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="61" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1" class="">
@@ -3186,8 +3191,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Takut terbaring di tempat tidur menjadi beban keluarga</td>
     <td class="ch">怕瘫在床上成了家里的包袱</td>
     <td class="ce">Afraid of being bedridden and becoming a burden to the family</td>
-    <td class="cn">63</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">63</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="62" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3201,8 +3206,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">64</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">64</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="63" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3216,8 +3221,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">65</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">65</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="64" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3231,8 +3236,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">66</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">66</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="65" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3246,8 +3251,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">67</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">67</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="66" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3261,8 +3266,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">68</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">68</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="67" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3276,8 +3281,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Takut di depan orang tertawa paksa, di belakang malam-malam penuh kepedihan</td>
     <td class="ch">怕人前强笑人后夜夜酸楚</td>
     <td class="ce">Afraid of forcing smiles in front of others, and bitter nights behind</td>
-    <td class="cn">69</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">69</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="68" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3291,8 +3296,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">70</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">70</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="69" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3306,8 +3311,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">71</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">71</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="70" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3321,8 +3326,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">72</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">72</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="71" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3336,8 +3341,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">73</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">73</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="72" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3351,8 +3356,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Hati manusia tidak tahan terhadap pengorbanan bertahun-tahun</td>
     <td class="ch">人心经不起长年累月的付出</td>
     <td class="ce">The human heart can't withstand years and years of giving</td>
-    <td class="cn">74</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">74</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="73" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3366,8 +3371,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">75</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">75</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="74" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3381,8 +3386,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">76</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">76</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="75" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3396,8 +3401,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">77</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">77</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="76" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3411,8 +3416,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">78</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">78</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="77" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3426,8 +3431,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">79</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">79</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="78" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3441,8 +3446,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">80</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">80</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="79" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3456,8 +3461,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Di sisi tempat tidur orang sakit lama, mana masih ada dekat atau jauh</td>
     <td class="ch">久病床前 哪还有什么亲疏</td>
     <td class="ce">By the bedside of the chronically ill, what closeness or distance is there anymore</td>
-    <td class="cn">81</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">81</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="80" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3471,8 +3476,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">82</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">82</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="81" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3486,8 +3491,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">83</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">83</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="82" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3501,8 +3506,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">84</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">84</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="83" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3516,8 +3521,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">85</td>
-    <td class="cn">008_</td>
+    <td class="cn col-hidden">85</td>
+    <td class="cn col-hidden">008_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="84" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3531,8 +3536,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">86</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">86</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="85" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3546,8 +3551,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">87</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">87</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="86" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3561,8 +3566,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Punya tubuh yang sehat barulah kebahagiaan sejati</td>
     <td class="ch">有个好身体才是真的幸福</td>
     <td class="ce">Having a good body is true happiness</td>
-    <td class="cn">88</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">88</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="87" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3576,8 +3581,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">89</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">89</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="88" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3591,8 +3596,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">90</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">90</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="89" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3606,8 +3611,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">91</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">91</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="90" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3621,8 +3626,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">92</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">92</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="91" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3636,8 +3641,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">93</td>
-    <td class="cn">002_</td>
+    <td class="cn col-hidden">93</td>
+    <td class="cn col-hidden">002_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="92" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3651,8 +3656,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">94</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">94</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="93" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3666,8 +3671,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Jangan tunggu sampai tua, hanya bisa menangis sendiri diam-diam</td>
     <td class="ch">别等老了 只能自己偷偷哭</td>
     <td class="ce">Don't wait until you're old, only able to cry secretly by yourself</td>
-    <td class="cn">95</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">95</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="94" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3681,8 +3686,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">96</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">96</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="95" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3696,8 +3701,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">97</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">97</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="96" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3711,8 +3716,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">98</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">98</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="97" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3726,8 +3731,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">99</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">99</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="98" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3741,8 +3746,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">100</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">100</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="99" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3756,8 +3761,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">101</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">101</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="100" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3771,8 +3776,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Menyuapi makan dan mengurus buang air, anak kandung pun juga merasa risi</td>
     <td class="ch">端屎端尿亲骨肉也嫌添堵</td>
     <td class="ce">Even one's own flesh and blood finds it annoying to feed and clean up after</td>
-    <td class="cn">102</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">102</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="101" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3786,8 +3791,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">103</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">103</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="102" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3801,8 +3806,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">104</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">104</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="103" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3816,8 +3821,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">105</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">105</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="104" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3831,8 +3836,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">106</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">106</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="105" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
@@ -3846,8 +3851,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden">Tidak sakit tidak ada bencana barulah kebahagiaan sejati</td>
     <td class="ch">没病没灾 才是真正的幸福</td>
     <td class="ce">No illness, no disaster is true happiness</td>
-    <td class="cn">107</td>
-    <td class="cn">010_*#</td>
+    <td class="cn col-hidden">107</td>
+    <td class="cn col-hidden">010_*#</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="106" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3861,8 +3866,8 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">108</td>
-    <td class="cn">001_</td>
+    <td class="cn col-hidden">108</td>
+    <td class="cn col-hidden">001_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="107" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
@@ -3876,7 +3881,7 @@ if(document.readyState!=='loading') init();
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn">109</td>
-    <td class="cn">010_</td>
+    <td class="cn col-hidden">109</td>
+    <td class="cn col-hidden">010_</td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="108" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr></tbody></table></div><div class="sb">Menampilkan 56 dari 109 · 56 ditandai ✓</div></div></div></body></html>
