@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Anki Deck Builder Master — Native Anki TTS Voice Auto</title>
+<style>
+:root{--red:#c0392b;--blue:#2471a3;--green:#27ae60;--gold:#d4a017;--purple:#8e44ad;--ink:#1f2933;--muted:#6b7280;--paper:#f5f2ed;--card:#fff;--border:#e0d8d0;--head:#3d5a80;--stripe:#fdf9f4;--soft:#f8fafc;--bad:#e74c3c}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,"Helvetica Neue",sans-serif;background:var(--paper);color:var(--ink);font-size:14px;line-height:1.45;padding:14px 10px 38px}h1{font-size:1.15rem;color:var(--red);margin-bottom:4px}h2{font-size:.94rem;color:var(--head);margin:0 0 8px}.sub{color:var(--muted);font-size:.8rem;margin-bottom:10px}.wrap{max-width:1680px;margin:0 auto}.grid{display:grid;grid-template-columns:340px 1fr;gap:12px;align-items:start}.grid>aside{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow-y:auto;padding-right:4px}@media(min-width:1300px){.grid{grid-template-columns:340px 1fr 340px}}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;box-shadow:0 2px 10px rgba(0,0,0,.05);margin-bottom:12px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.field{display:flex;flex-direction:column;gap:4px;margin:7px 0}.field label,.small-label{font-size:.73rem;font-weight:700;color:#555}.field input,.field select,.field textarea,.row input,.row select{font-family:inherit;border:1px solid var(--border);border-radius:8px;padding:7px 8px;background:white;color:var(--ink);font-size:.84rem}.field textarea{min-height:76px;resize:vertical}.btn{border:0;border-radius:18px;padding:7px 12px;font-size:.8rem;font-weight:700;cursor:pointer;color:white;background:var(--blue);box-shadow:0 1px 4px rgba(0,0,0,.12);white-space:nowrap}.btn:hover{opacity:.9;transform:translateY(-1px)}.btn.green{background:var(--green)}.btn.red{background:var(--bad)}.btn.gray{background:#7f8c8d}.btn.gold{background:var(--gold)}.btn.purple{background:var(--purple)}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.msg{font-size:.78rem;color:var(--green);min-height:18px}.danger{color:var(--bad)}.muted{color:var(--muted)}.tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;position:sticky;top:0;background:var(--card);z-index:5;padding:4px 0}.tab{padding:7px 10px;border:1px solid var(--border);background:#ede8e0;border-radius:18px;cursor:pointer;font-size:.78rem;font-weight:700;color:#555}.tab.active{background:var(--head);color:white;border-color:var(--head)}.panel{display:none}.panel.active{display:block}.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}.list{border:1px solid var(--border);border-radius:8px;background:var(--soft);min-height:140px;padding:8px}.list-title{font-size:.78rem;font-weight:700;margin-bottom:6px;color:var(--head)}.item{display:grid;grid-template-columns:1fr auto auto auto;gap:5px;align-items:center;background:white;border:1px solid var(--border);border-radius:8px;padding:7px;margin-bottom:6px}.item strong{font-size:.82rem}.item small{display:block;color:var(--muted);font-size:.68rem}.mini{border:1px solid var(--border);background:white;border-radius:6px;padding:4px 7px;font-size:.72rem;cursor:pointer}.mini:hover{background:#fef3e2}.column-pool{display:flex;flex-wrap:wrap;gap:6px}.chip{background:white;border:1px solid var(--border);border-radius:16px;padding:6px 9px;font-size:.78rem;cursor:pointer}.chip:hover{background:#fef3e2;border-color:var(--gold)}.preview-box{border:1px solid var(--border);border-radius:10px;background:white;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.preview-side{padding:14px;min-height:240px}.preview-side:first-child{border-right:1px solid var(--border)}.preview-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px}.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:8px;max-height:360px;background:white}table{border-collapse:collapse;width:100%;min-width:820px}th{background:var(--head);color:white;text-align:left;padding:8px;font-size:.72rem;white-space:nowrap}td{padding:7px 8px;border-bottom:1px solid #eee;font-size:.78rem;white-space:nowrap;max-width:240px;overflow:hidden;text-overflow:ellipsis}tbody tr:nth-child(even){background:var(--stripe)}.style-grid{display:grid;grid-template-columns:1.15fr .9fr .55fr .68fr .68fr .9fr;gap:6px;align-items:end}.style-row{border:1px solid var(--border);border-radius:8px;padding:8px;margin-bottom:7px;background:var(--soft)}.style-row input,.style-row select{width:100%;padding:6px;border:1px solid var(--border);border-radius:7px;background:white}.preset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:6px}.preset{border:1px solid var(--border);border-radius:9px;background:white;padding:7px 9px;cursor:pointer;min-height:34px;display:flex;align-items:center;justify-content:center;text-align:center}.preset:hover{border-color:var(--gold);background:#fffaf1}.preset.active{outline:2px solid var(--gold);background:#fffaf1}.preset b{color:var(--red);font-size:.82rem}.preset .muted{display:none}.note{font-size:.76rem;color:#555;background:#fffaf1;border:1px solid #f1d7a5;border-radius:8px;padding:8px}.audio-tag{display:inline-block;padding:5px 9px;border:1px solid #bbb;border-radius:16px;background:#f8fafc;color:#333;font-size:.78rem;margin:4px}.stat{display:grid;grid-template-columns:1fr 1fr;gap:6px}.stat div{background:var(--soft);border:1px solid var(--border);border-radius:8px;padding:7px;font-size:.78rem}.toolbar{display:flex;gap:6px;flex-wrap:wrap}.badbox{background:#fff4f2;border:1px solid #f0b7ad;color:#8a2c21;border-radius:8px;padding:8px;font-size:.78rem;white-space:pre-wrap}.okbox{background:#f0fff6;border:1px solid #bfe8ce;color:#1f6b3d;border-radius:8px;padding:8px;font-size:.78rem;white-space:pre-wrap}.pill{display:inline-block;font-size:.68rem;padding:2px 7px;border-radius:12px;border:1px solid var(--border);background:white;color:var(--muted);margin-left:4px}.hrline{border:0;border-top:1px solid #eee;margin:10px 0}.kbd{font-family:monospace;background:#f3f4f6;border:1px solid #ddd;border-radius:4px;padding:1px 4px}details:not([open])>*:not(summary){display:none!important}@media(max-width:980px){.grid{grid-template-columns:1fr}.grid>aside{position:static;max-height:none;overflow-y:visible;padding-right:0}.tabs{position:static}.cols,.preview-box{grid-template-columns:1fr}.preview-side:first-child{border-right:0;border-bottom:1px solid var(--border)}.style-grid{grid-template-columns:1fr 1fr}.table-wrap{max-height:260px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🃏 Universal Anki Deck Builder</h1>
+<div class="sub">Upload TXT/CSV → pilih Front/Back → atur style/audio tag → preview kartu, tentukan struktur deck, dan siapkan data untuk APKG. Master Development — APKG Generator + Native Anki TTS.</div>
+<div class="grid">
+  <aside>
+    <details class="card" open>
+      <summary style="cursor:pointer;color:var(--head);font-size:.94rem;font-weight:700;margin:0 0 8px">1. Data Source</summary>
+      <div class="field"><label>Upload TXT / CSV / TSV</label><input id="fileInput" type="file" multiple accept=".txt,.csv,.tsv,text/plain,text/csv"></div>
+      <div class="field"><label>Cara memuat file</label><select id="loadMode"><option value="replace">Ganti data aktif</option><option value="append">Tambahkan ke data aktif</option></select></div>
+      <label class="row"><input type="checkbox" id="fillSentenceByNo" checked> Isi kalimat kosong berdasarkan kolom No</label>
+      <div id="selectedFiles" class="muted" style="margin-top:8px;font-size:.76rem">Belum ada file dipilih.</div>
+      <div class="row"><button class="btn red" id="btnReset">Reset Data</button></div>
+      <div class="stat"><div><b id="rowCount">0</b><br><span class="muted">baris data</span></div><div><b id="colCount">0</b><br><span class="muted">kolom</span></div></div>
+      <div id="msg" class="msg"></div>
+    </details>
+
+    <div class="card">
+      <h2>Preset Cepat</h2>
+      <div class="preset-grid">
+        <div class="preset" data-preset="mandkw"><b>Mand KW</b></div>
+        <div class="preset" data-preset="sentence"><b>Mandarin</b></div>
+        <div class="preset" data-preset="english"><b>Eng KW</b></div>
+        <div class="preset" data-preset="full"><b>English</b></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Simpan &amp; Generate</h2>
+      <div class="row"><button class="btn purple" id="btnSavePreset">Save Preset</button></div>
+      <div class="row"><button class="btn gray" id="btnExportAllPresets">↓ Export All Presets</button><button class="btn gray" id="btnImportAllPresets">Import All Presets</button><input id="allPresetFile" type="file" accept=".json,application/json" style="display:none"></div>
+      <div class="field"><label>Folder penyimpanan</label><div class="row"><button class="btn gray" id="btnChooseFolder">Pilih Folder</button><span id="folderStatus" class="muted">Belum dipilih; download biasa akan digunakan.</span></div></div>
+      <div class="row"><button class="btn green" id="btnDownloadApkg">↓ Generate APKG</button></div>
+      <div id="apkgStatus" class="note" style="margin-top:9px"><b>APKG Generator:</b> menunggu library dimuat.</div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="card">
+      <div class="tabs">
+        <button class="tab active" data-tab="mapping">Mapping</button>
+        <button class="tab" data-tab="style">Style</button>
+        <button class="tab" data-tab="audio">Audio Tags</button>
+        <button class="tab" data-tab="preview">Preview</button>
+        <button class="tab" data-tab="data">Data</button>
+      </div>
+
+      <section class="panel active" id="panel-mapping">
+        <h2>Mapping Front / Back</h2>
+        <div class="note">Klik kolom untuk menambah ke Front atau Back. Urutan bisa diubah dengan tombol ↑ ↓. Kolom bisa dipakai lebih dari satu kali.</div>
+        <div class="field"><label>Kolom tersedia</label><div class="column-pool" id="columnPool"></div></div>
+        <div class="cols"><div class="list" id="frontList"></div><div class="list" id="backList"></div></div>
+      </section>
+
+      <section class="panel" id="panel-style">
+        <h2>Style per Kolom</h2>
+        <div class="note">Style ini dipakai oleh Preview dan Export TSV dari fungsi renderer yang sama. Jadi ukuran seperti <span class="kbd">Eng KW = 48</span> harus langsung sama di preview dan hasil export.</div>
+        <div id="styleRows"></div>
+      </section>
+
+      <section class="panel" id="panel-audio">
+        <h2>Audio Engine</h2>
+        <div class="note"><b>Audio di APKG:</b> ada 2 cara. Pertama, pilih file MP3/WAV/OGG yang namanya cocok dengan pola filename. Kedua, pakai <b>Native Anki TTS</b> tanpa MP3. Tombol suara di Preview HTML hanya untuk tes suara browser; tombol JavaScript tidak dipakai di Anki.</div>
+        <div class="field"><label>Tambahkan file audio ke APKG</label><input id="audioFileInput" type="file" multiple accept="audio/*,.mp3,.wav,.ogg,.m4a"></div>
+        <div id="audioFileStatus" class="muted" style="margin-bottom:9px">Belum ada file audio dipilih.</div>
+        <div class="row"><button class="btn gray" id="btnClearAudioFiles">Hapus Audio Terpilih</button></div>
+        <div id="audioRows"></div>
+      </section>
+
+      <section class="panel" id="panel-preview">
+        <h2>Preview Card</h2>
+        <div class="toolbar"><button class="btn gray" id="btnPrev">← Prev</button><button class="btn gray" id="btnNext">Next →</button><span class="pill" id="previewCount">0 / 0</span></div>
+        <div class="preview-box" style="margin-top:10px"><div class="preview-side"><div class="preview-label">Front</div><div id="previewFront"></div></div><div class="preview-side"><div class="preview-label">Back</div><div id="previewBack"></div></div></div>
+      </section>
+
+      <section class="panel" id="panel-data">
+        <h2>Data Preview</h2>
+        <div class="table-wrap"><table id="dataTable"><thead></thead><tbody></tbody></table></div>
+      </section>
+    </div>
+  </main>
+
+  <aside>
+    <div class="card">
+      <h2>2. Struktur Deck</h2>
+      <div class="field"><label>Mode Deck</label><select id="deckMode"><option value="master">Induk Deck + Subdeck</option><option value="single">Satu Deck + Tag nama file</option><option value="separate">Deck terpisah per file</option></select></div>
+      <div class="field" id="parentDeckField"><label>Nama Induk Deck</label><input id="parentDeck" value="Mandarin Master"></div>
+      <div class="field" id="singleDeckField" style="display:none"><label>Nama Deck</label><input id="deckName" value="Mandarin"></div>
+      <div class="field" id="subdeckField"><label>Nama Subdeck <span class="muted">(untuk satu file)</span></label><input id="subdeckName" value="Text 001"></div>
+      <label class="row"><input type="checkbox" id="autoDeckName" checked> Ambil nama deck/subdeck dari nama file</label>
+      <div class="note" id="deckStructurePreview">Belum ada file. Nama subdeck akan mengikuti nama file.</div>
+      <div class="field"><label>Jenis Kartu / Note Type</label><select id="noteType"><option value="WT Basic">Basic — Front → Back</option><option value="WT Basic + Reverse">Basic + Reverse — dua arah</option><option value="custom">Custom (belum bisa digunakan)</option></select></div>
+      <div class="field" id="customNoteTypeField" style="display:none"><label>Nama Note Type Custom</label><input id="customNoteType" value="WT Custom"></div>
+      <label class="row"><input type="checkbox" id="onlyChecked" checked> Hanya baris Pilih = X</label>
+      <label class="row"><input type="checkbox" id="skipEmptyCards" checked> Lewati kartu bila Front atau Back kosong</label>
+      <details style="margin-top:9px" open><summary style="cursor:pointer;font-weight:700;color:#555">Card Display</summary>
+        <div style="padding-top:7px">
+          <label class="row"><input type="checkbox" id="showFrontOnBack" checked> Saat jawaban dibuka, tampilkan Front + Back</label>
+          <label class="row"><input type="checkbox" id="useTtsButtons" checked> Preview tombol suara</label>
+          <label class="row"><input type="checkbox" id="nativeAnkiTts" checked> Pakai Native Anki TTS bila MP3 belum ada</label>
+          <label class="row"><input type="checkbox" id="voiceOnFront"> Voice di halaman pertanyaan</label>
+          <label class="row"><input type="checkbox" id="voiceOnBack" checked> Voice di halaman jawaban</label>
+          <label class="row"><input type="checkbox" id="repeatQuestionVoiceOnBack"> Baca ulang pertanyaan saat jawaban dibuka</label>
+          <label class="row"><input type="checkbox" id="showAnswerDivider"> Tampilkan garis antara Front dan Back</label>
+          <label class="row"><input type="checkbox" id="showFieldSeparators"> Tampilkan garis antar field</label>
+          <div class="muted" style="font-size:.74rem">Default garis dimatikan agar tampilan Anki lebih mirip preview dan tidak penuh garis.</div>
+        </div>
+      </details>
+      <details style="margin-top:9px"><summary style="cursor:pointer;font-weight:700;color:#555">Advanced: Export TSV manual</summary><div style="padding-top:7px"><label class="row"><input type="checkbox" id="includeHeader" checked> Tambah header Anki</label><div class="row"><button class="btn green" id="btnExport">↓ Download Anki TSV</button></div><div class="muted" style="font-size:.74rem">TSV hanya untuk pemeriksaan/cadangan. Struktur induk dan subdeck akan diterapkan penuh saat APKG dibuat.</div></div></details>
+    </div>
+
+    <div class="card"><h2>Validation</h2><div id="validationBox" class="okbox">Belum ada data.</div></div>
+  </aside>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/sql-wasm.js"></script>
+<script>
+'use strict';
+
+const APP_VERSION = 19;
+const STORAGE_KEY = 'ankiDeckBuilder.master.presets';
+const PREVIOUS_STORAGE_KEYS = ['ankiDeckBuilder.v10.presets','ankiDeckBuilder.v9.presets','ankiDeckBuilder.v8.presets','ankiDeckBuilder.v7.presets'];
+const LEGACY_KEY_PREFIX = 'ankiDeckBuilderPreset:';
+const $ = sel => document.querySelector(sel);
+const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+const state = {
+  rows: [],
+  rowsRaw: [],
+  columns: [],
+  frontItems: [],
+  backItems: [],
+  styles: {},
+  audio: {},
+  previewIndex: 0,
+  activePreset: 'mandkw',
+  selectedFileNames: [],
+  directoryHandle: null,
+  mediaFiles: new Map(),
+  sqlModule: null,
+  apkgBusy: false
+};
+
+function esc(value){
+  return String(value ?? '')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+function clone(value){ return JSON.parse(JSON.stringify(value || {})); }
+function setMsg(text,bad=false){ const el=$('#msg'); el.textContent=text; el.className=bad?'msg danger':'msg'; }
+function cleanFile(value){
+  return String(value || 'file')
+    .replace(/\.[a-z0-9]+$/i,'')
+    .replace(/[^a-z0-9_-]+/gi,'_')
+    .replace(/^_+|_+$/g,'')
+    .toLowerCase() || 'file';
+}
+function baseName(value){ return String(value || '').replace(/\.[^.]+$/,'').trim() || 'Deck'; }
+function safeDeckName(value){ return String(value || '').replace(/[\r\n\t]/g,' ').trim() || 'Deck'; }
+function selectedNoteType(){ return $('#noteType').value==='custom' ? ($('#customNoteType').value.trim() || 'WT Custom') : $('#noteType').value; }
+function sourceDeckName(row){ return safeDeckName(baseName(row.__Source || state.selectedFileNames[0] || $('#subdeckName').value)); }
+function rowDeckName(row){
+  const mode=$('#deckMode').value;
+  if(mode==='master') return `${safeDeckName($('#parentDeck').value)}::${sourceDeckName(row)}`;
+  if(mode==='separate') return sourceDeckName(row);
+  return safeDeckName($('#deckName').value);
+}
+function outputBaseName(){
+  const mode=$('#deckMode').value;
+  if(mode==='single') return safeDeckName($('#deckName').value);
+  if(state.selectedFileNames.length===1) return safeDeckName(baseName(state.selectedFileNames[0]));
+  return mode==='master' ? safeDeckName($('#parentDeck').value) : 'Anki Decks';
+}
+function selectedFilesSummary(){
+  const names=state.selectedFileNames || [];
+  if(!names.length) return 'Belum ada file dipilih.';
+  if(names.length===1) return names[0];
+  return `${names[0]} — ${names[names.length-1]} (${names.length} file)`;
+}
+function renderDeckSettings(){
+  const mode=$('#deckMode').value;
+  $('#parentDeckField').style.display=mode==='master'?'flex':'none';
+  $('#singleDeckField').style.display=mode==='single'?'flex':'none';
+  $('#subdeckField').style.display=(mode==='master' && state.selectedFileNames.length<=1)?'flex':'none';
+  $('#customNoteTypeField').style.display=$('#noteType').value==='custom'?'flex':'none';
+  const names=state.selectedFileNames.map(baseName);
+  let text='Belum ada file. Nama subdeck akan mengikuti nama file.';
+  if(names.length){
+    if(mode==='master') text='Hasil di Anki: ' + names.map(n=>`${safeDeckName($('#parentDeck').value)}::${safeDeckName(n)}`).join(' | ');
+    else if(mode==='single') text=`Semua kartu masuk ke deck: ${safeDeckName($('#deckName').value)}; tag file: ${names.join(', ')}`;
+    else text='Deck terpisah: ' + names.map(safeDeckName).join(' | ');
+    text += `. Nama file output: ${outputRootName()}.apkg`;
+  }
+  $('#deckStructurePreview').textContent=text;
+}
+function normalizeName(value){ return String(value || '').toLowerCase().replace(/\s+/g,' ').trim(); }
+function cssSafe(value){ return String(value ?? '').replace(/[;{}<>]/g,''); }
+
+function detectDelimiter(line){
+  const candidates=['\t',';',','];
+  let best='\t', bestScore=-1;
+  for(const delimiter of candidates){
+    let quote=false, score=0;
+    for(let i=0;i<line.length;i++){
+      const ch=line[i];
+      if(ch==='"'){
+        if(quote && line[i+1]==='"') i++;
+        else quote=!quote;
+      }else if(ch===delimiter && !quote){
+        score++;
+      }
+    }
+    if(score>bestScore){ bestScore=score; best=delimiter; }
+  }
+  return best;
+}
+function splitSmart(line, delimiter){
+  const out=[]; let cur='', quote=false;
+  for(let i=0;i<line.length;i++){
+    const ch=line[i];
+    if(ch==='"'){
+      if(quote && line[i+1]==='"'){ cur+='"'; i++; }
+      else quote=!quote;
+    }else if(ch===delimiter && !quote){
+      out.push(cur); cur='';
+    }else cur+=ch;
+  }
+  out.push(cur);
+  return out.map(x=>x.trim());
+}
+function uniqueHeaders(headers){
+  const seen={};
+  return headers.map((h,i)=>{
+    const base=String(h || `Kolom ${i+1}`).trim() || `Kolom ${i+1}`;
+    let name=base, n=2;
+    while(seen[name]) name=`${base} ${n++}`;
+    seen[name]=true;
+    return name;
+  });
+}
+function parseText(raw, sourceName=''){
+  const lines=String(raw || '').replace(/^\uFEFF/,'').split(/\r?\n/).filter(line=>line.trim()!=='');
+  if(!lines.length) return {columns:[], rows:[]};
+  let headerIndex=lines.findIndex(line=>/pilih|mandarin|english|pin\s*yin|pinyin|mand\s*kw|eng\s*kw|indo\s*kw/i.test(line));
+  if(headerIndex<0) headerIndex=0;
+  const delimiter=detectDelimiter(lines[headerIndex]);
+  const columns=uniqueHeaders(splitSmart(lines[headerIndex], delimiter));
+  const rows=[];
+  for(const line of lines.slice(headerIndex+1)){
+    const parts=splitSmart(line, delimiter);
+    while(parts.length<columns.length) parts.push('');
+    const obj={};
+    columns.forEach((col,i)=>obj[col]=parts[i] || '');
+    if(sourceName) obj.__Source = sourceName;
+    if(Object.values(obj).some(v=>String(v).trim()!=='')) rows.push(obj);
+  }
+  const finalColumns = sourceName && rows.length ? [...columns,'__Source'] : columns;
+  return {columns:finalColumns, rows};
+}
+function mergeParsedFiles(parsedList){
+  const columns=[];
+  const addCol = col => { if(!columns.includes(col)) columns.push(col); };
+  parsedList.forEach(parsed => parsed.columns.forEach(addCol));
+  const rows=[];
+  parsedList.forEach(parsed => {
+    parsed.rows.forEach(row => {
+      const normalized={};
+      columns.forEach(col => normalized[col]=row[col] || '');
+      rows.push(normalized);
+    });
+  });
+  return {columns, rows};
+}
+function isSentenceColumn(column){
+  const low=normalizeName(column);
+  if(/kw|keyword/.test(low)) return false;
+  return /^mandarin$|^hanzi kalimat$|^pin\s?yin$|^pinyin$|^indonesia$|^arti indonesia$|^english$/.test(low);
+}
+function normalizeGroupNo(value){
+  const trimmed=String(value||'').trim();
+  const m=trimmed.match(/^(\d+)/);
+  return m ? m[1] : trimmed;
+}
+function fillSentenceColumnsByGroup(rows, groupColumn, targetColumns){
+  const groups={};
+  rows.forEach(row=>{
+    const noKey=normalizeGroupNo(row[groupColumn]);
+    if(!noKey) return;
+    const key=sourceNameForRow(row) + '' + noKey;
+    if(!groups[key]) groups[key]={};
+    targetColumns.forEach(col=>{
+      const val=String(row[col]||'').trim();
+      if(val && !groups[key][col]) groups[key][col]=val;
+    });
+  });
+  return rows.map(row=>{
+    const noKey=normalizeGroupNo(row[groupColumn]);
+    if(!noKey) return row;
+    const key=sourceNameForRow(row) + '' + noKey;
+    if(!groups[key]) return row;
+    const filled=Object.assign({}, row);
+    targetColumns.forEach(col=>{
+      if(!String(filled[col]||'').trim() && groups[key][col]) filled[col]=groups[key][col];
+    });
+    return filled;
+  });
+}
+function applySentenceFillIfEnabled(rows, columns){
+  if(!($('#fillSentenceByNo') && $('#fillSentenceByNo').checked)) return clone(rows);
+  const groupCol=columns.find(c=>/^no\.?$|^nomor$/i.test(normalizeName(c)));
+  if(!groupCol) return clone(rows);
+  const targetCols=columns.filter(isSentenceColumn);
+  if(!targetCols.length) return clone(rows);
+  return fillSentenceColumnsByGroup(rows, groupCol, targetCols);
+}
+
+function guessStyle(column){
+  const low=normalizeName(column);
+  const st={font:'Arial', size:24, bold:false, italic:false, align:'center', color:'#1f2933', space:8};
+  if(/mand|hanzi|中文|chinese/.test(low)){
+    st.font='Noto Sans SC, Microsoft YaHei, Arial';
+    st.size=/kw|keyword/.test(low)?42:34;
+    st.bold=true;
+  }else if(/pin\s?yin|pinyin/.test(low)){
+    st.font='IBM Plex Mono, Arial';
+    st.size=/kw|keyword/.test(low)?22:20;
+    st.color='#555555';
+  }else if(/eng\s*kw|english\s*kw|english keyword/.test(low)){
+    st.size=36;
+    st.bold=true;
+  }else if(/english|eng/.test(low)){
+    st.size=23;
+  }else if(/indo|indonesia|arti/.test(low)){
+    st.size=/kw|keyword/.test(low)?28:24;
+  }
+  return st;
+}
+function guessLang(column){
+  const low=normalizeName(column);
+  if(/mand|hanzi|中文|chinese|pin\s?yin|pinyin/.test(low)) return 'zh-CN';
+  if(/english|eng/.test(low)) return 'en-US';
+  if(/indo|indonesia|arti/.test(low)) return 'id-ID';
+  if(/japan|nihon|日本|kana|kanji/.test(low)) return 'ja-JP';
+  if(/korea|한국|hangul/.test(low)) return 'ko-KR';
+  return 'auto';
+}
+function ensureDefaults(){
+  state.columns.forEach(col=>{
+    if(!state.styles[col]) state.styles[col]=guessStyle(col);
+    if(!state.audio[col]) state.audio[col]={enabled:false, lang:guessLang(col), rate:1, filename:'{deck}_{row}_{column}.mp3'};
+  });
+}
+function resolveColumnName(name){
+  if(state.columns.includes(name)) return name;
+  const norm=normalizeName(name);
+  const exact=state.columns.find(c=>normalizeName(c)===norm);
+  if(exact) return exact;
+  const aliases={
+    'eng kw':['Eng KW','English KW','English Keyword'],
+    'english kw':['Eng KW','English KW','English Keyword'],
+    'english keyword':['Eng KW','English KW','English Keyword'],
+    'indo kw':['Indo KW','Arti KW','Arti'],
+    'arti kw':['Indo KW','Arti KW','Arti'],
+    'mand kw':['Mand KW','Hanzi KW','Hanzi Keyword'],
+    'hanzi kw':['Mand KW','Hanzi KW','Hanzi Keyword'],
+    'pin yin kw':['Pin Yin KW','Pinyin KW'],
+    'pinyin kw':['Pin Yin KW','Pinyin KW'],
+    'pin yin':['Pin Yin','Pinyin'],
+    'pinyin':['Pin Yin','Pinyin']
+  };
+  const candidates=aliases[norm] || [name];
+  for(const candidate of candidates){
+    const hit=state.columns.find(c=>normalizeName(c)===normalizeName(candidate));
+    if(hit) return hit;
+  }
+  for(const candidate of candidates){
+    const n=normalizeName(candidate);
+    const hit=state.columns.find(c=>normalizeName(c).includes(n) || n.includes(normalizeName(c)));
+    if(hit) return hit;
+  }
+  return null;
+}
+function pickCols(groups){
+  const out=[];
+  groups.forEach(group=>{
+    const names=Array.isArray(group)?group:[group];
+    for(const name of names){
+      const col=resolveColumnName(name);
+      if(col && !out.includes(col)){ out.push(col); break; }
+    }
+  });
+  return out;
+}
+
+function presetStyleOverrides(name){
+  const overrides={};
+  const set=(aliases, values)=>{
+    const column=pickCols([aliases])[0];
+    if(column) overrides[column]=Object.assign(guessStyle(column), values);
+  };
+
+  if(name==='mandkw'){
+    set(['Mand KW','Hanzi Keyword','Hanzi KW'], {size:48, bold:true, align:'center'});
+    set(['Pin Yin KW','Pinyin KW'], {size:24, bold:false, align:'center'});
+    set(['Indo KW','Arti KW'], {size:30, bold:true, align:'center'});
+    set(['Eng KW','English KW','English Keyword'], {size:28, bold:true, align:'center'});
+  }else if(name==='sentence'){
+    set(['Mandarin','Hanzi Kalimat'], {size:38, bold:true, align:'center'});
+    set(['Pin Yin','Pinyin'], {size:22, bold:false, align:'center'});
+    set(['Indonesia','Arti Indonesia'], {size:26, bold:false, align:'center'});
+    set(['English'], {size:24, bold:false, align:'center'});
+  }else if(name==='english'){
+    set(['Eng KW','English KW','English Keyword'], {size:48, bold:true, align:'center'});
+    set(['Indo KW','Arti KW'], {size:30, bold:true, align:'center'});
+    set(['Mand KW','Hanzi KW','Hanzi Keyword'], {size:38, bold:true, align:'center'});
+    set(['Pin Yin KW','Pinyin KW'], {size:22, bold:false, align:'center'});
+    set(['Mandarin','Hanzi Kalimat'], {size:34, bold:true, align:'center'});
+    set(['Pin Yin','Pinyin'], {size:20, bold:false, align:'center'});
+    set(['Indonesia','Arti Indonesia'], {size:24, bold:false, align:'center'});
+    set(['English'], {size:23, bold:false, align:'center'});
+  }else if(name==='full'){
+    set(['Mand KW','Hanzi KW'], {size:44, bold:true, align:'center'});
+    set(['Pin Yin KW','Pinyin KW'], {size:22, bold:false, align:'center'});
+    set(['Indo KW','Arti KW'], {size:28, bold:true, align:'center'});
+    set(['Mandarin','Hanzi Kalimat'], {size:34, bold:true, align:'center'});
+  }
+  return overrides;
+}
+
+function presetAudioOverrides(name){
+  const out={};
+  const enable=(aliases, lang)=>{
+    const column=pickCols([aliases])[0];
+    if(column) out[column]={enabled:true, lang, rate:1, filename:'{deck}_{row}_{column}.mp3'};
+  };
+  if(name==='english'){
+    enable(['Eng KW','English KW','English Keyword'], 'en-US');
+    enable(['Mand KW','Hanzi KW','Hanzi Keyword'], 'zh-CN');
+    enable(['Mandarin','Hanzi Kalimat'], 'zh-CN');
+  }else if(name==='mandkw'){
+    enable(['Mand KW','Hanzi KW','Hanzi Keyword'], 'zh-CN');
+    enable(['Mandarin','Hanzi Kalimat'], 'zh-CN');
+    enable(['Eng KW','English KW','English Keyword'], 'en-US');
+  }else if(name==='sentence'){
+    enable(['Mandarin','Hanzi Kalimat'], 'zh-CN');
+    enable(['English'], 'en-US');
+  }else if(name==='full'){
+    enable(['Mand KW','Hanzi KW','Hanzi Keyword'], 'zh-CN');
+    enable(['Mandarin','Hanzi Kalimat'], 'zh-CN');
+    enable(['Eng KW','English KW','English Keyword'], 'en-US');
+    enable(['English'], 'en-US');
+  }
+  return out;
+}
+
+function builtinPreset(name){
+  let frontItems=[], backItems=[];
+  if(name==='mandkw'){
+    frontItems=pickCols([['Mand KW','Hanzi Keyword','Hanzi KW'],['Pin Yin KW','Pinyin KW']]);
+    backItems=pickCols([['Indo KW','Arti KW'],['Eng KW','English KW'],['Mandarin','Hanzi Kalimat'],['Pin Yin','Pinyin'],['Indonesia','Arti Indonesia'],['English']]);
+  }else if(name==='sentence'){
+    frontItems=pickCols([['Mandarin','Hanzi Kalimat']]);
+    backItems=pickCols([['Pin Yin','Pinyin'],['Indonesia','Arti Indonesia'],['English'],['Mand KW','Hanzi KW'],['Indo KW','Arti KW']]);
+  }else if(name==='english'){
+    frontItems=pickCols([['Eng KW','English KW','English Keyword'],['Indo KW','Arti KW']]);
+    backItems=pickCols([['Mand KW','Hanzi KW'],['Pin Yin KW','Pinyin KW'],['Mandarin','Hanzi Kalimat'],['Pin Yin','Pinyin'],['Indonesia','Arti Indonesia'],['English']]);
+  }else if(name==='full'){
+    frontItems=pickCols([['Mand KW','Hanzi KW'],['Pin Yin KW','Pinyin KW'],['Indo KW','Arti KW']]);
+    backItems=pickCols([['Mandarin','Hanzi Kalimat'],['Pin Yin','Pinyin'],['Indonesia','Arti Indonesia'],['English'],['Eng KW','English KW']]);
+  }
+  return {version:APP_VERSION, presetName:name, frontItems, backItems, styles:presetStyleOverrides(name), audio:presetAudioOverrides(name)};
+}
+
+function readStore(){
+  try{
+    const current=localStorage.getItem(STORAGE_KEY);
+    if(current) return JSON.parse(current);
+    for(const key of PREVIOUS_STORAGE_KEYS){
+      const previous=localStorage.getItem(key);
+      if(previous){
+        const parsed=JSON.parse(previous);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+        return parsed;
+      }
+    }
+    return {presets:{}, activePreset: null};
+  }catch(e){ 
+    console.error('localStorage readStore error:', e);
+    return {presets:{}, activePreset: null};
+  }
+}
+function writeStore(store){ 
+  try{
+    const validated = {
+      presets: store.presets || {},
+      activePreset: store.activePreset || null
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(validated));
+  }catch(e){
+    console.error('Failed to save preset to localStorage:', e);
+    setMsg(`❌ Preset gagal disimpan: ${e.message}`, true);
+  }
+}
+function currentConfig(){
+  return {
+    version:APP_VERSION,
+    presetName:state.activePreset,
+    frontItems:[...state.frontItems],
+    backItems:[...state.backItems],
+    styles:clone(state.styles),
+    audio:clone(state.audio),
+    deckMode:$('#deckMode').value,
+    parentDeck:$('#parentDeck').value,
+    deckName:$('#deckName').value,
+    subdeckName:$('#subdeckName').value,
+    autoDeckName:$('#autoDeckName').checked,
+    noteType:$('#noteType').value,
+    customNoteType:$('#customNoteType').value,
+    onlyChecked:$('#onlyChecked').checked,
+    skipEmptyCards:$('#skipEmptyCards').checked,
+    includeHeader:$('#includeHeader').checked,
+    showFrontOnBack:$('#showFrontOnBack').checked,
+    nativeAnkiTts:$('#nativeAnkiTts').checked,
+    voiceOnFront:$('#voiceOnFront').checked,
+    voiceOnBack:$('#voiceOnBack').checked,
+    repeatQuestionVoiceOnBack:$('#repeatQuestionVoiceOnBack').checked,
+    showAnswerDivider:$('#showAnswerDivider').checked,
+    showFieldSeparators:$('#showFieldSeparators').checked,
+    fillSentenceByNo:$('#fillSentenceByNo').checked
+  };
+}
+function normalizeConfig(config, presetName){
+  const cfg=clone(config);
+  cfg.frontItems=(cfg.frontItems || []).filter(name => {
+    const resolved=resolveColumnName(name);
+    if(!resolved) console.warn(`⚠️ Column not found: "${name}", keeping original`);
+    return resolved || name;  // Keep original jika tidak ketemu
+  });
+  cfg.backItems=(cfg.backItems || []).filter(name => {
+    const resolved=resolveColumnName(name);
+    if(!resolved) console.warn(`⚠️ Column not found: "${name}", keeping original`);
+    return resolved || name;
+  });
+
+  // NOTE: Removed hardcoded override for 'english' preset
+  // This was preventing saved presets from loading correctly
+  // frontItems from saved preset should be respected, not overridden
+  // If user wants default, they can reset from builtin
+
+  const fixedStyles={};
+  Object.entries(cfg.styles || {}).forEach(([col, st])=>{
+    const resolved=resolveColumnName(col) || col;  // Keep original jika tidak ketemu
+    fixedStyles[resolved]=Object.assign(guessStyle(resolved), clone(st));
+  });
+  cfg.styles=fixedStyles;
+
+  const fixedAudio={};
+  Object.entries(cfg.audio || {}).forEach(([col, value])=>{
+    const resolved=resolveColumnName(col) || col;  // Keep original jika tidak ketemu
+    fixedAudio[resolved]=Object.assign({enabled:false, lang:guessLang(resolved), rate:1, filename:'{deck}_{row}_{column}.mp3'}, clone(value));
+  });
+  cfg.audio=fixedAudio;
+  return cfg;
+}
+function getStoredPreset(name){
+  const store=readStore();
+  if(store.presets && store.presets[name]) return store.presets[name];
+  try{
+    const legacy=JSON.parse(localStorage.getItem(LEGACY_KEY_PREFIX + name) || 'null');
+    return legacy;
+  }catch(e){ return null; }
+}
+function applyConfig(config, presetName=state.activePreset){
+  const cfg=normalizeConfig(config || {}, presetName);
+  state.frontItems=cfg.frontItems || [];
+  state.backItems=cfg.backItems || [];
+  state.styles={};
+  state.audio={};
+  ensureDefaults();
+  Object.entries(cfg.styles || {}).forEach(([col, st])=>{ state.styles[col]=st; });
+  Object.entries(cfg.audio || {}).forEach(([col, a])=>{ state.audio[col]=a; });
+  ensureDefaults();
+  if(!Object.values(state.audio).some(a=>a && a.enabled)){
+    Object.entries(presetAudioOverrides(presetName) || {}).forEach(([col,a])=>{ if(state.columns.includes(col)) state.audio[col]=a; });
+  }
+  if(cfg.deckMode) $('#deckMode').value=cfg.deckMode;
+  if(cfg.parentDeck) $('#parentDeck').value=cfg.parentDeck;
+  if(cfg.deckName) $('#deckName').value=cfg.deckName;
+  if(cfg.subdeckName) $('#subdeckName').value=cfg.subdeckName;
+  if(typeof cfg.autoDeckName==='boolean') $('#autoDeckName').checked=cfg.autoDeckName;
+  if(cfg.noteType) $('#noteType').value=cfg.noteType;
+  if(cfg.customNoteType) $('#customNoteType').value=cfg.customNoteType;
+  if(typeof cfg.onlyChecked==='boolean') $('#onlyChecked').checked=cfg.onlyChecked;
+  if(typeof cfg.skipEmptyCards==='boolean') $('#skipEmptyCards').checked=cfg.skipEmptyCards;
+  if(typeof cfg.includeHeader==='boolean') $('#includeHeader').checked=cfg.includeHeader;
+  if(typeof cfg.showFrontOnBack==='boolean') $('#showFrontOnBack').checked=cfg.showFrontOnBack;
+  if(typeof cfg.showAnswerDivider==='boolean') $('#showAnswerDivider').checked=cfg.showAnswerDivider;
+  if(typeof cfg.showFieldSeparators==='boolean') $('#showFieldSeparators').checked=cfg.showFieldSeparators;
+  if($('#nativeAnkiTts') && typeof cfg.nativeAnkiTts==='boolean') $('#nativeAnkiTts').checked=cfg.nativeAnkiTts;
+  if($('#voiceOnFront') && typeof cfg.voiceOnFront==='boolean') $('#voiceOnFront').checked=cfg.voiceOnFront;
+  if($('#voiceOnBack') && typeof cfg.voiceOnBack==='boolean') $('#voiceOnBack').checked=cfg.voiceOnBack;
+  if($('#repeatQuestionVoiceOnBack') && typeof cfg.repeatQuestionVoiceOnBack==='boolean') $('#repeatQuestionVoiceOnBack').checked=cfg.repeatQuestionVoiceOnBack;
+  if($('#fillSentenceByNo') && typeof cfg.fillSentenceByNo==='boolean') $('#fillSentenceByNo').checked=cfg.fillSentenceByNo;
+  state.previewIndex=0;
+  renderAll();
+}
+function applyPreset(name){
+  if(!state.columns.length) loadSample(false);
+  state.activePreset=name;
+  const saved=getStoredPreset(name);
+  const cfg=saved || builtinPreset(name);
+  applyConfig(cfg, name);
+  setMsg(saved ? `✓ Preset tersimpan diterapkan: ${name}` : `✓ Preset default diterapkan: ${name}`);
+}
+function savePreset(){
+  const store=readStore();
+  store.presets=store.presets || {};
+  store.presets[state.activePreset]=currentConfig();
+  store.activePreset=state.activePreset;
+  writeStore(store);
+  setMsg(`✓ Preset disimpan khusus untuk: ${state.activePreset}. Preset lain tidak ikut berubah.`);
+}
+function exportAllPresets(){
+  const store=readStore();
+  const payload={version:APP_VERSION, type:'all-presets', presets:store.presets || {}};
+  const count=Object.keys(payload.presets).length;
+  if(!count){ setMsg('Belum ada preset tersimpan untuk diexport.', true); return; }
+  const blob=new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`${cleanFile(outputBaseName())}-all-presets.json`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href); a.remove();},500);
+  setMsg(`✓ ${count} preset tersimpan didownload dalam 1 file.`);
+}
+
+
+function safeFilename(value){
+  return String(value || 'Anki Deck').replace(/[\\/:*?"<>|]+/g,' ').replace(/\s+/g,' ').trim() || 'Anki Deck';
+}
+function stripHtml(html){
+  const div=document.createElement('div'); div.innerHTML=String(html||''); return (div.textContent||'').trim();
+}
+function audioFileNameForDeck(pattern, rowIndex, column, deckName){
+  const deck=cleanFile(deckName || 'deck');
+  let name=String(pattern || '{deck}_{row}_{column}.mp3')
+    .replace(/\{deck\}/g, deck)
+    .replace(/\{row\}/g, String(rowIndex+1).padStart(4,'0'))
+    .replace(/\{column\}/g, cleanFile(column));
+  const ext=(name.match(/\.(mp3|wav|ogg|m4a)$/i)||[])[0] || '.mp3';
+  name=cleanFile(name.replace(/\.(mp3|wav|ogg|m4a)$/i,'')) + ext.toLowerCase();
+  return name;
+}
+function fieldSeparatorHtml(){
+  return $('#showFieldSeparators') && $('#showFieldSeparators').checked ? '<hr style="border:0;border-top:1px solid #eeeeee;margin:10px 0;">' : '';
+}
+function answerDividerHtml(){
+  return $('#showAnswerDivider') && $('#showAnswerDivider').checked ? '<hr class="answer-divider">' : '';
+}
+function ttsButtonHtml(text, lang='auto', rate=1){
+  if(!($('#useTtsButtons') && $('#useTtsButtons').checked)) return '';
+  const cleanText=String(text||'').trim();
+  if(!cleanText) return '';
+  const safeLang=String(lang||'auto').replace(/[^a-zA-Z0-9-]/g,'') || 'auto';
+  const safeRate=Math.max(0.5, Math.min(2, parseFloat(rate)||1));
+  return `<button type="button" class="tts-btn" data-text="${esc(cleanText)}" data-lang="${esc(safeLang)}" data-rate="${safeRate}" onclick="try{var b=this;var u=new SpeechSynthesisUtterance(b.getAttribute('data-text')||'');var l=b.getAttribute('data-lang')||'';if(l&&l!=='auto')u.lang=l;u.rate=parseFloat(b.getAttribute('data-rate')||'1')||1;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}">▶</button>`;
+}
+function mediaSoundTag(filename){
+  return `<span class="sound-tag">[sound:${esc(filename)}]</span>`;
+}
+function hasMediaFile(filename){
+  return !!(state.mediaFiles && (state.mediaFiles.get(filename) || state.mediaFiles.get(String(filename||'').toLowerCase())));
+}
+function inlineCombineColumns(itemList,row){
+  return itemList.filter(c=>state.columns.includes(c) && (c==='__Source' || /^no\.?$|^nomor$/i.test(normalizeName(c))) && String(row[c]||'').trim());
+}
+function sideParts(itemList,row,rowIndex,deckName,options={}){
+  const blocks=[], audioBlocks=[];
+  const combineTargets=inlineCombineColumns(itemList,row);
+  const shouldCombine=combineTargets.length>1;
+  let combinedEmitted=false;
+  itemList.forEach(column=>{
+    if(!state.columns.includes(column)) return;
+    const text=row[column] || '';
+    const isCombineTarget=shouldCombine && combineTargets.includes(column);
+    if(String(text).trim()){
+      if(isCombineTarget){
+        if(!combinedEmitted){
+          const parts=combineTargets.map(c=>`<span class="anki-field-inline" data-column="${esc(c)}" style="${styleAttr(c)}">${esc(String(row[c]||'').trim())}</span>`);
+          blocks.push(`<div class="anki-field" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">${parts.join('')}</div>`);
+          combinedEmitted=true;
+        }
+      }else{
+        blocks.push(`<div class="anki-field" data-column="${esc(column)}" style="${styleAttr(column)}">${esc(text).replace(/\r?\n/g,'<br>')}</div>`);
+      }
+    }
+    const a=state.audio[column];
+    if(a && a.enabled){
+      const filename=audioFileNameForDeck(a.filename,rowIndex,column,deckName);
+      if(hasMediaFile(filename)) audioBlocks.push(mediaSoundTag(filename));
+      else if(options.allowTtsFallback) audioBlocks.push(ttsButtonHtml(text, a.lang, a.rate));
+    }
+  });
+  return {display:blocks.join(fieldSeparatorHtml()),audio:audioBlocks.filter(Boolean).join(' ')};
+}
+function langForAnkiTts(lang){
+  const raw=String(lang || 'auto');
+  if(raw==='auto') return '';
+  return raw.replace('-', '_');
+}
+function ankiFieldBase(column){
+  const n=normalizeName(column);
+  const fixed={
+    'mand kw':'MandKW',
+    'hanzi kw':'MandKW',
+    'hanzi keyword':'MandKW',
+    'pin yin kw':'PinyinKW',
+    'pinyin kw':'PinyinKW',
+    'eng kw':'EngKW',
+    'english kw':'EngKW',
+    'english keyword':'EngKW',
+    'indo kw':'IndoKW',
+    'arti kw':'IndoKW',
+    'mandarin':'Mandarin',
+    'hanzi kalimat':'Mandarin',
+    'pin yin':'Pinyin',
+    'pinyin':'Pinyin',
+    'english':'English',
+    'indonesia':'Indonesia',
+    'arti indonesia':'Indonesia'
+  };
+  if(fixed[n]) return fixed[n];
+  let base=String(column||'Field').replace(/[^A-Za-z0-9_]+/g,'').replace(/^[0-9]+/,'');
+  return base || 'Field';
+}
+function makeAnkiFieldMap(columns){
+  const used={}, map={};
+  columns.filter(c=>c!=='__Source').forEach(column=>{
+    const base=ankiFieldBase(column);
+    let name=base, idx=2;
+    while(used[name]) name=base + idx++;
+    used[name]=true;
+    map[column]=name;
+  });
+  return map;
+}
+function nativeTtsTemplateForColumns(columns, fieldMap){
+  if(!($('#nativeAnkiTts') && $('#nativeAnkiTts').checked)) return '';
+  return columns.map(column=>{
+    const a=state.audio[column] || {};
+    const lang=langForAnkiTts(a.lang || guessLang(column));
+    const field=fieldMap[column];
+    if(!lang || !field) return '';
+    return `{{tts ${lang}:${field}}}`;
+  }).filter(Boolean).join(' ');
+}
+function autoNativeTtsColumn(column){
+  const low=normalizeName(column);
+  /* Ikuti APKG 007 yang berhasil: TTS otomatis untuk kata/kalimat utama,
+     bukan untuk pinyin atau arti Indonesia kecuali user centang manual di Audio. */
+  if(/pin\s?yin|pinyin/.test(low)) return false;
+  if(/indo|indonesia|arti/.test(low)) return false;
+  return /eng\s*kw|english\s*kw|english keyword|^english$|mand\s*kw|hanzi\s*kw|hanzi keyword|^mandarin$|hanzi kalimat|中文|chinese/.test(low);
+}
+function columnWillHaveVoice(column){
+  const a=state.audio[column];
+  const manuallyEnabled=!!(a && a.enabled);
+  const userDisabled=!!(a && a.userSet && !a.enabled);
+  const nativeAuto=!!(!userDisabled && $('#nativeAnkiTts') && $('#nativeAnkiTts').checked && autoNativeTtsColumn(column));
+  return {willHaveVoice: manuallyEnabled || nativeAuto, viaAutoForce: !manuallyEnabled && nativeAuto};
+}
+function enabledAudioColumns(itemList){
+  const out=[];
+  itemList.forEach(column=>{
+    if(!state.columns.includes(column) || out.includes(column)) return;
+    if(columnWillHaveVoice(column).willHaveVoice) out.push(column);
+  });
+  return out.slice(0,8);
+}
+function nativeTtsTemplate(sidePrefix, columns){
+  if(!($('#nativeAnkiTts') && $('#nativeAnkiTts').checked)) return '';
+  return columns.map((column, idx)=>{
+    const a=state.audio[column] || {};
+    const lang=langForAnkiTts(a.lang || guessLang(column));
+    if(!lang) return '';
+    const field=`${sidePrefix}TTS${idx+1}`;
+    const speed=Number(a.rate || 1);
+    const speedPart=(speed && speed!==1) ? ` speed=${Math.max(0.5,Math.min(2,speed)).toFixed(2).replace(/\.00$/,'')}` : '';
+    return `{{tts ${lang}${speedPart}:${field}}}`;
+  }).filter(Boolean).join(' ');
+}
+function mediaAudioAndTtsTexts(itemList,row,rowIndex,deckName,ttsColumns){
+  const media=[];
+  const ttsTexts=ttsColumns.map(()=> '');
+  itemList.forEach(column=>{
+    const a=state.audio[column];
+    const text=String(row[column] || '').trim();
+    if(!(a && a.enabled && text)) return;
+    const filename=audioFileNameForDeck(a.filename,rowIndex,column,deckName);
+    if(hasMediaFile(filename)) media.push(mediaSoundTag(filename));
+    else if($('#nativeAnkiTts') && $('#nativeAnkiTts').checked){
+      const slot=ttsColumns.indexOf(column);
+      if(slot>=0) ttsTexts[slot]=text;
+    }
+  });
+  return {media:media.join(' '), ttsTexts};
+}
+async function initApkgLibraries(){
+  const box=$('#apkgStatus');
+  try{
+    if(typeof JSZip==='undefined' || typeof initSqlJs==='undefined') throw new Error('Library JSZip/sql.js belum tersedia. Pastikan internet aktif saat membuka HTML.');
+    state.sqlModule=await initSqlJs({locateFile:file=>`https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/${file}`});
+    box.className='okbox';
+    box.textContent='✓ APKG Generator siap. Audio APKG memakai MP3 yang dipilih atau Native Anki TTS; tidak memakai tombol JavaScript.';
+  }catch(err){
+    box.className='badbox'; box.textContent='APKG belum siap: '+err.message;
+  }
+}
+function voiceForLang(lang){
+  const voices=speechSynthesis.getVoices();
+  return voices.find(v=>v.lang===lang) || voices.find(v=>v.lang && v.lang.toLowerCase().startsWith(String(lang||'').slice(0,2).toLowerCase())) || voices[0];
+}
+function previewTts(column){
+  const entries=previewEntries(); const row=(entries[state.previewIndex]||{}).row||{}; const text=String(row[column]||'').trim();
+  if(!text){setMsg('Kolom ini kosong pada kartu preview.',true);return;}
+  const a=state.audio[column]||{};
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang=a.lang||guessLang(column); u.rate=Number(a.rate||1); const v=voiceForLang(u.lang); if(v)u.voice=v; speechSynthesis.speak(u);
+}
+function renderAudioFileStatus(){
+  const names=[...state.mediaFiles.keys()];
+  $('#audioFileStatus').textContent=names.length ? `${names.length} file audio: ${names.slice(0,5).join(', ')}${names.length>5?' ...':''}` : 'Belum ada file audio dipilih.';
+}
+function sourceNameForRow(row){
+  return String(row.__Source || (state.selectedFileNames[0] ? baseName(state.selectedFileNames[0]) : $('#subdeckName').value || 'Deck')).trim();
+}
+function fullDeckNameForRow(row){
+  const mode=$('#deckMode').value;
+  const source=sourceNameForRow(row);
+  if(mode==='single') return ($('#deckName').value.trim() || source || 'Anki Deck');
+  if(mode==='separate') return source || 'Anki Deck';
+  const parent=$('#parentDeck').value.trim() || 'Master Deck';
+  const sub=($('#autoDeckName').checked ? source : ($('#subdeckName').value.trim()||source)) || 'Subdeck';
+  return `${parent}::${sub}`;
+}
+function deckNumberToken(name){
+  const base=baseName(name).trim();
+  const match=base.match(/^\S+/);
+  return match ? match[0] : (base || 'Deck');
+}
+function outputRootName(){
+  const mode=$('#deckMode').value;
+  if(mode==='single') return $('#deckName').value.trim() || sourceNameForRow(state.rows[0]||{});
+  if(mode==='master'){
+    const parent=$('#parentDeck').value.trim() || 'Master Deck';
+    const names=state.selectedFileNames || [];
+    if(names.length>1){
+      const firstToken=deckNumberToken(names[0]), lastToken=deckNumberToken(names[names.length-1]);
+      const range=firstToken===lastToken ? firstToken : `${firstToken}-${lastToken}`;
+      return `${parent} (${range})`;
+    }
+    const full=fullDeckNameForRow(state.rows[0]||{});
+    const sub=full.includes('::') ? full.split('::').slice(1).join('::') : full;
+    return `${parent} (${deckNumberToken(sub)})`;
+  }
+  return sourceNameForRow(state.rows[0]||{});
+}
+function uniqueIdFactory(){let i=0; const base=Date.now()*1000+Math.floor(Math.random()*500); return ()=>base+(i++);}
+async function sha1Checksum(text){
+  /* Deterministic 32-bit checksum; works from local file:// without Web Crypto permissions. */
+  let h=2166136261;
+  const value=String(text||'');
+  for(let i=0;i<value.length;i++){h^=value.charCodeAt(i); h=Math.imul(h,16777619);}
+  return h>>>0;
+}
+function makeGuid(){
+  if(globalThis.crypto && typeof globalThis.crypto.randomUUID==='function') return globalThis.crypto.randomUUID().replace(/-/g,'').slice(0,10);
+  return (Date.now().toString(36)+Math.random().toString(36).slice(2)).slice(0,10);
+}
+function modelCss(){return `.card{font-family:Arial,sans-serif;font-size:20px;text-align:center;color:#1f2933;background:#ffffff;padding:16px}.answer-divider{border:0;border-top:1px solid #dddddd;margin:18px 0}.audio{margin-top:10px}.tts-btn{width:56px;height:56px;border-radius:50%;border:1px solid #8aa0b6;background:#eef6ff;color:#1f2933;font-size:26px;line-height:1;margin:10px auto;display:inline-flex;align-items:center;justify-content:center}`;}
+function voiceOnQuestion(){ return !!($('#voiceOnFront') && $('#voiceOnFront').checked); }
+function voiceOnAnswer(){ return !$('#voiceOnBack') || $('#voiceOnBack').checked; }
+function repeatQuestionVoiceOnBack(){ return !!($('#repeatQuestionVoiceOnBack') && $('#repeatQuestionVoiceOnBack').checked); }
+function createSchema(db){
+  db.exec(`
+CREATE TABLE col (id integer primary key, crt integer not null, mod integer not null, scm integer not null, ver integer not null, dty integer not null, usn integer not null, ls integer not null, conf text not null, models text not null, decks text not null, dconf text not null, tags text not null);
+CREATE TABLE notes (id integer primary key, guid text not null, mid integer not null, mod integer not null, usn integer not null, tags text not null, flds text not null, sfld integer not null, csum integer not null, flags integer not null, data text not null);
+CREATE TABLE cards (id integer primary key, nid integer not null, did integer not null, ord integer not null, mod integer not null, usn integer not null, type integer not null, queue integer not null, due integer not null, ivl integer not null, factor integer not null, reps integer not null, lapses integer not null, left integer not null, odue integer not null, odid integer not null, flags integer not null, data text not null);
+CREATE TABLE revlog (id integer primary key, cid integer not null, usn integer not null, ease integer not null, ivl integer not null, lastIvl integer not null, factor integer not null, time integer not null, type integer not null);
+CREATE TABLE graves (usn integer not null, oid integer not null, type integer not null);
+CREATE INDEX ix_notes_usn ON notes (usn); CREATE INDEX ix_cards_usn ON cards (usn); CREATE INDEX ix_cards_nid ON cards (nid); CREATE INDEX ix_cards_sched ON cards (did, queue, due); CREATE INDEX ix_revlog_usn ON revlog (usn); CREATE INDEX ix_revlog_cid ON revlog (cid);
+`);
+}
+function makeModel(modelId,modelName,mod,deckId,reverse,frontTtsColumns=[],backTtsColumns=[],fieldMap={}){
+  const dataColumns=state.columns.filter(c=>c!=='__Source');
+  const baseFields=['Front','Back','FrontAudio','BackAudio'];
+  const sourceFields=dataColumns.map(c=>fieldMap[c]).filter(Boolean);
+  const flds=[...baseFields,...sourceFields].map((name,ord)=>({name,ord,sticky:false,rtl:false,font:'Arial',size:20,media:[]}));
+  const template=(name,ord,qfmt,afmt)=>({name,ord,qfmt,afmt,did:null,bqfmt:'',bafmt:'',bfont:'',bsize:0});
+  const showFrontOnBack=$('#showFrontOnBack') ? $('#showFrontOnBack').checked : true;
+  const divider=answerDividerHtml();
+  const frontTts=nativeTtsTemplateForColumns(frontTtsColumns, fieldMap);
+  const backTts=nativeTtsTemplateForColumns(backTtsColumns, fieldMap);
+  const frontAudioBlock=`<div class="audio">{{FrontAudio}} ${frontTts}</div>`;
+  const backAudioBlock=`<div class="audio">{{BackAudio}} ${backTts}</div>`;
+  const questionFrontAudioBlock=voiceOnQuestion() ? frontAudioBlock : '';
+  const answerBackAudioBlock=voiceOnAnswer() ? backAudioBlock : '';
+  const reverseQuestionBackAudioBlock=voiceOnQuestion() ? backAudioBlock : '';
+  const reverseAnswerFrontAudioBlock=voiceOnAnswer() ? frontAudioBlock : '';
+  const repeatQuestionAudioOnAnswer=showFrontOnBack && repeatQuestionVoiceOnBack();
+
+  /* Voice sekarang independen per halaman:
+     - Voice di halaman pertanyaan mengikuti checkbox voiceOnFront.
+     - Voice di halaman jawaban (untuk field jawaban) mengikuti checkbox voiceOnBack.
+     - Voice PERTANYAAN yang diulang lagi di halaman jawaban mengikuti checkbox
+       repeatQuestionVoiceOnBack sendiri (tidak lagi otomatis ikut voiceOnFront lewat {{FrontSide}}),
+       dan hanya aktif kalau showFrontOnBack juga aktif.
+     Native Anki TTS tetap dipakai, tanpa JavaScript di APKG. */
+  const qfmt='{{Front}}' + questionFrontAudioBlock;
+  const afmt=showFrontOnBack
+    ? '{{Front}}' + (repeatQuestionAudioOnAnswer ? frontAudioBlock : '') + divider + '{{Back}}' + answerBackAudioBlock
+    : '{{Back}}' + answerBackAudioBlock;
+  const tmpls=[template('Card 1',0,qfmt,afmt)];
+  if(reverse){
+    const rqfmt='{{Back}}' + reverseQuestionBackAudioBlock;
+    const rafmt=showFrontOnBack
+      ? '{{Back}}' + (repeatQuestionAudioOnAnswer ? backAudioBlock : '') + divider + '{{Front}}' + reverseAnswerFrontAudioBlock
+      : '{{Front}}' + reverseAnswerFrontAudioBlock;
+    tmpls.push(template('Card 2 Reverse',1,rqfmt,rafmt));
+  }
+  return {id:String(modelId),name:modelName,type:0,mod,usn:-1,sortf:0,did:deckId,tmpls,flds,css:modelCss(),latexPre:'',latexPost:'',latexsvg:false,req:reverse?[[0,'all',[0]],[1,'all',[1]]]:[[0,'all',[0]]],vers:[],tags:[]};
+}
+
+function defaultDconf(){return {'1':{id:1,name:'Default',mod:0,usn:0,maxTaken:60,autoplay:true,timer:0,replayq:true,new:{bury:true,delays:[1,10],initialFactor:2500,ints:[1,4,7],order:1,perDay:20,separate:true},rev:{bury:true,ease4:1.3,fuzz:0.05,ivlFct:1,maxIvl:36500,minSpace:1,perDay:200},lapse:{delays:[10],leechAction:0,leechFails:8,minInt:1,mult:0}}};}
+function makeDeck(id,name,mod,usn=-1){
+  return {id,name,mod,usn,desc:'',dyn:0,collapsed:false,conf:1,extendNew:id===1?10:0,extendRev:50,lrnToday:[0,0],newToday:[0,0],revToday:[0,0],timeToday:[0,0]};
+}
+async function buildApkg(rows,packageName,deckNameOverride=null){
+  if(!state.sqlModule) throw new Error('Library APKG belum siap. Pastikan internet aktif lalu buka ulang HTML.');
+  const SQL=state.sqlModule, db=new SQL.Database(); createSchema(db);
+  const nextId=uniqueIdFactory(), nowSec=Math.floor(Date.now()/1000), modelId=nextId();
+  const reverse=$('#noteType').value==='WT Basic + Reverse';
+  const baseModelName=$('#noteType').value==='custom' ? ($('#customNoteType').value.trim()||'WT Custom') : $('#noteType').value;
+  const modelName=baseModelName + ' - Native Anki TTS v19';
+  const frontTtsColumns=enabledAudioColumns(state.frontItems);
+  const backTtsColumns=enabledAudioColumns(state.backItems);
+  const fieldMap=makeAnkiFieldMap(state.columns);
+  const deckNames=new Set();
+  rows.forEach(r=>deckNames.add(deckNameOverride||fullDeckNameForRow(r)));
+  const expanded=new Set(['Default']);
+  deckNames.forEach(name=>{const parts=name.split('::'); for(let i=1;i<=parts.length;i++) expanded.add(parts.slice(0,i).join('::'));});
+  const decks={}, deckIds={}; decks['1']=makeDeck(1,'Default',nowSec,0); deckIds.Default=1;
+  [...expanded].filter(n=>n!=='Default').forEach(name=>{const id=nextId(); deckIds[name]=id; decks[String(id)]=makeDeck(id,name,nowSec,-1);});
+  const firstDeckId=deckIds[[...deckNames][0]]||1;
+  const model=makeModel(modelId,modelName,nowSec,firstDeckId,reverse,frontTtsColumns,backTtsColumns,fieldMap); const models={[String(modelId)]:model};
+  const conf={nextPos:1,estTimes:true,activeDecks:[firstDeckId],sortType:'noteFld',timeLim:0,sortBackwards:false,addToCur:true,curDeck:firstDeckId,newBury:true,newSpread:0,dueCounts:true,curModel:String(modelId),collapseTime:1200};
+  db.run('INSERT INTO col VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)',[1,nowSec,nowSec,Date.now(),11,0,-1,0,JSON.stringify(conf),JSON.stringify(models),JSON.stringify(decks),JSON.stringify(defaultDconf()),JSON.stringify({})]);
+  let due=1, cardCount=0; const usedMedia=new Set();
+  for(let i=0;i<rows.length;i++){
+    const row=rows[i], deckName=deckNameOverride||fullDeckNameForRow(row), did=deckIds[deckName]||firstDeckId;
+    const front=sideParts(state.frontItems,row,i,deckName,{allowTtsFallback:false}), back=sideParts(state.backItems,row,i,deckName,{allowTtsFallback:false});
+    if($('#skipEmptyCards').checked && (!front.display || !back.display)) continue;
+    for(const itemList of [state.frontItems,state.backItems]) for(const column of itemList){const a=state.audio[column]; if(a&&a.enabled&&String(row[column]||'').trim()){const fn=audioFileNameForDeck(a.filename,i,column,deckName); if(hasMediaFile(fn)) usedMedia.add(fn);}}
+    const frontAudioData=mediaAudioAndTtsTexts(state.frontItems,row,i,deckName,frontTtsColumns);
+    const backAudioData=mediaAudioAndTtsTexts(state.backItems,row,i,deckName,backTtsColumns);
+    const noteId=nextId(), guid=makeGuid(), fields=[front.display,back.display,frontAudioData.media,backAudioData.media];
+    state.columns.filter(c=>c!=='__Source').forEach(column=>fields.push(String(row[column] || '')));
+    const sfld=stripHtml(front.display), csum=await sha1Checksum(sfld), tags=$('#deckMode').value==='single' ? ` ${sourceNameForRow(row).replace(/\s+/g,'_')} ` : ' ';
+    db.run('INSERT INTO notes VALUES (?,?,?,?,?,?,?,?,?,?,?)',[noteId,guid,modelId,nowSec,-1,tags,fields.join('\x1f'),sfld,csum,0,'']);
+    const ords=reverse?[0,1]:[0];
+    for(const ord of ords){const cardId=nextId(); db.run('INSERT INTO cards VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[cardId,noteId,did,ord,nowSec,-1,0,0,due++,0,0,0,0,0,0,0,0,'']); cardCount++;}
+  }
+  if(!cardCount){db.close(); throw new Error('Tidak ada kartu valid untuk dibuat.');}
+  const collection=db.export(); db.close();
+  const zip=new JSZip(); zip.file('collection.anki2',collection);
+  const mediaMap={}; let mediaIndex=0, missing=[];
+  for(const filename of usedMedia){
+    const file=state.mediaFiles.get(filename) || state.mediaFiles.get(filename.toLowerCase());
+    if(file){mediaMap[String(mediaIndex)]=filename; zip.file(String(mediaIndex),await file.arrayBuffer()); mediaIndex++;} else missing.push(filename);
+  }
+  zip.file('media',JSON.stringify(mediaMap));
+  const blob=await zip.generateAsync({type:'blob',compression:'DEFLATE',compressionOptions:{level:6}});
+  return {blob,filename:safeFilename(packageName)+'.apkg',cards:cardCount,media:mediaIndex,missing};
+}
+async function saveBlob(blob,filename){
+  if(state.directoryHandle){const handle=await state.directoryHandle.getFileHandle(filename,{create:true}); const writable=await handle.createWritable(); await writable.write(blob); await writable.close(); return;}
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);
+}
+async function downloadApkg(){
+  if(state.apkgBusy)return; validate(); const rows=filteredRows(); if(!rows.length){setMsg('Tidak ada baris yang dapat dibuat menjadi APKG.',true);return;}
+  if(!state.frontItems.length||!state.backItems.length){setMsg('Front dan Back harus diisi.',true);return;}
+  state.apkgBusy=true; $('#btnDownloadApkg').disabled=true; setMsg('Membuat APKG...');
+  try{
+    const mode=$('#deckMode').value;
+    if(mode==='separate'){
+      const groups=new Map(); rows.forEach(r=>{const key=sourceNameForRow(r); if(!groups.has(key))groups.set(key,[]); groups.get(key).push(r);});
+      const results=[]; for(const [name,group] of groups) results.push(await buildApkg(group,name,name));
+      if(state.directoryHandle){for(const r of results)await saveBlob(r.blob,r.filename);}
+      else if(results.length===1) await saveBlob(results[0].blob,results[0].filename);
+      else{const bundle=new JSZip(); results.forEach(r=>bundle.file(r.filename,r.blob)); await saveBlob(await bundle.generateAsync({type:'blob'}),safeFilename('Separate Decks')+'.zip');}
+      const cards=results.reduce((n,r)=>n+r.cards,0), media=results.reduce((n,r)=>n+r.media,0), missing=[...new Set(results.flatMap(r=>r.missing))];
+      setMsg(`✓ ${results.length} APKG dibuat, ${cards} kartu, ${media} audio.${missing.length?' Audio belum ditemukan: '+missing.slice(0,5).join(', '):''}`,missing.length>0);
+    }else{
+      const result=await buildApkg(rows,outputRootName()); await saveBlob(result.blob,result.filename);
+      setMsg(`✓ ${result.filename} dibuat: ${result.cards} kartu, ${result.media} audio.${result.missing.length?' Audio belum ditemukan: '+result.missing.slice(0,5).join(', '):''}`,result.missing.length>0);
+    }
+  }catch(err){setMsg('Gagal membuat APKG: '+err.message,true);}finally{state.apkgBusy=false;$('#btnDownloadApkg').disabled=false;}
+}
+
+function styleAttr(column){
+  const st=Object.assign(guessStyle(column), state.styles[column] || {});
+  const size=Math.max(8, Math.min(120, parseInt(st.size,10) || 20));
+  const align=/^(left|center|right)$/.test(st.align) ? st.align : 'center';
+  const color=/^#[0-9a-f]{6}$/i.test(st.color || '') ? st.color : '#1f2933';
+  const weight=st.bold ? '700' : '400';
+  const italic=st.italic ? 'italic' : 'normal';
+  const margin=Math.max(0, Math.min(60, parseInt(st.space,10) || 8));
+  return `font-family:${cssSafe(st.font)};font-size:${size}px!important;font-weight:${weight};font-style:${italic};text-align:${align};color:${color};line-height:1.35;margin:${margin}px 0;`;
+}
+function audioFileName(pattern,rowIndex,column){return audioFileNameForDeck(pattern,rowIndex,column,fullDeckNameForRow(filteredRows()[rowIndex]||{}));}
+
+function renderCardSide(itemList, row, rowIndex, side='front', forceAllowVoice){
+  const deckName=fullDeckNameForRow(row);
+  const allowVoice = typeof forceAllowVoice==='boolean' ? forceAllowVoice : (side==='front' ? voiceOnQuestion() : voiceOnAnswer());
+  const blocks=[], audioBits=[];
+  const combineTargets=inlineCombineColumns(itemList,row);
+  const shouldCombine=combineTargets.length>1;
+  let combinedEmitted=false;
+  itemList.forEach(column=>{
+    if(!state.columns.includes(column)) return;
+    const text=row[column] || '';
+    if(!String(text).trim()) return;
+    if(shouldCombine && combineTargets.includes(column)){
+      if(!combinedEmitted){
+        const parts=combineTargets.map(c=>`<span class="anki-field-inline" data-column="${esc(c)}" style="${styleAttr(c)}">${esc(String(row[c]||'').trim())}</span>`);
+        blocks.push(`<div class="anki-field" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">${parts.join('')}</div>`);
+        combinedEmitted=true;
+      }
+    }else{
+      blocks.push(`<div class="anki-field" data-column="${esc(column)}" style="${styleAttr(column)}">${esc(text).replace(/\r?\n/g,'<br>')}</div>`);
+    }
+    const a=state.audio[column];
+    if(allowVoice && a && a.enabled){
+      const fn=audioFileNameForDeck(a.filename, rowIndex, column, deckName);
+      audioBits.push(hasMediaFile(fn) ? mediaSoundTag(fn) : ttsButtonHtml(text, a.lang, a.rate));
+    }
+  });
+  const fieldHtml=blocks.join(fieldSeparatorHtml());
+  const audioHtml=audioBits.filter(Boolean).join(' ');
+  return fieldHtml + (audioHtml ? `<div class="audio">${audioHtml}</div>` : '');
+}
+function filteredRows(){
+  let out=state.rows;
+  if($('#onlyChecked').checked){
+    const pilih=state.columns.find(col=>/^pilih$/i.test(col));
+    if(pilih) out=out.filter(row=>/^(x|1|✓|true|yes)$/i.test(String(row[pilih] || '').trim()));
+  }
+  return out;
+}
+function previewEntries(){
+  const rows=filteredRows();
+  let entries=rows.map((row,i)=>({row,i}));
+  if($('#skipEmptyCards').checked){
+    entries=entries.filter(({row,i})=>{
+      const front=renderCardSide(state.frontItems,row,i,'front');
+      const back=renderCardSide(state.backItems,row,i,'back');
+      return front && back;
+    });
+  }
+  return entries;
+}
+function renderPreview(){
+  const entries=previewEntries();
+  if(state.previewIndex>=entries.length) state.previewIndex=Math.max(0, entries.length-1);
+  if(state.previewIndex<0) state.previewIndex=0;
+  const entry=entries[state.previewIndex];
+  const row=entry ? entry.row : {}, rowIndex=entry ? entry.i : 0;
+  $('#previewCount').textContent=entries.length ? `${state.previewIndex+1} / ${entries.length}` : '0 / 0';
+  $('#previewFront').innerHTML=renderCardSide(state.frontItems, row, rowIndex, 'front') || '<span class="muted">Front kosong</span>';
+
+  const showFrontOnBack=$('#showFrontOnBack') ? $('#showFrontOnBack').checked : true;
+  const repeatOnBack=showFrontOnBack && !!($('#repeatQuestionVoiceOnBack') && $('#repeatQuestionVoiceOnBack').checked);
+  let backHtml='';
+  if(showFrontOnBack){
+    const frontOnBack=renderCardSide(state.frontItems, row, rowIndex, 'front', repeatOnBack);
+    if(frontOnBack) backHtml += frontOnBack + answerDividerHtml();
+  }
+  backHtml += renderCardSide(state.backItems, row, rowIndex, 'back');
+  $('#previewBack').innerHTML = backHtml.trim() ? backHtml : '<span class="muted">Back kosong</span>';
+}
+function tsvEscape(value){ return '"' + String(value || '').replace(/"/g,'""').replace(/\r?\n/g,'<br>') + '"'; }
+function exportTSV(){
+  validate();
+  const rows=filteredRows();
+  if(!rows.length){ setMsg('Tidak ada data untuk diexport.', true); return; }
+  if(!state.frontItems.length || !state.backItems.length){ setMsg('Front dan Back harus diisi dulu.', true); return; }
+  const deck=outputBaseName();
+  const out=[];
+  if($('#includeHeader').checked){
+    out.push('#separator:tab');
+    out.push('#html:true');
+    out.push('#columns:Front\tBack\tTags\tNotetype');
+    out.push('#tags column:3');
+    out.push('#notetype column:4');
+  }
+  let exported=0, skipped=0;
+  rows.forEach((row, i)=>{
+    const front=renderCardSide(state.frontItems, row, i, 'front');
+    const back=renderCardSide(state.backItems, row, i, 'back');
+    if($('#skipEmptyCards').checked && (!front || !back)){ skipped++; return; }
+    const deckForRow=rowDeckName(row);
+    const tagForRow=$('#deckMode').value==='single' ? cleanFile(sourceDeckName(row)) : deckForRow;
+    out.push([tsvEscape(front), tsvEscape(back), tsvEscape(tagForRow), tsvEscape(selectedNoteType())].join('\t'));
+    exported++;
+  });
+  if(!exported){ setMsg('Semua kartu kosong / diskip.', true); return; }
+  const blob=new Blob([out.join('\n')], {type:'text/tab-separated-values;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`${cleanFile(outputBaseName())}-anki-import.tsv`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href); a.remove();},500);
+  setMsg(`✓ TSV didownload. ${exported} kartu, ${skipped} diskip.`);
+}
+
+function renderColumns(){
+  const pool=$('#columnPool');
+  pool.innerHTML='';
+  if(!state.columns.length){ pool.innerHTML='<span class="muted">Belum ada kolom. Pilih file TXT/CSV/TSV.</span>'; return; }
+  state.columns.forEach(column=>{
+    const btn=document.createElement('button');
+    btn.className='chip';
+    btn.textContent=column;
+    btn.onclick=()=>{
+      const toFront=confirm('OK = tambah ke Front\nCancel = tambah ke Back');
+      if(toFront) state.frontItems.push(column);
+      else state.backItems.push(column);
+      renderAll();
+    };
+    pool.appendChild(btn);
+  });
+}
+function renderList(target, items, label){
+  target.innerHTML=`<div class="list-title">Isi ${label}</div>`;
+  items.forEach((column, index)=>{
+    const div=document.createElement('div');
+    div.className='item';
+    const missing=!state.columns.includes(column);
+    div.innerHTML=`<div><strong>${esc(column)}</strong>${missing?'<span class="pill danger">missing</span>':''}<small>${label} item ${index+1}</small></div><button class="mini" data-act="up">↑</button><button class="mini" data-act="down">↓</button><button class="mini" data-act="del">×</button>`;
+    div.querySelector('[data-act="up"]').onclick=()=>{ if(index>0){ [items[index-1],items[index]]=[items[index],items[index-1]]; renderAll(); } };
+    div.querySelector('[data-act="down"]').onclick=()=>{ if(index<items.length-1){ [items[index+1],items[index]]=[items[index],items[index+1]]; renderAll(); } };
+    div.querySelector('[data-act="del"]').onclick=()=>{ items.splice(index,1); renderAll(); };
+    target.appendChild(div);
+  });
+  if(!items.length){ const p=document.createElement('div'); p.className='muted'; p.textContent='Belum ada kolom. Klik kolom tersedia di atas.'; target.appendChild(p); }
+}
+function renderLists(){ renderList($('#frontList'), state.frontItems, 'Front'); renderList($('#backList'), state.backItems, 'Back'); }
+function updateStyle(column, input){
+  const key=input.dataset.k;
+  const st=Object.assign(guessStyle(column), state.styles[column] || {});
+  if(key==='bold' || key==='italic') st[key]=input.checked;
+  else if(key==='size') st[key]=Math.max(8, Math.min(120, parseInt(input.value,10) || 20));
+  else if(key==='space') st[key]=Math.max(0, Math.min(60, parseInt(input.value,10) || 8));
+  else st[key]=input.value;
+  state.styles[column]=st;
+  renderPreview();
+  validate();
+}
+function renderStyle(){
+  const box=$('#styleRows');
+  box.innerHTML='';
+  if(!state.columns.length){ box.innerHTML='<div class="muted">Belum ada data.</div>'; return; }
+  state.columns.forEach(column=>{
+    const st=Object.assign(guessStyle(column), state.styles[column] || {});
+    state.styles[column]=st;
+    const div=document.createElement('div');
+    div.className='style-row';
+    div.innerHTML=`<div class="style-grid"><div><label class="small-label">Kolom</label><div><b>${esc(column)}</b></div></div><div><label class="small-label">Font</label><input data-k="font" value="${esc(st.font)}"></div><div><label class="small-label">Size</label><input data-k="size" type="number" min="8" max="120" value="${esc(st.size)}"></div><div><label class="small-label">Align</label><select data-k="align"><option value="left" ${st.align==='left'?'selected':''}>left</option><option value="center" ${st.align==='center'?'selected':''}>center</option><option value="right" ${st.align==='right'?'selected':''}>right</option></select></div><div><label class="small-label">Color</label><input data-k="color" type="color" value="${esc(st.color || '#1f2933')}"></div><div><label class="small-label">Style</label><label><input data-k="bold" type="checkbox" ${st.bold?'checked':''}> B</label> <label><input data-k="italic" type="checkbox" ${st.italic?'checked':''}> I</label></div></div>`;
+    div.querySelectorAll('[data-k]').forEach(input=>{ input.oninput=()=>updateStyle(column,input); input.onchange=()=>updateStyle(column,input); });
+    box.appendChild(div);
+  });
+}
+function renderAudio(){
+  const box=$('#audioRows');
+  box.innerHTML='';
+  if(!state.columns.length){ box.innerHTML='<div class="muted">Belum ada data.</div>'; return; }
+  state.columns.forEach(column=>{
+    const a=Object.assign({enabled:false, lang:guessLang(column), rate:1, filename:'{deck}_{row}_{column}.mp3'}, state.audio[column] || {});
+    state.audio[column]=a;
+    const voice=columnWillHaveVoice(column);
+    const div=document.createElement('div');
+    div.className='style-row';
+    div.innerHTML=`<div class="style-grid"><div><label><input data-k="enabled" type="checkbox" ${voice.willHaveVoice?'checked':''}> <b>${esc(column)}</b></label>${voice.viaAutoForce?'<div class="muted" style="font-size:.72rem;margin-top:2px">Otomatis aktif (nama kolom cocok pola english/mandarin/kw) — uncheck untuk matikan</div>':''}<div style="margin-top:5px"><button type="button" class="mini" data-preview="1">▶ Preview Voice</button></div></div><div><label class="small-label">Language</label><select data-k="lang"><option value="auto">Auto/None</option><option value="zh-CN">Mandarin zh-CN</option><option value="en-US">English en-US</option><option value="id-ID">Indonesia id-ID</option><option value="ja-JP">Japanese ja-JP</option><option value="ko-KR">Korean ko-KR</option><option value="fr-FR">French fr-FR</option><option value="es-ES">Spanish es-ES</option><option value="de-DE">German de-DE</option><option value="it-IT">Italian it-IT</option></select></div><div><label class="small-label">Speed</label><select data-k="rate"><option value="0.8">0.8</option><option value="1">1.0</option><option value="1.2">1.2</option></select></div><div style="grid-column:span 3"><label class="small-label">Filename Pattern</label><input data-k="filename" value="${esc(a.filename)}"></div></div>`;
+    div.querySelector('[data-k="lang"]').value=a.lang;
+    div.querySelector('[data-k="rate"]').value=String(a.rate || 1);
+    div.querySelector('[data-preview="1"]').onclick=()=>previewTts(column);
+    div.querySelectorAll('[data-k]').forEach(input=>input.onchange=()=>{
+      const key=input.dataset.k;
+      a[key]=key==='enabled' ? input.checked : input.value;
+      if(key==='enabled') a.userSet=true;
+      state.audio[column]=a;
+      renderPreview();
+      validate();
+    });
+    box.appendChild(div);
+  });
+}
+function renderTable(){
+  const thead=$('#dataTable thead'), tbody=$('#dataTable tbody');
+  thead.innerHTML=state.columns.length ? '<tr>' + state.columns.map(c=>`<th>${esc(c)}</th>`).join('') + '</tr>' : '';
+  tbody.innerHTML=state.rows.slice(0,100).map(row=>'<tr>' + state.columns.map(c=>`<td title="${esc(row[c])}">${esc(row[c])}</td>`).join('') + '</tr>').join('');
+}
+function renderPresetButtons(){
+  $$('.preset').forEach(p=>p.classList.toggle('active', p.dataset.preset===state.activePreset));
+}
+function validate(){
+  const issues=[];
+  if(!state.columns.length) issues.push('Belum ada data.');
+  if(!state.frontItems.length) issues.push('Front belum diisi.');
+  if(!state.backItems.length) issues.push('Back belum diisi.');
+  [...state.frontItems, ...state.backItems].forEach(column=>{ if(!state.columns.includes(column)) issues.push('Kolom mapping tidak ditemukan: ' + column); });
+  const rows=filteredRows();
+  if(state.columns.length && !rows.length) issues.push('Tidak ada baris yang akan diproses. Cek filter Pilih = x.');
+  let empty=0;
+  rows.forEach((row,i)=>{
+    const front=renderCardSide(state.frontItems,row,i,'front');
+    const back=renderCardSide(state.backItems,row,i,'back');
+    if(!front || !back) empty++;
+  });
+  if(empty) issues.push(`${empty} kartu punya Front/Back kosong${$('#skipEmptyCards').checked?' dan akan diskip.':'.'}`);
+  const box=$('#validationBox');
+  if(issues.length){ box.className='badbox'; box.textContent=issues.join('\n'); }
+  else{ box.className='okbox'; box.textContent='✓ Data siap diproses. Mapping, struktur deck, filter, Front/Back, dan style valid.'; }
+}
+function renderAll(){
+  ensureDefaults();
+  renderPresetButtons();
+  renderColumns();
+  renderLists();
+  renderStyle();
+  renderAudio();
+  renderTable();
+  renderPreview();
+  validate();
+  $('#rowCount').textContent=state.rows.length;
+  $('#colCount').textContent=state.columns.length;
+  renderDeckSettings();
+}
+
+async function loadFiles(fileList){
+  const files=Array.from(fileList || []);
+  if(!files.length) return;
+  const mode=$('#loadMode').value;
+  if(mode==='replace' && state.rows.length){
+    const ok=confirm(`Ganti ${state.rows.length} baris data aktif dengan file yang baru dipilih?`);
+    if(!ok){ $('#fileInput').value=''; return; }
+  }
+  const parsedList=[];
+  for(const file of files){
+    const raw=await file.text();
+    const parsed=parseText(raw, baseName(file.name));
+    if(parsed.columns.length && parsed.rows.length) parsedList.push(parsed);
+  }
+  if(!parsedList.length){ setMsg('File tidak terbaca atau kosong.', true); $('#fileInput').value=''; return; }
+  const incoming=mergeParsedFiles(parsedList);
+  const merged=(mode==='append' && state.rows.length)
+    ? mergeParsedFiles([{columns:state.columns, rows:state.rowsRaw.length?state.rowsRaw:state.rows}, incoming])
+    : incoming;
+  state.columns=merged.columns;
+  state.rowsRaw=merged.rows;
+  state.selectedFileNames = mode==='append'
+    ? [...state.selectedFileNames, ...files.map(f=>f.name)]
+    : files.map(f=>f.name);
+  if($('#autoDeckName').checked && state.selectedFileNames.length){
+    const first=baseName(state.selectedFileNames[0]);
+    $('#subdeckName').value=first;
+    if($('#deckMode').value==='single') $('#deckName').value=first;
+  }
+  state.styles={}; state.audio={}; state.previewIndex=0;
+  ensureDefaults();
+  const saved=getStoredPreset(state.activePreset);
+  applyConfig(saved || builtinPreset(state.activePreset), state.activePreset);
+  state.rows=applySentenceFillIfEnabled(state.rowsRaw, state.columns);
+  if(!state.frontItems.length){
+    const first=pickCols([['Mand KW','Hanzi KW','Mandarin','Eng KW','English']])[0];
+    if(first) state.frontItems=[first];
+  }
+  if(!state.backItems.length) state.backItems=state.columns.filter(c=>!/^pilih$/i.test(c) && c!=='__Source' && !state.frontItems.includes(c)).slice(0,6);
+  renderAll();
+  $('#selectedFiles').textContent=selectedFilesSummary();
+  setMsg(`✓ ${state.rows.length} baris, ${state.columns.length} kolom aktif.`);
+  $('#fileInput').value='';
+}
+
+$$('.tab').forEach(tab=>tab.onclick=()=>{
+  $$('.tab').forEach(x=>x.classList.remove('active'));
+  $$('.panel').forEach(x=>x.classList.remove('active'));
+  tab.classList.add('active');
+  $('#panel-' + tab.dataset.tab).classList.add('active');
+  renderPreview();
+});
+$$('.preset').forEach(p=>p.onclick=()=>applyPreset(p.dataset.preset));
+$('#fileInput').addEventListener('change', e=>loadFiles(e.target.files));
+$('#btnReset').onclick=()=>{ state.rows=[]; state.rowsRaw=[]; state.columns=[]; state.frontItems=[]; state.backItems=[]; state.styles={}; state.audio={}; state.previewIndex=0; state.selectedFileNames=[]; $('#fileInput').value=''; $('#selectedFiles').textContent=selectedFilesSummary(); renderAll(); setMsg('Data aktif sudah dihapus. Preset tersimpan tidak ikut dihapus.'); };
+$('#btnExport').onclick=exportTSV;
+$('#btnSavePreset').onclick=savePreset;
+$('#btnExportAllPresets').onclick=exportAllPresets;
+$('#btnImportAllPresets').onclick=()=>$('#allPresetFile').click();
+$('#allPresetFile').onchange=async e=>{
+  const file=e.target.files[0];
+  if(!file) return;
+  try{
+    const data=JSON.parse(await file.text());
+    const incoming=data.presets;
+    if(!incoming || typeof incoming!=='object' || Array.isArray(incoming)){
+      throw new Error('File ini bukan hasil "Export All Presets" (tidak ada properti "presets"). Export ulang dari tombol Export All Presets.');
+    }
+    const names=Object.keys(incoming);
+    if(!names.length) throw new Error('Tidak ada preset di dalam file.');
+    const store=readStore();
+    store.presets=Object.assign({}, store.presets || {}, incoming);
+    writeStore(store);
+    if(state.activePreset && incoming[state.activePreset]) applyPreset(state.activePreset);
+    setMsg(`✓ ${names.length} preset diimpor & langsung tersimpan.`);
+  }catch(err){ setMsg(`Import gagal: ${err.message}`, true); }
+  finally{ e.target.value=''; }
+};
+$('#btnPrev').onclick=()=>{ state.previewIndex=Math.max(0,state.previewIndex-1); renderPreview(); };
+$('#btnNext').onclick=()=>{ state.previewIndex=Math.min(previewEntries().length-1,state.previewIndex+1); renderPreview(); };
+['onlyChecked','skipEmptyCards','includeHeader','deckMode','parentDeck','deckName','subdeckName','autoDeckName','noteType','customNoteType','showFrontOnBack','nativeAnkiTts','voiceOnFront','voiceOnBack','repeatQuestionVoiceOnBack','showAnswerDivider','showFieldSeparators','useTtsButtons'].forEach(id=>{
+  const el=$('#'+id);
+  if(!el) return;
+  el.onchange=()=>{ renderDeckSettings(); validate(); renderPreview(); };
+  if(el.tagName==='INPUT') el.oninput=()=>{ renderDeckSettings(); validate(); };
+});
+$('#fillSentenceByNo').onchange=()=>{
+  state.rows=applySentenceFillIfEnabled(state.rowsRaw, state.columns);
+  renderAll();
+};
+const FOLDER_DB_NAME='AnkiDeckBuilderDB', FOLDER_STORE='handles', FOLDER_KEY='outputFolder';
+function openHandleDb(){
+  return new Promise((resolve,reject)=>{
+    const req=indexedDB.open(FOLDER_DB_NAME,1);
+    req.onupgradeneeded=()=>{ req.result.createObjectStore(FOLDER_STORE); };
+    req.onsuccess=()=>resolve(req.result);
+    req.onerror=()=>reject(req.error);
+  });
+}
+async function saveFolderHandle(handle){
+  try{
+    const db=await openHandleDb();
+    await new Promise((resolve,reject)=>{
+      const tx=db.transaction(FOLDER_STORE,'readwrite');
+      tx.objectStore(FOLDER_STORE).put(handle,FOLDER_KEY);
+      tx.oncomplete=resolve; tx.onerror=()=>reject(tx.error);
+    });
+  }catch(e){ /* penyimpanan folder gagal, bukan fatal - fallback ke pilih folder manual tiap sesi */ }
+}
+async function loadFolderHandle(){
+  try{
+    const db=await openHandleDb();
+    return await new Promise((resolve,reject)=>{
+      const tx=db.transaction(FOLDER_STORE,'readonly');
+      const req=tx.objectStore(FOLDER_STORE).get(FOLDER_KEY);
+      req.onsuccess=()=>resolve(req.result || null);
+      req.onerror=()=>reject(req.error);
+    });
+  }catch(e){ return null; }
+}
+async function tryRestoreFolderHandle(){
+  if(!window.showDirectoryPicker || !window.indexedDB) return;
+  const handle=await loadFolderHandle();
+  if(!handle) return;
+  let perm;
+  try{ perm=await handle.queryPermission({mode:'readwrite'}); }catch(e){ return; }
+  if(perm==='granted'){
+    state.directoryHandle=handle;
+    $('#folderStatus').textContent='Folder aktif (tersimpan): ' + handle.name;
+    return;
+  }
+  $('#folderStatus').innerHTML='Folder tersimpan: ' + esc(handle.name) + ' — <button type="button" class="btn gray" id="btnActivateFolder" style="padding:2px 10px;font-size:.8rem">Aktifkan lagi</button>';
+  const btn=document.getElementById('btnActivateFolder');
+  if(btn) btn.onclick=async()=>{
+    try{
+      const p=await handle.requestPermission({mode:'readwrite'});
+      if(p==='granted'){ state.directoryHandle=handle; $('#folderStatus').textContent='Folder aktif: ' + handle.name; }
+      else{ $('#folderStatus').textContent='Izin ditolak. Silakan pilih folder lagi.'; }
+    }catch(e){ $('#folderStatus').textContent='Gagal mengaktifkan folder tersimpan. Silakan pilih folder lagi.'; }
+  };
+}
+$('#btnChooseFolder').onclick=async()=>{
+  if(!window.showDirectoryPicker){ $('#folderStatus').textContent='Browser ini tidak mendukung pemilihan folder. Download biasa akan digunakan.'; return; }
+  try{
+    state.directoryHandle=await window.showDirectoryPicker({mode:'readwrite'});
+    $('#folderStatus').textContent='Folder dipilih: ' + state.directoryHandle.name;
+    saveFolderHandle(state.directoryHandle);
+  }catch(err){ if(err && err.name!=='AbortError') $('#folderStatus').textContent='Folder tidak dapat dipilih.'; }
+};
+$('#btnDownloadApkg').onclick=downloadApkg;
+$('#audioFileInput').onchange=e=>{for(const file of Array.from(e.target.files||[])){state.mediaFiles.set(file.name,file);state.mediaFiles.set(file.name.toLowerCase(),file);} renderAudioFileStatus(); e.target.value='';};
+$('#btnClearAudioFiles').onclick=()=>{state.mediaFiles.clear();renderAudioFileStatus();setMsg('Daftar audio terpilih sudah dihapus.');};
+
+renderAll();
+renderAudioFileStatus();
+initApkgLibraries();
+tryRestoreFolderHandle();
+</script>
+</body>
+</html>
