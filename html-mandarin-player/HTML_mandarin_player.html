@@ -5,7 +5,7 @@
 <title>Mandarin – Vocab &amp; Text</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <style>
-:root{--red:#c0392b;--gold:#d4a017;--green:#27ae60;--blue:#2471a3;--ink:#1c1c1c;--paper:#f5f2ed;--border:#e0d8d0;--head:#3d5a80;--stripe:#fdf9f4;}
+:root{--red:#c0392b;--ytube-red:#d64545;--gold:#d4a017;--green:#27ae60;--blue:#2471a3;--ink:#1c1c1c;--paper:#f5f2ed;--border:#e0d8d0;--head:#3d5a80;--stripe:#fdf9f4;}
 *{box-sizing:border-box;margin:0;padding:0}html{overscroll-behavior-y:contain;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom}body{font-family:'IBM Plex Sans',Arial,sans-serif;background:var(--paper);padding:14px 10px 4px;font-size:14.5px;color:var(--ink);overscroll-behavior-y:contain;touch-action:pan-x pan-y pinch-zoom}h1{font-size:1.05rem;font-weight:700;color:var(--red);letter-spacing:.03em;margin-bottom:3px;cursor:pointer}.tabs{display:flex;gap:4px;margin-bottom:0;overflow-x:auto}.tab{padding:7px 13px;border-radius:8px 8px 0 0;border:1px solid var(--border);background:#ede8e0;font-size:.8rem;font-weight:500;cursor:pointer;color:#666;border-bottom:none;white-space:nowrap;flex-shrink:0}.tab:hover:not(.active){background:#e0dbd3;color:#444}.tab.active{background:white;color:var(--red);border-bottom:2px solid var(--red);margin-bottom:-1px;font-weight:700}.badge{font-size:.65rem;background:#fef3e2;border:1px solid var(--gold);color:var(--gold);border-radius:10px;padding:1px 7px;margin-left:4px;font-weight:600}.tab-close{margin-left:6px;border:0;background:rgba(0,0,0,.08);color:#777;border-radius:50%;width:16px;height:16px;line-height:16px;font-size:.65rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle}.tab.active .tab-close{background:#f3d6d2;color:var(--red)}.tab-close:hover{background:var(--red);color:white}.panel{display:none}.panel.active{display:block}.locked-hidden{display:none!important}.lock-badge{font-size:.62rem;border:1px solid var(--red);color:var(--red);border-radius:10px;padding:1px 5px;margin-left:4px;font-weight:700}.global-upload{background:white;border:1px solid var(--border);border-radius:6px;padding:8px 10px;margin:8px 0 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.file-input{font-size:.72rem;max-width:260px}.tts-top-control{font-size:.74rem;color:#555;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}.tts-top-control select{font-family:inherit;font-size:.74rem;border:1px solid var(--border);border-radius:14px;padding:4px 8px;background:white;color:#333;max-width:160px}.mp3-folder-input{font-size:.72rem;max-width:210px}.mp3-status{font-size:.74rem;color:#16a085;white-space:nowrap}.ph{background:white;border:1px solid var(--border);border-radius:0 6px 6px 6px;padding:6px 8px}.sr{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}.sr input[type=text]{padding:6px 12px;border:1.5px solid var(--border);border-radius:18px;font-size:.9rem;font-family:inherit;width:190px;background:white;outline:none}.sr input[type=text]:focus{border-color:var(--red)}.fl,.final-play-option,.final-play-select{font-size:.78rem;color:#666;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none}.final-play-select select{font-family:inherit;font-size:.78rem;border:1px solid var(--border);border-radius:16px;padding:5px 8px;background:white;color:#333;max-width:128px}.sm{font-size:.78rem;color:var(--green);min-width:80px}.sb{font-size:.78rem;color:#999;margin-top:8px}.btn{padding:6px 12px;border-radius:20px;border:none;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px;box-shadow:0 1px 4px rgba(0,0,0,.12);white-space:nowrap}.btn:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.16)}.btn:active{transform:scale(.97);box-shadow:none}.btn-exp{background:var(--blue);color:white}.btn-en{background:#16a085;color:white}.btn-save{background:#8e44ad;color:white}.btn-stop{background:#e67e22;color:white}.btn-check{background:#7f8c8d;color:white}.btn-del{background:#e74c3c;color:white}.tw{overflow-x:auto;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-top:2px;max-height:88vh}table{width:100%;border-collapse:collapse;min-width:900px;background:white;border:1px solid var(--border);border-left:none}thead tr{background:var(--head);color:white}thead th{padding:9px 8px;text-align:left;font-weight:600;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,.15);white-space:nowrap}tbody tr:nth-child(even){background:var(--stripe)}tbody tr:hover{background:#fef3e2}tbody tr.hidden{display:none}td{padding:6px 8px;border-bottom:1px solid var(--border);border-right:1px solid #eee;vertical-align:middle;line-height:1.4;word-break:break-word}td:last-child,thead th:last-child{border-right:none}
 
 /* ===== LEBAR KOLOM PROPORSIONAL ===== */
@@ -238,6 +238,15 @@ td:nth-child(2), th:nth-child(2) {
 }
 .col-toggle-reset:hover {
   background: #ddd8d0;
+}
+#globalYtubeBtn {
+  background: var(--ytube-red);
+  border-color: var(--ytube-red);
+  color: white;
+}
+#globalYtubeBtn:hover {
+  background: var(--ytube-red);
+  opacity: .85;
 }
 
 /* ===== COLLAPSE UPLOAD ===== */
@@ -1359,7 +1368,10 @@ function saveAllToClip(btn){
     copyToClipboard(combined, null, '');
     feedback();
   } else {
-    copyToClipboard(text, null, '');
+    // Even with Ak.Clip off, show the sheet title header (same "_ _ _ TITLE _ _ _" convention
+    // as the accumulated case) so a single-sheet copy is still clearly labeled.
+    const combined = (sheetTitle ? `_ _ _          ${sheetTitle}          _ _ _` + '\n\n' : '') + text;
+    copyToClipboard(combined, null, '');
     feedback();
   }
 }
@@ -2220,6 +2232,12 @@ function sourceFileFormat(title){
   const m = String(title||'').match(/^(\d+)/);
   return m ? m[1] + '_' : String(title||'');
 }
+// Sub-rows of one sentence share a "No" like 1a/1b/.../1i (letter-suffixed); the sentence-number
+// group is the leading digits only, so all of 1a..1i must resolve to the same key "1".
+function sentenceGroupKey(rowNo){
+  const m = String(rowNo||'').match(/^(\d+)/);
+  return m ? m[1] : String(rowNo||'');
+}
 function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=true){
   const table = panel?.querySelector('table');
   if(!table) return '';
@@ -2233,28 +2251,29 @@ function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=tr
     const hasData = tds.slice(2,12).some(td=>String(td?.textContent||'').trim()!=='');
     return hasDigit && hasData; // No tanpa angka atau baris tanpa data dianggap tidak pernah ada
   });
-  // First pass: collect first non-empty sentence per No. group
+  // First pass: collect the sentence from the LAST row of each No. group (grouped by leading
+  // number, e.g. 1a..1i all belong to group "1"). Later rows overwrite earlier ones so the
+  // group ends up with whichever row was filled in last.
   const sentenceMap = new Map();
   if(fillEmpty){
     rows.forEach(tr=>{
       const tds = qa('td', tr);
       const rowNo = tds[0]?.textContent.trim() || '';
-      if(!sentenceMap.has(rowNo)){
-        const py=tds[6]?.textContent.trim()||'';
-        const id=tds[7]?.textContent.trim()||'';
-        const zh=tds[8]?.textContent.trim()||'';
-        const en=tds[9]?.textContent.trim()||'';
-        if(py||zh) sentenceMap.set(rowNo,{py,id,zh,en});
-      }
+      const key = sentenceGroupKey(rowNo);
+      const py=tds[6]?.textContent.trim()||'';
+      const id=tds[7]?.textContent.trim()||'';
+      const zh=tds[8]?.textContent.trim()||'';
+      const en=tds[9]?.textContent.trim()||'';
+      if(py||zh) sentenceMap.set(key,{py,id,zh,en});
     });
   }
-  // Second pass: build CSV rows, override sentences with group's first values, auto-generate if empty
+  // Second pass: build CSV rows, override sentences with group's values, auto-generate if empty
   rows.forEach((tr,i)=>{
     const tds = qa('td', tr);
     const rowNo = tds[0]?.textContent.trim()||(i+1);
     const vals = tableRowValues(tr, rowNo, includeSource ? sourceFileFormat(title) : undefined);
     if(fillEmpty){
-      const s = sentenceMap.get(String(rowNo));
+      const s = sentenceMap.get(sentenceGroupKey(String(rowNo)));
       if(s){ vals[6]=s.py; vals[7]=s.id; vals[8]=s.zh; vals[9]=s.en; }
       // Auto-generate sentences if empty (v25_11_87 improvement)
       if(!vals[8] && (vals[4] || vals[2])){ vals[8]=(vals[4]||'')+(vals[4]&&vals[2]?' ':'')+(vals[2]||''); } // Auto-gen Mandarin from Mand KW + Pin Yin KW
