@@ -393,7 +393,6 @@ td:nth-child(2), th:nth-child(2) {
   </div>
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
-      <strong style="font-size:.76rem;color:var(--red)">＋ Upload</strong>
       <label class="tts-top-control">CSV: <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)"></label>
       <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
@@ -410,7 +409,6 @@ td:nth-child(2), th:nth-child(2) {
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
-      <span style="font-size:.72rem;color:#888;font-weight:600;margin-right:4px;">📋 Kolom:</span>
       <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">Pin Yin KW</span></label>
       <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">Indo KW</span></label>
       <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">Mand KW</span></label>
@@ -423,7 +421,6 @@ td:nth-child(2), th:nth-child(2) {
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
       <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
-      <span style="font-size:.55rem;color:#aaa;margin-left:2px;">(No,Pilih,▶ tetap)</span>
     </div>
   </div>
 </div>
