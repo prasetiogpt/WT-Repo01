@@ -1781,7 +1781,11 @@ function parseDelimitedText(raw){
   lines.slice(start+1).forEach(line=>{
     const c=splitLineSmart(line); while(c.length<12) c.push('');
     if(c.every(x=>String(x||'').trim()==='')) return;
-    rows.push({ 
+    const noRaw=String(c[idx.no]||'').trim();
+    const hasDigit=/\d/.test(noRaw);
+    const hasData=c.some((v,i)=>i!==idx.no && i!==idx.pilih && String(v||'').trim()!=='');
+    if(!hasDigit || !hasData) return; // No tanpa angka atau baris tanpa data dianggap tidak pernah ada
+    rows.push({
       no:c[idx.no]||'', 
       pilih:isCheckedValue(c[idx.pilih]), 
       keyword:c[idx.keyword]||'', 
@@ -2207,7 +2211,13 @@ function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=tr
   const title = panelTitle(panel);
   const lines = [];
   if(includeHeader) lines.push(valuesToCsvLine(exportHeaders(includeSource)));
-  const rows = qa('tbody tr', table);
+  const rows = qa('tbody tr', table).filter(tr=>{
+    const tds = qa('td', tr);
+    const noRaw = tds[0]?.textContent.trim() || '';
+    const hasDigit = /\d/.test(noRaw);
+    const hasData = tds.slice(2,12).some(td=>String(td?.textContent||'').trim()!=='');
+    return hasDigit && hasData; // No tanpa angka atau baris tanpa data dianggap tidak pernah ada
+  });
   // First pass: collect first non-empty sentence per No. group
   const sentenceMap = new Map();
   if(fillEmpty){
