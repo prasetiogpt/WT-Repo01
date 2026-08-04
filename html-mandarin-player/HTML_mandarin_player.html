@@ -1776,7 +1776,7 @@ function splitLineSmart(line){
 }
 function normalizeHeader(s){ return String(s||'').toLowerCase().replace(/\s+/g,' ').trim(); }
 function colIndex(map, names, fallback){ for(const n of names){ const k=normalizeHeader(n); if(map[k]!==undefined) return map[k]; } return fallback; }
-function isCheckedValue(v){ return /^(x|1|✓|true|yes)$/i.test(String(v||'').trim()); }
+function isCheckedValue(v){ const s=String(v||'').trim(); if(s==='') return true; return /^(x|1|✓|true|yes)$/i.test(s); }
 
 function parseDelimitedText(raw){
   const lines=String(raw||'').replace(/^\uFEFF/,'').split(/\r?\n/);
@@ -1880,7 +1880,7 @@ function voiceOptionsHTML(selected){
 }
 
 function dropdownPlayControlsHTML(tid){
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
 }
 
 function toolbarHTML(tid){
@@ -2096,6 +2096,8 @@ async function handleTextUpload(files){
     addOrReplaceTextTab(cleanTitle(file.name), rows, youtubeUrl);
     count++;
   }
+  const audioMode=document.getElementById('audioModeSelect');
+  if(audioMode && audioMode.value!=='tts'){ audioMode.value='tts'; audioMode.dispatchEvent(new Event('change')); }
   const input=document.getElementById('txtUpload'); if(input) input.value='';
   if(warnings.length) setUploadMsg(`⚠ ${count} file diproses. ${warnings.join(' | ')}`);
   else setUploadMsg(`✓ ${count} file diproses. Baris hanya dihapus bila semua kolom kosong.`);
