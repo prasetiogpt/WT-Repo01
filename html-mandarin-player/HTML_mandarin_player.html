@@ -1776,7 +1776,7 @@ function splitLineSmart(line){
 }
 function normalizeHeader(s){ return String(s||'').toLowerCase().replace(/\s+/g,' ').trim(); }
 function colIndex(map, names, fallback){ for(const n of names){ const k=normalizeHeader(n); if(map[k]!==undefined) return map[k]; } return fallback; }
-function isCheckedValue(v){ const s=String(v||'').trim(); if(s==='') return true; return /^(x|1|✓|true|yes)$/i.test(s); }
+function isCheckedValue(v){ return /^(x|1|✓|true|yes)$/i.test(String(v||'').trim()); }
 
 function parseDelimitedText(raw){
   const lines=String(raw||'').replace(/^\uFEFF/,'').split(/\r?\n/);
@@ -1896,7 +1896,7 @@ function toolbarHTML(tid){
     <div class="sr">
       <input type="text" placeholder="Cari...">
       <label class="fl"><input type="checkbox" data-filter-excl> Excl.</label>
-      <label class="fl"><input type="checkbox" data-filter-checked> ✓ saja</label>
+      <label class="fl"><input type="checkbox" data-filter-checked checked> ✓ saja</label>
       <label class="range-label">
         No: 
         <input type="number" data-filter-from min="1" placeholder="dari">
