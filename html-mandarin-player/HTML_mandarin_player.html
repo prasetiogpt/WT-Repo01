@@ -5,7 +5,7 @@
 <title>Mandarin – Vocab &amp; Text</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 <style>
-:root{--red:#c0392b;--gold:#d4a017;--green:#27ae60;--blue:#2471a3;--ink:#1c1c1c;--paper:#f5f2ed;--border:#e0d8d0;--head:#3d5a80;--stripe:#fdf9f4;}
+:root{--red:#c0392b;--ytube-red:#d64545;--gold:#d4a017;--green:#27ae60;--blue:#2471a3;--ink:#1c1c1c;--paper:#f5f2ed;--border:#e0d8d0;--head:#3d5a80;--stripe:#fdf9f4;}
 *{box-sizing:border-box;margin:0;padding:0}html{overscroll-behavior-y:contain;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom}body{font-family:'IBM Plex Sans',Arial,sans-serif;background:var(--paper);padding:14px 10px 4px;font-size:14.5px;color:var(--ink);overscroll-behavior-y:contain;touch-action:pan-x pan-y pinch-zoom}h1{font-size:1.05rem;font-weight:700;color:var(--red);letter-spacing:.03em;margin-bottom:3px;cursor:pointer}.tabs{display:flex;gap:4px;margin-bottom:0;overflow-x:auto}.tab{padding:7px 13px;border-radius:8px 8px 0 0;border:1px solid var(--border);background:#ede8e0;font-size:.8rem;font-weight:500;cursor:pointer;color:#666;border-bottom:none;white-space:nowrap;flex-shrink:0}.tab:hover:not(.active){background:#e0dbd3;color:#444}.tab.active{background:white;color:var(--red);border-bottom:2px solid var(--red);margin-bottom:-1px;font-weight:700}.badge{font-size:.65rem;background:#fef3e2;border:1px solid var(--gold);color:var(--gold);border-radius:10px;padding:1px 7px;margin-left:4px;font-weight:600}.tab-close{margin-left:6px;border:0;background:rgba(0,0,0,.08);color:#777;border-radius:50%;width:16px;height:16px;line-height:16px;font-size:.65rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle}.tab.active .tab-close{background:#f3d6d2;color:var(--red)}.tab-close:hover{background:var(--red);color:white}.panel{display:none}.panel.active{display:block}.locked-hidden{display:none!important}.lock-badge{font-size:.62rem;border:1px solid var(--red);color:var(--red);border-radius:10px;padding:1px 5px;margin-left:4px;font-weight:700}.global-upload{background:white;border:1px solid var(--border);border-radius:6px;padding:8px 10px;margin:8px 0 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.file-input{font-size:.72rem;max-width:260px}.tts-top-control{font-size:.74rem;color:#555;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}.tts-top-control select{font-family:inherit;font-size:.74rem;border:1px solid var(--border);border-radius:14px;padding:4px 8px;background:white;color:#333;max-width:160px}.mp3-folder-input{font-size:.72rem;max-width:210px}.mp3-status{font-size:.74rem;color:#16a085;white-space:nowrap}.ph{background:white;border:1px solid var(--border);border-radius:0 6px 6px 6px;padding:6px 8px}.sr{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}.sr input[type=text]{padding:6px 12px;border:1.5px solid var(--border);border-radius:18px;font-size:.9rem;font-family:inherit;width:190px;background:white;outline:none}.sr input[type=text]:focus{border-color:var(--red)}.fl,.final-play-option,.final-play-select{font-size:.78rem;color:#666;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none}.final-play-select select{font-family:inherit;font-size:.78rem;border:1px solid var(--border);border-radius:16px;padding:5px 8px;background:white;color:#333;max-width:128px}.sm{font-size:.78rem;color:var(--green);min-width:80px}.sb{font-size:.78rem;color:#999;margin-top:8px}.btn{padding:6px 12px;border-radius:20px;border:none;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px;box-shadow:0 1px 4px rgba(0,0,0,.12);white-space:nowrap}.btn:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.16)}.btn:active{transform:scale(.97);box-shadow:none}.btn-exp{background:var(--blue);color:white}.btn-en{background:#16a085;color:white}.btn-save{background:#8e44ad;color:white}.btn-stop{background:#e67e22;color:white}.btn-check{background:#7f8c8d;color:white}.btn-del{background:#e74c3c;color:white}.tw{overflow-x:auto;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-top:2px;max-height:88vh}table{width:100%;border-collapse:collapse;min-width:900px;background:white;border:1px solid var(--border);border-left:none}thead tr{background:var(--head);color:white}thead th{padding:9px 8px;text-align:left;font-weight:600;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;border-right:1px solid rgba(255,255,255,.15);white-space:nowrap}tbody tr:nth-child(even){background:var(--stripe)}tbody tr:hover{background:#fef3e2}tbody tr.hidden{display:none}td{padding:6px 8px;border-bottom:1px solid var(--border);border-right:1px solid #eee;vertical-align:middle;line-height:1.4;word-break:break-word}td:last-child,thead th:last-child{border-right:none}
 
 /* ===== LEBAR KOLOM PROPORSIONAL ===== */
@@ -239,6 +239,15 @@ td:nth-child(2), th:nth-child(2) {
 .col-toggle-reset:hover {
   background: #ddd8d0;
 }
+#globalYtubeBtn {
+  background: var(--ytube-red);
+  border-color: var(--ytube-red);
+  color: white;
+}
+#globalYtubeBtn:hover {
+  background: var(--ytube-red);
+  opacity: .85;
+}
 
 /* ===== COLLAPSE UPLOAD ===== */
 .global-upload-header {
@@ -370,7 +379,7 @@ td:nth-child(2), th:nth-child(2) {
 <h1>🀄 Belajar Mandarin</h1>
 <div class="tabs">
 
-<div class="tab active" data-sheet-title="010 Text" data-tab-index="0">010 Text <span class="badge">109</span><button class="tab-close" title="Hapus tab" type="button">×</button></div></div>
+<div class="tab active" data-sheet-title="000 Data Testing" data-tab-index="0">000 Data Testing <span class="badge">11</span><button class="tab-close" title="Hapus tab" type="button">×</button></div></div>
 
 <!-- ===== GLOBAL UPLOAD + TOGGLE + COLLAPSE ===== -->
 <div class="global-upload" id="text-upload-toolbar">
@@ -384,7 +393,6 @@ td:nth-child(2), th:nth-child(2) {
   </div>
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
-      <strong style="font-size:.76rem;color:var(--red)">＋ Upload</strong>
       <label class="tts-top-control">CSV: <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)"></label>
       <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
@@ -401,7 +409,6 @@ td:nth-child(2), th:nth-child(2) {
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
-      <span style="font-size:.72rem;color:#888;font-weight:600;margin-right:4px;">📋 Kolom:</span>
       <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">Pin Yin KW</span></label>
       <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">Indo KW</span></label>
       <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">Mand KW</span></label>
@@ -413,7 +420,7 @@ td:nth-child(2), th:nth-child(2) {
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
-      <span style="font-size:.55rem;color:#aaa;margin-left:2px;">(No,Pilih,▶ tetap)</span>
+      <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
 </div>
@@ -442,7 +449,7 @@ td:nth-child(2), th:nth-child(2) {
 <div id="uploadFilterOverlay" class="">
   <div id="uploadFilterModal">
     <div class="ufm-title">📂 Upload Text</div>
-    <div class="ufm-files" id="ufmFileList">010 Text.csv</div>
+    <div class="ufm-files" id="ufmFileList">000 Data Testing.csv</div>
     <div class="ufm-btns">
       <button class="btn btn-exp" id="ufmBtnAll" type="button">Upload Semua Baris</button>
       <button class="btn btn-en" id="ufmBtnChecked" type="button">Upload Baris X</button>
@@ -1076,8 +1083,26 @@ function switchTab(index){
   const panels = getPanels();
   tabs.forEach((tab,i)=>tab.classList.toggle('active', i===index && !tab.classList.contains('locked-hidden')));
   panels.forEach((panel,i)=>panel.classList.toggle('active', i===index && !panel.classList.contains('locked-hidden')));
+  updateGlobalYtubeButton();
 }
 window.switchTab = switchTab;
+
+// Global Ytube button (moved out of per-sheet toolbar, next to the column-toggle Reset button)
+// reflects whichever sheet/tab is currently active, and hides itself when that sheet has no link.
+function updateGlobalYtubeButton(){
+  const btn = document.getElementById('globalYtubeBtn');
+  if(!btn) return;
+  const panel = document.querySelector('body > .panel.active');
+  const url = panel?.dataset.youtubeUrl || '';
+  if(url){
+    btn.style.display = '';
+    btn.dataset.ytubeUrl = url;
+  } else {
+    btn.style.display = 'none';
+    btn.dataset.ytubeUrl = '';
+  }
+}
+window.updateGlobalYtubeButton = updateGlobalYtubeButton;
 
 function refreshTabs(){
   getTabs().forEach((tab,i)=>{
@@ -1399,7 +1424,10 @@ function saveAllToClip(btn){
     copyToClipboard(combined, null, '');
     feedback();
   } else {
-    copyToClipboard(text, null, '');
+    // Even with Ak.Clip off, show the sheet title header (same "_ _ _ TITLE _ _ _" convention
+    // as the accumulated case) so a single-sheet copy is still clearly labeled.
+    const combined = (sheetTitle ? `_ _ _          ${sheetTitle}          _ _ _` + '\n\n' : '') + text;
+    copyToClipboard(combined, null, '');
     feedback();
   }
 }
@@ -1926,15 +1954,11 @@ function voiceOptionsHTML(selected){
   return opts.map(([v,t])=>`<option value="${v}" ${v===selected?'selected':''}>${t}</option>`).join('');
 }
 
-function dropdownPlayControlsHTML(tid, youtubeUrl){
-  const ytUrl=youtubeUrl||'';
-  // Text always rendered (even with no link) so the button never shrinks — when there's no
-  // link the text color is set to match the button background, making it look blank instead.
-  const ytBtn=`<button class="btn btn-ytube${ytUrl?'':' btn-ytube-empty'}" data-ytube-open="${tid}" data-ytube-url="${escapeHTML(ytUrl)}" type="button" style="margin-left:8px" title="${ytUrl?'Buka video YouTube sheet ini':'Tidak ada link YouTube untuk sheet ini'}">Ytube</button>`;
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('')}</select></label>${ytBtn}<label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
+function dropdownPlayControlsHTML(tid){
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
 }
 
-function toolbarHTML(tid, youtubeUrl){
+function toolbarHTML(tid){
   return `<div class="toolbar-header">
     <div style="display:flex;align-items:center;gap:6px;">
       <span class="toolbar-toggle-icon">▼</span>
@@ -1947,7 +1971,7 @@ function toolbarHTML(tid, youtubeUrl){
     <div class="sr">
       <input type="text" placeholder="Cari...">
       <label class="fl"><input type="checkbox" data-filter-excl> Excl.</label>
-      <label class="fl"><input type="checkbox" data-filter-checked> ✓ saja</label>
+      <label class="fl"><input type="checkbox" data-filter-checked checked> ✓ saja</label>
       <label class="range-label">
         No: 
         <input type="number" data-filter-from min="1" placeholder="dari">
@@ -1956,7 +1980,7 @@ function toolbarHTML(tid, youtubeUrl){
       </label>
       <button class="btn btn-check" data-check-all="${tid}" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="${tid}" type="button">Untick All</button>
-      ${dropdownPlayControlsHTML(tid, youtubeUrl)}
+      ${dropdownPlayControlsHTML(tid)}
       <span class="sm"></span>
     </div>
   </div>`;
@@ -1971,7 +1995,7 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   panel.dataset.sheetTitle=title; panel.dataset.loop='1'; panel.dataset.random='0';
   panel.dataset.youtubeUrl=youtubeUrl||'';
   const body=rows.map((r,i)=>buildRowHTML(tid,r,i)).join('\n');
-  panel.innerHTML=`<div class="ph">${toolbarHTML(tid, panel.dataset.youtubeUrl)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
+  panel.innerHTML=`<div class="ph">${toolbarHTML(tid)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
   refreshTabs(); 
   attachPanelEvents(panel); 
   switchTab(getPanels().indexOf(panel)); 
@@ -2147,6 +2171,8 @@ async function handleTextUpload(files){
     addOrReplaceTextTab(cleanTitle(file.name), rows, youtubeUrl);
     count++;
   }
+  const audioMode=document.getElementById('audioModeSelect');
+  if(audioMode && audioMode.value!=='tts'){ audioMode.value='tts'; audioMode.dispatchEvent(new Event('change')); }
   const input=document.getElementById('txtUpload'); if(input) input.value='';
   if(warnings.length) setUploadMsg(`⚠ ${count} file diproses. ${warnings.join(' | ')}`);
   else setUploadMsg(`✓ ${count} file diproses. Baris hanya dihapus bila semua kolom kosong.`);
@@ -2280,6 +2306,12 @@ function sourceFileFormat(title){
   const m = String(title||'').match(/^(\d+)/);
   return m ? m[1] + '_' : String(title||'');
 }
+// Sub-rows of one sentence share a "No" like 1a/1b/.../1i (letter-suffixed); the sentence-number
+// group is the leading digits only, so all of 1a..1i must resolve to the same key "1".
+function sentenceGroupKey(rowNo){
+  const m = String(rowNo||'').match(/^(\d+)/);
+  return m ? m[1] : String(rowNo||'');
+}
 function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=true){
   const table = panel?.querySelector('table');
   if(!table) return '';
@@ -2293,28 +2325,29 @@ function panelToCSV(panel, includeHeader=true, includeSource=false, fillEmpty=tr
     const hasData = tds.slice(2,12).some(td=>String(td?.textContent||'').trim()!=='');
     return hasDigit && hasData; // No tanpa angka atau baris tanpa data dianggap tidak pernah ada
   });
-  // First pass: collect first non-empty sentence per No. group
+  // First pass: collect the sentence from the LAST row of each No. group (grouped by leading
+  // number, e.g. 1a..1i all belong to group "1"). Later rows overwrite earlier ones so the
+  // group ends up with whichever row was filled in last.
   const sentenceMap = new Map();
   if(fillEmpty){
     rows.forEach(tr=>{
       const tds = qa('td', tr);
       const rowNo = tds[0]?.textContent.trim() || '';
-      if(!sentenceMap.has(rowNo)){
-        const py=tds[6]?.textContent.trim()||'';
-        const id=tds[7]?.textContent.trim()||'';
-        const zh=tds[8]?.textContent.trim()||'';
-        const en=tds[9]?.textContent.trim()||'';
-        if(py||zh) sentenceMap.set(rowNo,{py,id,zh,en});
-      }
+      const key = sentenceGroupKey(rowNo);
+      const py=tds[6]?.textContent.trim()||'';
+      const id=tds[7]?.textContent.trim()||'';
+      const zh=tds[8]?.textContent.trim()||'';
+      const en=tds[9]?.textContent.trim()||'';
+      if(py||zh) sentenceMap.set(key,{py,id,zh,en});
     });
   }
-  // Second pass: build CSV rows, override sentences with group's first values, auto-generate if empty
+  // Second pass: build CSV rows, override sentences with group's values, auto-generate if empty
   rows.forEach((tr,i)=>{
     const tds = qa('td', tr);
     const rowNo = tds[0]?.textContent.trim()||(i+1);
     const vals = tableRowValues(tr, rowNo, includeSource ? sourceFileFormat(title) : undefined);
     if(fillEmpty){
-      const s = sentenceMap.get(String(rowNo));
+      const s = sentenceMap.get(sentenceGroupKey(String(rowNo)));
       if(s){ vals[6]=s.py; vals[7]=s.id; vals[8]=s.zh; vals[9]=s.en; }
       // Auto-generate sentences if empty (v25_11_87 improvement)
       if(!vals[8] && (vals[4] || vals[2])){ vals[8]=(vals[4]||'')+(vals[4]&&vals[2]?' ':'')+(vals[2]||''); } // Auto-gen Mandarin from Mand KW + Pin Yin KW
@@ -2460,6 +2493,7 @@ function init(){
   });
   initUploadCollapse();
   initGlobalColumnToggles();
+  updateGlobalYtubeButton();
   document.addEventListener('change', e=>{
     const proxy = e.target.closest('.baca-no-proxy');
     if(proxy){
@@ -2737,7 +2771,7 @@ document.getElementById('preCombRefreshBtn').style.display = 'none';
 
 <!-- ===== PANEL 3 ===== -->
 
-<div class="panel active" data-sheet-title="010 Text" data-loop="1" data-random="0"><div class="ph"><div class="toolbar-header">
+<div class="panel active" data-sheet-title="000 Data Testing" data-loop="1" data-random="0" data-youtube-url="https://www.youtube.com/watch?v=nlpLjspLKyA&amp;list=PLFlfMLCBrT1qHRkBo98jTEsW4_tQTVQcB&amp;index=2"><div class="ph"><div class="toolbar-header">
     <div style="display:flex;align-items:center;gap:6px;">
       <span class="toolbar-toggle-icon">▼</span>
       <span class="toggle-label">🔧 Toolbar</span>
@@ -2751,1648 +2785,179 @@ document.getElementById('preCombRefreshBtn').style.display = 'none';
       <label class="fl"><input type="checkbox" data-filter-excl=""> Excl.</label>
       <label class="fl"><input type="checkbox" data-filter-checked="" checked=""> ✓ saja</label>
       <label class="range-label">
-        No: 
+        No:
         <input type="number" data-filter-from="" min="1" placeholder="dari" value="0">
         -
         <input type="number" data-filter-to="" min="1" placeholder="sd" value="0">
       </label>
-      <button class="btn btn-check" data-check-all="dyn_010text" type="button">Tick All</button>
-      <button class="btn btn-check" data-uncheck-all="dyn_010text" type="button">Untick All</button>
-      <label class="final-play-select">V1: <select data-final-voice1="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_010text"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_010text" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_010text"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_010text" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_010text" type="button">■</button>
+      <button class="btn btn-check" data-check-all="dyn_000datatesting" type="button">Tick All</button>
+      <button class="btn btn-check" data-uncheck-all="dyn_000datatesting" type="button">Untick All</button>
+      <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_000datatesting" type="button">■</button>
       <span class="sm"></span>
     </div>
-  </div><div class="tw"><table id="dyn_010text" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th class="">Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th class="">Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="0" class="hidden">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_0"><label for="dyn_010text_0"></label></td>
-    <td class="ck">rén</td>
-    <td class="ca col-hidden">Orang</td>
-    <td class="ch hk">人</td>
-    <td class="ce ek">Person</td>
+  </div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
+    <td class="cn">1</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_0" checked=""><label for="dyn_000datatesting_0"></label></td>
+    <td class="ck">nín</td>
+    <td class="ca col-hidden">* Anda (formal)</td>
+    <td class="ch hk">您</td>
+    <td class="ce ek">You (formal)</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">1</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="0" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_1"><label for="dyn_010text_1"></label></td>
-    <td class="ck">lǎo</td>
-    <td class="ca col-hidden">Tua</td>
-    <td class="ch hk">老</td>
-    <td class="ce ek">Old</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">2</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="1" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_2"><label for="dyn_010text_2"></label></td>
-    <td class="ck">le</td>
-    <td class="ca col-hidden">Partikel selesai</td>
-    <td class="ch hk">了</td>
-    <td class="ce ek">Particle (completed)</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">3</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="2" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_3" checked=""><label for="dyn_010text_3"></label></td>
-    <td class="ck">zhī hòu</td>
-    <td class="ca col-hidden">Setelah</td>
-    <td class="ch hk">之后</td>
-    <td class="ce ek">After</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">4</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="3" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_4"><label for="dyn_010text_4"></label></td>
-    <td class="ck">shén me</td>
-    <td class="ca col-hidden">Apa</td>
-    <td class="ch hk">什么</td>
-    <td class="ce ek">What</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">5</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="4" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_5" checked=""><label for="dyn_010text_5"></label></td>
-    <td class="ck">cái</td>
-    <td class="ca col-hidden">Barulah</td>
-    <td class="ch hk">才</td>
-    <td class="ce ek">Only then</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">6</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="5" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_6"><label for="dyn_010text_6"></label></td>
-    <td class="ck">jiào</td>
-    <td class="ca col-hidden">Disebut</td>
-    <td class="ch hk">叫</td>
-    <td class="ce ek">Called</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">7</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="6" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">1.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_7" checked=""><label for="dyn_010text_7"></label></td>
-    <td class="ck">xìng fú</td>
-    <td class="ca col-hidden">Kebahagiaan</td>
-    <td class="ch hk">幸福</td>
-    <td class="ce ek">Happiness</td>
-    <td class="cy">rén lǎo le zhī hòu shén me cái jiào xìng fú</td>
-    <td class="ci col-hidden">Setelah orang tua, apa yang disebut bahagia</td>
-    <td class="ch">人老了之后什么才叫幸福</td>
-    <td class="ce">What is called happiness after people get old</td>
-    <td class="cn col-hidden">8</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="7" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_8"><label for="dyn_010text_8"></label></td>
-    <td class="ck">bù shì</td>
-    <td class="ca col-hidden">Bukan</td>
-    <td class="ch hk">不是</td>
-    <td class="ce ek">Not</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">9</td>
-    <td class="cn col-hidden">005_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="8" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_9"><label for="dyn_010text_9"></label></td>
-    <td class="ck">yǒu qián</td>
-    <td class="ca col-hidden">Punya uang</td>
-    <td class="ch hk">有钱</td>
-    <td class="ce ek">Have money</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">10</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="9" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_10"><label for="dyn_010text_10"></label></td>
-    <td class="ck">shì</td>
-    <td class="ca col-hidden">Adalah</td>
-    <td class="ch hk">是</td>
-    <td class="ce ek">Is</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">11</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="10" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_11"><label for="dyn_010text_11"></label></td>
-    <td class="ck">shēn tǐ</td>
-    <td class="ca col-hidden">Tubuh</td>
-    <td class="ch hk">身体</td>
-    <td class="ce ek">Body</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">12</td>
-    <td class="cn col-hidden">008_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="11" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_12"><label for="dyn_010text_12"></label></td>
-    <td class="ck">hái</td>
-    <td class="ca col-hidden">Masih</td>
-    <td class="ch hk">还</td>
-    <td class="ce ek">Still</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">13</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="12" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_13"><label for="dyn_010text_13"></label></td>
-    <td class="ck">néng</td>
-    <td class="ca col-hidden">Mampu</td>
-    <td class="ch hk">能</td>
-    <td class="ce ek">Able</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">14</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="13" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">2.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_14" checked=""><label for="dyn_010text_14"></label></td>
-    <td class="ck">dǐng zhù</td>
-    <td class="ca col-hidden">Bertahan</td>
-    <td class="ch hk">顶住</td>
-    <td class="ce ek">Hold up</td>
-    <td class="cy">bù shì yǒu qián shì shēn tǐ hái néng dǐng zhù</td>
-    <td class="ci col-hidden">Bukan karena punya uang, tapi tubuh masih mampu bertahan</td>
-    <td class="ch">不是有钱是身体还能顶住</td>
-    <td class="ce">It's not about having money, it's about the body still being able to hold up</td>
-    <td class="cn col-hidden">15</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="14" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">3.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_15"><label for="dyn_010text_15"></label></td>
-    <td class="ck">néng</td>
-    <td class="ca col-hidden">Mampu</td>
-    <td class="ch hk">能</td>
-    <td class="ce ek">Can</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">16</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="15" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">3.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_16"><label for="dyn_010text_16"></label></td>
-    <td class="ck">zì jǐ</td>
-    <td class="ca col-hidden">Sendiri</td>
-    <td class="ch hk">自己</td>
-    <td class="ce ek">Oneself</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">17</td>
-    <td class="cn col-hidden">002_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="16" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">3.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_17" checked=""><label for="dyn_010text_17"></label></td>
-    <td class="ck">zǒu zǒu lù</td>
-    <td class="ca col-hidden">Berjalan-jalan</td>
-    <td class="ch hk">走走路</td>
-    <td class="ce ek">Walk around</td>
-    <td class="cy">néng zì jǐ zǒu zǒu lù</td>
-    <td class="ci col-hidden">Bisa berjalan sendiri</td>
-    <td class="ch">能自己走走路</td>
-    <td class="ce">Can walk by oneself</td>
-    <td class="cn col-hidden">18</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="17" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">4.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_18"><label for="dyn_010text_18"></label></td>
-    <td class="ck">néng</td>
-    <td class="ca col-hidden">Mampu</td>
-    <td class="ch hk">能</td>
-    <td class="ce ek">Can</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">19</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="18" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">4.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_19"><label for="dyn_010text_19"></label></td>
-    <td class="ck">zì jǐ</td>
-    <td class="ca col-hidden">Sendiri</td>
-    <td class="ch hk">自己</td>
-    <td class="ce ek">Oneself</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">20</td>
-    <td class="cn col-hidden">002_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="19" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">4.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_20" checked=""><label for="dyn_010text_20"></label></td>
-    <td class="ck">xià xià chú</td>
-    <td class="ca col-hidden">Memasak-memasak</td>
-    <td class="ch hk">下下厨</td>
-    <td class="ce ek">Cook a bit</td>
-    <td class="cy">néng zì jǐ xià xià chú</td>
-    <td class="ci col-hidden">Bisa memasak sendiri</td>
-    <td class="ch">能自己下下厨</td>
-    <td class="ce">Can cook by oneself</td>
-    <td class="cn col-hidden">21</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="20" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="0" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_21" checked=""><label for="dyn_010text_21"></label></td>
-    <td class="ck">zuì pà</td>
-    <td class="ca col-hidden">Paling takut</td>
-    <td class="ch hk">最怕</td>
-    <td class="ce ek">Most afraid</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">22</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="21" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_22" checked=""><label for="dyn_010text_22"></label></td>
-    <td class="ck">chī hē lā sā</td>
-    <td class="ca col-hidden">Makan minum buang air</td>
-    <td class="ch hk">吃喝拉撒</td>
-    <td class="ce ek">Eating, drinking, peeing, pooping</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">23</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="22" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_23"><label for="dyn_010text_23"></label></td>
-    <td class="ck">dōu</td>
-    <td class="ca col-hidden">Semua</td>
-    <td class="ch hk">都</td>
-    <td class="ce ek">All</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">24</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="23" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_24"><label for="dyn_010text_24"></label></td>
-    <td class="ck">děi</td>
-    <td class="ca col-hidden">Harus</td>
-    <td class="ch hk">得</td>
-    <td class="ce ek">Have to</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">25</td>
-    <td class="cn col-hidden">005_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="24" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_25" checked=""><label for="dyn_010text_25"></label></td>
-    <td class="ck">kào</td>
-    <td class="ca col-hidden">Bergantung pada</td>
-    <td class="ch hk">靠</td>
-    <td class="ce ek">Rely on</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">26</td>
-    <td class="cn col-hidden">008_*</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="25" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_26" checked=""><label for="dyn_010text_26"></label></td>
-    <td class="ck">bié rén</td>
-    <td class="ca col-hidden">Orang lain</td>
-    <td class="ch hk">别人</td>
-    <td class="ce ek">Others</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">27</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="26" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">5.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_27" checked=""><label for="dyn_010text_27"></label></td>
-    <td class="ck">fú</td>
-    <td class="ca col-hidden">Menopang/membantu</td>
-    <td class="ch hk">扶</td>
-    <td class="ce ek">Help/support</td>
-    <td class="cy">zuì pà chī hē lā sā dōu děi kào bié rén fú</td>
-    <td class="ci col-hidden">Paling takut makan minum buang air besar kecil semua harus bergantung pada orang lain</td>
-    <td class="ch">最怕吃喝拉撒都得靠别人扶</td>
-    <td class="ce">Most afraid that eating, drinking, peeing, pooping all have to rely on others to help</td>
-    <td class="cn col-hidden">28</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="27" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_28"><label for="dyn_010text_28"></label></td>
-    <td class="ck">rén</td>
-    <td class="ca col-hidden">Orang</td>
-    <td class="ch hk">人</td>
-    <td class="ce ek">People</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">29</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="28" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_29"><label for="dyn_010text_29"></label></td>
-    <td class="ck">lǎo</td>
-    <td class="ca col-hidden">Tua</td>
-    <td class="ch hk">老</td>
-    <td class="ce ek">Old</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">30</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="29" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_30"><label for="dyn_010text_30"></label></td>
-    <td class="ck">le</td>
-    <td class="ca col-hidden">Partikel selesai</td>
-    <td class="ch hk">了</td>
-    <td class="ce ek">Particle</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">31</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="30" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_31"><label for="dyn_010text_31"></label></td>
-    <td class="ck">zhī hòu</td>
-    <td class="ca col-hidden">Setelah</td>
-    <td class="ch hk">之后</td>
-    <td class="ce ek">After</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">32</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="31" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_32"><label for="dyn_010text_32"></label></td>
-    <td class="ck">shén me</td>
-    <td class="ca col-hidden">Apa</td>
-    <td class="ch hk">什么</td>
-    <td class="ce ek">What</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">33</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="32" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_33"><label for="dyn_010text_33"></label></td>
-    <td class="ck">cái</td>
-    <td class="ca col-hidden">Barulah</td>
-    <td class="ch hk">才</td>
-    <td class="ce ek">Only then</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">34</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="33" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_34"><label for="dyn_010text_34"></label></td>
-    <td class="ck">jiào</td>
-    <td class="ca col-hidden">Disebut</td>
-    <td class="ch hk">叫</td>
-    <td class="ce ek">Called</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">35</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="34" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">6.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_35"><label for="dyn_010text_35"></label></td>
-    <td class="ck">xìng fú</td>
-    <td class="ca col-hidden">Kebahagiaan</td>
-    <td class="ch hk">幸福</td>
-    <td class="ce ek">Happiness</td>
-    <td class="cy">rén lǎo le zhī hòu shén me cái jiào xìng fú</td>
-    <td class="ci col-hidden">Setelah orang tua, apa yang disebut bahagia</td>
-    <td class="ch">人老了之后什么才叫幸福</td>
-    <td class="ce">What is called happiness after people get old</td>
-    <td class="cn col-hidden">36</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="35" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_36" checked=""><label for="dyn_010text_36"></label></td>
-    <td class="ck">ér nǚ</td>
-    <td class="ca col-hidden">Anak-anak</td>
-    <td class="ch hk">儿女</td>
-    <td class="ce ek">Children</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">37</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="36" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_37"><label for="dyn_010text_37"></label></td>
-    <td class="ck">zài</td>
-    <td class="ca col-hidden">Meskipun</td>
-    <td class="ch hk">再</td>
-    <td class="ce ek">No matter how</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">38</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="37" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_38" checked=""><label for="dyn_010text_38"></label></td>
-    <td class="ck">xiào shùn</td>
-    <td class="ca col-hidden">Berbakti</td>
-    <td class="ch hk">孝顺</td>
-    <td class="ce ek">Filial</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">39</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="38" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_39" checked=""><label for="dyn_010text_39"></label></td>
-    <td class="ck">tì</td>
-    <td class="ca col-hidden">Menggantikan</td>
-    <td class="ch hk">替</td>
-    <td class="ce ek">Replace</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">40</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="39" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_40" checked=""><label for="dyn_010text_40"></label></td>
-    <td class="ck">bù liǎo</td>
-    <td class="ca col-hidden">Tidak bisa</td>
-    <td class="ch hk">不了</td>
-    <td class="ce ek">Cannot</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">41</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="40" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_41"><label for="dyn_010text_41"></label></td>
-    <td class="ck">nǐ</td>
-    <td class="ca col-hidden">Kamu</td>
-    <td class="ch hk">你</td>
-    <td class="ce ek">You</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">42</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="41" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_42" checked=""><label for="dyn_010text_42"></label></td>
-    <td class="ck">shòu</td>
-    <td class="ca col-hidden">Menderita</td>
-    <td class="ch hk">受</td>
-    <td class="ce ek">Suffer</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">43</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="42" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">7.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_43" checked=""><label for="dyn_010text_43"></label></td>
-    <td class="ck">bìng kǔ</td>
-    <td class="ca col-hidden">Penyakit dan penderitaan</td>
-    <td class="ch hk">病苦</td>
-    <td class="ce ek">Illness suffering</td>
-    <td class="cy">ér nǚ zài xiào shùn tì bù liǎo nǐ shòu bìng kǔ</td>
-    <td class="ci col-hidden">Anak-anak sekalipun berbakti, tidak bisa menggantikanmu menderita sakit</td>
-    <td class="ch">儿女再孝顺 替不了你受病苦</td>
-    <td class="ce">No matter how filial the children are, they can't take your illness suffering for you</td>
-    <td class="cn col-hidden">44</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="43" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">8.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_44" checked=""><label for="dyn_010text_44"></label></td>
-    <td class="ck">gāng qiáng</td>
-    <td class="ca col-hidden">Kuat/tegar</td>
-    <td class="ch hk">刚强</td>
-    <td class="ce ek">Strong/tough</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">45</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="44" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">8.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_45" checked=""><label for="dyn_010text_45"></label></td>
-    <td class="ck">yī bèi zi</td>
-    <td class="ca col-hidden">Seumur hidup</td>
-    <td class="ch hk">一辈子</td>
-    <td class="ce ek">Lifetime</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">46</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="45" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">8.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_46" checked=""><label for="dyn_010text_46"></label></td>
-    <td class="ck">fēng fēng yǔ yǔ</td>
-    <td class="ca col-hidden">Badai kehidupan</td>
-    <td class="ch hk">风风雨雨</td>
-    <td class="ce ek">Storms (of life)</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">47</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="46" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">8.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_47"><label for="dyn_010text_47"></label></td>
-    <td class="ck">dōu</td>
-    <td class="ca col-hidden">Semua</td>
-    <td class="ch hk">都</td>
-    <td class="ce ek">All</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">48</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="47" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">8.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_48" checked=""><label for="dyn_010text_48"></label></td>
-    <td class="ck">káng zhù</td>
-    <td class="ca col-hidden">Menahan</td>
-    <td class="ch hk">扛住</td>
-    <td class="ce ek">Withstand</td>
-    <td class="cy">gāng qiáng yī bèi zi fēng fēng yǔ yǔ dōu káng zhù</td>
-    <td class="ci col-hidden">Kuat tegar seumur hidup, badai kehidupan semua ditahan</td>
-    <td class="ch">刚强一辈子风风雨雨都扛住</td>
-    <td class="ce">Tough and strong all life, weathered all storms</td>
-    <td class="cn col-hidden">49</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="48" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_49" checked=""><label for="dyn_010text_49"></label></td>
-    <td class="ck">zuì hòu</td>
-    <td class="ca col-hidden">Akhirnya</td>
-    <td class="ch hk">最后</td>
-    <td class="ce ek">Finally</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">50</td>
-    <td class="cn col-hidden">009_*</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="49" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_50" checked=""><label for="dyn_010text_50"></label></td>
-    <td class="ck">què</td>
-    <td class="ca col-hidden">Namun/malah</td>
-    <td class="ch hk">却</td>
-    <td class="ce ek">Yet/however</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">51</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="50" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_51" checked=""><label for="dyn_010text_51"></label></td>
-    <td class="ck">lián</td>
-    <td class="ca col-hidden">Bahkan</td>
-    <td class="ch hk">连</td>
-    <td class="ce ek">Even</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">52</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="51" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_52" checked=""><label for="dyn_010text_52"></label></td>
-    <td class="ck">zūn yán</td>
-    <td class="ca col-hidden">Martabat</td>
-    <td class="ch hk">尊严</td>
-    <td class="ce ek">Dignity</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">53</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="52" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_53"><label for="dyn_010text_53"></label></td>
-    <td class="ck">dōu</td>
-    <td class="ca col-hidden">Pun</td>
-    <td class="ch hk">都</td>
-    <td class="ce ek">Even</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">54</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="53" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">9.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_54" checked=""><label for="dyn_010text_54"></label></td>
-    <td class="ck">bǎo bù zhù</td>
-    <td class="ca col-hidden">Tidak bisa mempertahankan</td>
-    <td class="ch hk">保不住</td>
-    <td class="ce ek">Cannot preserve</td>
-    <td class="cy">zuì hòu què lián zūn yán dōu bǎo bù zhù</td>
-    <td class="ci col-hidden">Akhirnya malah martabat pun tidak bisa dipertahankan</td>
-    <td class="ch">最后却连尊严都保不住</td>
-    <td class="ce">Finally even dignity can't be preserved</td>
-    <td class="cn col-hidden">55</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="54" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_55"><label for="dyn_010text_55"></label></td>
-    <td class="ck">pà</td>
-    <td class="ca col-hidden">Takut</td>
-    <td class="ch hk">怕</td>
-    <td class="ce ek">Afraid</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">56</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="55" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_56" checked=""><label for="dyn_010text_56"></label></td>
-    <td class="ck">tān</td>
-    <td class="ca col-hidden">Lumpuh/terbaring</td>
-    <td class="ch hk">瘫</td>
-    <td class="ce ek">Bedridden</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">57</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="56" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_57"><label for="dyn_010text_57"></label></td>
-    <td class="ck">zài</td>
-    <td class="ca col-hidden">Di</td>
-    <td class="ch hk">在</td>
-    <td class="ce ek">At</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">58</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="57" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_58"><label for="dyn_010text_58"></label></td>
-    <td class="ck">chuáng shàng</td>
-    <td class="ca col-hidden">Di atas tempat tidur</td>
-    <td class="ch hk">床上</td>
-    <td class="ce ek">On the bed</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">59</td>
-    <td class="cn col-hidden">009_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="58" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_59" checked=""><label for="dyn_010text_59"></label></td>
-    <td class="ck">chéng le</td>
-    <td class="ca col-hidden">Menjadi</td>
-    <td class="ch hk">成了</td>
-    <td class="ce ek">Become</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">60</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="59" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_60" checked=""><label for="dyn_010text_60"></label></td>
-    <td class="ck">jiā lǐ</td>
-    <td class="ca col-hidden">Keluarga/rumah tangga</td>
-    <td class="ch hk">家里</td>
-    <td class="ce ek">Family/home</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">61</td>
-    <td class="cn col-hidden">008_*</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="60" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_61"><label for="dyn_010text_61"></label></td>
-    <td class="ck">de</td>
-    <td class="ca col-hidden">Partikel kepemilikan</td>
-    <td class="ch hk">的</td>
-    <td class="ce ek">Possessive particle</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">62</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="61" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1" class="">
-    <td class="cn">10.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_62" checked=""><label for="dyn_010text_62"></label></td>
-    <td class="ck">bāo fu</td>
-    <td class="ca col-hidden">Beban</td>
-    <td class="ch hk">包袱</td>
-    <td class="ce ek">Burden</td>
-    <td class="cy">pà tān zài chuáng shàng chéng le jiā lǐ de bāo fu</td>
-    <td class="ci col-hidden">Takut terbaring di tempat tidur menjadi beban keluarga</td>
-    <td class="ch">怕瘫在床上成了家里的包袱</td>
-    <td class="ce">Afraid of being bedridden and becoming a burden to the family</td>
-    <td class="cn col-hidden">63</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="62" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_63"><label for="dyn_010text_63"></label></td>
-    <td class="ck">pà</td>
-    <td class="ca col-hidden">Takut</td>
-    <td class="ch hk">怕</td>
-    <td class="ce ek">Afraid</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">64</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="63" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_64" checked=""><label for="dyn_010text_64"></label></td>
-    <td class="ck">rén qián</td>
-    <td class="ca col-hidden">Di depan orang</td>
-    <td class="ch hk">人前</td>
-    <td class="ce ek">In front of others</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">65</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="64" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_65" checked=""><label for="dyn_010text_65"></label></td>
-    <td class="ck">qiáng xiào</td>
-    <td class="ca col-hidden">Tertawa paksa</td>
-    <td class="ch hk">强笑</td>
-    <td class="ce ek">Forced smile</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">66</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="65" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_66" checked=""><label for="dyn_010text_66"></label></td>
-    <td class="ck">rén hòu</td>
-    <td class="ca col-hidden">Di belakang orang</td>
-    <td class="ch hk">人后</td>
-    <td class="ce ek">Behind others</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">67</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="66" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_67" checked=""><label for="dyn_010text_67"></label></td>
-    <td class="ck">yè yè</td>
-    <td class="ca col-hidden">Malam-malam</td>
-    <td class="ch hk">夜夜</td>
-    <td class="ce ek">Night after night</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">68</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="67" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">11.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_68" checked=""><label for="dyn_010text_68"></label></td>
-    <td class="ck">suān chǔ</td>
-    <td class="ca col-hidden">Kepedihan</td>
-    <td class="ch hk">酸楚</td>
-    <td class="ce ek">Bitterness/sorrow</td>
-    <td class="cy">pà rén qián qiáng xiào rén hòu yè yè suān chǔ</td>
-    <td class="ci col-hidden">Takut di depan orang tertawa paksa, di belakang malam-malam penuh kepedihan</td>
-    <td class="ch">怕人前强笑人后夜夜酸楚</td>
-    <td class="ce">Afraid of forcing smiles in front of others, and bitter nights behind</td>
-    <td class="cn col-hidden">69</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="68" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">12.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_69" checked=""><label for="dyn_010text_69"></label></td>
-    <td class="ck">rén xīn</td>
-    <td class="ca col-hidden">Hati manusia</td>
-    <td class="ch hk">人心</td>
-    <td class="ce ek">Human heart</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">70</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="69" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">12.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_70" checked=""><label for="dyn_010text_70"></label></td>
-    <td class="ck">jīng bù qǐ</td>
-    <td class="ca col-hidden">Tidak tahan</td>
-    <td class="ch hk">经不起</td>
-    <td class="ce ek">Cannot withstand</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">71</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="70" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">12.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_71" checked=""><label for="dyn_010text_71"></label></td>
-    <td class="ck">cháng nián lěi yuè</td>
-    <td class="ca col-hidden">Bertahun-tahun</td>
-    <td class="ch hk">长年累月</td>
-    <td class="ce ek">Years and years</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">72</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="71" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">12.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_72"><label for="dyn_010text_72"></label></td>
-    <td class="ck">de</td>
-    <td class="ca col-hidden">Partikel</td>
-    <td class="ch hk">的</td>
-    <td class="ce ek">Particle</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">73</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="72" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">12.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_73" checked=""><label for="dyn_010text_73"></label></td>
-    <td class="ck">fù chū</td>
-    <td class="ca col-hidden">Pengorbanan</td>
-    <td class="ch hk">付出</td>
-    <td class="ce ek">Giving/sacrifice</td>
-    <td class="cy">rén xīn jīng bù qǐ cháng nián lěi yuè de fù chū</td>
-    <td class="ci col-hidden">Hati manusia tidak tahan terhadap pengorbanan bertahun-tahun</td>
-    <td class="ch">人心经不起长年累月的付出</td>
-    <td class="ce">The human heart can't withstand years and years of giving</td>
-    <td class="cn col-hidden">74</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="73" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_74" checked=""><label for="dyn_010text_74"></label></td>
-    <td class="ck">jiǔ bìng</td>
-    <td class="ca col-hidden">Sakit lama</td>
-    <td class="ch hk">久病</td>
-    <td class="ce ek">Chronic illness</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">75</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="74" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_75" checked=""><label for="dyn_010text_75"></label></td>
-    <td class="ck">chuáng qián</td>
-    <td class="ca col-hidden">Di sisi tempat tidur</td>
-    <td class="ch hk">床前</td>
-    <td class="ce ek">By the bedside</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">76</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="75" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_76"><label for="dyn_010text_76"></label></td>
-    <td class="ck">nǎ</td>
-    <td class="ca col-hidden">Mana</td>
-    <td class="ch hk">哪</td>
-    <td class="ce ek">Where</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">77</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="76" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_77"><label for="dyn_010text_77"></label></td>
-    <td class="ck">hái</td>
-    <td class="ca col-hidden">Masih</td>
-    <td class="ch hk">还</td>
-    <td class="ce ek">Still</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">78</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="77" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_78"><label for="dyn_010text_78"></label></td>
-    <td class="ck">yǒu</td>
-    <td class="ca col-hidden">Ada</td>
-    <td class="ch hk">有</td>
-    <td class="ce ek">Have</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">79</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="78" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_79"><label for="dyn_010text_79"></label></td>
-    <td class="ck">shén me</td>
-    <td class="ca col-hidden">Apa</td>
-    <td class="ch hk">什么</td>
-    <td class="ce ek">What</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">80</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="79" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">13.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_80" checked=""><label for="dyn_010text_80"></label></td>
-    <td class="ck">qīn shū</td>
-    <td class="ca col-hidden">Dekat dan jauh</td>
-    <td class="ch hk">亲疏</td>
-    <td class="ce ek">Closeness and distance</td>
-    <td class="cy">jiǔ bìng chuáng qián nǎ hái yǒu shén me qīn shū</td>
-    <td class="ci col-hidden">Di sisi tempat tidur orang sakit lama, mana masih ada dekat atau jauh</td>
-    <td class="ch">久病床前 哪还有什么亲疏</td>
-    <td class="ce">By the bedside of the chronically ill, what closeness or distance is there anymore</td>
-    <td class="cn col-hidden">81</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="80" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_81"><label for="dyn_010text_81"></label></td>
-    <td class="ck">yǒu</td>
-    <td class="ca col-hidden">Ada</td>
-    <td class="ch hk">有</td>
-    <td class="ce ek">Have</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">82</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="81" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_82"><label for="dyn_010text_82"></label></td>
-    <td class="ck">gè</td>
-    <td class="ca col-hidden">Buah (kata bantu)</td>
-    <td class="ch hk">个</td>
-    <td class="ce ek">Measure word</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">83</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="82" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_83"><label for="dyn_010text_83"></label></td>
+    <td class="cn">1</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_1" checked=""><label for="dyn_000datatesting_1"></label></td>
     <td class="ck">hǎo</td>
-    <td class="ca col-hidden">Baik/sehat</td>
+    <td class="ca col-hidden">* Halo</td>
     <td class="ch hk">好</td>
-    <td class="ce ek">Good/healthy</td>
+    <td class="ce ek">Hello</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">84</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="83" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="1" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_84"><label for="dyn_010text_84"></label></td>
-    <td class="ck">shēn tǐ</td>
-    <td class="ca col-hidden">Tubuh</td>
-    <td class="ch hk">身体</td>
-    <td class="ce ek">Body</td>
+<tr data-pilih="1">
+    <td class="cn">1</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_2" checked=""><label for="dyn_000datatesting_2"></label></td>
+    <td class="ck">wǒ</td>
+    <td class="ca col-hidden">* Saya</td>
+    <td class="ch hk">我</td>
+    <td class="ce ek">I</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">85</td>
-    <td class="cn col-hidden">008_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="84" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="2" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_85"><label for="dyn_010text_85"></label></td>
-    <td class="ck">cái</td>
-    <td class="ca col-hidden">Barulah</td>
-    <td class="ch hk">才</td>
-    <td class="ce ek">Only then</td>
+<tr data-pilih="1">
+    <td class="cn">1</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_3" checked=""><label for="dyn_000datatesting_3"></label></td>
+    <td class="ck">xū yào</td>
+    <td class="ca col-hidden">* Butuh</td>
+    <td class="ch hk">需要</td>
+    <td class="ce ek">Need</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">86</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="85" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="3" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+  </tr>
+<tr data-pilih="1">
+    <td class="cn">1</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_4" checked=""><label for="dyn_000datatesting_4"></label></td>
+    <td class="ck">máo jīn</td>
+    <td class="ca col-hidden">* Handuk</td>
+    <td class="ch hk">毛巾</td>
+    <td class="ce ek">Towel</td>
+    <td class="cy">nín hǎo wǒ xū yào máo jīn</td>
+    <td class="ci col-hidden">Halo, saya butuh handuk.</td>
+    <td class="ch">您好,我需要毛巾。</td>
+    <td class="ce">Hello, I need a towel.</td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="4" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+  </tr>
+<tr data-pilih="1">
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_5" checked=""><label for="dyn_000datatesting_5"></label></td>
+    <td class="ck">dà</td>
+    <td class="ca col-hidden">* Besar</td>
+    <td class="ch hk">大</td>
+    <td class="ce ek">Big</td>
+    <td class="cy"></td>
+    <td class="ci col-hidden"></td>
+    <td class="ch"></td>
+    <td class="ce"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="5" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_86"><label for="dyn_010text_86"></label></td>
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_6"><label for="dyn_000datatesting_6"></label></td>
+    <td class="ck">máo jīn</td>
+    <td class="ca col-hidden">Handuk</td>
+    <td class="ch hk">毛巾</td>
+    <td class="ce ek">Towel</td>
+    <td class="cy"></td>
+    <td class="ci col-hidden"></td>
+    <td class="ch"></td>
+    <td class="ce"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="6" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+  </tr>
+<tr data-pilih="1">
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_7" checked=""><label for="dyn_000datatesting_7"></label></td>
+    <td class="ck">hái</td>
+    <td class="ca col-hidden">* Atau</td>
+    <td class="ch hk">还</td>
+    <td class="ce ek">Or</td>
+    <td class="cy"></td>
+    <td class="ci col-hidden"></td>
+    <td class="ch"></td>
+    <td class="ce"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="7" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+  </tr>
+<tr data-pilih="1">
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_8" checked=""><label for="dyn_000datatesting_8"></label></td>
     <td class="ck">shì</td>
-    <td class="ca col-hidden">Adalah</td>
+    <td class="ca col-hidden">* Adalah</td>
     <td class="ch hk">是</td>
     <td class="ce ek">Is</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">87</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="86" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="8" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_87" checked=""><label for="dyn_010text_87"></label></td>
-    <td class="ck">zhēn de</td>
-    <td class="ca col-hidden">Sungguh/benar</td>
-    <td class="ch hk">真的</td>
-    <td class="ce ek">Real/true</td>
-    <td class="cy">yǒu gè hǎo shēn tǐ cái shì zhēn de xìng fú</td>
-    <td class="ci col-hidden">Punya tubuh yang sehat barulah kebahagiaan sejati</td>
-    <td class="ch">有个好身体才是真的幸福</td>
-    <td class="ce">Having a good body is true happiness</td>
-    <td class="cn col-hidden">88</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="87" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_9" checked=""><label for="dyn_000datatesting_9"></label></td>
+    <td class="ck">xiǎo</td>
+    <td class="ca col-hidden">* Kecil</td>
+    <td class="ch hk">小</td>
+    <td class="ce ek">Small</td>
+    <td class="cy">dà máo jīn hái shì xiǎo máo jīn</td>
+    <td class="ci col-hidden">Handuk besar atau kecil?</td>
+    <td class="ch">大毛巾还是小毛巾?</td>
+    <td class="ce">Big towel or small towel?</td>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="9" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
-    <td class="cn">14.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_88"><label for="dyn_010text_88"></label></td>
-    <td class="ck">xìng fú</td>
-    <td class="ca col-hidden">Kebahagiaan</td>
-    <td class="ch hk">幸福</td>
-    <td class="ce ek">Happiness</td>
+    <td class="cn">3</td>
+    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_10"><label for="dyn_000datatesting_10"></label></td>
+    <td class="ck">máo jīn</td>
+    <td class="ca col-hidden">Handuk</td>
+    <td class="ch hk">毛巾</td>
+    <td class="ce ek">Towel</td>
     <td class="cy"></td>
     <td class="ci col-hidden"></td>
     <td class="ch"></td>
     <td class="ce"></td>
-    <td class="cn col-hidden">89</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="88" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_89" checked=""><label for="dyn_010text_89"></label></td>
-    <td class="ck">bié děng</td>
-    <td class="ca col-hidden">Jangan tunggu</td>
-    <td class="ch hk">别等</td>
-    <td class="ce ek">Don't wait</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">90</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="89" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_90"><label for="dyn_010text_90"></label></td>
-    <td class="ck">lǎo le</td>
-    <td class="ca col-hidden">Sudah tua</td>
-    <td class="ch hk">老了</td>
-    <td class="ce ek">Old</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">91</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="90" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_91" checked=""><label for="dyn_010text_91"></label></td>
-    <td class="ck">zhǐ néng</td>
-    <td class="ca col-hidden">Hanya bisa</td>
-    <td class="ch hk">只能</td>
-    <td class="ce ek">Can only</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">92</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="91" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_92"><label for="dyn_010text_92"></label></td>
-    <td class="ck">zì jǐ</td>
-    <td class="ca col-hidden">Sendiri</td>
-    <td class="ch hk">自己</td>
-    <td class="ce ek">Oneself</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">93</td>
-    <td class="cn col-hidden">002_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="92" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_93" checked=""><label for="dyn_010text_93"></label></td>
-    <td class="ck">tōu tōu</td>
-    <td class="ca col-hidden">Diam-diam</td>
-    <td class="ch hk">偷偷</td>
-    <td class="ce ek">Secretly</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">94</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="93" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">15.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_94" checked=""><label for="dyn_010text_94"></label></td>
-    <td class="ck">kū</td>
-    <td class="ca col-hidden">Menangis</td>
-    <td class="ch hk">哭</td>
-    <td class="ce ek">Cry</td>
-    <td class="cy">bié děng lǎo le zhǐ néng zì jǐ tōu tōu kū</td>
-    <td class="ci col-hidden">Jangan tunggu sampai tua, hanya bisa menangis sendiri diam-diam</td>
-    <td class="ch">别等老了 只能自己偷偷哭</td>
-    <td class="ce">Don't wait until you're old, only able to cry secretly by yourself</td>
-    <td class="cn col-hidden">95</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="94" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_95" checked=""><label for="dyn_010text_95"></label></td>
-    <td class="ck">duān</td>
-    <td class="ca col-hidden">Mengangkat/menyuapi</td>
-    <td class="ch hk">端</td>
-    <td class="ce ek">Carry/feed</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">96</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="95" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_96" checked=""><label for="dyn_010text_96"></label></td>
-    <td class="ck">shǐ</td>
-    <td class="ca col-hidden">Tinja</td>
-    <td class="ch hk">屎</td>
-    <td class="ce ek">Feces</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">97</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="96" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_97" checked=""><label for="dyn_010text_97"></label></td>
-    <td class="ck">niào</td>
-    <td class="ca col-hidden">Urine</td>
-    <td class="ch hk">尿</td>
-    <td class="ce ek">Urine</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">98</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="97" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_98" checked=""><label for="dyn_010text_98"></label></td>
-    <td class="ck">qīn gǔ ròu</td>
-    <td class="ca col-hidden">Anak kandung/darah daging</td>
-    <td class="ch hk">亲骨肉</td>
-    <td class="ce ek">Flesh and blood</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">99</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="98" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_99"><label for="dyn_010text_99"></label></td>
-    <td class="ck">yě</td>
-    <td class="ca col-hidden">Juga</td>
-    <td class="ch hk">也</td>
-    <td class="ce ek">Also</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">100</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="99" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_100" checked=""><label for="dyn_010text_100"></label></td>
-    <td class="ck">xián</td>
-    <td class="ca col-hidden">Merasa risi/kesal</td>
-    <td class="ch hk">嫌</td>
-    <td class="ce ek">Find annoying</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">101</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="100" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">16.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_101" checked=""><label for="dyn_010text_101"></label></td>
-    <td class="ck">tiān dǔ</td>
-    <td class="ca col-hidden">Menambah sumbatan/risi</td>
-    <td class="ch hk">添堵</td>
-    <td class="ce ek">Add to the annoyance</td>
-    <td class="cy">duān shǐ duān niào qīn gǔ ròu yě xián tiān dǔ</td>
-    <td class="ci col-hidden">Menyuapi makan dan mengurus buang air, anak kandung pun juga merasa risi</td>
-    <td class="ch">端屎端尿亲骨肉也嫌添堵</td>
-    <td class="ce">Even one's own flesh and blood finds it annoying to feed and clean up after</td>
-    <td class="cn col-hidden">102</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="101" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_102" checked=""><label for="dyn_010text_102"></label></td>
-    <td class="ck">méi bìng</td>
-    <td class="ca col-hidden">Tidak sakit</td>
-    <td class="ch hk">没病</td>
-    <td class="ce ek">No illness</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">103</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="102" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_103" checked=""><label for="dyn_010text_103"></label></td>
-    <td class="ck">méi zāi</td>
-    <td class="ca col-hidden">Tidak ada bencana</td>
-    <td class="ch hk">没灾</td>
-    <td class="ce ek">No disaster</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">104</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="103" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_104"><label for="dyn_010text_104"></label></td>
-    <td class="ck">cái</td>
-    <td class="ca col-hidden">Barulah</td>
-    <td class="ch hk">才</td>
-    <td class="ce ek">Only then</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">105</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="104" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_105"><label for="dyn_010text_105"></label></td>
-    <td class="ck">shì</td>
-    <td class="ca col-hidden">Adalah</td>
-    <td class="ch hk">是</td>
-    <td class="ce ek">Is</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">106</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="105" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="1">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_106" checked=""><label for="dyn_010text_106"></label></td>
-    <td class="ck">zhēn zhèng</td>
-    <td class="ca col-hidden">Sungguh/benar</td>
-    <td class="ch hk">真正</td>
-    <td class="ce ek">True/real</td>
-    <td class="cy">méi bìng méi zāi cái shì zhēn zhèng de xìng fú</td>
-    <td class="ci col-hidden">Tidak sakit tidak ada bencana barulah kebahagiaan sejati</td>
-    <td class="ch">没病没灾 才是真正的幸福</td>
-    <td class="ce">No illness, no disaster is true happiness</td>
-    <td class="cn col-hidden">107</td>
-    <td class="cn col-hidden">010_*#</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="106" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_107"><label for="dyn_010text_107"></label></td>
-    <td class="ck">de</td>
-    <td class="ca col-hidden">Partikel</td>
-    <td class="ch hk">的</td>
-    <td class="ce ek">Particle</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">108</td>
-    <td class="cn col-hidden">001_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="107" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr>
-<tr data-pilih="0" class="hidden">
-    <td class="cn">17.</td>
-    <td class="cp"><input type="checkbox" class="ck-box" id="dyn_010text_108"><label for="dyn_010text_108"></label></td>
-    <td class="ck">xìng fú</td>
-    <td class="ca col-hidden">Kebahagiaan</td>
-    <td class="ch hk">幸福</td>
-    <td class="ce ek">Happiness</td>
-    <td class="cy"></td>
-    <td class="ci col-hidden"></td>
-    <td class="ch"></td>
-    <td class="ce"></td>
-    <td class="cn col-hidden">109</td>
-    <td class="cn col-hidden">010_</td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_010text" data-row="108" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr></tbody></table></div><div class="sb">Menampilkan 56 dari 109 · 56 ditandai ✓</div></div></div></body></html>
+    <td class="cn col-hidden"></td>
+    <td class="cn col-hidden"></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="10" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+  </tr></tbody></table></div><div class="sb">Menampilkan 9 dari 11 · 9 ditandai ✓</div></div></div>
+</body></html>
