@@ -497,6 +497,9 @@ let combinedBlobCache = null;
 let lastCombineRowsHash = null;
 let combineReadyFlag = false;
 let isCombining = false; // re-entrancy guard so a second Pre-Comb click can't start a duplicate run mid-process
+let combinedRowOffsets = []; // [{tr, time}] ascending by time-in-seconds within combinedBlobCache; rebuilt on each Pre-Combine
+let combineHighlightTimer = null; // live highlight interval id (Alt/Combine mode); only runs while screen visible & combine audio playing
+let combineHighlightActive = false; // true only during an actual Alt Play All run, so visibilitychange knows whether to restart the timer
 
 function qa(sel, root=document){ return Array.from(root.querySelectorAll(sel)); }
 function q(sel, root=document){ return root.querySelector(sel); }
@@ -927,7 +930,9 @@ async function combineAudioBlobs(audioBlobs, delayMs=500, onProgress){
     const sampleRate = audioCtx.sampleRate;
     const offlineCtx = new OfflineAudioContext(1, Math.ceil(totalDuration * sampleRate), sampleRate);
     let offset = 0;
+    const blobOffsets = [];
     for(const buffer of decodedBuffers){
+      blobOffsets.push(offset);
       const source = offlineCtx.createBufferSource();
       source.buffer = buffer;
       source.connect(offlineCtx.destination);
@@ -936,7 +941,7 @@ async function combineAudioBlobs(audioBlobs, delayMs=500, onProgress){
     }
     const renderedBuffer = await offlineCtx.startRendering();
     const wavBlob = audioBufferToWav(renderedBuffer);
-    return wavBlob;
+    return { blob: wavBlob, blobOffsets };
   }catch(e){
     setUploadMsg('Error combine audio: '+e.message);
     return null;
@@ -981,7 +986,7 @@ function audioBufferToWav(audioBuffer){
   }
   return new Blob([arrayBuffer], { type: 'audio/wav' });
 }
-function playAudioBlob(blob, token, done){
+function playAudioBlob(blob, token, done, startTime){
   if(token!==playToken){ done(false); return; }
   try{
     const audio=getSharedMp3Audio();
@@ -992,6 +997,14 @@ function playAudioBlob(blob, token, done){
     audio.onended=()=>{ if(token!==playToken) return; done(true); };
     audio.onerror=()=>{ if(token!==playToken) return; done(false); };
     audio.src=url;
+    if(startTime){
+      // One-time seek before playback starts (not a mid-sequence callback) - used by
+      // playAllCombineMode() to resume from a specific row's offset.
+      audio.addEventListener('loadedmetadata', function onMeta(){
+        audio.removeEventListener('loadedmetadata', onMeta);
+        try{ audio.currentTime = startTime; }catch(e){}
+      });
+    }
     try{
       audio.playbackRate = getGlobalTtsSpeed();
       audio.defaultPlaybackRate = getGlobalTtsSpeed();
@@ -1027,18 +1040,26 @@ function canPlayMode(table,tr,tds,mode){
   if(getAudioMode()==='mp3') return !!findMp3For(table,tr,mode);
   return true;
 }
-function speakMode(table,tr,tds,mode,token,done){
+// `manual` marks a user-initiated single-row click (the per-row ▶ or per-cell speak buttons) as
+// opposed to the automated Play All sequence. Only the manual path may fall back to TTS when no
+// MP3 match is found - the screen is necessarily on for a manual click, so Rule 6's throttling
+// concern (Chrome throttles TTS after ~1000ms with the screen off) doesn't apply there. Play All
+// must keep skipping with no fallback, unchanged - callers in that path never pass `manual`.
+function speakMode(table,tr,tds,mode,token,done,manual){
   const text=getCellTextForMode(table,tr,tds,mode);
   if(!text){ done(false); return; }
-  if(getAudioMode()==='mp3'){
+  const audioMode=getAudioMode();
+  if(audioMode==='mp3' || (manual && audioMode==='combine')){
     const src=findMp3For(table,tr,mode);
     if(src){
       playMp3Source(src,token,(ok)=>{
         if(ok) done(true);
+        else if(manual) speakOne(text,langForMode(mode),token,done);
         else { warnMissingMp3(table,tr,mode); done(false); }
       });
       return;
     }
+    if(manual){ speakOne(text,langForMode(mode),token,done); return; }
     done(false); return;
   }
   speakOne(text,langForMode(mode),token,done);
@@ -1161,6 +1182,8 @@ function finishPlay(token){
   if(token!==undefined && token!==playToken) return;
   clearPlayTimer();
   clearPlayingRowHighlight();
+  combineHighlightActive = false;
+  stopCombineHighlightWatcher();
   stopActiveAudio();
   try{ speechSynthesis.cancel(); }catch(e){}
   if(activePlayButton && activePlayButton.classList.contains('play-row-btn')){
@@ -1184,6 +1207,8 @@ function stopPlayAll(){
   clearPlayTimer();
   paused=false;
   clearPlayingRowHighlight();
+  combineHighlightActive = false;
+  stopCombineHighlightWatcher();
   stopActiveAudio();
   try{ speechSynthesis.resume(); speechSynthesis.cancel(); }catch(e){}
   if(activePlayButton){
@@ -1286,6 +1311,40 @@ function setPlayingRowHighlight(tr){
 function clearPlayingRowHighlight(){
   qa('tr.playing-row').forEach(r=>r.classList.remove('playing-row'));
 }
+// Live row highlight for Alt/Combine playback. Runs ONLY while the tab is visible - this is the
+// load-bearing invariant that keeps screen-off playback JS-free (skill Rule 3). The timer just
+// reads currentTime off the already-playing <audio> element and toggles a CSS class; it never
+// touches the audio pipeline itself, so it can't affect screen-off playback even if it lagged.
+function combineHighlightTick(){
+  if(document.visibilityState !== 'visible') return;
+  const audio = activeAudio;
+  if(!audio) return;
+  const t = audio.currentTime;
+  let match = null;
+  for(const entry of combinedRowOffsets){
+    if(entry.time <= t) match = entry; else break;
+  }
+  if(match){
+    setPlayingRowHighlight(match.tr);
+    try{ match.tr.scrollIntoView({block:'center', behavior:'smooth'}); }catch(e){}
+  }
+}
+function stopCombineHighlightWatcher(){
+  if(combineHighlightTimer){ clearInterval(combineHighlightTimer); combineHighlightTimer=null; }
+}
+function startCombineHighlightWatcher(){
+  stopCombineHighlightWatcher();
+  if(!combinedRowOffsets.length || document.visibilityState !== 'visible') return;
+  combineHighlightTick();
+  combineHighlightTimer = setInterval(combineHighlightTick, 400);
+}
+document.addEventListener('visibilitychange', ()=>{
+  if(document.visibilityState === 'hidden'){
+    stopCombineHighlightWatcher();
+  } else if(combineHighlightActive){
+    startCombineHighlightWatcher();
+  }
+});
 let hanAccum = [];
 let engAccum = [];
 let allAccum = [];
@@ -1473,20 +1532,33 @@ async function playAllCombineMode(tid, modes, btn, token){
   const rows=rowCycle(table, modes);
   lastAnnouncedRowNumber=null;
 
-  function doCombinePlay(){
+  // Continue-from-next-row: if the user just manually played a single row (e.g. the per-row ▶
+  // button) and then hits Play All, resume right after that row instead of restarting from 0 -
+  // mirrors getStartIndex()'s behavior for MP3/TTS mode. Only applies to the very first playback;
+  // a loop restart always goes back to 0. One-time seek before playback starts, not a
+  // mid-sequence callback, so this doesn't touch the screen-off constraint.
+  let initialSeek = 0;
+  if(lastPlayedTr && !isRandomOn(table) && combinedRowOffsets.length){
+    const idx = combinedRowOffsets.findIndex(e => e.tr === lastPlayedTr);
+    if(idx >= 0) initialSeek = combinedRowOffsets[(idx + 1) % combinedRowOffsets.length].time;
+  }
+
+  function doCombinePlay(seekTime){
     if(token!==playToken){ finishPlay(token); return; }
     setUploadMsg('▶ Playing Pre-Combine audio...');
     announceAllRowNumbers(rows, token, ()=>{
       if(token!==playToken){ finishPlay(token); return; }
+      combineHighlightActive = true;
+      startCombineHighlightWatcher();
       playAudioBlob(combinedBlobCache, token, (ok)=>{
         if(token!==playToken) return;
         if(!ok){ setUploadMsg('Play dihentikan.'); finishPlay(token); return; }
         if(!isLoopOn(table)){ setUploadMsg('✓ Selesai.'); finishPlay(token); return; }
-        doCombinePlay();
-      });
+        doCombinePlay(0);
+      }, seekTime);
     });
   }
-  doCombinePlay();
+  doCombinePlay(initialSeek);
 }
 function playAllSequence(tid, modes, btn){
   stopPlayAll(); const token=++playToken; activePlayButton=btn||null; if(activePlayButton) activePlayButton.classList.add('playing'); lastAnnouncedRowNumber=null;
@@ -1611,7 +1683,7 @@ function playRowSequence(btn) {
       currentModeIndex++;
       if (delay > 0) { playTimer = setTimeout(playNextMode, delay); }
       else { playTimer = setTimeout(playNextMode, 0); }
-    });
+    }, true);
   }
   playTimer = setTimeout(playNextMode, 80);
 }
@@ -1662,13 +1734,16 @@ function speakButton(btn){
   }
   function playAgain(){
     if(token!==playToken) return;
-    if(!canPlayMode(table,tr,tds,mode)){ stopRowButton(); return; }
+    // Not canPlayMode() here on purpose: canPlayMode() would gate MP3 mode on an MP3 match
+    // existing, which is exactly what a manual click should be able to fall back past (see the
+    // `manual` arg on speakMode below) - only bail out if there's no text at all to play.
+    if(!getCellTextForMode(table,tr,tds,mode)){ stopRowButton(); return; }
     speakMode(table,tr,tds,mode,token,(played)=>{
       if(token!==playToken) return;
       if(!played){ stopRowButton(); return; }
       if(table && isLoopOn(table)) playTimer=setTimeout(playAgain, 150);
       else stopRowButton();
-    });
+    }, true);
   }
   playAgain();
 }
@@ -2570,8 +2645,11 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
 
     const rowsHash = combineSignature(tbl, modes);
     const audioBlobs = [];
+    const rowBlobStart = []; // parallel to `rows`: index into audioBlobs where this row's first blob landed, or -1 if the row contributed none
     let rowsDone = 0;
     for(const tr of rows){
+      const startIdx = audioBlobs.length;
+      let addedAny = false;
       const tds = tr.querySelectorAll('td');
       for(const mode of modes){
         if(!canPlayMode(tbl,tr,tds,mode)) continue;
@@ -2584,9 +2662,10 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
             const data=await readZipEntry(src.entry);
             blob=new Blob([data], {type:'audio/mpeg'});
           }
-          if(blob) audioBlobs.push(blob);
+          if(blob){ audioBlobs.push(blob); addedAny = true; }
         }catch(e){ setUploadMsg('Error: '+e.message); }
       }
+      rowBlobStart.push(addedAny ? startIdx : -1);
       rowsDone++;
       if(rowsDone % 15 === 0 || rowsDone === rows.length){
         setUploadMsg(`⏳ Membaca MP3... ${rowsDone}/${rows.length} baris`);
@@ -2614,7 +2693,10 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
     if(renderSpinnerTimer){ clearInterval(renderSpinnerTimer); renderSpinnerTimer=null; }
     if(!combined){ setUploadMsg('Gagal combine.'); return; }
 
-    combinedBlobCache = combined;
+    combinedBlobCache = combined.blob;
+    combinedRowOffsets = rows
+      .map((tr, i) => rowBlobStart[i] >= 0 ? { tr, time: combined.blobOffsets[rowBlobStart[i]] } : null)
+      .filter(Boolean);
     lastCombineRowsHash = rowsHash;
     combineReadyFlag = true;
     setUploadMsg('✓ Pre-Combine ready! Click Play All untuk mainkan.');
