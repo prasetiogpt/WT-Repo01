@@ -1340,7 +1340,7 @@ function clearPlayingRowHighlight(){
 // load-bearing invariant that keeps screen-off playback JS-free (skill Rule 3). The timer just
 // reads currentTime off the already-playing <audio> element and toggles a CSS class; it never
 // touches the audio pipeline itself, so it can't affect screen-off playback even if it lagged.
-let combineHighlightedTr = null; // last row we highlighted/scrolled to, so a steady tick doesn't re-scroll every 400ms
+let combineHighlightedTr = null; // last row highlighted, so a steady tick doesn't redo the same DOM work every 400ms
 function combineHighlightTick(){
   if(document.visibilityState !== 'visible') return;
   const audio = activeAudio;
@@ -1352,10 +1352,10 @@ function combineHighlightTick(){
   }
   if(match && match.tr !== combineHighlightedTr){
     combineHighlightedTr = match.tr;
+    // Highlight only, no scrollIntoView - matches MP3/TTS mode's setPlayingRowHighlight() call
+    // sites exactly, none of which auto-scroll either. An earlier version scrolled on every row
+    // change, which fought the user's manual scrolling.
     setPlayingRowHighlight(match.tr);
-    // Only scroll when the row actually changes - scrolling on every tick fought the user's own
-    // manual scrolling (page kept snapping back every 400ms even while playback sat on one row).
-    try{ match.tr.scrollIntoView({block:'center', behavior:'smooth'}); }catch(e){}
   }
 }
 function stopCombineHighlightWatcher(){
