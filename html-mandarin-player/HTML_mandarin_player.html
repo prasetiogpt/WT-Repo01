@@ -406,7 +406,7 @@ td:nth-child(2), th:nth-child(2) {
       <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
       <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
       <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
-      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓ Download</button>
+      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
@@ -911,7 +911,17 @@ function stopActiveAudio(){
 // the AudioContext that decoded them, so they're safely reusable across combine runs even though
 // each run creates a fresh AudioContext. Pure win for re-combines (changed selection/filter);
 // doesn't help a first-time combine, which is what option B below targets instead.
+// Bounded (FIFO eviction via Map's insertion order) - decoded PCM is much bigger than the source
+// MP3, so an unbounded cache risks real memory pressure on a phone across repeated combine runs
+// in the same tab (a suspected cause of a render slowdown seen in testing).
 const decodedAudioCache = new Map();
+const DECODE_CACHE_MAX = 400;
+function cacheDecodedBuffer(key, buf){
+  decodedAudioCache.set(key, buf);
+  if(decodedAudioCache.size > DECODE_CACHE_MAX){
+    decodedAudioCache.delete(decodedAudioCache.keys().next().value);
+  }
+}
 async function combineAudioBlobs(audioSources, delayMs=500, onProgress){
   if(!audioSources.length) return null;
   try{
@@ -938,7 +948,7 @@ async function combineAudioBlobs(audioSources, delayMs=500, onProgress){
       const batchResults = await Promise.all(batchIdx.map(async idx=>{
         const arrayBuffer = await audioSources[idx].blob.arrayBuffer();
         const buf = await audioCtx.decodeAudioData(arrayBuffer);
-        decodedAudioCache.set(audioSources[idx].key, buf);
+        cacheDecodedBuffer(audioSources[idx].key, buf);
         decodedCount++;
         if(onProgress) onProgress(decodedCount, audioSources.length, 'decode');
         return buf;
@@ -948,21 +958,35 @@ async function combineAudioBlobs(audioSources, delayMs=500, onProgress){
     }
     if(onProgress) onProgress(audioSources.length, audioSources.length, 'render');
     await nextPaint();
-    let totalDuration = 0;
-    for(const buffer of decodedBuffers) totalDuration += buffer.duration + (delayMs / 1000);
+    // Concatenate PCM samples directly instead of scheduling each buffer as an OfflineAudioContext
+    // BufferSourceNode. All we need here is "paste these clips one after another with silence
+    // gaps" - no mixing/effects - but OfflineAudioContext still has to schedule and process every
+    // node through the full audio graph, and that scheduling overhead scales badly with node count
+    // (seen in testing: >10min render for ~1100 clips). Plain array copies are just as correct and
+    // dramatically cheaper for this case.
     const sampleRate = audioCtx.sampleRate;
-    const offlineCtx = new OfflineAudioContext(1, Math.ceil(totalDuration * sampleRate), sampleRate);
+    const gapSamples = Math.round((delayMs / 1000) * sampleRate);
+    let totalSamples = 0;
+    for(const buffer of decodedBuffers) totalSamples += buffer.length + gapSamples;
+    const output = new Float32Array(totalSamples);
     let offset = 0;
     const blobOffsets = [];
     for(const buffer of decodedBuffers){
-      blobOffsets.push(offset);
-      const source = offlineCtx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(offlineCtx.destination);
-      source.start(offset);
-      offset += buffer.duration + (delayMs / 1000);
+      blobOffsets.push(offset / sampleRate);
+      if(buffer.numberOfChannels === 1){
+        output.set(buffer.getChannelData(0), offset);
+      } else {
+        // Downmix to mono the same way a mono destination node would - average all channels.
+        const mixed = new Float32Array(buffer.length);
+        for(let ch=0; ch<buffer.numberOfChannels; ch++){
+          const data = buffer.getChannelData(ch);
+          for(let i=0; i<buffer.length; i++) mixed[i] += data[i] / buffer.numberOfChannels;
+        }
+        output.set(mixed, offset);
+      }
+      offset += buffer.length + gapSamples; // gap samples stay 0 (silence) - Float32Array is zero-initialized
     }
-    const renderedBuffer = await offlineCtx.startRendering();
+    const renderedBuffer = { numberOfChannels: 1, sampleRate, length: output.length, getChannelData: ()=>output };
     const wavBlob = audioBufferToWav(renderedBuffer);
     return { blob: wavBlob, blobOffsets };
   }catch(e){
