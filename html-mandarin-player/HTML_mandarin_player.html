@@ -397,7 +397,7 @@ td:nth-child(2), th:nth-child(2) {
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">MP3:</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <span class="mp3-status" id="mp3FolderMsg">MP3 belum dipilih</span>
+      <span class="mp3-status" id="mp3FolderMsg"></span>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
         <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
         <label class="tts-top-control">Au: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
@@ -631,6 +631,20 @@ function normalizeSheetFolderName(name){
 function sheetFolderNameFromTable(table){
   const panel=table?.closest('.panel');
   return cleanTitle(panelTitle ? panelTitle(panel) : (panel?.dataset.sheetTitle || table?.id || 'Text'));
+}
+// Shows whether the CURRENTLY ACTIVE tab/sheet has a matching MP3 ZIP folder uploaded - not a
+// generic "N files ready" count. Blank when the active sheet has no matching folder, so the
+// status always answers "is MP3 ready for what I'm looking at right now", not "is anything
+// ready anywhere in the ZIP". Called on ZIP upload and on every tab switch (see switchTab()).
+function updateMp3StatusForActivePanel(){
+  const msg = document.getElementById('mp3FolderMsg');
+  if(!msg) return;
+  const panel = activePanel();
+  const table = panel ? panel.querySelector('table') : null;
+  const folder = table ? sheetFolderNameFromTable(table) : '';
+  const count = folder ? mp3ZipCounts[folder] : undefined;
+  msg.textContent = count ? `✓ ${folder} · ${count} MP3` : '';
+  msg.title = msg.textContent;
 }
 function relativeParentFolder(file){
   const rel=String(file.webkitRelativePath || '');
@@ -886,12 +900,8 @@ async function handleMp3ZipFiles(files){
     }
     const mode=document.getElementById('audioModeSelect');
     if(total && mode) mode.value='mp3';
-    const msg=document.getElementById('mp3FolderMsg');
+    updateMp3StatusForActivePanel();
     const folderNames=Object.keys(mp3ZipCounts).sort();
-    if(msg){
-      msg.textContent = total ? `✓ ${total} MP3 ZIP siap${folderNames.length ? ' · '+folderNames.length+' folder' : ''}` : 'MP3 ZIP belum dipilih';
-      msg.title = msg.textContent; // full text on hover/long-press - the box itself is fixed-width + truncated
-    }
     const shown=folderNames.slice(0,6).map(s=>`${s}:${mp3ZipCounts[s]}`).join(' · ');
     const more=folderNames.length>6 ? ` · +${folderNames.length-6} folder` : '';
     setUploadMsg(total ? `✓ ZIP MP3 dibaca. ${list.length} ZIP · ${total} MP3. ${shown}${more}` : 'ZIP tidak berisi MP3.');
@@ -1131,6 +1141,7 @@ function switchTab(index){
   tabs.forEach((tab,i)=>tab.classList.toggle('active', i===index && !tab.classList.contains('locked-hidden')));
   panels.forEach((panel,i)=>panel.classList.toggle('active', i===index && !panel.classList.contains('locked-hidden')));
   updateGlobalYtubeButton();
+  updateMp3StatusForActivePanel();
 }
 window.switchTab = switchTab;
 
@@ -2307,7 +2318,7 @@ function syncAttributes(root=document){
 }
 function sanitizeForDownload(clone){
   syncAttributes(clone);
-  const admin=clone.querySelector('#adminPanel'); if(admin) admin.classList.remove('active'); const mp3Msg=clone.querySelector('#mp3FolderMsg'); if(mp3Msg) mp3Msg.textContent='MP3 belum dipilih';
+  const admin=clone.querySelector('#adminPanel'); if(admin) admin.classList.remove('active'); const mp3Msg=clone.querySelector('#mp3FolderMsg'); if(mp3Msg) mp3Msg.textContent='';
   qa('.tab.active', clone).forEach(x=>x.classList.remove('active')); qa('.panel.active', clone).forEach(x=>x.classList.remove('active'));
   applyLocks(clone);
   const tabs=getTabs(clone), panels=getPanels(clone); const first=tabs.find(t=>!t.classList.contains('locked-hidden')) || tabs[0]; if(first){ first.classList.add('active'); const idx=tabs.indexOf(first); if(panels[idx]) panels[idx].classList.add('active'); }
