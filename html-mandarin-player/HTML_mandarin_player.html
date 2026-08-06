@@ -397,7 +397,8 @@ td:nth-child(2), th:nth-child(2) {
       <label class="tts-top-control">MP3 ZIP: <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple=""></label>
       <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
       <label class="tts-top-control">Audio: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
-      <button class="btn btn-check" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Combine</button>
+      <button class="btn btn-check" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Comb</button>
+      <button class="btn btn-check" id="downloadCombWavBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Download combined WAV">↓Comb</button>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
       <label class="tts-top-control" style="display:none"><input id="readRowNumberToggle" type="checkbox"> 🔢 Baca No</label>
       <span class="mp3-status" id="mp3FolderMsg" style="display:none">MP3 belum dipilih</span>
@@ -904,8 +905,15 @@ function stopActiveAudio(){
   if(activeAudioUrl){ try{ URL.revokeObjectURL(activeAudioUrl); }catch(e){} }
   activeAudio=null; activeAudioUrl=null;
 }
-async function combineAudioBlobs(audioBlobs, delayMs=500, onProgress){
-  if(!audioBlobs.length) return null;
+// Session-scoped decode cache (option A): keyed by the underlying File/zip-entry object identity
+// (stable across re-combines of the same uploaded MP3 set - a fresh upload always produces new
+// File/entry objects, so this never needs manual invalidation). AudioBuffer objects aren't tied to
+// the AudioContext that decoded them, so they're safely reusable across combine runs even though
+// each run creates a fresh AudioContext. Pure win for re-combines (changed selection/filter);
+// doesn't help a first-time combine, which is what option B below targets instead.
+const decodedAudioCache = new Map();
+async function combineAudioBlobs(audioSources, delayMs=500, onProgress){
+  if(!audioSources.length) return null;
   try{
     // Source MP3 (edge-tts) is mono 24kHz - decode/render at that rate instead of the
     // browser's default (44.1/48kHz stereo) to avoid pointless upsample/channel-doubling.
@@ -916,21 +924,29 @@ async function combineAudioBlobs(audioBlobs, delayMs=500, onProgress){
     // Decode in small batches (not all-at-once, not fully sequential): enough concurrency to
     // help, but bounded so weak/older phones don't get hit with 100s of decode jobs simultaneously.
     const BATCH_SIZE = 8;
-    const decodedBuffers = new Array(audioBlobs.length);
+    const decodedBuffers = new Array(audioSources.length);
     let decodedCount = 0;
-    for(let i=0; i<audioBlobs.length; i+=BATCH_SIZE){
-      const batch = audioBlobs.slice(i, i+BATCH_SIZE);
-      const batchResults = await Promise.all(batch.map(async blob=>{
-        const arrayBuffer = await blob.arrayBuffer();
+    const missIndices = [];
+    for(let i=0; i<audioSources.length; i++){
+      const cached = decodedAudioCache.get(audioSources[i].key);
+      if(cached){ decodedBuffers[i] = cached; decodedCount++; if(onProgress) onProgress(decodedCount, audioSources.length, 'decode'); }
+      else missIndices.push(i);
+    }
+    if(missIndices.length) await nextPaint();
+    for(let m=0; m<missIndices.length; m+=BATCH_SIZE){
+      const batchIdx = missIndices.slice(m, m+BATCH_SIZE);
+      const batchResults = await Promise.all(batchIdx.map(async idx=>{
+        const arrayBuffer = await audioSources[idx].blob.arrayBuffer();
         const buf = await audioCtx.decodeAudioData(arrayBuffer);
+        decodedAudioCache.set(audioSources[idx].key, buf);
         decodedCount++;
-        if(onProgress) onProgress(decodedCount, audioBlobs.length, 'decode');
+        if(onProgress) onProgress(decodedCount, audioSources.length, 'decode');
         return buf;
       }));
-      batchResults.forEach((buf, j)=>{ decodedBuffers[i+j] = buf; });
+      batchIdx.forEach((idx, j)=>{ decodedBuffers[idx] = batchResults[j]; });
       await nextPaint();
     }
-    if(onProgress) onProgress(audioBlobs.length, audioBlobs.length, 'render');
+    if(onProgress) onProgress(audioSources.length, audioSources.length, 'render');
     await nextPaint();
     let totalDuration = 0;
     for(const buffer of decodedBuffers) totalDuration += buffer.duration + (delayMs / 1000);
@@ -2683,39 +2699,68 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
     if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang.'); return; }
 
     const rowsHash = combineSignature(tbl, modes);
-    const audioBlobs = [];
-    const rowBlobStart = []; // parallel to `rows`: index into audioBlobs where this row's first blob landed, or -1 if the row contributed none
+
+    // Pass 1 (fast, synchronous): figure out which MP3 source each row/mode needs. No I/O here,
+    // just canPlayMode()/findMp3For() lookups, so this stays sequential without cost.
+    const tasks = []; // {ri, src} in emission order
     let rowsDone = 0;
-    for(const tr of rows){
-      const startIdx = audioBlobs.length;
-      let addedAny = false;
+    for(let ri=0; ri<rows.length; ri++){
+      const tr = rows[ri];
       const tds = tr.querySelectorAll('td');
       for(const mode of modes){
         if(!canPlayMode(tbl,tr,tds,mode)) continue;
         const src = findMp3For(tbl,tr,mode);
         if(!src) continue;
-        try{
-          let blob;
-          if(src.type==='file') blob=src.file;
-          else if(src.type==='zip'){
-            const data=await readZipEntry(src.entry);
-            blob=new Blob([data], {type:'audio/mpeg'});
-          }
-          if(blob){ audioBlobs.push(blob); addedAny = true; }
-        }catch(e){ setUploadMsg('Error: '+e.message); }
+        tasks.push({ri, src});
       }
-      rowBlobStart.push(addedAny ? startIdx : -1);
       rowsDone++;
-      if(rowsDone % 15 === 0 || rowsDone === rows.length){
-        setUploadMsg(`⏳ Membaca MP3... ${rowsDone}/${rows.length} baris`);
+      if(rowsDone % 30 === 0 || rowsDone === rows.length){
+        setUploadMsg(`⏳ Menyiapkan daftar MP3... ${rowsDone}/${rows.length} baris`);
         await nextPaint();
       }
     }
-    if(!audioBlobs.length){ setUploadMsg('Tidak ada MP3 untuk dikombinasi.'); return; }
+    if(!tasks.length){ setUploadMsg('Tidak ada MP3 untuk dikombinasi.'); return; }
 
-    setUploadMsg('⏳ Decoding 0/'+audioBlobs.length+' files...');
+    // Pass 2 (I/O-bound, batched in parallel - option B): actually read the MP3 bytes. Previously
+    // this was one `await readZipEntry(...)` per file, fully sequential - for hundreds of ZIP
+    // entries that overhead added up even though each individual DecompressionStream call is fast.
+    // Batched the same way decode already is (BATCH_SIZE=8) below, a pattern already proven safe
+    // in this codebase rather than a new untested approach.
+    const READ_BATCH_SIZE = 8;
+    const fetched = new Array(tasks.length); // {key, blob} per task, or null on error
+    for(let i=0; i<tasks.length; i+=READ_BATCH_SIZE){
+      const batch = tasks.slice(i, i+READ_BATCH_SIZE);
+      const batchResults = await Promise.all(batch.map(async (t)=>{
+        const src = t.src;
+        try{
+          if(src.type==='file') return {key: src.file, blob: src.file};
+          if(src.type==='zip'){
+            const data = await readZipEntry(src.entry);
+            return {key: src.entry, blob: new Blob([data], {type:'audio/mpeg'})};
+          }
+        }catch(e){ setUploadMsg('Error: '+e.message); }
+        return null;
+      }));
+      batchResults.forEach((r, j)=>{ fetched[i+j] = r; });
+      setUploadMsg(`⏳ Membaca MP3... ${Math.min(i+batch.length, tasks.length)}/${tasks.length} file`);
+      await nextPaint();
+    }
+
+    // Compact: drop any failed fetches, and derive rowBlobStart from the surviving (compacted)
+    // positions - not the original task indices, since a failure can leave gaps.
+    const audioSources = []; // {key, blob}
+    const rowBlobStart = new Array(rows.length).fill(-1);
+    for(let i=0; i<tasks.length; i++){
+      const r = fetched[i];
+      if(!r) continue;
+      if(rowBlobStart[tasks[i].ri] === -1) rowBlobStart[tasks[i].ri] = audioSources.length;
+      audioSources.push(r);
+    }
+    if(!audioSources.length){ setUploadMsg('Tidak ada MP3 untuk dikombinasi.'); return; }
+
+    setUploadMsg('⏳ Decoding 0/'+audioSources.length+' files...');
     await nextPaint();
-    const combined = await combineAudioBlobs(audioBlobs, getNextDelayMs()||500, (done,total,stage)=>{
+    const combined = await combineAudioBlobs(audioSources, getNextDelayMs()||500, (done,total,stage)=>{
       if(stage==='render'){
         if(renderSpinnerTimer) return; // already animating
         const frames=['>','>>','>>>'];
@@ -2753,7 +2798,26 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
 // combineSignature() (rows + modes + delay) right before playback.
 document.getElementById('audioModeSelect').addEventListener('change', ()=>{
   const btn=document.getElementById('preCombRefreshBtn');
+  const dlBtn=document.getElementById('downloadCombWavBtn');
   btn.style.display = getAudioMode()==='combine' ? 'inline-flex' : 'none';
+  dlBtn.style.display = getAudioMode()==='combine' ? 'inline-flex' : 'none';
+});
+
+// Download the combined WAV as its own file - doesn't touch playback/combine state at all, just
+// reads combinedBlobCache (same object Play All plays from), so no screen-off risk either way.
+document.getElementById('downloadCombWavBtn').addEventListener('click', ()=>{
+  if(!combinedBlobCache){ setUploadMsg('Belum ada hasil combine. Klik Comb dulu.'); return; }
+  const panel = activePanel ? activePanel() : document.querySelector('.panel.active');
+  const sheetTitle = panel?.dataset?.sheetTitle || 'combine';
+  const safeTitle = String(sheetTitle).replace(/[<>:"/\\|?*]/g, '_');
+  const d = new Date();
+  const stamp = `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}_${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}`;
+  const url = URL.createObjectURL(combinedBlobCache);
+  const a = document.createElement('a');
+  a.href = url; a.download = `combined_${safeTitle}_${stamp}.wav`; a.style.display = 'none';
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ a.remove(); URL.revokeObjectURL(url); }, 500);
+  setUploadMsg('✓ WAV di-download.');
 });
 
 // Reset combine flag saat checkbox berubah
@@ -2768,6 +2832,7 @@ document.addEventListener('change', (e)=>{
 
 // Initial state
 document.getElementById('preCombRefreshBtn').style.display = 'none';
+document.getElementById('downloadCombWavBtn').style.display = 'none';
 </script>
 
 <!-- ===== PANEL 1 ===== -->
