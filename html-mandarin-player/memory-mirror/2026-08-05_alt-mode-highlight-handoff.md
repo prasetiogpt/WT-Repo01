@@ -122,6 +122,63 @@ that was explicitly out of scope per the user (MP3 Generator's default "rows" pr
 `"checked"`, so old un-reprocessed source files could still have junk rows reach the generator —
 flagged to the user as a known gap, but deferred, not part of this task).
 
+## Two more items discussed after this note was first written (not yet in the numbered plan above)
+
+### Download the combined WAV as a file
+
+Not yet built at all — `combinedBlobCache` (was ~line 496, set ~line 2617) is already a proper
+`Blob` with `type:'audio/wav'` (built by `audioBufferToWav()`, was ~line 945-982, returns
+`new Blob([arrayBuffer], {type:'audio/wav'})`), so a download button is a small addition, same
+pattern as the existing `downloadCSVFile()` (was ~line 2243) — create an `<a download>` with
+`URL.createObjectURL(combinedBlobCache)`. Purely additive, doesn't touch playback/combine logic, no
+interaction with Rule 3 (it's a manual one-shot click, not something running during screen-off
+playback).
+
+Discussed but undecided: WAV output is uncompressed (much larger than MP3 for the same audio). To
+offer MP3 instead would require bundling an MP3 encoder (no browser-native MP3 encoding exists,
+Web Audio only gives raw PCM) — e.g. `lamejs`, inlined to keep the single-file-HTML property. That
+adds roughly 100-150KB (minified) to the source file (current size: ~221KB / 4315 lines, so this
+would meaningfully grow it). User has not decided yet whether this is worth it — leave as WAV-only
+unless they ask for MP3 encoding specifically.
+
+### Pre-Combine build is slow for large sheets (several minutes for hundreds of rows)
+
+User's real-world complaint: sheets with hundreds of checked+visible rows take multiple minutes to
+Pre-Combine. Diagnosed three stages in the build handler (`preCombRefreshBtn` click listener, was
+~line 2538-2627):
+
+1. **Reading MP3s out of the zip** (was ~line 2574-2589): the `for(const tr of rows){ for(const
+   mode of modes){ await readZipEntry(...) } }` loop is fully **sequential** — one file at a time,
+   no batching. Actual decompression uses the browser-native `DecompressionStream` (was ~line
+   823-825 `inflateZipRaw`), which is fast per-call, but doing hundreds of them one-by-one adds up.
+2. **`decodeAudioData` batching** inside `combineAudioBlobs()` (was ~line 908-922): already batched
+   at `BATCH_SIZE=8` concurrent, deliberately capped per an existing code comment ("bounded so
+   weak/older phones don't get hit with 100s of decode jobs simultaneously"). This is likely the
+   single biggest cost center — audio decode is CPU-heavy, and even at 8-way concurrency, hundreds
+   of files means many sequential batches.
+3. **`OfflineAudioContext` render** (was ~line 928-937): single render pass at the end, probably
+   not the bottleneck (offline rendering is normally faster than real-time).
+
+Three optimization ideas discussed, not yet prioritized/decided by the user — ask them before
+picking:
+- **(A) Cache decoded buffers per MP3 file within the session**, keyed by row+mode+filename (or
+  the resolved zip entry), so re-running Pre-Combine after just tweaking the row filter/checkboxes
+  doesn't re-decode files it already decoded earlier in the same session. Pure win, no tradeoff,
+  but only helps repeat/re-combine, not a first-time build.
+- **(B) Parallelize the zip-read stage** (item 1 above) with the same chunked-`Promise.all` pattern
+  already used for decoding, instead of one-file-at-a-time. Low risk since each `readZipEntry` call
+  is already lightweight.
+- **(C) Make `BATCH_SIZE` for `decodeAudioData` adaptive** based on `navigator.hardwareConcurrency`
+  — bigger batches on capable devices, keep the safe default (8) on weak/old ones. Likely the
+  biggest potential win, but **needs real-device testing** (exactly the kind of testing that's the
+  whole reason this work moved to a local session) since going too aggressive could make Pre-Combine
+  janky/crash on older phones — the opposite of the reliability this whole feature exists for.
+
+Recommended order if the user wants to tackle this: B + C together give the most speedup for a
+*first-time* combine (not just repeats); A is a smaller, safer add for the repeat-combine case.
+Confirm with the user which of A/B/C (or all three) they actually want before starting — this was
+raised as a diagnosis, not yet greenlit as a task.
+
 ## Suggested build order for the local session
 
 1. Part 1 (row offsets) — foundation for both highlight and continue-from-next-row.
