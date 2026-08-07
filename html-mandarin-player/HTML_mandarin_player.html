@@ -194,6 +194,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
   align-items: center;
   gap: 4px;
   font-size: .72rem;
+  font-family: inherit;
   color: #555;
   cursor: pointer;
   user-select: none;
@@ -215,6 +216,17 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .col-toggle-label .col-name {
   font-weight: 500;
 }
+.col-preset-select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .col-hidden {
   display: none !important;
 }
@@ -225,19 +237,6 @@ td:last-child, th:last-child,
 td:first-child, th:first-child,
 td:nth-child(2), th:nth-child(2) {
   display: table-cell !important;
-}
-.col-toggle-reset {
-  font-size: .65rem;
-  padding: 1px 10px;
-  height: 22px;
-  border-radius: 12px;
-  background: #e8e4de;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  color: #555;
-}
-.col-toggle-reset:hover {
-  background: #ddd8d0;
 }
 #globalYtubeBtn {
   background: var(--ytube-red);
@@ -427,8 +426,8 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
-      <label class="final-play-select" title="Preset kolom">P: <select id="colPresetSelect" onchange="applyColumnPreset(this.value)" onmousedown="restoreColPresetLabels()" onfocus="restoreColPresetLabels()"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option></select></label>
-      <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
+      <label class="col-toggle-label" title="Preset kolom">P: <select id="colPresetSelect" class="col-preset-select" onchange="applyColumnPreset(this.value)" onmousedown="restoreColPresetLabels()" onfocus="restoreColPresetLabels()"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option></select></label>
+      <button class="col-toggle-label" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
 </div>
