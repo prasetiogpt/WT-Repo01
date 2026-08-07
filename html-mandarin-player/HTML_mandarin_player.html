@@ -413,16 +413,18 @@ td:nth-child(2), th:nth-child(2) {
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
-      <div style="display:flex;gap:4px;align-items:center;">
-        <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">Pin KW</span></label>
-        <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">Ind KW</span></label>
-        <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">Man KW</span></label>
-        <label class="col-toggle-label" title="Eng KW"><input type="checkbox" data-col-index="5" checked=""> <span class="col-name">Eng KW</span></label>
+      <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+        <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">PinKW</span></label>
+        <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">IndKW</span></label>
+        <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">ManKW</span></label>
+        <label class="col-toggle-label" title="Eng KW"><input type="checkbox" data-col-index="5" checked=""> <span class="col-name">EngKW</span></label>
       </div>
-      <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">Pin Kal</span></label>
-      <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">Ind Kal</span></label>
-      <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">Man Kal</span></label>
-      <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">Eng Kal</span></label>
+      <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+        <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">PinKal</span></label>
+        <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">IndKal</span></label>
+        <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">ManKal</span></label>
+        <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">EngKal</span></label>
+      </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
