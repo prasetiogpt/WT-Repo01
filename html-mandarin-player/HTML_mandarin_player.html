@@ -427,7 +427,7 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
-      <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
+      <label class="col-toggle-reset" style="display:inline-flex;align-items:center;gap:2px;padding:2px 6px;" title="Preset kolom">P:<select id="colPresetSelect" onchange="applyColumnPreset(this.value)" onmousedown="restoreColPresetLabels()" onfocus="restoreColPresetLabels()" style="border:none;background:transparent;font:inherit;color:inherit;"><option value="1">1 Voc+Sen</option><option value="2">2 Vocab</option><option value="3">3 Sentence</option></select></label>
       <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
@@ -2211,18 +2211,53 @@ function applyGlobalColumnToggles() {
   });
 }
 
-function resetAllColumns() {
+// Kolom preset dropdown - ganti tombol Reset. Options selalu tampil nama lengkap saat
+// dropdown dibuka (onfocus/onmousedown), lalu setelah dipilih teks di-collapse jadi "(1)"
+// dst supaya layar tetap ringkas ("P:(1)", bukan "P:(1 Voc+Sen)").
+const COL_PRESET_LABELS = {
+  '1': '1 Voc+Sen',
+  '2': '2 Vocab',
+  '3': '3 Sentence'
+};
+const COL_PRESETS = {
+  '1': [2, 4, 5, 6, 8, 9, 11],
+  '2': [2, 4, 5],
+  '3': [6, 8, 9]
+};
+function applyColumnPreset(presetNum) {
+  const preset = COL_PRESETS[presetNum];
+  if (!preset) return;
   const container = document.getElementById('globalColToggles');
   if (!container) return;
   const checkboxes = container.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(cb => {
-    cb.checked = true;
-    toggleAllColumns(parseInt(cb.dataset.colIndex), true);
-    try { localStorage.removeItem('hiddenColumns_' + cb.dataset.colIndex); } catch(e) {}
+    const colIndex = parseInt(cb.dataset.colIndex);
+    const show = preset.includes(colIndex);
+    cb.checked = show;
+    toggleAllColumns(colIndex, show);
+    try {
+      if (show) { localStorage.removeItem('hiddenColumns_' + colIndex); }
+      else { localStorage.setItem('hiddenColumns_' + colIndex, 'hide'); }
+    } catch(e) {}
   });
-  setUploadMsg('✓ Semua kolom ditampilkan kembali.');
+  setUploadMsg('✓ Preset kolom ' + COL_PRESET_LABELS[presetNum] + ' diterapkan.');
+  collapseColPresetLabel(presetNum);
 }
-window.resetAllColumns = resetAllColumns;
+window.applyColumnPreset = applyColumnPreset;
+
+function collapseColPresetLabel(presetNum) {
+  const sel = document.getElementById('colPresetSelect');
+  if (!sel) return;
+  Array.from(sel.options).forEach(opt => {
+    opt.text = opt.value === presetNum ? '(' + opt.value + ')' : COL_PRESET_LABELS[opt.value];
+  });
+}
+function restoreColPresetLabels() {
+  const sel = document.getElementById('colPresetSelect');
+  if (!sel) return;
+  Array.from(sel.options).forEach(opt => { opt.text = COL_PRESET_LABELS[opt.value]; });
+}
+window.restoreColPresetLabels = restoreColPresetLabels;
 
 function showUploadFilterModal(files){
   return new Promise(resolve=>{
