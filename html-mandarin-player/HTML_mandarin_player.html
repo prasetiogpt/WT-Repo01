@@ -405,7 +405,6 @@ td:nth-child(2), th:nth-child(2) {
         <button class="btn btn-check" id="downloadCombWavBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Download combined WAV">↓Comb</button>
       </div>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
-      <label class="tts-top-control" style="display:none"><input id="readRowNumberToggle" type="checkbox"> 🔢 Baca No</label>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
       <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
       <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
@@ -420,10 +419,10 @@ td:nth-child(2), th:nth-child(2) {
         <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">Man KW</span></label>
         <label class="col-toggle-label" title="Eng KW"><input type="checkbox" data-col-index="5" checked=""> <span class="col-name">Eng KW</span></label>
       </div>
-      <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">Pin Yin</span></label>
-      <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">Indonesia</span></label>
-      <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">Mandarin</span></label>
-      <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">English</span></label>
+      <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">Pin Kal</span></label>
+      <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">Ind Kal</span></label>
+      <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">Man Kal</span></label>
+      <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">Eng Kal</span></label>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <button class="col-toggle-reset" onclick="resetAllColumns()" title="Reset semua kolom ke tampil">↺ Reset</button>
@@ -438,18 +437,19 @@ td:nth-child(2), th:nth-child(2) {
   <div class="admin-delay">
     <div class="admin-delay-title">⚙ TTS Delay (ms)</div>
     <div class="delay-row">
-      <label>Dly Voice2 <input id="delayVoice2" type="number" min="0" step="100" value="1000"></label>
-      <label>Dly Voice3 <input id="delayVoice3" type="number" min="0" step="100" value="1000"></label>
-      <label>Dly Voice4 <input id="delayVoice4" type="number" min="0" step="100" value="1000"></label>
+      <label>Dly V2 <input id="delayVoice2" type="number" min="0" step="100" value="1000"></label>
+      <label>Dly V3 <input id="delayVoice3" type="number" min="0" step="100" value="1000"></label>
+      <label>Dly V4 <input id="delayVoice4" type="number" min="0" step="100" value="1000"></label>
       <label>Next <input id="delayNext" type="number" min="0" step="100" value="1000"></label>
+      <label>🔢 Baca No <input id="readRowNumberToggle" type="checkbox"></label>
     </div>
   </div>
   <div class="lock-row">
-    <button class="btn btn-save" type="button" id="btnAdminChange">Change Password</button>
     <button class="btn btn-check" type="button" id="btnAdminLock">Lock Sheet Ini</button>
     <button class="btn btn-check" type="button" id="btnAdminUnlock">Unlock Sheet Ini</button>
     <button class="btn btn-exp" onclick="downloadActiveTabCSV()" type="button">↓ CSV Tab Ini</button>
     <button class="btn btn-exp" onclick="downloadMergeCSV()" type="button">↓ CSV Merge</button>
+    <button class="btn btn-save" type="button" id="btnAdminChange">Change Password</button>
     <button class="btn btn-del" type="button" id="btnAdminClose">Close</button>
   </div>
 </div>
@@ -2026,7 +2026,7 @@ function voiceOptionsHTML(selected){
 const V_PRESETS = {
   '1': ['hanzi-keyword', 'english-keyword', 'mandarin', 'english'],
   '2': ['english-keyword', 'hanzi-keyword', '', ''],
-  '3': ['mandarin', 'mandarin', '', '']
+  '3': ['mandarin', 'mandarin', 'mandarin', 'mandarin']
 };
 function applyVoicePreset(tid, presetNum){
   const preset = V_PRESETS[presetNum];
@@ -2038,7 +2038,7 @@ function applyVoicePreset(tid, presetNum){
 }
 window.applyVoicePreset = applyVoicePreset;
 function dropdownPlayControlsHTML(tid){
-  return `<label class="final-play-select">Preset: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label><label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Random</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button>`;
 }
 
 function toolbarHTML(tid){
@@ -2933,7 +2933,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
       </label>
       <button class="btn btn-check" data-check-all="dyn_000datatesting" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="dyn_000datatesting" type="button">Untick All</button>
-      <label class="final-play-select">Preset: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="">-</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></label><label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Random</label><label class="final-play-option"><input type="checkbox" class="baca-no-proxy"> Baca No</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_000datatesting" type="button">■</button>
+      <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Random</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_000datatesting" type="button">■</button>
       <span class="sm"></span>
     </div>
   </div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
