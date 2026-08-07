@@ -1874,7 +1874,11 @@ function applyFilter(panel){
   const visibleDataCols = DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
 
   qa('tbody tr', table).forEach(tr => {
-    const txt = qa('td', tr).map(td => td.textContent.toLowerCase()).join(' ');
+    // Satu qa('td', tr) dipakai ulang untuk teks pencarian DAN cek kolom kosong - sebelumnya
+    // query DOM dua kali per baris (sekali di sini, sekali lagi di dalam rowHasVisibleData),
+    // yang bikin scroll/render terasa berat karena kerjanya dobel di setiap applyFilter.
+    const cells = qa('td', tr);
+    const txt = cells.map(td => td.textContent.toLowerCase()).join(' ');
     const no = parseInt(tr.querySelector('.cn')?.textContent || '0');
 
     let matchNo = true;
@@ -1886,7 +1890,7 @@ function applyFilter(panel){
 
     const matchText = !qText || (exclMode ? !txt.includes(qText) : txt.includes(qText));
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
-    const hasVisibleData = rowHasVisibleData(tr, visibleDataCols);
+    const hasVisibleData = rowHasVisibleData(cells, visibleDataCols);
 
     tr.classList.toggle('hidden', !(matchText && matchChecked && matchNo && hasVisibleData));
   });
@@ -1898,9 +1902,8 @@ function applyFilter(panel){
 // cuma catatan/metadata, bukan konten Vocab/Sentence utama (baris yang cuma punya Note2 tapi
 // KW/Kal-nya kosong tetap harus dianggap kosong).
 const DATA_COL_INDICES = [2, 3, 4, 5, 6, 7, 8, 9];
-function rowHasVisibleData(tr, visibleDataCols) {
+function rowHasVisibleData(cells, visibleDataCols) {
   if (visibleDataCols.length === 0) return true; // tidak ada kolom data yang tampil - jangan sembunyikan semua baris
-  const cells = tr.querySelectorAll('td');
   return visibleDataCols.some(i => (cells[i]?.textContent || '').trim() !== '');
 }
 
