@@ -427,7 +427,7 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
-      <label class="col-toggle-reset" style="display:inline-flex;align-items:center;gap:2px;padding:2px 6px;" title="Preset kolom">P:<select id="colPresetSelect" onchange="applyColumnPreset(this.value)" onmousedown="restoreColPresetLabels()" onfocus="restoreColPresetLabels()" style="border:none;background:transparent;font:inherit;color:inherit;"><option value="1">1 Voc+Sen</option><option value="2">2 Vocab</option><option value="3">3 Sentence</option></select></label>
+      <label class="final-play-select" title="Preset kolom">P: <select id="colPresetSelect" onchange="applyColumnPreset(this.value)"><option value="1" title="1 v+s">1</option><option value="2" title="2 v">2</option><option value="3" title="3 s">3</option></select></label>
       <button class="col-toggle-reset" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
@@ -2211,13 +2211,12 @@ function applyGlobalColumnToggles() {
   });
 }
 
-// Kolom preset dropdown - ganti tombol Reset. Options selalu tampil nama lengkap saat
-// dropdown dibuka (onfocus/onmousedown), lalu setelah dipilih teks di-collapse jadi "(1)"
-// dst supaya layar tetap ringkas ("P:(1)", bukan "P:(1 Voc+Sen)").
+// Kolom preset dropdown - ganti tombol Reset. Dibuat identik gaya dengan preset V1-V4
+// (dropdown angka polos saja, nama lengkap cuma di title/tooltip) biar tidak makan tempat di hp.
 const COL_PRESET_LABELS = {
-  '1': '1 Voc+Sen',
-  '2': '2 Vocab',
-  '3': '3 Sentence'
+  '1': '1 v+s',
+  '2': '2 v',
+  '3': '3 s'
 };
 const COL_PRESETS = {
   '1': [2, 4, 5, 6, 8, 9, 11],
@@ -2241,23 +2240,8 @@ function applyColumnPreset(presetNum) {
     } catch(e) {}
   });
   setUploadMsg('✓ Preset kolom ' + COL_PRESET_LABELS[presetNum] + ' diterapkan.');
-  collapseColPresetLabel(presetNum);
 }
 window.applyColumnPreset = applyColumnPreset;
-
-function collapseColPresetLabel(presetNum) {
-  const sel = document.getElementById('colPresetSelect');
-  if (!sel) return;
-  Array.from(sel.options).forEach(opt => {
-    opt.text = opt.value === presetNum ? '(' + opt.value + ')' : COL_PRESET_LABELS[opt.value];
-  });
-}
-function restoreColPresetLabels() {
-  const sel = document.getElementById('colPresetSelect');
-  if (!sel) return;
-  Array.from(sel.options).forEach(opt => { opt.text = COL_PRESET_LABELS[opt.value]; });
-}
-window.restoreColPresetLabels = restoreColPresetLabels;
 
 function showUploadFilterModal(files){
   return new Promise(resolve=>{
