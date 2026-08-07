@@ -421,7 +421,7 @@ td:nth-child(2), th:nth-child(2) {
         <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">EngKal</span></label>
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
-      <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11"> <span class="col-name" style="color:var(--blue);">Note2</span></label>
+      <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
       <label class="col-toggle-label" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" onchange="applyColumnPreset(this.value)"><option value="1" selected>V+S</option><option value="2">Vocab</option><option value="3">Sente.</option></select></label>
       <button class="col-toggle-label" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
@@ -1867,21 +1867,26 @@ function applyFilter(panel){
   const hasFrom = fromValue.trim() !== '' && !isNaN(from) && from > 0;
   const hasTo = toValue.trim() !== '' && !isNaN(to) && to > 0;
   const hasRange = hasFrom || hasTo;
-  
+
+  // Dihitung sekali per tabel (bukan per baris) - sebelumnya query ulang thead di dalam loop
+  // baris menyebabkan lag/hang saat ganti preset kolom (10 kolom x semua sheet x semua baris).
+  const headers = table.querySelectorAll('thead th');
+  const visibleDataCols = DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
+
   qa('tbody tr', table).forEach(tr => {
     const txt = qa('td', tr).map(td => td.textContent.toLowerCase()).join(' ');
     const no = parseInt(tr.querySelector('.cn')?.textContent || '0');
-    
+
     let matchNo = true;
     if (hasRange) {
       const minOk = !hasFrom || no >= from;
       const maxOk = !hasTo || no <= to;
       matchNo = minOk && maxOk;
     }
-    
+
     const matchText = !qText || (exclMode ? !txt.includes(qText) : txt.includes(qText));
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
-    const hasVisibleData = rowHasVisibleData(table, tr);
+    const hasVisibleData = rowHasVisibleData(tr, visibleDataCols);
 
     tr.classList.toggle('hidden', !(matchText && matchChecked && matchNo && hasVisibleData));
   });
@@ -1893,11 +1898,9 @@ function applyFilter(panel){
 // cuma catatan/metadata, bukan konten Vocab/Sentence utama (baris yang cuma punya Note2 tapi
 // KW/Kal-nya kosong tetap harus dianggap kosong).
 const DATA_COL_INDICES = [2, 3, 4, 5, 6, 7, 8, 9];
-function rowHasVisibleData(table, tr) {
-  const headers = table.querySelectorAll('thead th');
-  const cells = tr.querySelectorAll('td');
-  const visibleDataCols = DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
+function rowHasVisibleData(tr, visibleDataCols) {
   if (visibleDataCols.length === 0) return true; // tidak ada kolom data yang tampil - jangan sembunyikan semua baris
+  const cells = tr.querySelectorAll('td');
   return visibleDataCols.some(i => (cells[i]?.textContent || '').trim() !== '');
 }
 
@@ -2184,10 +2187,15 @@ function toggleAllColumns(colIndex, show) {
       const cells = tr.querySelectorAll('td');
       if (cells[colIndex]) { cells[colIndex].classList.toggle('col-hidden', !show); }
     });
-    // Kolom yang tampil berubah - baris yang jadi kosong (atau isi lagi) di kolom yang
-    // sedang tampil harus ikut disembunyikan/dimunculkan ulang.
-    applyFilter(panel);
   });
+}
+
+// Baris yang jadi kosong (atau isi lagi) di kolom yang sedang tampil harus ikut
+// disembunyikan/dimunculkan ulang - dipanggil SEKALI setelah semua kolom yang perlu diubah
+// sudah diubah (bukan di dalam toggleAllColumns tiap kolom), supaya ganti preset (10 kolom
+// sekaligus) tidak memindai ulang semua baris 10x dan bikin hang.
+function refreshAllRowVisibility() {
+  getPanels().forEach(panel => applyFilter(panel));
 }
 
 function initGlobalColumnToggles() {
@@ -2198,6 +2206,7 @@ function initGlobalColumnToggles() {
     cb.onchange = function() {
       const colIndex = parseInt(this.dataset.colIndex);
       toggleAllColumns(colIndex, this.checked);
+      refreshAllRowVisibility();
       try {
         if (this.checked) { localStorage.removeItem('hiddenColumns_' + colIndex); }
         else { localStorage.setItem('hiddenColumns_' + colIndex, 'hide'); }
@@ -2207,7 +2216,11 @@ function initGlobalColumnToggles() {
       const saved = localStorage.getItem('hiddenColumns_' + cb.dataset.colIndex);
       if (saved === 'hide') {
         cb.checked = false;
+        // Beberapa kolom bisa dipulihkan sekaligus di sini (satu per checkbox) - refresh baris
+        // cukup sekali di akhir (100ms, setelah semua toggleAllColumns 50ms selesai), bukan
+        // per kolom, supaya tidak memindai ulang baris berkali-kali saat halaman baru dibuka.
         setTimeout(function() { toggleAllColumns(parseInt(cb.dataset.colIndex), false); }, 50);
+        setTimeout(refreshAllRowVisibility, 100);
       }
     } catch(e) {}
   });
@@ -2221,6 +2234,7 @@ function applyGlobalColumnToggles() {
     const colIndex = parseInt(cb.dataset.colIndex);
     toggleAllColumns(colIndex, cb.checked);
   });
+  refreshAllRowVisibility();
 }
 
 // Kolom preset dropdown - ganti tombol Reset. Opsi selalu tampil nama pendek apa adanya
@@ -2255,6 +2269,7 @@ function applyColumnPreset(presetNum) {
       else { localStorage.setItem('hiddenColumns_' + colIndex, 'hide'); }
     } catch(e) {}
   });
+  refreshAllRowVisibility();
   setUploadMsg('✓ Preset kolom ' + COL_PRESET_LABELS[presetNum] + ' diterapkan.');
 }
 window.applyColumnPreset = applyColumnPreset;
@@ -2613,6 +2628,11 @@ function init(){
   });
   initUploadCollapse();
   initGlobalColumnToggles();
+  // Sinkronkan kolom yang ditampilkan/disembunyikan di tabel dengan status centang checkbox
+  // saat ini (default HTML + override localStorage yang baru dipulihkan initGlobalColumnToggles
+  // di atas) - tabel contoh bawaan ("000 Data Testing") di-hardcode dengan status kolom lama,
+  // jadi kalau default checkbox berubah tapi ini tidak dipanggil, tabel bawaan bisa tidak sinkron.
+  applyGlobalColumnToggles();
   updateGlobalYtubeButton();
   document.addEventListener('change', e=>{
     const proxy = e.target.closest('.baca-no-proxy');
