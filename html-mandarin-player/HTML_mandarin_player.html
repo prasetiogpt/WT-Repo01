@@ -1881,10 +1881,24 @@ function applyFilter(panel){
     
     const matchText = !qText || (exclMode ? !txt.includes(qText) : txt.includes(qText));
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
-    
-    tr.classList.toggle('hidden', !(matchText && matchChecked && matchNo));
+    const hasVisibleData = rowHasVisibleData(table, tr);
+
+    tr.classList.toggle('hidden', !(matchText && matchChecked && matchNo && hasVisibleData));
   });
   updateStats(panel);
+}
+
+// Kolom PinKW..EngKal (index 2-9) yang menentukan "baris ini ada isinya atau tidak" untuk
+// keperluan sembunyikan baris kosong - Ref./Note2 sengaja tidak dihitung karena keduanya
+// cuma catatan/metadata, bukan konten Vocab/Sentence utama (baris yang cuma punya Note2 tapi
+// KW/Kal-nya kosong tetap harus dianggap kosong).
+const DATA_COL_INDICES = [2, 3, 4, 5, 6, 7, 8, 9];
+function rowHasVisibleData(table, tr) {
+  const headers = table.querySelectorAll('thead th');
+  const cells = tr.querySelectorAll('td');
+  const visibleDataCols = DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
+  if (visibleDataCols.length === 0) return true; // tidak ada kolom data yang tampil - jangan sembunyikan semua baris
+  return visibleDataCols.some(i => (cells[i]?.textContent || '').trim() !== '');
 }
 
 function setAllPilih(tid, checked){
@@ -2170,6 +2184,9 @@ function toggleAllColumns(colIndex, show) {
       const cells = tr.querySelectorAll('td');
       if (cells[colIndex]) { cells[colIndex].classList.toggle('col-hidden', !show); }
     });
+    // Kolom yang tampil berubah - baris yang jadi kosong (atau isi lagi) di kolom yang
+    // sedang tampil harus ikut disembunyikan/dimunculkan ulang.
+    applyFilter(panel);
   });
 }
 
