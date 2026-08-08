@@ -422,7 +422,7 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
-      <label class="col-toggle-label" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" onchange="applyColumnPreset(this.value)"><option value="1" selected>V+S</option><option value="2">Vocab</option><option value="3">Sente.</option></select></label>
+      <label class="col-toggle-label" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" onchange="applyColumnPreset(this.value)"><option value="1" selected>1 S+V</option><option value="2">2 Vocab</option><option value="3">3 Sent.</option></select></label>
       <button class="col-toggle-label" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
@@ -2102,8 +2102,8 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   switchTab(getPanels().indexOf(panel)); 
   applyFilter(panel);
   initTableToolbar(panel);
-  // Setiap upload sheet baru selalu dipaksa balik ke preset kolom V+S (bukan ikut status
-  // global terakhir yang mungkin masih "Vocab"/"Sente." dari sheet lain yang lagi dilihat).
+  // Setiap upload sheet baru selalu dipaksa balik ke preset kolom S+V (bukan ikut status
+  // global terakhir yang mungkin masih "Vocab"/"Sent." dari sheet lain yang lagi dilihat).
   setTimeout(function() {
     applyColumnPreset('1');
     const presetSel = document.getElementById('colPresetSelect');
@@ -2248,20 +2248,20 @@ function applyGlobalColumnToggles() {
 }
 
 // Kolom preset dropdown - ganti tombol Reset. Opsi selalu tampil nama pendek apa adanya
-// ("V+S"/"Vocab"/"Sente.") baik saat dropdown terbuka maupun tertutup - tidak ada teks yang
+// ("1 S+V"/"2 Vocab"/"3 Sent.") baik saat dropdown terbuka maupun tertutup - tidak ada teks yang
 // ditukar-tukar via JS lagi (percobaan sebelumnya menukar teks saat fokus/blur ternyata rapuh
 // di browser HP nyata: box ikut menampilkan teks panjang lalu terpotong ellipsis di tengah kata,
 // terlihat rusak). Konsekuensinya lebar kotak sedikit berbeda antar pilihan, tapi stabil/tidak
 // glitchy.
 const COL_PRESET_LABELS = {
-  '1': 'V+S',
-  '2': 'Vocab',
-  '3': 'Sente.'
+  '1': '1 S+V',
+  '2': '2 Vocab',
+  '3': '3 Sent.'
 };
 const COL_PRESETS = {
   '1': [2, 4, 5, 6, 8, 9, 11],
-  '2': [2, 4, 5],
-  '3': [6, 8, 9]
+  '2': [2, 5],
+  '3': [6]
 };
 function applyColumnPreset(presetNum) {
   const preset = COL_PRESETS[presetNum];
