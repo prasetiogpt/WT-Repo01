@@ -1610,7 +1610,13 @@ function hashRows(rows){
 // delay between rows. Switching Audio Mode away and back doesn't change any of this, so the
 // cache stays valid across mode switches; it only goes stale if one of these actually changes.
 function combineSignature(tbl, modes){
-  const rows = rowCycle(tbl, modes);
+  // Sengaja pakai playableRows() (urutan DOM apa adanya, TIDAK diacak) bukan rowCycle() - kalau
+  // pakai rowCycle di sini, saat Random aktif setiap panggilan combineSignature() mengacak ulang
+  // urutannya sendiri, jadi hash-nya beda tiap dipanggil dan combine yang baru saja dibuat selalu
+  // dianggap "belum ada"/kadaluarsa begitu mau diputar. Signature ini cuma untuk mendeteksi
+  // apakah SELEKSI barisnya (baris mana yang tampil+dicentang+bisa diputar) + mode + delay masih
+  // sama - bukan untuk mendeteksi urutan acaknya, yang memang sengaja beda tiap combine dibangun.
+  const rows = playableRows(tbl, modes);
   return hashRows(rows) + '||' + modes.join(',') + '||' + (getNextDelayMs()||500);
 }
 async function playAllCombineMode(tid, modes, btn, token){
