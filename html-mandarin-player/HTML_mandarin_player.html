@@ -2349,19 +2349,11 @@ function attachPanelEvents(panel){
   // dari OS, jadi ini bikin alur paste jadi cepat tanpa perlu Clipboard API (yang belum tentu
   // jalan di halaman file:// lokal seperti app ini dibuka).
   const searchClearBtn=panel.querySelector('.sr-clear-btn');
-  if(searchClearBtn && search) searchClearBtn.onclick=async ()=>{
-    // Coba baca clipboard langsung dulu (kalau browser & konteks halaman mengizinkan) - kalau
-    // gagal (mis. dibuka sebagai file:// lokal, bukan https, atau user belum kasih izin), fallback
-    // ke sekadar clear+fokus supaya user masih bisa paste manual (long-press) seperti biasa.
-    try{
-      const text = await navigator.clipboard.readText();
-      search.value = text;
-    }catch(e){
-      search.value = '';
-    }
-    applyFilter(panel);
-    search.focus();
-  };
+  // navigator.clipboard.readText() dicoba sekali (2026-08-07) tapi selalu gagal di device user -
+  // halaman dibuka sebagai file:// lokal, bukan "secure context" yang disyaratkan API itu. Jangan
+  // dicoba lagi tanpa serve app ini lewat http(s) dulu. Fallback-nya (clear+fokus) ternyata sudah
+  // cukup: tekan-tahan pada kotak kosong memunculkan menu Paste bawaan OS.
+  if(searchClearBtn && search) searchClearBtn.onclick=()=>{ search.value=''; applyFilter(panel); search.focus(); };
   const filter=panel.querySelector('[data-filter-checked]'); if(filter) filter.onchange=()=>applyFilter(panel);
   const excl=panel.querySelector('[data-filter-excl]'); if(excl) excl.onchange=()=>applyFilter(panel);
   const fromInput=panel.querySelector('[data-filter-from]');
