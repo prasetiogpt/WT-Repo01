@@ -104,6 +104,11 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
   z-index: 20;
   background: #3d5a80 !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  /* Promote to its own compositor layer - works around a mobile Chrome bug where sticky thead
+     cells go blank/stale (background+text) after tbody's DOM/size changes via JS, which Bank
+     Referensi triggers on every search (tbody.innerHTML rebuild). Playable sheets don't hit this
+     because their rows are built once at upload, not repeatedly. */
+  transform: translateZ(0);
 }
 .tw table td:first-child,
 .tw table th:first-child {
@@ -2313,6 +2318,11 @@ function applyReferenceBankFilter(panel){
     });
   }
   if(sb) sb.textContent=`${matches.length} hasil ditemukan dari ${rows.length} baris.`;
+  // Extra nudge for the mobile Chrome sticky-header repaint bug (see CSS comment on
+  // ".tw table thead th") - force a reflow on the header right after tbody changes, since this
+  // is the one codepath that mutates tbody repeatedly (every search).
+  const thead=table.querySelector('thead');
+  if(thead){ thead.style.transform='translateZ(0.01px)'; void thead.offsetHeight; thead.style.transform=''; }
 }
 window.applyReferenceBankFilter = applyReferenceBankFilter;
 
