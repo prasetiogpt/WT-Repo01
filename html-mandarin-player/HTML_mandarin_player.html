@@ -2299,6 +2299,19 @@ function applyReferenceBankFilter(panel){
     matches=[];
   }
   tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
+  // Baris baru selalu dibangun tanpa status kolom-hidden apapun (lihat komentar di
+  // buildReferenceRowHTML) - kalau thead sedang punya kolom yang disembunyikan (dari preset/
+  // checkbox toggle global sebelumnya), body yang baru dibangun ini jadi tidak sinkron dengan
+  // header (header kolom ke-N tidak lagi sejajar dengan data kolom ke-N secara visual). Samakan
+  // lagi di sini SETIAP render, bukan cuma pas upload - applyReferenceBankFilter dipanggil ulang
+  // tiap kali user mengetik/paste di kotak cari.
+  const hiddenIdx=Array.from(table.querySelectorAll('thead th')).reduce((acc,th,i)=>{ if(th.classList.contains('col-hidden')) acc.push(i); return acc; },[]);
+  if(hiddenIdx.length){
+    table.querySelectorAll('tbody tr').forEach(tr=>{
+      const cells=tr.querySelectorAll('td');
+      hiddenIdx.forEach(i=>{ if(cells[i]) cells[i].classList.add('col-hidden'); });
+    });
+  }
   if(sb) sb.textContent=`${matches.length} hasil ditemukan dari ${rows.length} baris.`;
 }
 window.applyReferenceBankFilter = applyReferenceBankFilter;
