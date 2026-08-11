@@ -2552,11 +2552,16 @@ function toggleAllColumns(colIndex, show) {
 // sekaligus) tidak memindai ulang semua baris 10x dan bikin hang.
 function refreshAllRowVisibility() {
   // Bank Referensi punya filter function sendiri (applyReferenceBankFilter) yang tidak paham
-  // applyFilter()-nya sheet playable - kalau ikut dipanggil di sini, baris yang sedang tampil di
-  // Bank Referensi bisa salah ke-hidden (match versinya applyFilter beda dari match versi
-  // applyReferenceBankFilter yang sebenarnya merender baris itu).
+  // applyFilter()-nya sheet playable - kalau applyFilter ikut dipanggil di sini, baris yang
+  // sedang tampil di Bank Referensi bisa salah ke-hidden. Tapi Bank Referensi tetap HARUS di-
+  // refresh lewat fungsinya sendiri (bukan dilewati begitu saja) - toggleAllColumns() yang
+  // memanggil fungsi ini hanya menyembunyikan kolom secara visual di baris yang SUDAH ada; tanpa
+  // memanggil applyReferenceBankFilter ulang di sini, pengecekan "baris kosong di kolom data yang
+  // sedang tampil" (lihat komentar di applyReferenceBankFilter) tidak pernah dijalankan ulang saat
+  // preset/checkbox kolom diganti SETELAH search sudah tampil - baris yang harusnya baru jadi
+  // "kosong" karena kolom yang tadinya berisi datanya baru saja disembunyikan, tetap kelihatan.
   getPanels().forEach(panel => {
-    if(panel.dataset.tabType==='reference') return;
+    if(panel.dataset.tabType==='reference'){ applyReferenceBankFilter(panel); return; }
     applyFilter(panel);
   });
 }
