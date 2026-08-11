@@ -2345,10 +2345,10 @@ function addOrReplaceReferenceTab(title, rows){
   tab.innerHTML=`📚 ${escapeHTML(title)} <span class="badge">${rows.length}</span><button class="tab-close" title="Hapus tab" type="button">×</button>`;
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
-  panel.innerHTML=`<div class="ph"><div class="tw">
+  panel.innerHTML=`<div class="ph">
     <div class="sr"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button></div>
-    <table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table>
-  </div><div class="sb"></div></div>`;
+    <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table></div>
+  <div class="sb"></div></div>`;
   refreshTabs();
   attachReferenceEvents(panel);
   switchTab(getPanels().indexOf(panel));
