@@ -390,6 +390,8 @@ td:nth-child(2), th:nth-child(2) {
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">Upload Sheet</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Vocab</label>
+      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">MP3:</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <span class="mp3-status" id="mp3FolderMsg">ZIP belum ada</span>
@@ -1177,6 +1179,11 @@ function deleteTab(index){
   if(tabs.length<=1){ alert('Tab terakhir tidak bisa dihapus.'); return; }
   const title=tabs[index]?.dataset.sheetTitle || 'tab';
   if(!confirm(`Hapus tab "${title}"?\n\nKlik Download HTML Baru agar permanen.`)) return;
+  // Bank referensi menyimpan datanya di REFERENCE_DATA (bukan di DOM) - harus dibersihkan manual
+  // di sini, kalau tidak datanya (bisa ribuan baris) tetap nyangkut di memori walau tab-nya sudah
+  // dihapus dari layar.
+  const refTid=panels[index]?.querySelector('table')?.id;
+  if(refTid) REFERENCE_DATA.delete(refTid);
   tabs[index]?.remove(); panels[index]?.remove();
   refreshTabs();
   const remaining=getTabs();
@@ -1854,6 +1861,50 @@ function updateStats(panel){
   const idx=getPanels().indexOf(panel); const tab=getTabs()[idx]; if(tab){ const b=tab.querySelector('.badge'); if(b) b.textContent=rows.length; }
 }
 
+// Pinyin tone matching, shared by applyFilter() (playable sheets, cols 2 "Pin Yin KW" and 6
+// "Pin Yin" only) and the reference-bank search below. Two modes: toneless (query has no digit -
+// matches any tone) and tone-number (query has a digit - matches that exact tone only). Tone
+// digits are placed at the END of each whitespace-delimited syllable/word (standard "ni3 hao3"
+// notation), so this assumes pinyin cells use spaces between syllables - true for this app's
+// "Pin Yin"/"Pin Yin KW" columns, but concatenated multi-syllable pinyin with no spaces won't
+// segment correctly.
+const PINYIN_TONE_MAP = {
+  'ā':['a',1],'á':['a',2],'ǎ':['a',3],'à':['a',4],
+  'ē':['e',1],'é':['e',2],'ě':['e',3],'è':['e',4],
+  'ī':['i',1],'í':['i',2],'ǐ':['i',3],'ì':['i',4],
+  'ō':['o',1],'ó':['o',2],'ǒ':['o',3],'ò':['o',4],
+  'ū':['u',1],'ú':['u',2],'ǔ':['u',3],'ù':['u',4],
+  'ǖ':['ü',1],'ǘ':['ü',2],'ǚ':['ü',3],'ǜ':['ü',4]
+};
+function normalizePinyinToneless(text){
+  return String(text||'').toLowerCase().split('').map(ch=>{
+    const m=PINYIN_TONE_MAP[ch]; return m?m[0]:ch;
+  }).join('').replace(/[0-9]/g,'').replace(/ü/g,'u').replace(/\s+/g,'');
+}
+function toneMarkToNumberWord(word){
+  let tone=null, base='';
+  for(const ch of word){
+    const m=PINYIN_TONE_MAP[ch];
+    if(m){ base+=m[0]; tone=m[1]; } else base+=ch;
+  }
+  base=base.replace(/ü/g,'u');
+  return tone?base+tone:base;
+}
+function normalizePinyinToneNumber(text){
+  // Split on whitespace first (each token = one syllable/word) so the tone digit lands at the end
+  // of the RIGHT syllable, then strip the spaces afterward - so "ni3 hao3" and "ni3hao3" compare
+  // equal, matching how users actually type search queries (no spaces).
+  return String(text||'').toLowerCase().split(/\s+/).map(toneMarkToNumberWord).join('');
+}
+// cells[2]="Pin Yin KW", cells[6]="Pin Yin" per SHEET_HEADERS - the only two columns this
+// tone-insensitive/tone-specific matching applies to; every other column keeps exact literal
+// matching, unchanged.
+function pinyinCellsMatch(cells, qText){
+  const pinText=[(cells[2]?.textContent||''),(cells[6]?.textContent||'')].join(' ');
+  if(/\d/.test(qText)) return normalizePinyinToneNumber(pinText).includes(normalizePinyinToneNumber(qText));
+  return normalizePinyinToneless(pinText).includes(normalizePinyinToneless(qText));
+}
+
 function applyFilter(panel){
   const table = panel.querySelector('table');
   if(!table) return;
@@ -1894,7 +1945,12 @@ function applyFilter(panel){
       matchNo = minOk && maxOk;
     }
 
-    const matchText = !qText || (exclMode ? !txt.includes(qText) : txt.includes(qText));
+    let matchText = !qText || (exclMode ? !txt.includes(qText) : txt.includes(qText));
+    // Fallback: kalau tidak match literal, coba cocokkan khusus kolom Pin Yin KW/Pin Yin tanpa
+    // peduli tanda nada (atau persis nada tertentu kalau query ada angkanya). Hanya untuk mode
+    // include (bukan Excl.) - exclMode tetap literal saja supaya perilaku "kecualikan" tidak
+    // makin luas cakupannya secara tak terduga.
+    if(qText && !exclMode && !matchText) matchText = pinyinCellsMatch(cells, qText);
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
     const hasVisibleData = rowHasVisibleData(cells, visibleDataCols);
 
@@ -2118,6 +2174,122 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   return tid;
 }
 window.addOrReplaceTextTab = addOrReplaceTextTab;
+
+// ===== BANK REFERENSI (search-only, untuk file bank data besar & terus bertambah) =====
+// Beda total dari sheet playable di atas: data disimpan sebagai array JS di REFERENCE_DATA
+// (bukan sebagai ribuan <tr> di DOM), dan hanya baris yang cocok pencarian yang pernah dirender
+// ke tabel. Ini kode baru sepenuhnya - tidak memanggil buildRowHTML/applyFilter/attachPanelEvents
+// milik sheet playable, supaya sheet-sheet yang sudah ada tidak ikut kena dampak apapun.
+const REFERENCE_DATA = new Map();
+
+function normalizeRefTabId(name){
+  let s=cleanTitle(name).toLowerCase();
+  try{ s=s.normalize('NFD').replace(/[̀-ͯ]/g,''); }catch(e){}
+  s=s.replace(/[^a-z0-9]+/g,'');
+  return 'ref_'+(s||('bank'+Date.now()));
+}
+
+// Dihitung sekali saat upload, bukan tiap kali user mengetik - field pencarian (literal, toneless,
+// tone-number) disimpan langsung di tiap row object.
+function precomputeReferenceSearchFields(rows){
+  rows.forEach(r=>{
+    const otherFields=[r.no,r.arti,r.hanziKeyword,r.englishKeyword,r.indo,r.mandarin,r.english,r.note1,r.note2];
+    r._txtOther=otherFields.map(v=>String(v||'').toLowerCase()).join(' ');
+    const pinFields=[r.keyword,r.pinyin]; // Pin Yin KW + Pin Yin - satu-satunya kolom yg dapat pencocokan nada
+    r._txtPinLiteral=pinFields.map(v=>String(v||'').toLowerCase()).join(' ');
+    r._txtPinToneless=pinFields.map(v=>normalizePinyinToneless(v)).join(' ');
+    r._txtPinToneNum=pinFields.map(v=>normalizePinyinToneNumber(v)).join(' ');
+  });
+  return rows;
+}
+
+function buildReferenceRowHTML(r, i){
+  // Struktur kolom SAMA PERSIS dengan buildRowHTML (13 kolom, urutan sama) supaya fitur toggle
+  // kolom global (yang kerja berdasarkan index kolom, dipakai bareng sheet playable) tetap benar.
+  // Kolom Pilih & ▶ sengaja dikosongkan - bank referensi tidak untuk play/centang.
+  return `<tr>
+    <td class="cn">${escapeHTML(r.no||String(i+1))}</td>
+    <td class="cp"></td>
+    <td class="ck">${escapeHTML(r.keyword)}</td>
+    <td class="ca">${escapeHTML(r.arti)}</td>
+    <td class="ch hk">${escapeHTML(r.hanziKeyword)}</td>
+    <td class="ce ek">${escapeHTML(r.englishKeyword)}</td>
+    <td class="cy">${escapeHTML(r.pinyin)}</td>
+    <td class="ci">${escapeHTML(r.indo)}</td>
+    <td class="ch">${escapeHTML(r.mandarin)}</td>
+    <td class="ce">${escapeHTML(r.english)}</td>
+    <td class="cn">${escapeHTML(r.note1||'')}</td>
+    <td class="cn">${escapeHTML(r.note2||'')}</td>
+    <td class="cb"></td>
+  </tr>`;
+}
+
+function applyReferenceBankFilter(panel){
+  const table=panel.querySelector('table'); if(!table) return;
+  const rows=REFERENCE_DATA.get(table.id)||[];
+  const tbody=table.querySelector('tbody');
+  const sb=panel.querySelector('.sb');
+  const qText=(panel.querySelector('.sr input[type="text"]')?.value||'').trim().toLowerCase();
+  if(!qText){
+    tbody.innerHTML='';
+    if(sb) sb.textContent=`Ketik kata kunci untuk mencari di antara ${rows.length} baris.`;
+    return;
+  }
+  const qHasDigit=/\d/.test(qText);
+  const qPinKey= qHasDigit ? normalizePinyinToneNumber(qText) : normalizePinyinToneless(qText);
+  const matches=rows.filter(r=>{
+    if(r._txtOther.includes(qText)) return true;
+    if(r._txtPinLiteral.includes(qText)) return true;
+    return qHasDigit ? r._txtPinToneNum.includes(qPinKey) : r._txtPinToneless.includes(qPinKey);
+  });
+  tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
+  if(sb) sb.textContent=`${matches.length} hasil ditemukan dari ${rows.length} baris.`;
+}
+window.applyReferenceBankFilter = applyReferenceBankFilter;
+
+function attachReferenceEvents(panel){
+  const search=panel.querySelector('.sr input[type="text"]');
+  if(search) search.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
+  const clearBtn=panel.querySelector('.sr-clear-btn');
+  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; applyReferenceBankFilter(panel); search.focus(); };
+}
+
+function addOrReplaceReferenceTab(title, rows){
+  title=cleanTitle(title); const tid=normalizeRefTabId(title);
+  let table=document.getElementById(tid); let panel=table?.closest('.panel'); let tab=null;
+  if(panel){ const idx=getPanels().indexOf(panel); tab=getTabs()[idx]; }
+  if(!panel){ panel=document.createElement('div'); panel.className='panel'; document.body.appendChild(panel); tab=document.createElement('div'); tab.className='tab'; document.querySelector('.tabs').appendChild(tab); }
+  panel.dataset.tabType='reference'; tab.dataset.tabType='reference';
+  tab.dataset.sheetTitle=title;
+  tab.innerHTML=`📚 ${escapeHTML(title)} <span class="badge">${rows.length}</span><button class="tab-close" title="Hapus tab" type="button">×</button>`;
+  panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
+  REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
+  panel.innerHTML=`<div class="ph"><div class="tw">
+    <div class="sr"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button></div>
+    <table id="${tid}"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table>
+  </div><div class="sb"></div></div>`;
+  refreshTabs();
+  attachReferenceEvents(panel);
+  switchTab(getPanels().indexOf(panel));
+  applyReferenceBankFilter(panel);
+  return tid;
+}
+window.addOrReplaceReferenceTab = addOrReplaceReferenceTab;
+
+async function handleVocabUpload(files){
+  if(!files || !files.length) return;
+  let count=0, totalRows=0;
+  for(const file of files){
+    const raw=await file.text();
+    const rows=parseDelimitedText(raw);
+    addOrReplaceReferenceTab(cleanTitle(file.name), rows);
+    totalRows+=rows.length;
+    count++;
+  }
+  const input=document.getElementById('vocabUpload'); if(input) input.value='';
+  setUploadMsg(`✓ ${count} bank referensi dimuat (${totalRows} baris total). Ketik di kotak cari untuk melihat hasil.`);
+}
+window.handleVocabUpload = handleVocabUpload;
 
 // ===== COLLAPSE UPLOAD =====
 function toggleUploadPanel() {
