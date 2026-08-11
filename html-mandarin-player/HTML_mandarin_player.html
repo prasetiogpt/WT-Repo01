@@ -395,7 +395,7 @@ td:nth-child(2), th:nth-child(2) {
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">⬆ Sheet</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Bank Ref</label>
+      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done Vocab</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
@@ -412,6 +412,8 @@ td:nth-child(2), th:nth-child(2) {
       <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
       <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
       <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
+      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kiri" onclick="moveActiveTab(-1)" style="font-size:.74rem;padding:4px 8px">◀Tab</button>
+      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kanan" onclick="moveActiveTab(1)" style="font-size:.74rem;padding:4px 8px">Tab▶</button>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
@@ -1197,6 +1199,32 @@ function refreshTabs(){
     if(close) close.onclick = (e)=>{ e.preventDefault(); e.stopPropagation(); deleteTab(i); };
   });
 }
+
+// Geser urutan tab aktif (dan panel-nya) satu posisi ke kiri/kanan - swap DOM node dengan
+// tetangganya, bukan drag-and-drop, supaya tidak bentrok dengan gesture scroll/tap tab di HP.
+// Tab dan panel selalu dipasangkan lewat urutan DOM (getTabs()[i] <-> getPanels()[i]), jadi
+// keduanya harus dipindah bersamaan ke posisi yang sama supaya pasangannya tidak meleset - tidak
+// ada data yang disimpan berdasarkan index (REFERENCE_DATA/lock config pakai tid/tabel id), jadi
+// aman digeser kapan saja.
+function moveActiveTab(direction){
+  const tabs=getTabs(), panels=getPanels();
+  const idx=tabs.findIndex(t=>t.classList.contains('active'));
+  if(idx<0) return;
+  const targetIdx=idx+direction;
+  if(targetIdx<0 || targetIdx>=tabs.length) return;
+  const tab=tabs[idx], panel=panels[idx];
+  const targetTab=tabs[targetIdx], targetPanel=panels[targetIdx];
+  if(direction<0){
+    tab.parentNode.insertBefore(tab, targetTab);
+    panel.parentNode.insertBefore(panel, targetPanel);
+  } else {
+    tab.parentNode.insertBefore(tab, targetTab.nextSibling);
+    panel.parentNode.insertBefore(panel, targetPanel.nextSibling);
+  }
+  refreshTabs();
+  switchTab(targetIdx);
+}
+window.moveActiveTab = moveActiveTab;
 
 function deleteTab(index){
   stopPlayAll();
@@ -2090,7 +2118,7 @@ window.parseDelimitedText = parseDelimitedText;
 
 // ===== ROW BUTTONS - HANYA 1 TOMBOL ▶ =====
 function rowButtonsHTML(r, tid, rowIndex){
-  return `<button class="ab play-row-btn" data-tid="${escapeHTML(tid)}" data-row="${rowIndex}" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button>`;
+  return `<button class="ab play-row-btn" data-tid="${escapeHTML(tid)}" data-row="${rowIndex}" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button>`;
 }
 
 function buildRowHTML(tid, r, i){
@@ -3336,7 +3364,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="0" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="0" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">1b</td>
@@ -3351,7 +3379,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="1" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="1" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">1c</td>
@@ -3366,7 +3394,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="2" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="2" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">1d</td>
@@ -3381,7 +3409,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="3" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="3" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">1e</td>
@@ -3396,7 +3424,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce">Hello, I need a towel.</td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="4" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="4" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
     <td class="cn">2a.</td>
@@ -3411,7 +3439,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="5" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="5" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">2b.</td>
@@ -3426,7 +3454,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="6" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="6" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
     <td class="cn">2c.</td>
@@ -3441,7 +3469,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="7" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="7" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
     <td class="cn">2d.</td>
@@ -3456,7 +3484,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="8" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="8" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">2e.</td>
@@ -3471,7 +3499,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="9" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="9" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">2f.</td>
@@ -3486,7 +3514,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce">Okay, how many do you need?</td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="10" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="10" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">3</td>
@@ -3501,7 +3529,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="11" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="11" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
     <td class="cn">3</td>
@@ -3516,7 +3544,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="12" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="12" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">3</td>
@@ -3531,7 +3559,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="13" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="13" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">3</td>
@@ -3546,7 +3574,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="14" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="14" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="1">
     <td class="cn">3</td>
@@ -3561,7 +3589,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce">Big towel or small towel?</td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="15" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="15" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr>
 <tr data-pilih="0" class="hidden">
     <td class="cn">3</td>
@@ -3576,6 +3604,6 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="ce"></td>
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
-    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="16" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Han</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
+    <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="16" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
   </tr></tbody></table></div><div class="sb">Menampilkan 12 dari 17 · 12 ditandai ✓</div></div></div>
 </body></html>
