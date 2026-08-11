@@ -2032,6 +2032,11 @@ function applyFilter(panel){
 // cuma catatan/metadata, bukan konten Vocab/Sentence utama (baris yang cuma punya Note2 tapi
 // KW/Kal-nya kosong tetap harus dianggap kosong).
 const DATA_COL_INDICES = [2, 3, 4, 5, 6, 7, 8, 9];
+// Bank Referensi punya field yang sama di index yang sama (lihat buildReferenceRowHTML), tapi
+// baris disimpan sebagai object bukan <td> DOM - map index kolom ini ke nama field row object,
+// dipakai applyReferenceBankFilter() untuk cek "kosong di semua kolom data yang tampil" sama
+// seperti rowHasVisibleData() di bawah tapi tanpa perlu DOM.
+const REF_FIELD_BY_COL_INDEX = {2:'keyword',3:'arti',4:'hanziKeyword',5:'englishKeyword',6:'pinyin',7:'indo',8:'mandarin',9:'english'};
 function rowHasVisibleData(cells, visibleDataCols) {
   if (visibleDataCols.length === 0) return true; // tidak ada kolom data yang tampil - jangan sembunyikan semua baris
   return visibleDataCols.some(i => (cells[i]?.textContent || '').trim() !== '');
@@ -2335,6 +2340,16 @@ function applyReferenceBankFilter(panel){
     matches=rows.filter(r=>r._txtEng.includes(qText));
   } else {
     matches=[];
+  }
+  // Sama seperti applyFilter() sheet playable: baris yang kosong di semua kolom DATA yang sedang
+  // tampil disembunyikan - Ref./Note2 (index 10/11) sengaja diabaikan dari cek ini karena keduanya
+  // metadata, bukan konten Vocab/Sentence utama (lihat DATA_COL_INDICES). Tanpa ini, baris yang
+  // cuma punya Ref./Note2 terisi tetap muncul di Bank Referensi walau kolom KW/Kal-nya kosong -
+  // beda dari sheet biasa.
+  const headers=table.querySelectorAll('thead th');
+  const visibleDataCols=DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
+  if(visibleDataCols.length){
+    matches=matches.filter(r=>visibleDataCols.some(i=>String(r[REF_FIELD_BY_COL_INDEX[i]]||'').trim()!==''));
   }
   tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
   // Baris baru selalu dibangun tanpa status kolom-hidden apapun (lihat komentar di
