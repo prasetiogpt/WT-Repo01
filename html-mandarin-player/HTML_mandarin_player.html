@@ -26,10 +26,10 @@ thead th.cp{white-space:nowrap; overflow:hidden; text-overflow:clip}
 td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-align:center; color:#111; font-size:.86rem; font-weight:600}
 .tw table td.cn:nth-child(11){width:48px; min-width:48px; max-width:48px; padding:6px 2px}
 .tw table thead th:nth-child(11){width:48px; min-width:48px; max-width:48px; padding:9px 2px; overflow:hidden; text-overflow:clip; white-space:nowrap}
-.cb{width:148px; min-width:148px; max-width:148px; text-align:center; white-space:nowrap}
-.copy-han-btn{margin-left:22px; min-width:34px; height:30px; font-size:.7rem}
+.cb{width:118px; min-width:118px; max-width:118px; padding:6px 4px; text-align:center; white-space:nowrap}
+.copy-han-btn{margin-left:6px; min-width:34px; height:30px; font-size:.7rem}
 .copy-han-btn:hover{transform:none}
-.copy-eng-btn{margin-left:8px; min-width:34px; height:30px; font-size:.7rem}
+.copy-eng-btn{margin-left:6px; min-width:34px; height:30px; font-size:.7rem}
 .copy-eng-btn:hover{transform:none}
 
 .ck-box{display:none}
@@ -227,7 +227,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
   display: none !important;
 }
 .tw table thead th:last-child {
-  width: 148px; min-width: 148px; max-width: 148px; padding: 9px 2px;
+  width: 118px; min-width: 118px; max-width: 118px; padding: 9px 2px;
 }
 td:last-child, th:last-child,
 td:first-child, th:first-child,
@@ -2240,9 +2240,13 @@ function precomputeReferenceSearchFields(rows){
 }
 
 function buildReferenceRowHTML(r, i){
-  // Struktur kolom SAMA PERSIS dengan buildRowHTML (13 kolom, urutan sama) supaya fitur toggle
-  // kolom global (yang kerja berdasarkan index kolom, dipakai bareng sheet playable) tetap benar.
-  // Kolom Pilih & ▶ sengaja dikosongkan - bank referensi tidak untuk play/centang.
+  // Kolom 0-11 SAMA PERSIS urutannya dengan buildRowHTML (No..Note2) supaya fitur toggle kolom
+  // global (yang kerja berdasarkan index kolom, dipakai bareng sheet playable) tetap benar - indeks
+  // toggle/preset itu hanya sampai 11 (Note2), jadi aman. Kolom ▶ (index 12) TIDAK ikut dirender
+  // sama sekali di sini (beda dari buildRowHTML) - bank referensi tidak untuk play, dan CSS punya
+  // aturan "td:last-child selalu tampil !important" yang bikin .col-hidden tidak mempan buat
+  // menyembunyikannya, jadi lebih aman tidak dirender daripada dipaksa sembunyi lewat CSS.
+  // Kolom Pilih tetap dirender kosong (bukan dihilangkan) supaya index kolom 1-11 tidak bergeser.
   return `<tr>
     <td class="cn">${escapeHTML(r.no||String(i+1))}</td>
     <td class="cp"></td>
@@ -2256,7 +2260,6 @@ function buildReferenceRowHTML(r, i){
     <td class="ce">${escapeHTML(r.english)}</td>
     <td class="cn">${escapeHTML(r.note1||'')}</td>
     <td class="cn">${escapeHTML(r.note2||'')}</td>
-    <td class="cb"></td>
   </tr>`;
 }
 
@@ -2321,12 +2324,16 @@ function addOrReplaceReferenceTab(title, rows){
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph"><div class="tw">
     <div class="sr"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button></div>
-    <table id="${tid}"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table>
+    <table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table>
   </div><div class="sb"></div></div>`;
   refreshTabs();
   attachReferenceEvents(panel);
   switchTab(getPanels().indexOf(panel));
   applyReferenceBankFilter(panel);
+  // Panel/thead ini baru dibangun dari nol (innerHTML diganti total, termasuk saat menimpa tab
+  // yang sudah ada lewat re-upload) - reapply status toggle kolom global saat ini supaya kolom
+  // yang sedang disembunyikan (preset/pilihan checkbox) tetap konsisten, bukan balik semua tampil.
+  applyGlobalColumnToggles();
   return tid;
 }
 window.addOrReplaceReferenceTab = addOrReplaceReferenceTab;
@@ -2473,7 +2480,14 @@ function toggleAllColumns(colIndex, show) {
 // sudah diubah (bukan di dalam toggleAllColumns tiap kolom), supaya ganti preset (10 kolom
 // sekaligus) tidak memindai ulang semua baris 10x dan bikin hang.
 function refreshAllRowVisibility() {
-  getPanels().forEach(panel => applyFilter(panel));
+  // Bank Referensi punya filter function sendiri (applyReferenceBankFilter) yang tidak paham
+  // applyFilter()-nya sheet playable - kalau ikut dipanggil di sini, baris yang sedang tampil di
+  // Bank Referensi bisa salah ke-hidden (match versinya applyFilter beda dari match versi
+  // applyReferenceBankFilter yang sebenarnya merender baris itu).
+  getPanels().forEach(panel => {
+    if(panel.dataset.tabType==='reference') return;
+    applyFilter(panel);
+  });
 }
 
 function initGlobalColumnToggles() {
@@ -2485,22 +2499,7 @@ function initGlobalColumnToggles() {
       const colIndex = parseInt(this.dataset.colIndex);
       toggleAllColumns(colIndex, this.checked);
       refreshAllRowVisibility();
-      try {
-        if (this.checked) { localStorage.removeItem('hiddenColumns_' + colIndex); }
-        else { localStorage.setItem('hiddenColumns_' + colIndex, 'hide'); }
-      } catch(e) {}
     };
-    try {
-      const saved = localStorage.getItem('hiddenColumns_' + cb.dataset.colIndex);
-      if (saved === 'hide') {
-        cb.checked = false;
-        // Beberapa kolom bisa dipulihkan sekaligus di sini (satu per checkbox) - refresh baris
-        // cukup sekali di akhir (100ms, setelah semua toggleAllColumns 50ms selesai), bukan
-        // per kolom, supaya tidak memindai ulang baris berkali-kali saat halaman baru dibuka.
-        setTimeout(function() { toggleAllColumns(parseInt(cb.dataset.colIndex), false); }, 50);
-        setTimeout(refreshAllRowVisibility, 100);
-      }
-    } catch(e) {}
   });
 }
 
@@ -2542,10 +2541,6 @@ function applyColumnPreset(presetNum) {
     const show = preset.includes(colIndex);
     cb.checked = show;
     toggleAllColumns(colIndex, show);
-    try {
-      if (show) { localStorage.removeItem('hiddenColumns_' + colIndex); }
-      else { localStorage.setItem('hiddenColumns_' + colIndex, 'hide'); }
-    } catch(e) {}
   });
   refreshAllRowVisibility();
   setUploadMsg('✓ Preset kolom ' + COL_PRESET_LABELS[presetNum] + ' diterapkan.');
