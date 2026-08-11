@@ -481,6 +481,7 @@ const BETWEEN_LANG_MS = 2000;
 const BETWEEN_ROWS_MS = 2000;
 const SHEET_HEADERS = ['No','Pilih','Pin Yin KW','Indo KW','Mand KW','Eng KW','Pin Yin','Indonesia','Mandarin','English','Ref.','Note2','▶'];
 const LOCK_CONFIG_ID = 'lockConfigJson';
+const REFERENCE_DATA_ID = 'referenceDataJson';
 let playToken = 0;
 let playTimer = null;
 let activePlayButton = null;
@@ -2291,6 +2292,41 @@ async function handleVocabUpload(files){
 }
 window.handleVocabUpload = handleVocabUpload;
 
+// Raw fields only (no _txt* search-index helpers - those are cheap to rebuild and would just
+// bloat the downloaded file for no benefit).
+function referenceRowRaw(r){
+  return {no:r.no,pilih:r.pilih,keyword:r.keyword,arti:r.arti,hanziKeyword:r.hanziKeyword,englishKeyword:r.englishKeyword,pinyin:r.pinyin,indo:r.indo,mandarin:r.mandarin,english:r.english,note1:r.note1,note2:r.note2};
+}
+// Called from downloadUpdatedHTML() so Bank Referensi survives "Download HTML Baru" - without
+// this, REFERENCE_DATA (in-memory only) would be lost every time the downloaded file is reopened,
+// unlike playable sheets whose rows are already baked into the DOM that gets cloned/downloaded.
+function persistReferenceDataIntoClone(clone){
+  const payload={};
+  REFERENCE_DATA.forEach((rows, tid)=>{ payload[tid]=rows.map(referenceRowRaw); });
+  const body=clone.querySelector('body'); if(!body) return;
+  let node=body.querySelector('#'+REFERENCE_DATA_ID);
+  if(!node){ node=document.createElement('script'); node.type='application/json'; node.id=REFERENCE_DATA_ID; body.appendChild(node); }
+  node.textContent=JSON.stringify(payload);
+}
+// Called from init() on every page load. Bank Referensi panels/tabs may already exist as static
+// markup (baked in by a prior Download HTML Baru) with an empty tbody and no live event
+// wiring - oninput handlers are JS property assignments, they never survive outerHTML
+// serialization, so every reference panel found in the DOM needs attachReferenceEvents() run
+// again here regardless of whether it has stored row data.
+function restoreReferenceTabsOnLoad(){
+  const node=document.getElementById(REFERENCE_DATA_ID);
+  let stored={};
+  if(node){ try{ stored=JSON.parse(node.textContent||'{}'); }catch(e){} }
+  getPanels().forEach(panel=>{
+    if(panel.dataset.tabType!=='reference') return;
+    const table=panel.querySelector('table'); if(!table) return;
+    const rows=stored[table.id]||[];
+    REFERENCE_DATA.set(table.id, precomputeReferenceSearchFields(rows));
+    attachReferenceEvents(panel);
+    applyReferenceBankFilter(panel);
+  });
+}
+
 // ===== COLLAPSE UPLOAD =====
 function toggleUploadPanel() {
   const body = document.getElementById('globalUploadBody');
@@ -2772,8 +2808,9 @@ window.downloadMergeTXT = downloadMergeCSV;
 function downloadUpdatedHTML(){
   syncAttributes(document);
   const clone=document.documentElement.cloneNode(true);
-  clone.querySelectorAll('#txtUpload,#mp3FolderInput,#mp3ZipInput').forEach(i=>{ i.value=''; i.removeAttribute('value'); });
+  clone.querySelectorAll('#txtUpload,#mp3FolderInput,#mp3ZipInput,#vocabUpload').forEach(i=>{ i.value=''; i.removeAttribute('value'); });
   sanitizeForDownload(clone);
+  persistReferenceDataIntoClone(clone);
   const data='<!DOCTYPE html>\n'+clone.outerHTML;
   const d=new Date(); const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
   const a=document.createElement('a'); a.download=`mandarin-text-clean-v25-freeze-toggle-collapse-${stamp}.html`; a.href='data:text/html;charset=utf-8,'+encodeURIComponent(data); a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>a.remove(),500);
@@ -2822,11 +2859,16 @@ function init(){
   }; }
   refreshTabs();
   rebuildExistingRowButtons(document);
-  getPanels().forEach(panel=>{ 
-    attachPanelEvents(panel); 
+  getPanels().forEach(panel=>{
+    // Bank Referensi punya event wiring & filter function sendiri (attachReferenceEvents /
+    // applyReferenceBankFilter) - kalau ikut lewat attachPanelEvents/applyFilter di sini, kotak
+    // search-nya akan kepasang ke fungsi sheet playable yang salah.
+    if(panel.dataset.tabType==='reference') return;
+    attachPanelEvents(panel);
     applyFilter(panel);
     initTableToolbar(panel);
   });
+  restoreReferenceTabsOnLoad();
   initUploadCollapse();
   initGlobalColumnToggles();
   // Sinkronkan kolom yang ditampilkan/disembunyikan di tabel dengan status centang checkbox
