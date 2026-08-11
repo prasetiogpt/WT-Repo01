@@ -908,6 +908,11 @@ async function handleMp3ZipFiles(files){
   try{
     for(const file of list){
       setUploadMsg('Membaca ZIP: '+file.name+' ...');
+      // Tanpa yield ini, pesan "Membaca ZIP..." bisa tidak sempat ter-render sebelum
+      // parseZipEntries() (dekompresi semua entry, sinkron & berat untuk ZIP besar) memblokir
+      // main thread - dari sisi user terlihat seperti freeze/nge-hang, padahal cuma belum sempat
+      // dicat ke layar sebelum kerjaan berat mulai.
+      await nextPaint();
       const bytes=new Uint8Array(await file.arrayBuffer());
       const entries=parseZipEntries(bytes,file.name);
       entries.forEach(en=>{
