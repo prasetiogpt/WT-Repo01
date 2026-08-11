@@ -2813,7 +2813,14 @@ function downloadUpdatedHTML(){
   persistReferenceDataIntoClone(clone);
   const data='<!DOCTYPE html>\n'+clone.outerHTML;
   const d=new Date(); const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
-  const a=document.createElement('a'); a.download=`mandarin-text-clean-v25-freeze-toggle-collapse-${stamp}.html`; a.href='data:text/html;charset=utf-8,'+encodeURIComponent(data); a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>a.remove(),500);
+  // Blob + object URL, bukan data: URI - sekarang file bisa berisi Bank Referensi berukuran
+  // besar (bisa 10+ MB ter-encode), dan data: URI diam-diam gagal/kepotong di banyak browser HP
+  // (Android Chrome & iOS Safari) begitu ukurannya lewat beberapa MB, tanpa error yang kelihatan
+  // - efeknya baru ketahuan belakangan sebagai "data kosong" pas file dibuka lagi. Blob URL tidak
+  // punya batas praktis seperti itu.
+  const blob=new Blob([data], {type:'text/html;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.download=`mandarin-text-clean-v25-freeze-toggle-collapse-${stamp}.html`; a.href=url; a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>{ a.remove(); URL.revokeObjectURL(url); },1000);
   setUploadMsg('✓ HTML baru di-download.');
 }
 window.downloadUpdatedHTML = downloadUpdatedHTML;
