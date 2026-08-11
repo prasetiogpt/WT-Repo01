@@ -388,11 +388,11 @@ td:nth-child(2), th:nth-child(2) {
   </div>
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
-      <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">Upload Sheet</label>
+      <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">⬆ Sheet</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Vocab</label>
+      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Bank Ref</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">MP3:</label>
+      <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <span class="mp3-status" id="mp3FolderMsg">ZIP belum ada</span>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
@@ -480,6 +480,23 @@ const TTS_SPEEDS = [0.4,0.6,0.8,1.0,1.2,1.4,1.6];
 const BETWEEN_LANG_MS = 2000;
 const BETWEEN_ROWS_MS = 2000;
 const SHEET_HEADERS = ['No','Pilih','Pin Yin KW','Indo KW','Mand KW','Eng KW','Pin Yin','Indonesia','Mandarin','English','Ref.','Note2','▶'];
+
+// Dropdown "cari di kolom tertentu" - dipakai bareng oleh sheet playable (toolbarHTML) dan Bank
+// Referensi (addOrReplaceReferenceTab). Value dipakai sebagai key generik ('keyword','arti',...),
+// bukan index kolom, supaya satu daftar ini jadi satu-satunya sumber - applyFilter() (sheet
+// playable) menerjemahkannya ke index kolom lewat COL_SCOPE_TO_INDEX, applyReferenceBankFilter()
+// (Bank Referensi) langsung pakai sebagai nama field row object.
+const COL_SCOPE_OPTIONS = [
+  ['all','0 All'],
+  ['keyword','1 PinKW'],
+  ['arti','2 IndKW'],
+  ['hanziKeyword','3 ManKW'],
+  ['note2','Notes2']
+];
+const COL_SCOPE_TO_INDEX = { keyword:2, arti:3, hanziKeyword:4, note2:11 };
+function colScopeOptionsHTML(){
+  return COL_SCOPE_OPTIONS.map(([v,t],i)=>`<option value="${v}" ${i===0?'selected':''}>${t}</option>`).join('');
+}
 const LOCK_CONFIG_ID = 'lockConfigJson';
 const REFERENCE_DATA_ID = 'referenceDataJson';
 let playToken = 0;
@@ -1899,9 +1916,13 @@ function normalizePinyinToneNumber(text){
 }
 // cells[2]="Pin Yin KW", cells[6]="Pin Yin" per SHEET_HEADERS - the only two columns this
 // tone-insensitive/tone-specific matching applies to; every other column keeps exact literal
-// matching, unchanged.
-function pinyinCellsMatch(cells, qText){
-  const pinText=[(cells[2]?.textContent||''),(cells[6]?.textContent||'')].join(' ');
+// matching, unchanged. colScope narrows which of the two cells count: 'all' checks both, 'keyword'
+// (the col-scope dropdown's "PinKW" option) checks only cells[2], anything else (a scope outside
+// the pinyin columns) disables the tone fallback entirely.
+function pinyinCellsMatch(cells, qText, colScope='all'){
+  const idxs = colScope==='all' ? [2,6] : (colScope==='keyword' ? [2] : []);
+  if(!idxs.length) return false;
+  const pinText=idxs.map(i=>cells[i]?.textContent||'').join(' ');
   if(/\d/.test(qText)) return normalizePinyinToneNumber(pinText).includes(normalizePinyinToneNumber(qText));
   return normalizePinyinToneless(pinText).includes(normalizePinyinToneless(qText));
 }
@@ -1910,6 +1931,7 @@ function applyFilter(panel){
   const table = panel.querySelector('table');
   if(!table) return;
   const qText = (panel.querySelector('.sr input[type="text"]')?.value || '').toLowerCase();
+  const colScope = panel.querySelector('.col-scope-select')?.value || 'all';
   const checkedOnly = !!panel.querySelector('[data-filter-checked]')?.checked;
   const exclMode = !!panel.querySelector('[data-filter-excl]')?.checked;
   
@@ -1936,7 +1958,13 @@ function applyFilter(panel){
     // query DOM dua kali per baris (sekali di sini, sekali lagi di dalam rowHasVisibleData),
     // yang bikin scroll/render terasa berat karena kerjanya dobel di setiap applyFilter.
     const cells = qa('td', tr);
-    const txt = cells.map(td => td.textContent.toLowerCase()).join(' ');
+    let txt;
+    if(colScope==='all'){
+      txt = cells.map(td => td.textContent.toLowerCase()).join(' ');
+    } else {
+      const ci = COL_SCOPE_TO_INDEX[colScope];
+      txt = ci!==undefined ? (cells[ci]?.textContent || '').toLowerCase() : '';
+    }
     const no = parseInt(tr.querySelector('.cn')?.textContent || '0');
 
     let matchNo = true;
@@ -1951,7 +1979,7 @@ function applyFilter(panel){
     // peduli tanda nada (atau persis nada tertentu kalau query ada angkanya). Hanya untuk mode
     // include (bukan Excl.) - exclMode tetap literal saja supaya perilaku "kecualikan" tidak
     // makin luas cakupannya secara tak terduga.
-    if(qText && !exclMode && !matchText) matchText = pinyinCellsMatch(cells, qText);
+    if(qText && !exclMode && !matchText) matchText = pinyinCellsMatch(cells, qText, colScope);
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
     const hasVisibleData = rowHasVisibleData(cells, visibleDataCols);
 
@@ -2133,7 +2161,7 @@ function toolbarHTML(tid){
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <input type="text" placeholder="Cari..."><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
+      <input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
       <label class="fl"><input type="checkbox" data-filter-excl> Excl.</label>
       <label class="fl"><input type="checkbox" data-filter-checked checked> ✓ saja</label>
       <label class="range-label">
@@ -2200,6 +2228,15 @@ function precomputeReferenceSearchFields(rows){
     r._txtPinLiteral=pinFields.map(v=>String(v||'').toLowerCase()).join(' ');
     r._txtPinToneless=pinFields.map(v=>normalizePinyinToneless(v)).join(' ');
     r._txtPinToneNum=pinFields.map(v=>normalizePinyinToneNumber(v)).join(' ');
+    // Per-kolom, dipakai dropdown scope kolom (COL_SCOPE_OPTIONS) - "PinKW" di sini cuma dari
+    // r.keyword sendiri (bukan gabungan dengan r.pinyin/kalimat seperti _txtPinLiteral di atas),
+    // supaya scope "1 PinKW" benar-benar terbatas ke kolom itu saja.
+    r._loKeyword=String(r.keyword||'').toLowerCase();
+    r._loPinToneless=normalizePinyinToneless(r.keyword);
+    r._loPinToneNum=normalizePinyinToneNumber(r.keyword);
+    r._loArti=String(r.arti||'').toLowerCase();
+    r._loHanziKeyword=String(r.hanziKeyword||'').toLowerCase();
+    r._loNote2=String(r.note2||'').toLowerCase();
   });
   return rows;
 }
@@ -2231,6 +2268,7 @@ function applyReferenceBankFilter(panel){
   const tbody=table.querySelector('tbody');
   const sb=panel.querySelector('.sb');
   const qText=(panel.querySelector('.sr input[type="text"]')?.value||'').trim().toLowerCase();
+  const colScope=panel.querySelector('.col-scope-select')?.value||'all';
   if(!qText){
     tbody.innerHTML='';
     if(sb) sb.textContent=`Ketik kata kunci untuk mencari di antara ${rows.length} baris.`;
@@ -2238,11 +2276,27 @@ function applyReferenceBankFilter(panel){
   }
   const qHasDigit=/\d/.test(qText);
   const qPinKey= qHasDigit ? normalizePinyinToneNumber(qText) : normalizePinyinToneless(qText);
-  const matches=rows.filter(r=>{
-    if(r._txtOther.includes(qText)) return true;
-    if(r._txtPinLiteral.includes(qText)) return true;
-    return qHasDigit ? r._txtPinToneNum.includes(qPinKey) : r._txtPinToneless.includes(qPinKey);
-  });
+  let matches;
+  if(colScope==='all'){
+    matches=rows.filter(r=>{
+      if(r._txtOther.includes(qText)) return true;
+      if(r._txtPinLiteral.includes(qText)) return true;
+      return qHasDigit ? r._txtPinToneNum.includes(qPinKey) : r._txtPinToneless.includes(qPinKey);
+    });
+  } else if(colScope==='keyword'){
+    matches=rows.filter(r=>{
+      if(r._loKeyword.includes(qText)) return true;
+      return qHasDigit ? r._loPinToneNum.includes(qPinKey) : r._loPinToneless.includes(qPinKey);
+    });
+  } else if(colScope==='arti'){
+    matches=rows.filter(r=>r._loArti.includes(qText));
+  } else if(colScope==='hanziKeyword'){
+    matches=rows.filter(r=>r._loHanziKeyword.includes(qText));
+  } else if(colScope==='note2'){
+    matches=rows.filter(r=>r._loNote2.includes(qText));
+  } else {
+    matches=[];
+  }
   tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
   if(sb) sb.textContent=`${matches.length} hasil ditemukan dari ${rows.length} baris.`;
 }
@@ -2251,8 +2305,10 @@ window.applyReferenceBankFilter = applyReferenceBankFilter;
 function attachReferenceEvents(panel){
   const search=panel.querySelector('.sr input[type="text"]');
   if(search) search.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
+  const colScopeSel=panel.querySelector('.col-scope-select');
+  if(colScopeSel) colScopeSel.onchange=()=>applyReferenceBankFilter(panel);
   const clearBtn=panel.querySelector('.sr-clear-btn');
-  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; applyReferenceBankFilter(panel); search.focus(); };
+  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); search.focus(); };
 }
 
 function addOrReplaceReferenceTab(title, rows){
@@ -2266,7 +2322,7 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph"><div class="tw">
-    <div class="sr"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button></div>
+    <div class="sr"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button></div>
     <table id="${tid}"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table>
   </div><div class="sb"></div></div>`;
   refreshTabs();
@@ -2552,6 +2608,7 @@ function debounce(fn, ms=300){let t;return function(...a){clearTimeout(t);t=setT
 function attachPanelEvents(panel){
   syncPanelPlayOptions(panel);
   const search=panel.querySelector('.sr input[type="text"]'); if(search) search.oninput=debounce(()=>applyFilter(panel), 500);
+  const colScopeSel=panel.querySelector('.col-scope-select'); if(colScopeSel) colScopeSel.onchange=()=>applyFilter(panel);
   const fromInput=panel.querySelector('[data-filter-from]');
   const toInput=panel.querySelector('[data-filter-to]');
   if(fromInput) fromInput.oninput=()=>applyFilter(panel);
@@ -2566,6 +2623,7 @@ function attachPanelEvents(panel){
     search.value='';
     if(fromInput) fromInput.value='';
     if(toInput) toInput.value='';
+    if(colScopeSel) colScopeSel.value='all';
     applyFilter(panel);
     search.focus();
   };
@@ -3235,7 +3293,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <input type="text" placeholder="Cari..."><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
+      <input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>0 All</option><option value="keyword">1 PinKW</option><option value="arti">2 IndKW</option><option value="hanziKeyword">3 ManKW</option><option value="note2">Notes2</option></select><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
       <label class="fl"><input type="checkbox" data-filter-excl=""> Excl.</label>
       <label class="fl"><input type="checkbox" data-filter-checked="" checked=""> ✓ saja</label>
       <label class="range-label">
