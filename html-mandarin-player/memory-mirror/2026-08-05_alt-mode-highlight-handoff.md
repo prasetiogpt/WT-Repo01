@@ -179,6 +179,68 @@ Recommended order if the user wants to tackle this: B + C together give the most
 Confirm with the user which of A/B/C (or all three) they actually want before starting — this was
 raised as a diagnosis, not yet greenlit as a task.
 
+## Two more topics discussed (2026-08-12), not started, unrelated to Alt-mode work above
+
+### Clipboard "paste/refresh" button for the search box — why it doesn't work today
+
+User asked why a button to auto-fill the search box from clipboard is hard. Root cause confirmed
+in code: `copyToClipboard()` (was ~line 1439-1448) already has to special-case
+`location.protocol !== 'file:'` because `navigator.clipboard` only works in a secure context
+(HTTPS/localhost) — `file://` (how this app is normally opened on a phone) doesn't qualify at all,
+so `navigator.clipboard.readText()` would simply not exist/work there. For *reading* (paste) the
+situation is worse than writing (copy): `document.execCommand('paste')` has been disabled by most
+modern browsers for security reasons (arbitrary pages silently reading clipboard contents like
+OTPs/passwords is a known abuse vector), so there's no old-school fallback for read like there is
+for write (`execCommand('copy')` still works via a hidden textarea, which is what the existing
+fallback in `copyToClipboard` uses).
+
+Important nuance surfaced when user asked "does Pleco do something dangerous then?" — no. A
+click-triggered `navigator.clipboard.readText()` call (i.e. a real "Paste"/"Refresh" button, not an
+automatic silent read) is the browser-sanctioned pattern and works fine with a one-time permission
+prompt — but only in a secure context. Pleco can do it easily because it's a native app under the
+OS's clipboard permission model (Android/iOS), not a webpage. **The blocker for this app is purely
+`file://` hosting, not the button pattern itself.** If this app is ever served over HTTPS (the repo
+root README/CLAUDE.md already mentions possibly going public via GitHub Pages per-app for testing),
+a paste/refresh button becomes straightforward to add. Until then, it's not practically buildable —
+don't spend time on it while the app stays `file://`-distributed.
+
+### Mobile browser address bar covers the Play All toolbar, and dragging the sticky table header can't scroll it away
+
+User's real complaint, with screenshot: on phone, the browser's URL/address bar sometimes
+re-appears and overlaps the toolbar row (Loop/Rand/Play/Stop/target icons, the `.sr` row inside
+`.ph`), leaving only the table header visible underneath it — and dragging on the table header
+doesn't scroll the outer page to reveal the toolbar again.
+
+Diagnosed two compounding causes:
+1. **`.tw{max-height:88vh}`** (was ~line 96): mobile `vh` is computed against the browser's
+   *largest* viewport (chrome hidden), not the currently-visible one. When the address bar pops
+   back in and shrinks the real visible area, the table box (sized off the old, bigger `vh`) no
+   longer fits — content including the toolbar above it effectively extends past what's visible,
+   and the part that's covered is unreachable.
+2. **Touch-scroll can't chain from the table to the outer page**: the table header is
+   `position:sticky` *inside* `.tw`, which is its own `overflow:auto` scroll container. Touch drags
+   starting there scroll `.tw`, not the outer page. `html`/`body` also carry
+   `overscroll-behavior:contain` (was ~line 9), added deliberately for the pull-to-refresh fix (see
+   Rule 5 in the main skill doc) — which explicitly blocks scroll from chaining from an inner
+   container out to the page. So there's no gesture available on the table itself that reaches the
+   outer page's scroll.
+
+Recommended fix, not yet applied: change `.tw{max-height:88vh}` to also set `88dvh` (dynamic
+viewport height — a modern CSS unit that tracks the *actual currently visible* viewport, auto-
+shrinking when browser chrome is showing):
+```css
+.tw { max-height: 88vh; max-height: 88dvh; }
+```
+Unsupported browsers just ignore the second line and keep using `88vh` (safe, no feature detection
+needed). Confirmed with user: this causes **zero change** in the already-good state (chrome
+hidden, most of the time) — `dvh` and `vh` compute identically there, same row count visible. It
+only kicks in when the address bar is actually showing, shrinking the table by exactly the amount
+of screen the address bar is taking — trading "table height lies about available space, toolbar
+gets stuck behind unreachable chrome" for "table height is honest, toolbar/header always fully
+visible and usable, just possibly one fewer row visible at that specific moment." User has not yet
+confirmed whether to proceed with this fix or the smaller supplementary ideas (extra top padding,
+slightly lower vh ceiling) also discussed — decide with them before implementing.
+
 ## Suggested build order for the local session
 
 1. Part 1 (row offsets) — foundation for both highlight and continue-from-next-row.
