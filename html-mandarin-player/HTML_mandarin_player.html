@@ -184,7 +184,11 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
   background: #fef3e2 !important;
 }
 @media (max-width: 768px) {
-  .tw { max-height: 88vh; }
+  /* Ini rule .tw yang SEBENARNYA menang di HP (media query mobile, datang paling akhir di file) -
+     dua rule .tw lain (dekat awal file, dan yang di atas dekat sini) kalah di layar mobile.
+     Dikecilkan dari 88 ke 72 (2026-08-12) supaya toolbar di atas tabel sisa lebih banyak yang
+     tidak ke-scroll hilang - user butuh "ruang" ekstra, bukan tombol dipindah posisi. */
+  .tw { max-height: 72vh; max-height: 72dvh; }
   table { width: auto; min-width: 0; table-layout: fixed; }
   body { font-size: 13.5px; }
 }
