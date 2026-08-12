@@ -2389,7 +2389,9 @@ function attachReferenceEvents(panel){
   const colScopeSel=panel.querySelector('.col-scope-select');
   if(colScopeSel) colScopeSel.onchange=()=>applyReferenceBankFilter(panel);
   const clearBtn=panel.querySelector('.sr-clear-btn');
-  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); search.focus(); };
+  // Tidak search.focus() lagi - samakan dengan sheet biasa (2026-08-12), supaya tombol ✕ tidak
+  // otomatis munculkan keyboard HP.
+  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); };
 }
 
 function addOrReplaceReferenceTab(title, rows){
