@@ -397,8 +397,6 @@ td:nth-child(2), th:nth-child(2) {
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kiri" onclick="moveActiveTab(-1)" style="font-size:.74rem;padding:4px 8px">⬅</button>
-      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kanan" onclick="moveActiveTab(1)" style="font-size:.74rem;padding:4px 8px">➡</button>
       <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <span class="mp3-status" id="mp3FolderMsg">ZIP belum ada</span>
@@ -451,9 +449,11 @@ td:nth-child(2), th:nth-child(2) {
     </div>
   </div>
   <div class="lock-row">
-    <button class="btn btn-check" type="button" id="btnAdminLock">Lock Sheet Ini</button>
-    <button class="btn btn-check" type="button" id="btnAdminUnlock">Unlock Sheet Ini</button>
-    <button class="btn btn-exp" onclick="downloadActiveTabCSV()" type="button">↓ CSV Tab Ini</button>
+    <button class="btn btn-check" type="button" id="btnAdminLock">Lock Sheet</button>
+    <button class="btn btn-check" type="button" id="btnAdminUnlock">Unlock Sheet</button>
+    <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kiri" onclick="moveActiveTab(-1)">⬅ Sheet</button>
+    <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kanan" onclick="moveActiveTab(1)">➡ Sheet</button>
+    <button class="btn btn-exp" onclick="downloadActiveTabCSV()" type="button">↓ CSV Tab</button>
     <button class="btn btn-exp" onclick="downloadMergeCSV()" type="button">↓ CSV Merge</button>
     <button class="btn btn-save" type="button" id="btnAdminChange">Change Password</button>
     <button class="btn btn-del" type="button" id="btnAdminClose">Close</button>
