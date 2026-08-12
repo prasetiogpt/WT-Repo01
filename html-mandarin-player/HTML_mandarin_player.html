@@ -395,10 +395,10 @@ td:nth-child(2), th:nth-child(2) {
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">⬆ Sheet</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done Vocab</label>
+      <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kiri" onclick="moveActiveTab(-1)" style="font-size:.74rem;padding:4px 8px">◀Tab</button>
-      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kanan" onclick="moveActiveTab(1)" style="font-size:.74rem;padding:4px 8px">Tab▶</button>
+      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kiri" onclick="moveActiveTab(-1)" style="font-size:.74rem;padding:4px 8px">◀</button>
+      <button class="btn btn-check" type="button" title="Pindahkan tab aktif ke kanan" onclick="moveActiveTab(1)" style="font-size:.74rem;padding:4px 8px">▶</button>
       <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <span class="mp3-status" id="mp3FolderMsg">ZIP belum ada</span>
@@ -2683,10 +2683,8 @@ function attachPanelEvents(panel){
   if(fromInput) fromInput.oninput=()=>applyFilter(panel);
   if(toInput) toInput.oninput=()=>applyFilter(panel);
   // Reset: kosongkan search DAN filter No dari-sd sekaligus, terapkan filter langsung (tidak
-  // nunggu debounce), lalu fokus ke kotak search supaya tekan-tahan untuk paste tetap bisa
-  // langsung dipakai. Bukan solusi mempercepat paste (itu di-pending, lihat diskusi 2026-08-07 -
-  // Clipboard API terbukti gagal di device user karena app dibuka via file:// lokal) - ini murni
-  // fitur reset filter.
+  // nunggu debounce). Sengaja TIDAK search.focus() lagi - itu bikin keyboard HP selalu muncul
+  // otomatis tiap tombol ✕ ditekan, padahal user cuma mau clear, bukan langsung mau ngetik lagi.
   const searchClearBtn=panel.querySelector('.sr-clear-btn');
   if(searchClearBtn && search) searchClearBtn.onclick=()=>{
     search.value='';
@@ -2694,7 +2692,6 @@ function attachPanelEvents(panel){
     if(toInput) toInput.value='';
     if(colScopeSel) colScopeSel.value='all';
     applyFilter(panel);
-    search.focus();
   };
   const filter=panel.querySelector('[data-filter-checked]'); if(filter) filter.onchange=()=>applyFilter(panel);
   const excl=panel.querySelector('[data-filter-excl]'); if(excl) excl.onchange=()=>applyFilter(panel);
@@ -3019,6 +3016,13 @@ function init(){
       document.querySelectorAll('.baca-no-proxy').forEach(p=>{ p.checked = proxy.checked; });
     }
   });
+  // Gabung KW + kalimat untuk tombol copy Han/Eng - separator "; " cuma dipakai kalau DUA-duanya
+  // ada isinya. Kalau cuma salah satu (KW saja atau kalimat saja), langsung itu saja tanpa
+  // separator nyangkut di ujung.
+  function combineKwSent(kw, sent){
+    if(kw && sent) return `${kw}   ;   ${sent}`;
+    return kw || sent || '';
+  }
   document.addEventListener('click', e=>{
     const engBtn = e.target.closest('.copy-eng-btn');
     if(engBtn){
@@ -3032,7 +3036,7 @@ function init(){
         const colSent = getModeColumn(table, 'english');
         const kw = colKw>=0 ? String(tds[colKw]?.textContent||'').trim() : '';
         const sent = colSent>=0 ? String(tds[colSent]?.textContent||'').trim() : '';
-        const text = (kw || sent) ? `${kw}   ;   ${sent}` : '';
+        const text = combineKwSent(kw, sent);
         if(text){
           if(isAccumOn()){
             const accum = addEngAccum(text);
@@ -3056,7 +3060,7 @@ function init(){
         const colSent = getModeColumn(table, 'mandarin');
         const kw = colKw>=0 ? String(tds[colKw]?.textContent||'').trim() : '';
         const sent = colSent>=0 ? String(tds[colSent]?.textContent||'').trim() : '';
-        const text = (kw || sent) ? `${kw}   ;   ${sent}` : '';
+        const text = combineKwSent(kw, sent);
         if(text){
           if(isAccumOn()){
             const accum = addHanAccum(text);
