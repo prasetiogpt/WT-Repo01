@@ -2190,6 +2190,11 @@ const V_PRESETS = {
   '3': ['mandarin', 'mandarin', '', ''],
   '4': ['mandarin', 'mandarin', 'mandarin', 'mandarin']
 };
+// Preset audio V1-V4 -> preset kolom (2026-08-12, user's choice): 1->1(S+V), 2->2(Vocab),
+// 3->3(Sent.), 4->3(Sent., karena preset 4 audio "all-Mandarin" tidak punya pasangan kolom
+// sendiri). Kolom tetap bisa dicentang/di-uncheck manual sesudahnya seperti biasa - ini cuma
+// titik-awal, bukan mengunci kontrol kolom.
+const V_PRESET_TO_COL_PRESET = { '1': '1', '2': '2', '3': '3', '4': '3' };
 function applyVoicePreset(tid, presetNum){
   const preset = V_PRESETS[presetNum];
   if(!preset) return;
@@ -2197,6 +2202,12 @@ function applyVoicePreset(tid, presetNum){
     const sel = document.querySelector(`[data-final-voice${i+1}="${tid}"]`);
     if(sel) sel.value = val;
   });
+  const colPreset = V_PRESET_TO_COL_PRESET[presetNum];
+  if(colPreset){
+    applyColumnPreset(colPreset);
+    const presetSel = document.getElementById('colPresetSelect');
+    if(presetSel) presetSel.value = colPreset;
+  }
 }
 window.applyVoicePreset = applyVoicePreset;
 function dropdownPlayControlsHTML(tid){
@@ -2359,6 +2370,15 @@ function applyReferenceBankFilter(panel){
   const visibleDataCols=DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
   if(visibleDataCols.length){
     matches=matches.filter(r=>visibleDataCols.some(i=>String(r[REF_FIELD_BY_COL_INDEX[i]]||'').trim()!==''));
+  }
+  // Batas render 300 baris (2026-08-12, user's choice) - kalau hasil lebih dari itu, JANGAN
+  // dirender sama sekali (bukan potong ke 300 pertama), cuma kasih pesan minta persempit kata
+  // kunci. Render ribuan <tr> sekaligus itu yang bikin lag di HP lama, bukan proses filter-nya.
+  const REFERENCE_RESULT_CAP = 300;
+  if(matches.length > REFERENCE_RESULT_CAP){
+    tbody.innerHTML='';
+    if(sb) sb.textContent=`Terlalu banyak hasil (${matches.length} dari ${rows.length} baris) - persempit kata kunci pencarian (maks ${REFERENCE_RESULT_CAP} hasil ditampilkan).`;
+    return;
   }
   tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
   // Baris baru selalu dibangun tanpa status kolom-hidden apapun (lihat komentar di
