@@ -2371,16 +2371,14 @@ function applyReferenceBankFilter(panel){
   if(visibleDataCols.length){
     matches=matches.filter(r=>visibleDataCols.some(i=>String(r[REF_FIELD_BY_COL_INDEX[i]]||'').trim()!==''));
   }
-  // Batas render 300 baris (2026-08-12, user's choice) - kalau hasil lebih dari itu, JANGAN
-  // dirender sama sekali (bukan potong ke 300 pertama), cuma kasih pesan minta persempit kata
-  // kunci. Render ribuan <tr> sekaligus itu yang bikin lag di HP lama, bukan proses filter-nya.
-  const REFERENCE_RESULT_CAP = 300;
-  if(matches.length > REFERENCE_RESULT_CAP){
-    tbody.innerHTML='';
-    if(sb) sb.textContent=`Terlalu banyak hasil (${matches.length} dari ${rows.length} baris) - persempit kata kunci pencarian (maks ${REFERENCE_RESULT_CAP} hasil ditampilkan).`;
-    return;
-  }
-  tbody.innerHTML=matches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
+  // Batas render 500 baris (2026-08-12, revisi user) - kalau hasil lebih dari itu, tetap
+  // tampilkan 500 pertama (bukan kosong sama sekali), cuma baris ke-501 dst yang tidak perlu
+  // dirender. Pesan status di bawah kasih tahu berapa dari berapa. Ini yang mencegah lag di HP
+  // lama - render ribuan <tr> sekaligus, bukan proses filter-nya.
+  const REFERENCE_RESULT_CAP = 500;
+  const totalMatches = matches.length;
+  const cappedMatches = totalMatches > REFERENCE_RESULT_CAP ? matches.slice(0, REFERENCE_RESULT_CAP) : matches;
+  tbody.innerHTML=cappedMatches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
   // Baris baru selalu dibangun tanpa status kolom-hidden apapun (lihat komentar di
   // buildReferenceRowHTML) - kalau thead sedang punya kolom yang disembunyikan (dari preset/
   // checkbox toggle global sebelumnya), body yang baru dibangun ini jadi tidak sinkron dengan
@@ -2394,7 +2392,11 @@ function applyReferenceBankFilter(panel){
       hiddenIdx.forEach(i=>{ if(cells[i]) cells[i].classList.add('col-hidden'); });
     });
   }
-  if(sb) sb.textContent=`${matches.length} hasil ditemukan dari ${rows.length} baris.`;
+  if(sb){
+    sb.textContent = totalMatches > REFERENCE_RESULT_CAP
+      ? `Ditampilkan hanya ${REFERENCE_RESULT_CAP} / ${totalMatches} hasil (dari ${rows.length} baris) - persempit kata kunci untuk hasil lebih spesifik.`
+      : `${totalMatches} hasil ditemukan dari ${rows.length} baris.`;
+  }
   // Extra nudge for the mobile Chrome sticky-header repaint bug (see CSS comment on
   // ".tw table thead th") - force a reflow on the header right after tbody changes, since this
   // is the one codepath that mutates tbody repeatedly (every search).
@@ -3038,6 +3040,13 @@ function init(){
   // di atas) - tabel contoh bawaan ("000 Data Testing") di-hardcode dengan status kolom lama,
   // jadi kalau default checkbox berubah tapi ini tidak dipanggil, tabel bawaan bisa tidak sinkron.
   applyGlobalColumnToggles();
+  // Pastikan kolom default saat pertama buka SELALU cocok dengan Preset V default (1, S+V) -
+  // bukan cuma mengandalkan checkbox HTML default yang harus dijaga manual tetap sinkron
+  // (2026-08-12, user's request). Preset V dropdown per-sheet sudah default ke "1" lewat HTML
+  // <option selected>, ini menegaskan sisi kolomnya juga.
+  applyColumnPreset('1');
+  const initialColPresetSel = document.getElementById('colPresetSelect');
+  if (initialColPresetSel) initialColPresetSel.value = '1';
   updateGlobalYtubeButton();
   document.addEventListener('change', e=>{
     const proxy = e.target.closest('.baca-no-proxy');
