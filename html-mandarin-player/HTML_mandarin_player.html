@@ -406,12 +406,12 @@ td:nth-child(2), th:nth-child(2) {
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <label class="btn btn-check" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
+      <label class="btn btn-check playback-only-control" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-      <span class="mp3-status" id="mp3FolderMsg">ZIP belum ada</span>
+      <span class="mp3-status playback-only-control" id="mp3FolderMsg">ZIP belum ada</span>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
-        <label class="tts-top-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
-        <label class="tts-top-control">Au: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
+        <label class="tts-top-control playback-only-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
+        <label class="tts-top-control playback-only-control">Au: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
         <button class="btn btn-check" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Comb</button>
         <button class="btn btn-check" id="downloadCombWavBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Download combined WAV">↓Comb</button>
       </div>
@@ -501,8 +501,9 @@ const SHEET_HEADERS = ['No','Pilih','Pin Yin KW','Indo KW','Mand KW','Eng KW','P
 // Referensi (addOrReplaceReferenceTab). Tiap scope (selain "all") mencakup SEPASANG kolom - versi
 // KW-nya dan versi kalimat-nya (mis. "pin" = Pin Yin KW + Pin Yin) - bukan satu kolom saja. Value
 // dipakai sebagai key generik, bukan index kolom, supaya satu daftar ini jadi satu-satunya sumber -
-// applyFilter() (sheet playable) menerjemahkannya ke index kolom lewat COL_SCOPE_TO_INDICES,
-// applyReferenceBankFilter() (Bank Referensi) langsung pakai sebagai nama field precompute (_txtPin/_txtInd/dst).
+// applyFilter() (sheet playable) dan applyReferenceBankFilter() (Bank Referensi) sama-sama
+// menerjemahkannya ke index kolom lewat scopeIndicesVisible() (yang juga mengiris dengan kolom
+// yang sedang tampil, 2026-08-12), lalu COL_SCOPE_TO_INDICES untuk scope selain "all".
 const COL_SCOPE_OPTIONS = [
   ['all','All'],
   ['pin','Pin'],
@@ -1185,8 +1186,22 @@ function switchTab(index){
   panels.forEach((panel,i)=>panel.classList.toggle('active', i===index && !panel.classList.contains('locked-hidden')));
   updateGlobalYtubeButton();
   updateMp3StatusForActivePanel();
+  updatePlaybackControlsVisibility();
 }
 window.switchTab = switchTab;
+
+// Bank Referensi (Done Vocab) tidak punya fitur play sama sekali (lihat komentar di
+// buildReferenceRowHTML) - Speed/Au/upload MP3+status jadi tidak berguna saat tab itu aktif.
+// Murni sembunyikan tampilan (2026-08-12, user's choice - Ak.Clip/Save Clip/Clear Clip/↓HTML
+// sengaja TIDAK ikut disembunyikan, tetap tampil terlepas dari tab jenis apa).
+function updatePlaybackControlsVisibility(){
+  const panel = document.querySelector('body > .panel.active');
+  const isReference = panel?.dataset.tabType === 'reference';
+  document.querySelectorAll('.playback-only-control').forEach(el=>{
+    el.style.display = isReference ? 'none' : '';
+  });
+}
+window.updatePlaybackControlsVisibility = updatePlaybackControlsVisibility;
 
 // Global Ytube button (moved out of per-sheet toolbar, next to the column-toggle Reset button)
 // reflects whichever sheet/tab is currently active, and hides itself when that sheet has no link.
@@ -1966,13 +1981,24 @@ function normalizePinyinToneNumber(text){
 // cells[2]="Pin Yin KW", cells[6]="Pin Yin" per SHEET_HEADERS - the only two columns this
 // tone-insensitive/tone-specific matching applies to; every other column keeps exact literal
 // matching, unchanged. colScope 'all' or 'pin' both check both cells; any other scope (ind/man/eng)
-// disables the tone fallback entirely - those aren't pinyin columns.
-function pinyinCellsMatch(cells, qText, colScope='all'){
-  const idxs = (colScope==='all' || colScope==='pin') ? [2,6] : [];
-  if(!idxs.length) return false;
-  const pinText=idxs.map(i=>cells[i]?.textContent||'').join(' ');
+// disables the tone fallback entirely - those aren't pinyin columns. visibleIdxs (2026-08-12) is
+// the pre-filtered [2,6] intersected with which columns are currently shown - see
+// scopeIndicesVisible().
+function pinyinCellsMatch(cells, visibleIdxs, qText){
+  if(!visibleIdxs.length) return false;
+  const pinText=visibleIdxs.map(i=>cells[i]?.textContent||'').join(' ');
   if(/\d/.test(qText)) return normalizePinyinToneNumber(pinText).includes(normalizePinyinToneNumber(qText));
   return normalizePinyinToneless(pinText).includes(normalizePinyinToneless(qText));
+}
+// Gabungan scope (All/Pin/Ind/Man/Eng, dari dropdown col-scope-select) DENGAN kolom yang sedang
+// tampil (2026-08-12, user's request) - dua-duanya harus cocok, bukan salah satu. Misal scope
+// "Pin" + cuma kolom KW yang tampil (Kalimat disembunyikan) -> yang benar-benar dicari cuma Pin
+// Yin KW, bukan Pin Yin (kalimat) juga, walau scope "Pin" mencakup keduanya secara kategori.
+function scopeIndicesVisible(headers, colScope){
+  const idxs = colScope==='all'
+    ? [0,1,2,3,4,5,6,7,8,9,10,11]
+    : (COL_SCOPE_TO_INDICES[colScope] || []);
+  return idxs.filter(i => !headers[i] || !headers[i].classList.contains('col-hidden'));
 }
 
 function applyFilter(panel){
@@ -2000,19 +2026,17 @@ function applyFilter(panel){
   // baris menyebabkan lag/hang saat ganti preset kolom (10 kolom x semua sheet x semua baris).
   const headers = table.querySelectorAll('thead th');
   const visibleDataCols = DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
+  // Scope (All/Pin/Ind/Man/Eng) DIGABUNG dengan kolom yang sedang tampil - lihat komentar di
+  // scopeIndicesVisible(). Dihitung sekali per tabel, bukan per baris.
+  const searchIdxs = scopeIndicesVisible(headers, colScope);
+  const pinIdxs = (colScope==='all' || colScope==='pin') ? [2,6].filter(i => searchIdxs.includes(i)) : [];
 
   qa('tbody tr', table).forEach(tr => {
     // Satu qa('td', tr) dipakai ulang untuk teks pencarian DAN cek kolom kosong - sebelumnya
     // query DOM dua kali per baris (sekali di sini, sekali lagi di dalam rowHasVisibleData),
     // yang bikin scroll/render terasa berat karena kerjanya dobel di setiap applyFilter.
     const cells = qa('td', tr);
-    let txt;
-    if(colScope==='all'){
-      txt = cells.map(td => td.textContent.toLowerCase()).join(' ');
-    } else {
-      const idxs = COL_SCOPE_TO_INDICES[colScope] || [];
-      txt = idxs.map(i=>cells[i]?.textContent||'').join(' ').toLowerCase();
-    }
+    const txt = searchIdxs.map(i=>cells[i]?.textContent||'').join(' ').toLowerCase();
     const no = parseInt(tr.querySelector('.cn')?.textContent || '0');
 
     let matchNo = true;
@@ -2027,7 +2051,7 @@ function applyFilter(panel){
     // peduli tanda nada (atau persis nada tertentu kalau query ada angkanya). Hanya untuk mode
     // include (bukan Excl.) - exclMode tetap literal saja supaya perilaku "kecualikan" tidak
     // makin luas cakupannya secara tak terduga.
-    if(qText && !exclMode && !matchText) matchText = pinyinCellsMatch(cells, qText, colScope);
+    if(qText && !exclMode && !matchText) matchText = pinyinCellsMatch(cells, pinIdxs, qText);
     const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
     const hasVisibleData = rowHasVisibleData(cells, visibleDataCols);
 
@@ -2282,22 +2306,29 @@ function normalizeRefTabId(name){
   return 'ref_'+(s||('bank'+Date.now()));
 }
 
-// Dihitung sekali saat upload, bukan tiap kali user mengetik - field pencarian (literal, toneless,
-// tone-number) disimpan langsung di tiap row object.
+// Dihitung sekali saat upload, bukan tiap kali user mengetik. 2026-08-12: direstruktur dari field
+// gabungan-per-scope (mis. _txtInd = arti+indo digabung) jadi per-KOLOM (_txtByCol[index]) -
+// supaya saat filter bisa dipilih persis kolom mana yang dipakai (irisan scope dropdown dengan
+// kolom yang sedang tampil, lewat scopeIndicesVisible() yang sama dipakai sheet playable), bukan
+// selalu KW+Kalimat digabung buta seperti sebelumnya.
 function precomputeReferenceSearchFields(rows){
   rows.forEach(r=>{
-    const otherFields=[r.no,r.arti,r.hanziKeyword,r.englishKeyword,r.indo,r.mandarin,r.english,r.note1,r.note2];
-    r._txtOther=otherFields.map(v=>String(v||'').toLowerCase()).join(' ');
-    const pinFields=[r.keyword,r.pinyin]; // Pin Yin KW + Pin Yin - satu-satunya kolom yg dapat pencocokan nada
-    r._txtPinLiteral=pinFields.map(v=>String(v||'').toLowerCase()).join(' ');
-    r._txtPinToneless=pinFields.map(v=>normalizePinyinToneless(v)).join(' ');
-    r._txtPinToneNum=pinFields.map(v=>normalizePinyinToneNumber(v)).join(' ');
-    // Per-scope (dipakai dropdown COL_SCOPE_OPTIONS) - tiap scope selain "all"/"pin" mencakup
-    // pasangan KW + kalimat (mis. "ind" = Indo KW + Indonesia), literal saja tanpa normalisasi
-    // nada (cuma kolom pinyin yang dapat itu, sudah ditangani _txtPin* di atas).
-    r._txtInd=[r.arti,r.indo].map(v=>String(v||'').toLowerCase()).join(' ');
-    r._txtMan=[r.hanziKeyword,r.mandarin].map(v=>String(v||'').toLowerCase()).join(' ');
-    r._txtEng=[r.englishKeyword,r.english].map(v=>String(v||'').toLowerCase()).join(' ');
+    r._txtByCol = {
+      0: String(r.no||'').toLowerCase(),
+      2: String(r.keyword||'').toLowerCase(),
+      3: String(r.arti||'').toLowerCase(),
+      4: String(r.hanziKeyword||'').toLowerCase(),
+      5: String(r.englishKeyword||'').toLowerCase(),
+      6: String(r.pinyin||'').toLowerCase(),
+      7: String(r.indo||'').toLowerCase(),
+      8: String(r.mandarin||'').toLowerCase(),
+      9: String(r.english||'').toLowerCase(),
+      10: String(r.note1||'').toLowerCase(),
+      11: String(r.note2||'').toLowerCase()
+    };
+    // Cuma kolom 2 (Pin Yin KW) dan 6 (Pin Yin/Kalimat) yang dapat pencocokan tanpa/dengan nada.
+    r._pinToneless = { 2: normalizePinyinToneless(r.keyword), 6: normalizePinyinToneless(r.pinyin) };
+    r._pinToneNum = { 2: normalizePinyinToneNumber(r.keyword), 6: normalizePinyinToneNumber(r.pinyin) };
   });
   return rows;
 }
@@ -2340,27 +2371,21 @@ function applyReferenceBankFilter(panel){
   }
   const qHasDigit=/\d/.test(qText);
   const qPinKey= qHasDigit ? normalizePinyinToneNumber(qText) : normalizePinyinToneless(qText);
-  let matches;
-  if(colScope==='all'){
-    matches=rows.filter(r=>{
-      if(r._txtOther.includes(qText)) return true;
-      if(r._txtPinLiteral.includes(qText)) return true;
-      return qHasDigit ? r._txtPinToneNum.includes(qPinKey) : r._txtPinToneless.includes(qPinKey);
-    });
-  } else if(colScope==='pin'){
-    matches=rows.filter(r=>{
-      if(r._txtPinLiteral.includes(qText)) return true;
-      return qHasDigit ? r._txtPinToneNum.includes(qPinKey) : r._txtPinToneless.includes(qPinKey);
-    });
-  } else if(colScope==='ind'){
-    matches=rows.filter(r=>r._txtInd.includes(qText));
-  } else if(colScope==='man'){
-    matches=rows.filter(r=>r._txtMan.includes(qText));
-  } else if(colScope==='eng'){
-    matches=rows.filter(r=>r._txtEng.includes(qText));
-  } else {
-    matches=[];
-  }
+  // Scope dropdown (All/Pin/Ind/Man/Eng) DIGABUNG dengan kolom yang sedang tampil - fungsi yang
+  // sama persis dipakai sheet playable (applyFilter). headers di sini dibaca dari table yang
+  // sama yang dipakai untuk render, jadi status col-hidden-nya konsisten dengan yang terlihat user.
+  const refHeaders=table.querySelectorAll('thead th');
+  const searchIdxs=scopeIndicesVisible(refHeaders, colScope);
+  const pinIdxs=(colScope==='all' || colScope==='pin') ? [2,6].filter(i=>searchIdxs.includes(i)) : [];
+  let matches=rows.filter(r=>{
+    const txt=searchIdxs.map(i=>r._txtByCol[i]||'').join(' ');
+    if(txt.includes(qText)) return true;
+    if(!pinIdxs.length) return false;
+    const pinCombined = qHasDigit
+      ? pinIdxs.map(i=>r._pinToneNum[i]||'').join(' ')
+      : pinIdxs.map(i=>r._pinToneless[i]||'').join(' ');
+    return pinCombined.includes(qPinKey);
+  });
   // Sama seperti applyFilter() sheet playable: baris yang kosong di semua kolom DATA yang sedang
   // tampil disembunyikan - Ref./Note2 (index 10/11) sengaja diabaikan dari cek ini karena keduanya
   // metadata, bukan konten Vocab/Sentence utama (lihat DATA_COL_INDICES). Tanpa ini, baris yang
@@ -3090,6 +3115,7 @@ function init(){
   const initialColPresetSel = document.getElementById('colPresetSelect');
   if (initialColPresetSel) initialColPresetSel.value = '1';
   updateGlobalYtubeButton();
+  updatePlaybackControlsVisibility();
   document.addEventListener('change', e=>{
     const proxy = e.target.closest('.baca-no-proxy');
     if(proxy){
