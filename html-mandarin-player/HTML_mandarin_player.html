@@ -666,6 +666,15 @@ function normalizeSheetFolderName(name){
   try{s=s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');}catch(e){}
   return s.toLowerCase().replace(/\s+/g,' ').trim();
 }
+// Folder/sheet naming has drifted (e.g. CSV+ZIP renamed "001 Text"->"001" but the folder
+// structure *inside* an already-zipped file didn't follow along) - matching on the 3-digit
+// sheet prefix when present is more robust than exact text, since that prefix is already the
+// source of truth for MP3 filename matching elsewhere (getSheetPrefixFromTable). Falls back to
+// normalized full name when no digit prefix exists.
+function mp3FolderMatchKey(name){
+  const m=String(name||'').match(/(\d{3})/);
+  return m ? m[1] : normalizeSheetFolderName(name);
+}
 function sheetFolderNameFromTable(table){
   const panel=table?.closest('.panel');
   return cleanTitle(panelTitle ? panelTitle(panel) : (panel?.dataset.sheetTitle || table?.id || 'Text'));
@@ -681,7 +690,8 @@ function updateMp3StatusForActivePanel(){
   const panel = activePanel();
   const table = panel ? panel.querySelector('table') : null;
   const folder = table ? sheetFolderNameFromTable(table) : '';
-  const count = folder ? mp3ZipCounts[folder] : undefined;
+  const matchKey = folder ? mp3FolderMatchKey(folder) : '';
+  const count = matchKey ? mp3ZipCounts[matchKey] : undefined;
   msg.textContent = count ? `${folder}.ZIP - ${count} MP3` : 'ZIP belum ada';
   msg.title = msg.textContent;
 }
@@ -752,6 +762,7 @@ function mp3CandidateNames(table,tr,mode){
 function findMp3For(table,tr,mode){
   const names=mp3CandidateNames(table,tr,mode);
   const sheetFolder=sheetFolderNameFromTable(table);
+  const sheetFolderZipKey=mp3FolderMatchKey(sheetFolder);
 
   for(const name of names){
     const norm=normalizeMp3FileName(name);
@@ -761,7 +772,7 @@ function findMp3For(table,tr,mode){
 
   for(const name of names){
     const norm=normalizeMp3FileName(name);
-    const scoped=mp3ZipSheetFileMap.get(sheetMapKey(sheetFolder, norm));
+    const scoped=mp3ZipSheetFileMap.get(sheetMapKey(sheetFolderZipKey, norm));
     if(scoped) return {type:'zip', entry:scoped};
   }
 
@@ -937,8 +948,9 @@ async function handleMp3ZipFiles(files){
         }
         const parent=zipParentFolder(en.name);
         if(parent){
-          mp3ZipSheetFileMap.set(sheetMapKey(parent,norm),en);
-          mp3ZipCounts[parent]=(mp3ZipCounts[parent]||0)+1;
+          const key=mp3FolderMatchKey(parent);
+          mp3ZipSheetFileMap.set(sheetMapKey(key,norm),en);
+          mp3ZipCounts[key]=(mp3ZipCounts[key]||0)+1;
         }
       });
     }
@@ -2432,7 +2444,11 @@ window.applyReferenceBankFilter = applyReferenceBankFilter;
 
 function attachReferenceEvents(panel){
   const search=panel.querySelector('.sr input[type="text"]');
-  if(search) search.oninput=debounce(()=>{ applyReferenceBankFilter(panel); saveSearchHistory(search.value); }, 500);
+  if(search){
+    search.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
+    search.addEventListener('change', ()=>saveSearchHistory(search.value));
+    search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
+  }
   const colScopeSel=panel.querySelector('.col-scope-select');
   if(colScopeSel) colScopeSel.onchange=()=>applyReferenceBankFilter(panel);
   const clearBtn=panel.querySelector('.sr-clear-btn');
@@ -2775,7 +2791,15 @@ function wireSearchHistory(panel, search, applyFilterFn){
 }
 function attachPanelEvents(panel){
   syncPanelPlayOptions(panel);
-  const search=panel.querySelector('.sr input[type="text"]'); if(search) search.oninput=debounce(()=>{ applyFilter(panel); saveSearchHistory(search.value); }, 500);
+  const search=panel.querySelector('.sr input[type="text"]');
+  if(search){
+    search.oninput=debounce(()=>applyFilter(panel), 500);
+    // Riwayat cuma disimpan saat pencarian "selesai" (blur/Enter), bukan tiap jeda ketik -
+    // kalau disimpan tiap debounce tick, kata yang lagi diketik (mis. "dang" sebelum jadi
+    // "dangzhu") ikut kesimpan sebagai entri terpisah.
+    search.addEventListener('change', ()=>saveSearchHistory(search.value));
+    search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
+  }
   const colScopeSel=panel.querySelector('.col-scope-select'); if(colScopeSel) colScopeSel.onchange=()=>applyFilter(panel);
   const fromInput=panel.querySelector('[data-filter-from]');
   const toInput=panel.querySelector('[data-filter-to]');
