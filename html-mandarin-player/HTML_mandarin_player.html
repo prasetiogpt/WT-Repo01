@@ -412,8 +412,8 @@ td:nth-child(2), th:nth-child(2) {
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
         <label class="tts-top-control playback-only-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
         <label class="tts-top-control playback-only-control">Au: <select id="audioModeSelect"><option value="tts">TTS</option><option value="mp3" selected="">MP3</option><option value="combine">Alt</option></select></label>
-        <button class="btn btn-check" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Comb</button>
-        <button class="btn btn-check" id="downloadCombWavBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Download combined WAV">↓Comb</button>
+        <button class="btn btn-check playback-only-control" id="preCombRefreshBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Combine audio files (Alt mode only)">Comb</button>
+        <button class="btn btn-check playback-only-control" id="downloadCombWavBtn" type="button" style="font-size:.74rem;padding:4px 10px" title="Download combined WAV">↓Comb</button>
       </div>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
@@ -2345,13 +2345,20 @@ function precomputeReferenceSearchFields(rows){
   return rows;
 }
 
+// Bank Referensi tidak punya fitur play (lihat updatePlaybackControlsVisibility) jadi
+// play-row-btn sengaja TIDAK dirender di sini - cuma copy-han-btn/copy-eng-btn, yang tetap
+// berguna buat nyalin kalimat hasil pencarian. Kedua tombol ini dipakai oleh delegated click
+// listener yang sama dengan sheet playable (baca sel via getModeColumn(table,...), bukan lewat
+// row index khusus), jadi otomatis jalan tanpa wiring tambahan.
+function referenceRowButtonsHTML(){
+  return `<button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button>`;
+}
 function buildReferenceRowHTML(r, i){
   // Kolom 0-11 SAMA PERSIS urutannya dengan buildRowHTML (No..Note2) supaya fitur toggle kolom
   // global (yang kerja berdasarkan index kolom, dipakai bareng sheet playable) tetap benar - indeks
-  // toggle/preset itu hanya sampai 11 (Note2), jadi aman. Kolom ▶ (index 12) TIDAK ikut dirender
-  // sama sekali di sini (beda dari buildRowHTML) - bank referensi tidak untuk play, dan CSS punya
-  // aturan "td:last-child selalu tampil !important" yang bikin .col-hidden tidak mempan buat
-  // menyembunyikannya, jadi lebih aman tidak dirender daripada dipaksa sembunyi lewat CSS.
+  // toggle/preset itu hanya sampai 11 (Note2), jadi aman. Kolom index 12 dirender pakai
+  // referenceRowButtonsHTML() (cuma Man/Eng copy, tanpa ▶ play - lihat komentar di atas fungsi
+  // itu), bukan rowButtonsHTML() punya sheet playable.
   // Kolom Pilih tetap dirender kosong (bukan dihilangkan) supaya index kolom 1-11 tidak bergeser.
   return `<tr>
     <td class="cn">${escapeHTML(r.no||String(i+1))}</td>
@@ -2366,6 +2373,7 @@ function buildReferenceRowHTML(r, i){
     <td class="ce">${escapeHTML(r.english)}</td>
     <td class="cn">${escapeHTML(r.note1||'')}</td>
     <td class="cn">${escapeHTML(r.note2||'')}</td>
+    <td class="cb">${referenceRowButtonsHTML()}</td>
   </tr>`;
 }
 
@@ -2446,8 +2454,7 @@ function attachReferenceEvents(panel){
   const search=panel.querySelector('.sr input[type="text"]');
   if(search){
     search.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
-    search.addEventListener('change', ()=>saveSearchHistory(search.value));
-    search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
+    wireSearchHistorySaving(search);
   }
   const colScopeSel=panel.querySelector('.col-scope-select');
   if(colScopeSel) colScopeSel.onchange=()=>applyReferenceBankFilter(panel);
@@ -2470,7 +2477,7 @@ function addOrReplaceReferenceTab(title, rows){
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
     <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🕘</option></select></div>
-    <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody></tbody></table></div>
+    <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
   <div class="sb"></div></div>`;
   refreshTabs();
   attachReferenceEvents(panel);
@@ -2769,6 +2776,21 @@ function saveSearchHistory(term){
     localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(hist));
   }catch(e){}
 }
+// Kapan riwayat disimpan (dipakai bareng oleh sheet biasa & Bank Referensi):
+// - blur/Enter -> nangkep hasil AKHIR dari yang diketik manual, bukan tiap jeda ketik (kalau
+//   pakai debounce biasa, jeda ketik di tengah kata - mis. "dang" sebelum lanjut jadi "dangzhu" -
+//   ikut kesimpan sebagai entri terpisah).
+// - input dengan inputType insertFromPaste/insertFromDrop -> nangkep paste/drop secara terpisah
+//   dan LANGSUNG (tanpa nunggu blur/Enter), karena user yang paste buat cari biasanya tidak
+//   pernah blur atau tekan Enter (pencarian sudah live/instan) - sebelumnya paste jadi tidak
+//   kesimpan sama sekali karena cuma nunggu blur/Enter.
+function wireSearchHistorySaving(search){
+  search.addEventListener('change', ()=>saveSearchHistory(search.value));
+  search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
+  search.addEventListener('input', e=>{
+    if(e.inputType==='insertFromPaste' || e.inputType==='insertFromDrop') saveSearchHistory(search.value);
+  });
+}
 // Dipakai bareng oleh sheet biasa (attachPanelEvents) dan Bank Referensi (attachReferenceEvents).
 // applyFilterFn dipanggil saat user pilih salah satu riwayat dari dropdown.
 function wireSearchHistory(panel, search, applyFilterFn){
@@ -2794,11 +2816,7 @@ function attachPanelEvents(panel){
   const search=panel.querySelector('.sr input[type="text"]');
   if(search){
     search.oninput=debounce(()=>applyFilter(panel), 500);
-    // Riwayat cuma disimpan saat pencarian "selesai" (blur/Enter), bukan tiap jeda ketik -
-    // kalau disimpan tiap debounce tick, kata yang lagi diketik (mis. "dang" sebelum jadi
-    // "dangzhu") ikut kesimpan sebagai entri terpisah.
-    search.addEventListener('change', ()=>saveSearchHistory(search.value));
-    search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
+    wireSearchHistorySaving(search);
   }
   const colScopeSel=panel.querySelector('.col-scope-select'); if(colScopeSel) colScopeSel.onchange=()=>applyFilter(panel);
   const fromInput=panel.querySelector('[data-filter-from]');
@@ -3196,9 +3214,9 @@ function init(){
         if(text){
           if(isAccumOn()){
             const accum = addHanAccum(text);
-            copyToClipboard(accum.join('\n'), copyBtn, 'Han');
+            copyToClipboard(accum.join('\n'), copyBtn, 'Man');
           } else {
-            copyToClipboard(text, copyBtn, 'Han');
+            copyToClipboard(text, copyBtn, 'Man');
           }
         }
       }
