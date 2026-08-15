@@ -1199,6 +1199,7 @@ function switchTab(index){
   updateGlobalYtubeButton();
   updateMp3StatusForActivePanel();
   updatePlaybackControlsVisibility();
+  syncColumnCheckboxesToActiveTab();
 }
 window.switchTab = switchTab;
 
@@ -2613,9 +2614,53 @@ function initTableToolbar(panel) {
 }
 
 // ===== FITUR TOGGLE KOLOM GLOBAL =====
-function toggleAllColumns(colIndex, show) {
+// Preset/checkbox kolom dulu 1 state tunggal dibagi rata ke SEMUA tab (sheet biasa maupun Bank
+// Referensi/Done), jadi tiap pindah dari sheet (mis. preset "2 Vocab") ke Done (yang biasanya
+// perlu preset lain) harus ganti manual, lalu ganti lagi balik pas kembali ke sheet. Sekarang ada
+// DUA slot state terpisah - 'sheet' (dibagi rata ke semua sheet biasa, seperti sebelumnya) dan
+// 'reference' (khusus Bank Referensi/Done) - disimpan permanen di localStorage per slot, jadi
+// masing-masing "ingat" preset terakhirnya sendiri lintas sesi/reload (2026-08-15, atas
+// permintaan user: preset Done relatif jarang diganti dibanding sheet biasa). Tombol checkbox
+// tetap satu set fisik di toolbar global, cuma isinya di-refresh tiap ganti tab (lihat
+// syncColumnCheckboxesToActiveTab, dipanggil dari switchTab).
+const COL_STATE_STORAGE_KEY = { sheet: 'colStateSheet', reference: 'colStateReference' };
+function activeTabType(){
+  const panel = document.querySelector('body > .panel.active');
+  return panel?.dataset.tabType === 'reference' ? 'reference' : 'sheet';
+}
+function loadColumnState(type){
+  try{ return JSON.parse(localStorage.getItem(COL_STATE_STORAGE_KEY[type]) || 'null'); }catch(e){ return null; }
+}
+// _presetNum ikut disimpan (kalau state berasal dari klik preset, bukan toggle checkbox manual
+// satu-satu) supaya dropdown preset bisa direstore ke pilihan yang benar juga, bukan cuma
+// checkbox-nya - dihilangkan otomatis (tidak di-pass) saat manual toggle, karena hasil toggle
+// manual belum tentu cocok persis dengan salah satu preset yang ada.
+function saveColumnState(type, presetNum){
+  const container = document.getElementById('globalColToggles');
+  if (!container) return;
+  const state = {};
+  container.querySelectorAll('input[type="checkbox"]').forEach(cb => { state[cb.dataset.colIndex] = cb.checked; });
+  if (presetNum !== undefined) state._presetNum = presetNum;
+  try{ localStorage.setItem(COL_STATE_STORAGE_KEY[type], JSON.stringify(state)); }catch(e){}
+}
+function columnStateForType(type){
+  const saved = loadColumnState(type);
+  if (saved) return saved;
+  const defaults = {};
+  [2,3,4,5,6,7,8,9,10,11].forEach(i => { defaults[i] = COL_PRESETS['1'].includes(i); });
+  defaults._presetNum = '1';
+  return defaults;
+}
+// scopeType ('sheet'/'reference') membatasi panel mana yang kena - dipakai supaya ganti checkbox
+// saat lagi lihat sheet biasa tidak ikut menimpa kolom Bank Referensi yang sedang tidak aktif,
+// dan sebaliknya. Tanpa scopeType (dipanggil kosong), berlaku ke semua panel seperti sebelumnya.
+function toggleAllColumns(colIndex, show, scopeType) {
   const panels = getPanels();
   panels.forEach(panel => {
+    if (scopeType) {
+      const type = panel.dataset.tabType === 'reference' ? 'reference' : 'sheet';
+      if (type !== scopeType) return;
+    }
     const table = panel.querySelector('table');
     if (!table) return;
     const headers = table.querySelectorAll('thead th');
@@ -2655,21 +2700,55 @@ function initGlobalColumnToggles() {
   checkboxes.forEach(cb => {
     cb.onchange = function() {
       const colIndex = parseInt(this.dataset.colIndex);
-      toggleAllColumns(colIndex, this.checked);
+      const type = activeTabType();
+      toggleAllColumns(colIndex, this.checked, type);
       refreshAllRowVisibility();
+      saveColumnState(type); // manual toggle, bukan preset - _presetNum sengaja tidak disimpan
     };
   });
 }
 
+// Menerapkan state kolom TERSIMPAN (localStorage, per jenis tab) ke setiap panel yang ada -
+// dipanggil saat init dan tiap kali tab baru dibuat (Bank Referensi/sheet), supaya tabel yang
+// baru dibangun langsung konsisten dengan preferensi terakhir jenisnya masing-masing, bukan
+// balik semua tampil atau ikut checkbox UI (yang cuma merefleksikan SATU jenis tab yang lagi aktif).
 function applyGlobalColumnToggles() {
-  const container = document.getElementById('globalColToggles');
-  if (!container) return;
-  const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-  checkboxes.forEach(cb => {
-    const colIndex = parseInt(cb.dataset.colIndex);
-    toggleAllColumns(colIndex, cb.checked);
+  getPanels().forEach(panel => {
+    const type = panel.dataset.tabType === 'reference' ? 'reference' : 'sheet';
+    const table = panel.querySelector('table');
+    if (!table) return;
+    const state = columnStateForType(type);
+    Object.keys(state).forEach(key => {
+      if (key === '_presetNum') return;
+      const idx = parseInt(key);
+      const show = state[key];
+      const th = table.querySelectorAll('thead th')[idx];
+      if (th) th.classList.toggle('col-hidden', !show);
+      table.querySelectorAll('tbody tr').forEach(tr => {
+        const td = tr.querySelectorAll('td')[idx];
+        if (td) td.classList.toggle('col-hidden', !show);
+      });
+    });
   });
   refreshAllRowVisibility();
+  syncColumnCheckboxesToActiveTab();
+}
+
+// Refresh checkbox + dropdown preset di toolbar global supaya menampilkan state milik jenis tab
+// yang SEDANG aktif (bukan state jenis lain) - dipanggil tiap ganti tab (switchTab). Tabel-tabel
+// itu sendiri sudah selalu punya class col-hidden yang benar untuk jenisnya masing-masing
+// (dijaga oleh toggleAllColumns yang di-scope), jadi di sini cuma perlu sinkronkan tampilan
+// checkbox/dropdown-nya, tidak perlu apply ulang ke tabel.
+function syncColumnCheckboxesToActiveTab() {
+  const container = document.getElementById('globalColToggles');
+  if (!container) return;
+  const state = columnStateForType(activeTabType());
+  container.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    const idx = cb.dataset.colIndex;
+    if (state[idx] !== undefined) cb.checked = state[idx];
+  });
+  const presetSel = document.getElementById('colPresetSelect');
+  if (presetSel) presetSel.value = state._presetNum || '1';
 }
 
 // Kolom preset dropdown - ganti tombol Reset. Opsi selalu tampil nama pendek apa adanya
@@ -2693,14 +2772,16 @@ function applyColumnPreset(presetNum) {
   if (!preset) return;
   const container = document.getElementById('globalColToggles');
   if (!container) return;
+  const type = activeTabType();
   const checkboxes = container.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach(cb => {
     const colIndex = parseInt(cb.dataset.colIndex);
     const show = preset.includes(colIndex);
     cb.checked = show;
-    toggleAllColumns(colIndex, show);
+    toggleAllColumns(colIndex, show, type);
   });
   refreshAllRowVisibility();
+  saveColumnState(type, presetNum);
   setUploadMsg('✓ Preset kolom ' + COL_PRESET_LABELS[presetNum] + ' diterapkan.');
 }
 window.applyColumnPreset = applyColumnPreset;
@@ -3144,18 +3225,14 @@ function init(){
   restoreReferenceTabsOnLoad();
   initUploadCollapse();
   initGlobalColumnToggles();
-  // Sinkronkan kolom yang ditampilkan/disembunyikan di tabel dengan status centang checkbox
-  // saat ini (default HTML + override localStorage yang baru dipulihkan initGlobalColumnToggles
-  // di atas) - tabel contoh bawaan ("000 Data Testing") di-hardcode dengan status kolom lama,
-  // jadi kalau default checkbox berubah tapi ini tidak dipanggil, tabel bawaan bisa tidak sinkron.
+  // Terapkan preset kolom TERSIMPAN (localStorage, per jenis tab - lihat COL_STATE_STORAGE_KEY)
+  // ke tabel contoh bawaan ("000 Data Testing") dan tab manapun yang sudah dipulihkan di atas.
+  // Kalau belum pernah disimpan sama sekali (localStorage kosong, mis. buka pertama kali),
+  // columnStateForType() jatuh ke default preset 1 (S+V) - jadi baris di bawah ini TIDAK lagi
+  // memaksa preset 1 tiap buka seperti sebelumnya (2026-08-12), karena itu sekarang bertentangan
+  // dengan permintaan user supaya preset terakhir (terutama punya Bank Referensi/Done, yang
+  // jarang diganti) tetap diingat lintas sesi (2026-08-15).
   applyGlobalColumnToggles();
-  // Pastikan kolom default saat pertama buka SELALU cocok dengan Preset V default (1, S+V) -
-  // bukan cuma mengandalkan checkbox HTML default yang harus dijaga manual tetap sinkron
-  // (2026-08-12, user's request). Preset V dropdown per-sheet sudah default ke "1" lewat HTML
-  // <option selected>, ini menegaskan sisi kolomnya juga.
-  applyColumnPreset('1');
-  const initialColPresetSel = document.getElementById('colPresetSelect');
-  if (initialColPresetSel) initialColPresetSel.value = '1';
   updateGlobalYtubeButton();
   updatePlaybackControlsVisibility();
   document.addEventListener('change', e=>{
