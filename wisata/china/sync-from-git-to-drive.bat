@@ -19,10 +19,8 @@ if exist "%DRIVE_ITIN%" (
 )
 
 if exist "%DRIVE_HTML%" (
-  copy /Y "%REPO%\wisata\china\HTML-Wisata\Wisata.html" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
-  copy /Y "%REPO%\wisata\china\HTML-Wisata\generate_wisata.py" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
-  copy /Y "%REPO%\wisata\china\HTML-Wisata\Update Wisata.bat" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
-  echo   - HTML Wisata files copied to Drive >> "%LOG%"
+  copy /Y "%REPO%\wisata\china\Wisata.html" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
+  echo   - Wisata.html copied to Drive ^(viewing only - generate/edit from the repo, not here^) >> "%LOG%"
 ) else (
   echo   - SKIPPED: Drive HTML Wisata folder not found ^(mount offline?^) >> "%LOG%"
 )

@@ -1,23 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-generate_wisata.py — regenerate the `destinations` data block inside
-Wisata.html from the master Markdown itinerary files.
+generate_wisata.py — regenerate the `destinations` data block inside a
+trip's Wisata.html from its master Markdown itinerary files.
+
+Shared across all trips/countries under wisata/ — nothing in this parser
+is China-specific, it just walks generic Markdown structure. Each trip
+still keeps its own Wisata.html (with the DESTINATIONS markers already
+in it, seeded from an existing trip's file) and Itinerary/*.md files in
+its own wisata/<country>/ subfolder.
 
 USAGE
 -----
-    py generate_wisata.py
+    py generate_wisata.py <country>
+
+    <country> is the subfolder name under wisata/, e.g.:
+        py generate_wisata.py china
+
+    This reads wisata/<country>/Itinerary/*.md and rewrites
+    wisata/<country>/Wisata.html in place.
 
 WORKFLOW
 --------
-1. Edit the itinerary in Markdown (I:\\My Drive\\Travelling\\China\\Itinerary\\*.md),
+1. Edit the itinerary Markdown files in wisata/<country>/Itinerary/,
    following the same structure as the existing files — tables, headings,
    blockquotes, "**Plan-B hari ini:**", the Lampiran section, etc.
-2. Run this script.
+2. Run this script with the country folder name as argument.
 3. It rewrites the block between the `/* === DESTINATIONS:START === */`
-   and `/* === DESTINATIONS:END === */` markers inside Wisata.html.
-4. Open Wisata.html locally to sanity-check, then tell Claude to publish
-   it to the Artifact link (or do it yourself if you have that workflow).
+   and `/* === DESTINATIONS:END === */` markers inside that country's
+   Wisata.html.
+4. Open Wisata.html locally to sanity-check, then commit+push (or tell
+   Claude to do it).
 
 WHAT IT PARSES
 --------------
@@ -78,8 +91,17 @@ try:
 except Exception:
     pass
 
-MD_DIR = Path(r"I:\My Drive\Travelling\China\Itinerary")
-HTML_PATH = Path(r"I:\My Drive\Travelling\HTML Wisata\Wisata.html")
+if len(sys.argv) != 2:
+    sys.exit(
+        "Usage: py generate_wisata.py <country>\n"
+        "  <country> = subfolder name under wisata/, e.g. 'china'\n"
+        "  (looks for wisata/<country>/Itinerary/*.md and\n"
+        "   rewrites wisata/<country>/Wisata.html)"
+    )
+COUNTRY = sys.argv[1]
+WISATA_DIR = Path(__file__).resolve().parent.parent  # .../wisata/
+MD_DIR = WISATA_DIR / COUNTRY / "Itinerary"
+HTML_PATH = WISATA_DIR / COUNTRY / "Wisata.html"
 # All *.md files in MD_DIR are picked up automatically — no need to list
 # them by hand. City tabs appear in alphabetical filename order; if you
 # want a specific order (e.g. Nanjing before Suzhou before Wuxi), prefix

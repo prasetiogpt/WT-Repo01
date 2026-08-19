@@ -4,7 +4,8 @@ echo ============================================
 echo   Update Wisata.html dari file Markdown
 echo ============================================
 echo.
-py generate_wisata.py
+set /p COUNTRY="Nama folder negara (mis. china): "
+py generate_wisata.py %COUNTRY%
 echo.
 echo ============================================
 if errorlevel 1 (
