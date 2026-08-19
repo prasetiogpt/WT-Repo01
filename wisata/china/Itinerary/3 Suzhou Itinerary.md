@@ -1,193 +1,278 @@
 # Itinerary Perjalanan Suzhou
-9 – 12 Oktober · 3 Malam · Setelah Wuxi
+10 – 14 Oktober · 4 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Suzhou Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Sinkronisasi format ke standar Nanjing/Wuxi** — kolom Kegiatan di semua tabel itinerary (Hari 1-4, Opsional A/B) sekarang bold selektif, hanya nama destinasi wisata yang di-`**bold**` (baris transit/logistik/makan polos dibiarkan tanpa bold); (2) seluruh 30 entri Lampiran (termasuk Cadangan & Plan-B) dilengkapi Hanzi + badge verifikasi, `**Akses:**` (jalur MRT/exit/jarak jalan kaki), `**Jam Operasional:**`, dan `**Tiket:**` (CNY+IDR, kurs tetap Rp2.650/CNY) — diriset via web search, ditandai ⚠️ kalau tidak ditemukan sumber resmi/pasti, bukan tebakan; (3) "Guanqian Street & Xuanmiao Temple" dan "Zhouzhuang / Tongli Water Town" dipecah masing-masing jadi 2 entri terpisah (satu `###` = satu tempat, sesuai aturan parser); (4) dikoreksi kerancuan penamaan di entri "Suzhou Amusement Land / Window of the World" — "Window of the World" sebenarnya taman berbeda di Shenzhen, bukan bagian dari Suzhou Amusement Land (苏州乐园); entri diganti jadi murni Suzhou Amusement Land dengan catatan koreksi; (5) diperbaiki bug parser `generate_wisata.py` — heading Lampiran "## Opsional A" dan "## Opsional B" sebelumnya tidak dikenali parser (entrinya diam-diam ter-skip dari Wisata.html); ditambahkan pengenalan generik untuk heading `## Opsional <label>` di parser (tidak memengaruhi parsing Nanjing/Wuxi karena keduanya tidak punya section Opsional).
+> ⚠️ Riwayat revisi: (1) **Sinkronisasi format ke standar Nanjing/Wuxi** — kolom Kegiatan di semua tabel itinerary (Hari 1-4, Opsional A/B) sekarang bold selektif, hanya nama destinasi wisata yang di-`**bold**` (baris transit/logistik/makan polos dibiarkan tanpa bold); (2) seluruh 30 entri Lampiran (termasuk Cadangan & Plan-B) dilengkapi Hanzi + badge verifikasi, `**Akses:**` (jalur MRT/exit/jarak jalan kaki), `**Jam Operasional:**`, dan `**Tiket:**` (CNY+IDR, kurs tetap Rp2.650/CNY) — diriset via web search, ditandai ⚠️ kalau tidak ditemukan sumber resmi/pasti, bukan tebakan; (3) "Guanqian Street & Xuanmiao Temple" dan "Zhouzhuang / Tongli Water Town" dipecah masing-masing jadi 2 entri terpisah (satu `###` = satu tempat, sesuai aturan parser); (4) dikoreksi kerancuan penamaan di entri "Suzhou Amusement Land / Window of the World" — "Window of the World" sebenarnya taman berbeda di Shenzhen, bukan bagian dari Suzhou Amusement Land (苏州乐园); entri diganti jadi murni Suzhou Amusement Land dengan catatan koreksi; (5) diperbaiki bug parser `generate_wisata.py` — heading Lampiran "## Opsional A" dan "## Opsional B" sebelumnya tidak dikenali parser (entrinya diam-diam ter-skip dari Wisata.html); ditambahkan pengenalan generik untuk heading `## Opsional <label>` di parser; (6) **Revisi besar 2026-08-19** — tanggal digeser jadi **10–14 Oktober (4 malam, 5 hari)** sesuai jadwal baru; **hotel dikoreksi** ke Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden), Gusu District, dengan anchor MRT **Nanyuanbeilu (Line 5)** — SELURUH rute harian & moda transportasi disusun ulang dari titik ini (bukan lagi asumsi hotel lama); **city independence diterapkan** — Hari 1 & Hari 5 tidak lagi menyambung jadwal transportasi aktual kota sebelumnya (`[[itinerary-continuity]]` sudah SUPERSEDED), dipakai default kedatangan 17:00/kepulangan pola skill terbaru, dengan pengecualian Hari 5 yang pakai data riil jadwal HSR Suzhou→Ningbo; **Opsional A (Taihu Lake) & Opsional B (Jinji Lake malam/Music Fountain) diaktifkan kembali ke badan itinerary utama** (Hari 5 & Hari 4) karena durasi Suzhou diperpanjang jadi 5 hari — section "## Opsional" dihapus, entri Lampiran-nya dipindah ke grup Hari terkait; **rute Panmen & Wumen Bridge disederhanakan** karena sekarang persis 1 halte MRT dari hotel (dulu perlu perjalanan lebih jauh); **leg pulang dikoreksi** dari asumsi lama ke **HSR Suzhou → Ningbo** via Suzhou Railway Station (bukan Guangzhou — itu leg trip terpisah yang belum diputuskan); seluruh tabel budget dihitung ulang untuk struktur 5 hari.
 
-> **⚠️ Tanggal masih bisa bentrok:** jumlah hari di Wuxi belum pasti final (`2 Wuxi Itinerary.md` masih 6–9 Okt, 3 malam) — kalau durasi Wuxi berubah, tanggal Suzhou di bawah ini otomatis ikut geser. Sengaja dibiarkan dulu sesuai instruksi Anda, dirapikan terakhir setelah semua kota fix.
+> **✅ Sudah lewat Golden Week:** Golden Week resmi 1–8 Oktober. Trip Suzhou 10–14 Oktober ini sepenuhnya di luar periode itu — jauh lebih tenang. Sabtu (11 Okt) tetap akhir pekan domestik biasa, jadi mungkin sedikit lebih ramai dari hari kerja tapi tidak sebanding puncak Golden Week.
 
-> **✅ Sudah lewat Golden Week:** Golden Week resmi 1–8 Oktober. Karena trip Suzhou ini baru mulai 9 Oktober, seluruh hari di Suzhou **sudah di luar periode Golden Week** — jauh lebih tenang dibanding kalau dimulai 6 Okt seperti draft sebelumnya. Sabtu–Minggu (10–11 Okt) tetap akhir pekan domestik biasa, jadi mungkin sedikit lebih ramai dari hari kerja tapi tidak sebanding dengan puncak Golden Week.
+> **Kota disusun independen** (aturan berlaku sejak 2026-08-19) — Suzhou TIDAK lagi menyambung jadwal transportasi aktual dari kota sebelumnya. Hari 1 pakai default kedatangan **17:00** (sore, hari ringan — check-in, makan malam dekat hotel, jalan santai, BUKAN hari penuh mulai pagi). Hari terakhir (Hari 5) memakai **data riil** jadwal HSR Suzhou → Ningbo (lihat "Informasi Transportasi Pulang" di bawah) menggantikan default 15:00, karena data aktualnya sudah diketahui.
 
-> **⚠️ Kompresi jadwal (4 hari, bukan 5):** Draft awal Suzhou dirancang 5 hari (termasuk hari Taihu Lake & hari penuh Jinji Lake). Dengan jendela 9–12 Okt (4 hari kalender, Hari 1 & Hari 4 sudah "ringan" karena kedatangan/kepulangan), hanya tersisa 2 hari penuh untuk sightseeing. **Taihu Lake & Alam** dan **Jinji Lake malam (Music Fountain)** dipindah ke bagian **Opsional** di bawah — bisa diaktifkan lagi kalau durasi Wuxi dipangkas atau Suzhou diperpanjang saat dirapikan nanti.
-
-## Informasi Transportasi
+## Informasi Transportasi (Kedatangan)
 
 | | |
 |---|---|
-| Rute | Wuxi → Suzhou via HSR (kereta cepat) |
-| Tanggal Berangkat | Jumat, 9 Oktober (siang/sore, setelah Wuxi Hari 4) |
-| Tanggal Pulang | Senin, 12 Oktober (siang, lanjut ke kota berikutnya) |
-| Durasi HSR | Wuxi → Suzhou sangat dekat, ±30–40 menit (±50km) |
-| Estimasi biaya HSR | ±CNY 20–30/org kelas 2 |
+| Tanggal & Jam Kedatangan | Jumat, 10 Oktober, **±17:00** (default kedatangan sore — moda transportasi dari kota/titik sebelumnya independen, TIDAK dihitung di budget Suzhou ini) |
+| Titik kedatangan → Hotel | Taksi/Didi singkat ke hotel (estimasi umum, sesuaikan dengan titik kedatangan aktual saat itu) |
 
-**Kenapa jadwal Hari 1 dimulai sore, bukan pagi:** sesuai catatan `2 Wuxi Itinerary.md` Hari 4 (9 Okt), rombongan checkout & Didi ke Wuxi Railway Station sekitar 14:00–14:30, lalu HSR siang/sore ke Suzhou. Jadi realistisnya tiba di Suzhou **sore (±15:00–16:00)** — Hari 1 di Suzhou ini disusun sebagai sore/malam kedatangan santai saja, BUKAN mulai sarapan jam 08:00 seolah sudah ada di Suzhou sejak pagi. *(Referensi: [[itinerary-continuity]] — cek jadwal transport kota sebelumnya sebelum set jam mulai Hari 1 kota baru.)*
+**Kenapa Hari 1 dimulai sore, bukan pagi:** sesuai aturan kota-independen terbaru, Hari 1 SETIAP kota di trip ini otomatis pakai default kedatangan sore (17:00) kecuali ada jadwal aktual yang diketahui — jadi disusun sebagai sore/malam kedatangan santai saja (check-in, makan malam, jalan ringan), BUKAN hari penuh sejak pagi.
 
-**Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
+**Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya. Ongkos transportasi MASUK ke Suzhou (dari kota/titik sebelumnya) TIDAK dihitung di sini (di luar scope budget Suzhou, konsisten dengan prinsip kota independen).
 
-**Sumber tempat & harga:** Daftar tempat dan harga tiket per orang diambil dari daftar kandidat pribadi Anda (`Itenarary.xlsx`, sheet Suzhou), dikelompokkan ulang jadi rute harian yang efisien (searah, minim bolak-balik).
+## Hotel & Transportasi
+
+**Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota.
+
+**Anchor MRT:** **Nanyuanbeilu Station (南园北路, Line 5)**, ±140m/±2 menit jalan kaki dari hotel — dipakai sebagai basis SEMUA rute harian di bawah. Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena:
+- **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — Nanmen juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel.
+- **3 halte ke arah barat daya → Laodonglu (劳动路)**, interchange ke **Line 2** — jalur ke kawasan Hanshan Temple/Shantang Street.
+- **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)**, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu TIDAK lagi wajib naik taksi PP penuh seperti asumsi draft lama, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya.
+
+**Stasiun & terminal lain di sekitar hotel:** Nanmen Metro Station (1,2km/±17 menit jalan kaki, alternatif kalau tidak mau transfer di Nanyuanbeilu), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km). **Suzhou Railway Station (stasiun HSR utama) berjarak 5,9km/±27 menit naik mobil dari hotel — TIDAK dekat/jalan kaki**, jadi transportasi ke sana (Hari 5) pakai taksi/Didi langsung ATAU Line 5→Nanmen/Laodonglu→transfer Line 2/4 (Suzhou Railway Station adalah interchange Line 2 & Line 4).
+
+⚠️ **Koreksi penting dari draft lama:** hotel draft sebelumnya diasumsikan lebih dekat pusat kota tua bagian utara — hotel yang benar ini justru di **sisi selatan kota tua (Gusu, dekat Nanmen/Shiquan Street)**, jadi SELURUH rute harian di bawah disusun ulang mengikuti akses Line 5 dari sini, bukan direplikasi dari asumsi lama.
+
+**Prioritas transportasi lokal (tetap berlaku):** MRT/jalan kaki > sewa sepeda > taksi/Didi (hanya untuk bawaan berat di Hari 1/Hari 5, atau jarak yang benar-benar di luar jangkauan MRT seperti leg pendek di dalam kawasan Taihu).
+
+## Informasi Transportasi Pulang
+
+| | |
+|---|---|
+| Rute | Suzhou → Ningbo via HSR (kereta cepat) |
+| Stasiun keberangkatan | **Suzhou Railway Station (苏州站)** — dipilih dibanding Suzhou North karena jauh lebih dekat dari hotel (5,9km/±27 menit vs Suzhou North yang ±16km di Xiangcheng District, di luar jangkauan praktis); kedua stasiun sama-sama melayani rute Ningbo tapi Suzhou Railway Station jelas lebih masuk akal dari lokasi hotel ini |
+| Tanggal & jam berangkat (rencana) | Selasa, 14 Oktober, **±15:00** (realistis, bukan jadwal pasti/terkunci — ±19 kereta G/D per hari beroperasi 07:15–18:08, jadi banyak pilihan jam di sekitar jam ini, cek nomor kereta persis di 12306/Trip.com H-7) |
+| Durasi HSR | ±2 jam 27 menit – 3,5 jam (bervariasi tergantung kereta, ±16 kereta express langsung, sisanya transit) |
+| Estimasi biaya HSR | ±CNY 147–218/org kelas 2 (dipakai sebagai referensi, TIDAK dihitung di total budget Suzhou — masuk ke perhitungan awal itinerary Ningbo, konsisten dengan prinsip "biaya onward journey milik kota tujuan") |
+| Hotel → Stasiun | Taksi/Didi langsung, ±27 menit (dengan koper, lebih praktis dibanding MRT+transfer) |
+
+**Kenapa jam 15:00 dipakai, bukan default umum:** aturan kota-independen tetap punya pengecualian kalau data riil sudah diketahui — untuk Hari 5 ini, jadwal HSR Suzhou→Ningbo yang realistis (banyak pilihan sore hari) dipakai langsung sebagai basis penyusunan jadwal Hari 5, menggantikan default generik 15:00 kepulangan (kebetulan angkanya berdekatan, tapi dasarnya beda: ini dari riset jadwal riil, bukan asumsi kosong).
 
 ---
 
-## Hari 1 — Jumat, 9 Oktober (Kedatangan Sore/Malam dari Wuxi)
+## Ringkasan Cuaca & Persiapan (Oktober di Suzhou)
+
+- Suhu siang rata-rata **±23°C**, malam **±14–16°C** — sejuk & nyaman, salah satu periode terbaik untuk berjalan kaki jauh di kota tua.
+- Kelembapan ±71%, hujan ringan ±9-10 hari sepanjang bulan (±25mm total) — relatif kering dibanding musim panas. ⚠️ September-Oktober juga musim topan paling mungkin di area ini — tetap cek forecast H-7, bawa payung lipat untuk jaga-jaga.
+- Rekomendasi bawaan: jaket tipis/cardigan untuk malam, payung lipat, sepatu jalan yang nyaman (banyak jalur taman & pedestrian street kanal berbatu), sunblock ringan untuk siang.
+
+---
+
+## Hari 1 — Jumat, 10 Oktober (Kedatangan Sore — Ringan)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| ±14:00 | Checkout Wuxi, Didi ke stasiun *(lanjutan Wuxi Hari 4)* | Sudah dihitung di budget Wuxi | — | — |
-| ±14:30 | HSR Wuxi → Suzhou | ±30–40 menit | 50 | Rp132.500 |
-| ±15:00–15:30 | Tiba Suzhou, taksi/metro singkat ke hotel | — | 20 | Rp53.000 |
-| 15:30–17:00 | Check-in, taruh barang, istirahat | — | — | — |
-| 17:00–19:00 | Makan malam santai + jalan ringan sekitar hotel | Sudah di luar Golden Week, tidak perlu khawatir keramaian ekstrem. Makan ±CNY 25/org | 50 | Rp132.500 |
-| 19:00 | Kembali ke hotel, istirahat | — | — | — |
-| | **TOTAL HARI 1** | | **120** | **Rp318.000** |
+| ±17:00 | Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel | Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah | 30 | Rp79.500 |
+| 17:00–17:30 | Check-in, taruh barang, istirahat | — | — | — |
+| 17:30–19:00 | Makan malam santai di **Shiquan Street** (十全街) | Persis di depan hotel — jalan kuliner & bar klasik Suzhou. Makan ±CNY 25/org | 50 | Rp132.500 |
+| 19:00–20:00 | Jalan santai sekitar Shiquan Street / area hotel | Opsional: **Master of Nets Garden (网师园) versi Night Garden** literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail | — | — |
+| | **TOTAL HARI 1** | | **80** | **Rp212.000** |
 
-**Plan-B hari ini:** kalau HSR terlambat/tiba lebih malam — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
+**Plan-B hari ini:** kalau kedatangan lebih malam dari rencana — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja (Shiquan Street tetap buka larut, banyak pilihan santai).
 
 ---
 
-## Hari 2 — Sabtu, 10 Oktober (Kota Tua Bagian Tengah)
+## Hari 2 — Sabtu, 11 Oktober (Kota Tua Bagian Tengah)
+
+> **Rute:** dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke **Nanmen**, transfer **Line 4** menuju **Beisita** — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan di sekitar hotel | Bubur/baozi kukus, ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Metro ke area Suzhou Museum | — | 8 | Rp21.200 |
+| 08:30–09:00 | Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita | ±25-30 menit termasuk transfer | 12 | Rp31.800 |
 | 09:00–10:30 | **Suzhou Museum** | Gratis (reservasi online/tunjukkan paspor) | — | — |
-| 10:30–11:15 | **Baoen Temple / North Pagoda (Beisi Ta)** | Jalan kaki dari museum. **Gratis** (sesuai catatan Anda) — cukup nikmati taman & pagoda dari luar, tidak perlu naik ke atas | — | — |
+| 10:30–11:15 | **Baoen Temple / North Pagoda (Beisi Ta)** | Jalan kaki dari museum. **Gratis** — cukup nikmati taman & pagoda dari luar, tidak perlu naik ke atas | — | — |
 | 11:15–12:15 | Makan siang: Yangchun mian (mie kuah polos) | ±CNY 20/org | 40 | Rp106.000 |
-| 12:15–13:30 | **Guanqian Street** & **Xuanmiao Temple** | Jalan kaki singkat, pedestrian street, gratis | — | — |
-| 13:30–16:00 | **Humble Administrator's Garden** *(entri "Suzhou Garden" di catatan Anda)* | Tiket ±CNY 80/org — cocok dengan harga di catatan Anda | 160 | Rp424.000 |
+| 12:15–13:30 | **Guanqian Street** & **Xuanmiao Temple** | Jalan kaki singkat dari Beisita, pedestrian street. Pelataran gratis, masuk aula utama Xuanmiao opsional ±CNY 20/org | 40 | Rp106.000 |
+| 13:30–16:00 | **Humble Administrator's Garden** | Via Stasiun Zhuozhengyuan·Suzhou Museum (Line 6), searah/berdekatan dengan Beisita & Museum. Tiket ±CNY 80/org | 160 | Rp424.000 |
+| 16:15–16:45 | Metro ke **Pingjiang Road** (transfer ke Line 1, Stasiun Xiangmen) | — | 12 | Rp31.800 |
 | 18:00–19:30 | Makan malam + jalan malam **Pingjiang Road** | Kanal bersejarah, gratis. Makan ±CNY 25/org | 50 | Rp132.500 |
-| 20:00 | Kembali ke hotel | — | — | — |
-| | **TOTAL HARI 2** | | **282** | **Rp747.300** |
+| 20:00 | Kembali ke hotel (metro, transfer di Nanmen) | — | 12 | Rp31.800 |
+| | **TOTAL HARI 2** | | **350** | **Rp927.500** |
 
-**Plan-B hari ini:** **Huqiu Wetland Park** — gratis, prioritas #1 di catatan Anda, alternatif kalau ingin ganti salah satu spot berbayar dengan opsi gratis. Atau **Master of Nets Garden** (±CNY 40/org, ±Rp212.000 untuk 2 orang) kalau ingin versi malam "night garden" sebagai pengganti Humble Administrator's Garden.
+**Plan-B hari ini:** **Huqiu Wetland Park** — gratis, alternatif kalau ingin ganti salah satu spot berbayar dengan opsi gratis (searah, sekitar Beisita). Atau **Master of Nets Garden** versi siang (±CNY 40/org) kalau ingin mengganti Humble Administrator's Garden — meski secara lokasi lebih dekat hotel (lihat Hari 1), jadi lebih pas dijadikan alternatif Hari 1 malam kalau Hari 2 kepadatan.
 
 ---
 
-## Hari 3 — Minggu, 11 Oktober (Panmen → Hanshan → Shantang, arah Barat)
+## Hari 3 — Minggu, 12 Oktober (Panmen di Depan Hotel → Hanshan → Shantang)
 
-> Akhir pekan domestik — sedikit lebih ramai dari hari kerja biasa, tapi jauh dari level Golden Week.
+> Akhir pekan domestik terakhir sebelum hari kerja — sedikit lebih ramai dari hari kerja biasa, tapi jauh dari level Golden Week. **Rute:** Panmen sekarang persis 1 halte dari hotel (koreksi dari draft lama yang mengasumsikan perlu perjalanan jauh) — mulai pagi di sini dulu sebelum lanjut ke kluster barat (Hanshan Temple/Shantang, via Line 5→Laodonglu→transfer Line 2).
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Metro ke area Panmen Gate | — | 8 | Rp21.200 |
-| 09:00–10:30 | **Wumen Bridge** (gratis) + **Panmen Scenic Spots** | Tiket Panmen ±CNY 40/org | 80 | Rp212.000 |
-| 11:00–12:00 | Makan siang | ±CNY 25/org | 50 | Rp132.500 |
-| 12:30–13:00 | Lanjut ke Hanshan Temple / Fengqiao (metro/taksi singkat) | — | 20 | Rp53.000 |
-| 13:00–15:00 | **Hanshan Temple** (±CNY 20/org) + **Fengqiao Scenic Area** (gratis, jalan sekitar) | Situs kuil terkenal lewat puisi kuno, bersebelahan | 40 | Rp106.000 |
-| 15:30–16:00 | Metro ke Shantang Street | — | 8 | Rp21.200 |
-| 16:00–18:00 | **Shantang Street** | "Jalan Kuno No.1 Suzhou", kanal & jembatan tua, gratis | — | — |
-| 18:00–19:00 | Makan malam sekitar Shantang | ±CNY 20/org | 40 | Rp106.000 |
-| | **TOTAL HARI 3** | | **270** | **Rp715.500** |
+| 08:15–08:30 | Metro 1 halte: Nanyuanbeilu → Nanmen | Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi | 8 | Rp21.200 |
+| 08:45–10:00 | **Wumen Bridge** (gratis) + **Panmen Scenic Spots** | Tiket Panmen ±CNY 40/org — persis di depan hotel sekarang, tidak perlu perjalanan jauh seperti draft lama | 80 | Rp212.000 |
+| 10:00–11:00 | Makan siang sekitar Panmen | ±CNY 25/org | 50 | Rp132.500 |
+| 11:00–11:45 | Metro: Nanmen → Laodonglu (Line 5, 2 halte) → transfer Line 2 → Shantangjie | ±30-35 menit termasuk transfer | 20 | Rp53.000 |
+| 11:45–13:45 | **Hanshan Temple** (±CNY 20/org) + **Fengqiao Scenic Area** (gratis, jalan sekitar) | Situs kuil terkenal lewat puisi kuno, bersebelahan | 40 | Rp106.000 |
+| 14:00–16:00 | **Shantang Street** | "Jalan Kuno No.1 Suzhou", kanal & jembatan tua, gratis | — | — |
+| 16:00–17:30 | Makan malam sekitar Shantang | ±CNY 20/org | 40 | Rp106.000 |
+| 17:30 | Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu) | ±30-35 menit | 20 | Rp53.000 |
+| | **TOTAL HARI 3** | | **282** | **Rp747.300** |
 
 **Plan-B hari ini:** **Xiyuan Temple (kelenteng kucing)** — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.
 
 ---
 
-## Hari 4 — Senin, 12 Oktober (Jinji Lake Pagi, Checkout, Lanjut Kota Berikutnya)
+## Hari 4 — Senin, 13 Oktober (Jinji Lake Penuh + Music Fountain Malam)
 
-**Rute:** Metro ke Jinji Lake pagi hari (tanpa koper — titip di hotel/late checkout), balik untuk checkout siang.
+> **Rute:** dari hotel ke kawasan Jinji Lake (Line 1, Stasiun Dongfangzhimen), lewat 2x transfer (Line 5→Nanmen/Laodonglu→Line 4/2→interchange ke Line 1). Ini hari **Opsional B (Jinji Lake versi malam) diaktifkan kembali** sebagai hari penuh, bukan lagi tambahan singkat.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Metro ke area Jinji Lake | — | 20 | Rp53.000 |
-| 09:00–10:00 | **The Oriental Gate / Gate of the Orient** | Gratis, lihat dari luar — landmark arsitektur ikonik Suzhou modern | — | — |
-| 10:00–11:00 | **Jinji Lake Walking Tour** (versi singkat) | Gratis, jalur sangat datar | — | — |
-| 11:00–11:30 | Metro kembali ke hotel | — | 20 | Rp53.000 |
-| 11:30–12:00 | Checkout hotel | — | — | — |
-| 12:00–13:00 | Makan siang | ±CNY 27/org | 54 | Rp143.100 |
-| 13:00–14:00 | Waktu buffer / santai | — | — | — |
-| Siang/sore | Taksi/kereta menuju kota berikutnya | *Di luar budget Suzhou — masuk perhitungan awal itinerary kota berikutnya* | — | — |
-| | **TOTAL HARI 4** | | **118** | **Rp312.700** |
+| 08:30–09:15 | Metro ke area Jinji Lake (Dongfangzhimen, Line 1) | ±35-40 menit termasuk transfer | 20 | Rp53.000 |
+| 09:15–10:15 | **The Oriental Gate / Gate of the Orient** | Gratis, lihat dari luar — landmark arsitektur ikonik Suzhou modern | — | — |
+| 10:15–12:00 | **Jinji Lake Walking Tour** (versi penuh) | Gratis, jalur sangat datar. Sewa sepeda opsional ±CNY 17/jam/org, tidak dihitung | — | — |
+| 12:00–13:00 | Makan siang di tepi danau | ±CNY 25/org | 50 | Rp132.500 |
+| 13:00–16:00 | Santai lanjut promenade danau | Gratis | — | — |
+| 17:00–18:30 | Makan malam ringan sekitar Jinji Lake | ±CNY 40/org | 80 | Rp212.000 |
+| 19:00–19:30 | **Jinji Lake Music Fountain** *(kalau tayang)* | Gratis. ⚠️ Sumber terbaru sebut jadwal hanya Jumat & Sabtu 19:30 — Senin kemungkinan TIDAK tayang, cek jadwal WeChat/website resmi H-1; kalau tidak tayang, cukup nikmati promenade malam tanpa fountain | — | — |
+| 20:00–20:30 | Metro kembali ke hotel | ±35-40 menit | 20 | Rp53.000 |
+| | **TOTAL HARI 4** | | **194** | **Rp514.100** |
 
-**Plan-B hari ini:** **Suzhou Centre Plaza (Mall)** — indoor, kalau hujan deras sepanjang pagi, satu kawasan dengan Jinji Lake jadi tidak perlu ubah rute. Kalau jadwal keberangkatan masih siang — tambahkan waktu santai di **Guanqian Street** (searah, sudah dikenal dari Hari 2).
+**Plan-B hari ini:** **Suzhou Centre Plaza (Mall)** — indoor, satu kawasan dengan Jinji Lake, kalau hujan deras. Kalau ingin pasti dapat pertunjukan Music Fountain dan jadwal fleksibel, pertimbangkan menukar hari ini ke malam Sabtu (Hari 2) — tapi Hari 2 sudah cukup padat dengan kota tua, jadi tetap disusun di Hari 4 sebagai default dengan catatan ketidakpastian di atas.
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 3 Malam di Suzhou)
+## Hari 5 — Selasa, 14 Oktober (Taihu Lake Singkat Pagi, Checkout, HSR ke Ningbo)
 
-Belum termasuk harga hotel & tiket kereta/pesawat lanjutan. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal, HSR Wuxi→Suzhou). Kurs: Rp2.650/CNY.
+> **Rute & kenapa ini bisa jadi "hari ringan":** Taihu Lake sekarang bisa dicapai **LANGSUNG lewat Line 5 tanpa transfer** (stasiun ujung Nanyuanbeilu ada di jalur yang sama dengan Taihu Xiangshan) — upgrade besar dari draft lama yang perlu taksi PP penuh. Karena aksesnya jadi jauh lebih cepat & murah, versi singkat Taihu ini muat sebagai aktivitas pagi sebelum checkout, menggantikan default kepulangan generik dengan jadwal HSR riil ke Ningbo.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 08:00 | Sarapan | ±CNY 12/org | 24 | Rp63.600 |
+| 08:15–09:00 | Metro LANGSUNG (tanpa transfer): Nanyuanbeilu → Taihu Xiangshan (Line 5, ujung jalur) | ±40-45 menit, jarak jauh jadi tarif lebih tinggi ±CNY 13/org | 26 | Rp68.900 |
+| 09:00–09:15 | Taksi/bus singkat dari stasiun ke pintu masuk **Taihu Lake Wetland Park** | Jauh lebih pendek dari taksi PP penuh versi draft lama | 20 | Rp53.000 |
+| 09:15–10:45 | **Suzhou Taihu Lake Wetland Park** | Jalur datar tepi danau, cocok untuk lutut. Tiket ±CNY 60/org | 120 | Rp318.000 |
+| 10:45–11:00 | Taksi/bus balik ke stasiun + metro balik ke hotel | — | 46 | Rp121.900 |
+| 11:00–12:00 | Checkout hotel, siap-siap | — | — | — |
+| 12:00–13:00 | Makan siang dekat hotel | ±CNY 27/org | 54 | Rp143.100 |
+| 13:00–14:00 | Waktu buffer / santai | — | — | — |
+| 14:00–14:30 | Taksi/Didi ke **Suzhou Railway Station** | ±27 menit, dengan koper lebih praktis daripada MRT+transfer | 40 | Rp106.000 |
+| ±15:00 | HSR Suzhou → Ningbo | ±2,5-3,5 jam, tiket ±CNY 147-218/org | — | *(masuk budget Ningbo)* |
+| | **TOTAL HARI 5** | | **330** | **Rp874.500** |
+
+**Plan-B hari ini:** kalau cuaca buruk atau waktu mepet — skip Taihu Lake sepenuhnya, ganti dengan **Guanqian Street** (kunjungan ulang santai, sudah dikenal dari Hari 2, searah dengan rute pagi via Line 4) sebagai pengganti yang lebih dekat & singkat. Atau kalau masih ingin nuansa alam tapi lebih dekat: **Dayangshan National Forest Park** / **Tianpingshan** (lihat Lampiran) sebagai alternatif — keduanya tetap butuh taksi terpisah, jadi kurang praktis dibanding Taihu via Line 5 langsung.
+
+---
+
+## Ringkasan Budget Total (2 Orang, 4 Malam / 5 Hari di Suzhou)
+
+Belum termasuk harga hotel & tiket HSR Suzhou→Ningbo (masuk budget Ningbo, lihat "Informasi Transportasi Pulang"). Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.650/CNY.
 
 | Hari | CNY | IDR |
 |---|---|---|
-| Hari 1 (9 Okt) | 120 | Rp318.000 |
-| Hari 2 (10 Okt) | 282 | Rp747.300 |
-| Hari 3 (11 Okt) | 270 | Rp715.500 |
-| Hari 4 (12 Okt) | 118 | Rp312.700 |
-| **GRAND TOTAL** | **790** | **Rp2.093.500** |
+| Hari 1 (10 Okt) | 80 | Rp212.000 |
+| Hari 2 (11 Okt) | 350 | Rp927.500 |
+| Hari 3 (12 Okt) | 282 | Rp747.300 |
+| Hari 4 (13 Okt) | 194 | Rp514.100 |
+| Hari 5 (14 Okt) | 330 | Rp874.500 |
+| **GRAND TOTAL** | **1.236** | **Rp3.275.400** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Humble Administrator's Garden, Panmen, Hanshan Temple) | 280 | Rp742.000 |
-| Makan (semua hari) | 356 | Rp943.400 |
-| Transport lokal (metro + HSR Wuxi→Suzhou) | 154 | Rp408.100 |
-| **TOTAL** | **790** | **Rp2.093.500** |
+| Tiket masuk (Humble Administrator's Garden, Xuanmiao Hall, Panmen, Hanshan Temple, Taihu Lake Wetland Park) | 440 | Rp1.166.000 |
+| Makan (semua hari) | 510 | Rp1.351.500 |
+| Transport lokal (metro + taksi singkat) | 286 | Rp757.900 |
+| **TOTAL** | **1.236** | **Rp3.275.400** |
 
-**Catatan:** Baoen Temple/North Pagoda gratis (tidak dihitung sesuai catatan Anda). Angka **belum termasuk** hari Opsional (Taihu Lake & Jinji Lake malam) di bawah — kalau diaktifkan, tambahan estimasinya ada di masing-masing bagian.
+**Catatan:** Baoen Temple/North Pagoda, Guanqian Street (pelataran), Jinji Lake, Shantang Street, Fengqiao gratis (tidak dihitung). Opsional Master of Nets Garden Night Garden (Hari 1) dan Sanqing Hall Xuanmiao Temple sudah dihitung di masing-masing baris terkait. Kalau Music Fountain (Hari 4) ternyata tidak tayang, tidak mengurangi total (memang sudah gratis, tidak ada biaya yang hilang).
 
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** hindari tempat dengan tangga curam tanpa lift — naik ke atas North Pagoda TIDAK disarankan, cukup nikmati dari taman/lantai bawah.
+- **Fisik/lutut:** hindari tempat dengan tangga curam tanpa lift — naik ke atas North Pagoda TIDAK disarankan, cukup nikmati dari taman/lantai bawah. Semua jalur di itinerary ini (kanal, taman, promenade danau) datar dan aman untuk lutut.
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — sesuai karakter masakan Suzhou yang cenderung manis-ringan.
-- **Transportasi:** prioritas MRT/jalan kaki untuk jarak dekat; taksi hanya untuk bawa koper (Hari 1) atau kondisi mendesak.
+- **Transportasi:** prioritas MRT/jalan kaki untuk jarak dekat; taksi hanya untuk bawa koper (Hari 1 & Hari 5) atau leg pendek yang di luar jangkauan MRT (dalam kawasan Taihu Lake, Hari 5).
 - **Tempat berbayar** ditandai jelas — sebagian bisa diganti Plan-B yang lebih murah/gratis untuk hemat biaya.
-- **Kompresi 5→4 hari:** Taihu Lake & Alam (nature day) dan Jinji Lake versi malam (Music Fountain) dipindah ke bagian **Opsional** di bawah karena keterbatasan hari — lihat catatan di kepala dokumen.
-
----
-
-## Opsional — Kalau Trip Diperpanjang / Durasi Wuxi Dipangkas
-
-Dua "hari penuh" dari draft awal yang tidak muat di jendela 9–12 Okt saat ini. Disimpan di sini (bukan dihapus) supaya siap diaktifkan lagi kapan saja tanggal dirapikan ulang.
-
-### Opsional A — Taihu Lake & Alam (perlu taksi, ±1 hari penuh)
-
-> **■ Catatan transportasi:** area Taihu Lake/Wuzhong di luar jangkauan MRT yang praktis — perlu taksi PP, satu-satunya pengecualian dari prioritas MRT/jalan kaki karena jaraknya.
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 08:00 | Sarapan | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:30 | Taksi PP ke kawasan Taihu Lake/Wuzhong | Perkiraan taksi pulang-pergi untuk 2 orang ±CNY 120 | 120 | Rp318.000 |
-| 09:30–11:30 | **Suzhou Taihu Lake Wetland Park** | Jalur datar tepi danau, cocok untuk lutut. Tiket ±CNY 60/org | 120 | Rp318.000 |
-| 11:30–12:30 | **Shoutao Lake Scenic Area** | Gratis, jalan santai lanjutan | — | — |
-| 12:30–13:30 | Makan siang | ±CNY 25/org | 50 | Rp132.500 |
-| 13:30–15:00 | Santai lanjut di **Suzhou Wuzhong Taihu Tourist Zone** | Gratis | — | — |
-| 18:00 | Makan malam | ±CNY 25/org | 50 | Rp132.500 |
-| | **TOTAL (kalau diaktifkan)** | | **364** | **Rp964.600** |
-
-**Plan-B:** **Dayangshan National Forest Park** (±CNY 40/org, ±Rp212.000 untuk 2 orang). Atau **Tianpingshan scenic spot** (±CNY 30/org, ±Rp159.000) — ⚠️ catatan fisik: jalur hiking gunung, kalau dicoba sebaiknya hanya area bawah/foothill saja.
-
-### Opsional B — Jinji Lake Versi Malam (Music Fountain)
-
-Kalau Hari 4 tidak jadi hari checkout (misal Suzhou diperpanjang 1 hari lagi), kembalikan Jinji Lake ke versi penuh:
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 13:30–16:00 | Santai lanjut promenade danau (opsional sewa sepeda) | Sewa sepeda ±CNY 17/jam/org, opsional | —* | —* |
-| 17:00–18:30 | Makan malam ringan sekitar Jinji Lake | ±CNY 40/org | 80 | Rp212.000 |
-| 19:00–19:30 | **Jinji Lake Music Fountain** | Gratis, pertunjukan air mancur malam | — | — |
-| 20:00–20:30 | Metro kembali ke hotel | — | 20 | Rp53.000 |
-| | **TAMBAHAN (kalau diaktifkan)** | | **100** | **Rp265.000** |
-
-*Sewa sepeda opsional, tidak dihitung.
+- **Opsional A & B sudah menyatu ke itinerary utama** (Hari 5 untuk Taihu Lake versi singkat, Hari 4 untuk Jinji Lake versi malam penuh) — section "Opsional" terpisah sudah tidak ada lagi di file ini.
 
 ---
 
 # Lampiran — Cerita & Sejarah Tempat
 
-Supaya punya gambaran sebelum berkunjung: sedikit sejarah/cerita di balik setiap tempat yang disebut di dokumen ini — itinerary utama, Plan-B, maupun Opsional/Cadangan — plus link untuk lihat foto & video referensi.
+Supaya punya gambaran sebelum berkunjung: sedikit sejarah/cerita di balik setiap tempat yang disebut di dokumen ini — itinerary utama, Plan-B, maupun Cadangan — plus link untuk lihat foto & video referensi.
 
-## Hari 2 — Sabtu, 10 Oktober
+## Suzhou (苏州) — Sebelum Berangkat
+
+### Cerita Kota Suzhou
+Suzhou didirikan tahun 514 SM oleh Raja Helü dari Kerajaan Wu sebagai ibu kota "Helü City" — jauh lebih tua dari Nanjing sebagai pusat kekuasaan di kawasan ini, dan menjadi cikal-bakal tata kota tua Suzhou yang masih terlihat sampai sekarang. Berkat jaringan kanalnya yang rumit dan taman-taman klasiknya, Suzhou dijuluki "Venice of the East" dan sering disebut bersama Hangzhou sebagai "surga di bumi" (上有天堂，下有苏州杭州).
+
+- Foto/info: https://en.wikipedia.org/wiki/Suzhou
+- Video referensi: https://www.youtube.com/results?search_query=Suzhou+China+history+canal+city
+
+### Cuaca, Iklim & Suhu
+Oktober adalah salah satu bulan terbaik berkunjung — sejuk (siang ±23°C, malam ±14-16°C), kelembapan ±71%, hujan ringan ±9-10 hari sepanjang bulan. ⚠️ September-Oktober juga musim topan paling mungkin di kawasan pesisir timur China — angka di atas rata-rata historis, BUKAN forecast real-time, cek forecast H-7 sebelum berangkat.
+
+- Foto/info: https://en.climate-data.org/asia/china/jiangsu/suzhou-2755/
+
+### Transportasi Masuk Kota
+Suzhou tidak punya bandara besar sendiri — pelancong umumnya masuk lewat Shanghai (Hongqiao/Pudong) lalu HSR ke Suzhou. Stasiun HSR utama: **Suzhou Railway Station (苏州站)** di Gusu District, ±2,8km dari pusat kota — inilah yang dipakai untuk leg pulang ke Ningbo di itinerary ini. Ada juga **Suzhou North Railway Station (苏州北站)** di Xiangcheng District, ±16km dari pusat kota — jauh lebih jauh, hanya relevan kalau transportasi datang/pergi dari stasiun itu.
+
+- Foto/info: https://en.wikipedia.org/wiki/Suzhou_railway_station
+
+### Area Menginap yang Disarankan
+Kawasan **Gusu District sisi selatan, sekitar Shiquan Street/Nanmen** — strategis karena 1 halte MRT (Line 5) dari kluster Panmen, dan dekat jalur transfer ke Line 2/4 menuju kota tua bagian utara. Alternatif lain: sekitar Guanqian Street/Xuanmiao Temple untuk yang mengutamakan pusat kota tua yang lebih ramai & komersial.
+
+### Destinasi Terkenal Lain di Suzhou
+Di luar itinerary utama: **Tiger Hill (虎丘)** — bukit dengan pagoda miring ("Leaning Tower of China"), salah satu ikon Suzhou paling terkenal. **Zhouzhuang** dan **Tongli** — kota air kuno di luar Suzhou, populer sebagai day-trip terpisah (lihat Cadangan). **Suzhou Industrial Park** di sekitar Jinji Lake — wajah modern kota ini, kontras dengan kota tua.
+
+- Video referensi: https://www.youtube.com/results?search_query=top+attractions+Suzhou+China
+
+### Makanan Wajib Dikunjungi & Dicoba
+Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Songshu Guiyu (松鼠桂鱼, "squirrel fish")** — hidangan ikon Suzhou, ikan mandarin digoreng berbentuk menyerupai tupai dengan saus asam-manis, cukup berminyak jadi perlu dibatasi. **Suzhou-style mooncake (苏式月饼)** — versi berlapis renyah, lebih ringan dari versi Kanton. **Zhagao (糖粥/赤豆糊)** — bubur kacang merah manis, jajanan jalanan klasik. Masakan Suzhou umumnya masuk gaya "Jiangnan" yang cenderung manis-ringan dibanding daerah lain di China — relatif lebih ramah untuk lambung dibanding masakan pedas.
+
+- Video referensi: https://www.youtube.com/results?search_query=Suzhou+must+try+food
+
+### Hal yang Sebaiknya Dihindari
+Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi internasional) atau MRT. Jangan andalkan Google Maps/Google service tanpa VPN — gunakan Amap untuk navigasi lokal. Taman-taman klasik (Humble Administrator's Garden, dll) cukup ramai di akhir pekan — datang lebih pagi kalau bisa. September-Oktober musim topan, cek forecast rutin.
+
+### Yang Perlu Disiapkan (Khusus China)
+App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank & adaptor tipe A/I. VPN aktif SEBELUM masuk China kalau butuh akses Google/WhatsApp/Instagram. Salinan paspor/visa (fisik & digital).
+
+## Hari 1 — Jumat, 10 Oktober
+
+### Shiquan Street (十全街) ⚠️
+Jalan kuliner dan hiburan malam klasik Suzhou, membentang di sisi selatan kota tua persis di depan hotel — dikenal dengan restoran, bar, dan toko kerajinan tangan yang menyatu dengan suasana kanal & arsitektur tradisional di sekitarnya. Nama hotel trip ini ("Shiquan Street·Wangshi Garden") merujuk langsung ke jalan ini.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** Langsung di depan/sangat dekat hotel — tidak perlu transportasi, cukup jalan kaki.
+
+**Jam Operasional:** jalan buka 24 jam; mayoritas resto/toko ±10:00–22:00 (beberapa bar buka lebih malam).
+
+**Tiket:** Gratis jalan di sepanjang jalan.
+
+- Foto/info: https://www.google.com/search?q=Shiquan+Street+Suzhou
+- Video referensi: https://www.youtube.com/results?search_query=Shiquan+Street+Suzhou
+
+### Master of Nets Garden (网师园) ✅ — Opsional Malam Hari 1
+Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage. Nama hotel trip ini merujuk langsung ke taman ini, dan lokasinya memang persis di area yang sama.
+
+✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
+
+**Akses:** Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan, tapi jaraknya sangat dekat jalan kaki dari hotel (searah Shiquan Street). Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010).
+
+**Jam Operasional:** 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00. Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00 — jadi TERSEDIA di seluruh window trip 10-14 Okt ini.
+
+**Tiket:** Siang CNY 40/org musim ramai, CNY 30/org musim sepi (±Rp106.000/79.500 per org). Night Garden CNY 100/org (±Rp265.000/org) — terpisah dari tiket siang. Gratis untuk lansia 70+ (bawa identitas) & anak di bawah 1,2m.
+
+**Kenapa opsional, bukan wajib:** Hari 1 sengaja dibuat ringan (kedatangan sore) — taman ini memang persis di depan hotel dan bisa dinikmati kalau masih fit setelah makan malam, tapi tidak dipaksakan masuk total budget default hari itu.
+
+- Foto/info: https://en.wikipedia.org/wiki/Master_of_the_Nets_Garden
+- Video referensi: https://www.youtube.com/results?search_query=Master+of+the+Nets+Garden+Suzhou+night
+
+## Hari 2 — Sabtu, 11 Oktober
 
 ### Suzhou Museum (苏州博物馆) ✅
 Dirancang oleh arsitek kelahiran Suzhou I.M. Pei (juga arsitek Piramida Kaca Louvre), dibuka 2006 sebagai proyek terakhir karir panjangnya. Bangunan ini memadukan estetika taman klasik Suzhou (dinding putih, atap abu-abu, kolam batu) dengan garis geometris modern — letaknya pun sengaja bersebelahan dengan Humble Administrator's Garden supaya menyatu dengan lanskap kota tua.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Stasiun Beisita (北寺塔, Line 4), keluar Exit 4, jalan kaki ±700m ke timur. Alternatif: Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6).
+**Akses:** Stasiun Beisita (北寺塔, Line 4), keluar Exit 4, jalan kaki ±700m ke timur. Dari hotel: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita, ±25-30 menit. Alternatif: Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6).
 
 **Jam Operasional:** Selasa–Minggu 09:00–17:00 (masuk terakhir 16:00), tutup setiap Senin kecuali libur nasional.
 
@@ -199,9 +284,9 @@ Dirancang oleh arsitek kelahiran Suzhou I.M. Pei (juga arsitek Piramida Kaca Lou
 ### Baoen Temple / North Pagoda (Beisi Ta) (北寺塔) ⚠️
 Pagoda tertinggi di selatan Sungai Yangtze (±76m, 9 lantai kayu bersusun), berdiri di atas lahan kuil yang riwayatnya diperkirakan mundur hingga era Tiga Kerajaan (abad ke-3). Bangunan yang ada sekarang direkonstruksi era Dinasti Song (abad ke-12). Taman di sekelilingnya rindang dan tenang, cocok untuk jalan santai tanpa harus naik ke atas pagoda.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap (percobaan akses halaman POI Amap tidak berhasil memuat konten sesi ini).
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Beisita (北寺塔, Line 4) — pagoda punya stasiun MRT sendiri, langsung di depan gerbang. Alternatif: Stasiun Lindun Road (Line 1), jalan kaki ±10 menit. Dari Suzhou Museum, cukup jalan kaki ±700m ke barat.
+**Akses:** Stasiun Beisita (北寺塔, Line 4) — pagoda punya stasiun MRT sendiri, langsung di depan gerbang. Dari Suzhou Museum, cukup jalan kaki ±700m ke barat.
 
 **Jam Operasional:** ±08:00–18:00 setiap hari (loket tutup 17:30). Tidak ada hari libur rutin.
 
@@ -215,7 +300,7 @@ Guanqian Street ('jalan di depan kelenteng') berkembang sejak Dinasti Song sebag
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Chayuanchang (察院场, Line 4), keluar Exit 2, jalan kaki ±450m ke utara. Alternatif: Stasiun Leqiao (乐桥, Line 1/4) atau Lindun Road (临顿路, Line 1).
+**Akses:** Stasiun Chayuanchang (察院场, Line 4), keluar Exit 2, jalan kaki ±450m ke utara — searah/lanjutan dari Beisita di rute Hari 2 ini.
 
 **Jam Operasional:** jalan pedestrian buka 24 jam (gratis); toko & kios umumnya ±09:00–22:00.
 
@@ -243,7 +328,7 @@ Taman klasik terbesar di Suzhou (±5.2 hektar) dan situs UNESCO World Heritage, 
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Stasiun Zhuozhengyuan·Suzhou Museum (拙政园·苏州博物馆, Line 6), keluar Exit 1, jalan kaki ±450m — satu kompleks dengan Suzhou Museum & Beisi Ta.
+**Akses:** Stasiun Zhuozhengyuan·Suzhou Museum (拙政园·苏州博物馆, Line 6), keluar Exit 1, jalan kaki ±450m — satu kompleks dengan Suzhou Museum & Beisi Ta, searah rute Hari 2 ini.
 
 **Jam Operasional:** 1 Maret–15 November 07:30–17:30; 16 November–akhir Februari 07:30–17:00.
 
@@ -257,7 +342,7 @@ Jalan kanal yang tata letaknya nyaris tidak berubah sejak peta kota era Dinasti 
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Stasiun Xiangmen (相门, Line 1), keluar Exit 3, jalan kaki ±350m.
+**Akses:** Stasiun Xiangmen (相门, Line 1), keluar Exit 3, jalan kaki ±350m. Dari kluster Beisita/Guanqian, transfer ke Line 1 dulu.
 
 **Jam Operasional:** jalan kanal buka 24 jam (gratis); mayoritas toko/teahouse tutup ±22:00.
 
@@ -271,41 +356,25 @@ Taman lahan basah di sekitar kawasan Tiger Hill (Huqiu), dikembangkan sebagai ru
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Sunwu Memorial Museum (孙武纪念苑, Line 4), keluar Exit 2, jalan kaki ±15 menit.
+**Akses:** Stasiun Sunwu Memorial Museum (孙武纪念苑, Line 4), keluar Exit 2, jalan kaki ±15 menit — searah kluster Line 4 Hari 2 ini.
 
 **Jam Operasional:** ±06:00–20:00 setiap hari.
 
 **Tiket:** Gratis (beberapa aktivitas tambahan di dalam mungkin berbayar).
 
-**Kenapa jadi Plan-B:** gratis, prioritas teratas di catatan pribadi Anda, alternatif praktis kalau ingin mengurangi satu spot berbayar hari itu.
+**Kenapa jadi Plan-B:** gratis, alternatif praktis kalau ingin mengurangi satu spot berbayar hari itu.
 
 - Foto/info: https://www.google.com/search?q=Huqiu+Wetland+Park+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Huqiu+Wetland+Park+Suzhou
 
-### Master of Nets Garden (网师园) ✅ — Plan-B Hari 2
-Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage.
-
-✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
-
-**Akses:** TIDAK ada stasiun MRT persis di depan — halte bus terdekat "Master of Nets Garden West" (bus 529/9003/9010), atau taksi/Didi singkat dari Guanqian Street/Pingjiang Road (searah kota tua).
-
-**Jam Operasional:** 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00 (loket tutup 16:30). Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00.
-
-**Tiket:** Siang CNY 40/org musim ramai, CNY 30/org musim sepi (±Rp106.000/79.500 per org). Night Garden CNY 100/org (±Rp265.000/org) — terpisah dari tiket siang. Gratis untuk lansia 70+ (bawa identitas) & anak di bawah 1,2m.
-
-**Kenapa jadi Plan-B:** ukurannya kecil sehingga cocok untuk versi malam sebagai pengganti Humble Administrator's Garden kalau ingin suasana berbeda.
-
-- Foto/info: https://en.wikipedia.org/wiki/Master_of_the_Nets_Garden
-- Video referensi: https://www.youtube.com/results?search_query=Master+of+the+Nets+Garden+Suzhou+night
-
-## Hari 3 — Minggu, 11 Oktober
+## Hari 3 — Minggu, 12 Oktober
 
 ### Wumen Bridge (吴门桥) ⚠️
 Jembatan batu tertinggi di Suzhou (dibangun awal abad ke-11), berdiri di dekat Panmen Gate — salah satu peninggalan arsitektur kanal kuno Suzhou yang menghubungkan area gerbang kota dengan permukiman sekitarnya, bebas dikunjungi sebagai bagian dari jalan santai kawasan Panmen.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Satu kawasan dengan Panmen Scenic Spots (lihat entri berikutnya) — di dalam/tepi area Panmen, tidak perlu tiket terpisah untuk menyeberang & melihat dari luar.
+**Akses:** Satu kawasan dengan Panmen Scenic Spots (lihat entri berikutnya) — persis 1 halte MRT dari hotel via Nanmen (Line 5).
 
 **Jam Operasional:** area jembatan bisa dilihat/dilewati kapan saja sebagai bagian jalan umum; untuk masuk ke sisi dalam kompleks Panmen ikuti jam operasional Panmen.
 
@@ -317,9 +386,9 @@ Jembatan batu tertinggi di Suzhou (dibangun awal abad ke-11), berdiri di dekat P
 ### Panmen Scenic Spots (盘门景区) ⚠️
 Satu-satunya gerbang kota kuno di China yang menggabungkan gerbang air DAN gerbang darat dalam satu struktur — mencerminkan kota Suzhou yang sejak awal dibangun mengelilingi jaringan kanal. Sejarahnya bermula era Kerajaan Wu (abad ke-6 SM), dengan struktur yang berdiri sekarang direkonstruksi era Dinasti Yuan-Ming. Kompleksnya juga mencakup Ruiguang Pagoda dan Wumen Bridge.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap (percobaan akses halaman POI Amap tidak berhasil memuat konten sesi ini).
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Nanmen (南门, Line 4 atau Line 5), keluar Exit 2, jalan kaki ±1,2km; atau bus langsung ke halte "Panmen Scenic Area".
+**Akses:** Stasiun Nanmen (南门, Line 4 & Line 5) — persis **1 halte MRT dari hotel via Line 5** (koreksi dari draft lama yang mengasumsikan perjalanan lebih jauh), atau jalan kaki ±1,2km/17 menit.
 
 **Jam Operasional:** 07:30–17:30 setiap hari.
 
@@ -333,7 +402,7 @@ Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Mapl
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Stasiun Shantangjie (山塘街, Line 2), keluar Exit 3, jalan kaki ±15 menit. Alternatif: taksi/Didi singkat ±10 menit dari Stasiun Shilu (石路, Line 2).
+**Akses:** Stasiun Shantangjie (山塘街, Line 2), keluar Exit 3, jalan kaki ±15 menit. Dari hotel: Nanyuanbeilu (Line 5) → Laodonglu (3 halte) → transfer Line 2 → Shantangjie.
 
 **Jam Operasional:** 07:30–17:30 (masuk terakhir 16:30); tanggal 1 & 15 penanggalan lunar buka lebih awal jam 07:00.
 
@@ -361,7 +430,7 @@ Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair se
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap — nama resmi di ranking Amap adalah "七里山塘景区" (Qili Shantang Scenic Area), umum disebut pendek "山塘街" (Shantang Street).
 
-**Akses:** Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan.
+**Akses:** Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan, satu jalur dengan Hanshan Temple.
 
 **Jam Operasional:** jalan buka 24 jam (gratis); toko/atraksi umumnya ±09:00–22:00; boating 08:00–17:00 & 18:00–20:00.
 
@@ -375,7 +444,7 @@ Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelen
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** TIDAK ada stasiun MRT persis di depan — naik bus 6/10/11/17/40/Y1/Y3 turun halte Xiyuan (西园站).
+**Akses:** TIDAK ada stasiun MRT persis di depan — naik bus 6/10/11/17/40/Y1/Y3 turun halte Xiyuan (西园站), searah kawasan Shantang Street.
 
 **Jam Operasional:** 07:30–17:30 setiap hari (loket tutup 17:00).
 
@@ -386,14 +455,14 @@ Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelen
 - Foto/info: https://en.wikipedia.org/wiki/Xiyuan_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Xiyuan+Temple+Suzhou+turtle+pond
 
-## Hari 4 — Senin, 12 Oktober
+## Hari 4 — Senin, 13 Oktober
 
 ### The Oriental Gate / Gate of the Orient (东方之门) ⚠️
 Gedung pencakar langit berbentuk gerbang raksasa (dijuluki warga lokal "celana panjang" karena bentuknya) yang jadi landmark arsitektur kontroversial-tapi-ikonik Suzhou modern, selesai dibangun 2015 di tepi Jinji Lake sebagai simbol gerbang masuk ke distrik bisnis baru.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Dongfangzhimen (东方之门, Line 1) — gedung ini punya stasiun MRT sendiri, tersambung langsung. Sisi barat Jinji Lake.
+**Akses:** Stasiun Dongfangzhimen (东方之门, Line 1) — gedung ini punya stasiun MRT sendiri, tersambung langsung. Sisi barat Jinji Lake. Dari hotel: Line 5 → Nanmen/Laodonglu → transfer ke Line 1 (±35-40 menit total).
 
 **Jam Operasional:** area luar/lihat dari luar bisa kapan saja; bangunan sendiri fungsinya hotel/kantor/residensial (bukan objek wisata dengan jam buka publik).
 
@@ -416,6 +485,20 @@ Danau alami seluas ±8.9 km² yang jadi jantung Suzhou Industrial Park — kawas
 - Foto/info: https://en.wikipedia.org/wiki/Jinji_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Jinji+Lake+Suzhou+promenade
 
+### Jinji Lake Music Fountain (金鸡湖音乐喷泉) ⚠️
+Salah satu air mancur musikal terbesar di Asia saat diresmikan, dengan pertunjukan cahaya & air yang disinkronkan musik setiap malam — jadi daya tarik gratis paling populer di kawasan Jinji Lake untuk warga lokal maupun turis.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** Stasiun Dongfangzhimen (Line 1) — lokasi di persimpangan Suyalu Road & Xingyang Street, kawasan Lakeside New World, dekat Gate of the Orient.
+
+**Jam Operasional:** ⚠️ jadwal bervariasi musiman & sumbernya sedikit tidak konsisten — per sumber terbaru: Jumat & Sabtu 19:30 (durasi ±30 menit), tambahan sesi saat libur nasional. Hari 4 itinerary ini jatuh di hari **Senin**, kemungkinan besar TIDAK ada pertunjukan — dianggap bonus kalau ternyata tayang, bukan jaminan. Pertunjukan dibatalkan saat cuaca buruk. **Cek jadwal WeChat/website resmi Jinji Lake Scenic Area H-1** sebelum berangkat ke lokasi.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://www.google.com/search?q=Jinji+Lake+Music+Fountain
+- Video referensi: https://www.youtube.com/results?search_query=Jinji+Lake+Music+Fountain+Suzhou
+
 ### Suzhou Centre Plaza / Suzhou Center (苏州中心) ⚠️ — Plan-B Hari 4
 Mal besar di tepi Jinji Lake dengan atap gelombang khas ("cloud roof") yang jadi salah satu ikon arsitektur baru Suzhou, plus taman atap (rooftop garden) dengan pemandangan langsung ke Gate of the Orient.
 
@@ -432,25 +515,14 @@ Mal besar di tepi Jinji Lake dengan atap gelombang khas ("cloud roof") yang jadi
 - Foto/info: https://en.wikipedia.org/wiki/Suzhou_Center
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Center+Mall+Jinji+Lake
 
-### Guanqian Street (kunjungan ulang santai) — Plan-B Hari 4
-Sudah dijelaskan lengkap di entri Hari 2 (lihat "Guanqian Street" di atas untuk Hanzi/Akses/Jam/Tiket) — dipilih lagi sebagai penutup trip karena searah dan tidak memerlukan rute baru di hari checkout.
-
-**Akses:** sama seperti entri Hari 2 — Stasiun Chayuanchang (Line 4) Exit 2, ±450m jalan kaki. Searah dengan rute pagi Hari 4 kalau masih ada waktu sebelum checkout.
-
-**Jam Operasional:** sama seperti entri Hari 2 — buka 24 jam (gratis).
-
-**Tiket:** Gratis.
-
-**Kenapa jadi Plan-B:** searah dengan hotel, sudah dikenal dari Hari 2, cocok untuk mengisi waktu buffer kalau jadwal keberangkatan masih siang.
-
-## Opsional A — Taihu Lake & Alam
+## Hari 5 — Selasa, 14 Oktober
 
 ### Suzhou Taihu Lake Wetland Park (苏州太湖湿地公园) ⚠️
 Taman lahan basah di tepi Danau Taihu — danau terbesar ketiga di China, terkenal dengan batu-batu taihu (batu kapur berlubang khas) yang dulu banyak diambil untuk menghias taman klasik Suzhou. Jalur promenadenya datar dan luas, kontras menyegarkan dari padatnya kota tua.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Catatan tambahan: ada KEMUNGKINAN dua entitas berbeda dengan nama mirip di kawasan ini — "Suzhou Taihu Lake Wetland Park" (berbayar) vs "Taihu Hubin National Wetland Park"/wetland tepi danau lain (gratis) — cek nama persis di Amap/Trip.com sebelum berangkat supaya tidak salah lokasi.
 
-**Akses:** TIDAK ada MRT langsung — taksi/Didi dari kota (±30-40 menit), searah dengan Shoutao Lake & Suzhou Wuzhong Taihu Tourist Zone di hari yang sama.
+**Akses:** **Stasiun Taihu Xiangshan (太湖香山, Line 5) — LANGSUNG dari hotel TANPA transfer** (koreksi besar dari draft lama yang mengasumsikan taksi PP penuh), ±40-45 menit naik metro. Dari stasiun, taksi/bus singkat ±10-15 menit ke pintu masuk taman — kawasan resor Taihu ini luas, jadi tetap perlu leg pendek terakhir yang bukan jalan kaki.
 
 **Jam Operasional:** 08:30–17:00 (masuk terakhir 16:00).
 
@@ -464,7 +536,7 @@ Danau kecil (±400 mu/26.7 hektar, kedalaman maksimum 70m) hasil genangan air ta
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** TIDAK ada MRT langsung — taksi/Didi, lokasi di kawasan Wuzhong dekat persimpangan Lingtian Road & Zhangjingbang Road.
+**Akses:** Satu kawasan resor dengan Taihu Xiangshan (Line 5) — taksi/Didi singkat dari stasiun, lokasi di kawasan Wuzhong dekat persimpangan Lingtian Road & Zhangjingbang Road. **Hanya realistis dikunjungi kalau ada waktu ekstra** — versi singkat Hari 5 di itinerary ini fokus ke Taihu Lake Wetland Park saja karena keterbatasan jam sebelum checkout.
 
 **Jam Operasional:** buka sepanjang tahun, tidak ada jam tutup khusus (area publik terbuka).
 
@@ -474,70 +546,54 @@ Danau kecil (±400 mu/26.7 hektar, kedalaman maksimum 70m) hasil genangan air ta
 - Video referensi: https://www.youtube.com/results?search_query=Shoutao+Lake+Suzhou
 
 ### Suzhou Wuzhong Taihu Tourist Zone (吴中太湖旅游度假区) ⚠️
-Kawasan wisata resmi 5A di tepi Danau Taihu, distrik Wuzhong, seluas ±250 km², mencakup beberapa taman & area publik di sepanjang tepi danau (termasuk Taihu Park, Situ Temple, Lushan) — cocok untuk memperpanjang waktu santai setelah mengunjungi Taihu Lake Wetland Park.
+Kawasan wisata resmi 5A di tepi Danau Taihu, distrik Wuzhong, seluas ±250 km², mencakup beberapa taman & area publik di sepanjang tepi danau (termasuk Taihu Park, Situ Temple, Lushan) — cocok untuk memperpanjang waktu santai setelah mengunjungi Taihu Lake Wetland Park, kalau jadwal tidak semepet versi Hari 5 di itinerary ini.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Kawasan ini luas dan mencakup beberapa sub-area dengan aturan tiket berbeda-beda (sebagian gratis, sebagian berbayar) — bagian yang dimaksud di itinerary ini adalah area publik/promenade gratis di tepinya, BUKAN atraksi berbayar spesifik di dalamnya.
 
-**Akses:** TIDAK ada MRT langsung — taksi/Didi, satu kawasan luas dengan Taihu Lake Wetland Park & Shoutao Lake.
+**Akses:** Satu kawasan resor dengan Taihu Xiangshan (Line 5) — taksi/Didi singkat dari stasiun.
 
 **Jam Operasional:** area publik buka sepanjang hari; sub-atraksi berbayar (mis. Taihu Park, CNY 10/org) punya jam & hari tutup sendiri (tutup Rabu April–Oktober, Selasa-Rabu November–Maret, kecuali libur nasional).
 
-**Tiket:** Gratis untuk area publik/promenade tepi danau yang jadi fokus itinerary ini.
+**Tiket:** Gratis untuk area publik/promenade tepi danau.
 
 - Foto/info: https://www.google.com/search?q=Wuzhong+Taihu+Tourist+Zone
 - Video referensi: https://www.youtube.com/results?search_query=Wuzhong+Taihu+Tourist+Zone
 
-### Dayangshan National Forest Park (大阳山国家森林公园) ⚠️ — Plan-B Opsional A
+### Dayangshan National Forest Park (大阳山国家森林公园) ⚠️ — Plan-B Hari 5
 Taman hutan nasional di pinggiran barat kota tua Suzhou, terbagi 2 area utama: Wenshu Monastery (dibangun era Dinasti Jin Timur) dan Botanical Garden dengan koleksi tanaman langka (yew, huanghuali, podocarpus). Jalur trekking ringan & udara segar, alternatif nature-day selain Taihu Lake.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** TIDAK ada MRT langsung — taksi/Didi dari kota.
+**Akses:** TIDAK ada MRT langsung — taksi/Didi dari kota, arahnya berbeda dari Taihu Xiangshan (bukan di jalur Line 5 yang sama).
 
 **Jam Operasional:** 09:00–16:30.
 
 **Tiket:** ⚠️ belum ditemukan sumber resmi harga tiket — cek Amap/Trip.com langsung sebelum berangkat.
 
-**Kenapa jadi Plan-B:** redundant dengan Taihu Lake Wetland Park sebagai pilihan "alam" hari itu — dipilih salah satu saja supaya tidak dua-duanya di hari yang sama.
+**Kenapa jadi Plan-B:** redundant dengan Taihu Lake Wetland Park sebagai pilihan "alam" hari itu, dan aksesnya kurang praktis dibanding Taihu Xiangshan yang langsung 1 jalur MRT dari hotel — dipilih salah satu saja.
 
 - Foto/info: https://www.google.com/search?q=Dayangshan+National+Forest+Park+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Dayangshan+National+Forest+Park+Suzhou
 
-### Tianpingshan Scenic Spot (天平山) ⚠️ — Plan-B Opsional A
+### Tianpingshan Scenic Spot (天平山) ⚠️ — Plan-B Hari 5
 Gunung kecil terkenal dengan pohon maple (paling indah saat musim gugur, sekitar akhir Oktober-awal Desember) dan mata air alami yang sudah jadi tempat rekreasi sejak Dinasti Song.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1 ke Stasiun Mudu (木渎), transfer bus rute 4, turun halte Tianpingshan (天平山站), ±3.5km dari stasiun Mudu.
+**Akses:** MRT Line 1 ke Stasiun Mudu (木渎), transfer bus rute 4, turun halte Tianpingshan (天平山站), ±3.5km dari stasiun Mudu — perlu transfer Line 1 dari hotel, arahnya berbeda dari rute Taihu Xiangshan.
 
 **Jam Operasional:** 08:00–17:00 (loket & masuk terakhir 16:30).
 
 **Tiket:** CNY 30/org dewasa, CNY 15/org lansia/anak (±Rp79.500/39.750 per org).
 
-**Kenapa jadi Plan-B (bukan utama):** area ini punya jalur hiking gunung yang cukup menanjak — untuk kondisi lutut, lebih aman hanya dicoba di area bawah/foothill saja, bukan pendakian penuh. Juga di luar musim daun maple terbaik pada awal Oktober.
+**Kenapa jadi Plan-B (bukan utama):** area ini punya jalur hiking gunung yang cukup menanjak — untuk kondisi lutut, lebih aman hanya dicoba di area bawah/foothill saja, bukan pendakian penuh. Juga di luar musim daun maple terbaik (trip ini 10-14 Okt, puncak maple baru akhir Oktober).
 
 - Foto/info: https://en.wikipedia.org/wiki/Tianping_Mountain
 - Video referensi: https://www.youtube.com/results?search_query=Tianpingshan+Suzhou
 
-## Opsional B — Jinji Lake Malam
-
-### Jinji Lake Music Fountain (金鸡湖音乐喷泉) ⚠️
-Salah satu air mancur musikal terbesar di Asia saat diresmikan, dengan pertunjukan cahaya & air yang disinkronkan musik setiap malam — jadi daya tarik gratis paling populer di kawasan Jinji Lake untuk warga lokal maupun turis.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** Stasiun Dongfangzhimen (Line 1) — lokasi di persimpangan Suyalu Road & Xingyang Street, kawasan Lakeside New World, dekat Gate of the Orient.
-
-**Jam Operasional:** ⚠️ jadwal bervariasi musiman & sumbernya sedikit tidak konsisten — per Maret 2026: Jumat & Sabtu 19:30 (durasi ±30 menit), tambahan sesi saat libur nasional; per Desember 2025–Februari 2026: hanya Sabtu 19:30. Pertunjukan dibatalkan saat cuaca buruk. **Cek jadwal WeChat/website resmi Jinji Lake Scenic Area H-1** sebelum berangkat ke lokasi.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://www.google.com/search?q=Jinji+Lake+Music+Fountain
-- Video referensi: https://www.youtube.com/results?search_query=Jinji+Lake+Music+Fountain+Suzhou
-
 ## Cadangan
 
-Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary, Plan-B, maupun Opsional — alasannya ditulis di masing-masing uraian.
+Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B — alasannya ditulis di masing-masing uraian.
 
 ### Suzhou Bay Huangjin Lake Shore ⚠️
 Kawasan tepi danau di distrik Suzhou Bay (Wuzhong), pengembangan kota baru dengan taman tepi air modern.
@@ -560,13 +616,15 @@ Pusat seni & budaya modern Suzhou rancangan arsitek Prancis Paul Andreu, dibuka 
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Cultural Expo Center (文化博览中心, Line 1), keluar Exit 1 — tersambung langsung.
+**Akses:** Stasiun Cultural Expo Center (文化博览中心, Line 1), keluar Exit 1 — tersambung langsung, searah kawasan Jinji Lake (Hari 4).
 
 **Jam Operasional:** area pameran umumnya 10:00–20:00, tutup setiap Senin.
 
 **Tiket:** Gratis masuk gedung; harga tiket pertunjukan/pameran tertentu bervariasi per acara ⚠️.
 
-**Kenapa tidak dimasukkan:** ditandai "Jauh" di catatan pribadi Anda, dan kontennya (galeri/teater indoor) kurang sesuai gaya jalan-jalan outdoor santai yang diprioritaskan trip ini.
+**Kenapa tidak dimasukkan:** kontennya (galeri/teater indoor) kurang sesuai gaya jalan-jalan outdoor santai yang diprioritaskan trip ini — meski searah rute Hari 4, sengaja tidak ditambahkan supaya hari itu tidak terlalu padat.
+
+**Terkait:** Hari 4
 
 - Foto/info: https://www.google.com/search?q=Suzhou+Culture+%26+Arts+Centre
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Culture+and+Arts+Centre
@@ -576,13 +634,15 @@ Taman ekologi terbuka terbesar di kawasan ini (±1,21 juta m², termasuk ±540.0
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Catatan: nama Inggris yang muncul di beberapa sumber sedikit berbeda-beda ("Dongshahu Ecological Park" vs "Shahu Ecological Park") — kemungkinan penamaan/terjemahan tidak konsisten antar platform, bukan berarti dua tempat berbeda, tapi tetap cek nama persis di Amap sebelum berangkat.
 
-**Akses:** Stasiun Dongshahu (东沙湖, Line 1) — taman ini punya stasiun MRT sendiri.
+**Akses:** Stasiun Dongshahu (东沙湖, Line 1) — taman ini punya stasiun MRT sendiri, searah kawasan Jinji Lake (Hari 4).
 
 **Jam Operasional:** ⚠️ belum ditemukan sumber jam buka-tutup pasti — sebagai taman terbuka tanpa pagar, kemungkinan bisa diakses kapan saja.
 
 **Tiket:** Gratis.
 
-**Kenapa tidak dimasukkan:** ditandai "Jauh" di catatan pribadi Anda — redundant juga dengan Taihu Lake Wetland Park (Opsional A).
+**Kenapa tidak dimasukkan:** redundant dengan Jinji Lake & Taihu Lake Wetland Park sebagai pilihan "taman/danau" trip ini — dipilih yang lebih ikonik.
+
+**Terkait:** Hari 4
 
 - Foto/info: https://www.google.com/search?q=Dongshahu+Ecology+Park+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Dongshahu+Ecology+Park+Suzhou
@@ -637,4 +697,4 @@ Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Childr
 
 ---
 
-*Draft ini masih dalam format .md untuk review. Setelah dikonfirmasi (termasuk tanggal final setelah Wuxi dirapikan), akan di-convert ke PDF sesuai skill PDF.*
+*Draft ini masih dalam format .md untuk review. PDF hanya di-generate kalau diminta eksplisit, sesuai skill PDF.*
