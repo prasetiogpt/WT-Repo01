@@ -173,7 +173,7 @@ Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di b
 
 Supaya punya gambaran sebelum berkunjung: sedikit sejarah/cerita di balik setiap tempat yang disebut di dokumen ini — itinerary utama maupun cadangan (Plan-B/Plan C) — plus link untuk lihat foto & video referensi.
 
-## Nanjing (南京) — Sebelum Berangkat
+## Nanjing (南京 · Nánjīng) — Sebelum Berangkat
 
 ### Cerita Kota Nanjing
 Nanjing pernah menjadi ibu kota enam dinasti China — dikenal sebagai "Kota Enam Dinasti" — dari Wu Timur, Jin Timur, hingga awal Dinasti Ming sebelum ibu kota dipindah ke Beijing. Sungai Qinhuai yang membelah kota menjadi pusat kehidupan sejak zaman kuno, dan kawasan Fuzimiao (Kuil Konfusius) dulunya adalah pusat ujian kenegaraan (imperial examination) terbesar di China. Nanjing juga sempat jadi ibu kota Republik China (1912, lalu 1927-1937/1946-1949) sebelum akhirnya dipindah ke Beijing pasca 1949.
@@ -187,7 +187,7 @@ Musim gugur (September–November) adalah periode terbaik untuk berkunjung — s
 - Foto/info: https://en.climate-data.org/asia/china/jiangsu/nanjing-2490/
 
 ### Transportasi Masuk Kota
-Bandara utama: **Nanjing Lukou International Airport (南京禄口国际机场)**. Stasiun HSR utama: **Nanjing South Railway Station (南京南站)**. ⚠️ Nama di atas adalah nama standar resmi (nama bandara/stasiun besar jarang bervariasi), namun belum di-screenshot-verifikasi langsung dari halaman Amap.
+Bandara utama: **Nanjing Lukou International Airport (南京禄口国际机场 · Nánjīng Lùkǒu Guójì Jīchǎng)**. Stasiun HSR utama: **Nanjing South Railway Station (南京南站 · Nánjīng Nán Zhàn)**. ⚠️ Nama di atas adalah nama standar resmi (nama bandara/stasiun besar jarang bervariasi), namun belum di-screenshot-verifikasi langsung dari halaman Amap.
 
 - Foto/info: https://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport
 
@@ -195,12 +195,12 @@ Bandara utama: **Nanjing Lukou International Airport (南京禄口国际机场)*
 Sekitar Fuzimiao/Qinhuai atau Xinjiekou — dua pusat keramaian utama, saling terhubung lewat Metro Line 1/3. Fuzimiao lebih dekat ke kawasan wisata sejarah (Confucius Temple, Qinhuai River), sementara Xinjiekou lebih pusat kota/komersial (Deji Plaza, dll). Untuk fokus wisata seperti itinerary ini, area Fuzimiao/dekat jalur Line 3 lebih strategis — hampir semua destinasi terjangkau tanpa banyak transfer.
 
 ### Destinasi Terkenal Lain di Nanjing
-Di luar itinerary utama, referensi tambahan kalau ada waktu ekstra: **Purple Mountain / Zijin Shan (紫金山)** — kompleks makam Sun Yat-sen, tapi 392 anak tangga curam tanpa lift, kurang cocok kriteria lutut (lihat Cadangan). **Xiaojiuzhaigou (小九寨沟)** — spot air terjun bertingkat viral, juga di kawasan Purple Mountain (lihat Cadangan).
+Di luar itinerary utama, referensi tambahan kalau ada waktu ekstra: **Purple Mountain / Zijin Shan (紫金山 · Zǐjīn Shān)** — kompleks makam Sun Yat-sen, tapi 392 anak tangga curam tanpa lift, kurang cocok kriteria lutut (lihat Cadangan). **Xiaojiuzhaigou (小九寨沟 · Xiǎo Jiǔzhàigōu)** — spot air terjun bertingkat viral, juga di kawasan Purple Mountain (lihat Cadangan).
 
 - Video referensi: https://www.youtube.com/results?search_query=top+attractions+Nanjing+China
 
 ### Makanan Wajib Dikunjungi & Dicoba
-Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Nanjing Salted Duck (盐水鸭)** — hidangan paling ikonik Jiangsu, relatif aman dicoba tapi cukup asin/berlemak. **Duck Blood Vermicelli Soup (鸭血粉丝汤)** — bisa minta versi tidak pedas. **Jiming Soup Steamed Buns & Guotie** — jajanan khas Laomendong, guotie tergolong gorengan jadi perlu dibatasi. **Yang chun mian (阳春面)** — sup mie polos, pilihan paling aman untuk lambung.
+Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Nanjing Salted Duck (盐水鸭 · Yánshuǐ Yā)** — hidangan paling ikonik Jiangsu, relatif aman dicoba tapi cukup asin/berlemak. **Duck Blood Vermicelli Soup (鸭血粉丝汤 · Yāxiě Fěnsī Tāng)** — bisa minta versi tidak pedas. **Jiming Soup Steamed Buns & Guotie** — jajanan khas Laomendong, guotie tergolong gorengan jadi perlu dibatasi. **Yang chun mian (阳春面 · Yángchūn Miàn)** — sup mie polos, pilihan paling aman untuk lambung.
 
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+must+try+food
 
@@ -212,7 +212,7 @@ App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Te
 
 ## Hari 1 — Sabtu, 3 Oktober
 
-### Laomendong Old Street (老门东) ✅
+### Laomendong Old Street (老门东 · Lǎoméndōng) ✅
 Kawasan bersejarah era Ming-Qing yang jadi kawasan hunian & perdagangan ramai sejak dulu, persis di dalam tembok kota, tepat di belakang Zhonghua Gate. Sempat terbengkalai bertahun-tahun, direstorasi ulang sejak awal 2000an dengan tetap mempertahankan tata letak jalan & arsitektur kayu tradisional aslinya, sambil menambahkan sentuhan modern. Jalan batu sepanjang 400m ini jadi surga jajanan — ada kios makanan legendaris berusia puluhan tahun berdampingan dengan kafe kreatif kekinian, penuh toko, seniman, dan bangunan bersejarah.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -232,12 +232,12 @@ Hidangan paling ikonik dari Provinsi Jiangsu ini punya sejarah lebih dari 2.500 
 
 - Foto/info: https://en.wikipedia.org/wiki/Nanjing_salted_duck
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+salted+duck+recipe+history
-- Rekomendasi tempat sekitar: Han Fu Xing (韩复兴, sejak 1866); Meiyuan (梅苑, restoran Huaiyang); Jiangnan Salted Duck (dekat Confucius Temple)
+- Rekomendasi tempat sekitar: Han Fu Xing (韩复兴 · Hán Fùxīng, sejak 1866); Meiyuan (梅苑 · Méiyuàn, restoran Huaiyang); Jiangnan Salted Duck (dekat Confucius Temple)
 
 ## Hari 2 — Minggu, 4 Oktober
 
-### Niushoushan (牛首山文化旅游区) ⚠️ — masuk dari West Gate
-Niushoushan ("Gunung Kepala Sapi") adalah kawasan budaya-religi Buddhis besar di pinggiran Nanjing, terkenal dengan Usnisa Palace (佛顶宫) — kompleks bawah tanah megah yang dibangun untuk menyimpan relik tulang tengkorak Buddha (parietal bone relic) yang ditemukan di reruntuhan kuil kuno di lokasi ini tahun 2008. Dua puncak kembar gunung ini disebut menyerupai sepasang tanduk sapi, asal-usul namanya. Dari West Gate (pintu masuk yang lebih dekat), lokasi pusat kompleks ada di tengah gunung — bisa jalan kaki ±15 menit atau naik mobil wisata (CNY 10/org).
+### Niushoushan (牛首山文化旅游区 · Niúshǒushān Wénhuà Lǚyóu Qū) ⚠️ — masuk dari West Gate
+Niushoushan ("Gunung Kepala Sapi") adalah kawasan budaya-religi Buddhis besar di pinggiran Nanjing, terkenal dengan Usnisa Palace (佛顶宫 · Fódǐng Gōng) — kompleks bawah tanah megah yang dibangun untuk menyimpan relik tulang tengkorak Buddha (parietal bone relic) yang ditemukan di reruntuhan kuil kuno di lokasi ini tahun 2008. Dua puncak kembar gunung ini disebut menyerupai sepasang tanduk sapi, asal-usul namanya. Dari West Gate (pintu masuk yang lebih dekat), lokasi pusat kompleks ada di tengah gunung — bisa jalan kaki ±15 menit atau naik mobil wisata (CNY 10/org).
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
@@ -249,9 +249,9 @@ Niushoushan ("Gunung Kepala Sapi") adalah kawasan budaya-religi Buddhis besar di
 
 - Foto/info: https://sightdoing.net/usnisa-palace-nanjing/
 - Video referensi: https://www.youtube.com/results?search_query=Niushoushan+Nanjing+Usnisa+Palace
-- Rekomendasi tempat sekitar: Usnisa Palace (佛顶宫) — bagian utama kompleks, tiket terusan
+- Rekomendasi tempat sekitar: Usnisa Palace (佛顶宫 · Fódǐng Gōng) — bagian utama kompleks, tiket terusan
 
-### Deji Plaza (德基广场) ⚠️
+### Deji Plaza (德基广场 · Déjī Guǎngchǎng) ⚠️
 Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total luas 313.000 m². Tahun 2024 tercatat sebagai mal dengan penjualan tertinggi di China (24,5 miliar yuan) — mengalahkan SKP Beijing. Ada bioskop IMAX & ice rink di dalamnya. Bukan sesi belanja — cukup jalan-jalan santai untuk berteduh dari panas siang, nyambung langsung dari Niushoushan via Didi.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -266,7 +266,7 @@ Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total 
 - Video referensi: https://www.youtube.com/results?search_query=Deji+Plaza+Nanjing
 - Rekomendasi tempat sekitar: Food court lantai bawah (banyak pilihan cepat)
 
-### Mochou Lake Park (莫愁湖公园) ✅
+### Mochou Lake Park (莫愁湖公园 · Mòchóu Hú Gōngyuán) ✅
 Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (386-589 M). Versi paling populer: ia menikah dan hidup bahagia, sampai suaminya direkrut jadi tentara dan tak pernah kembali. Saking rindunya, konon ia "berubah menjadi danau" dengan harapan airnya mengalir sampai ke tempat suaminya berada — makanya danau ini dinamai untuk mengenang kesetiaannya. Dulunya bagian dari Sungai Yangtze sebelum aliran sungai bergeser, taman ini resmi dibuka tahun 1929.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "公园").
@@ -283,7 +283,7 @@ Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (
 
 ## Hari 3 — Senin, 5 Oktober
 
-### Xuanwu Lake Park (玄武湖景区) ✅
+### Xuanwu Lake Park (玄武湖景区 · Xuánwǔ Hú Jǐngqū) ✅
 Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad ke-3. Namanya "Xuanwu" berasal dari mitos naga hitam (perpaduan kura-kura & ular) yang konon pernah terlihat di sini, dipercaya sebagai dewa air oleh penganut Tao. Selama berabad-abad danau ini punya fungsi berubah-ubah: tempat latihan berburu keluarga kaisar, arena latihan perang laut di masa Dinasti Song, sampai gudang catatan sensus & pajak negara ('Gudang Registrasi Kuning') di masa Dinasti Ming. Baru pada 1911 diubah jadi taman publik seperti sekarang.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "景区").
@@ -296,9 +296,9 @@ Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad 
 
 - Foto/info: https://en.wikipedia.org/wiki/Xuanwu_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Xuanwu+Lake+Nanjing
-- Rekomendasi tempat sekitar: Cuizhou Islet (翠洲) — pulau paling populer; Trolley listrik keliling 5 pulau (CNY 30)
+- Rekomendasi tempat sekitar: Cuizhou Islet (翠洲 · Cuìzhōu) — pulau paling populer; Trolley listrik keliling 5 pulau (CNY 30)
 
-### Confucius Temple Pedestrian Street & Qinhuai River (夫子庙秦淮风光带) ✅
+### Confucius Temple Pedestrian Street & Qinhuai River (夫子庙秦淮风光带 · Fūzǐmiào Qínhuái Fēngguāng Dài) ✅
 Kawasan ini bermula dari Universitas Kekaisaran Nanjing yang didirikan tahun 337 M di tepi Sungai Qinhuai. Kuil Konfusius pertama dibangun tahun 384 M, lalu dibangun ulang secara resmi tahun 1034 (Dinasti Song) sebagai tempat pemujaan Konfusius — salah satu yang paling terjaga di China untuk jenisnya. Bangunan yang berdiri sekarang berasal dari abad ke-19 (Dinasti Qing), setelah kompleks aslinya dibakar habis tentara Jepang tahun 1937. Direstorasi ulang tahun 1985 dengan gaya Ming-Qing, dan sekarang jadi kawasan pedestrian street budaya paling ikonik di Nanjing — terkenal dengan suasana malamnya yang dihiasi lampion di sepanjang sungai.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -313,7 +313,7 @@ Kawasan ini bermula dari Universitas Kekaisaran Nanjing yang didirikan tahun 337
 - Video referensi: https://www.youtube.com/results?search_query=Confucius+Temple+Qinhuai+River+Nanjing+night
 - Rekomendasi tempat sekitar: Duck Blood Vermicelli Soup versi tidak pedas (minta tanpa cabai); Qinhuai River night boat cruise
 
-### 🏷️ Presidential Palace (总统府) ✅ — Plan-B Hari 3 (kalau masih tertarik sejarah kekaisaran)
+### 🏷️ Presidential Palace (总统府 · Zǒngtǒng Fǔ) ✅ — Plan-B Hari 3 (kalau masih tertarik sejarah kekaisaran)
 Kompleks ini menyimpan sejarah 6 abad China dalam satu tempat. Berawal sebagai kediaman kerajaan di era Dinasti Ming, lalu jadi kantor gubernur di era Qing. Tahun 1853 sempat jadi istana "Raja Surgawi" saat Pemberontakan Taiping. Momen paling bersejarah: 1 Januari 1912, di sinilah Sun Yat-sen dilantik sebagai Presiden Sementara Republik China pertama. Sempat jadi markas tentara Jepang (1937), lalu direbut kembali tentara pembebasan tahun 1949. Sekarang jadi museum sejarah modern China. **Catatan:** tutup setiap Senin (kecuali libur nasional).
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -328,9 +328,9 @@ Kompleks ini menyimpan sejarah 6 abad China dalam satu tempat. Berawal sebagai k
 
 - Foto/info: https://en.wikipedia.org/wiki/Presidential_Palace_(Nanjing)
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Presidential+Palace+Zongtongfu
-- Rekomendasi tempat sekitar: Xu Garden (煦园) — juga disebut "West Garden", di dalam kompleks, bagian terindah; Nanjing 1912 Block (南京1912) — persis sebelahan
+- Rekomendasi tempat sekitar: Xu Garden (煦园 · Xù Yuán) — juga disebut "West Garden", di dalam kompleks, bagian terindah; Nanjing 1912 Block (南京1912 · Nánjīng 1912) — persis sebelahan
 
-### 🏷️ Nanjing 1912 Block (南京1912) ⚠️ — Plan-B Hari 3 (kalau Qinhuai River terlalu padat)
+### 🏷️ Nanjing 1912 Block (南京1912 · Nánjīng 1912) ⚠️ — Plan-B Hari 3 (kalau Qinhuai River terlalu padat)
 Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden sementara Republik China di Nanjing. Dulunya kawasan elite era Republik, sekarang berubah jadi kawasan bar & restoran ramai dengan 19 bangunan bata abu-abu bergaya Republik (1912-1949) yang tetap dipertahankan, mengingatkan pada suasana Shanghai/Beijing lama. Resmi dibuka Desember 2004, sekarang punya lebih dari 30 bar, kafe, dan resto.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -349,7 +349,7 @@ Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden 
 
 ## Hari 4 — Selasa, 6 Oktober
 
-### Nanjing Massacre Memorial Hall (侵华日军南京大屠杀遇难同胞纪念馆) ⚠️
+### Nanjing Massacre Memorial Hall (侵华日军南京大屠杀遇难同胞纪念馆 · Qīnhuá Rìjūn Nánjīng Dàtúshā Yùnàn Tóngbāo Jìniànguǎn) ⚠️
 Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan massal yang digali awal tahun 1980an. Memorial ini dibangun untuk mengenang lebih dari 300.000 warga sipil China yang terbunuh selama enam minggu kekejaman tentara Jepang di Nanjing (1937-1938). Di dalamnya, kerangka korban masih dibiarkan setengah terkubur di tanah dengan papan keterangan — dirancang bukan sekadar memaparkan fakta, tapi membuat pengunjung benar-benar merasakan beratnya sejarah ini. Tempat reflektif, bukan wisata santai — sebaiknya disiapkan mental sebelum masuk.
 
 ⚠️ Nama Hanzi resmi, tapi belum diverifikasi langsung dari halaman Amap.
@@ -364,14 +364,14 @@ Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan ma
 
 - Foto/info: https://en.wikipedia.org/wiki/Memorial_Hall_of_the_Victims_in_Nanjing_Massacre_by_Japanese_Invaders
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Massacre+Memorial+Hall+documentary
-- Rekomendasi tempat sekitar: Peace Park (和平公园) — di dalam kompleks, area lebih tenang; Yunnan Road area — kafe tenang untuk istirahat sesudahnya
+- Rekomendasi tempat sekitar: Peace Park (和平公园 · Hépíng Gōngyuán) — di dalam kompleks, area lebih tenang; Yunnan Road area — kafe tenang untuk istirahat sesudahnya
 
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau Anda ingin pertimbangkan sendiri atau untuk kunjungan berikutnya.
 
-### Jinling Xiaocheng — Wenxin Pavilion (金陵小城·文心阁) ⚠️
-Jinling Xiaocheng adalah kawasan kota tiruan bergaya kuno dengan atap khas "Jinling Blue" (biru keabu-abuan), dibangun di kaki Niushoushan sisi barat. Wenxin Pavilion (文心阁) adalah paviliun utamanya, jadi spot favorit untuk foto golden hour/blue hour dan pertunjukan cahaya (light show) di malam hari — banyak pengunjung sengaja datang sore untuk lihat matahari terbenam lalu lanjut nikmati lampu malam dari Lingxiao Terrace di dekatnya.
+### Jinling Xiaocheng — Wenxin Pavilion (金陵小城·文心阁 · Jīnlíng Xiǎochéng · Wénxīn Gé) ⚠️
+Jinling Xiaocheng adalah kawasan kota tiruan bergaya kuno dengan atap khas "Jinling Blue" (biru keabu-abuan), dibangun di kaki Niushoushan sisi barat. Wenxin Pavilion (文心阁 · Wénxīn Gé) adalah paviliun utamanya, jadi spot favorit untuk foto golden hour/blue hour dan pertunjukan cahaya (light show) di malam hari — banyak pengunjung sengaja datang sore untuk lihat matahari terbenam lalu lanjut nikmati lampu malam dari Lingxiao Terrace di dekatnya.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
@@ -388,7 +388,7 @@ Jinling Xiaocheng adalah kawasan kota tiruan bergaya kuno dengan atap khas "Jinl
 - Foto/info: https://us.trip.com/travel-guide/attraction/nanjing/jinling-xiaocheng-123120422/
 - Video referensi: https://www.youtube.com/results?search_query=Jinling+Xiaocheng+Wenxin+Pavilion+Nanjing+night
 
-### Xiaojiuzhaigou (小九寨沟) ⚠️ — dievaluasi atas usulan pengguna, TIDAK direkomendasikan masuk itinerary utama kali ini
+### Xiaojiuzhaigou (小九寨沟 · Xiǎo Jiǔzhàigōu) ⚠️ — dievaluasi atas usulan pengguna, TIDAK direkomendasikan masuk itinerary utama kali ini
 Bekas saluran pelimpah banjir Danau Qianhu di kaki Gunung Zijin (Purple Mountain), sepanjang ±750m, di kawasan Zhongshan Scenic Area dekat Zhongshan Gate. Sekitar 2019 direnovasi jadi ruang rekreasi dengan lanskap air bertingkat — setelah hujan deras, airnya mengalir deras berundak-undak menyerupai Jiuzhaigou (makanya dijuluki "Jiuzhaigou Mini"), jadi spot foto viral warga lokal.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. Lokasi tepatnya di Jl. Meihuagu, Distrik Xuanwu — **BUKAN benar-benar dekat hotel** seperti perkiraan awal (hotel juga di Distrik Xuanwu, tapi Xiaojiuzhaigou tetap perlu perjalanan terpisah ke kawasan Purple Mountain).
@@ -404,7 +404,7 @@ Bekas saluran pelimpah banjir Danau Qianhu di kaki Gunung Zijin (Purple Mountain
 - Foto/info: https://you.ctrip.com/sight/nanjing9/145156344.html
 - Video referensi: https://www.youtube.com/results?search_query=南京小九寨沟+Xiaojiuzhaigou+Nanjing
 
-### Ming Palace Ruins Park (明故宫遗址公园) ⚠️
+### Ming Palace Ruins Park (明故宫遗址公园 · Míng Gùgōng Yízhǐ Gōngyuán) ⚠️
 Zhu Yuanzhang — pendiri Dinasti Ming — mulai membangun istana ini tahun 1367, setahun sebelum dia resmi memproklamasikan Dinasti Ming. Istana ini jadi pusat politik nasional untuk 3 kaisar awal Ming, dan desainnya kelak jadi "cetak biru arsitektur" untuk Forbidden City di Beijing. Dulu dijuluki "Forbidden City Nanjing" karena tidak sembarang orang boleh keluar-masuk tanpa izin kaisar. Setelah ibu kota dipindah ke Beijing, istana ini perlahan terbengkalai dan hancur oleh serangkaian kebakaran (puncaknya tahun 1449). Yang tersisa sekarang cuma pondasi batu, dasar kolom, dan Gerbang Wu yang masih bisa dinaiki — suasana tenang, jadi tempat jalan santai yang syarat sejarah.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -419,9 +419,9 @@ Zhu Yuanzhang — pendiri Dinasti Ming — mulai membangun istana ini tahun 1367
 
 - Foto/info: https://www.historyhit.com/locations/the-old-ming-palace/
 - Video referensi: https://www.youtube.com/results?search_query=Ming+Palace+Ruins+Park+Nanjing
-- Rekomendasi tempat sekitar: Wu Gate (午门) — bisa dinaiki, area foto terbaik
+- Rekomendasi tempat sekitar: Wu Gate (午门 · Wǔ Mén) — bisa dinaiki, area foto terbaik
 
-### 🏷️ Nanjing Museum (南京博物院) ✅
+### 🏷️ Nanjing Museum (南京博物院 · Nánjīng Bówùyuàn) ✅
 Salah satu museum tertua & terbesar di China, menyimpan koleksi ribuan tahun sejarah — mulai dari keramik kuno, kaligrafi, lukisan, sampai relik kekaisaran. Koleksi paling terkenal: Han Dynasty Gold Jade Burial Suit, jubah pemakaman dari ribuan lempeng giok yang dijahit dengan benang emas. Di basement ada replika skala penuh jalanan Nanjing era Republik. Banyak pengunjung menghabiskan 3-6 jam di sini karena kontennya sangat kaya. **Catatan:** tutup setiap Senin (kecuali libur nasional).
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -440,7 +440,7 @@ Salah satu museum tertua & terbesar di China, menyimpan koleksi ribuan tahun sej
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Museum+tour
 - Rekomendasi tempat sekitar: Republic Street replika (basement, wajib lihat); Special Exhibition Hall & Art Gallery; Museum café di area lobby
 
-### Jiming Temple (古鸡鸣寺) ✅
+### Jiming Temple (古鸡鸣寺 · Gǔ Jīmíng Sì) ✅
 Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalnya kuil Tao dibangun tahun 300 M, baru berkembang jadi tempat ibadah Buddha penting tahun 527 M. Sempat hancur saat Pemberontakan Taiping (1851-1860) lalu dibangun ulang. Landmark-nya, Pagoda Bhaisajyaguru setinggi 44.8m, baru selesai dibangun tahun 1991.
 
 ✅ Nama Hanzi terverifikasi dari halaman ranking Amap.
@@ -459,7 +459,7 @@ Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalny
 - Video referensi: https://www.youtube.com/results?search_query=Jiming+Temple+Nanjing
 - Rekomendasi tempat sekitar: Baiweizhai Vegetarian Noodle Restaurant — mi vegetarian terkenal di dalam kompleks
 
-### Ming Xiaoling Sacred Way (明孝陵神道) ⚠️ — koreksi akses
+### Ming Xiaoling Sacred Way (明孝陵神道 · Míng Xiàolíng Shén Dào) ⚠️ — koreksi akses
 Jalan sepanjang 600m menuju makam Zhu Yuanzhang, pendiri sekaligus kaisar pertama Dinasti Ming, dan permaisurinya Ma (makam dinamai "Xiaoling" atau "Makam Berbakti" untuk menghormatinya). Di sepanjang jalan berjejer patung batu singa, unta, gajah, dan kuda yang dipercaya mengusir roh jahat sekaligus menjaga makam. Situs ini bagian dari UNESCO World Heritage.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -477,7 +477,7 @@ Jalan sepanjang 600m menuju makam Zhu Yuanzhang, pendiri sekaligus kaisar pertam
 - Foto/info: https://en.wikipedia.org/wiki/Ming_Xiaoling_Mausoleum
 - Video referensi: https://www.youtube.com/results?search_query=Ming+Xiaoling+Sacred+Way+Nanjing
 
-### Zhonghua Gate (中华门) ⚠️
+### Zhonghua Gate (中华门 · Zhōnghuá Mén) ⚠️
 Gerbang berbenteng terbesar di China, dibangun era Kaisar Hongwu (Zhu Yuanzhang) sejak 1366, bagian dari tembok kota Nanjing sepanjang 33,6km. Punya 27 ruang tersembunyi yang bisa menampung hingga 3.000 tentara, dengan 3 halaman tertutup berlapis yang dirancang untuk menjebak musuh yang berhasil menembus pintu depan. Bagian bawah/ekshibisi (jalur relatif datar) bisa dikunjungi tanpa naik ke atas tembok; naik ke atas tembok berarti tangga curam tanpa lift.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -494,9 +494,9 @@ Gerbang berbenteng terbesar di China, dibangun era Kaisar Hongwu (Zhu Yuanzhang)
 
 - Foto/info: https://en.wikipedia.org/wiki/Zhonghua_Gate,_Nanjing
 - Video referensi: https://www.youtube.com/results?search_query=Zhonghua+Gate+Nanjing+inside+exhibition
-- Rekomendasi tempat sekitar: Taicheng section (台城) — seksi tembok lain dekat Xuanwu Lake, akses lebih landai
+- Rekomendasi tempat sekitar: Taicheng section (台城 · Tái Chéng) — seksi tembok lain dekat Xuanwu Lake, akses lebih landai
 
-### Nanjing Folk Museum / Former Residence of Gan Xi (甘熙故居) ⚠️
+### Nanjing Folk Museum / Former Residence of Gan Xi (甘熙故居 · Gān Xī Gùjū) ⚠️
 Dibangun era Kaisar Jiaqing, Dinasti Qing (1796-1820), rumah ini awalnya milik ayah Gan Xi — seorang sastrawan & kolektor buku ternama akhir Dinasti Qing. Dikenal warga lokal sebagai "99,5 kamar" (padahal sebenarnya ada 162 kamar), rumah ini memadukan gaya arsitektur elegan China Selatan dengan kesederhanaan kokoh China Utara. Baru ditemukan & didata sebagai cagar budaya tahun 1982, sekarang jadi museum yang menampilkan budaya & tradisi rakyat Nanjing.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -515,7 +515,7 @@ Dibangun era Kaisar Jiaqing, Dinasti Qing (1796-1820), rumah ini awalnya milik a
 - Video referensi: https://www.youtube.com/results?search_query=Ganxi+Former+Residence+Nanjing+Folk+Museum
 - Rekomendasi tempat sekitar: Pertunjukan opera Nanjing tradisional (kalau jadwalnya pas)
 
-### Sun Yat-sen Mausoleum (中山陵景区) ✅
+### Sun Yat-sen Mausoleum (中山陵景区 · Zhōngshān Líng Jǐngqū) ✅
 Dibangun 1926-1929 untuk Sun Yat-sen, tokoh yang menumbangkan Dinasti Qing dan jadi presiden pertama Republik China (1912). Sesuai wasiatnya sendiri (diucapkan tahun 1912 saat berburu di Purple Mountain), ia dimakamkan di sini pada 1929. Atap biru-putihnya sengaja dipilih untuk melambangkan bendera Kuomintang — simbol berbeda dari atap kuning yang biasa dipakai untuk makam kaisar-kaisar sebelumnya. Untuk mencapai puncak (patung Dr. Sun Yat-sen) harus menaiki 392 anak tangga tanpa lift.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "景区").
@@ -530,9 +530,9 @@ Dibangun 1926-1929 untuk Sun Yat-sen, tokoh yang menumbangkan Dinasti Qing dan j
 
 - Foto/info: https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum
 - Video referensi: https://www.youtube.com/results?search_query=Sun+Yat-sen+Mausoleum+Nanjing
-- Rekomendasi tempat sekitar: Linggu Temple/Pagoda (灵谷寺) — dekat, sama-sama Purple Mountain, jalur lebih landai
+- Rekomendasi tempat sekitar: Linggu Temple/Pagoda (灵谷寺 · Línggǔ Sì) — dekat, sama-sama Purple Mountain, jalur lebih landai
 
-### Nanjing City Wall — Bagian Atas Tembok (南京城墙) ⚠️
+### Nanjing City Wall — Bagian Atas Tembok (南京城墙 · Nánjīng Chéngqiáng) ⚠️
 Pembangunan dimulai 1366 di bawah Kaisar Hongwu (Zhu Yuanzhang), dirancang oleh ahli strategi Liu Bowen dan sebagian didanai pedagang kaya, selesai 27 tahun kemudian (1393). Total panjang 33,6km, menjadikannya tembok kota melingkar terpanjang di dunia.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -549,9 +549,9 @@ Pembangunan dimulai 1366 di bawah Kaisar Hongwu (Zhu Yuanzhang), dirancang oleh 
 
 - Foto/info: https://en.wikipedia.org/wiki/Zhonghua_Gate,_Nanjing
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+City+Wall+Zhonghua+Gate
-- Rekomendasi tempat sekitar: Taicheng section (台城) — dekat Xuanwu Lake, akses lebih landai
+- Rekomendasi tempat sekitar: Taicheng section (台城 · Tái Chéng) — dekat Xuanwu Lake, akses lebih landai
 
-### Zifeng Tower (紫峰大厦) ⚠️ — observation deck
+### Zifeng Tower (紫峰大厦 · Zǐfēng Dàshà) ⚠️ — observation deck
 Pembangunan dimulai 2005, selesai 2010, dengan tinggi 450m & 66 lantai — gedung tertinggi di Nanjing & Provinsi Jiangsu. Dirancang oleh arsitek Adrian Smith (Skidmore, Owings & Merrill), bentuknya terinspirasi dari Sungai Yangtze, taman hijau kota, dan naga dalam budaya China. Observation deck di lantai 72 (281,8m) punya jendela kaca panorama 360 derajat, plus kedai minuman & kantor pos tertinggi di kota.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -568,9 +568,9 @@ Pembangunan dimulai 2005, selesai 2010, dengan tinggi 450m & 66 lantai — gedun
 
 - Foto/info: https://en.wikipedia.org/wiki/Zifeng_Tower
 - Video referensi: https://www.youtube.com/results?search_query=Zifeng+Tower+Nanjing+observation+deck
-- Rekomendasi tempat sekitar: Zifeng Tower (紫峰大厦) mall/food court di lantai bawah — kalau tetap mau mampir tanpa naik observation deck
+- Rekomendasi tempat sekitar: Zifeng Tower (紫峰大厦 · Zǐfēng Dàshà) mall/food court di lantai bawah — kalau tetap mau mampir tanpa naik observation deck
 
-### Java Forest Valley Cafe (爪哇森谷咖啡) ⚠️ — Dragon Roaming Amusement Park
+### Java Forest Valley Cafe (爪哇森谷咖啡 · Zhǎowā Sēngǔ Kāfēi) ⚠️ — Dragon Roaming Amusement Park
 Kafe bertema hutan tropis "gaya Jawa" yang tersembunyi di lembah perbukitan Jiangning, di dalam kawasan taman hiburan yang oleh warganet dijuluki "versi Nanjing dari Wizard of Oz" karena suasananya yang dramatis — tangga hijau berselimut kabut buatan, air terjun bertingkat dengan kolam dangkal berwarna zamrud, dan bangunan kafe utama berbentuk rumah pohon kabin kayu dua lantai dengan teras pemandangan luas.
 
 ⚠️ Nama Hanzi & nama resmi taman hiburan (diterjemahkan sebagai "Dragon Roaming Amusement Park") belum terverifikasi langsung dari halaman Amap — cek ulang saat akan berkunjung.
@@ -586,7 +586,7 @@ Kafe bertema hutan tropis "gaya Jawa" yang tersembunyi di lembah perbukitan Jian
 - Foto/info: https://www.trip.com/moments/detail/nanjing-9-147756694/
 - Video referensi: https://www.youtube.com/results?search_query=爪哇森林谷咖啡+南京+Java+Forest+Valley+Cafe+Nanjing
 
-### Sun Yat-sen Mausoleum Music Stage (中山陵音乐台) ⚠️ — bisa kasih makan merpati
+### Sun Yat-sen Mausoleum Music Stage (中山陵音乐台 · Zhōngshān Líng Yīnyuètái) ⚠️ — bisa kasih makan merpati
 Amfiteater terbuka yang dibangun 1932-1933, bagian dari kompleks Sun Yat-sen Mausoleum di kaki Purple Mountain, awalnya untuk upacara, pertunjukan musik, dan pidato massal — akustiknya terkenal bagus untuk bangunan seusia ini. Sekarang jadi favorit karena puluhan merpati putih jinak yang berkeliaran di sekitar panggung; pengunjung bisa beli pakan burung dari kios sekitar dan foto-foto dikelilingi merpati terbang serempak.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -602,8 +602,8 @@ Amfiteater terbuka yang dibangun 1932-1933, bagian dari kompleks Sun Yat-sen Mau
 - Foto/info: https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum_Music_Stage
 - Video referensi: https://www.youtube.com/results?search_query=Sun+Yat-sen+Mausoleum+Music+Stage+pigeons+Nanjing
 
-### Kexiang Food Street (科巷) ⚠️
-Nama "Kexiang" berasal dari "Kejuzhixiang" (科举之巷), lokasi barak militer untuk ujian kenegaraan cabang militer di masa lampau. Pasar becek "Kexiang Caichang" yang dibangun 1958 lama-lama jadi salah satu pasar tradisional paling legendaris di Nanjing, lalu direnovasi total tahun 2020 jadi "Kexiang Xin Shiji" (pasar baru) — lebih bersih & tertata tapi tetap murah dan ramai penduduk lokal, bukan kawasan turis. Terkenal dengan jajanan khas Jinling, gorengan, dan daging kecap braised.
+### Kexiang Food Street (科巷 · Kē Xiàng) ⚠️
+Nama "Kexiang" berasal dari "Kejuzhixiang" (科举之巷 · Kējǔ Zhī Xiàng), lokasi barak militer untuk ujian kenegaraan cabang militer di masa lampau. Pasar becek "Kexiang Caichang" yang dibangun 1958 lama-lama jadi salah satu pasar tradisional paling legendaris di Nanjing, lalu direnovasi total tahun 2020 jadi "Kexiang Xin Shiji" (pasar baru) — lebih bersih & tertata tapi tetap murah dan ramai penduduk lokal, bukan kawasan turis. Terkenal dengan jajanan khas Jinling, gorengan, dan daging kecap braised.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
@@ -620,10 +620,10 @@ Nama "Kexiang" berasal dari "Kejuzhixiang" (科举之巷), lokasi barak militer 
 - Foto/info: http://www.njkexiang.com/
 - Video referensi: https://www.youtube.com/results?search_query=Kexiang+Food+Street+Nanjing
 
-### Wen Shu Archway & Double Dragon Screen Wall di Pan Pond (天下文枢坊·双龙戏珠照壁·泮池) ✅
-Tiga elemen ikonik di depan gerbang utama Confucius Temple (lihat entri Confucius Temple Pedestrian Street & Qinhuai River, Hari 3): "Tian Xia Wen Shu" (天下文枢, "Pusat Sastra Dunia") adalah gapura besar yang jadi pintu gerbang pertama kompleks. Persis di seberang sungai berdiri Zhaobi (照壁) sepanjang 110m — dibangun 1575, diukir motif "dua naga berebut mutiara" (双龙戏珠), diklaim sebagai dinding penutup pandang terpanjang di China. Di antara keduanya ada Panchi (泮池, "Kolam Bulan Sabit") — satu-satunya Panchi di seluruh kuil Konfusius China yang airnya benar-benar mengalir dari sumber alami (Sungai Qinhuai).
+### Wen Shu Archway & Double Dragon Screen Wall di Pan Pond (天下文枢坊·双龙戏珠照壁·泮池 · Tiānxià Wénshū Fāng · Shuānglóng Xìzhū Zhàobì · Pàn Chí) ✅
+Tiga elemen ikonik di depan gerbang utama Confucius Temple (lihat entri Confucius Temple Pedestrian Street & Qinhuai River, Hari 3): "Tian Xia Wen Shu" (天下文枢 · Tiānxià Wénshū, "Pusat Sastra Dunia") adalah gapura besar yang jadi pintu gerbang pertama kompleks. Persis di seberang sungai berdiri Zhaobi (照壁 · Zhàobì) sepanjang 110m — dibangun 1575, diukir motif "dua naga berebut mutiara" (双龙戏珠 · Shuānglóng Xìzhū), diklaim sebagai dinding penutup pandang terpanjang di China. Di antara keduanya ada Panchi (泮池 · Pàn Chí, "Kolam Bulan Sabit") — satu-satunya Panchi di seluruh kuil Konfusius China yang airnya benar-benar mengalir dari sumber alami (Sungai Qinhuai).
 
-✅ Ketiga nama ini bagian resmi dari kompleks Confucius Temple (夫子庙) yang sudah terverifikasi dari halaman ranking Amap di entri utamanya.
+✅ Ketiga nama ini bagian resmi dari kompleks Confucius Temple (夫子庙 · Fūzǐ Miào) yang sudah terverifikasi dari halaman ranking Amap di entri utamanya.
 
 **Akses:** sama dengan Confucius Temple Pedestrian Street (lihat entri di atas) — MRT Line 3, Stasiun Fuzimiao, Exit 2.
 
@@ -638,7 +638,7 @@ Tiga elemen ikonik di depan gerbang utama Confucius Temple (lihat entri Confuciu
 - Foto/info: https://www.travelchinaguide.com/attraction/jiangsu/nanjing/fuzimiao.htm
 - Video referensi: https://www.youtube.com/results?search_query=Fuzimiao+screen+wall+Pan+Pond+Nanjing
 
-### Nanjing Eye Footbridge (南京眼步行桥) ⚠️
+### Nanjing Eye Footbridge (南京眼步行桥 · Nánjīng Yǎn Bùxíng Qiáo) ⚠️
 Jembatan pejalan kaki sepanjang 827,5m yang membentang di atas cabang Sungai Yangtze, dibangun untuk Youth Olympic Games 2014 dan jadi landmark baru kawasan Hexi/Binjiang. Namanya diambil dari dua struktur lingkaran oval besar menyerupai "mata" yang jadi ciri khasnya. Malam hari, lampu LED di sepanjang jembatan berubah warna bergantian — jadi salah satu spot night view paling fotogenik di Nanjing, alternatif dari Qinhuai River.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.

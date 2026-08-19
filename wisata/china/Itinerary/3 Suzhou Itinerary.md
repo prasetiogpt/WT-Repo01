@@ -40,7 +40,7 @@
 | | |
 |---|---|
 | Rute | Suzhou → Ningbo via HSR (kereta cepat) |
-| Stasiun keberangkatan | **Suzhou Railway Station (苏州站)** — dipilih dibanding Suzhou North karena jauh lebih dekat dari hotel (5,9km/±27 menit vs Suzhou North yang ±16km di Xiangcheng District, di luar jangkauan praktis); kedua stasiun sama-sama melayani rute Ningbo tapi Suzhou Railway Station jelas lebih masuk akal dari lokasi hotel ini |
+| Stasiun keberangkatan | **Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)** — dipilih dibanding Suzhou North karena jauh lebih dekat dari hotel (5,9km/±27 menit vs Suzhou North yang ±16km di Xiangcheng District, di luar jangkauan praktis); kedua stasiun sama-sama melayani rute Ningbo tapi Suzhou Railway Station jelas lebih masuk akal dari lokasi hotel ini |
 | Tanggal & jam berangkat (rencana) | Selasa, 14 Oktober, **±15:00** (realistis, bukan jadwal pasti/terkunci — ±19 kereta G/D per hari beroperasi 07:15–18:08, jadi banyak pilihan jam di sekitar jam ini, cek nomor kereta persis di 12306/Trip.com H-7) |
 | Durasi HSR | ±2 jam 27 menit – 3,5 jam (bervariasi tergantung kereta, ±16 kereta express langsung, sisanya transit) |
 | Estimasi biaya HSR | ±CNY 147–218/org kelas 2 (dipakai sebagai referensi, TIDAK dihitung di total budget Suzhou — masuk ke perhitungan awal itinerary Ningbo, konsisten dengan prinsip "biaya onward journey milik kota tujuan") |
@@ -64,8 +64,8 @@
 |---|---|---|---|---|
 | ±17:00 | Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel | Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah | 30 | Rp79.500 |
 | 17:00–17:30 | Check-in, taruh barang, istirahat | — | — | — |
-| 17:30–19:00 | Makan malam santai di **Shiquan Street** (十全街) | Persis di depan hotel — jalan kuliner & bar klasik Suzhou. Makan ±CNY 25/org | 50 | Rp132.500 |
-| 19:00–20:00 | Jalan santai sekitar Shiquan Street / area hotel | Opsional: **Master of Nets Garden (网师园) versi Night Garden** literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail | — | — |
+| 17:30–19:00 | Makan malam santai di **Shiquan Street** (十全街 · Shíquán Jiē) | Persis di depan hotel — jalan kuliner & bar klasik Suzhou. Makan ±CNY 25/org | 50 | Rp132.500 |
+| 19:00–20:00 | Jalan santai sekitar Shiquan Street / area hotel | Opsional: **Master of Nets Garden (网师园 · Wǎngshī Yuán) versi Night Garden** literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail | — | — |
 | | **TOTAL HARI 1** | | **80** | **Rp212.000** |
 
 **Plan-B hari ini:** kalau kedatangan lebih malam dari rencana — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja (Shiquan Street tetap buka larut, banyak pilihan santai).
@@ -196,7 +196,7 @@ Belum termasuk harga hotel & tiket HSR Suzhou→Ningbo (masuk budget Ningbo, lih
 
 Supaya punya gambaran sebelum berkunjung: sedikit sejarah/cerita di balik setiap tempat yang disebut di dokumen ini — itinerary utama, Plan-B, maupun Cadangan — plus link untuk lihat foto & video referensi.
 
-## Suzhou (苏州) — Sebelum Berangkat
+## Suzhou (苏州 · Sūzhōu) — Sebelum Berangkat
 
 ### Cerita Kota Suzhou
 Suzhou didirikan tahun 514 SM oleh Raja Helü dari Kerajaan Wu sebagai ibu kota "Helü City" — jauh lebih tua dari Nanjing sebagai pusat kekuasaan di kawasan ini, dan menjadi cikal-bakal tata kota tua Suzhou yang masih terlihat sampai sekarang. Berkat jaringan kanalnya yang rumit dan taman-taman klasiknya, Suzhou dijuluki "Venice of the East" dan sering disebut bersama Hangzhou sebagai "surga di bumi" (上有天堂，下有苏州杭州).
@@ -210,7 +210,7 @@ Oktober adalah salah satu bulan terbaik berkunjung — sejuk (siang ±23°C, mal
 - Foto/info: https://en.climate-data.org/asia/china/jiangsu/suzhou-2755/
 
 ### Transportasi Masuk Kota
-Suzhou tidak punya bandara besar sendiri — pelancong umumnya masuk lewat Shanghai (Hongqiao/Pudong) lalu HSR ke Suzhou. Stasiun HSR utama: **Suzhou Railway Station (苏州站)** di Gusu District, ±2,8km dari pusat kota — inilah yang dipakai untuk leg pulang ke Ningbo di itinerary ini. Ada juga **Suzhou North Railway Station (苏州北站)** di Xiangcheng District, ±16km dari pusat kota — jauh lebih jauh, hanya relevan kalau transportasi datang/pergi dari stasiun itu.
+Suzhou tidak punya bandara besar sendiri — pelancong umumnya masuk lewat Shanghai (Hongqiao/Pudong) lalu HSR ke Suzhou. Stasiun HSR utama: **Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)** di Gusu District, ±2,8km dari pusat kota — inilah yang dipakai untuk leg pulang ke Ningbo di itinerary ini. Ada juga **Suzhou North Railway Station (苏州北站 · Sūzhōu Běi Zhàn)** di Xiangcheng District, ±16km dari pusat kota — jauh lebih jauh, hanya relevan kalau transportasi datang/pergi dari stasiun itu.
 
 - Foto/info: https://en.wikipedia.org/wiki/Suzhou_railway_station
 
@@ -218,12 +218,12 @@ Suzhou tidak punya bandara besar sendiri — pelancong umumnya masuk lewat Shang
 Kawasan **Gusu District sisi selatan, sekitar Shiquan Street/Nanmen** — strategis karena 1 halte MRT (Line 5) dari kluster Panmen, dan dekat jalur transfer ke Line 2/4 menuju kota tua bagian utara. Alternatif lain: sekitar Guanqian Street/Xuanmiao Temple untuk yang mengutamakan pusat kota tua yang lebih ramai & komersial.
 
 ### Destinasi Terkenal Lain di Suzhou
-Di luar itinerary utama: **Tiger Hill (虎丘)** — bukit dengan pagoda miring ("Leaning Tower of China"), salah satu ikon Suzhou paling terkenal. **Zhouzhuang** dan **Tongli** — kota air kuno di luar Suzhou, populer sebagai day-trip terpisah (lihat Cadangan). **Suzhou Industrial Park** di sekitar Jinji Lake — wajah modern kota ini, kontras dengan kota tua.
+Di luar itinerary utama: **Tiger Hill (虎丘 · Hǔqiū)** — bukit dengan pagoda miring ("Leaning Tower of China"), salah satu ikon Suzhou paling terkenal. **Zhouzhuang** dan **Tongli** — kota air kuno di luar Suzhou, populer sebagai day-trip terpisah (lihat Cadangan). **Suzhou Industrial Park** di sekitar Jinji Lake — wajah modern kota ini, kontras dengan kota tua.
 
 - Video referensi: https://www.youtube.com/results?search_query=top+attractions+Suzhou+China
 
 ### Makanan Wajib Dikunjungi & Dicoba
-Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Songshu Guiyu (松鼠桂鱼, "squirrel fish")** — hidangan ikon Suzhou, ikan mandarin digoreng berbentuk menyerupai tupai dengan saus asam-manis, cukup berminyak jadi perlu dibatasi. **Suzhou-style mooncake (苏式月饼)** — versi berlapis renyah, lebih ringan dari versi Kanton. **Zhagao (糖粥/赤豆糊)** — bubur kacang merah manis, jajanan jalanan klasik. Masakan Suzhou umumnya masuk gaya "Jiangnan" yang cenderung manis-ringan dibanding daerah lain di China — relatif lebih ramah untuk lambung dibanding masakan pedas.
+Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Songshu Guiyu (松鼠桂鱼 · Sōngshǔ Guìyú, "squirrel fish")** — hidangan ikon Suzhou, ikan mandarin digoreng berbentuk menyerupai tupai dengan saus asam-manis, cukup berminyak jadi perlu dibatasi. **Suzhou-style mooncake (苏式月饼 · Sū Shì Yuèbǐng)** — versi berlapis renyah, lebih ringan dari versi Kanton. **Zhagao (糖粥/赤豆糊 · Tángzhōu/Chìdòu Hú)** — bubur kacang merah manis, jajanan jalanan klasik. Masakan Suzhou umumnya masuk gaya "Jiangnan" yang cenderung manis-ringan dibanding daerah lain di China — relatif lebih ramah untuk lambung dibanding masakan pedas.
 
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+must+try+food
 
@@ -235,7 +235,7 @@ App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Te
 
 ## Hari 1 — Jumat, 10 Oktober
 
-### Shiquan Street (十全街) ⚠️
+### Shiquan Street (十全街 · Shíquán Jiē) ⚠️
 Jalan kuliner dan hiburan malam klasik Suzhou, membentang di sisi selatan kota tua persis di depan hotel — dikenal dengan restoran, bar, dan toko kerajinan tangan yang menyatu dengan suasana kanal & arsitektur tradisional di sekitarnya. Nama hotel trip ini ("Shiquan Street·Wangshi Garden") merujuk langsung ke jalan ini.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -249,7 +249,7 @@ Jalan kuliner dan hiburan malam klasik Suzhou, membentang di sisi selatan kota t
 - Foto/info: https://www.google.com/search?q=Shiquan+Street+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Shiquan+Street+Suzhou
 
-### Master of Nets Garden (网师园) ✅ — Opsional Malam Hari 1
+### Master of Nets Garden (网师园 · Wǎngshī Yuán) ✅ — Opsional Malam Hari 1
 Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage. Nama hotel trip ini merujuk langsung ke taman ini, dan lokasinya memang persis di area yang sama.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -267,7 +267,7 @@ Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama
 
 ## Hari 2 — Sabtu, 11 Oktober
 
-### Suzhou Museum (苏州博物馆) ✅
+### Suzhou Museum (苏州博物馆 · Sūzhōu Bówùguǎn) ✅
 Dirancang oleh arsitek kelahiran Suzhou I.M. Pei (juga arsitek Piramida Kaca Louvre), dibuka 2006 sebagai proyek terakhir karir panjangnya. Bangunan ini memadukan estetika taman klasik Suzhou (dinding putih, atap abu-abu, kolam batu) dengan garis geometris modern — letaknya pun sengaja bersebelahan dengan Humble Administrator's Garden supaya menyatu dengan lanskap kota tua.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -281,7 +281,7 @@ Dirancang oleh arsitek kelahiran Suzhou I.M. Pei (juga arsitek Piramida Kaca Lou
 - Foto/info: https://en.wikipedia.org/wiki/Suzhou_Museum
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Museum+I.M.+Pei+tour
 
-### Baoen Temple / North Pagoda (Beisi Ta) (北寺塔) ⚠️
+### Baoen Temple / North Pagoda (Beisi Ta) (北寺塔 · Běisì Tǎ) ⚠️
 Pagoda tertinggi di selatan Sungai Yangtze (±76m, 9 lantai kayu bersusun), berdiri di atas lahan kuil yang riwayatnya diperkirakan mundur hingga era Tiga Kerajaan (abad ke-3). Bangunan yang ada sekarang direkonstruksi era Dinasti Song (abad ke-12). Taman di sekelilingnya rindang dan tenang, cocok untuk jalan santai tanpa harus naik ke atas pagoda.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -295,7 +295,7 @@ Pagoda tertinggi di selatan Sungai Yangtze (±76m, 9 lantai kayu bersusun), berd
 - Foto/info: https://en.wikipedia.org/wiki/Bao%27en_Temple,_Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=North+Temple+Pagoda+Suzhou+Beisi+Ta
 
-### Guanqian Street (观前街) ⚠️
+### Guanqian Street (观前街 · Guānqián Jiē) ⚠️
 Guanqian Street ('jalan di depan kelenteng') berkembang sejak Dinasti Song sebagai pusat perdagangan di depan Xuanmiao Temple, dan sekarang jadi salah satu pedestrian street belanja & jajanan tersibuk di Suzhou.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -309,7 +309,7 @@ Guanqian Street ('jalan di depan kelenteng') berkembang sejak Dinasti Song sebag
 - Foto/info: https://en.wikipedia.org/wiki/Xuanmiao_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Guanqian+Street+Suzhou
 
-### Xuanmiao Temple (玄妙观) ⚠️
+### Xuanmiao Temple (玄妙观 · Xuánmiào Guàn) ⚠️
 Salah satu kelenteng Tao tertua & terbesar di China, pertama dibangun tahun 276 M, terletak persis di tengah Guanqian Street. Aula utamanya, Sanqing Hall, adalah bangunan kayu Dinasti Song asli yang masih berdiri.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -323,7 +323,7 @@ Salah satu kelenteng Tao tertua & terbesar di China, pertama dibangun tahun 276 
 - Foto/info: https://en.wikipedia.org/wiki/Xuanmiao_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Xuanmiao+Temple+Suzhou
 
-### Humble Administrator's Garden (拙政园) ✅
+### Humble Administrator's Garden (拙政园 · Zhuōzhèng Yuán) ✅
 Taman klasik terbesar di Suzhou (±5.2 hektar) dan situs UNESCO World Heritage, dibangun tahun 1509 oleh pejabat Dinasti Ming, Wang Xianchen, setelah pensiun kecewa dari birokrasi — namanya diambil dari puisi era Jin yang menyindir "mengurus kebun adalah politik orang bodoh". Desainnya berpusat pada kolam-kolam besar dengan paviliun, jembatan, dan koridor.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -337,7 +337,7 @@ Taman klasik terbesar di Suzhou (±5.2 hektar) dan situs UNESCO World Heritage, 
 - Foto/info: https://en.wikipedia.org/wiki/Humble_Administrator%27s_Garden
 - Video referensi: https://www.youtube.com/results?search_query=Humble+Administrator%27s+Garden+Suzhou
 
-### Pingjiang Road (平江路) ✅
+### Pingjiang Road (平江路 · Píngjiāng Lù) ✅
 Jalan kanal yang tata letaknya nyaris tidak berubah sejak peta kota era Dinasti Song (1229) — salah satu bukti tata kota kuno yang paling terjaga di China. Menyusuri kanal sepanjang ±1.6km dengan jembatan batu, rumah putih-abu tradisional, dan teahouse kecil.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -351,7 +351,7 @@ Jalan kanal yang tata letaknya nyaris tidak berubah sejak peta kota era Dinasti 
 - Foto/info: https://en.wikipedia.org/wiki/Pingjiang_Road
 - Video referensi: https://www.youtube.com/results?search_query=Pingjiang+Road+Suzhou+night
 
-### Huqiu Wetland Park (虎丘湿地公园) ⚠️ — Plan-B Hari 2
+### Huqiu Wetland Park (虎丘湿地公园 · Hǔqiū Shīdì Gōngyuán) ⚠️ — Plan-B Hari 2
 Taman lahan basah di sekitar kawasan Tiger Hill (Huqiu), dikembangkan sebagai ruang hijau publik gratis dengan jalur air & vegetasi alami, luas ±12 km² — kontras dengan taman klasik berbayar di sekitarnya. Rumah bagi 200+ spesies burung.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -369,7 +369,7 @@ Taman lahan basah di sekitar kawasan Tiger Hill (Huqiu), dikembangkan sebagai ru
 
 ## Hari 3 — Minggu, 12 Oktober
 
-### Wumen Bridge (吴门桥) ⚠️
+### Wumen Bridge (吴门桥 · Wúmén Qiáo) ⚠️
 Jembatan batu tertinggi di Suzhou (dibangun awal abad ke-11), berdiri di dekat Panmen Gate — salah satu peninggalan arsitektur kanal kuno Suzhou yang menghubungkan area gerbang kota dengan permukiman sekitarnya, bebas dikunjungi sebagai bagian dari jalan santai kawasan Panmen.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -383,7 +383,7 @@ Jembatan batu tertinggi di Suzhou (dibangun awal abad ke-11), berdiri di dekat P
 - Foto/info: https://www.google.com/search?q=Wumen+Bridge+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Wumen+Bridge+Suzhou
 
-### Panmen Scenic Spots (盘门景区) ⚠️
+### Panmen Scenic Spots (盘门景区 · Pánmén Jǐngqū) ⚠️
 Satu-satunya gerbang kota kuno di China yang menggabungkan gerbang air DAN gerbang darat dalam satu struktur — mencerminkan kota Suzhou yang sejak awal dibangun mengelilingi jaringan kanal. Sejarahnya bermula era Kerajaan Wu (abad ke-6 SM), dengan struktur yang berdiri sekarang direkonstruksi era Dinasti Yuan-Ming. Kompleksnya juga mencakup Ruiguang Pagoda dan Wumen Bridge.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -397,8 +397,8 @@ Satu-satunya gerbang kota kuno di China yang menggabungkan gerbang air DAN gerba
 - Foto/info: https://en.wikipedia.org/wiki/Suzhou_city_wall
 - Video referensi: https://www.youtube.com/results?search_query=Panmen+Gate+Suzhou
 
-### Hanshan Temple (寒山寺) ✅
-Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Maple Bridge" (枫桥夜泊) karya Zhang Ji, yang menggambarkan suara lonceng kuil ini terdengar hingga ke perahu di kanal — puisi itu sendiri jadi salah satu karya sastra China paling dikenal. Kuil aslinya dibangun era Dinasti Liang (abad ke-6), sudah beberapa kali hancur & dibangun ulang, terakhir era Qing.
+### Hanshan Temple (寒山寺 · Hánshān Sì) ✅
+Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Maple Bridge" (枫桥夜泊 · Fēngqiáo Yèbó) karya Zhang Ji, yang menggambarkan suara lonceng kuil ini terdengar hingga ke perahu di kanal — puisi itu sendiri jadi salah satu karya sastra China paling dikenal. Kuil aslinya dibangun era Dinasti Liang (abad ke-6), sudah beberapa kali hancur & dibangun ulang, terakhir era Qing.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
@@ -411,7 +411,7 @@ Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Mapl
 - Foto/info: https://en.wikipedia.org/wiki/Hanshan_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Hanshan+Temple+Suzhou
 
-### Fengqiao Scenic Area (枫桥景区) ⚠️
+### Fengqiao Scenic Area (枫桥景区 · Fēngqiáo Jǐngqū) ⚠️
 Kawasan Maple Bridge (Fengqiao) yang jadi latar puisi terkenal Zhang Ji di atas — bersebelahan langsung dengan Hanshan Temple. Area sekitar jembatan & kanal bisa dinikmati gratis sambil membayangkan suasana yang diabadikan dalam puisi 1.200 tahun lalu. ⚠️ Catatan: meski sering dikira satu tempat dengan Hanshan Temple, keduanya scenic spot terpisah dengan tiket masing-masing.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -425,10 +425,10 @@ Kawasan Maple Bridge (Fengqiao) yang jadi latar puisi terkenal Zhang Ji di atas 
 - Foto/info: https://en.wikipedia.org/wiki/Maple_Bridge
 - Video referensi: https://www.youtube.com/results?search_query=Fengqiao+Scenic+Area+Suzhou
 
-### Shantang Street (七里山塘, sering ditulis 山塘街) ✅
+### Shantang Street (七里山塘 · Qīlǐ Shāntáng) ✅
 Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair sekaligus gubernur Bai Juyi untuk menghubungkan kota dengan Tiger Hill sepanjang ±7 li (±3.6km). Sepanjang kanal berjejer rumah tradisional, jembatan batu era Ming-Qing, dan toko-toko kecil.
 
-✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap — nama resmi di ranking Amap adalah "七里山塘景区" (Qili Shantang Scenic Area), umum disebut pendek "山塘街" (Shantang Street).
+✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap — nama resmi di ranking Amap adalah "七里山塘景区" (Qīlǐ Shāntáng Jǐngqū, Qili Shantang Scenic Area), umum disebut pendek "山塘街" (Shāntáng Jiē, Shantang Street).
 
 **Akses:** Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan, satu jalur dengan Hanshan Temple.
 
@@ -439,7 +439,7 @@ Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair se
 - Foto/info: https://en.wikipedia.org/wiki/Shantang_Street
 - Video referensi: https://www.youtube.com/results?search_query=Shantang+Street+Suzhou
 
-### Xiyuan Temple (西园寺, kelenteng kucing) ✅ — Plan-B Hari 3
+### Xiyuan Temple (西园寺 · Xīyuán Sì, kelenteng kucing) ✅ — Plan-B Hari 3
 Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelenteng Buddha tahun 1635. Terkenal dengan kolam kura-kura besar dan Aula 500 Arhat berisi ratusan patung Buddha berlapis emas.
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
@@ -457,7 +457,7 @@ Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelen
 
 ## Hari 4 — Senin, 13 Oktober
 
-### The Oriental Gate / Gate of the Orient (东方之门) ⚠️
+### The Oriental Gate / Gate of the Orient (东方之门 · Dōngfāng Zhī Mén) ⚠️
 Gedung pencakar langit berbentuk gerbang raksasa (dijuluki warga lokal "celana panjang" karena bentuknya) yang jadi landmark arsitektur kontroversial-tapi-ikonik Suzhou modern, selesai dibangun 2015 di tepi Jinji Lake sebagai simbol gerbang masuk ke distrik bisnis baru.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -471,7 +471,7 @@ Gedung pencakar langit berbentuk gerbang raksasa (dijuluki warga lokal "celana p
 - Foto/info: https://en.wikipedia.org/wiki/Gate_of_the_Orient
 - Video referensi: https://www.youtube.com/results?search_query=Gate+of+the+Orient+Suzhou
 
-### Jinji Lake (金鸡湖) ⚠️
+### Jinji Lake (金鸡湖 · Jīnjī Hú) ⚠️
 Danau alami seluas ±8.9 km² yang jadi jantung Suzhou Industrial Park — kawasan kota baru modern hasil kerja sama China-Singapura sejak 1994. Promenadenya menampilkan taman modern, gedung pencakar langit, dan jembatan-jembatan kontemporer, representasi wajah Suzhou masa kini. Lakeside Avenue di sisi barat sepanjang ±2km jadi jalur jalan kaki utama.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -485,7 +485,7 @@ Danau alami seluas ±8.9 km² yang jadi jantung Suzhou Industrial Park — kawas
 - Foto/info: https://en.wikipedia.org/wiki/Jinji_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Jinji+Lake+Suzhou+promenade
 
-### Jinji Lake Music Fountain (金鸡湖音乐喷泉) ⚠️
+### Jinji Lake Music Fountain (金鸡湖音乐喷泉 · Jīnjī Hú Yīnyuè Pēnquán) ⚠️
 Salah satu air mancur musikal terbesar di Asia saat diresmikan, dengan pertunjukan cahaya & air yang disinkronkan musik setiap malam — jadi daya tarik gratis paling populer di kawasan Jinji Lake untuk warga lokal maupun turis.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -499,7 +499,7 @@ Salah satu air mancur musikal terbesar di Asia saat diresmikan, dengan pertunjuk
 - Foto/info: https://www.google.com/search?q=Jinji+Lake+Music+Fountain
 - Video referensi: https://www.youtube.com/results?search_query=Jinji+Lake+Music+Fountain+Suzhou
 
-### Suzhou Centre Plaza / Suzhou Center (苏州中心) ⚠️ — Plan-B Hari 4
+### Suzhou Centre Plaza / Suzhou Center (苏州中心 · Sūzhōu Zhōngxīn) ⚠️ — Plan-B Hari 4
 Mal besar di tepi Jinji Lake dengan atap gelombang khas ("cloud roof") yang jadi salah satu ikon arsitektur baru Suzhou, plus taman atap (rooftop garden) dengan pemandangan langsung ke Gate of the Orient.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -517,7 +517,7 @@ Mal besar di tepi Jinji Lake dengan atap gelombang khas ("cloud roof") yang jadi
 
 ## Hari 5 — Selasa, 14 Oktober
 
-### Suzhou Taihu Lake Wetland Park (苏州太湖湿地公园) ⚠️
+### Suzhou Taihu Lake Wetland Park (苏州太湖湿地公园 · Sūzhōu Tàihú Shīdì Gōngyuán) ⚠️
 Taman lahan basah di tepi Danau Taihu — danau terbesar ketiga di China, terkenal dengan batu-batu taihu (batu kapur berlubang khas) yang dulu banyak diambil untuk menghias taman klasik Suzhou. Jalur promenadenya datar dan luas, kontras menyegarkan dari padatnya kota tua.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Catatan tambahan: ada KEMUNGKINAN dua entitas berbeda dengan nama mirip di kawasan ini — "Suzhou Taihu Lake Wetland Park" (berbayar) vs "Taihu Hubin National Wetland Park"/wetland tepi danau lain (gratis) — cek nama persis di Amap/Trip.com sebelum berangkat supaya tidak salah lokasi.
@@ -531,7 +531,7 @@ Taman lahan basah di tepi Danau Taihu — danau terbesar ketiga di China, terken
 - Foto/info: https://en.wikipedia.org/wiki/Lake_Tai
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Taihu+Lake+Wetland+Park
 
-### Shoutao Lake Scenic Area (寿桃湖) ⚠️
+### Shoutao Lake Scenic Area (寿桃湖 · Shòutáo Hú) ⚠️
 Danau kecil (±400 mu/26.7 hektar, kedalaman maksimum 70m) hasil genangan air tanah alami sejak penambangan batu dilarang tahun 1999 di kawasan Wuzhong. Batu-batu di tengah danau menyerupai buah persik umur panjang (asal namanya), juga dijuluki "Guilin Mini"-nya Suzhou. Jadi spot foto yang relatif belum ramai turis.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -545,7 +545,7 @@ Danau kecil (±400 mu/26.7 hektar, kedalaman maksimum 70m) hasil genangan air ta
 - Foto/info: https://www.google.com/search?q=Shoutao+Lake+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Shoutao+Lake+Suzhou
 
-### Suzhou Wuzhong Taihu Tourist Zone (吴中太湖旅游度假区) ⚠️
+### Suzhou Wuzhong Taihu Tourist Zone (吴中太湖旅游度假区 · Wúzhōng Tàihú Lǚyóu Dùjiàqū) ⚠️
 Kawasan wisata resmi 5A di tepi Danau Taihu, distrik Wuzhong, seluas ±250 km², mencakup beberapa taman & area publik di sepanjang tepi danau (termasuk Taihu Park, Situ Temple, Lushan) — cocok untuk memperpanjang waktu santai setelah mengunjungi Taihu Lake Wetland Park, kalau jadwal tidak semepet versi Hari 5 di itinerary ini.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Kawasan ini luas dan mencakup beberapa sub-area dengan aturan tiket berbeda-beda (sebagian gratis, sebagian berbayar) — bagian yang dimaksud di itinerary ini adalah area publik/promenade gratis di tepinya, BUKAN atraksi berbayar spesifik di dalamnya.
@@ -559,7 +559,7 @@ Kawasan wisata resmi 5A di tepi Danau Taihu, distrik Wuzhong, seluas ±250 km²,
 - Foto/info: https://www.google.com/search?q=Wuzhong+Taihu+Tourist+Zone
 - Video referensi: https://www.youtube.com/results?search_query=Wuzhong+Taihu+Tourist+Zone
 
-### Dayangshan National Forest Park (大阳山国家森林公园) ⚠️ — Plan-B Hari 5
+### Dayangshan National Forest Park (大阳山国家森林公园 · Dàyángshān Guójiā Sēnlín Gōngyuán) ⚠️ — Plan-B Hari 5
 Taman hutan nasional di pinggiran barat kota tua Suzhou, terbagi 2 area utama: Wenshu Monastery (dibangun era Dinasti Jin Timur) dan Botanical Garden dengan koleksi tanaman langka (yew, huanghuali, podocarpus). Jalur trekking ringan & udara segar, alternatif nature-day selain Taihu Lake.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -575,7 +575,7 @@ Taman hutan nasional di pinggiran barat kota tua Suzhou, terbagi 2 area utama: W
 - Foto/info: https://www.google.com/search?q=Dayangshan+National+Forest+Park+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Dayangshan+National+Forest+Park+Suzhou
 
-### Tianpingshan Scenic Spot (天平山) ⚠️ — Plan-B Hari 5
+### Tianpingshan Scenic Spot (天平山 · Tiānpíng Shān) ⚠️ — Plan-B Hari 5
 Gunung kecil terkenal dengan pohon maple (paling indah saat musim gugur, sekitar akhir Oktober-awal Desember) dan mata air alami yang sudah jadi tempat rekreasi sejak Dinasti Song.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -611,7 +611,7 @@ Kawasan tepi danau di distrik Suzhou Bay (Wuzhong), pengembangan kota baru denga
 - Foto/info: https://www.google.com/search?q=Suzhou+Bay+Huangjin+Lake+Shore
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Bay+Huangjin+Lake+Shore
 
-### Suzhou Culture & Arts Centre (苏州文化艺术中心) ⚠️
+### Suzhou Culture & Arts Centre (苏州文化艺术中心 · Sūzhōu Wénhuà Yìshù Zhōngxīn) ⚠️
 Pusat seni & budaya modern Suzhou rancangan arsitek Prancis Paul Andreu, dibuka 2007, seluas ±150.000 m² di tepi timur Jinji Lake — berisi grand theater, concert hall, bioskop IMAX, sekolah seni, dan Suzhou Jinji Lake Art Museum di dalamnya.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -629,7 +629,7 @@ Pusat seni & budaya modern Suzhou rancangan arsitek Prancis Paul Andreu, dibuka 
 - Foto/info: https://www.google.com/search?q=Suzhou+Culture+%26+Arts+Centre
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Culture+and+Arts+Centre
 
-### Dongshahu Ecology Park (东沙湖生态园) ⚠️
+### Dongshahu Ecology Park (东沙湖生态园 · Dōngshāhú Shēngtài Yuán) ⚠️
 Taman ekologi terbuka terbesar di kawasan ini (±1,21 juta m², termasuk ±540.000 m² area air), tanpa pagar/tembok dengan banyak pintu masuk. Punya sistem 3 pulau (Cherry Blossom Island, Crabapple Island, Reed Island) memadukan bukit & air.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. ⚠️ Catatan: nama Inggris yang muncul di beberapa sumber sedikit berbeda-beda ("Dongshahu Ecological Park" vs "Shahu Ecological Park") — kemungkinan penamaan/terjemahan tidak konsisten antar platform, bukan berarti dua tempat berbeda, tapi tetap cek nama persis di Amap sebelum berangkat.
@@ -647,7 +647,7 @@ Taman ekologi terbuka terbesar di kawasan ini (±1,21 juta m², termasuk ±540.0
 - Foto/info: https://www.google.com/search?q=Dongshahu+Ecology+Park+Suzhou
 - Video referensi: https://www.youtube.com/results?search_query=Dongshahu+Ecology+Park+Suzhou
 
-### Zhouzhuang Water Town (周庄) ⚠️
+### Zhouzhuang Water Town (周庄 · Zhōuzhuāng) ⚠️
 Desa air kuno berusia hampir 1.000 tahun (era Dinasti Song), sering disebut "Kota Air No.1 China" — rumah-rumah tepi kanal termasuk Shen House & Zhang House yang jadi ikon utama, jembatan-jembatan batu era Ming-Qing. Kota air paling populer/komersial dibanding Tongli (lihat entri berikutnya).
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -663,14 +663,14 @@ Desa air kuno berusia hampir 1.000 tahun (era Dinasti Song), sering disebut "Kot
 - Foto/info: https://en.wikipedia.org/wiki/Zhouzhuang
 - Video referensi: https://www.youtube.com/results?search_query=Zhouzhuang+Water+Town
 
-### Tongli Water Town (同里) ⚠️
-Kota air dengan kanal & jalan lebih sempit dibanding Zhouzhuang, kesan lebih tenang & otentik (lebih banyak penduduk lokal tinggal di sana), terkenal dengan taman klasik Retreat & Reflection Garden (退思园).
+### Tongli Water Town (同里 · Tónglǐ) ⚠️
+Kota air dengan kanal & jalan lebih sempit dibanding Zhouzhuang, kesan lebih tenang & otentik (lebih banyak penduduk lokal tinggal di sana), terkenal dengan taman klasik Retreat & Reflection Garden (退思园 · Tuìsī Yuán).
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
 **Akses:** ±30-45 menit dari Suzhou — bus dari Suzhou (operasi 07:15–17:15, ±CNY 8/org), atau taksi/Didi.
 
-**Jam Operasional:** atraksi utama 07:30–17:30; Tuisi Garden (退思园) tambahan sesi malam 18:45–20:30. Jalan/kanal bisa diakses gratis sebelum 08:00 & setelah 17:15 (atraksi sudah tutup di jam tersebut).
+**Jam Operasional:** atraksi utama 07:30–17:30; Tuisi Garden (退思园 · Tuìsī Yuán) tambahan sesi malam 18:45–20:30. Jalan/kanal bisa diakses gratis sebelum 08:00 & setelah 17:15 (atraksi sudah tutup di jam tersebut).
 
 **Tiket:** CNY 100/org, berlaku 2 hari untuk 10 spot di dalamnya (±Rp265.000/org); tambahan CNY 50/org untuk night tour taman (±Rp132.500/org).
 
@@ -679,10 +679,10 @@ Kota air dengan kanal & jalan lebih sempit dibanding Zhouzhuang, kesan lebih ten
 - Foto/info: https://en.wikipedia.org/wiki/Tongli
 - Video referensi: https://www.youtube.com/results?search_query=Tongli+Water+Town
 
-### Suzhou Amusement Land (苏州乐园) ⚠️
+### Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán) ⚠️
 Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Children's World), wahana modern termasuk roller coaster gantung terbesar di China, serta beberapa instalasi bertema landmark dunia (mis. replika Coliseum Romawi, tanda mirip "HOLLYWOOD").
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. **⚠️ Koreksi dari draft sebelumnya:** nama "Window of the World" yang sebelumnya disandingkan dengan tempat ini sebenarnya taman berbeda yang berlokasi di **Shenzhen**, BUKAN bagian dari Suzhou Amusement Land — kemungkinan tercampur karena konsep temanya mirip (replika landmark dunia). Entri ini murni tentang Suzhou Amusement Land (苏州乐园).
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. **⚠️ Koreksi dari draft sebelumnya:** nama "Window of the World" yang sebelumnya disandingkan dengan tempat ini sebenarnya taman berbeda yang berlokasi di **Shenzhen**, BUKAN bagian dari Suzhou Amusement Land — kemungkinan tercampur karena konsep temanya mirip (replika landmark dunia). Entri ini murni tentang Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán).
 
 **Akses:** Stasiun Suzhou Amusement Park (苏州乐园, Line 1), jalan kaki ±5 menit.
 

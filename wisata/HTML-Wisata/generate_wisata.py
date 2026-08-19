@@ -577,6 +577,17 @@ def parse_lampiran_place(title_line, body_lines, group_key, is_cadangan, is_intr
     name_en = re.split(r"\s*\(", title, maxsplit=1)[0].strip()
     hanzi_m = re.search(r"\(([^()]*[一-鿿][^()]*)\)\s*$", title)
     name_hanzi = hanzi_m.group(1).strip() if hanzi_m else ""
+    if name_hanzi:
+        # The parenthesis may now be "汉字 · Pīnyīn" (hanzi + tone-marked
+        # pinyin sharing one paren, separated by a middle dot) instead of
+        # just "汉字" alone. The "\U6280 中文" copy button must still copy
+        # ONLY the hanzi — split on the middle-dot separator and keep just
+        # the segment(s) that actually contain CJK characters, dropping
+        # the pinyin. Robust to both "(汉字)" and "(汉字 · Pinyin)" shapes.
+        segs = re.split(r"\s*·\s*", name_hanzi)
+        cjk_segs = [s.strip() for s in segs if re.search(r"[一-鿿]", s)]
+        if cjk_segs:
+            name_hanzi = "".join(cjk_segs).strip()
 
     joined = "\n".join(body_lines)
     context = ""

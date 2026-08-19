@@ -185,7 +185,7 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 
 Supaya punya gambaran sebelum berkunjung: sedikit sejarah/cerita di balik setiap tempat yang disebut di dokumen ini — itinerary utama maupun cadangan (Plan-B/Plan C) — plus link untuk lihat foto & video referensi.
 
-## Wuxi (无锡) — Sebelum Berangkat
+## Wuxi (无锡 · Wúxī) — Sebelum Berangkat
 
 ### Cerita Kota Wuxi
 Wuxi pernah jadi ibu kota pertama Kerajaan Wu kuno, didirikan Taibo (paman Raja Wen dari Dinasti Zhou) di kawasan Meili sekitar abad ke-12 SM, bertahan ±600 tahun sebelum ibu kota dipindah ke Suzhou. Nama "Wuxi" (secara harfiah "Tanpa Timah") merujuk cadangan bijih timah di Gunung Xishan yang habis ditambang menjelang akhir Dinasti Han.
@@ -199,7 +199,7 @@ Musim gugur (Oktober) dianggap periode terbaik berkunjung ke Wuxi — sejuk & ke
 - Foto/info: https://en.climate-data.org/asia/china/jiangsu/wuxi-3323/
 
 ### Transportasi Masuk Kota
-Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场)** — trip ini masuk Wuxi via HSR dari Nanjing, bukan lewat bandara. Stasiun HSR utama: **Wuxi Railway Station (无锡站)** di pusat kota (yang dipakai itinerary ini) dan **Wuxi East Railway Station (无锡东站)** untuk koneksi lebih jauh ke arah Shanghai/Beijing. ⚠️ Nama standar resmi, belum di-screenshot-verifikasi langsung dari halaman Amap.
+Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场 · Sūnán Shuòfàng Guójì Jīchǎng)** — trip ini masuk Wuxi via HSR dari Nanjing, bukan lewat bandara. Stasiun HSR utama: **Wuxi Railway Station (无锡站 · Wúxī Zhàn)** di pusat kota (yang dipakai itinerary ini) dan **Wuxi East Railway Station (无锡东站 · Wúxī Dōng Zhàn)** untuk koneksi lebih jauh ke arah Shanghai/Beijing. ⚠️ Nama standar resmi, belum di-screenshot-verifikasi langsung dari halaman Amap.
 
 - Foto/info: https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport
 
@@ -207,12 +207,12 @@ Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场)
 Area **Taihu Square/Tanduqiao**, di jalur **Metro Line 1** — ±3,9km/12 menit dari Wuxi Railway Station (bukan jalan kaki, tapi 1 jalur tanpa transfer). Langsung di gerbang klaster Lihu/Taihu; ke Old City/Nanchan Temple & stasiun tinggal Line 1 lurus; ke Huishan tetap perlu transfer Line 4.
 
 ### Destinasi Terkenal Lain di Wuxi
-Di luar itinerary utama: **Lingshan Grand Buddha (灵山大佛)** — patung Buddha berdiri 88m, salah satu ikon wisata religi terbesar di China Timur. **Taihu Yuantouzhu (太湖鼋头渚)** — semenanjung paling ikonik untuk memandang Danau Taihu. **The Plum Garden/Meiyuan (梅园)** — terkenal saat ribuan pohon plum mekar di musim semi. Ketiganya ada di bagian Cadangan dengan alasan tidak dimasukkan.
+Di luar itinerary utama: **Lingshan Grand Buddha (灵山大佛 · Língshān Dàfó)** — patung Buddha berdiri 88m, salah satu ikon wisata religi terbesar di China Timur. **Taihu Yuantouzhu (太湖鼋头渚 · Tàihú Yuántóuzhǔ)** — semenanjung paling ikonik untuk memandang Danau Taihu. **The Plum Garden/Meiyuan (梅园 · Méiyuán)** — terkenal saat ribuan pohon plum mekar di musim semi. Ketiganya ada di bagian Cadangan dengan alasan tidak dimasukkan.
 
 - Video referensi: https://www.youtube.com/results?search_query=top+attractions+Wuxi+China
 
 ### Makanan Wajib Dikunjungi & Dicoba
-Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Wuxi Spare Ribs (无锡排骨)** — hidangan paling ikonik Wuxi, iga babi dimasak manis-gurih khas gaya Jiangnan, tapi cukup manis & berlemak. **Wuxi Xiaolongbao** — versi lokal pangsit kuah dengan isian sedikit lebih manis dibanding versi Shanghai. **Liangxi Crispy Eel** — hidangan belut goreng-kecap dingin dengan sejarah lebih dari 1.000 tahun, salah satu hidangan "hidangan dingin" (leng pan) klasik Jiangsu.
+Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). **Wuxi Spare Ribs (无锡排骨 · Wúxī Páigǔ)** — hidangan paling ikonik Wuxi, iga babi dimasak manis-gurih khas gaya Jiangnan, tapi cukup manis & berlemak. **Wuxi Xiaolongbao** — versi lokal pangsit kuah dengan isian sedikit lebih manis dibanding versi Shanghai. **Liangxi Crispy Eel** — hidangan belut goreng-kecap dingin dengan sejarah lebih dari 1.000 tahun, salah satu hidangan "hidangan dingin" (leng pan) klasik Jiangsu.
 
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+must+try+food
 
@@ -224,7 +224,7 @@ App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Te
 
 ## Hari 2 — Rabu, 7 Oktober
 
-### Lihu National Wetland Park (蠡湖国家湿地公园) ⚠️
+### Lihu National Wetland Park (蠡湖国家湿地公园 · Líhú Guójiā Shīdì Gōngyuán) ⚠️
 Lihu Lake (juga disebut Wuli Lake) adalah danau tepi kota di barat daya Wuxi, ±10km dari pusat kota, membentang ±6km dengan luas 8 km². Menurut legenda berusia lebih dari 2.500 tahun, pejabat tinggi Kerajaan Yue bernama Fan Li — setelah membantu Raja Goujian mengalahkan Kerajaan Wu — pensiun dari kehidupan politik dan menetap di tepi danau ini bersama Xi Shi, salah satu dari "Empat Kecantikan Kuno China". Li Lake National Wetland Park sendiri mencakup area seluas 1.126 hektar dengan 15 sub-taman gratis di bawahnya.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -238,10 +238,10 @@ Lihu Lake (juga disebut Wuli Lake) adalah danau tepi kota di barat daya Wuxi, ±
 - Foto/info: https://en.wikipedia.org/wiki/Lihu_Park
 - Video referensi: https://www.youtube.com/results?search_query=Lihu+National+Wetland+Park+Wuxi
 
-### Central Lihu Park (蠡湖中央公园) ⚠️
+### Central Lihu Park (蠡湖中央公园 · Líhú Zhōngyāng Gōngyuán) ⚠️
 Bagian taman pusat dari kompleks Lihu Lake yang sama, jadi ruang publik utama tempat warga lokal jalan santai, olahraga, dan menikmati pemandangan danau — berbagi sejarah & legenda Fan Li–Xi Shi yang sama dengan Lihu National Wetland Park di sebelahnya.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap — beberapa sumber menyebut nama ini kadang tertukar/tumpang tindih dengan "蠡湖公园" (Lihu Park biasa), cek ulang di Amap sebelum berangkat.
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap — beberapa sumber menyebut nama ini kadang tertukar/tumpang tindih dengan "蠡湖公园" (Líhú Gōngyuán, Lihu Park biasa), cek ulang di Amap sebelum berangkat.
 
 **Akses:** lanjutan jalan kaki dari Lihu National Wetland Park, searah tepi danau yang sama.
 
@@ -252,10 +252,10 @@ Bagian taman pusat dari kompleks Lihu Lake yang sama, jadi ruang publik utama te
 - Foto/info: https://www.trip.com/travel-guide/attraction/wuxi/lihu-central-park-91749/
 - Video referensi: https://www.youtube.com/results?search_query=Lihu+Central+Park+Wuxi
 
-### Lixi Park (蠡溪公园) ⚠️
+### Lixi Park (蠡溪公园 · Líxī Gōngyuán) ⚠️
 Taman tepi Lihu Lake di 151 Shuanghong Road, Distrik Binhu — sebelumnya dikenal sebagai "European City" karena gaya arsitekturnya, dilengkapi ferris wheel kecil dan area lakefront santai. Bagian dari rangkaian taman gratis di sepanjang tepi Lihu Lake yang sama.
 
-⚠️ Nama Hanzi belum terverifikasi kuat — beberapa sumber menyebutnya sebagai bagian dari "蠡湖公园" (Lihu Park), bukan taman dengan nama resmi terpisah. Cek ulang di Amap/Trip.com sebelum berangkat.
+⚠️ Nama Hanzi belum terverifikasi kuat — beberapa sumber menyebutnya sebagai bagian dari "蠡湖公园" (Líhú Gōngyuán, Lihu Park), bukan taman dengan nama resmi terpisah. Cek ulang di Amap/Trip.com sebelum berangkat.
 
 **Akses:** lanjutan jalan kaki dari Central Lihu Park, tetap di jalur tepi danau yang sama, ±151 Shuanghong Road.
 
@@ -266,7 +266,7 @@ Taman tepi Lihu Lake di 151 Shuanghong Road, Distrik Binhu — sebelumnya dikena
 - Foto/info: https://ct-by.com/lihu-bridge-park-wuxi-ticket-price-opening-hours-location-and-highlights/
 - Video referensi: https://www.youtube.com/results?search_query=Lixi+Park+Wuxi
 
-### Gonghu Bay Wetland Park (贡湖湾湿地公园) ⚠️
+### Gonghu Bay Wetland Park (贡湖湾湿地公园 · Gònghú Wān Shīdì Gōngyuán) ⚠️
 Terletak di selatan persimpangan Gonghu Avenue dan Hongzhou Road, Distrik Binhu — bagian dari kawasan lindung ekologi tepi utara Danau Taihu. Taman ini dibangun lewat proyek "mengembalikan lahan ke danau" (return polders to lake), mengubah bekas area tambak/pemukiman menjadi barrier ekologi wetland alami. Segmen paling scenic ada di ±4km antara Gonghuwan East Gate dan Yanhu Wetland Park.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -280,7 +280,7 @@ Terletak di selatan persimpangan Gonghu Avenue dan Hongzhou Road, Distrik Binhu 
 - Foto/info: https://www.google.com/search?q=Gonghu+Bay+Wetland+Park+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Gonghu+Bay+Wetland+Park+Wuxi
 
-### Taihu Lake Promenade (太湖广场滨湖步道) ⚠️
+### Taihu Lake Promenade (太湖广场滨湖步道 · Tàihú Guǎngchǎng Bīnhú Bùdào) ⚠️
 Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di China — jalur lakefront yang jadi acara jalan santai malam utama Hari 2, dengan lampu kota & suasana warga lokal olahraga malam di tepi danau.
 
 ⚠️ Bukan nama resmi tunggal di Amap — merujuk ke jalur promenade umum di sekitar Taihu Square/Taihu New Town, pakai nama jalan/kawasan sebagai gantinya kalau dicari di Amap.
@@ -294,7 +294,7 @@ Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di C
 - Foto/info: https://en.wikipedia.org/wiki/Lake_Tai
 - Video referensi: https://www.youtube.com/results?search_query=Taihu+Lake+Promenade+Wuxi
 
-### 🏷️ Wuxi Binhu The Mixc (无锡滨湖万象城) ⚠️ — Plan-B Hari 2
+### 🏷️ Wuxi Binhu The Mixc (无锡滨湖万象城 · Wúxī Bīnhú Wànxiàng Chéng) ⚠️ — Plan-B Hari 2
 Kompleks urban kelas atas di tepi timur Lihu Lake, 1688 Taihu West Avenue — berada persis di persimpangan kawasan Lihu New City & Taihu New City, dilengkapi rooftop garden & plaza outdoor yang terintegrasi dengan promenade tepi danau.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -312,7 +312,7 @@ Kompleks urban kelas atas di tepi timur Lihu Lake, 1688 Taihu West Avenue — be
 
 ## Hari 3 — Kamis, 8 Oktober
 
-### Wuxi Huishan Old Street (惠山老街) ⚠️
+### Wuxi Huishan Old Street (惠山老街 · Huìshān Lǎojiē) ⚠️
 Jalan pedestrian tua di kaki Gunung Hui, pintu masuk ke kawasan Huishan Ancient Town — dipenuhi kios jajanan lokal & toko kerajinan tradisional, jadi tempat terbaik merasakan suasana pagi kota lama Wuxi sebelum masuk ke kawasan kuil & aula leluhur.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -326,7 +326,7 @@ Jalan pedestrian tua di kaki Gunung Hui, pintu masuk ke kawasan Huishan Ancient 
 - Foto/info: https://www.google.com/search?q=Wuxi+Huishan+Old+Street
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+Huishan+Old+Street
 
-### Huishan Ancient Town Scenic Area (惠山古镇) ⚠️
+### Huishan Ancient Town Scenic Area (惠山古镇 · Huìshān Gǔzhèn) ⚠️
 Dijuluki "Museum Luar Ruangan Sejarah & Budaya Wuxi", kawasan di kaki Gunung Hui ini menyimpan **118 aula leluhur (ancestral hall)** dari era Dinasti Tang hingga masa Republik China, mewakili sekitar 80 marga keluarga berbeda — jumlah & keragamannya menjadikannya "Museum Aula Leluhur China" dan tujuan ziarah populer bagi wisatawan domestik. Sejak Dinasti Tang, kawasan ini sudah jadi tempat berkumpul sastrawan karena produksi teh upeti "Yangxian tea"; pada era Song, tradisi membangun aula leluhur untuk menghormati pendahulu mulai berkembang, mencapai puncaknya di era Ming-Qing.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -340,7 +340,7 @@ Dijuluki "Museum Luar Ruangan Sejarah & Budaya Wuxi", kawasan di kaki Gunung Hui
 - Foto/info: https://en.wuxi.gov.cn/2020-02/26/c_455876.htm
 - Video referensi: https://www.youtube.com/results?search_query=Huishan+Ancient+Town+Wuxi
 
-### Xihui Park Huishan (锡惠公园) ⚠️
+### Xihui Park Huishan (锡惠公园 · Xīhuì Gōngyuán) ⚠️
 Taman utama di kaki Gunung Hui yang menaungi beberapa situs terkenal, termasuk Huishan Spring — dikenal sebagai **"Mata Air Terbaik Kedua di Bawah Langit"** (Tianxia Dier Quan). Dibangun era Dinasti Tang (774-777), mata air ini diberi peringkat oleh "Dewa Teh" legendaris Lu Yu dalam kitab Cha Jing (Kitab Teh) — dari 20 kelas mata air di seluruh negeri, mata air ini diperingkat kedua terbaik. Sastrawan besar seperti Su Shi dan Bai Juyi pernah menulis puisi memujinya. Mata air terbagi jadi 3 kolam (atas, tengah, bawah), dengan kolam bawah digali sejak era Dinasti Song.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -354,7 +354,7 @@ Taman utama di kaki Gunung Hui yang menaungi beberapa situs terkenal, termasuk H
 - Foto/info: https://en.wikipedia.org/wiki/Xihui_Park
 - Video referensi: https://www.youtube.com/results?search_query=Xihui+Park+Wuxi
 
-### Jichang Garden (寄畅园) ⚠️
+### Jichang Garden (寄畅园 · Jìchàng Yuán) ⚠️
 Juga dikenal sebagai "Qin Garden", dibangun tahun 1520 — taman klasik bergaya vila Jiangnan satu-satunya peninggalan Dinasti Ming di Wuxi. Awalnya adalah kediaman para biksu yang berafiliasi dengan Huishan Temple. Desain tamannya begitu dikagumi hingga Kaisar Qianlong dari Dinasti Qing meniru sebagian elemennya untuk membangun bagian dari Summer Palace di Beijing.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -368,7 +368,7 @@ Juga dikenal sebagai "Qin Garden", dibangun tahun 1520 — taman klasik bergaya 
 - Foto/info: https://en.wikipedia.org/wiki/Jichang_Garden
 - Video referensi: https://www.youtube.com/results?search_query=Jichang+Garden+Wuxi
 
-### 🏷️ Huishan Temple (Cultural Relics Area) (惠山寺) ⚠️ — Plan-B Hari 3
+### 🏷️ Huishan Temple (Cultural Relics Area) (惠山寺 · Huìshān Sì) ⚠️ — Plan-B Hari 3
 Kuil dengan akar sejarah dari era Dinasti Selatan-Utara, awalnya bernama "Lishan Caotang" di bawah naungan Zhan Ting pada masa Dinasti Selatan — cikal bakal kawasan spiritual yang kelak berkembang jadi kompleks Xihui Park & Huishan Ancient Town yang lebih luas.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -384,7 +384,7 @@ Kuil dengan akar sejarah dari era Dinasti Selatan-Utara, awalnya bernama "Lishan
 - Foto/info: https://en.wikipedia.org/wiki/Huishan_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Huishan+Temple+Wuxi
 
-### Nanchang Street Pedestrian Street (南长街) ⚠️
+### Nanchang Street Pedestrian Street (南长街 · Nán Cháng Jiē) ⚠️
 Bagian dari Situs Warisan Dunia UNESCO Grand Canal, membentang 5,5km dari gerbang selatan kota lama Wuxi hingga Xinguang Road, dengan kawasan inti di sekitar kanal kuno. Di masa kejayaannya, jalan ini adalah jantung perdagangan kota lama Wuxi — dipenuhi pabrik penggilingan beras, pabrik sutra, dermaga perahu, teater, dan restoran. Dikunjungi malam hari di itinerary ini, menyambung dari sesi Qingming Bridge.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -398,7 +398,7 @@ Bagian dari Situs Warisan Dunia UNESCO Grand Canal, membentang 5,5km dari gerban
 - Foto/info: https://en.wikipedia.org/wiki/Grand_Canal_(China)
 - Video referensi: https://www.youtube.com/results?search_query=Nanchang+Street+Wuxi+night
 
-### Qingming Bridge Ancient Canal Scenic Spot (清名桥古运河景区) ⚠️
+### Qingming Bridge Ancient Canal Scenic Spot (清名桥古运河景区 · Qīngmíng Qiáo Gǔ Yùnhé Jǐngqū) ⚠️
 Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wuxi, awalnya bernama "Qingning", dibangun era Wanli (Dinasti Ming) dari sumbangan dua putra tokoh Qin Yao — namanya diambil dari gabungan nama keduanya. Direkonstruksi tahun 1666 (era Kangxi, Dinasti Qing) oleh bupati Wuxi Wu Xingzuo, dan mengalami beberapa kali perbaikan di era Qianlong & Tongzhi. Kawasan ini dan bangunan tepi sungainya berstatus cagar budaya tingkat provinsi — pemandangan malamnya dengan lampu kanal jadi salah satu ikon paling difoto di Wuxi. *(Dijadwalkan malam hari (18:00–20:00) di Hari 3 — versi lampu kanal menyala penuh, bukan Hari 4 yang terikat jadwal kereta 18:00.)*
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -414,12 +414,12 @@ Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wu
 
 ## Hari 4 — Jumat, 9 Oktober
 
-### Nanchan Temple (南禅寺) ⚠️
+### Nanchan Temple (南禅寺 · Nán Chán Sì) ⚠️
 Didirikan tahun 547 M pada masa pemerintahan Kaisar Wu dari Dinasti Liang (Dinasti Selatan), awalnya bernama Huguo Temple — kuil Buddha tertua yang masih berdiri di kawasan Jiangnan, dijuluki "yang pertama dari 480 kuil Dinasti Selatan". Direnovasi era Dinasti Song Utara (1023-1031) dan diberi nama resmi "Fushang Chan Temple", meski tetap populer disebut Nanchan Temple. Landmark utamanya, Pagoda Miaoguang (era Song Utara, tujuh lantai delapan sisi), termasuk salah satu dari "Delapan Pemandangan Wuxi".
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1, turun Stasiun Nanchan Temple (南禅寺站), keluar Exit 8, jalan kaki ±60m ke arah timur di Xiangyang Road.
+**Akses:** MRT Line 1, turun Stasiun Nanchan Temple (南禅寺站 · Nán Chán Sì Zhàn), keluar Exit 8, jalan kaki ±60m ke arah timur di Xiangyang Road.
 
 **Jam Operasional:** 07:00–16:45. Tidak ada hari libur rutin. Jam puncak: siang akhir pekan.
 
@@ -428,7 +428,7 @@ Didirikan tahun 547 M pada masa pemerintahan Kaisar Wu dari Dinasti Liang (Dinas
 - Foto/info: https://en.wikipedia.org/wiki/Nanchan_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Nanchan+Temple+Wuxi
 
-### Nanchan Temple Pedestrian Street (南禅寺步行街) ⚠️
+### Nanchan Temple Pedestrian Street (南禅寺步行街 · Nán Chán Sì Bùxíng Jiē) ⚠️
 Jalan pedestrian yang membentang dari gerbang selatan kota lama Wuxi, langsung terhubung dengan kompleks Nanchan Temple — bagian dari kawasan bersejarah Grand Canal yang sama dengan Qingming Bridge, meski di itinerary ini keduanya dikunjungi di hari berbeda (Qingming Bridge via akses langsung Stasiun Qingmingqiao di Hari 3 malam, bukan jalan kaki dari sini).
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -442,7 +442,7 @@ Jalan pedestrian yang membentang dari gerbang selatan kota lama Wuxi, langsung t
 - Foto/info: https://www.google.com/search?q=Nanchan+Temple+Pedestrian+Street+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Nanchan+Temple+Pedestrian+Street+Wuxi
 
-### 🏷️ Wuxi Museum (无锡博物院) ⚠️ — Plan-B Hari 4
+### 🏷️ Wuxi Museum (无锡博物院 · Wúxī Bówùyuàn) ⚠️ — Plan-B Hari 4
 Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga era China modern lewat empat lantai koleksi di sayap baratnya, dengan keterangan bahasa Inggris yang cukup lengkap.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -462,7 +462,7 @@ Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga 
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B kali ini — alasannya ditulis di masing-masing uraian.
 
-### Liyuan Garden (蠡园) ⚠️
+### Liyuan Garden (蠡园 · Lí Yuán) ⚠️
 Taman klasik tepi Li Lake (cabang utara Taihu Lake) di Distrik Binhu, dibangun awal abad ke-20 dengan gaya taman Jiangnan — terkenal dengan jembatan zigzag & paviliun tepi air, sering dipaketkan bersama Taihu Yuantouzhu.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -478,10 +478,10 @@ Taman klasik tepi Li Lake (cabang utara Taihu Lake) di Distrik Binhu, dibangun a
 - Foto/info: https://www.google.com/search?q=Liyuan+Garden+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Liyuan+Garden+Wuxi
 
-### Baojie Mountain Forest Park (宝界山森林公园) ⚠️
+### Baojie Mountain Forest Park (宝界山森林公园 · Bǎojiè Shān Sēnlín Gōngyuán) ⚠️
 Taman hutan pegunungan di pinggiran Wuxi dengan jalur hiking & udara segar.
 
-⚠️ Nama Hanzi & ejaan resmi belum terverifikasi kuat (kemungkinan "宝界山", bukan "保介") — cek ulang di Amap sebelum menjadikan referensi.
+⚠️ Nama Hanzi & ejaan resmi belum terverifikasi kuat (kemungkinan "宝界山" Bǎojiè Shān, bukan "保介") — cek ulang di Amap sebelum menjadikan referensi.
 
 **Akses:** ⚠️ belum ditemukan sumber resmi — kemungkinan area Binhu/Baojie di selatan kota, dekat Baojie Bridge. Cek Amap langsung sebelum berangkat.
 
@@ -494,7 +494,7 @@ Taman hutan pegunungan di pinggiran Wuxi dengan jalur hiking & udara segar.
 - Foto/info: https://www.google.com/search?q=Baojie+Mountain+Forest+Park+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Baojie+Mountain+Forest+Park+Wuxi
 
-### Xinzhou Ecological Garden (新洲生态园) ⚠️
+### Xinzhou Ecological Garden (新洲生态园 · Xīnzhōu Shēngtài Yuán) ⚠️
 Taman ekologi di pinggiran Wuxi dengan area hijau luas.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -510,7 +510,7 @@ Taman ekologi di pinggiran Wuxi dengan area hijau luas.
 - Foto/info: https://www.google.com/search?q=Xinzhou+Ecological+Garden+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Xinzhou+Ecological+Garden+Wuxi
 
-### Taihu Yuantouzhu Scenic Area (太湖鼋头渚) ✅
+### Taihu Yuantouzhu Scenic Area (太湖鼋头渚 · Tàihú Yuántóuzhǔ) ✅
 Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga & area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya.
 
 ✅ Nama Hanzi umum dipakai di sumber travel guide China, konsisten dengan penamaan resmi scenic area — tetap disarankan cek ulang halaman ranking Amap sebelum benar-benar diandalkan.
@@ -526,7 +526,7 @@ Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan ta
 - Foto/info: https://en.wikipedia.org/wiki/Yuantouzhu
 - Video referensi: https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi
 
-### Meili Ancient Town (梅里古镇) ⚠️
+### Meili Ancient Town (梅里古镇 · Méilǐ Gǔzhèn) ⚠️
 Kota kuno bersejarah di timur jauh Wuxi, terkait dengan asal-usul legenda Kerajaan Wu kuno.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -542,10 +542,10 @@ Kota kuno bersejarah di timur jauh Wuxi, terkait dengan asal-usul legenda Keraja
 - Foto/info: https://www.google.com/search?q=Meili+Ancient+Town+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Meili+Ancient+Town+Wuxi
 
-### Lingshan Buddhist Scenic Spot (Grand Buddha) (灵山胜境) ⚠️
+### Lingshan Buddhist Scenic Spot (Grand Buddha) (灵山胜境 · Língshān Shèngjìng) ⚠️
 Kompleks Buddha raksasa dengan patung Buddha berdiri setinggi 88m, salah satu ikon wisata religi terbesar di China Timur.
 
-⚠️ Nama Hanzi resmi scenic area umum disebut "灵山胜境" (nama patung sendiri "灵山大佛"), belum diverifikasi langsung dari halaman Amap.
+⚠️ Nama Hanzi resmi scenic area umum disebut "灵山胜境" (Língshān Shèngjìng; nama patung sendiri "灵山大佛" Língshān Dàfó), belum diverifikasi langsung dari halaman Amap.
 
 **Akses:** bus wisata dari pusat kota atau Didi/taksi (±1 jam, tidak ada MRT langsung ke kawasan Lingshan).
 
@@ -558,10 +558,10 @@ Kompleks Buddha raksasa dengan patung Buddha berdiri setinggi 88m, salah satu ik
 - Foto/info: https://en.wikipedia.org/wiki/Lingshan_Giant_Buddha
 - Video referensi: https://www.youtube.com/results?search_query=Lingshan+Grand+Buddha+Wuxi
 
-### Lingshan Town Nianhua Bay Smile Plaza (拈花湾) ⚠️
+### Lingshan Town Nianhua Bay Smile Plaza (拈花湾 · Niānhuā Wān) ⚠️
 Area plaza hiburan di dekat kawasan Lingshan, terkenal dengan instalasi seni "wajah tersenyum" raksasa.
 
-⚠️ Kemungkinan bagian dari kawasan "拈花湾" (Nianhua Bay) yang sama dengan entri "Nianhuawan Chanyi Town" di bawah — belum jelas apakah keduanya benar-benar tempat terpisah atau nama ganda untuk kawasan yang sama. Cek ulang di Amap sebelum dijadikan referensi, supaya tidak keliru anggap 2 destinasi padahal 1.
+⚠️ Kemungkinan bagian dari kawasan "拈花湾" (Niānhuā Wān, Nianhua Bay) yang sama dengan entri "Nianhuawan Chanyi Town" di bawah — belum jelas apakah keduanya benar-benar tempat terpisah atau nama ganda untuk kawasan yang sama. Cek ulang di Amap sebelum dijadikan referensi, supaya tidak keliru anggap 2 destinasi padahal 1.
 
 **Akses:** satu kawasan dengan Lingshan Buddhist Scenic Spot (lihat entri sebelumnya) — bus wisata/Didi dari pusat kota, ±1 jam.
 
@@ -574,10 +574,10 @@ Area plaza hiburan di dekat kawasan Lingshan, terkenal dengan instalasi seni "wa
 - Foto/info: https://www.google.com/search?q=Nianhua+Bay+Smile+Plaza+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Nianhua+Bay+Smile+Plaza+Wuxi
 
-### Nianhuawan Chanyi Town (拈花湾禅意小镇) ⚠️
+### Nianhuawan Chanyi Town (拈花湾禅意小镇 · Niānhuā Wān Chányì Xiǎozhèn) ⚠️
 Kawasan budaya Zen buatan di dekat Lingshan, dengan arsitektur bergaya kuil & area seni.
 
-⚠️ Lihat catatan di entri "Lingshan Town Nianhua Bay Smile Plaza" di atas — kemungkinan besar ini kawasan yang sama (拈花湾), bukan 2 tempat berbeda. Sebelum dijadikan rencana kunjungan terpisah, verifikasi dulu di Amap.
+⚠️ Lihat catatan di entri "Lingshan Town Nianhua Bay Smile Plaza" di atas — kemungkinan besar ini kawasan yang sama (拈花湾 · Niānhuā Wān), bukan 2 tempat berbeda. Sebelum dijadikan rencana kunjungan terpisah, verifikasi dulu di Amap.
 
 **Akses:** sama seperti Lingshan Town Nianhua Bay Smile Plaza (lihat entri di atas) — bus wisata/Didi dari pusat kota, ±1 jam.
 
@@ -590,7 +590,7 @@ Kawasan budaya Zen buatan di dekat Lingshan, dengan arsitektur bergaya kuil & ar
 - Foto/info: https://www.google.com/search?q=Nianhuawan+Chanyi+Town+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Nianhuawan+Chanyi+Town+Wuxi
 
-### Dangkou Ancient Town (荡口古镇) ⚠️
+### Dangkou Ancient Town (荡口古镇 · Dàngkǒu Gǔzhèn) ⚠️
 Kota air kuno kecil di pinggiran Wuxi dengan kanal & arsitektur tradisional.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -606,10 +606,10 @@ Kota air kuno kecil di pinggiran Wuxi dengan kanal & arsitektur tradisional.
 - Foto/info: https://www.google.com/search?q=Dangkou+Ancient+Town+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Dangkou+Ancient+Town+Wuxi
 
-### Three Kingdoms City (无锡三国水浒城) ⚠️
+### Three Kingdoms City (无锡三国水浒城 · Wúxī Sānguó Shuǐhǔ Chéng) ⚠️
 Taman tema/studio film bertema era Tiga Kerajaan China, lokasi syuting banyak drama kolosal China.
 
-⚠️ Nama resmi lengkap kemungkinan "三国水浒城" (gabungan Three Kingdoms & Water Margin City), belum diverifikasi langsung dari halaman Amap.
+⚠️ Nama resmi lengkap kemungkinan "三国水浒城" (Sānguó Shuǐhǔ Chéng, gabungan Three Kingdoms & Water Margin City), belum diverifikasi langsung dari halaman Amap.
 
 **Akses:** ⚠️ belum ditemukan sumber resmi — kemungkinan di kawasan Taihu (dekat Yuantouzhu), cek Amap sebelum berangkat.
 
@@ -638,7 +638,7 @@ Taman hiburan/theme park skala besar dengan wahana modern.
 - Foto/info: https://www.google.com/search?q=Wuxi+Rongchuang+Cultural+Tourism+City
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+Rongchuang+Cultural+Tourism+City
 
-### The Plum Garden (Meiyuan) (梅园) ⚠️
+### The Plum Garden (Meiyuan) (梅园 · Méiyuán) ⚠️
 Taman bersejarah terkenal dengan ribuan pohon plum yang mekar spektakuler saat musim semi (Februari–Maret).
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
