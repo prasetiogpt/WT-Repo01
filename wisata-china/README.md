@@ -1,15 +1,25 @@
-# Wisata China — mirror untuk revisi via HP
+# Wisata China — source of truth ada di Git
 
-Folder ini adalah **mirror/cadangan** untuk revisi itinerary trip China dari HP (tanpa laptop), lewat Claude Code.
+Folder ini adalah **source of truth (SOT)** untuk itinerary trip China: `.md` itinerary dan
+`Wisata.html` (+ generator-nya). Sudah dipindahkan dari laptop ke repo Git ini supaya tidak ada
+lagi kebingungan versi antara laptop dan HP.
 
-**Sumber utama tetap di Google Drive laptop:**
+**Google Drive laptop sekarang cuma mirror/working-copy lokal:**
 - `I:\My Drive\Travelling\China\Itinerary\*.md`
 - `I:\My Drive\Travelling\HTML Wisata\Wisata.html`, `generate_wisata.py`, `Update Wisata.bat`
 
-**Alur kerja:**
-- Di laptop: tetap edit `.md` di Drive seperti biasa, jalankan `Update Wisata.bat` untuk regenerate `Wisata.html`. Setelah itu, salin hasil terbaru ke folder ini dan `git push` (Claude bisa bantu langkah ini).
-- Dari HP (tanpa laptop): minta Claude Code revisi `.md` di folder `Itinerary/` di sini, jalankan `generate_wisata.py` langsung (setara isi `Update Wisata.bat`), commit+push ke GitHub.
-- **Begitu laptop nyala lagi:** jalankan `git pull` di folder Drive supaya perubahan dari HP masuk balik ke sumber utama — lihat memory `pending-git-setup-for-mobile-access` untuk detail skrip `.bat` auto-pull (belum dibuat, menyusul).
+**Alur kerja (Git = sumber kebenaran, selalu commit+push dari sini):**
+- Dari HP atau laptop lewat Claude Code: revisi `.md` di folder `Itinerary/` di repo ini,
+  jalankan `generate_wisata.py` untuk regenerate `Wisata.html`, lalu commit+push ke GitHub.
+  **Jangan edit langsung di Drive** — supaya tidak ada dua versi yang beda.
+- Di laptop (kalau perlu edit manual atau pakai `Update Wisata.bat`): jalankan `git pull` dulu
+  di folder repo, lalu jalankan `sync-from-git-to-drive.bat` untuk menyalin versi terbaru dari
+  Git ke folder Drive sebelum mulai kerja. Setelah selesai edit + regenerate di laptop, salin
+  hasilnya balik ke folder ini di repo dan `git push` — Drive tidak pernah jadi sumber yang
+  di-push duluan.
+- `sync-from-git-to-drive.bat` sudah otomatis `git pull` lalu copy `Itinerary/*.md` dan file
+  `HTML-Wisata/*` terbaru dari repo ke folder Drive — jalankan ini di laptop kapan pun sebelum
+  mulai kerja di sana, supaya Drive selalu selaras dengan Git.
 
 **Struktur:**
 ```

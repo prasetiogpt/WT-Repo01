@@ -4,6 +4,12 @@ Private repo, 3 Mandarin-learning apps: `html-mandarin-player/`, `mp3-generator/
 `anki-deck-builder/`. Full policy detail is in root `README.md` — this file is just the fast
 orientation so a new session doesn't have to explore first.
 
+Also contains `wisata-china/` — unrelated China-trip itinerary project (Markdown itineraries +
+`Wisata.html` generator). This repo IS the source of truth for it (code and data both) — see
+`wisata-china/README.md`. No account-level Skill exists for it yet; don't confuse it with the
+generic `wisata-itinerary-planner` skill, which is an unrelated itinerary-drafting assistant and
+has no knowledge of this folder's files or git workflow.
+
 ## Source of truth — different per thing
 
 | What | Primary | This repo's role |

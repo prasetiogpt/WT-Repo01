@@ -3,6 +3,12 @@
 Private repo for 3 interdependent Mandarin-learning apps built by/for prasetiogpt:
 `html-mandarin-player/`, `mp3-generator/`, `anki-deck-builder/`.
 
+Also holds `wisata-china/` — a separate, unrelated project (China trip itinerary + HTML
+generator) migrated here from the laptop so this repo is its full source of truth (code AND
+data). See `wisata-china/README.md` for its own workflow — it does NOT follow the
+Drive-is-primary / memory-mirror convention described below, which applies only to the 3
+Mandarin apps.
+
 ## What lives here vs. what lives on Google Drive
 
 **Primary working environment is Google Drive (`I:\My Drive\WS Fam\`), not this repo.**
