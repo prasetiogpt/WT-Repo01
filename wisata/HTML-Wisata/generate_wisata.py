@@ -792,12 +792,15 @@ def parse_destination(md_path):
         is_cadangan = heading.strip().lower() == "cadangan"
         is_intro = bool(re.search(r"sebelum\s+berangkat\s*$", heading, re.I))
         gm = re.match(r"^Hari\s+(\d+)", heading)
+        om = re.match(r"^Opsional\s+(\S+)", heading, re.I)
         if is_cadangan:
             group_key = "cadangan"
         elif is_intro:
             group_key = "intro"
         elif gm:
             group_key = f"h{gm.group(1)}"
+        elif om:
+            group_key = f"opsional{om.group(1).lower()}"
         else:
             print(f"    [!] Heading Lampiran tidak dikenali, dilewati: '{heading}'")
             continue
