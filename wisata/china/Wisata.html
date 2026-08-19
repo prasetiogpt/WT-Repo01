@@ -472,6 +472,149 @@ function hotelsLine(items, city){
 /* === DESTINATIONS:START === */
 const destinations = [
   {
+    id:`1nanjingc2`,
+    name:`1 Nanjing C2`,
+    dates:`11–12 Oktober · Kunjungan Kedua ke Nanjing (2 Hari)`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Minggu, 11 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+
+      ],
+      warn:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Minggu, 11 Oktober`, label:`Niushoushan → Laomendong → Massacre Memorial Hall → Mochou Lake Park`,
+        advisory:`<b>⚠️ Hari terpadat</b> — 4 destinasi termasuk Niushoushan (jauh, Didi ±40-45 menit) dan Massacre Memorial Hall (dipindah ke sini karena tutup Senin). Waktu di tiap tempat dipadatkan dari alokasi ideal — lihat Plan-B kalau terasa buru-buru.`,
+        items:[
+          [`09:00–09:45`,`Didi ke Niushoushan (West Gate)`,`±40-45 menit, 1 mobil untuk 3 orang`,``,`CNY 90`,`Rp238.500`],
+          [`09:45–11:30`,`<b>Niushoushan</b> (Usnisa Palace)`,`Masuk dari West Gate. Ikuti eskalator/lift semaksimal mungkin. Waktu dipadatkan (idealnya 3-3,5 jam) — fokus Usnisa Palace saja`,``,`CNY 435`,`Rp1.152.750`],
+          [`11:30–12:10`,`Didi dari Niushoushan ke Laomendong`,`±40 menit, tanpa balik hotel dulu`,``,`CNY 80`,`Rp212.000`],
+          [`12:10–13:20`,`<b>Laomendong Old Street</b> — jalan santai + makan siang jajanan khas Nanjing`,`Masuk dari pintu barat, ±500m dari Exit Stasiun Wudingmen`,``,``,``],
+          [`13:20`,`Makan siang: jajanan Laomendong`,`CNY 40/org`,``,`CNY 120`,`Rp318.000`],
+          [`13:20–13:45`,`Line 3 Wudingmen → Daxinggong (transfer) → Line 2 ke Yunjinlu`,`Transfer tanpa keluar stasiun`,``,`CNY 9`,`Rp23.850`],
+          [`13:45–15:15`,`<b>Nanjing Massacre Memorial Hall</b>`,`Keluar Exit 2 Yunjinlu, langsung Gate 1. Gratis, WAJIB reservasi online. Tempat reflektif`,``,``,``],
+          [`15:15–15:30`,`Line 2 Yunjinlu → Mochouhu (langsung, searah)`,``,``,`CNY 6`,`Rp15.900`],
+          [`15:30–17:15`,`<b>Mochou Lake Park</b>`,`Keluar Exit 1 Mochouhu, langsung di depan loket. Gratis, jalur datar, golden hour`,``,``,``],
+          [`17:15–17:45`,`Line 2 Mochouhu → Daxinggong (transfer) → Line 3 ke Fuqiao/hotel`,``,``,`CNY 9`,`Rp23.850`],
+          [`18:00`,`Makan malam dekat hotel`,`CNY 30/org`,``,`CNY 90`,`Rp238.500`],
+        ],
+        total:{cny:`CNY <b>839</b>`, idr:`<b>Rp2.223.350</b>`},
+        planb:`kalau jadwal terlalu padat — skip Mochou Lake Park (fleksibel, gratis, tanpa reservasi), langsung balik hotel dari Massacre Memorial Hall.`,
+      },
+      {
+        id:"h2", num:2, date:`Senin, 12 Oktober`, label:`Deji Plaza → Xuanwu Lake Park → HSR 17:00`,
+        advisory:`<b>Hari lebih ringan</b> — buffer besar sebelum HSR jam 17:00. Deji Plaza &amp; Xuanwu Lake Park sama-sama buka Senin, jadi aman ditukar dari 11 Okt.`,
+        items:[
+          [`09:00–09:20`,`Sarapan di hotel/sekitar`,`CNY 15/org`,``,`CNY 45`,`Rp119.250`],
+          [`09:20–09:45`,`Line 3 Fuqiao → Daxinggong (transfer) → Line 2 ke Xinjiekou`,``,``,`CNY 9`,`Rp23.850`],
+          [`09:45–11:00`,`<b>Deji Plaza</b> — jalan santai indoor`,`Exit 7 Xinjiekou, tersambung langsung ke lantai -1. Bukan sesi belanja. Snack CNY 15/org`,``,`CNY 45`,`Rp119.250`],
+          [`11:00–11:20`,`Line 2 Xinjiekou → Daxinggong (transfer) → Line 3 ke Jimingsi`,``,``,`CNY 9`,`Rp23.850`],
+          [`11:20–11:35`,`Jalan kaki ke Jiefang Gate (pintu masuk Xuanwu Lake)`,`±500m dari Exit 5 Jimingsi`,``,``,``],
+          [`11:35–13:30`,`<b>Xuanwu Lake Park</b> — jalan santai + makan siang`,`Gratis, jalur datar. Trolley CNY 30/org opsional`,``,``,``],
+          [`13:30`,`Makan siang di dalam/dekat taman`,`CNY 20/org`,``,`CNY 60`,`Rp159.000`],
+          [`13:30–13:45`,`Line 3 Jimingsi → Fuqiao/hotel (1 stasiun, langsung)`,``,``,`CNY 6`,`Rp15.900`],
+          [`13:45–14:15`,`Checkout hotel, ambil bagasi`,``,``,``,``],
+          [`14:15–15:00`,`Buffer/istirahat di hotel`,`Opsional`,``,``,``],
+          [`15:00–15:40`,`Didi ke Nanjing South Railway Station`,`Bawa koper, ±35-40 menit`,``,`CNY 50`,`Rp132.500`],
+          [`15:40–16:40`,`Tiba stasiun, antre keamanan/boarding`,`Buffer ±1j20m`,``,``,``],
+          [`<b>17:00</b>`,`<b>HSR berangkat dari Nanjing South</b>`,`Tujuan belum disebutkan`,``,``,``],
+        ],
+        total:{cny:`CNY <b>224</b>`, idr:`<b>Rp593.600</b>`},
+        planb:`kalau Deji Plaza kurang perlu — skip, langsung ke Xuanwu Lake Park lebih pagi.`,
+      },
+    ],
+
+    budget:{
+      note:`| Hari | CNY | IDR | |---|---|---| | Hari 1 (11 Okt) | 839 | Rp2.223.350 | | Hari 2 (12 Okt) | 224 | Rp593.600 | | <b>GRAND TOTAL</b> | <b>1.063</b> | <b>Rp2.816.950</b> | ### Breakdown per kategori`,
+      byDay:[
+        [`Hari 1 (11 Okt)`,`839`,`Rp2.223.350`],
+        [`Hari 2 (12 Okt)`,`224`,`Rp593.600`],
+      ],
+      byCategory:[
+        [`Tiket masuk (Niushoushan)`,`435`,`Rp1.152.750`],
+        [`Makan`,`360`,`Rp954.000`],
+        [`Transport lokal (Didi + MRT)`,`268`,`Rp710.200`],
+      ],
+      grand:[`GRAND TOTAL`,`1.063`,`Rp2.816.950`],
+      catTotal:[`TOTAL`,`1.063`,`Rp2.816.950`],
+      caveat:`tiket HSR pulang tidak dihitung di total ini.`,
+    },
+
+    notes:[
+      `<b>Konflik jadwal terpecahkan:</b> Massacre Memorial Hall dipindah ke 11 Okt (Minggu) karena 12 Okt (Senin) tutup rutin.`,
+      `<b>Reservasi wajib:</b> Massacre Memorial Hall butuh reservasi online H-1 s/d H-7 — booking sebelum 11 Oktober.`,
+      `<b>Hari 1 sangat padat</b> — mulai lebih pagi dari 08:30 (kalau memungkinkan) akan memberi kelonggaran signifikan.`,
+      `<b>Hari 2 sengaja longgar</b> — prioritas: jangan ketinggalan HSR jam 17:00.`,
+    ],
+
+    transportPulang:{
+      mode:"transit", kicker:`Transport Pulang`,
+      title:`Rute belum ditentukan &middot; Senin, 12 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+        [`Tanggal`,`Senin, 12 Oktober`],
+        [`Jam Berangkat`,`<b>17:00 tepat</b>`],
+        [`Stasiun`,`Nanjing South Railway Station — Line 3 langsung dari Fuqiao, atau Didi (disarankan karena bawa koper)`],
+        [`Beli tiket`,`App 12306 (China Railway) atau Trip.com`],
+        [`Tujuan`,`⚠️ Belum disebutkan`],
+      ],
+      warn:``
+    },
+
+    lampiran:[
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Niushoushan (牛首山文化旅游区) ⚠️ — masuk dari West Gate`,
+       nameEn:`Niushoushan`,
+       text:`Niushoushan ("Gunung Kepala Sapi") adalah kawasan budaya-religi Buddhis besar di pinggiran Nanjing, terkenal dengan Usnisa Palace (佛顶宫) — kompleks bawah tanah megah yang dibangun untuk menyimpan relik tulang tengkorak Buddha yang ditemukan di lokasi ini tahun 2008. <b>Akses:</b> TIDAK ada MRT langsung — bus 712/755/Y2 (±45-60 menit) atau Didi (disarankan). Eskalator &amp; lift tersedia di dalam Usnisa Palace. <b>Jam Operasional:</b> 08:30–17:30 setiap hari (masuk terakhir 16:30). Tidak ada hari libur rutin. Jam puncak: akhir pekan (11 Okt = Minggu). <b>Tiket:</b> CNY 145/org (±Rp384.250/org).`,
+       wiki:`https://sightdoing.net/usnisa-palace-nanjing/`,
+       yt:`https://www.youtube.com/results?search_query=Niushoushan+Nanjing+Usnisa+Palace`,
+       nearby:[`Usnisa Palace (佛顶宫) — tiket terusan`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Laomendong Old Street (老门东)`,
+       nameEn:`Laomendong Old Street`,
+       nameHanzi:`老门东`,
+       text:`Kawasan bersejarah era Ming-Qing, persis di dalam tembok kota, tepat di belakang Zhonghua Gate. Direstorasi sejak awal 2000an, jalan batu 400m ini jadi surga jajanan. <b>Akses:</b> Stasiun Wudingmen (Line 3) ±500m dari pintu barat. Dari Niushoushan, langsung Didi tanpa balik hotel. <b>Jam Operasional:</b> kawasan buka 24 jam (gratis), toko/kios ±09:00–21:30-22:00. Aula pameran tutup Senin. Jam puncak: malam &amp; akhir pekan. <b>Tiket:</b> Gratis masuk kawasan.`,
+       wiki:`https://hereisnanjing.com/en/attractions/laomendong-historic-district/`,
+       yt:`https://www.youtube.com/results?search_query=Laomendong+Old+Street+Nanjing`,
+       nearby:[`Yang chun mian (阳春面) — sup mie polos, aman untuk lambung`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Nanjing Massacre Memorial Hall (侵华日军南京大屠杀遇难同胞纪念馆)`,
+       nameEn:`Nanjing Massacre Memorial Hall`,
+       nameHanzi:`侵华日军南京大屠杀遇难同胞纪念馆`,
+       text:`Dibuka 15 Agustus 1985 di atas lokasi kuburan massal, mengenang lebih dari 300.000 warga sipil China yang terbunuh selama kekejaman tentara Jepang di Nanjing (1937-1938). Tempat reflektif, siapkan mental sebelum masuk. <b>Akses:</b> MRT Line 2, Stasiun Yunjinlu, Exit 2 — langsung Gate 1. <b>Jam Operasional:</b> 08:30–17:30 (masuk terakhir 16:30), 2 sesi (pagi 08:30–12:30, siang 12:30–16:30). <b>Tutup setiap Senin</b>, kecuali libur nasional — sebab jadwal ini dipindah ke 11 Okt. <b>Tiket:</b> Gratis, WAJIB reservasi online.`,
+       reserveInfo:`website resmi 19371213.com.cn atau WeChat official account. Booking H-1 s/d H-7, slot dibuka jam 08:00. 1 orang bisa mewakili grup (maks 5 orang, data paspor semua anggota). <b>Booking sesi siang (12:30-16:30) sesuai jadwal kunjungan 13:45.</b>`,
+       wiki:`https://en.wikipedia.org/wiki/Memorial_Hall_of_the_Victims_in_Nanjing_Massacre_by_Japanese_Invaders`,
+       yt:`https://www.youtube.com/results?search_query=Nanjing+Massacre+Memorial+Hall+documentary`,
+       nearby:[`Peace Park (和平公园)`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Mochou Lake Park (莫愁湖公园)`,
+       nameEn:`Mochou Lake Park`,
+       nameHanzi:`莫愁湖公园`,
+       text:`Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara. Dulunya bagian dari Sungai Yangtze, taman ini resmi dibuka tahun 1929. <b>Akses:</b> MRT Line 2/7, Stasiun Mochouhu, Exit 1. Dari Massacre Memorial Hall (Yunjinlu), Line 2 langsung, searah. <b>Jam Operasional:</b> September–Mei 07:00–21:00. Gratis, tidak perlu reservasi. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Mochou_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing`},
+      // --- h2 ---
+      {group:`h2`, tag:`main`, label:`Itinerary utama`, title:`Deji Plaza (德基广场)`,
+       nameEn:`Deji Plaza`,
+       nameHanzi:`德基广场`,
+       text:`Mal mewah di kawasan Xinjiekou, tercatat sebagai mal dengan penjualan tertinggi di China tahun 2024. Bukan sesi belanja — jalan-jalan santai indoor. <b>Akses:</b> MRT Line 1/2, Stasiun Xinjiekou, Exit 7 — tersambung langsung ke lantai -1. <b>Jam Operasional:</b> 10:00–22:00 setiap hari, tidak ada hari libur (termasuk Senin). <b>Tiket:</b> Gratis masuk.`,
+       wiki:`https://en.wikipedia.org/wiki/Deji_Plaza`,
+       yt:`https://www.youtube.com/results?search_query=Deji+Plaza+Nanjing`},
+      {group:`h2`, tag:`main`, label:`Itinerary utama`, title:`Xuanwu Lake Park (玄武湖景区)`,
+       nameEn:`Xuanwu Lake Park`,
+       nameHanzi:`玄武湖景区`,
+       text:`Menurut legenda, danau ini dibuat atas perintah Kaisar Sun Quan di abad ke-3. Baru pada 1911 diubah jadi taman publik. <b>Akses:</b> MRT Line 3/4, Stasiun Jimingsi, Exit 5, jalan kaki ±500m ke Jiefang Gate. Dari hotel (Fuqiao), 1 stasiun via Line 3 — dijadikan aktivitas terakhir supaya dekat checkout. <b>Jam Operasional:</b> September–Mei 07:00–21:00, gratis, tidak ada hari libur rutin. <b>Tiket:</b> Gratis; trolley listrik CNY 30/org opsional.`,
+       wiki:`https://en.wikipedia.org/wiki/Xuanwu_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Xuanwu+Lake+Nanjing`},
+    ],
+    lampiranGroups:[
+      {key:`h1`, heading:`Hari 1 — Minggu, 11 Oktober`},
+      {key:`h2`, heading:`Hari 2 — Senin, 12 Oktober`},
+    ],
+  },
+  {
     id:`nanjing`,
     name:`Nanjing`,
     dates:`3–6 Oktober · 3 Malam · Golden Week China`,
