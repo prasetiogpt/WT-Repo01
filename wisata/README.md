@@ -44,3 +44,12 @@ commit+push.
 
 Repo ini **private** — hindari commit data sangat sensitif (nomor paspor, dll) kalau ada di
 catatan itinerary.
+
+## Kalau Google Drive tidak bisa diakses (environment remote/cloud)
+
+`sync-from-git-to-drive.bat` cuma jalan di laptop (butuh mount Drive lokal) — di environment
+remote/cloud (mis. Claude Code on the web) Drive-nya memang tidak ter-mount, jadi skrip itu tidak
+bisa dijalankan. **Wajib** di kondisi ini, setelah commit+push seperti biasa: kirim file
+`Wisata.html` yang baru di-regenerate langsung ke pengguna via tool pengiriman file (mis.
+`SendUserFile`), supaya pengguna tetap bisa lihat/pakai hasilnya tanpa perlu buka Drive dulu.
+Jangan cuma bilang "tidak bisa sync ke Drive" tanpa memberi filenya.
