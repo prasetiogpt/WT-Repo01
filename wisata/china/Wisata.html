@@ -472,6 +472,109 @@ function hotelsLine(items, city){
 /* === DESTINATIONS:START === */
 const destinations = [
   {
+    id:`1nanjingc1`,
+    name:`1 Nanjing C1`,
+    dates:`11 Oktober · Revisi Custom (1 Hari, jam 09:00–18:00)`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Minggu, 11 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+
+      ],
+      warn:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Minggu, 11 Oktober`, label:`Niushoushan → Laomendong → Deji Plaza → Mochou Lake Park`,
+        advisory:`<b>⚠️ Hari padat</b> — Niushoushan (jauh, Didi ±45 menit sekali jalan) mendominasi pagi. Waktu di tiap tempat dipadatkan dari alokasi ideal supaya 4 destinasi muat dalam jendela 09:00–18:00 — lihat Plan-B kalau terasa buru-buru.`,
+        items:[
+          [`09:00–09:45`,`Didi ke Niushoushan (West Gate)`,`±45 menit, 1 mobil untuk 3 orang`,``,`CNY 90`,`Rp238.500`],
+          [`09:45–12:00`,`<b>Niushoushan</b> (Usnisa Palace)`,`Masuk dari West Gate. Ikuti eskalator/lift semaksimal mungkin. Waktu dipadatkan (idealnya 2,5-3 jam) — fokus Usnisa Palace saja`,``,`CNY 435`,`Rp1.152.750`],
+          [`12:00–12:40`,`Didi dari Niushoushan ke Laomendong`,`±40 menit, tanpa balik hotel dulu`,``,`CNY 80`,`Rp212.000`],
+          [`12:40–14:00`,`<b>Laomendong Old Street</b> — jalan santai + makan siang jajanan khas Nanjing`,`Masuk dari pintu barat, ±500m dari Exit Stasiun Wudingmen`,``,``,``],
+          [`14:00`,`Makan siang: jajanan Laomendong`,`CNY 40/org`,``,`CNY 120`,`Rp318.000`],
+          [`14:00–14:25`,`Line 3 Wudingmen → Daxinggong (transfer) → Line 2 ke Xinjiekou`,`Transfer tanpa keluar stasiun`,``,`CNY 9`,`Rp23.850`],
+          [`14:25–16:00`,`<b>Deji Plaza</b> — jalan santai indoor`,`Exit 7 Xinjiekou, tersambung langsung ke lantai -1. Bukan sesi belanja — cuma berteduh dari panas siang. Snack CNY 15/org`,``,`CNY 45`,`Rp119.250`],
+          [`16:00–16:15`,`Line 2 dari Xinjiekou ke Mochouhu (langsung, dekat)`,``,``,`CNY 6`,`Rp15.900`],
+          [`16:15–17:30`,`<b>Mochou Lake Park</b>`,`Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar, lebih sejuk sore hari`,``,``,``],
+          [`17:30–18:00`,`Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuqiao/hotel`,``,``,`CNY 9`,`Rp23.850`],
+        ],
+        total:{cny:`CNY <b>794</b>`, idr:`<b>Rp2.104.100</b>`},
+        planb:`kalau jadwal terlalu padat/Niushoushan molor — skip Mochou Lake Park (fleksibel, gratis, tanpa reservasi, jalur datar), langsung balik hotel dari Deji Plaza. Kalau masih ada sisa waktu/energi di sore hari, Mochou Lake Park bisa dipersingkat jadi ±30-45 menit saja (cukup untuk jalan santai tepi danau) tanpa mengorbankan destinasi lain.`,
+      },
+    ],
+
+    budget:{
+      note:`| Hari | CNY | IDR | |---|---|---| | Hari 1 (11 Okt) | 794 | Rp2.104.100 | | <b>GRAND TOTAL</b> | <b>794</b> | <b>Rp2.104.100</b> | ### Breakdown per kategori`,
+      byDay:[
+        [`Hari 1 (11 Okt)`,`794`,`Rp2.104.100`],
+      ],
+      byCategory:[
+        [`Tiket masuk (Niushoushan)`,`435`,`Rp1.152.750`],
+        [`Makan (Laomendong + snack Deji Plaza)`,`165`,`Rp437.250`],
+        [`Transport lokal (Didi + MRT)`,`194`,`Rp514.100`],
+      ],
+      grand:[`GRAND TOTAL`,`794`,`Rp2.104.100`],
+      catTotal:[`TOTAL`,`794`,`Rp2.104.100`],
+      caveat:`belum termasuk makan malam (di luar jendela 09:00-18:00) dan item opsional (mobil wisata Niushoushan CNY 10/org, trolley/aktivitas tambahan di dalam Deji Plaza).`,
+    },
+
+    notes:[
+      `<b>Fisik/lutut:</b> Niushoushan punya eskalator (turun ke level bawah tanah) &amp; lift (di dalam pagoda) di Usnisa Palace — aman untuk lutut, tapi tetap ada beberapa anak tangga di sela ruangan, ikuti jalur eskalator/lift semaksimal mungkin. 3 destinasi lain (Laomendong, Deji Plaza, Mochou Lake Park) semua jalur datar.`,
+      `<b>Makanan:</b> semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan.`,
+      `<b>Transportasi:</b> Didi untuk Niushoushan (tidak ada MRT langsung) dan lompatan Niushoushan→Laomendong; MRT (Line 2/3, transfer di Daxinggong) untuk sisanya.`,
+      `<b>Tempat berbayar:</b> Niushoushan adalah satu-satunya pengeluaran besar (CNY 145/org) — kalau budget jadi prioritas, ini kandidat pertama untuk dipertimbangkan ulang (lihat Plan-B).`,
+      `<b>Cuaca (awal Oktober, ⚠️ rata-rata historis bukan forecast real-time):</b> siang ±24°C, malam ±14-16°C, cenderung kering — cocok untuk jalan kaki seharian, tetap bawa payung lipat kalau-kalau.`,
+      `<b>Keramaian:</b> 11 Oktober adalah hari Minggu biasa (BUKAN Golden Week) — tetap datang tepat jam buka Niushoushan (08:00-08:30 kalau bisa lebih pagi dari 09:00) untuk menghindari antrean akhir pekan.`,
+    ],
+
+    lampiran:[
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Niushoushan (牛首山文化旅游区) ⚠️ — masuk dari West Gate`,
+       nameEn:`Niushoushan`,
+       text:`Niushoushan ("Gunung Kepala Sapi") adalah kawasan budaya-religi Buddhis besar di pinggiran Nanjing, terkenal dengan Usnisa Palace (佛顶宫) — kompleks bawah tanah megah yang dibangun untuk menyimpan relik tulang tengkorak Buddha yang ditemukan di lokasi ini tahun 2008. Dua puncak kembar gunung ini disebut menyerupai sepasang tanduk sapi, asal-usul namanya. <b>Akses:</b> TIDAK ada MRT langsung — bus 712/755/Y2 (±45-60 menit) atau Didi (disarankan). Eskalator &amp; lift tersedia di dalam Usnisa Palace — gunakan semaksimal mungkin untuk yang punya keterbatasan lutut. <b>Jam Operasional:</b> 08:30–17:30 setiap hari (masuk terakhir 16:30). Tidak ada hari libur rutin. Jam puncak: akhir pekan (11 Okt = Minggu biasa, bukan Golden Week) — datang pagi tetap disarankan. <b>Tiket:</b> CNY 145/org (±Rp384.250/org).`,
+       wiki:`https://sightdoing.net/usnisa-palace-nanjing/`,
+       yt:`https://www.youtube.com/results?search_query=Niushoushan+Nanjing+Usnisa+Palace`,
+       nearby:[`Usnisa Palace (佛顶宫) — tiket terusan`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Laomendong Old Street (老门东)`,
+       nameEn:`Laomendong Old Street`,
+       nameHanzi:`老门东`,
+       text:`Kawasan bersejarah era Ming-Qing yang jadi kawasan hunian &amp; perdagangan ramai sejak dulu, persis di dalam tembok kota, tepat di belakang Zhonghua Gate. Direstorasi ulang sejak awal 2000an dengan tetap mempertahankan tata letak jalan &amp; arsitektur kayu tradisional aslinya. Jalan batu sepanjang 400m ini jadi surga jajanan, dengan kios makanan legendaris berdampingan dengan kafe kekinian. <b>Akses:</b> Stasiun Wudingmen (Line 3) ±500m dari pintu barat. Dari Niushoushan, langsung Didi tanpa balik hotel. <b>Jam Operasional:</b> kawasan jalan buka 24 jam (gratis masuk), toko/kios umumnya ±09:00–21:30-22:00. Aula pameran di dalam kawasan tutup setiap Senin. Jam puncak: malam hari &amp; akhir pekan. <b>Tiket:</b> Gratis masuk kawasan, cuma bayar jajanan/toko yang dikunjungi.`,
+       wiki:`https://hereisnanjing.com/en/attractions/laomendong-historic-district/`,
+       yt:`https://www.youtube.com/results?search_query=Laomendong+Old+Street+Nanjing`,
+       nearby:[`Yang chun mian (阳春面) — sup mie polos, aman untuk lambung`,`Jiming Soup Steamed Buns (jiming tangbao)`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Deji Plaza (德基广场)`,
+       nameEn:`Deji Plaza`,
+       nameHanzi:`德基广场`,
+       text:`Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total luas 313.000 m². Tahun 2024 tercatat sebagai mal dengan penjualan tertinggi di China (24,5 miliar yuan). Bukan sesi belanja di itinerary ini — cukup jalan-jalan santai indoor untuk berteduh dari panas siang. <b>Akses:</b> MRT Line 1/2, Stasiun Xinjiekou, Exit 7 — tersambung langsung ke lantai -1, tidak perlu keluar ke jalan. Dari Laomendong (Wudingmen), Line 3 ke Daxinggong lalu transfer Line 2, tanpa keluar stasiun. <b>Jam Operasional:</b> 10:00–22:00 setiap hari, tidak ada hari libur. Jam puncak: akhir pekan lebih ramai dari hari kerja. <b>Tiket:</b> Gratis masuk (mal).`,
+       wiki:`https://en.wikipedia.org/wiki/Deji_Plaza`,
+       yt:`https://www.youtube.com/results?search_query=Deji+Plaza+Nanjing`,
+       nearby:[`Food court lantai bawah (banyak pilihan cepat)`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Mochou Lake Park (莫愁湖公园)`,
+       nameEn:`Mochou Lake Park`,
+       nameHanzi:`莫愁湖公园`,
+       text:`Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (386-589 M) yang konon "berubah menjadi danau" saking rindunya menunggu suami yang direkrut jadi tentara dan tak pernah kembali. Dulunya bagian dari Sungai Yangtze sebelum aliran sungai bergeser, taman ini resmi dibuka tahun 1929. <b>Akses:</b> MRT Line 2/7, Stasiun Mochouhu, Exit 1 — langsung di depan loket taman. Dari Deji Plaza (Xinjiekou), Line 2 langsung ±15 menit, tanpa transfer. <b>Jam Operasional:</b> September–Mei 07:00–21:00 (Juni-Agustus 06:30-21:30). Gratis, tidak perlu reservasi, tidak ada hari libur rutin. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Mochou_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing`,
+       nearby:[`Shengqi Building/rock garden di dalam taman`]},
+      // --- cadangan ---
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Dragon Roaming Amusement Park (南京龙出没乐园)`,
+       nameEn:`Dragon Roaming Amusement Park`,
+       nameHanzi:`南京龙出没乐园`,
+       context:`Kenapa tidak dimasukkan: searah/berdekatan dengan klaster manapun di revisi ini — Desa Sheh (Kecamatan Dongshan) ada di sisi berlawanan Jiangning dari Niushoushan, dan sama sekali tidak searah dari klaster pusat kota (Laomendong/Deji Plaza/Mochou Lake Park). Menambahkannya butuh Didi detour terpisah (kemungkinan ±45-60 menit sekali jalan, belum terverifikasi presisi — cek Amap langsung), yang mendorong total waktu jauh melebihi jendela 09:00-18:00 kalau digabung dengan Niushoushan yang sudah makan ±4 jam. Kontennya juga taman bermain anak generik, kurang senada dengan fokus budaya/alam itinerary ini dibanding Niushoushan yang sudah jadi destinasi "besar" hari ini. Cocok jadi hari dedicated tersendiri (mis. digabung dengan destinasi lain di Kecamatan Dongshan) kalau memang ingin dikunjungi.`,
+       text:`Taman bermain anak seluas ±280 mu (±18,7 hektar) di Desa Sheh (佘村) — dijuluki "Desa Bergaya Kuno Jinling Pertama" karena kompleks bangunan kunonya dari akhir Ming/awal Qing. Bertema "elemen naga", berisi &gt;20 wahana non-motor: kereta mini, gokart anak-orangtua, taman bintang mini, trampolin, seluncuran warna-warni, dan perahu wisata danau. Cocok untuk keluarga dengan anak kecil, dikelilingi pemandangan gunung &amp; danau (Danau Shuanglong). <b>Akses:</b> Alamat: 100m selatan persimpangan Jl. Shangsheh &amp; Jl. Lijia, Desa Sheh, Kecamatan Dongshan, Distrik Jiangning. TIDAK ada MRT langsung — perlu Didi/bus, dan Desa Sheh sendiri ±13km dari pusat kota kecamatan Dongshan (bukan dari Niushoushan). Kenapa tidak dimasukkan: lihat blockquote riwayat revisi di atas — beda arah total dari Niushoushan maupun klaster pusat kota, akan jadi Didi detour besar ketiga dalam sehari. <b>Jam Operasional:</b> Senin–Jumat 09:00–17:00 (masuk terakhir 16:00); Sabtu–Minggu 08:30–17:00 (masuk terakhir 16:00). <b>Tiket:</b> ±CNY 59,9/dewasa (±Rp158.750), ±CNY 49,9/anak (±Rp132.250), gratis untuk anak ≤120cm. ⚠️ Harga bisa berubah, cek ulang sebelum berangkat.`,
+       wiki:`https://gs.ctrip.com/html5/you/sight/nanjing9/5713162.html`,
+       yt:`https://www.youtube.com/results?search_query=南京龙出没乐园`},
+    ],
+    lampiranGroups:[
+      {key:`h1`, heading:`Hari 1 — Minggu, 11 Oktober`},
+      {key:`cadangan`, heading:`Cadangan`},
+    ],
+  },
+  {
     id:`1nanjingc2`,
     name:`1 Nanjing C2`,
     dates:`11–12 Oktober · Kunjungan Kedua ke Nanjing (2 Hari)`,
