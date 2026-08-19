@@ -1,8 +1,9 @@
 # Wisata China — source of truth ada di Git
 
-Folder ini adalah **source of truth (SOT)** untuk itinerary trip China: `.md` itinerary dan
-`Wisata.html` (+ generator-nya). Sudah dipindahkan dari laptop ke repo Git ini supaya tidak ada
-lagi kebingungan versi antara laptop dan HP.
+Ini adalah subfolder khusus trip **China** di bawah `wisata/` (lihat `../README.md` untuk
+konvensi umum lintas negara). Folder ini adalah **source of truth (SOT)** untuk itinerary trip
+China: `.md` itinerary dan `Wisata.html` (+ generator-nya). Sudah dipindahkan dari laptop ke repo
+Git ini supaya tidak ada lagi kebingungan versi antara laptop dan HP.
 
 **Google Drive laptop sekarang cuma mirror/working-copy lokal:**
 - `I:\My Drive\Travelling\China\Itinerary\*.md`
@@ -23,7 +24,7 @@ lagi kebingungan versi antara laptop dan HP.
 
 **Struktur:**
 ```
-wisata-china/
+wisata/china/
   Itinerary/
     1 Nanjing.md
     2 Wuxi Itinerary.md
@@ -32,6 +33,8 @@ wisata-china/
     Wisata.html
     generate_wisata.py
     Update Wisata.bat
+  sync-from-git-to-drive.bat
+  README.md   (file ini)
 ```
 
 Repo ini **private** — hindari commit data sangat sensitif (nomor paspor, dll) kalau ada di catatan itinerary.

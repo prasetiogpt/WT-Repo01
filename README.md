@@ -3,9 +3,10 @@
 Private repo for 3 interdependent Mandarin-learning apps built by/for prasetiogpt:
 `html-mandarin-player/`, `mp3-generator/`, `anki-deck-builder/`.
 
-Also holds `wisata-china/` — a separate, unrelated project (China trip itinerary + HTML
-generator) migrated here from the laptop so this repo is its full source of truth (code AND
-data). See `wisata-china/README.md` for its own workflow — it does NOT follow the
+Also holds `wisata/` — a separate, unrelated umbrella folder for personal trip itineraries
+(one subfolder per trip/country, e.g. `wisata/china/`), migrated here from the laptop so this
+repo is the full source of truth (code AND data) for them. See `wisata/README.md` for the
+general convention and each subfolder's own README for its workflow — this does NOT follow the
 Drive-is-primary / memory-mirror convention described below, which applies only to the 3
 Mandarin apps.
 
