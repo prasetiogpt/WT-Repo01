@@ -117,7 +117,7 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 4 — Jumat, 9 Oktober (Klaster Taihu Yuantouzhu & Liyuan Garden — hari dedicated, jauh dari klaster utama)
 
-**Rute:** Klaster ini (Yuantouzhu & Liyuan Garden) tidak ada MRT langsung dan berjarak cukup jauh dari hotel — makanya dijadikan 1 hari dedicated (bukan digabung ke hari lain yang beda arah), sesuai prinsip itinerary ini. Golden Week sudah usai (9 Okt), jadi area populer ini diperkirakan lebih tenang dibanding kalau dikunjungi 6–7 Okt.
+**Rute:** Klaster ini (Yuantouzhu, Liyuan Garden, & Taihu Xiandao) tidak ada MRT langsung dan berjarak cukup jauh dari hotel — makanya dijadikan 1 hari dedicated (bukan digabung ke hari lain yang beda arah), sesuai prinsip itinerary ini. Tiga destinasi berbeda hari ini: taman klasik (Liyuan), semenanjung tepi danau (Yuantouzhu), dan pulau via perahu (Taihu Xiandao) — bukan 1 lokasi yang sama sepanjang hari. Golden Week sudah usai (9 Okt), jadi area populer ini diperkirakan lebih tenang dibanding kalau dikunjungi 6–7 Okt.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -125,17 +125,20 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | 08:30–09:00 | Didi dari hotel (Taihu Square) ke **Liyuan Garden** (±20-25 menit) | Tidak ada MRT langsung ke area ini | 40 | Rp106.000 |
 | 09:00–10:30 | **Liyuan Garden** — taman klasik tepi Li Lake, jembatan zigzag & paviliun tepi air, jalur datar | CNY 45/org | 90 | Rp238.500 |
 | 10:30–10:45 | Didi singkat ke **Taihu Yuantouzhu Scenic Area** (±10-15 menit, searah) | — | 20 | Rp53.000 |
-| 10:45–12:30 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | CNY 100/org — lihat alasan "worth it" di bawah | 200 | Rp530.000 |
-| 12:30–13:30 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
-| 13:30–17:00 | Lanjut jalan santai kawasan Yuantouzhu (dermaga, taman bunga, area promenade) | Termasuk tiket di atas | — | — |
-| 17:00–18:00 | Makan malam di area Yuantouzhu/lakefront | ±CNY 25/org | 50 | Rp132.500 |
-| 18:00–19:00 | Jalan santai malam lanjutan di promenade Yuantouzhu | Gratis, lampu kawasan mulai menyala | — | — |
-| 19:00–19:40 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
-| **TOTAL HARI 4** | | | **524** | **Rp1.388.600** |
+| 10:45–12:00 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | Tiket terusan CNY 105/org (termasuk perahu & Taihu Xiandao) — lihat alasan "worth it" di bawah | 210 | Rp556.500 |
+| 12:00–13:00 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
+| 13:00–13:20 | Naik perahu dari dermaga Yuantouzhu ke **Taihu Xiandao** (±15 menit) | Termasuk tiket terusan di atas, jadwal perahu terakhir ±16:50 | — | — |
+| 13:20–15:00 | **Taihu Xiandao** (Pulau Sanshan) — kuil & paviliun di pulau tengah danau | Jalur area selatan/dermaga datar; naik ke puncak Lingxiao Palace opsional (menanjak) — lihat catatan fisik | — | — |
+| 15:00–15:20 | Perahu balik ke Yuantouzhu | Termasuk tiket terusan di atas | — | — |
+| 15:20–16:30 | Lanjut jalan santai promenade Yuantouzhu daratan | Termasuk tiket di atas | — | — |
+| 16:30–17:30 | Makan malam di area Yuantouzhu/lakefront | ±CNY 25/org | 50 | Rp132.500 |
+| 17:30–18:30 | Jalan santai malam lanjutan di promenade Yuantouzhu | Gratis, lampu kawasan mulai menyala | — | — |
+| 18:30–19:10 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
+| **TOTAL HARI 4** | | | **534** | **Rp1.415.100** |
 
-**Kenapa Taihu Yuantouzhu direkomendasikan meski berbayar (CNY 100/org):** salah satu spot paling ikonik untuk memandang Danau Taihu, dengan taman bunga & promenade tepi danau yang luas — berbeda dari pemandangan Lihu/Taihu di Hari 2 (yang gratis tapi lebih kecil skalanya). Ada hari tambahan di trip ini, jadi cukup waktu untuk dedicated tanpa mengorbankan hari lain.
+**Kenapa Taihu Yuantouzhu + Taihu Xiandao direkomendasikan meski berbayar (tiket terusan CNY 105/org):** Yuantouzhu salah satu spot paling ikonik untuk memandang Danau Taihu, dengan taman bunga & promenade tepi danau yang luas — berbeda dari pemandangan Lihu/Taihu di Hari 2 (yang gratis tapi lebih kecil skalanya). Taihu Xiandao menambah variasi hari ini — pulau kuil di tengah danau, dicapai naik perahu (bukan cuma jalan kaki lebih jauh di lokasi yang sama). Ada hari tambahan di trip ini, jadi cukup waktu untuk dedicated tanpa mengorbankan hari lain.
 
-**Catatan fisik:** semua jalur di Liyuan Garden & Yuantouzhu datar (taman & promenade), aman untuk lutut — hanya perjalanan Didi yang agak jauh (bukan jalan kaki).
+**Catatan fisik:** jalur di Liyuan Garden & Yuantouzhu datar (taman & promenade), aman untuk lutut. Di Taihu Xiandao, area selatan/dermaga datar — tapi **puncak Lingxiao Palace butuh menanjak**, akses lift/eskalator belum terverifikasi, jadi opsional saja: kalau lutut tidak nyaman, cukup jelajah area bawah/dermaga & lewati "会仙桥" (jembatan kayu gantung), tidak perlu naik ke puncak.
 
 **Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip seluruh hari ke Yuantouzhu/Liyuan (mahal & jauh), ganti dengan hari santai di sekitar hotel (kawasan Old Canal/Nanchan Temple, sudah dekat) — jalan santai ringan atau istirahat penuh.
 
@@ -172,9 +175,9 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 | Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
 | Hari 2 (7 Okt) | 180 | 248 | Rp657.200 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
-| Hari 4 (9 Okt) | 524 | 524 | Rp1.388.600 |
+| Hari 4 (9 Okt) | 534 | 534 | Rp1.415.100 |
 | Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **GRAND TOTAL** | **1.138** | **1.296** | **Rp3.434.400** |
+| **GRAND TOTAL** | **1.148** | **1.306** | **Rp3.460.900** |
 
 *Skenario hemat = tanpa Jichang Garden (Hari 3) & tanpa perjalanan sepeda ke Gonghu Bay (Hari 2). Skenario lengkap = termasuk keduanya. Hari 4 & 5 tidak punya varian hemat terpisah (lihat catatan opsional skip Yuantouzhu di Hari 4 kalau ingin hemat lebih jauh).*
 
@@ -182,10 +185,10 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 400 | Rp1.060.000 |
+| Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu+Xiandao) | 410 | Rp1.086.500 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
 | Transport lokal (metro, sepeda, Didi) | 330 | Rp874.500 |
-| **TOTAL** | **1.296** | **Rp3.434.400** |
+| **TOTAL** | **1.306** | **Rp3.460.900** |
 
 ---
 
@@ -472,10 +475,26 @@ Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan ta
 
 **Jam Operasional:** ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan & musim bunga.
 
-**Tiket:** ±CNY 100/org (naik ±CNY 150 saat musim bunga sakura Maret-April, tidak relevan untuk kunjungan Oktober ini).
+**Tiket:** Tiket terusan (termasuk Taihu Xiandao + perahu pulang-pergi) CNY 105/org (naik saat musim bunga sakura Maret-April, tidak relevan untuk kunjungan Oktober ini).
 
 - Foto/info: https://en.wikipedia.org/wiki/Yuantouzhu
 - Video referensi: https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi
+
+### Taihu Xiandao (太湖仙岛 · Tàihú Xiāndǎo) ⚠️
+Juga disebut Pulau Sanshan, pulau di tengah Danau Taihu yang dicapai naik perahu ±15 menit dari dermaga Yuantouzhu — dipenuhi kuil & paviliun bertema Taoisme, dengan "会仙桥" (jembatan kayu gantung) menghubungkan area utara-selatan pulau. Titik tertinggi pulau adalah Istana Lingxiao (凌霄宫) di puncak bukit.
+
+⚠️ Nama Hanzi umum dipakai di sumber travel guide China, belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** naik perahu dari dermaga Taihu Yuantouzhu (±15 menit), tiket & perahu sudah termasuk dalam tiket terusan Yuantouzhu — tidak perlu beli terpisah untuk pengunjung dewasa tiket penuh.
+
+**Jam Operasional:** perahu beroperasi ±08:20–16:50 (jadwal terakhir naik pulau, cek langsung di dermaga karena bisa berubah musiman) — jangan sampai tiba di dermaga setelah jadwal terakhir. Area pulau ±07:00–17:30, mengikuti jam Yuantouzhu.
+
+**Tiket:** Termasuk dalam tiket terusan Yuantouzhu CNY 105/org.
+
+**Catatan fisik:** area selatan/dermaga datar. Puncak Istana Lingxiao butuh menanjak — akses lift/eskalator belum terverifikasi, jadi opsional; kalau lutut tidak nyaman, cukup jelajah area bawah & jembatan gantung saja.
+
+- Foto/info: https://www.google.com/search?q=Taihu+Xiandao+Wuxi
+- Video referensi: https://www.youtube.com/results?search_query=Taihu+Xiandao+Wuxi
 
 ## Hari 5 — Sabtu, 10 Oktober
 
