@@ -127,18 +127,17 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | 10:30–10:45 | Didi singkat ke **Taihu Yuantouzhu Scenic Area** (±10-15 menit, searah) | — | 20 | Rp53.000 |
 | 10:45–12:30 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | CNY 100/org — lihat alasan "worth it" di bawah | 200 | Rp530.000 |
 | 12:30–13:30 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
-| 13:30–15:30 | Lanjut jalan santai kawasan Yuantouzhu (dermaga, taman bunga, area promenade) | Termasuk tiket di atas | — | — |
-| 15:30–16:00 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
-| 16:00–17:00 | Istirahat di hotel | — | — | — |
-| 17:00–18:00 | Makan malam sekitar hotel | ±CNY 25/org | 50 | Rp132.500 |
-| 18:00–19:00 | Jalan santai ringan malam di Taihu Lake Promenade (opsional, dekat hotel) | Gratis | — | — |
+| 13:30–17:00 | Lanjut jalan santai kawasan Yuantouzhu (dermaga, taman bunga, area promenade) | Termasuk tiket di atas | — | — |
+| 17:00–18:00 | Makan malam di area Yuantouzhu/lakefront | ±CNY 25/org | 50 | Rp132.500 |
+| 18:00–19:00 | Jalan santai malam lanjutan di promenade Yuantouzhu | Gratis, lampu kawasan mulai menyala | — | — |
+| 19:00–19:40 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
 | **TOTAL HARI 4** | | | **524** | **Rp1.388.600** |
 
 **Kenapa Taihu Yuantouzhu direkomendasikan meski berbayar (CNY 100/org):** salah satu spot paling ikonik untuk memandang Danau Taihu, dengan taman bunga & promenade tepi danau yang luas — berbeda dari pemandangan Lihu/Taihu di Hari 2 (yang gratis tapi lebih kecil skalanya). Ada hari tambahan di trip ini, jadi cukup waktu untuk dedicated tanpa mengorbankan hari lain.
 
 **Catatan fisik:** semua jalur di Liyuan Garden & Yuantouzhu datar (taman & promenade), aman untuk lutut — hanya perjalanan Didi yang agak jauh (bukan jalan kaki).
 
-**Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip Yuantouzhu (mahal & jauh), ganti dengan jalan santai lebih lama di **Taihu Lake Promenade** dekat hotel atau **Wuxi Binhu The Mixc** (sama seperti Plan-B Hari 2, area rooftop/plaza gratis).
+**Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip seluruh hari ke Yuantouzhu/Liyuan (mahal & jauh), ganti dengan hari santai di sekitar hotel (kawasan Old Canal/Nanchan Temple, sudah dekat) — jalan santai ringan atau istirahat penuh.
 
 ---
 
