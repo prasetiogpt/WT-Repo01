@@ -1,32 +1,27 @@
 # Itinerary Perjalanan Wuxi
-6 – 9 Oktober · 3 Malam · Setelah Nanjing, sebelum Suzhou
+6 – 10 Oktober · 4 Malam · Direncanakan independen (tidak terikat jadwal kota lain)
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Wuxi Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) draf awal 3 malam dengan 11 lokasi utama di klaster Lihu/Taihu & Huishan; (2-6) Hanzi, badge verifikasi, `**Akses:**`/`**Jam Operasional:**`/`**Tiket:**` dilengkapi di semua 28 entri Lampiran, blok "Sebelum Berangkat" & "Informasi Transportasi Pulang" ditambahkan; (7) HSR dikunci **18:00 tepat** di kedua ujung (Nanjing→Wuxi Hari 1, Wuxi→Suzhou Hari 4) sesuai instruksi Anda; (8) **koreksi lokasi hotel** — bukan dekat Wuxi Railway Station, tapi dekat **Taihu Square/Tanduqiao (Metro Line 1)**, ±3,9km/12 menit dari stasiun; (9) **Qingming Bridge & Nanchang Street versi MALAM (gelap total) dipindah ke Hari 3 malam** (menyambung dari Huishan, bukan revisit tempat yang sama) — Hari 4 disederhanakan jadi Nanchan Temple saja + checkout, tanpa perlu kejar cahaya senja sebelum kereta 18:00; Hari 2 & 3 diperpanjang sampai ±21:00 dengan acara jalan malam; (10) **verifikasi urutan stasiun Metro Line 1/4 via Wikipedia** menemukan: ada stasiun **Qingmingqiao** persis 1 halte dari hotel (Taihu Square) — Hari 3 malam disederhanakan jadi metro langsung ke Qingmingqiao (bukan jalan kaki dari Nanchan Temple); Hari 4 **tidak perlu titip koper lagi** (hotel→Nanchan Temple→Wuxi Railway Station searah utara tanpa backtrack, koper dibawa langsung); transfer Huishan dikoreksi ke **Liutan saja** (bukan "Liutan atau Civic Center" — Civic Center ternyata jauh lebih jauh dari hotel).
+> ⚠️ Riwayat revisi: (1) draf awal 3 malam dengan 11 lokasi utama di klaster Lihu/Taihu & Huishan; (2-6) Hanzi, badge verifikasi, `**Akses:**`/`**Jam Operasional:**`/`**Tiket:**` dilengkapi di semua 28 entri Lampiran, blok "Sebelum Berangkat" & "Informasi Transportasi Pulang" ditambahkan; (7) HSR dikunci **18:00 tepat** di kedua ujung (Nanjing→Wuxi Hari 1, Wuxi→Suzhou Hari 4) sesuai instruksi saat itu; (8) **koreksi lokasi hotel** — bukan dekat Wuxi Railway Station, tapi dekat **Taihu Square/Tanduqiao (Metro Line 1)**, ±3,9km/12 menit dari stasiun; (9) **Qingming Bridge & Nanchang Street versi MALAM (gelap total) dipindah ke Hari 3 malam** (menyambung dari Huishan, bukan revisit tempat yang sama) — Hari 4 (lama) disederhanakan jadi Nanchan Temple saja + checkout, tanpa perlu kejar cahaya senja sebelum kereta; Hari 2 & 3 diperpanjang sampai ±21:00 dengan acara jalan malam; (10) **verifikasi urutan stasiun Metro Line 1/4 via Wikipedia** menemukan: ada stasiun **Qingmingqiao** persis 1 halte dari hotel (Taihu Square) — Hari 3 malam disederhanakan jadi metro langsung ke Qingmingqiao (bukan jalan kaki dari Nanchan Temple); Hari 4 (lama) **tidak perlu titip koper lagi** (hotel→Nanchan Temple→Wuxi Railway Station searah utara tanpa backtrack, koper dibawa langsung); transfer Huishan dikoreksi ke **Liutan saja** (bukan "Liutan atau Civic Center" — Civic Center ternyata jauh lebih jauh dari hotel); (11) **diperpanjang jadi 4 malam/5 hari (6–10 Okt)** sesuai instruksi terbaru — kedatangan Wuxi dikunci **18:00, Selasa 6 Okt**, kepulangan (HSR ke Suzhou) dikunci **15:00, Sabtu 10 Okt**. Ditambahkan **Hari 4 baru** (klaster **Taihu Yuantouzhu + Liyuan Garden**, dijadikan 1 hari dedicated karena jauh dari klaster utama & tidak ada MRT langsung — sebelumnya masuk Cadangan, sekarang dipindah jadi itinerary utama karena ada slot hari tambahan). Hari lama "Nanchan Temple + kepulangan" bergeser jadi **Hari 5**, jadwal dipadatkan menyesuaikan kepulangan lebih awal (15:00, bukan 18:00 seperti versi lama) — sesi opsional Wuxi Museum di jendela sore dihapus karena waktu tidak cukup lagi. Referensi keterkaitan jadwal ke Nanjing/Suzhou dihapus — **kota sekarang direncanakan independen**, penyambungan antar kota diatur terpisah oleh Anda.
 
-> **⚠️ Urutan trip:** Nanjing → Wuxi (file ini) → Suzhou. `Suzhou Itinerary.md` masih perlu digeser tanggalnya (±10 Okt) — belum dilakukan, pekerjaan lanjutan.
+> **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai; Lihu/Taihu (area luas, lebih tahan ramai) di 7 Okt; Taihu Yuantouzhu (destinasi populer lain) di 9 Okt, juga sudah lewat Golden Week.
 
-> **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai; Lihu/Taihu (area luas, lebih tahan ramai) di 7 Okt.
-
-> **HSR dikunci 18:00 tepat** di kedua ujung sesuai instruksi Anda. Konsekuensi: Hari 1 kedatangan malam (tiba ±18:45–19:30), Hari 4 harus checkout & selesai sightseeing sebelum jam ini. **Qingming Bridge/Nanchang Street versi malam gelap total sudah diakomodasi di Hari 3 malam** (bukan Hari 4) — jadi tidak kena batasan jam kereta.
+> **Jadwal kedatangan & kepulangan dikunci sesuai instruksi Anda:** tiba di Wuxi **18:00 tepat, Selasa 6 Oktober**; berangkat (HSR ke Suzhou) **15:00 tepat, Sabtu 10 Oktober**. Konsekuensi: Hari 1 kedatangan malam (hanya check-in + makan malam ringan, bukan hari penuh), Hari 5 harus checkout & selesai sightseeing sebelum jam 15:00 (jendela pagi dipadatkan, tanpa waktu buffer luang seperti versi jadwal lama). **Qingming Bridge/Nanchang Street versi malam gelap total tetap di Hari 3 malam** (bukan Hari 5) — jadi tidak kena batasan jam kereta kepulangan.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
-| Rute | Nanjing → Wuxi via HSR (kereta cepat) |
-| Tanggal & Jam Berangkat | Selasa, 6 Oktober, **18:00 tepat** |
-| Tanggal & Jam Pulang (lanjut ke Suzhou) | Jumat, 9 Oktober, **18:00 tepat** |
-| Stasiun tujuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
-| Durasi HSR | Nanjing → Wuxi: **39–92 menit**, tercepat 44 menit (G459, ±300km/jam). Ada ±170 kereta G/D per hari — jadwal jam 18:00 dipilih sesuai instruksi Anda, cek nomor kereta persis di 12306/Trip.com H-7 |
-| Estimasi biaya HSR | ±CNY 55–65/org kelas 2 (kisaran resmi CNY 34–103 tergantung kereta) |
+| Kedatangan | Selasa, 6 Oktober, **18:00 tepat** — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
+| Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
+| Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
 
-**Kenapa jadwal Hari 1 dimulai malam:** HSR dikunci 18:00 tepat, tiba Wuxi ±18:45–19:30 — Hari 1 disusun sebagai malam kedatangan santai saja. *(Referensi: [[itinerary-continuity]].)*
+**Kenapa jadwal Hari 1 dimulai malam:** kedatangan di Wuxi dikunci **18:00 tepat** sesuai rencana Anda — Hari 1 disusun sebagai malam kedatangan santai saja, bukan hari penuh.
 
-**Hotel:** area **Taihu Square/Tanduqiao** (Metro Line 1), ±3,9km/12 menit dari Wuxi Railway Station — bukan jalan kaki, tapi masih 1 jalur Line 1 tanpa transfer. Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia): **Tanduqiao/Taihu Square → Qingmingqiao (1 halte, Qingming Bridge!) → ... → Nanchan Temple → ... → Wuxi Railway Station**, semua searah utara tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 khusus di **Liutan** (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan).
+**Hotel:** area **Taihu Square/Tanduqiao** (Metro Line 1), ±3,9km/12 menit dari Wuxi Railway Station — bukan jalan kaki, tapi masih 1 jalur Line 1 tanpa transfer. Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia): **Tanduqiao/Taihu Square → Qingmingqiao (1 halte, Qingming Bridge!) → ... → Nanchan Temple → ... → Wuxi Railway Station**, semua searah utara tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 khusus di **Liutan** (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan). Ke **Taihu Yuantouzhu/Liyuan Garden (Hari 4)** tidak ada MRT langsung — pakai Didi/taksi dari hotel.
 
-**Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang** (rombongan yang lanjut dari Nanjing). Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
+**Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
 ---
 
@@ -40,19 +35,19 @@
 
 ---
 
-## Hari 1 — Selasa, 6 Oktober (Kedatangan Sore/Malam — masih Golden Week, sengaja dibuat ringan)
+## Hari 1 — Selasa, 6 Oktober (Kedatangan Malam — masih Golden Week, sengaja dibuat ringan)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| ±16:00–17:30 | Checkout Nanjing, Didi ke stasiun *(lanjutan Nanjing Hari 4)* — buffer untuk boarding jam 18:00 | Sudah dihitung di budget Nanjing | — | — |
-| 18:00 | HSR Nanjing → Wuxi Railway Station | ±45–90 menit tergantung kereta | 130 | Rp344.500 |
-| ±18:45–19:30 | Tiba Wuxi Railway Station → Didi ke hotel (area Taihu Square, ±12 menit) | — | 20 | Rp53.000 |
-| 19:30–20:00 | Check-in, taruh barang, istirahat | — | — | — |
-| 20:00–21:00 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, area ikonik diperkirakan sangat padat. Makan ±CNY 25/org | 50 | Rp132.500 |
-| 21:00 | Kembali ke hotel, istirahat | — | — | — |
-| **TOTAL HARI 1** | | | **200** | **Rp530.000** |
+| 18:00 | Tiba di Wuxi (Wuxi Railway Station) | Moda & asal kedatangan menyesuaikan rencana Anda | — | — |
+| 18:00–18:20 | Didi dari Wuxi Railway Station ke hotel (area Taihu Square, ±12 menit) | — | 20 | Rp53.000 |
+| 18:20–18:45 | Check-in, taruh barang, istirahat | — | — | — |
+| 18:45–19:45 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, area ikonik diperkirakan sangat padat. Makan ±CNY 25/org | 50 | Rp132.500 |
+| 19:45–20:30 | Jalan santai ringan dekat hotel (opsional) | Gratis | — | — |
+| 20:30 | Kembali ke hotel, istirahat | — | — | — |
+| **TOTAL HARI 1** | | | **70** | **Rp185.500** |
 
-**Plan-B hari ini:** kalau kereta terlambat/tiba lebih malam — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
+**Plan-B hari ini:** kalau kedatangan terlambat/lebih malam dari 18:00 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
 
 ---
 
@@ -108,63 +103,89 @@
 
 ---
 
-## Hari 4 — Jumat, 9 Oktober (Nanchan Temple, Checkout Pagi, HSR ke Suzhou 18:00 Tepat)
+## Hari 4 — Jumat, 9 Oktober (Klaster Taihu Yuantouzhu & Liyuan Garden — hari dedicated, jauh dari klaster utama)
 
-**Rute:** Qingming Bridge/Nanchang Street sudah selesai versi malam di Hari 3 — Hari 4 tinggal Nanchan Temple, lebih santai tanpa kejar waktu. Hotel → Nanchan Temple → Wuxi Railway Station searah utara di Line 1 tanpa backtrack (terverifikasi via urutan stasiun resmi), jadi **tidak perlu titip koper** — checkout, bawa koper langsung sepanjang hari (area Nanchan Temple kecil & datar, aman untuk koper roda), lanjut ke stasiun di sore hari.
+**Rute:** Klaster ini (Yuantouzhu & Liyuan Garden) tidak ada MRT langsung dan berjarak cukup jauh dari hotel — makanya dijadikan 1 hari dedicated (bukan digabung ke hari lain yang beda arah), sesuai prinsip itinerary ini. Golden Week sudah usai (9 Okt), jadi area populer ini diperkirakan lebih tenang dibanding kalau dikunjungi 6–7 Okt.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:30–09:00 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 09:00–09:15 | Checkout hotel, bawa koper | — | — | — |
-| 09:15–09:45 | Metro Line 1 ke area Old City (Nanchan Temple), bawa koper | — | 12 | Rp31.800 |
-| 09:45–10:45 | **Nanchan Temple** (buka 07:00–16:45) — pagi/siang, lebih tenang | Tiket kemungkinan gratis/murah — cek langsung di lokasi | — | — |
-| 10:45–11:45 | Jajan & jalan santai **Nanchan Temple Pedestrian Street** | ±CNY 15/org | 30 | Rp79.500 |
-| 11:45–12:45 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
-| 12:45–15:00 | Waktu santai — jalan sekitar kanal siang / opsional **Wuxi Museum** (indoor, gratis) | Gratis | — | — |
-| 15:00–15:30 | Metro Line 1 lanjut ke Wuxi Railway Station (searah, tanpa balik arah) | — | 12 | Rp31.800 |
-| 15:30–18:00 | Santai di sekitar stasiun sambil menunggu boarding (fleksibel — bisa dipakai perpanjang waktu Nanchan Temple kalau masih betah) | — | — | — |
-| 18:00 | HSR Wuxi → Suzhou | *Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou (±18:30–19:00)* | — | — |
-| **TOTAL HARI 4** | | | **128** | **Rp339.200** |
+| 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
+| 08:30–09:00 | Didi dari hotel (Taihu Square) ke **Liyuan Garden** (±20-25 menit) | Tidak ada MRT langsung ke area ini | 40 | Rp106.000 |
+| 09:00–10:30 | **Liyuan Garden** — taman klasik tepi Li Lake, jembatan zigzag & paviliun tepi air, jalur datar | CNY 45/org | 90 | Rp238.500 |
+| 10:30–10:45 | Didi singkat ke **Taihu Yuantouzhu Scenic Area** (±10-15 menit, searah) | — | 20 | Rp53.000 |
+| 10:45–12:30 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | CNY 100/org — lihat alasan "worth it" di bawah | 200 | Rp530.000 |
+| 12:30–13:30 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
+| 13:30–15:30 | Lanjut jalan santai kawasan Yuantouzhu (dermaga, taman bunga, area promenade) | Termasuk tiket di atas | — | — |
+| 15:30–16:00 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
+| 16:00–17:00 | Istirahat di hotel | — | — | — |
+| 17:00–18:00 | Makan malam sekitar hotel | ±CNY 25/org | 50 | Rp132.500 |
+| 18:00–19:00 | Jalan santai ringan malam di Taihu Lake Promenade (opsional, dekat hotel) | Gratis | — | — |
+| **TOTAL HARI 4** | | | **524** | **Rp1.388.600** |
 
-**Plan-B hari ini:** hujan deras → ganti aktivitas siang dengan **Wuxi Museum** (indoor, gratis, searah Old City, tutup Senin).
+**Kenapa Taihu Yuantouzhu direkomendasikan meski berbayar (CNY 100/org):** salah satu spot paling ikonik untuk memandang Danau Taihu, dengan taman bunga & promenade tepi danau yang luas — berbeda dari pemandangan Lihu/Taihu di Hari 2 (yang gratis tapi lebih kecil skalanya). Ada hari tambahan di trip ini, jadi cukup waktu untuk dedicated tanpa mengorbankan hari lain.
+
+**Catatan fisik:** semua jalur di Liyuan Garden & Yuantouzhu datar (taman & promenade), aman untuk lutut — hanya perjalanan Didi yang agak jauh (bukan jalan kaki).
+
+**Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip Yuantouzhu (mahal & jauh), ganti dengan jalan santai lebih lama di **Taihu Lake Promenade** dekat hotel atau **Wuxi Binhu The Mixc** (sama seperti Plan-B Hari 2, area rooftop/plaza gratis).
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 3 Malam di Wuxi)
+## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Suzhou 15:00 Tepat)
 
-Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal, HSR Nanjing→Wuxi). Kurs: Rp2.650/CNY.
+**Rute:** Qingming Bridge/Nanchang Street sudah selesai versi malam di Hari 3 — Hari 5 tinggal Nanchan Temple. Hotel → Nanchan Temple → Wuxi Railway Station searah utara di Line 1 tanpa backtrack (terverifikasi via urutan stasiun resmi), jadi **tidak perlu titip koper** — checkout, bawa koper langsung sepanjang hari (area Nanchan Temple kecil & datar, aman untuk koper roda). **Kepulangan dikunci 15:00 tepat**, jadi jadwal pagi dipadatkan tanpa waktu buffer luang.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
+| 08:30–08:45 | Checkout hotel, bawa koper | — | — | — |
+| 08:45–09:15 | Metro Line 1 ke area Old City (Nanchan Temple), bawa koper | — | 12 | Rp31.800 |
+| 09:15–10:15 | **Nanchan Temple** (buka 07:00–16:45) — pagi/siang, lebih tenang | Tiket kemungkinan gratis/murah — cek langsung di lokasi | — | — |
+| 10:15–11:00 | Jajan & jalan santai **Nanchan Temple Pedestrian Street** | ±CNY 15/org | 30 | Rp79.500 |
+| 11:00–12:00 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
+| 12:00–12:30 | Metro Line 1 lanjut ke Wuxi Railway Station (searah, tanpa balik arah) | — | 12 | Rp31.800 |
+| 12:30–15:00 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±2,5 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan) | — | — |
+| 15:00 | HSR Wuxi → Suzhou | *Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou* | — | — |
+| **TOTAL HARI 5** | | | **128** | **Rp339.200** |
+
+**Plan-B hari ini:** hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).
+
+---
+
+## Ringkasan Budget Total (2 Orang, 4 Malam di Wuxi)
+
+Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.650/CNY.
 
 | Hari | CNY (skenario hemat) | CNY (skenario lengkap) | IDR (skenario lengkap) |
 |---|---|---|---|
-| Hari 1 (6 Okt) | 200 | 200 | Rp530.000 |
+| Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
 | Hari 2 (7 Okt) | 124 | 192 | Rp508.800 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
-| Hari 4 (9 Okt) | 128 | 128 | Rp339.200 |
-| **GRAND TOTAL** | **676** | **834** | **Rp2.210.100** |
+| Hari 4 (9 Okt) | 524 | 524 | Rp1.388.600 |
+| Hari 5 (10 Okt) | 128 | 128 | Rp339.200 |
+| **GRAND TOTAL** | **1.070** | **1.228** | **Rp3.254.200** |
 
-*Skenario hemat = tanpa Jichang Garden (Hari 3) & tanpa perjalanan ke Gonghu Bay (Hari 2). Skenario lengkap = termasuk keduanya.*
+*Skenario hemat = tanpa Jichang Garden (Hari 3) & tanpa perjalanan sepeda ke Gonghu Bay (Hari 2). Skenario lengkap = termasuk keduanya. Hari 4 & 5 tidak punya varian hemat terpisah (lihat catatan opsional skip Yuantouzhu di Hari 4 kalau ingin hemat lebih jauh).*
 
 ### Breakdown per kategori (skenario lengkap)
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Xihui Park, Jichang Garden) | 110 | Rp291.500 |
-| Makan (semua hari, termasuk jajan) | 442 | Rp1.171.300 |
-| Transport lokal (metro, sepeda, Didi) | 152 | Rp402.800 |
-| HSR Nanjing → Wuxi | 130 | Rp344.500 |
-| **TOTAL** | **834** | **Rp2.210.100** |
+| Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 400 | Rp1.060.000 |
+| Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
+| Transport lokal (metro, sepeda, Didi) | 262 | Rp694.300 |
+| **TOTAL** | **1.228** | **Rp3.254.200** |
 
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur datar (taman kota, tepi danau, pedestrian street). Tempat menanjak (Baojie Mountain Forest Park) sengaja tidak dimasukkan, lihat Cadangan.
+- **Fisik/lutut:** semua jalur datar (taman kota, tepi danau, pedestrian street, promenade). Tempat menanjak (Baojie Mountain Forest Park) sengaja tidak dimasukkan, lihat Cadangan.
 - **Makanan:** tidak pedas, tidak asam, tidak berminyak/gorengan.
-- **Transportasi:** hotel di area Taihu Square (Line 1), 1 halte dari Qingmingqiao (stasiun Qingming Bridge!) dan searah utara ke Nanchan Temple/Wuxi Railway Station tanpa backtrack — jadi **tidak perlu titip koper di Hari 4**, tinggal bawa langsung. Prioritas jalan kaki (Hari 2, hotel dekat) & Metro Line 1 (+transfer Line 4 di **Liutan** khusus Huishan); Didi hanya Hari 1 (stasiun→hotel).
-- **Tempat berbayar** (Xihui Park, Jichang Garden) ditandai jelas & opsional untuk hemat biaya.
-- **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; Lihu/Taihu (tahan ramai) di 7 Okt.
-- **HSR dikunci 18:00 tepat** di kedua ujung sesuai instruksi Anda — **Qingming Bridge/Nanchang Street versi MALAM sudah diakomodasi di Hari 3** (bukan Hari 4, supaya tidak kena batas jam kereta). Hari 2 & 3 diperpanjang sampai ±21:00 dengan jalan malam (Taihu Lake Promenade / Old City kanal).
-- **Suzhou Itinerary.md perlu direvisi:** tanggal saat ini (6–10 Okt) bentrok dengan Wuxi — geser mundur ke ±10 Oktober begitu final.
+- **Transportasi:** hotel di area Taihu Square (Line 1), 1 halte dari Qingmingqiao (stasiun Qingming Bridge!) dan searah utara ke Nanchan Temple/Wuxi Railway Station tanpa backtrack — jadi **tidak perlu titip koper di Hari 5**, tinggal bawa langsung. Prioritas jalan kaki (Hari 2, hotel dekat) & Metro Line 1 (+transfer Line 4 di **Liutan** khusus Huishan); Didi/taksi dipakai Hari 1 (stasiun→hotel) dan Hari 4 (klaster Yuantouzhu, tidak ada MRT langsung).
+- **Tempat berbayar** (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) ditandai jelas & sebagian opsional untuk hemat biaya.
+- **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; Lihu/Taihu (tahan ramai) di 7 Okt; Taihu Yuantouzhu di 9 Okt, juga sudah lewat Golden Week.
+- **Jadwal kedatangan & kepulangan dikunci** sesuai instruksi Anda — tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. **Qingming Bridge/Nanchang Street versi MALAM sudah diakomodasi di Hari 3** (bukan Hari 5, supaya tidak kena batas jam kereta). Hari 2 & 3 diperpanjang sampai ±21:00 dengan jalan malam (Taihu Lake Promenade / Old City kanal).
+- **Itinerary kota ini independen** — tidak menyambung otomatis ke jadwal Nanjing/Suzhou; penyambungan antar kota diatur terpisah oleh Anda.
 
 ---
 
@@ -173,11 +194,11 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 | | |
 |---|---|
 | Rute | Wuxi Railway Station → Suzhou via HSR |
-| Tanggal & Jam | Jumat, 9 Oktober, **18:00 tepat** |
+| Tanggal & Jam | Sabtu, 10 Oktober, **15:00 tepat** |
 | Durasi HSR | ±18–30 menit (Wuxi-Suzhou termasuk segmen HSR terpendek di jalur ini, banyak pilihan jadwal G/D-train) |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun |
 
-**Catatan:** biaya HSR leg ini masuk perhitungan awal `Suzhou Itinerary.md`, bukan budget Wuxi (lihat baris Hari 4 & catatan di Ringkasan Budget Total di atas). Tiba di Suzhou ±18:20–18:30, makan malam bisa langsung di Suzhou setibanya.
+**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.
 
 ---
 
@@ -199,7 +220,7 @@ Musim gugur (Oktober) dianggap periode terbaik berkunjung ke Wuxi — sejuk & ke
 - Foto/info: https://en.climate-data.org/asia/china/jiangsu/wuxi-3323/
 
 ### Transportasi Masuk Kota
-Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场 · Sūnán Shuòfàng Guójì Jīchǎng)** — trip ini masuk Wuxi via HSR dari Nanjing, bukan lewat bandara. Stasiun HSR utama: **Wuxi Railway Station (无锡站 · Wúxī Zhàn)** di pusat kota (yang dipakai itinerary ini) dan **Wuxi East Railway Station (无锡东站 · Wúxī Dōng Zhàn)** untuk koneksi lebih jauh ke arah Shanghai/Beijing. ⚠️ Nama standar resmi, belum di-screenshot-verifikasi langsung dari halaman Amap.
+Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场 · Sūnán Shuòfàng Guójì Jīchǎng)**. Stasiun HSR utama: **Wuxi Railway Station (无锡站 · Wúxī Zhàn)** di pusat kota (yang dipakai itinerary ini) dan **Wuxi East Railway Station (无锡东站 · Wúxī Dōng Zhàn)** untuk koneksi lebih jauh ke arah Shanghai/Beijing. ⚠️ Nama standar resmi, belum di-screenshot-verifikasi langsung dari halaman Amap.
 
 - Foto/info: https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport
 
@@ -207,7 +228,7 @@ Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场 
 Area **Taihu Square/Tanduqiao**, di jalur **Metro Line 1** — ±3,9km/12 menit dari Wuxi Railway Station (bukan jalan kaki, tapi 1 jalur tanpa transfer). Langsung di gerbang klaster Lihu/Taihu; ke Old City/Nanchan Temple & stasiun tinggal Line 1 lurus; ke Huishan tetap perlu transfer Line 4.
 
 ### Destinasi Terkenal Lain di Wuxi
-Di luar itinerary utama: **Lingshan Grand Buddha (灵山大佛 · Língshān Dàfó)** — patung Buddha berdiri 88m, salah satu ikon wisata religi terbesar di China Timur. **Taihu Yuantouzhu (太湖鼋头渚 · Tàihú Yuántóuzhǔ)** — semenanjung paling ikonik untuk memandang Danau Taihu. **The Plum Garden/Meiyuan (梅园 · Méiyuán)** — terkenal saat ribuan pohon plum mekar di musim semi. Ketiganya ada di bagian Cadangan dengan alasan tidak dimasukkan.
+Di luar itinerary utama: **Lingshan Grand Buddha (灵山大佛 · Língshān Dàfó)** — patung Buddha berdiri 88m, salah satu ikon wisata religi terbesar di China Timur. **The Plum Garden/Meiyuan (梅园 · Méiyuán)** — terkenal saat ribuan pohon plum mekar di musim semi. Keduanya ada di bagian Cadangan dengan alasan tidak dimasukkan.
 
 - Video referensi: https://www.youtube.com/results?search_query=top+attractions+Wuxi+China
 
@@ -307,6 +328,8 @@ Kompleks urban kelas atas di tepi timur Lihu Lake, 1688 Taihu West Avenue — be
 
 **Kenapa jadi Plan-B:** BUKAN destinasi utama (prinsip itinerary ini menghindari sesi belanja), tapi area rooftop/plaza luar bisa dinikmati gratis tanpa belanja — opsi berteduh yang layak kalau hujan deras (siang maupun malam saat jadwal Taihu Lake Promenade), searah dengan rute Lihu/Taihu hari ini.
 
+**Terkait:** Hari 4
+
 - Foto/info: https://en.wuxi.gov.cn/2018-03/16/c_465252.htm
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+Binhu+The+Mixc
 
@@ -399,7 +422,7 @@ Bagian dari Situs Warisan Dunia UNESCO Grand Canal, membentang 5,5km dari gerban
 - Video referensi: https://www.youtube.com/results?search_query=Nanchang+Street+Wuxi+night
 
 ### Qingming Bridge Ancient Canal Scenic Spot (清名桥古运河景区 · Qīngmíng Qiáo Gǔ Yùnhé Jǐngqū) ⚠️
-Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wuxi, awalnya bernama "Qingning", dibangun era Wanli (Dinasti Ming) dari sumbangan dua putra tokoh Qin Yao — namanya diambil dari gabungan nama keduanya. Direkonstruksi tahun 1666 (era Kangxi, Dinasti Qing) oleh bupati Wuxi Wu Xingzuo, dan mengalami beberapa kali perbaikan di era Qianlong & Tongzhi. Kawasan ini dan bangunan tepi sungainya berstatus cagar budaya tingkat provinsi — pemandangan malamnya dengan lampu kanal jadi salah satu ikon paling difoto di Wuxi. *(Dijadwalkan malam hari (18:00–20:00) di Hari 3 — versi lampu kanal menyala penuh, bukan Hari 4 yang terikat jadwal kereta 18:00.)*
+Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wuxi, awalnya bernama "Qingning", dibangun era Wanli (Dinasti Ming) dari sumbangan dua putra tokoh Qin Yao — namanya diambil dari gabungan nama keduanya. Direkonstruksi tahun 1666 (era Kangxi, Dinasti Qing) oleh bupati Wuxi Wu Xingzuo, dan mengalami beberapa kali perbaikan di era Qianlong & Tongzhi. Kawasan ini dan bangunan tepi sungainya berstatus cagar budaya tingkat provinsi — pemandangan malamnya dengan lampu kanal jadi salah satu ikon paling difoto di Wuxi. *(Dijadwalkan malam hari (18:00–20:00) di Hari 3 — versi lampu kanal menyala penuh, bukan Hari 5 yang terikat jadwal kereta.)*
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
@@ -413,6 +436,36 @@ Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wu
 - Video referensi: https://www.youtube.com/results?search_query=Qingming+Bridge+Ancient+Canal+Wuxi+night
 
 ## Hari 4 — Jumat, 9 Oktober
+
+### Liyuan Garden (蠡园 · Lí Yuán) ⚠️
+Taman klasik tepi Li Lake (cabang utara Taihu Lake) di Distrik Binhu, dibangun awal abad ke-20 dengan gaya taman Jiangnan — terkenal dengan jembatan zigzag & paviliun tepi air, sering dipaketkan bersama Taihu Yuantouzhu.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** Didi/taksi dari hotel (Taihu Square), ±20-25 menit — tidak ada MRT langsung, di luar jangkauan jalan kaki dari klaster Lihu utama.
+
+**Jam Operasional:** ±07:30–17:30. Tidak ada hari libur rutin. Jam puncak: siang akhir pekan.
+
+**Tiket:** ±CNY 45/org.
+
+- Foto/info: https://www.google.com/search?q=Liyuan+Garden+Wuxi
+- Video referensi: https://www.youtube.com/results?search_query=Liyuan+Garden+Wuxi
+
+### Taihu Yuantouzhu Scenic Area (太湖鼋头渚 · Tàihú Yuántóuzhǔ) ✅
+Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga & area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya.
+
+✅ Nama Hanzi umum dipakai di sumber travel guide China, konsisten dengan penamaan resmi scenic area — tetap disarankan cek ulang halaman ranking Amap sebelum benar-benar diandalkan.
+
+**Akses:** Didi/taksi singkat dari Liyuan Garden (±10-15 menit, searah) — tidak ada MRT langsung ke kawasan ini.
+
+**Jam Operasional:** ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan & musim bunga.
+
+**Tiket:** ±CNY 100/org (naik ±CNY 150 saat musim bunga sakura Maret-April, tidak relevan untuk kunjungan Oktober ini).
+
+- Foto/info: https://en.wikipedia.org/wiki/Yuantouzhu
+- Video referensi: https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi
+
+## Hari 5 — Sabtu, 10 Oktober
 
 ### Nanchan Temple (南禅寺 · Nán Chán Sì) ⚠️
 Didirikan tahun 547 M pada masa pemerintahan Kaisar Wu dari Dinasti Liang (Dinasti Selatan), awalnya bernama Huguo Temple — kuil Buddha tertua yang masih berdiri di kawasan Jiangnan, dijuluki "yang pertama dari 480 kuil Dinasti Selatan". Direnovasi era Dinasti Song Utara (1023-1031) dan diberi nama resmi "Fushang Chan Temple", meski tetap populer disebut Nanchan Temple. Landmark utamanya, Pagoda Miaoguang (era Song Utara, tujuh lantai delapan sisi), termasuk salah satu dari "Delapan Pemandangan Wuxi".
@@ -442,7 +495,7 @@ Jalan pedestrian yang membentang dari gerbang selatan kota lama Wuxi, langsung t
 - Foto/info: https://www.google.com/search?q=Nanchan+Temple+Pedestrian+Street+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Nanchan+Temple+Pedestrian+Street+Wuxi
 
-### 🏷️ Wuxi Museum (无锡博物院 · Wúxī Bówùyuàn) ⚠️ — Plan-B Hari 4
+### 🏷️ Wuxi Museum (无锡博物院 · Wúxī Bówùyuàn) ⚠️ — Plan-B Hari 5
 Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga era China modern lewat empat lantai koleksi di sayap baratnya, dengan keterangan bahasa Inggris yang cukup lengkap.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
@@ -453,7 +506,7 @@ Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga 
 
 **Tiket:** Gratis.
 
-**Kenapa jadi Plan-B:** indoor, gratis, sejalan tema sejarah kota dengan Nanchan Temple — pilihan aman kalau hujan deras sepanjang Hari 4.
+**Kenapa jadi Plan-B:** indoor, gratis, sejalan tema sejarah kota dengan Nanchan Temple — pilihan aman kalau hujan deras, meski waktu Hari 5 sudah dipadatkan sehingga jarang ada slot untuk ini kecuali menggantikan Nanchan Temple sepenuhnya.
 
 - Foto/info: https://www.tripadvisor.com/Attraction_Review-g297443-d1864917-Reviews-Wuxi_Museum-Wuxi_Jiangsu.html
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+Museum
@@ -461,22 +514,6 @@ Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga 
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B kali ini — alasannya ditulis di masing-masing uraian.
-
-### Liyuan Garden (蠡园 · Lí Yuán) ⚠️
-Taman klasik tepi Li Lake (cabang utara Taihu Lake) di Distrik Binhu, dibangun awal abad ke-20 dengan gaya taman Jiangnan — terkenal dengan jembatan zigzag & paviliun tepi air, sering dipaketkan bersama Taihu Yuantouzhu.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** MRT Line 1, turun Stasiun Taihu Square, lanjut Didi/taksi (di luar jangkauan jalan kaki dari klaster Lihu utama).
-
-**Jam Operasional:** ±07:30–17:30. Tidak ada hari libur rutin. Jam puncak: siang akhir pekan.
-
-**Tiket:** ±CNY 45/org.
-
-**Kenapa tidak dimasukkan:** berbayar (±CNY 45/org), berjarak lebih jauh dari klaster Lihu utama, dan temanya (taman + tepi danau) sudah cukup terwakili oleh Lihu National Wetland Park, Central Lihu Park, dan Lixi Park yang gratis — supaya Hari 2 tidak kelebihan beban jalan kaki.
-
-- Foto/info: https://www.google.com/search?q=Liyuan+Garden+Wuxi
-- Video referensi: https://www.youtube.com/results?search_query=Liyuan+Garden+Wuxi
 
 ### Baojie Mountain Forest Park (宝界山森林公园 · Bǎojiè Shān Sēnlín Gōngyuán) ⚠️
 Taman hutan pegunungan di pinggiran Wuxi dengan jalur hiking & udara segar.
@@ -510,22 +547,6 @@ Taman ekologi di pinggiran Wuxi dengan area hijau luas.
 - Foto/info: https://www.google.com/search?q=Xinzhou+Ecological+Garden+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Xinzhou+Ecological+Garden+Wuxi
 
-### Taihu Yuantouzhu Scenic Area (太湖鼋头渚 · Tàihú Yuántóuzhǔ) ✅
-Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga & area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya.
-
-✅ Nama Hanzi umum dipakai di sumber travel guide China, konsisten dengan penamaan resmi scenic area — tetap disarankan cek ulang halaman ranking Amap sebelum benar-benar diandalkan.
-
-**Akses:** bus wisata dari pusat kota atau Didi/taksi (±30-40 menit dari area Lihu, tidak ada MRT langsung).
-
-**Jam Operasional:** ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan & musim bunga.
-
-**Tiket:** ±CNY 100/org (naik ±CNY 150 saat musim bunga sakura Maret-April).
-
-**Kenapa tidak dimasukkan:** tiket cukup mahal (CNY 100/org), lokasinya jauh dari klaster utama, dan pemandangan tepi Taihu sudah cukup terwakili gratis lewat Lihu/Gonghu Bay/Taihu Lake Promenade.
-
-- Foto/info: https://en.wikipedia.org/wiki/Yuantouzhu
-- Video referensi: https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi
-
 ### Meili Ancient Town (梅里古镇 · Méilǐ Gǔzhèn) ⚠️
 Kota kuno bersejarah di timur jauh Wuxi, terkait dengan asal-usul legenda Kerajaan Wu kuno.
 
@@ -537,7 +558,7 @@ Kota kuno bersejarah di timur jauh Wuxi, terkait dengan asal-usul legenda Keraja
 
 **Tiket:** ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com langsung sebelum berangkat.
 
-**Kenapa tidak dimasukkan:** jauh di timur kota, di luar jangkauan rute efisien 3 klaster utama trip ini.
+**Kenapa tidak dimasukkan:** jauh di timur kota, di luar jangkauan rute efisien klaster-klaster utama trip ini.
 
 - Foto/info: https://www.google.com/search?q=Meili+Ancient+Town+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Meili+Ancient+Town+Wuxi
@@ -617,10 +638,12 @@ Taman tema/studio film bertema era Tiga Kerajaan China, lokasi syuting banyak dr
 
 **Tiket:** ±CNY 100/org.
 
-**Kenapa tidak dimasukkan:** berbayar (CNY 100), jauh, dan jalan di dalamnya berbatu/tidak rata — kurang nyaman untuk kondisi lutut Anda.
+**Kenapa tidak dimasukkan:** berbayar (CNY 100), dan jalan di dalamnya berbatu/tidak rata — kurang nyaman untuk kondisi lutut Anda.
 
 - Foto/info: https://en.wikipedia.org/wiki/Wuxi_Three_Kingdoms_City
 - Video referensi: https://www.youtube.com/results?search_query=Three+Kingdoms+City+Wuxi
+
+**Terkait:** Hari 4
 
 ### Wuxi Rongchuang Cultural Tourism City (Dufan) ⚠️
 Taman hiburan/theme park skala besar dengan wahana modern.
