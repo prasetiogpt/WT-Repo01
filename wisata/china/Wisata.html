@@ -231,13 +231,13 @@ details.day > summary::-webkit-details-marker{display:none;}
 
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 .table-scroll{overflow-x:auto;border-top:1px solid var(--border);-webkit-overflow-scrolling:touch;}
-table.itin{border-collapse:collapse;width:100%;min-width:560px;}
+table.itin{border-collapse:collapse;width:100%;min-width:464px;table-layout:fixed;}
 table.itin thead th{
   position:sticky;top:0;background:var(--indigo);color:var(--indigo-ink);
   font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;
-  text-align:left;padding:9px 10px;white-space:nowrap;
+  text-align:left;padding:9px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-table.itin thead th.col-pilih{text-align:center;width:26px;padding-left:6px;padding-right:6px;}
+table.itin thead th.col-pilih{text-align:center;padding-left:6px;padding-right:6px;}
 table.itin thead th.col-num{text-align:right;}
 table.itin tbody td{
   padding:11px 10px;font-size:.86rem;vertical-align:top;
@@ -254,11 +254,11 @@ table.itin tfoot td{
 table.itin tfoot .cell-valas,table.itin tfoot .cell-rupiah{font-variant-numeric:tabular-nums;text-align:right;}
 .cell-pilih{text-align:center;padding-left:6px;padding-right:6px;}
 .cell-pilih input{width:18px;height:18px;accent-color:var(--jade);cursor:pointer;}
-.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;width:64px;max-width:64px;padding-left:6px;padding-right:4px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
-.cell-dest{min-width:210px;}
-.cell-ket{min-width:170px;color:var(--ink);}
-.cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;width:46px;}
-.cell-rupiah{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;text-align:right;width:66px;}
+.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;padding-left:6px;padding-right:4px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
+.cell-dest{overflow-wrap:break-word;word-break:break-word;}
+.cell-ket{color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;overflow:hidden;text-overflow:ellipsis;}
+.cell-rupiah{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;text-align:right;overflow:hidden;text-overflow:ellipsis;}
 .dash{color:var(--border-strong);}
 
 /* budget summary, collapsible */
@@ -863,7 +863,7 @@ const destinations = [
         [`Kepulangan (lanjut ke Suzhou)`,`Sabtu, 10 Oktober, <b>15:00 tepat</b>, via HSR`],
         [`Stasiun acuan`,`<b>Wuxi Railway Station</b> (pusat kota) — <b>BUKAN Wuxi East</b>, sesuai catatan Anda karena East di luar pusat kota`],
       ],
-      warn:`<b>Kenapa jadwal Hari 1 dimulai malam:</b> kedatangan di Wuxi dikunci <b>18:00 tepat</b> sesuai rencana Anda — Hari 1 disusun sebagai malam kedatangan santai saja, bukan hari penuh.<br><br><b>Hotel:</b> area <b>Taihu Square/Tanduqiao</b> (Metro Line 1), ±3,9km/12 menit dari Wuxi Railway Station — bukan jalan kaki, tapi masih 1 jalur Line 1 tanpa transfer. Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia): <b>Tanduqiao/Taihu Square → Qingmingqiao (1 halte, Qingming Bridge!) → ... → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah utara tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 khusus di <b>Liutan</b> (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan). Ke <b>Taihu Yuantouzhu/Liyuan Garden (Hari 4)</b> tidak ada MRT langsung — pakai Didi/taksi dari hotel.`
+      warn:`<b>Kenapa jadwal Hari 1 dimulai malam:</b> kedatangan di Wuxi dikunci <b>18:00 tepat</b> sesuai rencana Anda — Hari 1 disusun sebagai malam kedatangan santai saja, bukan hari penuh.<br><br>### Hotel<br><br>| | | |---|---| | Nama | <b>Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)</b> | | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China | | Ke Tanduqiao Metro Station | 650m jalan kaki, ±10 menit | | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit | | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |<br><br>Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b> (Liangxi District) — BUKAN dekat Lihu/Taihu lakefront meski nama stasiun terdekatnya "Taihu Square" (nama ini menyesatkan, murni nama plaza, tidak menandakan dekat Danau Taihu). Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia + daftar stasiun resmi): <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan) ...</b> dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 khusus di <b>Liutan</b> (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan). Ke <b>Lihu National Wetland Park (Hari 2)</b> dan <b>Taihu Yuantouzhu/Liyuan Garden (Hari 4)</b> — keduanya di kawasan Binhu/Taihu lakefront yang sesungguhnya, ±9-10km dari hotel, <b>BUKAN jalan kaki</b> — pakai MRT Line 1 langsung (±11 halte ke Changguangxi, tanpa transfer) atau Didi/taksi.`
     },
 
     days:[
@@ -1735,6 +1735,9 @@ function renderDay(d, dest){
     ${d.advisory ? `<div class="info-banner"><b>Perhatian</b>${d.advisory}</div>` : ``}
     <div class="table-scroll">
       <table class="itin">
+        <colgroup>
+          <col style="width:28px"><col style="width:58px"><col><col><col style="width:42px"><col style="width:64px">
+        </colgroup>
         <thead><tr>
           <th class="col-pilih"><span class="sr-only">Pilih</span></th><th>Jam</th><th>Destinasi</th><th>Keterangan</th><th class="col-num">CNY</th><th class="col-num">IDR</th>
         </tr></thead>

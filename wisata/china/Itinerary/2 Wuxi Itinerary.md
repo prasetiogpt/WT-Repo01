@@ -19,7 +19,17 @@
 
 **Kenapa jadwal Hari 1 dimulai malam:** kedatangan di Wuxi dikunci **18:00 tepat** sesuai rencana Anda — Hari 1 disusun sebagai malam kedatangan santai saja, bukan hari penuh.
 
-**Hotel:** area **Taihu Square/Tanduqiao** (Metro Line 1), ±3,9km/12 menit dari Wuxi Railway Station — bukan jalan kaki, tapi masih 1 jalur Line 1 tanpa transfer. Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia): **Tanduqiao/Taihu Square → Qingmingqiao (1 halte, Qingming Bridge!) → ... → Nanchan Temple → ... → Wuxi Railway Station**, semua searah utara tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 khusus di **Liutan** (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan). Ke **Taihu Yuantouzhu/Liyuan Garden (Hari 4)** tidak ada MRT langsung — pakai Didi/taksi dari hotel.
+### Hotel
+
+| | |
+|---|---|
+| Nama | **Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)** |
+| Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China |
+| Ke Tanduqiao Metro Station | 650m jalan kaki, ±10 menit |
+| Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit |
+| Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |
+
+Hotel berada di kawasan **Old Canal/Nanchan Temple** (Liangxi District) — BUKAN dekat Lihu/Taihu lakefront meski nama stasiun terdekatnya "Taihu Square" (nama ini menyesatkan, murni nama plaza, tidak menandakan dekat Danau Taihu). Urutan stasiun Line 1 dari hotel (terverifikasi via Wikipedia + daftar stasiun resmi): **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan) ...** dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 khusus di **Liutan** (BUKAN Civic Center — dari hotel, Liutan jauh lebih dekat; Civic Center malah lebih jauh ke selatan). Ke **Lihu National Wetland Park (Hari 2)** dan **Taihu Yuantouzhu/Liyuan Garden (Hari 4)** — keduanya di kawasan Binhu/Taihu lakefront yang sesungguhnya, ±9-10km dari hotel, **BUKAN jalan kaki** — pakai MRT Line 1 langsung (±11 halte ke Changguangxi, tanpa transfer) atau Didi/taksi.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
