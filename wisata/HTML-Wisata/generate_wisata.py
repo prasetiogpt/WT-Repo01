@@ -187,6 +187,14 @@ def clean_cell(s):
     return s
 
 
+def _unwrap_bold(s):
+    """'**70**' -> ('70', True); '70' -> ('70', False). TOTAL/GRAND TOTAL
+    rows in the source keep their **bold** markers around the number, which
+    would otherwise hide a literal prefix like 'Rp' from a '^Rp' regex."""
+    m = re.match(r"^\*\*(.*)\*\*$", s.strip())
+    return (m.group(1), True) if m else (s, False)
+
+
 def money_cny(s):
     s = s.strip()
     if s in ("—", "-", ""):
@@ -198,7 +206,9 @@ def money_idr(s):
     s = s.strip()
     if s in ("—", "-", ""):
         return ""
-    return re.sub(r"^Rp\.?\s*", "", s)
+    inner, bold = _unwrap_bold(s)
+    inner = re.sub(r"^Rp\.?\s*", "", inner)
+    return f"**{inner}**" if bold else inner
 
 
 # --------------------------------------------------------------------------
@@ -490,7 +500,7 @@ def parse_budget_section(body_lines):
         for r in tables[0]:
             label = clean_cell(r[0]).replace("**", "")
             cny = clean_cell(r[-2]).replace("**", "")
-            idr = clean_cell(r[-1]).replace("**", "")
+            idr = re.sub(r"^Rp\.?\s*", "", clean_cell(r[-1]).replace("**", ""))
             if "GRAND TOTAL" in label.upper():
                 grand_day = (label, cny, idr)
                 continue
@@ -499,7 +509,7 @@ def parse_budget_section(body_lines):
         for r in tables[1]:
             label = clean_cell(r[0]).replace("**", "")
             cny = clean_cell(r[-2]).replace("**", "")
-            idr = clean_cell(r[-1]).replace("**", "")
+            idr = re.sub(r"^Rp\.?\s*", "", clean_cell(r[-1]).replace("**", ""))
             if label.upper() == "TOTAL":
                 cat_total = (label, cny, idr)
                 continue

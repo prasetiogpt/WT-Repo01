@@ -202,6 +202,12 @@ details.day > summary{
   list-style:none;cursor:pointer;padding:14px;display:flex;align-items:center;gap:12px;
 }
 details.day > summary::-webkit-details-marker{display:none;}
+.day-badge{
+  flex:0 0 auto;width:40px;height:40px;border-radius:10px;
+  background:var(--indigo);color:var(--indigo-ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-weight:700;font-size:1.1rem;
+}
 .day-head-text{flex:1;min-width:0;}
 .day-toprow{display:flex;align-items:baseline;justify-content:space-between;gap:8px;}
 .day-date{font-weight:700;font-size:1rem;}
@@ -248,7 +254,7 @@ table.itin tfoot td{
 table.itin tfoot .cell-valas,table.itin tfoot .cell-rupiah{font-variant-numeric:tabular-nums;text-align:right;}
 .cell-pilih{text-align:center;padding-left:6px;padding-right:6px;}
 .cell-pilih input{width:18px;height:18px;accent-color:var(--jade);cursor:pointer;}
-.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;width:50px;max-width:50px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
+.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;width:64px;max-width:64px;padding-left:6px;padding-right:4px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
 .cell-dest{min-width:210px;}
 .cell-ket{min-width:170px;color:var(--ink);}
 .cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;width:46px;}
@@ -504,7 +510,7 @@ const destinations = [
           [`19:30`,`Makan malam: Nanjing salted duck / jajanan Laomendong`,`± CNY 40/org`,``,`120`,`318.000`],
           [`19:30–19:50`,`Line 3 dari Wudingmen langsung kembali ke Fuqiao/hotel`,``,``,`9`,`23.850`],
         ],
-        total:{cny:`<b>268</b>`, idr:`<b>Rp710.200</b>`},
+        total:{cny:`<b>268</b>`, idr:`<b>710.200</b>`},
         planb:`kalau terlalu lelah dari perjalanan (imigrasi lama/jetlag) — cukup istirahat penuh di hotel, atau jalan santai ringan + makan malam di sekitar Chengxian Street saja, tunda Laomendong ke kunjungan berikutnya.`,
       },
       {
@@ -522,7 +528,7 @@ const destinations = [
           [`18:00–18:30`,`Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuqiao/hotel`,``,``,`9`,`23.850`],
           [`18:30`,`Makan malam dekat hotel`,`CNY 30/org`,``,`90`,`238.500`],
         ],
-        total:{cny:`<b>885</b>`, idr:`<b>Rp2.345.250</b>`},
+        total:{cny:`<b>885</b>`, idr:`<b>2.345.250</b>`},
         planb:`kalau Niushoushan sangat padat/antre lama (risiko tertinggi karena Golden Week + Minggu) — cukup fokus di Usnisa Palace saja, skip Deji Plaza/Mochou Lake Park, balik lebih awal ke hotel istirahat (bisa disisipkan di hari lain kalau masih ada slot). Kalau ingin ganti total ke rencana yang jauh lebih dekat &amp; hemat, lihat Cadangan: Nanjing Folk Museum (searah Hari 1, dekat Laomendong).`,
       },
       {
@@ -536,7 +542,7 @@ const destinations = [
           [`17:00–19:00`,`Night view <b>Qinhuai River</b>`,`Gratis — ikon Nanjing, lampion malam`,``,``,``],
           [`19:00`,`Makan malam, Line 3 langsung kembali ke Fuqiao/hotel`,`CNY 30/org`,``,`90`,`238.500`],
         ],
-        total:{cny:`<b>165</b>`, idr:`<b>Rp437.250</b>`},
+        total:{cny:`<b>165</b>`, idr:`<b>437.250</b>`},
         planb:`kalau masih tertarik sejarah kekaisaran, mampir Presidential Palace (1 stasiun dari Fuqiao ke Daxinggong, ±CNY 40/org — cek dulu tutup/buka, tutup tiap Senin kecuali libur nasional). Kalau Qinhuai River sore-malam terlalu padat, cukup nikmati dari sisi yang lebih sepi atau ganti dengan area 1912 Block (bar/resto, sebagian tertutup).`,
       },
       {
@@ -555,7 +561,7 @@ const destinations = [
           [`16:45–17:45`,`Tiba stasiun, antre keamanan/boarding (Golden Week)`,`Buffer ekstra ±1 jam sebelum jadwal kereta`,``,``,``],
           [`<b>18:00</b>`,`<b>HSR berangkat dari Nanjing South</b>`,`Rombongan berpisah/lanjut sesuai opsi di bawah`,``,``,``],
         ],
-        total:{cny:`<b>173</b>`, idr:`<b>Rp458.450</b>`},
+        total:{cny:`<b>173</b>`, idr:`<b>458.450</b>`},
         planb:`kalau Massacre Memorial Hall gagal (reservasi bermasalah, dll) — waktu buffer siang yang sudah longgar (12:00-14:30) otomatis jadi cadangan, tidak perlu rencana pengganti khusus. Prioritas hari ini tetap satu: jangan sampai ketinggalan kereta jam 18:00.`,
       },
     ],
@@ -563,18 +569,18 @@ const destinations = [
     budget:{
       note:`Belum termasuk harga hotel &amp; tiket pesawat — lihat \`Final Info.md\`. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). ⚠️ <b>Total naik dari versi awal (972 → 1.491 CNY)</b> — didorong hampir seluruhnya oleh tiket Niushoushan di Hari 2 (CNY 435, hampir sepertiga total budget). Kalau ingin lebih hemat, lihat Plan-B Hari 2.`,
       byDay:[
-        [`Hari 1 (3 Okt)`,`268`,`Rp710.200`],
-        [`Hari 2 (4 Okt)`,`885`,`Rp2.345.250`],
-        [`Hari 3 (5 Okt)`,`165`,`Rp437.250`],
-        [`Hari 4 (6 Okt)`,`173`,`Rp458.450`],
+        [`Hari 1 (3 Okt)`,`268`,`710.200`],
+        [`Hari 2 (4 Okt)`,`885`,`2.345.250`],
+        [`Hari 3 (5 Okt)`,`165`,`437.250`],
+        [`Hari 4 (6 Okt)`,`173`,`458.450`],
       ],
       byCategory:[
-        [`Tiket masuk (Niushoushan)`,`435`,`Rp1.152.750`],
-        [`Makan (semua hari + jajan Laomendong)`,`630`,`Rp1.669.500`],
-        [`Transport lokal (Didi + MRT)`,`426`,`Rp1.128.900`],
+        [`Tiket masuk (Niushoushan)`,`435`,`1.152.750`],
+        [`Makan (semua hari + jajan Laomendong)`,`630`,`1.669.500`],
+        [`Transport lokal (Didi + MRT)`,`426`,`1.128.900`],
       ],
-      grand:[`GRAND TOTAL`,`1.491`,`Rp3.951.150`],
-      catTotal:[`TOTAL`,`1.491`,`Rp3.951.150`],
+      grand:[`GRAND TOTAL`,`1.491`,`3.951.150`],
+      catTotal:[`TOTAL`,`1.491`,`3.951.150`],
       caveat:`Presidential Palace, Nanjing Museum, Jiming Temple, Ming Xiaoling Sacred Way, Zhonghua Gate, dan Jinling Xiaocheng sekarang semua di Plan-B/Cadangan, jadi TIDAK termasuk di total di atas. Beberapa item opsional lain (trolley Xuanwu Lake, masuk kompleks Confucius Temple, mobil wisata Niushoushan) juga belum dihitung.`,
     },
 
@@ -871,7 +877,7 @@ const destinations = [
           [`19:45–20:30`,`Jalan santai ringan dekat hotel (opsional)`,`Gratis`,``,``,``],
           [`20:30`,`Kembali ke hotel, istirahat`,``,``,``,``],
         ],
-        total:{cny:`<b>70</b>`, idr:`<b>Rp185.500</b>`},
+        total:{cny:`<b>70</b>`, idr:`<b>185.500</b>`},
         planb:`kalau kedatangan terlambat/lebih malam dari 18:00 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.`,
       },
       {
@@ -890,7 +896,7 @@ const destinations = [
           [`19:00–21:00`,`<b>Taihu Lake Promenade</b> — jalan santai malam di tepi Danau Taihu, lampu kota &amp; lakefront menyala, jalur datar &amp; ramai warga lokal olahraga malam`,`Gratis`,``,``,``],
           [`21:00`,`Jalan kaki kembali ke hotel (persis di area Taihu Square)`,``,``,``,``],
         ],
-        total:{cny:`<b>124</b>`, idr:`<b>Rp328.600</b>`},
+        total:{cny:`<b>124</b>`, idr:`<b>328.600</b>`},
         planb:`kalau hujan deras atau terlalu lelah untuk lanjut ke Gonghu Bay — pilih salah satu di area yang sama (tidak perlu pindah rute): jalan santai versi lebih pendek tetap di <b>Taihu Lake Promenade</b> (sudah jadi acara malam utama hari ini) atau <b>Wuxi Binhu The Mixc</b> (mal, hanya kalau hujan deras — area rooftop garden &amp; plaza luar juga bisa dinikmati gratis).`,
       },
       {
@@ -909,7 +915,7 @@ const destinations = [
           [`18:00–20:00`,`<b>Qingming Bridge Ancient Canal Scenic Spot</b> + <b>Nanchang Street Pedestrian Street</b> — versi MALAM, lampu kanal menyala penuh`,`Gratis area luar/jalan kanal. Jajan malam opsional ±CNY 20`,``,`20`,`53.000`],
           [`20:00–20:15`,`Metro Line 1, 1 halte kembali ke hotel (Qingmingqiao → Taihu Square)`,``,``,`8`,`21.200`],
         ],
-        total:{cny:`<b>224</b>`, idr:`<b>Rp593.600</b>`},
+        total:{cny:`<b>224</b>`, idr:`<b>593.600</b>`},
         planb:`Jichang Garden bisa diganti <b>Huishan Temple (Cultural Relics Area)</b> (sama-sama di dalam Xihui Park, tiket kombinasi ±CNY 70) atau perpanjang jalan santai gratis di Huishan Ancient Town. Untuk sesi malam: kalau hujan deras, cukup lihat kanal dari area beratap terdekat.`,
       },
       {
@@ -928,7 +934,7 @@ const destinations = [
           [`17:00–18:00`,`Makan malam sekitar hotel`,`±CNY 25/org`,``,`50`,`132.500`],
           [`18:00–19:00`,`Jalan santai ringan malam di Taihu Lake Promenade (opsional, dekat hotel)`,`Gratis`,``,``,``],
         ],
-        total:{cny:`<b>524</b>`, idr:`<b>Rp1.388.600</b>`},
+        total:{cny:`<b>524</b>`, idr:`<b>1.388.600</b>`},
         planb:`kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip Yuantouzhu (mahal &amp; jauh), ganti dengan jalan santai lebih lama di <b>Taihu Lake Promenade</b> dekat hotel atau <b>Wuxi Binhu The Mixc</b> (sama seperti Plan-B Hari 2, area rooftop/plaza gratis).`,
       },
       {
@@ -946,7 +952,7 @@ const destinations = [
           [`13:00–15:00`,`Santai di sekitar stasiun sambil menunggu boarding`,`Buffer ±2 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan)`,``,``,``],
           [`15:00`,`HSR Wuxi → Suzhou`,`Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou`,``,``,``],
         ],
-        total:{cny:`<b>140</b>`, idr:`<b>Rp371.000</b>`},
+        total:{cny:`<b>140</b>`, idr:`<b>371.000</b>`},
         planb:`hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).`,
       },
     ],
@@ -954,19 +960,19 @@ const destinations = [
     budget:{
       note:`Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.650/CNY.`,
       byDay:[
-        [`Hari 1 (6 Okt)`,`70`,`Rp185.500`],
-        [`Hari 2 (7 Okt)`,`192`,`Rp508.800`],
-        [`Hari 3 (8 Okt)`,`314`,`Rp832.100`],
-        [`Hari 4 (9 Okt)`,`524`,`Rp1.388.600`],
-        [`Hari 5 (10 Okt)`,`140`,`Rp371.000`],
+        [`Hari 1 (6 Okt)`,`70`,`185.500`],
+        [`Hari 2 (7 Okt)`,`192`,`508.800`],
+        [`Hari 3 (8 Okt)`,`314`,`832.100`],
+        [`Hari 4 (9 Okt)`,`524`,`1.388.600`],
+        [`Hari 5 (10 Okt)`,`140`,`371.000`],
       ],
       byCategory:[
-        [`Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu)`,`400`,`Rp1.060.000`],
-        [`Makan (semua hari, termasuk jajan)`,`566`,`Rp1.499.900`],
-        [`Transport lokal (metro, sepeda, Didi)`,`274`,`Rp726.100`],
+        [`Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu)`,`400`,`1.060.000`],
+        [`Makan (semua hari, termasuk jajan)`,`566`,`1.499.900`],
+        [`Transport lokal (metro, sepeda, Didi)`,`274`,`726.100`],
       ],
-      grand:[`GRAND TOTAL`,`1.240`,`Rp3.286.000`],
-      catTotal:[`TOTAL`,`1.240`,`Rp3.286.000`],
+      grand:[`GRAND TOTAL`,`1.240`,`3.286.000`],
+      catTotal:[`TOTAL`,`1.240`,`3.286.000`],
       caveat:``,
     },
 
@@ -1245,7 +1251,7 @@ const destinations = [
           [`17:30–19:00`,`Makan malam santai di <b>Shiquan Street</b> (十全街 · Shíquán Jiē)`,`Persis di depan hotel — jalan kuliner &amp; bar klasik Suzhou. Makan ±CNY 25/org`,``,`50`,`132.500`],
           [`19:00–20:00`,`Jalan santai sekitar Shiquan Street / area hotel`,`Opsional: <b>Master of Nets Garden (网师园 · Wǎngshī Yuán) versi Night Garden</b> literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail`,``,``,``],
         ],
-        total:{cny:`<b>80</b>`, idr:`<b>Rp212.000</b>`},
+        total:{cny:`<b>80</b>`, idr:`<b>212.000</b>`},
         planb:`kalau kedatangan lebih malam dari rencana — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja (Shiquan Street tetap buka larut, banyak pilihan santai).`,
       },
       {
@@ -1263,7 +1269,7 @@ const destinations = [
           [`18:00–19:30`,`Makan malam + jalan malam <b>Pingjiang Road</b>`,`Kanal bersejarah, gratis. Makan ±CNY 25/org`,``,`50`,`132.500`],
           [`20:00`,`Kembali ke hotel (metro, transfer di Nanmen)`,``,``,`12`,`31.800`],
         ],
-        total:{cny:`<b>350</b>`, idr:`<b>Rp927.500</b>`},
+        total:{cny:`<b>350</b>`, idr:`<b>927.500</b>`},
         planb:`<b>Huqiu Wetland Park</b> — gratis, alternatif kalau ingin ganti salah satu spot berbayar dengan opsi gratis (searah, sekitar Beisita). Atau <b>Master of Nets Garden</b> versi siang (±CNY 40/org) kalau ingin mengganti Humble Administrator's Garden — meski secara lokasi lebih dekat hotel (lihat Hari 1), jadi lebih pas dijadikan alternatif Hari 1 malam kalau Hari 2 kepadatan.`,
       },
       {
@@ -1280,7 +1286,7 @@ const destinations = [
           [`16:00–17:30`,`Makan malam sekitar Shantang`,`±CNY 20/org`,``,`40`,`106.000`],
           [`17:30`,`Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu)`,`±30-35 menit`,``,`20`,`53.000`],
         ],
-        total:{cny:`<b>282</b>`, idr:`<b>Rp747.300</b>`},
+        total:{cny:`<b>282</b>`, idr:`<b>747.300</b>`},
         planb:`<b>Xiyuan Temple (kelenteng kucing)</b> — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.`,
       },
       {
@@ -1297,7 +1303,7 @@ const destinations = [
           [`19:00–19:30`,`<b>Jinji Lake Music Fountain</b> (kalau tayang)`,`Gratis. ⚠️ Sumber terbaru sebut jadwal hanya Jumat &amp; Sabtu 19:30 — Senin kemungkinan TIDAK tayang, cek jadwal WeChat/website resmi H-1; kalau tidak tayang, cukup nikmati promenade malam tanpa fountain`,``,``,``],
           [`20:00–20:30`,`Metro kembali ke hotel`,`±35-40 menit`,``,`20`,`53.000`],
         ],
-        total:{cny:`<b>194</b>`, idr:`<b>Rp514.100</b>`},
+        total:{cny:`<b>194</b>`, idr:`<b>514.100</b>`},
         planb:`<b>Suzhou Centre Plaza (Mall)</b> — indoor, satu kawasan dengan Jinji Lake, kalau hujan deras. Kalau ingin pasti dapat pertunjukan Music Fountain dan jadwal fleksibel, pertimbangkan menukar hari ini ke malam Sabtu (Hari 2) — tapi Hari 2 sudah cukup padat dengan kota tua, jadi tetap disusun di Hari 4 sebagai default dengan catatan ketidakpastian di atas.`,
       },
       {
@@ -1315,7 +1321,7 @@ const destinations = [
           [`14:00–14:30`,`Taksi/Didi ke <b>Suzhou Railway Station</b>`,`±27 menit, dengan koper lebih praktis daripada MRT+transfer`,``,`40`,`106.000`],
           [`15:00`,`HSR Suzhou → Ningbo`,`±2,5-3,5 jam, tiket ±CNY 147-218/org`,``,``,`(masuk budget Ningbo)`],
         ],
-        total:{cny:`<b>330</b>`, idr:`<b>Rp874.500</b>`},
+        total:{cny:`<b>330</b>`, idr:`<b>874.500</b>`},
         planb:`kalau cuaca buruk atau waktu mepet — skip Taihu Lake sepenuhnya, ganti dengan <b>Guanqian Street</b> (kunjungan ulang santai, sudah dikenal dari Hari 2, searah dengan rute pagi via Line 4) sebagai pengganti yang lebih dekat &amp; singkat. Atau kalau masih ingin nuansa alam tapi lebih dekat: <b>Dayangshan National Forest Park</b> / <b>Tianpingshan</b> (lihat Lampiran) sebagai alternatif — keduanya tetap butuh taksi terpisah, jadi kurang praktis dibanding Taihu via Line 5 langsung.`,
       },
     ],
@@ -1323,19 +1329,19 @@ const destinations = [
     budget:{
       note:`Belum termasuk harga hotel &amp; tiket HSR Suzhou→Ningbo (masuk budget Ningbo, lihat "Informasi Transportasi Pulang"). Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.650/CNY.`,
       byDay:[
-        [`Hari 1 (10 Okt)`,`80`,`Rp212.000`],
-        [`Hari 2 (11 Okt)`,`350`,`Rp927.500`],
-        [`Hari 3 (12 Okt)`,`282`,`Rp747.300`],
-        [`Hari 4 (13 Okt)`,`194`,`Rp514.100`],
-        [`Hari 5 (14 Okt)`,`330`,`Rp874.500`],
+        [`Hari 1 (10 Okt)`,`80`,`212.000`],
+        [`Hari 2 (11 Okt)`,`350`,`927.500`],
+        [`Hari 3 (12 Okt)`,`282`,`747.300`],
+        [`Hari 4 (13 Okt)`,`194`,`514.100`],
+        [`Hari 5 (14 Okt)`,`330`,`874.500`],
       ],
       byCategory:[
-        [`Tiket masuk (Humble Administrator's Garden, Xuanmiao Hall, Panmen, Hanshan Temple, Taihu Lake Wetland Park)`,`440`,`Rp1.166.000`],
-        [`Makan (semua hari)`,`510`,`Rp1.351.500`],
-        [`Transport lokal (metro + taksi singkat)`,`286`,`Rp757.900`],
+        [`Tiket masuk (Humble Administrator's Garden, Xuanmiao Hall, Panmen, Hanshan Temple, Taihu Lake Wetland Park)`,`440`,`1.166.000`],
+        [`Makan (semua hari)`,`510`,`1.351.500`],
+        [`Transport lokal (metro + taksi singkat)`,`286`,`757.900`],
       ],
-      grand:[`GRAND TOTAL`,`1.236`,`Rp3.275.400`],
-      catTotal:[`TOTAL`,`1.236`,`Rp3.275.400`],
+      grand:[`GRAND TOTAL`,`1.236`,`3.275.400`],
+      catTotal:[`TOTAL`,`1.236`,`3.275.400`],
       caveat:`Baoen Temple/North Pagoda, Guanqian Street (pelataran), Jinji Lake, Shantang Street, Fengqiao gratis (tidak dihitung). Opsional Master of Nets Garden Night Garden (Hari 1) dan Sanqing Hall Xuanmiao Temple sudah dihitung di masing-masing baris terkait. Kalau Music Fountain (Hari 4) ternyata tidak tayang, tidak mengurangi total (memang sudah gratis, tidak ada biaya yang hilang).`,
     },
 
@@ -1626,15 +1632,6 @@ function formatJam(jam){
   return jam;
 }
 
-const DAY_ABBR = {Senin:'Sen',Selasa:'Sel',Rabu:'Rab',Kamis:'Kam',Jumat:'Jum',Sabtu:'Sab',Minggu:'Min'};
-const MONTH_ABBR = {Januari:'Jan',Februari:'Feb',Maret:'Mar',April:'Apr',Mei:'Mei',Juni:'Jun',Juli:'Jul',Agustus:'Agu',September:'Sep',Oktober:'Okt',November:'Nov',Desember:'Des'};
-function abbrevDate(s){
-  let out = s;
-  for(const k in DAY_ABBR) out = out.replace(k, DAY_ABBR[k]);
-  for(const k in MONTH_ABBR) out = out.replace(k, MONTH_ABBR[k]);
-  return out;
-}
-
 function updateProgress(dayEl){
   const boxes = dayEl.querySelectorAll('input[type=checkbox]');
   const done = [...boxes].filter(b=>b.checked).length;
@@ -1724,9 +1721,10 @@ function renderDay(d, dest){
 
   det.innerHTML = `
     <summary>
+      <div class="day-badge">${d.num}</div>
       <div class="day-head-text">
         <div class="day-toprow">
-          <div class="day-date">${d.num} &middot; ${abbrevDate(d.date)}</div>
+          <div class="day-date">${d.date}</div>
           <div class="day-progress">0/${d.items.length}</div>
         </div>
         <div class="day-label">${d.label}</div>
