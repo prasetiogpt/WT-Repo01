@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Wuxi Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) draf awal 3 malam dengan 11 lokasi utama di klaster Lihu/Taihu & Huishan; (2-6) Hanzi, badge verifikasi, `**Akses:**`/`**Jam Operasional:**`/`**Tiket:**` dilengkapi di semua 28 entri Lampiran, blok "Sebelum Berangkat" & "Informasi Transportasi Pulang" ditambahkan; (7) HSR dikunci **18:00 tepat** di kedua ujung (Nanjing→Wuxi Hari 1, Wuxi→Suzhou Hari 4) sesuai instruksi saat itu; (8) **koreksi lokasi hotel** — bukan dekat Wuxi Railway Station, tapi dekat **Taihu Square/Tanduqiao (Metro Line 1)**, ±3,9km/12 menit dari stasiun; (9) **Qingming Bridge & Nanchang Street versi MALAM (gelap total) dipindah ke Hari 3 malam** (menyambung dari Huishan, bukan revisit tempat yang sama) — Hari 4 (lama) disederhanakan jadi Nanchan Temple saja + checkout, tanpa perlu kejar cahaya senja sebelum kereta; Hari 2 & 3 diperpanjang sampai ±21:00 dengan acara jalan malam; (10) **verifikasi urutan stasiun Metro Line 1/4 via Wikipedia** menemukan: ada stasiun **Qingmingqiao** persis 1 halte dari hotel (Taihu Square) — Hari 3 malam disederhanakan jadi metro langsung ke Qingmingqiao (bukan jalan kaki dari Nanchan Temple); Hari 4 (lama) **tidak perlu titip koper lagi** (hotel→Nanchan Temple→Wuxi Railway Station searah utara tanpa backtrack, koper dibawa langsung); transfer Huishan dikoreksi ke **Liutan saja** (bukan "Liutan atau Civic Center" — Civic Center ternyata jauh lebih jauh dari hotel); (11) **diperpanjang jadi 4 malam/5 hari (6–10 Okt)** sesuai instruksi terbaru — kedatangan Wuxi dikunci **18:00, Selasa 6 Okt**, kepulangan (HSR ke Suzhou) dikunci **15:00, Sabtu 10 Okt**. Ditambahkan **Hari 4 baru** (klaster **Taihu Yuantouzhu + Liyuan Garden**, dijadikan 1 hari dedicated karena jauh dari klaster utama & tidak ada MRT langsung — sebelumnya masuk Cadangan, sekarang dipindah jadi itinerary utama karena ada slot hari tambahan). Hari lama "Nanchan Temple + kepulangan" bergeser jadi **Hari 5**, jadwal dipadatkan menyesuaikan kepulangan lebih awal (15:00, bukan 18:00 seperti versi lama) — sesi opsional Wuxi Museum di jendela sore dihapus karena waktu tidak cukup lagi. Referensi keterkaitan jadwal ke Nanjing/Suzhou dihapus — **kota sekarang direncanakan independen**, penyambungan antar kota diatur terpisah oleh Anda; (12) **Hari 5: koper dititip di hotel setelah checkout** (bukan dibawa keliling sepanjang hari) — versi sebelumnya mengandalkan argumen "rute searah, tidak perlu titip" tapi tetap merepotkan untuk menarik koper sambil jajan/jalan santai pagi. Sekarang: checkout & titip koper di front desk → Nanchan Temple tanpa koper → balik ke hotel ambil koper → lanjut ke stasiun. Tambahan 1 trip metro (±12 CNY/2 org), Total Hari 5 128→140 CNY, Grand Total 1.228→1.240 CNY.
+> ⚠️ Riwayat revisi: (1) draf awal 3 malam dengan 11 lokasi utama di klaster Lihu/Taihu & Huishan; (2-6) Hanzi, badge verifikasi, `**Akses:**`/`**Jam Operasional:**`/`**Tiket:**` dilengkapi di semua 28 entri Lampiran, blok "Sebelum Berangkat" & "Informasi Transportasi Pulang" ditambahkan; (7) HSR dikunci **18:00 tepat** di kedua ujung (Nanjing→Wuxi Hari 1, Wuxi→Suzhou Hari 4) sesuai instruksi saat itu; (8) **koreksi lokasi hotel** — bukan dekat Wuxi Railway Station, tapi dekat **Taihu Square/Tanduqiao (Metro Line 1)**, ±3,9km/12 menit dari stasiun; (9) **Qingming Bridge & Nanchang Street versi MALAM (gelap total) dipindah ke Hari 3 malam** (menyambung dari Huishan, bukan revisit tempat yang sama) — Hari 4 (lama) disederhanakan jadi Nanchan Temple saja + checkout, tanpa perlu kejar cahaya senja sebelum kereta; Hari 2 & 3 diperpanjang sampai ±21:00 dengan acara jalan malam; (10) **verifikasi urutan stasiun Metro Line 1/4 via Wikipedia** menemukan: ada stasiun **Qingmingqiao** persis 1 halte dari hotel (Taihu Square) — Hari 3 malam disederhanakan jadi metro langsung ke Qingmingqiao (bukan jalan kaki dari Nanchan Temple); Hari 4 (lama) **tidak perlu titip koper lagi** (hotel→Nanchan Temple→Wuxi Railway Station searah utara tanpa backtrack, koper dibawa langsung); transfer Huishan dikoreksi ke **Liutan saja** (bukan "Liutan atau Civic Center" — Civic Center ternyata jauh lebih jauh dari hotel); (11) **diperpanjang jadi 4 malam/5 hari (6–10 Okt)** sesuai instruksi terbaru — kedatangan Wuxi dikunci **18:00, Selasa 6 Okt**, kepulangan (HSR ke Suzhou) dikunci **15:00, Sabtu 10 Okt**. Ditambahkan **Hari 4 baru** (klaster **Taihu Yuantouzhu + Liyuan Garden**, dijadikan 1 hari dedicated karena jauh dari klaster utama & tidak ada MRT langsung — sebelumnya masuk Cadangan, sekarang dipindah jadi itinerary utama karena ada slot hari tambahan). Hari lama "Nanchan Temple + kepulangan" bergeser jadi **Hari 5**, jadwal dipadatkan menyesuaikan kepulangan lebih awal (15:00, bukan 18:00 seperti versi lama) — sesi opsional Wuxi Museum di jendela sore dihapus karena waktu tidak cukup lagi. Referensi keterkaitan jadwal ke Nanjing/Suzhou dihapus — **kota sekarang direncanakan independen**, penyambungan antar kota diatur terpisah oleh Anda; (12) **Hari 5: koper dititip di hotel setelah checkout** (bukan dibawa keliling sepanjang hari) — versi sebelumnya mengandalkan argumen "rute searah, tidak perlu titip" tapi tetap merepotkan untuk menarik koper sambil jajan/jalan santai pagi. Sekarang: checkout & titip koper di front desk → Nanchan Temple tanpa koper → balik ke hotel ambil koper → lanjut ke stasiun. Tambahan 1 trip metro (±12 CNY/2 org), Total Hari 5 128→140 CNY, Grand Total 1.228→1.240 CNY; (13) **koreksi besar: Hari 2 TIDAK bisa jalan kaki dari hotel** — asumsi di poin (8) bahwa hotel "dekat Taihu Square" berarti dekat Lihu/Taihu lakefront ternyata SALAH. Nama stasiun "Taihu Square" menyesatkan: stasiun ini sebenarnya di kawasan Old Canal/Nanchan Temple, sementara Lihu National Wetland Park/klaster Binhu lakefront yang sesungguhnya ±9km (11 halte Line 1) ke selatan via Stasiun Changguangxi — terverifikasi dari urutan resmi 27 stasiun Line 1 dan alamat resmi taman (山水东路6号, Kec. Xuelang), dipicu pengguna cek jarak sendiri di peta. Hari 2 dirombak: tambah commute MRT Line 1 langsung ke Changguangxi (±11 halte, ±25 menit, tanpa transfer) di awal & akhir hari, plus Didi/bus singkat gerbang taman↔stasiun; **Taihu Lake Promenade** dipindah dari "jalan malam dekat hotel" jadi bagian rute sore di kawasan lakefront yang sama (bukan dekat hotel sama sekali); entri Lampiran & Plan-B (Wuxi Binhu The Mixc, akses Line 4 Dajuyuan) ikut dikoreksi. Total Hari 2 lengkap 192→248 CNY, hemat 124→180 CNY, Grand Total lengkap 1.240→1.296 CNY.
 
 > **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai; Lihu/Taihu (area luas, lebih tahan ramai) di 7 Okt; Taihu Yuantouzhu (destinasi populer lain) di 9 Okt, juga sudah lewat Golden Week.
 
@@ -63,27 +63,29 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple** (Liangxi District) — BUKA
 
 ## Hari 2 — Rabu, 7 Oktober (Klaster Lihu & Taihu Lakefront — ekor Golden Week, area luas jadi relatif lebih tahan ramai)
 
-**Rute:** Hotel sudah di area Taihu Square — tinggal jalan kaki ke tepi Lihu Lake, lanjut jalan kaki/sepeda menyusuri lakefront. Semua tujuan hari ini ada di jalur yang sama, berurutan dari utara ke selatan, balik lagi ke hotel di malam hari tanpa perlu metro.
+**Rute:** ⚠️ **Revisi 2026-08-20** — hotel TIDAK dekat klaster ini (koreksi dari asumsi lama yang salah, lihat blockquote revisi di atas). Lihu/Binhu lakefront ±9km dari hotel — naik **MRT Line 1 langsung ke Changguangxi (±11 halte, ±25 menit, TANPA transfer)**, lanjut Didi/bus singkat ke gerbang taman. Di dalam kompleks, taman-taman ini saling berdekatan (jalan kaki/sepeda sewa antar taman) — ⚠️ urutan jalan kaki persis di dalam kompleks belum terverifikasi detail per-gerbang, cek Amap on-site. Sore/malam balik ke Changguangxi, MRT langsung balik ke hotel.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Jalan kaki ke **Lihu National Wetland Park** (via Taihu Square) | — | — | — |
-| 09:00–11:00 | **Lihu National Wetland Park** — jalur wetland tepi danau, datar & teduh | Gratis | — | — |
-| 11:00–12:30 | **Central Lihu Park** — lanjutan searah, taman pusat tepi Lihu | Gratis | — | — |
-| 12:30–13:30 | Makan siang sekitar Lihu | ±CNY 25/org | 50 | Rp132.500 |
-| 13:30–15:00 | **Lixi Park** (Lihu Park, 151 Shuanghong Road) — lanjutan tepi danau, ada area Ferris wheel/Eropa-style | Gratis | — | — |
-| 15:00–17:00 | Lanjut ke **Gonghu Bay Wetland Park** — segmen paling scenic (±4km) via sepeda sewa/jalan santai di jalur wetland, ATAU taksi kalau sudah lelah | Gratis masuk. Sepeda opsional ±CNY 17/jam/org (2 jam) | 68 | Rp180.200 |
-| 17:00–18:00 | Kembali ke area Taihu Square (jalan kaki/sepeda balik atau Didi singkat kalau lelah) | — | — | — |
-| 18:00–19:00 | Makan malam sekitar Taihu Square | ±CNY 25/org | 50 | Rp132.500 |
-| 19:00–21:00 | **Taihu Lake Promenade** — jalan santai malam di tepi Danau Taihu, lampu kota & lakefront menyala, jalur datar & ramai warga lokal olahraga malam | Gratis | — | — |
-| 21:00 | Jalan kaki kembali ke hotel (persis di area Taihu Square) | — | — | — |
-| **TOTAL HARI 2 (dengan sepeda ke Gonghu Bay)** | | | **192** | **Rp508.800** |
-| **TOTAL HARI 2 (skip Gonghu Bay, jalan kaki santai saja)** | | | **124** | **Rp328.600** |
+| 08:30–08:35 | Jalan kaki ke Stasiun Taihu Square/Tanduqiao | 650-860m dari hotel | — | — |
+| 08:35–09:00 | MRT Line 1 langsung ke **Changguangxi** (±11 halte, tanpa transfer) | Tarif jarak jauh ±CNY 4/org | 8 | Rp21.200 |
+| 09:00–09:15 | Didi/bus singkat dari Changguangxi ke gerbang **Lihu National Wetland Park** | Stasiun tidak persis di gerbang, ±2 halte bus/Didi singkat | 20 | Rp53.000 |
+| 09:15–11:00 | **Lihu National Wetland Park** — jalur wetland tepi danau, datar & teduh | Gratis | — | — |
+| 11:00–12:00 | **Central Lihu Park** — lanjutan searah, taman pusat tepi Lihu | Gratis | — | — |
+| 12:00–13:00 | Makan siang sekitar Lihu | ±CNY 25/org | 50 | Rp132.500 |
+| 13:00–14:30 | **Lixi Park** (Lihu Park, 151 Shuanghong Road) — lanjutan tepi danau, ada area Ferris wheel/Eropa-style | Gratis | — | — |
+| 14:30–16:30 | Lanjut ke **Gonghu Bay Wetland Park** — segmen paling scenic (±4km) via sepeda sewa/jalan santai di jalur wetland, ATAU taksi kalau sudah lelah | Gratis masuk. Sepeda opsional ±CNY 17/jam/org (2 jam) | 68 | Rp180.200 |
+| 16:30–17:00 | **Taihu Lake Promenade** — jalan santai tepi Danau Taihu, jalur datar & ramai warga lokal olahraga sore | Gratis, masih di kawasan lakefront yang sama | — | — |
+| 17:00–17:30 | Didi/bus balik ke Stasiun Changguangxi | — | 20 | Rp53.000 |
+| 17:30–18:30 | Makan malam sekitar Changguangxi/lakefront | ±CNY 25/org | 50 | Rp132.500 |
+| 18:30–19:00 | MRT Line 1 langsung balik ke hotel (±11 halte) | — | 8 | Rp21.200 |
+| **TOTAL HARI 2 (dengan sepeda ke Gonghu Bay)** | | | **248** | **Rp657.200** |
+| **TOTAL HARI 2 (skip Gonghu Bay, jalan kaki santai saja)** | | | **180** | **Rp477.000** |
 
-**Catatan fisik:** semua jalur datar, aman untuk lutut. Gonghu Bay agak jauh (±11km dari Wanghu Bridge) — kalau lelah di sore hari, skip & ganti Plan-B di bawah.
+**Catatan fisik:** semua jalur datar di dalam taman, aman untuk lutut. Gonghu Bay agak jauh (±11km dari Wanghu Bridge, dalam kompleks) — kalau lelah di sore hari, skip & ganti Plan-B di bawah.
 
-**Plan-B hari ini:** kalau hujan deras atau terlalu lelah untuk lanjut ke Gonghu Bay — pilih salah satu di area yang sama (tidak perlu pindah rute): jalan santai versi lebih pendek tetap di **Taihu Lake Promenade** (sudah jadi acara malam utama hari ini) atau **Wuxi Binhu The Mixc** (mal, hanya kalau hujan deras — area rooftop garden & plaza luar juga bisa dinikmati gratis).
+**Plan-B hari ini:** kalau hujan deras atau terlalu lelah untuk lanjut ke Gonghu Bay — jalan santai versi lebih pendek tetap di **Taihu Lake Promenade** (sudah masuk rute sore hari ini, tidak perlu pindah lokasi), atau kalau hujan deras sekali, **Wuxi Binhu The Mixc** (mal — akses Line 4 Stasiun Dajuyuan, sama-sama di kawasan Binhu, area rooftop garden & plaza luar bisa dinikmati gratis).
 
 ---
 
@@ -169,11 +171,11 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 | Hari | CNY (skenario hemat) | CNY (skenario lengkap) | IDR (skenario lengkap) |
 |---|---|---|---|
 | Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
-| Hari 2 (7 Okt) | 124 | 192 | Rp508.800 |
+| Hari 2 (7 Okt) | 180 | 248 | Rp657.200 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
 | Hari 4 (9 Okt) | 524 | 524 | Rp1.388.600 |
 | Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **GRAND TOTAL** | **1.082** | **1.240** | **Rp3.286.000** |
+| **GRAND TOTAL** | **1.138** | **1.296** | **Rp3.434.400** |
 
 *Skenario hemat = tanpa Jichang Garden (Hari 3) & tanpa perjalanan sepeda ke Gonghu Bay (Hari 2). Skenario lengkap = termasuk keduanya. Hari 4 & 5 tidak punya varian hemat terpisah (lihat catatan opsional skip Yuantouzhu di Hari 4 kalau ingin hemat lebih jauh).*
 
@@ -183,8 +185,8 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 |---|---|---|
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 400 | Rp1.060.000 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
-| Transport lokal (metro, sepeda, Didi) | 274 | Rp726.100 |
-| **TOTAL** | **1.240** | **Rp3.286.000** |
+| Transport lokal (metro, sepeda, Didi) | 330 | Rp874.500 |
+| **TOTAL** | **1.296** | **Rp3.434.400** |
 
 ---
 
@@ -192,10 +194,10 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 
 - **Fisik/lutut:** semua jalur datar (taman kota, tepi danau, pedestrian street, promenade). Tempat menanjak (Baojie Mountain Forest Park) sengaja tidak dimasukkan, lihat Cadangan.
 - **Makanan:** tidak pedas, tidak asam, tidak berminyak/gorengan.
-- **Transportasi:** hotel di area Taihu Square (Line 1), 1 halte dari Qingmingqiao (stasiun Qingming Bridge!). **Hari 5: koper dititip di hotel setelah checkout** (bukan dibawa keliling) — diambil lagi siang sebelum ke stasiun, supaya jalan-jalan/jajan pagi tidak perlu tarik koper (tambahan 1 trip metro balik ke hotel, ±12 CNY/2 org). Prioritas jalan kaki (Hari 2, hotel dekat) & Metro Line 1 (+transfer Line 4 di **Liutan** khusus Huishan); Didi/taksi dipakai Hari 1 (stasiun→hotel) dan Hari 4 (klaster Yuantouzhu, tidak ada MRT langsung).
+- **Transportasi:** hotel di area Taihu Square (Line 1), 1 halte dari Qingmingqiao (stasiun Qingming Bridge!) — TAPI ±9km/11 halte dari klaster Lihu/Taihu lakefront (Hari 2), jadi Hari 2 pakai MRT Line 1 langsung ke Changguangxi, bukan jalan kaki. **Hari 5: koper dititip di hotel setelah checkout** (bukan dibawa keliling) — diambil lagi siang sebelum ke stasiun, supaya jalan-jalan/jajan pagi tidak perlu tarik koper (tambahan 1 trip metro balik ke hotel, ±12 CNY/2 org). Metro Line 1 jadi jalur utama (+transfer Line 4 di **Liutan** khusus Huishan); Didi/taksi dipakai Hari 1 (stasiun→hotel), Hari 2 (last-mile Changguangxi↔gerbang taman), dan Hari 4 (klaster Yuantouzhu, tidak ada MRT langsung).
 - **Tempat berbayar** (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) ditandai jelas & sebagian opsional untuk hemat biaya.
 - **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; Lihu/Taihu (tahan ramai) di 7 Okt; Taihu Yuantouzhu di 9 Okt, juga sudah lewat Golden Week.
-- **Jadwal kedatangan & kepulangan dikunci** sesuai instruksi Anda — tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. **Qingming Bridge/Nanchang Street versi MALAM sudah diakomodasi di Hari 3** (bukan Hari 5, supaya tidak kena batas jam kereta). Hari 2 & 3 diperpanjang sampai ±21:00 dengan jalan malam (Taihu Lake Promenade / Old City kanal).
+- **Jadwal kedatangan & kepulangan dikunci** sesuai instruksi Anda — tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. **Qingming Bridge/Nanchang Street versi MALAM sudah diakomodasi di Hari 3** (bukan Hari 5, supaya tidak kena batas jam kereta), diperpanjang sampai ±21:00. Hari 2 selesai lebih awal (±19:00, sudah termasuk commute balik) karena klaster Lihu/Taihu jauh dari hotel — Taihu Lake Promenade jadi bagian rute sore di lakefront, bukan jalan malam dekat hotel.
 - **Itinerary kota ini independen** — tidak menyambung otomatis ke jadwal Nanjing/Suzhou; penyambungan antar kota diatur terpisah oleh Anda.
 
 ---
@@ -261,7 +263,7 @@ Lihu Lake (juga disebut Wuli Lake) adalah danau tepi kota di barat daya Wuxi, ±
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1, turun Stasiun Taihu Square, lanjut jalan kaki/Didi singkat ke tepi danau (bagian utara kompleks Lihu).
+**Akses:** ⚠️ dari hotel (area Taihu Square), MRT Line 1 langsung ke Stasiun Changguangxi (±11 halte, ±25 menit, tanpa transfer — BUKAN dekat hotel, ±9km), lanjut Didi/bus singkat ke gerbang taman (stasiun tidak persis di tepi danau).
 
 **Jam Operasional:** taman terbuka ±06:00–21:00, gratis, tidak ada hari libur rutin. Jam puncak: pagi (warga lokal olahraga) dan sore/malam akhir pekan.
 
@@ -313,13 +315,13 @@ Terletak di selatan persimpangan Gonghu Avenue dan Hongzhou Road, Distrik Binhu 
 - Video referensi: https://www.youtube.com/results?search_query=Gonghu+Bay+Wetland+Park+Wuxi
 
 ### Taihu Lake Promenade (太湖广场滨湖步道 · Tàihú Guǎngchǎng Bīnhú Bùdào) ⚠️
-Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di China — jalur lakefront yang jadi acara jalan santai malam utama Hari 2, dengan lampu kota & suasana warga lokal olahraga malam di tepi danau.
+Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di China — jalur lakefront yang jadi acara jalan santai sore Hari 2 (sebelum kembali ke hotel), dengan suasana warga lokal olahraga sore di tepi danau.
 
 ⚠️ Bukan nama resmi tunggal di Amap — merujuk ke jalur promenade umum di sekitar Taihu Square/Taihu New Town, pakai nama jalan/kawasan sebagai gantinya kalau dicari di Amap.
 
-**Akses:** MRT Line 1, turun Stasiun Taihu Square — sama seperti akses ke klaster Lihu, langsung ke tepi promenade.
+**Akses:** sama seperti klaster Lihu (Stasiun Changguangxi Line 1, ±11 halte dari hotel) — bagian dari rute sore yang sama, bukan promenade terpisah dekat hotel.
 
-**Jam Operasional:** promenade terbuka 24 jam, gratis, tidak ada hari libur. Jam puncak malam: ±19:00–21:00, warga lokal ramai jalan/olahraga.
+**Jam Operasional:** promenade terbuka 24 jam, gratis, tidak ada hari libur. Jam puncak: sore/malam, warga lokal ramai jalan/olahraga.
 
 **Tiket:** Gratis.
 
@@ -331,7 +333,7 @@ Kompleks urban kelas atas di tepi timur Lihu Lake, 1688 Taihu West Avenue — be
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1, turun Stasiun Taihu Square, jalan kaki singkat ke 1688 Taihu West Avenue.
+**Akses:** MRT Line 4, turun Stasiun Dajuyuan (Grand Theatre), jalan kaki singkat ke 1688 Taihu West Avenue — BUKAN dekat hotel/Stasiun Taihu Square, transfer Line 4 diperlukan.
 
 **Jam Operasional:** mal ±10:00–22:00 setiap hari, tidak ada hari libur. Area rooftop/plaza luar bisa diakses lebih fleksibel.
 
