@@ -202,18 +202,13 @@ details.day > summary{
   list-style:none;cursor:pointer;padding:14px;display:flex;align-items:center;gap:12px;
 }
 details.day > summary::-webkit-details-marker{display:none;}
-.day-badge{
-  flex:0 0 auto;width:40px;height:40px;border-radius:10px;
-  background:var(--indigo);color:var(--indigo-ink);
-  display:flex;align-items:center;justify-content:center;
-  font-family:Georgia,serif;font-weight:700;font-size:1.1rem;
-}
 .day-head-text{flex:1;min-width:0;}
+.day-toprow{display:flex;align-items:baseline;justify-content:space-between;gap:8px;}
 .day-date{font-weight:700;font-size:1rem;}
 .day-label{color:var(--ink-soft);font-size:.82rem;margin-top:1px;}
 .day-progress{
-  flex:0 0 auto;font-size:.74rem;font-variant-numeric:tabular-nums;
-  color:var(--jade);background:var(--jade-soft);padding:4px 9px;border-radius:99px;font-weight:700;
+  flex:0 0 auto;font-size:.72rem;font-variant-numeric:tabular-nums;
+  color:var(--jade);background:var(--jade-soft);padding:3px 8px;border-radius:99px;font-weight:700;
 }
 .reserve-banner,.planb-banner,.info-banner{
   margin:12px 14px 14px;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
@@ -228,14 +223,16 @@ details.day > summary::-webkit-details-marker{display:none;}
 }
 .cadangan-nearby b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
 
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 .table-scroll{overflow-x:auto;border-top:1px solid var(--border);-webkit-overflow-scrolling:touch;}
-table.itin{border-collapse:collapse;width:100%;min-width:680px;}
+table.itin{border-collapse:collapse;width:100%;min-width:560px;}
 table.itin thead th{
   position:sticky;top:0;background:var(--indigo);color:var(--indigo-ink);
   font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;
   text-align:left;padding:9px 10px;white-space:nowrap;
 }
-table.itin thead th.col-pilih{text-align:center;width:38px;}
+table.itin thead th.col-pilih{text-align:center;width:26px;padding-left:6px;padding-right:6px;}
+table.itin thead th.col-num{text-align:right;}
 table.itin tbody td{
   padding:11px 10px;font-size:.86rem;vertical-align:top;
   border-bottom:1px solid var(--border);
@@ -248,14 +245,14 @@ table.itin tfoot td{
   padding:10px 10px;font-size:.82rem;font-weight:700;border-top:2px solid var(--border-strong);
   background:var(--jade-soft);color:var(--jade);
 }
-table.itin tfoot .cell-valas,table.itin tfoot .cell-rupiah{font-variant-numeric:tabular-nums;}
-.cell-pilih{text-align:center;}
-.cell-pilih input{width:20px;height:20px;accent-color:var(--jade);cursor:pointer;}
-.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;width:62px;max-width:62px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
-.cell-dest{min-width:190px;}
-.cell-ket{min-width:150px;color:var(--ink);}
-.cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;}
-.cell-rupiah{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;}
+table.itin tfoot .cell-valas,table.itin tfoot .cell-rupiah{font-variant-numeric:tabular-nums;text-align:right;}
+.cell-pilih{text-align:center;padding-left:6px;padding-right:6px;}
+.cell-pilih input{width:18px;height:18px;accent-color:var(--jade);cursor:pointer;}
+.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;width:50px;max-width:50px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
+.cell-dest{min-width:210px;}
+.cell-ket{min-width:170px;color:var(--ink);}
+.cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;width:46px;}
+.cell-rupiah{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;text-align:right;width:66px;}
 .dash{color:var(--border-strong);}
 
 /* budget summary, collapsible */
@@ -500,65 +497,65 @@ const destinations = [
         items:[
           [`14:25`,`Landing NKG Terminal 2`,``,``,``,``],
           [`14:25–15:15`,`Imigrasi + ambil bagasi`,`Beri buffer ekstra (periode Golden Week)`,``,``,``],
-          [`15:15–16:15`,`Ke hotel: Didi (bawa koper)`,`1 mobil untuk 3 orang, pesan via app Didi Rider`,``,`CNY 130`,`Rp344.500`],
+          [`15:15–16:15`,`Ke hotel: Didi (bawa koper)`,`1 mobil untuk 3 orang, pesan via app Didi Rider`,``,`130`,`344.500`],
           [`16:15–17:00`,`Check-in hotel, taruh barang, istirahat sebentar`,``,``,``,``],
-          [`17:00–17:20`,`Line 3 dari Fuqiao ke Wudingmen (langsung, tanpa transfer)`,``,``,`CNY 9`,`Rp23.850`],
+          [`17:00–17:20`,`Line 3 dari Fuqiao ke Wudingmen (langsung, tanpa transfer)`,``,``,`9`,`23.850`],
           [`17:20–19:30`,`<b>Laomendong Old Street</b> — jalan santai + jajan khas Nanjing, suasana lampion malam`,`Masuk dari pintu barat, ±500m dari Exit Stasiun Wudingmen`,``,``,``],
-          [`19:30`,`Makan malam: Nanjing salted duck / jajanan Laomendong`,`± CNY 40/org`,``,`CNY 120`,`Rp318.000`],
-          [`19:30–19:50`,`Line 3 dari Wudingmen langsung kembali ke Fuqiao/hotel`,``,``,`CNY 9`,`Rp23.850`],
+          [`19:30`,`Makan malam: Nanjing salted duck / jajanan Laomendong`,`± CNY 40/org`,``,`120`,`318.000`],
+          [`19:30–19:50`,`Line 3 dari Wudingmen langsung kembali ke Fuqiao/hotel`,``,``,`9`,`23.850`],
         ],
-        total:{cny:`CNY <b>268</b>`, idr:`<b>Rp710.200</b>`},
+        total:{cny:`<b>268</b>`, idr:`<b>Rp710.200</b>`},
         planb:`kalau terlalu lelah dari perjalanan (imigrasi lama/jetlag) — cukup istirahat penuh di hotel, atau jalan santai ringan + makan malam di sekitar Chengxian Street saja, tunda Laomendong ke kunjungan berikutnya.`,
       },
       {
         id:"h2", num:2, date:`Minggu, 4 Oktober`, label:`Niushoushan → Deji Plaza → Mochou Lake Park — hari terpanjang`,
         advisory:`<b>⚠️ Dipromosikan dari Cadangan, sengaja dijadikan 1 hari penuh tersendiri</b> — Niushoushan ±16km dari pusat kota, TIDAK ada MRT langsung (Didi/bus ±45-60 menit sekali jalan). Setelah diskusi lanjutan: Jinling Xiaocheng di-skip (kurang worth-it dibanding Niushoushan yang sudah kaya konten, dan bikin hari makin panjang) — <b>Deji Plaza &amp; Mochou Lake Park dipindah ke sini dari rencana Hari 4</b>, nyambung LANGSUNG dari Niushoushan via Didi tanpa perlu balik hotel dulu (lebih efisien, dan sekaligus membebaskan Hari 4 supaya ada buffer aman untuk kereta jam 18:00 — lihat Hari 4). Logika hindari panas siang tetap dipakai: Deji Plaza (indoor) dulu siang hari, Mochou Lake Park (taman) sesudahnya saat lebih sejuk.<br><br><b>⚠️ Risiko keramaian tertinggi di itinerary ini (khusus Niushoushan)</b> — Golden Week + hari Minggu. <b>Datang tepat jam buka (08:30)</b> untuk menghindari antrean terpanjang. Di dalam Usnisa Palace tersedia eskalator (turun ke level bawah tanah) &amp; lift (di dalam pagoda) — aman untuk lutut, tapi tetap ada beberapa anak tangga di sela-sela ruangan; ikuti jalur eskalator/lift semaksimal mungkin.`,
         items:[
-          [`07:00–07:30`,`Sarapan di hotel/sekitar`,`CNY 15/org`,``,`CNY 45`,`Rp119.250`],
-          [`07:30–08:20`,`Didi ke Niushoushan (West Gate)`,`±45-60 menit, tergantung lalu lintas Golden Week`,``,`CNY 90`,`Rp238.500`],
-          [`08:30–12:00`,`<b>Niushoushan</b> (Usnisa Palace)`,`Masuk dari West Gate, jalan kaki ±15 menit ke pusat kompleks atau naik mobil wisata CNY 10/org (opsional, tidak dihitung)`,``,`CNY 435`,`Rp1.152.750`],
-          [`12:00–13:00`,`Makan siang dekat West Gate`,`CNY 25/org`,``,`CNY 75`,`Rp198.750`],
-          [`13:00–14:00`,`Didi LANGSUNG dari Niushoushan ke Deji Plaza (Xinjiekou) — tanpa balik hotel dulu`,`±45-60 menit, tergantung lalu lintas`,``,`CNY 90`,`Rp238.500`],
-          [`14:00–16:00`,`<b>Deji Plaza</b> — jalan santai indoor, pas jam paling panas`,`Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1. Bukan sesi belanja. Snack/minum CNY 15/org`,``,`CNY 45`,`Rp119.250`],
-          [`16:00–16:15`,`Line 2 dari Xinjiekou ke Mochouhu (langsung, dekat)`,``,``,`CNY 6`,`Rp15.900`],
+          [`07:00–07:30`,`Sarapan di hotel/sekitar`,`CNY 15/org`,``,`45`,`119.250`],
+          [`07:30–08:20`,`Didi ke Niushoushan (West Gate)`,`±45-60 menit, tergantung lalu lintas Golden Week`,``,`90`,`238.500`],
+          [`08:30–12:00`,`<b>Niushoushan</b> (Usnisa Palace)`,`Masuk dari West Gate, jalan kaki ±15 menit ke pusat kompleks atau naik mobil wisata CNY 10/org (opsional, tidak dihitung)`,``,`435`,`1.152.750`],
+          [`12:00–13:00`,`Makan siang dekat West Gate`,`CNY 25/org`,``,`75`,`198.750`],
+          [`13:00–14:00`,`Didi LANGSUNG dari Niushoushan ke Deji Plaza (Xinjiekou) — tanpa balik hotel dulu`,`±45-60 menit, tergantung lalu lintas`,``,`90`,`238.500`],
+          [`14:00–16:00`,`<b>Deji Plaza</b> — jalan santai indoor, pas jam paling panas`,`Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1. Bukan sesi belanja. Snack/minum CNY 15/org`,``,`45`,`119.250`],
+          [`16:00–16:15`,`Line 2 dari Xinjiekou ke Mochouhu (langsung, dekat)`,``,``,`6`,`15.900`],
           [`16:15–18:00`,`<b>Mochou Lake Park</b>`,`Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar, lebih sejuk sore hari`,``,``,``],
-          [`18:00–18:30`,`Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuqiao/hotel`,``,``,`CNY 9`,`Rp23.850`],
-          [`18:30`,`Makan malam dekat hotel`,`CNY 30/org`,``,`CNY 90`,`Rp238.500`],
+          [`18:00–18:30`,`Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuqiao/hotel`,``,``,`9`,`23.850`],
+          [`18:30`,`Makan malam dekat hotel`,`CNY 30/org`,``,`90`,`238.500`],
         ],
-        total:{cny:`CNY <b>885</b>`, idr:`<b>Rp2.345.250</b>`},
+        total:{cny:`<b>885</b>`, idr:`<b>Rp2.345.250</b>`},
         planb:`kalau Niushoushan sangat padat/antre lama (risiko tertinggi karena Golden Week + Minggu) — cukup fokus di Usnisa Palace saja, skip Deji Plaza/Mochou Lake Park, balik lebih awal ke hotel istirahat (bisa disisipkan di hari lain kalau masih ada slot). Kalau ingin ganti total ke rencana yang jauh lebih dekat &amp; hemat, lihat Cadangan: Nanjing Folk Museum (searah Hari 1, dekat Laomendong).`,
       },
       {
         id:"h3", num:3, date:`Senin, 5 Oktober`, label:`Taman &amp; Pedestrian Street, via Line 3 tanpa transfer`,
         advisory:`<b>⚠️ Disederhanakan</b> — Jiming Temple &amp; Ming Xiaoling Sacred Way dipindah ke Cadangan (kurang prioritas), jadi hari ini fokus 2 destinasi utama dengan waktu lebih longgar di masing-masing tempat. Rute tetap sangat simpel — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), TIDAK perlu transfer sama sekali.`,
         items:[
-          [`08:00–08:20`,`Line 3 dari Fuqiao ke Jimingsi (1 stasiun ke utara, langsung)`,`Keluar Exit 5`,``,`CNY 6`,`Rp15.900`],
+          [`08:00–08:20`,`Line 3 dari Fuqiao ke Jimingsi (1 stasiun ke utara, langsung)`,`Keluar Exit 5`,``,`6`,`15.900`],
           [`08:20–11:00`,`<b>Xuanwu Lake Park</b>`,`Dari Exit 5 Jimingsi, jalan kaki ±500m ke Jiefang Gate (salah satu pintu masuk taman). Gratis, jalur datar. Trolley listrik CNY 30/org kalau capek jalan (beli di loket dekat dermaga, opsional, tidak dihitung)`,``,``,``],
-          [`11:00–11:45`,`Makan siang + Line 3 dari Jimingsi ke Fuzimiao (langsung, tanpa transfer)`,`Turun Stasiun Fuzimiao, Exit 2 — jalan ±300m ke arah barat daya ke Confucius Temple. Makan CNY 20/org + MRT`,``,`CNY 69`,`Rp182.850`],
+          [`11:00–11:45`,`Makan siang + Line 3 dari Jimingsi ke Fuzimiao (langsung, tanpa transfer)`,`Turun Stasiun Fuzimiao, Exit 2 — jalan ±300m ke arah barat daya ke Confucius Temple. Makan CNY 20/org + MRT`,``,`69`,`182.850`],
           [`12:00–17:00`,`<b>Confucius Temple Pedestrian Street &amp; Qinhuai River</b> — jalan santai kanal`,`Gratis jalan di pedestrian street; kalau mau masuk kompleks kuil, beli tiket di loket dekat gerbang utama (CNY 30/org, tidak dihitung)`,``,``,``],
           [`17:00–19:00`,`Night view <b>Qinhuai River</b>`,`Gratis — ikon Nanjing, lampion malam`,``,``,``],
-          [`19:00`,`Makan malam, Line 3 langsung kembali ke Fuqiao/hotel`,`CNY 30/org`,``,`CNY 90`,`Rp238.500`],
+          [`19:00`,`Makan malam, Line 3 langsung kembali ke Fuqiao/hotel`,`CNY 30/org`,``,`90`,`238.500`],
         ],
-        total:{cny:`CNY <b>165</b>`, idr:`<b>Rp437.250</b>`},
+        total:{cny:`<b>165</b>`, idr:`<b>Rp437.250</b>`},
         planb:`kalau masih tertarik sejarah kekaisaran, mampir Presidential Palace (1 stasiun dari Fuqiao ke Daxinggong, ±CNY 40/org — cek dulu tutup/buka, tutup tiap Senin kecuali libur nasional). Kalau Qinhuai River sore-malam terlalu padat, cukup nikmati dari sisi yang lebih sepi atau ganti dengan area 1912 Block (bar/resto, sebagian tertutup).`,
       },
       {
         id:"h4", num:4, date:`Selasa, 6 Oktober`, label:`Massacre Memorial → Keberangkatan, HSR fixed 18:00`,
         reserve:`<b>⚠️ Disederhanakan drastis setelah diketahui HSR kepulangan/lanjut kota FIXED jam 18:00 dari Nanjing South</b> — rencana sebelumnya (Massacre Memorial + Deji Plaza + Mochou Lake Park di hari yang sama) dihitung ulang dan HAMPIR TIDAK ADA buffer waktu, berisiko ketinggalan kereta. Deji Plaza &amp; Mochou Lake Park sudah dipindah ke Hari 2 (nyambung dari Niushoushan). Hari 4 sekarang HANYA Massacre Memorial Hall (yang memang wajib reservasi, tidak bisa digeser sembarangan) + checkout, dengan buffer besar sebelum kereta. Massacre Memorial Hall tutup tiap Senin (kecuali libur nasional), dan Selasa (Hari 4) BUKAN Senin jadi tetap aman dari risiko tutup. <b>Checkout pagi, titip bagasi di hotel</b> (concierge/locker), ambil lagi sore sebelum ke stasiun.`,
         items:[
-          [`07:00–07:30`,`Sarapan`,`CNY 15/org`,``,`CNY 45`,`Rp119.250`],
+          [`07:00–07:30`,`Sarapan`,`CNY 15/org`,``,`45`,`119.250`],
           [`07:30–08:00`,`Checkout hotel, titip bagasi (concierge/locker)`,``,``,``,``],
-          [`08:00–08:30`,`Fuqiao (Line 3) → transfer di Daxinggong → Line 2 arah barat, turun Yunjinlu`,`Transfer Daxinggong: platform Line 2/3 beda level, ikuti papan petunjuk tanpa keluar stasiun`,``,`CNY 9`,`Rp23.850`],
+          [`08:00–08:30`,`Fuqiao (Line 3) → transfer di Daxinggong → Line 2 arah barat, turun Yunjinlu`,`Transfer Daxinggong: platform Line 2/3 beda level, ikuti papan petunjuk tanpa keluar stasiun`,``,`9`,`23.850`],
           [`08:30–11:00`,`<b>Nanjing Massacre Memorial Hall</b>`,`Keluar Exit 2 Stasiun Yunjinlu — langsung di depan Gate 1. Gratis, wajib reservasi online (lihat Lampiran)`,``,``,``],
-          [`11:00–12:00`,`Makan siang dekat Yunjinlu`,`CNY 20/org`,``,`CNY 60`,`Rp159.000`],
+          [`11:00–12:00`,`Makan siang dekat Yunjinlu`,`CNY 20/org`,``,`60`,`159.000`],
           [`12:00–14:30`,`Waktu santai/buffer — jalan-jalan ringan sekitar Yunjinlu, atau balik lebih awal ke hotel untuk istirahat`,`Tidak ada tempat wajib — ini murni buffer, gunakan sesuka hati`,``,``,``],
-          [`14:30–15:00`,`Line 2 Yunjinlu → transfer Daxinggong → Line 3 ke Fuqiao, ambil bagasi di hotel`,``,``,`CNY 9`,`Rp23.850`],
+          [`14:30–15:00`,`Line 2 Yunjinlu → transfer Daxinggong → Line 3 ke Fuqiao, ambil bagasi di hotel`,``,``,`9`,`23.850`],
           [`15:00–16:00`,`Siap-siap, buffer tambahan di hotel`,``,``,``,``],
-          [`16:00–16:45`,`Didi ke Nanjing South Railway Station (atau Line 3 langsung, tanpa transfer, kalau tidak bawa koper berat)`,`Bawa koper, hindari MRT saat Golden Week. Berangkat cukup awal — beri buffer ±1j15m sebelum kereta`,``,`CNY 50`,`Rp132.500`],
+          [`16:00–16:45`,`Didi ke Nanjing South Railway Station (atau Line 3 langsung, tanpa transfer, kalau tidak bawa koper berat)`,`Bawa koper, hindari MRT saat Golden Week. Berangkat cukup awal — beri buffer ±1j15m sebelum kereta`,``,`50`,`132.500`],
           [`16:45–17:45`,`Tiba stasiun, antre keamanan/boarding (Golden Week)`,`Buffer ekstra ±1 jam sebelum jadwal kereta`,``,``,``],
           [`<b>18:00</b>`,`<b>HSR berangkat dari Nanjing South</b>`,`Rombongan berpisah/lanjut sesuai opsi di bawah`,``,``,``],
         ],
-        total:{cny:`CNY <b>173</b>`, idr:`<b>Rp458.450</b>`},
+        total:{cny:`<b>173</b>`, idr:`<b>Rp458.450</b>`},
         planb:`kalau Massacre Memorial Hall gagal (reservasi bermasalah, dll) — waktu buffer siang yang sudah longgar (12:00-14:30) otomatis jadi cadangan, tidak perlu rencana pengganti khusus. Prioritas hari ini tetap satu: jangan sampai ketinggalan kereta jam 18:00.`,
       },
     ],
@@ -868,88 +865,88 @@ const destinations = [
         id:"h1", num:1, date:`Selasa, 6 Oktober`, label:`Kedatangan Malam — masih Golden Week, sengaja dibuat ringan`,
         items:[
           [`18:00`,`Tiba di Wuxi (Wuxi Railway Station)`,`Moda &amp; asal kedatangan menyesuaikan rencana Anda`,``,``,``],
-          [`18:00–18:20`,`Didi dari Wuxi Railway Station ke hotel (area Taihu Square, ±12 menit)`,``,``,`CNY 20`,`Rp53.000`],
+          [`18:00–18:20`,`Didi dari Wuxi Railway Station ke hotel (area Taihu Square, ±12 menit)`,``,``,`20`,`53.000`],
           [`18:20–18:45`,`Check-in, taruh barang, istirahat`,``,``,``,``],
-          [`18:45–19:45`,`Makan malam santai dekat hotel`,`<b>Sengaja TIDAK ke kawasan kanal/Old City malam ini</b> — masih hari terakhir Golden Week, area ikonik diperkirakan sangat padat. Makan ±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`18:45–19:45`,`Makan malam santai dekat hotel`,`<b>Sengaja TIDAK ke kawasan kanal/Old City malam ini</b> — masih hari terakhir Golden Week, area ikonik diperkirakan sangat padat. Makan ±CNY 25/org`,``,`50`,`132.500`],
           [`19:45–20:30`,`Jalan santai ringan dekat hotel (opsional)`,`Gratis`,``,``,``],
           [`20:30`,`Kembali ke hotel, istirahat`,``,``,``,``],
         ],
-        total:{cny:`CNY <b>70</b>`, idr:`<b>Rp185.500</b>`},
+        total:{cny:`<b>70</b>`, idr:`<b>Rp185.500</b>`},
         planb:`kalau kedatangan terlambat/lebih malam dari 18:00 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.`,
       },
       {
         id:"h2", num:2, date:`Rabu, 7 Oktober`, label:`Klaster Lihu &amp; Taihu Lakefront — ekor Golden Week, area luas jadi relatif lebih tahan ramai`,
         advisory:`<b>Rute:</b> Hotel sudah di area Taihu Square — tinggal jalan kaki ke tepi Lihu Lake, lanjut jalan kaki/sepeda menyusuri lakefront. Semua tujuan hari ini ada di jalur yang sama, berurutan dari utara ke selatan, balik lagi ke hotel di malam hari tanpa perlu metro.`,
         items:[
-          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
+          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`24`,`63.600`],
           [`08:30–09:00`,`Jalan kaki ke <b>Lihu National Wetland Park</b> (via Taihu Square)`,``,``,``,``],
           [`09:00–11:00`,`<b>Lihu National Wetland Park</b> — jalur wetland tepi danau, datar &amp; teduh`,`Gratis`,``,``,``],
           [`11:00–12:30`,`<b>Central Lihu Park</b> — lanjutan searah, taman pusat tepi Lihu`,`Gratis`,``,``,``],
-          [`12:30–13:30`,`Makan siang sekitar Lihu`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`12:30–13:30`,`Makan siang sekitar Lihu`,`±CNY 25/org`,``,`50`,`132.500`],
           [`13:30–15:00`,`<b>Lixi Park</b> (Lihu Park, 151 Shuanghong Road) — lanjutan tepi danau, ada area Ferris wheel/Eropa-style`,`Gratis`,``,``,``],
-          [`15:00–17:00`,`Lanjut ke <b>Gonghu Bay Wetland Park</b> — segmen paling scenic (±4km) via sepeda sewa/jalan santai di jalur wetland, ATAU taksi kalau sudah lelah`,`Gratis masuk. Sepeda opsional ±CNY 17/jam/org (2 jam)`,``,`CNY 68`,`Rp180.200`],
+          [`15:00–17:00`,`Lanjut ke <b>Gonghu Bay Wetland Park</b> — segmen paling scenic (±4km) via sepeda sewa/jalan santai di jalur wetland, ATAU taksi kalau sudah lelah`,`Gratis masuk. Sepeda opsional ±CNY 17/jam/org (2 jam)`,``,`68`,`180.200`],
           [`17:00–18:00`,`Kembali ke area Taihu Square (jalan kaki/sepeda balik atau Didi singkat kalau lelah)`,``,``,``,``],
-          [`18:00–19:00`,`Makan malam sekitar Taihu Square`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`18:00–19:00`,`Makan malam sekitar Taihu Square`,`±CNY 25/org`,``,`50`,`132.500`],
           [`19:00–21:00`,`<b>Taihu Lake Promenade</b> — jalan santai malam di tepi Danau Taihu, lampu kota &amp; lakefront menyala, jalur datar &amp; ramai warga lokal olahraga malam`,`Gratis`,``,``,``],
           [`21:00`,`Jalan kaki kembali ke hotel (persis di area Taihu Square)`,``,``,``,``],
         ],
-        total:{cny:`CNY <b>124</b>`, idr:`<b>Rp328.600</b>`},
+        total:{cny:`<b>124</b>`, idr:`<b>Rp328.600</b>`},
         planb:`kalau hujan deras atau terlalu lelah untuk lanjut ke Gonghu Bay — pilih salah satu di area yang sama (tidak perlu pindah rute): jalan santai versi lebih pendek tetap di <b>Taihu Lake Promenade</b> (sudah jadi acara malam utama hari ini) atau <b>Wuxi Binhu The Mixc</b> (mal, hanya kalau hujan deras — area rooftop garden &amp; plaza luar juga bisa dinikmati gratis).`,
       },
       {
         id:"h3", num:3, date:`Kamis, 8 Oktober`, label:`Klaster Huishan — Golden Week sudah usai, jalur pedestrian sempit jauh lebih nyaman`,
         advisory:`<b>Rute:</b> Pagi-siang di klaster Huishan (Metro Line 1 dari hotel → transfer Line 4 di <b>Liutan</b> → <b>Huishan Ancient Town Station</b>). Sore, balik Line 4 → Line 1, tapi TERUSKAN 1 halte lewat Taihu Square sampai <b>Qingmingqiao</b> (bukan turun di Nanchan Temple) — Qingming Bridge &amp; Nanchang Street ternyata langsung punya stasiun sendiri, cuma 1 halte dari hotel. Setelahnya tinggal 1 halte balik ke hotel.`,
         items:[
-          [`08:00`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:30–09:00`,`Metro Line 1 → transfer Line 4 di Liutan → Huishan Ancient Town Station`,``,``,`CNY 16`,`Rp42.400`],
-          [`09:00–10:00`,`<b>Wuxi Huishan Old Street</b> (pagi) — jalan santai + jajan pagi khas lokal`,`Gratis masuk, bayar jajanan`,``,`CNY 30`,`Rp79.500`],
+          [`08:00`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:00`,`Metro Line 1 → transfer Line 4 di Liutan → Huishan Ancient Town Station`,``,``,`16`,`42.400`],
+          [`09:00–10:00`,`<b>Wuxi Huishan Old Street</b> (pagi) — jalan santai + jajan pagi khas lokal`,`Gratis masuk, bayar jajanan`,``,`30`,`79.500`],
           [`10:00–12:00`,`<b>Huishan Ancient Town Scenic Area</b> — kawasan kanal &amp; klenteng leluhur kuno`,`Sebagian besar area jalan gratis`,``,``,``],
-          [`12:00–13:00`,`Makan siang sekitar Huishan`,`±CNY 20/org`,``,`CNY 40`,`Rp106.000`],
-          [`13:00–15:30`,`<b>Xihui Park Huishan</b> — taman utama, termasuk Huishan Spring &amp; area Huishan Temple`,`Tiket CNY 10/org`,``,`CNY 20`,`Rp53.000`],
-          [`15:30–16:15`,`(Opsional, sangat direkomendasikan) <b>Jichang Garden</b> — taman klasik di dalam Xihui Park`,`CNY 45/org — lihat alasan "worth it" di bawah`,``,`CNY 90`,`Rp238.500`],
-          [`16:15–17:00`,`Keluar Huishan, makan malam awal sekitar Huishan`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
-          [`17:00–17:45`,`Metro Line 4 → Line 1 langsung ke Stasiun <b>Qingmingqiao</b> (lewat Liutan, terus lewat Taihu Square)`,``,``,`CNY 16`,`Rp42.400`],
-          [`18:00–20:00`,`<b>Qingming Bridge Ancient Canal Scenic Spot</b> + <b>Nanchang Street Pedestrian Street</b> — versi MALAM, lampu kanal menyala penuh`,`Gratis area luar/jalan kanal. Jajan malam opsional ±CNY 20`,``,`CNY 20`,`Rp53.000`],
-          [`20:00–20:15`,`Metro Line 1, 1 halte kembali ke hotel (Qingmingqiao → Taihu Square)`,``,``,`CNY 8`,`Rp21.200`],
+          [`12:00–13:00`,`Makan siang sekitar Huishan`,`±CNY 20/org`,``,`40`,`106.000`],
+          [`13:00–15:30`,`<b>Xihui Park Huishan</b> — taman utama, termasuk Huishan Spring &amp; area Huishan Temple`,`Tiket CNY 10/org`,``,`20`,`53.000`],
+          [`15:30–16:15`,`(Opsional, sangat direkomendasikan) <b>Jichang Garden</b> — taman klasik di dalam Xihui Park`,`CNY 45/org — lihat alasan "worth it" di bawah`,``,`90`,`238.500`],
+          [`16:15–17:00`,`Keluar Huishan, makan malam awal sekitar Huishan`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`17:00–17:45`,`Metro Line 4 → Line 1 langsung ke Stasiun <b>Qingmingqiao</b> (lewat Liutan, terus lewat Taihu Square)`,``,``,`16`,`42.400`],
+          [`18:00–20:00`,`<b>Qingming Bridge Ancient Canal Scenic Spot</b> + <b>Nanchang Street Pedestrian Street</b> — versi MALAM, lampu kanal menyala penuh`,`Gratis area luar/jalan kanal. Jajan malam opsional ±CNY 20`,``,`20`,`53.000`],
+          [`20:00–20:15`,`Metro Line 1, 1 halte kembali ke hotel (Qingmingqiao → Taihu Square)`,``,``,`8`,`21.200`],
         ],
-        total:{cny:`CNY <b>224</b>`, idr:`<b>Rp593.600</b>`},
+        total:{cny:`<b>224</b>`, idr:`<b>Rp593.600</b>`},
         planb:`Jichang Garden bisa diganti <b>Huishan Temple (Cultural Relics Area)</b> (sama-sama di dalam Xihui Park, tiket kombinasi ±CNY 70) atau perpanjang jalan santai gratis di Huishan Ancient Town. Untuk sesi malam: kalau hujan deras, cukup lihat kanal dari area beratap terdekat.`,
       },
       {
         id:"h4", num:4, date:`Jumat, 9 Oktober`, label:`Klaster Taihu Yuantouzhu &amp; Liyuan Garden — hari dedicated, jauh dari klaster utama`,
         advisory:`<b>Rute:</b> Klaster ini (Yuantouzhu &amp; Liyuan Garden) tidak ada MRT langsung dan berjarak cukup jauh dari hotel — makanya dijadikan 1 hari dedicated (bukan digabung ke hari lain yang beda arah), sesuai prinsip itinerary ini. Golden Week sudah usai (9 Okt), jadi area populer ini diperkirakan lebih tenang dibanding kalau dikunjungi 6–7 Okt.`,
         items:[
-          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:30–09:00`,`Didi dari hotel (Taihu Square) ke <b>Liyuan Garden</b> (±20-25 menit)`,`Tidak ada MRT langsung ke area ini`,``,`CNY 40`,`Rp106.000`],
-          [`09:00–10:30`,`<b>Liyuan Garden</b> — taman klasik tepi Li Lake, jembatan zigzag &amp; paviliun tepi air, jalur datar`,`CNY 45/org`,``,`CNY 90`,`Rp238.500`],
-          [`10:30–10:45`,`Didi singkat ke <b>Taihu Yuantouzhu Scenic Area</b> (±10-15 menit, searah)`,``,``,`CNY 20`,`Rp53.000`],
-          [`10:45–12:30`,`<b>Taihu Yuantouzhu Scenic Area</b> — semenanjung ikonik tepi Danau Taihu, promenade &amp; taman bunga, jalur datar`,`CNY 100/org — lihat alasan "worth it" di bawah`,``,`CNY 200`,`Rp530.000`],
-          [`12:30–13:30`,`Makan siang di area Yuantouzhu`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:00`,`Didi dari hotel (Taihu Square) ke <b>Liyuan Garden</b> (±20-25 menit)`,`Tidak ada MRT langsung ke area ini`,``,`40`,`106.000`],
+          [`09:00–10:30`,`<b>Liyuan Garden</b> — taman klasik tepi Li Lake, jembatan zigzag &amp; paviliun tepi air, jalur datar`,`CNY 45/org`,``,`90`,`238.500`],
+          [`10:30–10:45`,`Didi singkat ke <b>Taihu Yuantouzhu Scenic Area</b> (±10-15 menit, searah)`,``,``,`20`,`53.000`],
+          [`10:45–12:30`,`<b>Taihu Yuantouzhu Scenic Area</b> — semenanjung ikonik tepi Danau Taihu, promenade &amp; taman bunga, jalur datar`,`CNY 100/org — lihat alasan "worth it" di bawah`,``,`200`,`530.000`],
+          [`12:30–13:30`,`Makan siang di area Yuantouzhu`,`±CNY 25/org`,``,`50`,`132.500`],
           [`13:30–15:30`,`Lanjut jalan santai kawasan Yuantouzhu (dermaga, taman bunga, area promenade)`,`Termasuk tiket di atas`,``,``,``],
-          [`15:30–16:00`,`Didi kembali ke hotel (±30-40 menit)`,``,``,`CNY 50`,`Rp132.500`],
+          [`15:30–16:00`,`Didi kembali ke hotel (±30-40 menit)`,``,``,`50`,`132.500`],
           [`16:00–17:00`,`Istirahat di hotel`,``,``,``,``],
-          [`17:00–18:00`,`Makan malam sekitar hotel`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`17:00–18:00`,`Makan malam sekitar hotel`,`±CNY 25/org`,``,`50`,`132.500`],
           [`18:00–19:00`,`Jalan santai ringan malam di Taihu Lake Promenade (opsional, dekat hotel)`,`Gratis`,``,``,``],
         ],
-        total:{cny:`CNY <b>524</b>`, idr:`<b>Rp1.388.600</b>`},
+        total:{cny:`<b>524</b>`, idr:`<b>Rp1.388.600</b>`},
         planb:`kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip Yuantouzhu (mahal &amp; jauh), ganti dengan jalan santai lebih lama di <b>Taihu Lake Promenade</b> dekat hotel atau <b>Wuxi Binhu The Mixc</b> (sama seperti Plan-B Hari 2, area rooftop/plaza gratis).`,
       },
       {
         id:"h5", num:5, date:`Sabtu, 10 Oktober`, label:`Nanchan Temple, Checkout, HSR ke Suzhou 15:00 Tepat`,
         advisory:`<b>Rute:</b> Qingming Bridge/Nanchang Street sudah selesai versi malam di Hari 3 — Hari 5 tinggal Nanchan Temple. Checkout pagi, <b>koper dititip di hotel</b> (layanan standar, umumnya gratis) supaya jalan-jalan &amp; jajan pagi tidak perlu tarik koper — baru diambil lagi siang sebelum ke stasiun. <b>Kepulangan dikunci 15:00 tepat</b>, jadi jadwal pagi dipadatkan tanpa waktu buffer luang.`,
         items:[
-          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
+          [`08:00–08:30`,`Sarapan sekitar hotel`,`±CNY 12/org`,``,`24`,`63.600`],
           [`08:30–08:45`,`Checkout hotel, <b>titip koper di front desk</b> (tanpa bawa koper mulai sini)`,`Layanan standar hotel, umumnya gratis — konfirmasi langsung ke resepsionis saat checkout`,``,``,``],
-          [`08:45–09:15`,`Metro Line 1 ke area Old City (Nanchan Temple), tangan kosong`,``,``,`CNY 12`,`Rp31.800`],
+          [`08:45–09:15`,`Metro Line 1 ke area Old City (Nanchan Temple), tangan kosong`,``,``,`12`,`31.800`],
           [`09:15–10:15`,`<b>Nanchan Temple</b> (buka 07:00–16:45) — pagi/siang, lebih tenang`,`Tiket kemungkinan gratis/murah — cek langsung di lokasi`,``,``,``],
-          [`10:15–11:00`,`Jajan &amp; jalan santai <b>Nanchan Temple Pedestrian Street</b>`,`±CNY 15/org`,``,`CNY 30`,`Rp79.500`],
-          [`11:00–12:00`,`Makan siang sekitar kanal`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
-          [`12:00–12:30`,`Metro Line 1 balik ke hotel, <b>ambil koper di front desk</b>`,``,``,`CNY 12`,`Rp31.800`],
-          [`12:30–13:00`,`Metro Line 1 lanjut ke Wuxi Railway Station, bawa koper`,``,``,`CNY 12`,`Rp31.800`],
+          [`10:15–11:00`,`Jajan &amp; jalan santai <b>Nanchan Temple Pedestrian Street</b>`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`11:00–12:00`,`Makan siang sekitar kanal`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`12:00–12:30`,`Metro Line 1 balik ke hotel, <b>ambil koper di front desk</b>`,``,``,`12`,`31.800`],
+          [`12:30–13:00`,`Metro Line 1 lanjut ke Wuxi Railway Station, bawa koper`,``,``,`12`,`31.800`],
           [`13:00–15:00`,`Santai di sekitar stasiun sambil menunggu boarding`,`Buffer ±2 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan)`,``,``,``],
           [`15:00`,`HSR Wuxi → Suzhou`,`Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou`,``,``,``],
         ],
-        total:{cny:`CNY <b>140</b>`, idr:`<b>Rp371.000</b>`},
+        total:{cny:`<b>140</b>`, idr:`<b>Rp371.000</b>`},
         planb:`hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).`,
       },
     ],
@@ -1243,82 +1240,82 @@ const destinations = [
       {
         id:"h1", num:1, date:`Jumat, 10 Oktober`, label:`Kedatangan Sore — Ringan`,
         items:[
-          [`±17:00`,`Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel`,`Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah`,``,`CNY 30`,`Rp79.500`],
+          [`17:00`,`Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel`,`Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah`,``,`30`,`79.500`],
           [`17:00–17:30`,`Check-in, taruh barang, istirahat`,``,``,``,``],
-          [`17:30–19:00`,`Makan malam santai di <b>Shiquan Street</b> (十全街 · Shíquán Jiē)`,`Persis di depan hotel — jalan kuliner &amp; bar klasik Suzhou. Makan ±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`17:30–19:00`,`Makan malam santai di <b>Shiquan Street</b> (十全街 · Shíquán Jiē)`,`Persis di depan hotel — jalan kuliner &amp; bar klasik Suzhou. Makan ±CNY 25/org`,``,`50`,`132.500`],
           [`19:00–20:00`,`Jalan santai sekitar Shiquan Street / area hotel`,`Opsional: <b>Master of Nets Garden (网师园 · Wǎngshī Yuán) versi Night Garden</b> literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail`,``,``,``],
         ],
-        total:{cny:`CNY <b>80</b>`, idr:`<b>Rp212.000</b>`},
+        total:{cny:`<b>80</b>`, idr:`<b>Rp212.000</b>`},
         planb:`kalau kedatangan lebih malam dari rencana — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja (Shiquan Street tetap buka larut, banyak pilihan santai).`,
       },
       {
         id:"h2", num:2, date:`Sabtu, 11 Oktober`, label:`Kota Tua Bagian Tengah`,
         advisory:`<b>Rute:</b> dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke <b>Nanmen</b>, transfer <b>Line 4</b> menuju <b>Beisita</b> — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road.`,
         items:[
-          [`08:00`,`Sarapan di sekitar hotel`,`Bubur/baozi kukus, ±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:30–09:00`,`Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita`,`±25-30 menit termasuk transfer`,``,`CNY 12`,`Rp31.800`],
+          [`08:00`,`Sarapan di sekitar hotel`,`Bubur/baozi kukus, ±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:00`,`Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita`,`±25-30 menit termasuk transfer`,``,`12`,`31.800`],
           [`09:00–10:30`,`<b>Suzhou Museum</b>`,`Gratis (reservasi online/tunjukkan paspor)`,``,``,``],
           [`10:30–11:15`,`<b>Baoen Temple / North Pagoda (Beisi Ta)</b>`,`Jalan kaki dari museum. <b>Gratis</b> — cukup nikmati taman &amp; pagoda dari luar, tidak perlu naik ke atas`,``,``,``],
-          [`11:15–12:15`,`Makan siang: Yangchun mian (mie kuah polos)`,`±CNY 20/org`,``,`CNY 40`,`Rp106.000`],
-          [`12:15–13:30`,`<b>Guanqian Street</b> &amp; <b>Xuanmiao Temple</b>`,`Jalan kaki singkat dari Beisita, pedestrian street. Pelataran gratis, masuk aula utama Xuanmiao opsional ±CNY 20/org`,``,`CNY 40`,`Rp106.000`],
-          [`13:30–16:00`,`<b>Humble Administrator's Garden</b>`,`Via Stasiun Zhuozhengyuan·Suzhou Museum (Line 6), searah/berdekatan dengan Beisita &amp; Museum. Tiket ±CNY 80/org`,``,`CNY 160`,`Rp424.000`],
-          [`16:15–16:45`,`Metro ke <b>Pingjiang Road</b> (transfer ke Line 1, Stasiun Xiangmen)`,``,``,`CNY 12`,`Rp31.800`],
-          [`18:00–19:30`,`Makan malam + jalan malam <b>Pingjiang Road</b>`,`Kanal bersejarah, gratis. Makan ±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
-          [`20:00`,`Kembali ke hotel (metro, transfer di Nanmen)`,``,``,`CNY 12`,`Rp31.800`],
+          [`11:15–12:15`,`Makan siang: Yangchun mian (mie kuah polos)`,`±CNY 20/org`,``,`40`,`106.000`],
+          [`12:15–13:30`,`<b>Guanqian Street</b> &amp; <b>Xuanmiao Temple</b>`,`Jalan kaki singkat dari Beisita, pedestrian street. Pelataran gratis, masuk aula utama Xuanmiao opsional ±CNY 20/org`,``,`40`,`106.000`],
+          [`13:30–16:00`,`<b>Humble Administrator's Garden</b>`,`Via Stasiun Zhuozhengyuan·Suzhou Museum (Line 6), searah/berdekatan dengan Beisita &amp; Museum. Tiket ±CNY 80/org`,``,`160`,`424.000`],
+          [`16:15–16:45`,`Metro ke <b>Pingjiang Road</b> (transfer ke Line 1, Stasiun Xiangmen)`,``,``,`12`,`31.800`],
+          [`18:00–19:30`,`Makan malam + jalan malam <b>Pingjiang Road</b>`,`Kanal bersejarah, gratis. Makan ±CNY 25/org`,``,`50`,`132.500`],
+          [`20:00`,`Kembali ke hotel (metro, transfer di Nanmen)`,``,``,`12`,`31.800`],
         ],
-        total:{cny:`CNY <b>350</b>`, idr:`<b>Rp927.500</b>`},
+        total:{cny:`<b>350</b>`, idr:`<b>Rp927.500</b>`},
         planb:`<b>Huqiu Wetland Park</b> — gratis, alternatif kalau ingin ganti salah satu spot berbayar dengan opsi gratis (searah, sekitar Beisita). Atau <b>Master of Nets Garden</b> versi siang (±CNY 40/org) kalau ingin mengganti Humble Administrator's Garden — meski secara lokasi lebih dekat hotel (lihat Hari 1), jadi lebih pas dijadikan alternatif Hari 1 malam kalau Hari 2 kepadatan.`,
       },
       {
         id:"h3", num:3, date:`Minggu, 12 Oktober`, label:`Panmen di Depan Hotel → Hanshan → Shantang`,
         advisory:`Akhir pekan domestik terakhir sebelum hari kerja — sedikit lebih ramai dari hari kerja biasa, tapi jauh dari level Golden Week. <b>Rute:</b> Panmen sekarang persis 1 halte dari hotel (koreksi dari draft lama yang mengasumsikan perlu perjalanan jauh) — mulai pagi di sini dulu sebelum lanjut ke kluster barat (Hanshan Temple/Shantang, via Line 5→Laodonglu→transfer Line 2).`,
         items:[
-          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:15–08:30`,`Metro 1 halte: Nanyuanbeilu → Nanmen`,`Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi`,``,`CNY 8`,`Rp21.200`],
-          [`08:45–10:00`,`<b>Wumen Bridge</b> (gratis) + <b>Panmen Scenic Spots</b>`,`Tiket Panmen ±CNY 40/org — persis di depan hotel sekarang, tidak perlu perjalanan jauh seperti draft lama`,``,`CNY 80`,`Rp212.000`],
-          [`10:00–11:00`,`Makan siang sekitar Panmen`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
-          [`11:00–11:45`,`Metro: Nanmen → Laodonglu (Line 5, 2 halte) → transfer Line 2 → Shantangjie`,`±30-35 menit termasuk transfer`,``,`CNY 20`,`Rp53.000`],
-          [`11:45–13:45`,`<b>Hanshan Temple</b> (±CNY 20/org) + <b>Fengqiao Scenic Area</b> (gratis, jalan sekitar)`,`Situs kuil terkenal lewat puisi kuno, bersebelahan`,``,`CNY 40`,`Rp106.000`],
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:15–08:30`,`Metro 1 halte: Nanyuanbeilu → Nanmen`,`Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi`,``,`8`,`21.200`],
+          [`08:45–10:00`,`<b>Wumen Bridge</b> (gratis) + <b>Panmen Scenic Spots</b>`,`Tiket Panmen ±CNY 40/org — persis di depan hotel sekarang, tidak perlu perjalanan jauh seperti draft lama`,``,`80`,`212.000`],
+          [`10:00–11:00`,`Makan siang sekitar Panmen`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`11:00–11:45`,`Metro: Nanmen → Laodonglu (Line 5, 2 halte) → transfer Line 2 → Shantangjie`,`±30-35 menit termasuk transfer`,``,`20`,`53.000`],
+          [`11:45–13:45`,`<b>Hanshan Temple</b> (±CNY 20/org) + <b>Fengqiao Scenic Area</b> (gratis, jalan sekitar)`,`Situs kuil terkenal lewat puisi kuno, bersebelahan`,``,`40`,`106.000`],
           [`14:00–16:00`,`<b>Shantang Street</b>`,`"Jalan Kuno No.1 Suzhou", kanal &amp; jembatan tua, gratis`,``,``,``],
-          [`16:00–17:30`,`Makan malam sekitar Shantang`,`±CNY 20/org`,``,`CNY 40`,`Rp106.000`],
-          [`17:30`,`Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu)`,`±30-35 menit`,``,`CNY 20`,`Rp53.000`],
+          [`16:00–17:30`,`Makan malam sekitar Shantang`,`±CNY 20/org`,``,`40`,`106.000`],
+          [`17:30`,`Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu)`,`±30-35 menit`,``,`20`,`53.000`],
         ],
-        total:{cny:`CNY <b>282</b>`, idr:`<b>Rp747.300</b>`},
+        total:{cny:`<b>282</b>`, idr:`<b>Rp747.300</b>`},
         planb:`<b>Xiyuan Temple (kelenteng kucing)</b> — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.`,
       },
       {
         id:"h4", num:4, date:`Senin, 13 Oktober`, label:`Jinji Lake Penuh + Music Fountain Malam`,
         advisory:`<b>Rute:</b> dari hotel ke kawasan Jinji Lake (Line 1, Stasiun Dongfangzhimen), lewat 2x transfer (Line 5→Nanmen/Laodonglu→Line 4/2→interchange ke Line 1). Ini hari <b>Opsional B (Jinji Lake versi malam) diaktifkan kembali</b> sebagai hari penuh, bukan lagi tambahan singkat.`,
         items:[
-          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:30–09:15`,`Metro ke area Jinji Lake (Dongfangzhimen, Line 1)`,`±35-40 menit termasuk transfer`,``,`CNY 20`,`Rp53.000`],
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:15`,`Metro ke area Jinji Lake (Dongfangzhimen, Line 1)`,`±35-40 menit termasuk transfer`,``,`20`,`53.000`],
           [`09:15–10:15`,`<b>The Oriental Gate / Gate of the Orient</b>`,`Gratis, lihat dari luar — landmark arsitektur ikonik Suzhou modern`,``,``,``],
           [`10:15–12:00`,`<b>Jinji Lake Walking Tour</b> (versi penuh)`,`Gratis, jalur sangat datar. Sewa sepeda opsional ±CNY 17/jam/org, tidak dihitung`,``,``,``],
-          [`12:00–13:00`,`Makan siang di tepi danau`,`±CNY 25/org`,``,`CNY 50`,`Rp132.500`],
+          [`12:00–13:00`,`Makan siang di tepi danau`,`±CNY 25/org`,``,`50`,`132.500`],
           [`13:00–16:00`,`Santai lanjut promenade danau`,`Gratis`,``,``,``],
-          [`17:00–18:30`,`Makan malam ringan sekitar Jinji Lake`,`±CNY 40/org`,``,`CNY 80`,`Rp212.000`],
+          [`17:00–18:30`,`Makan malam ringan sekitar Jinji Lake`,`±CNY 40/org`,``,`80`,`212.000`],
           [`19:00–19:30`,`<b>Jinji Lake Music Fountain</b> (kalau tayang)`,`Gratis. ⚠️ Sumber terbaru sebut jadwal hanya Jumat &amp; Sabtu 19:30 — Senin kemungkinan TIDAK tayang, cek jadwal WeChat/website resmi H-1; kalau tidak tayang, cukup nikmati promenade malam tanpa fountain`,``,``,``],
-          [`20:00–20:30`,`Metro kembali ke hotel`,`±35-40 menit`,``,`CNY 20`,`Rp53.000`],
+          [`20:00–20:30`,`Metro kembali ke hotel`,`±35-40 menit`,``,`20`,`53.000`],
         ],
-        total:{cny:`CNY <b>194</b>`, idr:`<b>Rp514.100</b>`},
+        total:{cny:`<b>194</b>`, idr:`<b>Rp514.100</b>`},
         planb:`<b>Suzhou Centre Plaza (Mall)</b> — indoor, satu kawasan dengan Jinji Lake, kalau hujan deras. Kalau ingin pasti dapat pertunjukan Music Fountain dan jadwal fleksibel, pertimbangkan menukar hari ini ke malam Sabtu (Hari 2) — tapi Hari 2 sudah cukup padat dengan kota tua, jadi tetap disusun di Hari 4 sebagai default dengan catatan ketidakpastian di atas.`,
       },
       {
         id:"h5", num:5, date:`Selasa, 14 Oktober`, label:`Taihu Lake Singkat Pagi, Checkout, HSR ke Ningbo`,
         advisory:`<b>Rute &amp; kenapa ini bisa jadi "hari ringan":</b> Taihu Lake sekarang bisa dicapai <b>LANGSUNG lewat Line 5 tanpa transfer</b> (stasiun ujung Nanyuanbeilu ada di jalur yang sama dengan Taihu Xiangshan) — upgrade besar dari draft lama yang perlu taksi PP penuh. Karena aksesnya jadi jauh lebih cepat &amp; murah, versi singkat Taihu ini muat sebagai aktivitas pagi sebelum checkout, menggantikan default kepulangan generik dengan jadwal HSR riil ke Ningbo.`,
         items:[
-          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`CNY 24`,`Rp63.600`],
-          [`08:15–09:00`,`Metro LANGSUNG (tanpa transfer): Nanyuanbeilu → Taihu Xiangshan (Line 5, ujung jalur)`,`±40-45 menit, jarak jauh jadi tarif lebih tinggi ±CNY 13/org`,``,`CNY 26`,`Rp68.900`],
-          [`09:00–09:15`,`Taksi/bus singkat dari stasiun ke pintu masuk <b>Taihu Lake Wetland Park</b>`,`Jauh lebih pendek dari taksi PP penuh versi draft lama`,``,`CNY 20`,`Rp53.000`],
-          [`09:15–10:45`,`<b>Suzhou Taihu Lake Wetland Park</b>`,`Jalur datar tepi danau, cocok untuk lutut. Tiket ±CNY 60/org`,``,`CNY 120`,`Rp318.000`],
-          [`10:45–11:00`,`Taksi/bus balik ke stasiun + metro balik ke hotel`,``,``,`CNY 46`,`Rp121.900`],
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:15–09:00`,`Metro LANGSUNG (tanpa transfer): Nanyuanbeilu → Taihu Xiangshan (Line 5, ujung jalur)`,`±40-45 menit, jarak jauh jadi tarif lebih tinggi ±CNY 13/org`,``,`26`,`68.900`],
+          [`09:00–09:15`,`Taksi/bus singkat dari stasiun ke pintu masuk <b>Taihu Lake Wetland Park</b>`,`Jauh lebih pendek dari taksi PP penuh versi draft lama`,``,`20`,`53.000`],
+          [`09:15–10:45`,`<b>Suzhou Taihu Lake Wetland Park</b>`,`Jalur datar tepi danau, cocok untuk lutut. Tiket ±CNY 60/org`,``,`120`,`318.000`],
+          [`10:45–11:00`,`Taksi/bus balik ke stasiun + metro balik ke hotel`,``,``,`46`,`121.900`],
           [`11:00–12:00`,`Checkout hotel, siap-siap`,``,``,``,``],
-          [`12:00–13:00`,`Makan siang dekat hotel`,`±CNY 27/org`,``,`CNY 54`,`Rp143.100`],
+          [`12:00–13:00`,`Makan siang dekat hotel`,`±CNY 27/org`,``,`54`,`143.100`],
           [`13:00–14:00`,`Waktu buffer / santai`,``,``,``,``],
-          [`14:00–14:30`,`Taksi/Didi ke <b>Suzhou Railway Station</b>`,`±27 menit, dengan koper lebih praktis daripada MRT+transfer`,``,`CNY 40`,`Rp106.000`],
-          [`±15:00`,`HSR Suzhou → Ningbo`,`±2,5-3,5 jam, tiket ±CNY 147-218/org`,``,``,`(masuk budget Ningbo)`],
+          [`14:00–14:30`,`Taksi/Didi ke <b>Suzhou Railway Station</b>`,`±27 menit, dengan koper lebih praktis daripada MRT+transfer`,``,`40`,`106.000`],
+          [`15:00`,`HSR Suzhou → Ningbo`,`±2,5-3,5 jam, tiket ±CNY 147-218/org`,``,``,`(masuk budget Ningbo)`],
         ],
-        total:{cny:`CNY <b>330</b>`, idr:`<b>Rp874.500</b>`},
+        total:{cny:`<b>330</b>`, idr:`<b>Rp874.500</b>`},
         planb:`kalau cuaca buruk atau waktu mepet — skip Taihu Lake sepenuhnya, ganti dengan <b>Guanqian Street</b> (kunjungan ulang santai, sudah dikenal dari Hari 2, searah dengan rute pagi via Line 4) sebagai pengganti yang lebih dekat &amp; singkat. Atau kalau masih ingin nuansa alam tapi lebih dekat: <b>Dayangshan National Forest Park</b> / <b>Tianpingshan</b> (lihat Lampiran) sebagai alternatif — keduanya tetap butuh taksi terpisah, jadi kurang praktis dibanding Taihu via Line 5 langsung.`,
       },
     ],
@@ -1629,6 +1626,15 @@ function formatJam(jam){
   return jam;
 }
 
+const DAY_ABBR = {Senin:'Sen',Selasa:'Sel',Rabu:'Rab',Kamis:'Kam',Jumat:'Jum',Sabtu:'Sab',Minggu:'Min'};
+const MONTH_ABBR = {Januari:'Jan',Februari:'Feb',Maret:'Mar',April:'Apr',Mei:'Mei',Juni:'Jun',Juli:'Jul',Agustus:'Agu',September:'Sep',Oktober:'Okt',November:'Nov',Desember:'Des'};
+function abbrevDate(s){
+  let out = s;
+  for(const k in DAY_ABBR) out = out.replace(k, DAY_ABBR[k]);
+  for(const k in MONTH_ABBR) out = out.replace(k, MONTH_ABBR[k]);
+  return out;
+}
+
 function updateProgress(dayEl){
   const boxes = dayEl.querySelectorAll('input[type=checkbox]');
   const done = [...boxes].filter(b=>b.checked).length;
@@ -1718,12 +1724,13 @@ function renderDay(d, dest){
 
   det.innerHTML = `
     <summary>
-      <div class="day-badge">${d.num}</div>
       <div class="day-head-text">
-        <div class="day-date">${d.date}</div>
+        <div class="day-toprow">
+          <div class="day-date">${d.num} &middot; ${abbrevDate(d.date)}</div>
+          <div class="day-progress">0/${d.items.length}</div>
+        </div>
         <div class="day-label">${d.label}</div>
       </div>
-      <div class="day-progress">0/${d.items.length}</div>
       ${CHEV}
     </summary>
     ${d.reserve ? `<div class="reserve-banner"><b>Reservasi wajib</b>${d.reserve}</div>` : ``}
@@ -1731,7 +1738,7 @@ function renderDay(d, dest){
     <div class="table-scroll">
       <table class="itin">
         <thead><tr>
-          <th class="col-pilih">Pilih</th><th>Jam</th><th>Destinasi</th><th>Keterangan</th><th>Valas</th><th>Rupiah</th>
+          <th class="col-pilih"><span class="sr-only">Pilih</span></th><th>Jam</th><th>Destinasi</th><th>Keterangan</th><th class="col-num">CNY</th><th class="col-num">IDR</th>
         </tr></thead>
         <tbody>${rows}</tbody>
         ${footRow}

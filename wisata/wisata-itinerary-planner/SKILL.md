@@ -125,7 +125,8 @@ Setiap itinerary `.md` harus memuat, dengan urutan berikut:
 5. **Hotel & Transportasi** — nama/lokasi hotel + alasan strategis (dekat MRT/searah destinasi), dan aturan transportasi lokal yang dipakai konsisten di seluruh itinerary (mis. app ride-hailing tertentu, kapan pakai apa).
 6. **Ringkasan cuaca & persiapan** (poin 7).
 7. **Itinerary per hari**, diurutkan searah/berdekatan, tiap hari sebagai heading `## Hari N — Hari, Tanggal (tema/area singkat hari itu)`, dengan:
-   - Tabel kolom: `Jam | Kegiatan | Catatan | <mata uang lokal> | IDR`
+   - Tabel kolom: `Jam | Kegiatan | Catatan | <mata uang lokal> | IDR`. Kolom Jam: waktu polos (`16:00` atau `16:00–17:30`), **JANGAN pakai prefix "±"** — semua jam di itinerary memang selalu perkiraan, jadi "±" cuma noise visual yang bikin kolom sempit di HP makin sesak (Wisata.html merender kolom ini sangat sempit di mobile).
+   - **Kolom Catatan, Plan-B, Perhatian, dan blockquote peringatan lain: padatkan, 1 kalimat inti, hindari pengulangan** — semakin panjang/berulang justru bikin susah fokus di layar HP yang sempit (Wisata.html menampilkan ini apa adanya, tanpa ringkasan otomatis). Detail latar belakang/riset panjang tetap boleh, tapi taruh di Lampiran (poin 11), bukan di kolom Catatan tabel harian.
    - Baris **TOTAL HARI N** di baris terakhir tabel (jumlah kolom mata uang lokal & IDR)
    - **Bold HANYA nama destinasi di kolom Kegiatan** (pakai `**Nama Destinasi**`), supaya nama tempat langsung terbaca sekilas di tabel Wisata.html (kolom Destinasi TIDAK di-bold otomatis oleh CSS — bold murni ikut markdown `**...**` yang ditulis di sini). Aturan:
      - Baris yang isinya kunjungan ke sebuah destinasi wisata (attraction) → bold cuma nama tempatnya, BUKAN keterangan tambahan setelahnya. Contoh: `**Zhonghua Gate** *(lantai bawah/ekshibisi saja, TIDAK naik ke atas tembok)*` atau `**Laomendong Old Street** — jalan santai + jajan khas Nanjing`.

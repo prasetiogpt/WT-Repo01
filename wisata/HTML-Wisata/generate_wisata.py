@@ -191,14 +191,14 @@ def money_cny(s):
     s = s.strip()
     if s in ("—", "-", ""):
         return ""
-    return "CNY " + s
+    return s
 
 
 def money_idr(s):
     s = s.strip()
     if s in ("—", "-", ""):
         return ""
-    return s
+    return re.sub(r"^Rp\.?\s*", "", s)
 
 
 # --------------------------------------------------------------------------

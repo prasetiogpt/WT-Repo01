@@ -62,7 +62,7 @@
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| ±17:00 | Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel | Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah | 30 | Rp79.500 |
+| 17:00 | Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel | Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah | 30 | Rp79.500 |
 | 17:00–17:30 | Check-in, taruh barang, istirahat | — | — | — |
 | 17:30–19:00 | Makan malam santai di **Shiquan Street** (十全街 · Shíquán Jiē) | Persis di depan hotel — jalan kuliner & bar klasik Suzhou. Makan ±CNY 25/org | 50 | Rp132.500 |
 | 19:00–20:00 | Jalan santai sekitar Shiquan Street / area hotel | Opsional: **Master of Nets Garden (网师园 · Wǎngshī Yuán) versi Night Garden** literally sebelah hotel kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini, lihat entri Lampiran untuk detail | — | — |
@@ -151,7 +151,7 @@
 | 12:00–13:00 | Makan siang dekat hotel | ±CNY 27/org | 54 | Rp143.100 |
 | 13:00–14:00 | Waktu buffer / santai | — | — | — |
 | 14:00–14:30 | Taksi/Didi ke **Suzhou Railway Station** | ±27 menit, dengan koper lebih praktis daripada MRT+transfer | 40 | Rp106.000 |
-| ±15:00 | HSR Suzhou → Ningbo | ±2,5-3,5 jam, tiket ±CNY 147-218/org | — | *(masuk budget Ningbo)* |
+| 15:00 | HSR Suzhou → Ningbo | ±2,5-3,5 jam, tiket ±CNY 147-218/org | — | *(masuk budget Ningbo)* |
 | | **TOTAL HARI 5** | | **330** | **Rp874.500** |
 
 **Plan-B hari ini:** kalau cuaca buruk atau waktu mepet — skip Taihu Lake sepenuhnya, ganti dengan **Guanqian Street** (kunjungan ulang santai, sudah dikenal dari Hari 2, searah dengan rute pagi via Line 4) sebagai pengganti yang lebih dekat & singkat. Atau kalau masih ingin nuansa alam tapi lebih dekat: **Dayangshan National Forest Park** / **Tianpingshan** (lihat Lampiran) sebagai alternatif — keduanya tetap butuh taksi terpisah, jadi kurang praktis dibanding Taihu via Line 5 langsung.
