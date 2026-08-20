@@ -5,14 +5,16 @@
 >
 > Revisi custom dari **"2 Wuxi Itinerary.md"** — pertanyaan: apakah 5 hari (6–10 Okt) lebih baik/efektif dibanding versi asli 4 hari (6–9 Okt)? **Jawaban singkat: YA, direkomendasikan.** Lihat analisis di bawah judul ini.
 >
-> ⚠️ Riwayat revisi: (1) draf awal — extend versi asli jadi 5 hari/4 malam, Hari 1-3 identik dengan file asli, Hari 4 dilepas dari beban checkout/kejar kereta (destinasi tetap sama persis), Hari 5 baru ditambahkan khusus untuk 1 destinasi Cadangan wajib (**Taihu Yuantouzhu**) + 1 opsional (**Liyuan Garden**) — keduanya diambil dari bagian Cadangan file asli yang sudah diriset lengkap, tidak perlu riset ulang.
+> ⚠️ Riwayat revisi: (1) draf awal — extend versi asli jadi 5 hari/4 malam, Hari 1-3 identik dengan file asli, Hari 4 dilepas dari beban checkout/kejar kereta (destinasi tetap sama persis), Hari 5 baru ditambahkan khusus untuk 1 destinasi Cadangan wajib (**Taihu Yuantouzhu**) + 1 opsional (**Liyuan Garden**) — keduanya diambil dari bagian Cadangan file asli yang sudah diriset lengkap, tidak perlu riset ulang; (2) **pacing di-rebalance** — Hari 3 versi asli ternyata satu-satunya hari yang benar-benar padat (12 jam 15 menit, 2 klaster berbeda dalam 1 hari: Huishan siang + Qingming Bridge/Nanchang Street malam), padahal Hari 4 versi 5-hari ini punya slot kosong 3 jam yang tidak terpakai — sesi malam Qingming Bridge/Nanchang Street **dipindah dari Hari 3 ke Hari 4** (searah, di jalur Line 1 yang sama saat pulang dari Nanchan Temple ke hotel), Jichang Garden diperpanjang 45→60 menit. Total biaya trip TIDAK berubah (cuma pindah hari), destinasi tetap sama persis — cuma disebar lebih rata.
 
 ## Kenapa 5 hari lebih efektif dibanding 4 hari (analisis)
 
 Versi asli (4 hari/3 malam) sebenarnya sudah agak "kempes" di dua ujungnya: **Hari 1** cuma malam kedatangan ringan (check-in + makan malam saja), dan **Hari 4** cuma ±4 jam aktivitas (Nanchan Temple + pedestrian street) sebelum harus checkout dan buffer ±2,5 jam menunggu kereta 18:00 ke Suzhou. Jadi dari "4 hari", isi aktivitas riil cuma setara **±2,5 hari penuh** (Hari 2 & Hari 3) ditambah 2 hari yang terpotong.
 
+**Apakah pacing-nya sudah cukup, tidak terburu-buru?** Sebagian besar sudah — durasi per tempat di Hari 2 & 3 versi asli sudah generous (Xihui Park 2,5 jam, Ancient Town 2 jam, dst), dan Hari 2 sudah punya opsi skip (Gonghu Bay) kalau lelah. Yang benar-benar padat cuma **struktur Hari 3**: mengunjungi 2 klaster berbeda (Huishan siang, lalu balik ke Old City untuk Qingming Bridge malam) dalam 1 hari yang sama, total 12+ jam. Karena Hari 4 di versi 5-hari ini sudah longgar (tidak lagi kejar kereta), sesi malam itu **dipindah ke Hari 4** — searah pulang dari Nanchan Temple, tanpa menambah destinasi baru atau biaya (lihat perubahan tabel Hari 3 & Hari 4 di bawah).
+
 Dengan menambah 1 hari (jadi 5 hari/4 malam):
-- **Hari 4** jadi lega — destinasi sama persis (Nanchan Temple + Pedestrian Street), tapi tanpa checkout/kejar kereta, jadi bisa dinikmati santai sampai malam tanpa buffer terbuang di stasiun.
+- **Hari 4** jadi lega — destinasi sama persis (Nanchan Temple + Pedestrian Street + Qingming Bridge/Nanchang Street malam, dipindah dari Hari 3), tanpa checkout/kejar kereta, jadi bisa dinikmati santai sampai malam tanpa buffer terbuang di stasiun.
 - **Hari 5 (baru)** dipakai khusus untuk **Taihu Yuantouzhu (太湖鼋头渚)** — di file asli, tempat ini sudah masuk Cadangan dengan status "layak dikunjungi" (✅ Hanzi terverifikasi), tapi TIDAK dimasukkan **murni karena alasan jarak & waktu** ("lokasinya jauh dari klaster utama... tiket cukup mahal"), bukan karena kurang bagus. Ini justru salah satu spot memandang Danau Taihu paling ikonik di Wuxi — pemandangan berbeda dari taman-taman tepi Lihu yang sudah dikunjungi Hari 2. Dengan 1 hari ekstra, alasan penolakannya (waktu tidak cukup) hilang, jadi masuk akal ditambahkan.
 - **Liyuan Garden** ditambahkan sebagai **opsional** (bukan wajib) — searah/dekat rute ke Yuantouzhu (sumber referensi Cadangan sendiri menyebut "sering dipaketkan bersama Taihu Yuantouzhu"), tapi temanya (taman klasik tepi danau) agak tumpang tindih dengan Lihu National Wetland Park/Central Lihu Park/Lixi Park yang sudah gratis di Hari 2 — jadi boleh di-skip kalau ingin lebih santai/hemat.
 
@@ -90,9 +92,9 @@ Dengan menambah 1 hari (jadi 5 hari/4 malam):
 
 ---
 
-## Hari 3 — Kamis, 8 Oktober (Klaster Huishan)
+## Hari 3 — Kamis, 8 Oktober (Klaster Huishan — dipersingkat, sesi malam dipindah ke Hari 4)
 
-*Identik dengan Hari 3 versi asli — tidak ada perubahan.*
+**Beda dari versi asli:** destinasi identik, TAPI sesi malam **Qingming Bridge/Nanchang Street dipindah ke Hari 4** (searah pulang dari Nanchan Temple, lihat alasan di bagian analisis di atas) — Hari 3 sekarang selesai lebih awal (±18:00, bukan 20:15), tidak perlu bolak-balik 2 klaster dalam 1 hari. **Jichang Garden diperpanjang** 45→60 menit karena ada waktu lebih.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -102,21 +104,20 @@ Dengan menambah 1 hari (jadi 5 hari/4 malam):
 | 10:00–12:00 | **Huishan Ancient Town Scenic Area** | Sebagian besar gratis | — | — |
 | 12:00–13:00 | Makan siang sekitar Huishan | ±CNY 20/org | 40 | Rp106.000 |
 | 13:00–15:30 | **Xihui Park Huishan** — termasuk Huishan Spring | Tiket CNY 10/org | 20 | Rp53.000 |
-| 15:30–16:15 | *(Opsional)* **Jichang Garden** | CNY 45/org | 90 | Rp238.500 |
-| 16:15–17:00 | Makan malam awal sekitar Huishan | ±CNY 25/org | 50 | Rp132.500 |
-| 17:00–17:45 | Metro Line 4 → Line 1 langsung ke Stasiun Qingmingqiao | — | 16 | Rp42.400 |
-| 18:00–20:00 | **Qingming Bridge Ancient Canal Scenic Spot** + **Nanchang Street Pedestrian Street** — versi malam | Gratis area luar. Jajan opsional ±CNY 20 | 20 | Rp53.000 |
-| 20:00–20:15 | Metro Line 1, 1 halte kembali ke hotel | — | 8 | Rp21.200 |
-| **TOTAL HARI 3 (dengan Jichang Garden)** | | | **314** | **Rp832.100** |
-| **TOTAL HARI 3 (tanpa Jichang Garden)** | | | **224** | **Rp593.600** |
+| 15:30–16:30 | *(Opsional)* **Jichang Garden** *(diperpanjang jadi 1 jam, sebelumnya 45 menit)* | CNY 45/org | 90 | Rp238.500 |
+| 16:30–17:30 | Makan malam santai sekitar Huishan *(diperpanjang jadi 1 jam, sebelumnya 45 menit — tidak perlu buru-buru lagi)* | ±CNY 25/org | 50 | Rp132.500 |
+| 17:30–18:00 | Metro Line 4 → Line 1 langsung kembali ke hotel (Taihu Square) | — | 16 | Rp42.400 |
+| 18:00 | Istirahat di hotel — *sesi Qingming Bridge/Nanchang Street malam sudah dipindah ke Hari 4* | — | — | — |
+| **TOTAL HARI 3 (dengan Jichang Garden)** | | | **286** | **Rp757.900** |
+| **TOTAL HARI 3 (tanpa Jichang Garden)** | | | **196** | **Rp519.400** |
 
-**Plan-B hari ini:** Jichang Garden bisa diganti **Huishan Temple** (tiket kombinasi sama). Sesi malam: kalau hujan deras, cukup lihat kanal dari area beratap terdekat.
+**Plan-B hari ini:** Jichang Garden bisa diganti **Huishan Temple** (tiket kombinasi sama). Kalau hujan deras, cukup perpanjang waktu di Xihui Park (sebagian area beratap) dan skip Jichang Garden.
 
 ---
 
-## Hari 4 — Jumat, 9 Oktober (Nanchan Temple — sama seperti versi asli, TANPA checkout/kejar kereta)
+## Hari 4 — Jumat, 9 Oktober (Nanchan Temple, TANPA checkout/kejar kereta + sesi malam Qingming Bridge dipindah dari Hari 3)
 
-**Rute:** Destinasi **sama persis** dengan Hari 4 versi asli (Nanchan Temple + Pedestrian Street). Bedanya: karena kepulangan sekarang di Hari 5, **tidak perlu checkout, tidak perlu bawa koper, tidak perlu buru-buru ke stasiun** — jadwal jadi lebih santai dan bisa lanjut sampai malam (ada makan malam & waktu senggang tambahan yang tidak ada di versi asli, karena versi asli harus tiba di stasiun jam 15:30).
+**Rute:** Destinasi siang **sama persis** dengan Hari 4 versi asli (Nanchan Temple + Pedestrian Street). Bedanya dari versi asli: (1) karena kepulangan sekarang di Hari 5, **tidak perlu checkout/bawa koper/buru-buru ke stasiun**; (2) sesi malam **Qingming Bridge + Nanchang Street** (destinasi yang sama seperti versi asli, cuma pindah hari — lihat analisis di atas) ditambahkan di sini, mengisi slot kosong yang tadinya cuma "istirahat sore" — searah pulang dari Nanchan Temple ke hotel, sama-sama di Line 1, lewat Stasiun Qingmingqiao sebelum tiba di hotel.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -126,12 +127,14 @@ Dengan menambah 1 hari (jadi 5 hari/4 malam):
 | 10:00–11:00 | Jajan & jalan santai **Nanchan Temple Pedestrian Street** | ±CNY 15/org | 30 | Rp79.500 |
 | 11:00–12:00 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
 | 12:00–15:00 | Waktu santai — jalan sekitar kanal siang / opsional **Wuxi Museum** (indoor, gratis, tutup Senin — hari ini Jumat, buka) | Gratis | — | — |
-| 15:00–15:30 | Metro Line 1 kembali ke hotel (area Taihu Square) | — | 12 | Rp31.800 |
-| 15:30–18:00 | Istirahat sore di hotel/sekitar Taihu Square | — | — | — |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 25/org | 50 | Rp132.500 |
-| **TOTAL HARI 4** | | | **178** | **Rp471.700** |
+| 15:00–16:30 | Makan malam santai sekitar Nanchan Temple/Old City *(lebih awal & santai, tidak perlu buru-buru)* | ±CNY 25/org | 50 | Rp132.500 |
+| 16:30–17:00 | Metro Line 1 menuju Stasiun **Qingmingqiao** (searah pulang ke hotel, mampir dulu) | — | 12 | Rp31.800 |
+| 17:00–18:00 | Jalan santai ringan di sekitar Qingmingqiao, menunggu lampu kanal menyala penuh (±19:00) | Gratis | — | — |
+| 18:00–20:00 | **Qingming Bridge Ancient Canal Scenic Spot** + **Nanchang Street Pedestrian Street** — versi malam, lampu kanal menyala penuh *(dipindah dari Hari 3, destinasi sama persis versi asli)* | Gratis area luar. Jajan opsional ±CNY 20 | 20 | Rp53.000 |
+| 20:00–20:15 | Metro Line 1, 1 halte kembali ke hotel | — | 8 | Rp21.200 |
+| **TOTAL HARI 4** | | | **206** | **Rp545.900** |
 
-**Plan-B hari ini:** hujan deras → ganti aktivitas siang dengan **Wuxi Museum** (indoor, gratis, searah Old City, tutup Senin — tidak relevan hari ini).
+**Plan-B hari ini:** siang hujan deras → ganti aktivitas siang dengan **Wuxi Museum** (indoor, gratis, searah Old City, tutup Senin — tidak relevan hari ini). Malam hujan deras → cukup lihat kanal dari area beratap terdekat di Qingmingqiao, atau skip & langsung balik hotel.
 
 ---
 
@@ -181,8 +184,8 @@ Belum termasuk harga hotel (4 malam, naik dari 3 malam versi asli). Kurs: Rp2.65
 |---|---|---|---|
 | Hari 1 (6 Okt) | 200 | 200 | Rp530.000 |
 | Hari 2 (7 Okt) | 124 | 192 | Rp508.800 |
-| Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
-| Hari 4 (9 Okt) | 178 | 178 | Rp471.700 |
+| Hari 3 (8 Okt) | 196 | 286 | Rp757.900 |
+| Hari 4 (9 Okt) | 206 | 206 | Rp545.900 |
 | Hari 5 (10 Okt) | 384 | 504 | Rp1.335.600 |
 | **GRAND TOTAL** | **1.110** | **1.388** | **Rp3.678.200** |
 
@@ -207,7 +210,8 @@ Belum termasuk harga hotel (4 malam, naik dari 3 malam versi asli). Kurs: Rp2.65
 - **Fisik/lutut:** semua jalur datar termasuk Yuantouzhu & Liyuan Garden (taman/semenanjung, bukan tanjakan curam).
 - **Makanan:** tidak pedas, tidak asam, tidak berminyak/gorengan — sama seperti versi asli.
 - **Transportasi:** Hari 1-4 identik versi asli (MRT Line 1 + transfer Line 4 khusus Huishan). Hari 5 pakai Didi/taksi karena Yuantouzhu & Liyuan Garden tidak ada MRT langsung.
-- **Hari 4 sekarang lebih santai** — destinasi sama persis versi asli, tapi tanpa checkout/kejar kereta, jadi ada makan malam & waktu senggang tambahan yang tidak ada di versi asli.
+- **Pacing di-rebalance:** Hari 3 (versi asli, satu-satunya hari yang mepet — 12+ jam, 2 klaster) sekarang selesai lebih awal (±18:00); sesi malam Qingming Bridge/Nanchang Street pindah ke Hari 4 yang tadinya punya slot kosong. Destinasi tetap sama persis semua, cuma disebar lebih rata — total biaya trip tidak berubah.
+- **Hari 4 sekarang lebih lengkap** — destinasi siang sama persis versi asli + sesi malam Qingming Bridge/Nanchang Street (dipindah dari Hari 3), tanpa checkout/kejar kereta.
 - **Hari 5 (Sabtu) berpotensi lebih ramai** di Yuantouzhu — datang pagi (sebelum 11:00) untuk hindari puncak keramaian akhir pekan.
 - **Liyuan Garden opsional** — boleh di-skip kalau ingin hemat waktu/biaya, temanya mirip taman-taman gratis di Hari 2.
 - **⚠️ Suzhou Itinerary perlu disesuaikan** kalau versi 5-hari ini dipakai — lihat catatan di "Informasi Transportasi Pulang" di atas.
@@ -216,7 +220,7 @@ Belum termasuk harga hotel (4 malam, naik dari 3 malam versi asli). Kurs: Rp2.65
 
 # Lampiran — Cerita & Sejarah Tempat
 
-Hari 1-3 identik versi asli (lihat `2 Wuxi Itinerary.md` untuk detail lengkap "Sebelum Berangkat" dan entri Hari 2-3). Lampiran di bawah ini fokus ke entri yang berubah/baru saja: **Hari 4** (sama seperti asli, disalin ulang untuk kelengkapan referensi cepat) dan **Hari 5** (baru, diambil dari bagian Cadangan file asli yang sudah diriset lengkap).
+Hari 1-3 sebagian besar identik versi asli (lihat `2 Wuxi Itinerary.md` untuk detail lengkap "Sebelum Berangkat" dan entri Hari 2-3) — KECUALI entri **Qingming Bridge & Nanchang Street** yang sekarang pindah ke bawah grup **Hari 4** di bawah ini (destinasi sama persis, cuma pindah hari, lihat analisis pacing di atas). Lampiran di bawah ini fokus ke entri yang berubah/baru saja: **Hari 4** (Nanchan Temple sama seperti asli + Qingming Bridge/Nanchang Street pindahan dari Hari 3) dan **Hari 5** (baru, diambil dari bagian Cadangan file asli yang sudah diriset lengkap).
 
 ## Hari 4 — Jumat, 9 Oktober
 
@@ -263,6 +267,34 @@ Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga 
 
 - Foto/info: https://www.tripadvisor.com/Attraction_Review-g297443-d1864917-Reviews-Wuxi_Museum-Wuxi_Jiangsu.html
 - Video referensi: https://www.youtube.com/results?search_query=Wuxi+Museum
+
+### Nanchang Street Pedestrian Street (南长街 · Nán Cháng Jiē) ⚠️ — pindahan dari Hari 3
+Bagian dari Situs Warisan Dunia UNESCO Grand Canal, membentang 5,5km dari gerbang selatan kota lama Wuxi hingga Xinguang Road, dengan kawasan inti di sekitar kanal kuno. Di masa kejayaannya, jalan ini adalah jantung perdagangan kota lama Wuxi — dipenuhi pabrik penggilingan beras, pabrik sutra, dermaga perahu, teater, dan restoran. Dikunjungi malam hari di itinerary ini, menyambung dari sesi Qingming Bridge.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** persis di sekitar Stasiun **Qingmingqiao** (Metro Line 1) — 1 halte dari hotel (Taihu Square), mampir dalam perjalanan pulang dari Nanchan Temple.
+
+**Jam Operasional:** jalan pedestrian & kanal buka 24 jam, gratis. Kios/toko umumnya ±09:00–21:00 — pas untuk versi malam.
+
+**Tiket:** Gratis masuk kawasan, bayar jajanan/toko saja.
+
+- Foto/info: https://en.wikipedia.org/wiki/Grand_Canal_(China)
+- Video referensi: https://www.youtube.com/results?search_query=Nanchang+Street+Wuxi+night
+
+### Qingming Bridge Ancient Canal Scenic Spot (清名桥古运河景区 · Qīngmíng Qiáo Gǔ Yùnhé Jǐngqū) ⚠️ — pindahan dari Hari 3
+Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wuxi, awalnya bernama "Qingning", dibangun era Wanli (Dinasti Ming) dari sumbangan dua putra tokoh Qin Yao. Direkonstruksi tahun 1666 (era Kangxi, Dinasti Qing), mengalami beberapa kali perbaikan di era Qianlong & Tongzhi. Kawasan ini berstatus cagar budaya tingkat provinsi — pemandangan malamnya dengan lampu kanal jadi salah satu ikon paling difoto di Wuxi. *(Di versi C1 ini dijadwalkan malam hari di Hari 4, bukan Hari 3 — lihat analisis pacing di atas.)*
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** turun langsung di Stasiun **Qingmingqiao** (Metro Line 1), searah pulang dari Nanchan Temple menuju hotel.
+
+**Jam Operasional:** kawasan luar/jalan gratis, buka 24 jam. Area berbayar (kalau ada) ±08:30–17:00. Lampu kanal menyala penuh mulai ±19:00 — pas dengan jadwal kunjungan malam di itinerary ini.
+
+**Tiket:** Gratis jalan di kawasan luar/kanal; CNY 60/org untuk area scenic spot berbayar (kalau ingin masuk lebih dalam).
+
+- Foto/info: https://baike.baidu.com/en/item/Qingming%20Bridge%20and%20Riverside%20Buildings/114519
+- Video referensi: https://www.youtube.com/results?search_query=Qingming+Bridge+Ancient+Canal+Wuxi+night
 
 ## Hari 5 — Sabtu, 10 Oktober (BARU, dari Cadangan)
 
