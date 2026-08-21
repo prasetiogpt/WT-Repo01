@@ -9,22 +9,9 @@
 
 > **Kedatangan:** 18:00 tepat, Selasa 6 Oktober. **Kepulangan (HSR ke Suzhou):** 15:00 tepat, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
 
-> ⏳ **VERIFIKASI TERTUNDA — belum direvisi, jangan diandalkan di lapangan sebelum ini diselesaikan.** Ditemukan Anda via Amap (belum diintegrasikan ke tabel): jarak segmen Hari 2 klaster Lihu/Taihu berbeda jauh dari asumsi tabel saat ini — **Lihu National Wetland Park → Central Lihu Park ±2km**, **Central Lihu Park → Lixi Park ±4km ke utara**, **Lixi Park → Gonghu Bay Wetland Park ±17km** (tabel saat ini menulis "±4km" untuk segmen terakhir, catatan fisik di bawahnya malah "±11km dari Wanghu Bridge" — kontradiksi, keduanya belum diverifikasi peta). **Alamat "Lixi Park" di tabel/Lampiran saat ini (151 Shuanghong Road) SALAH** — itu alamat Central Lihu Park; Lixi Park asli ada di **Lixi Road** (alias "Binjiang Park" di Amap, ✅ terverifikasi pengguna langsung di app). Rute Amap dari hotel (jalan kaki 732m/13menit ke Tanduqiao) menuju arah Lixi Park butuh **Line 1 + transfer Line 2** (6 halte, ¥3, ~45 menit) — BUKAN Line 1 langsung ke Changguangxi tanpa transfer seperti ditulis di rute Hari 2 saat ini.
+> ⚠️ **Keterbatasan alat:** akses langsung ke amap.com/baike.baidu.com/zh.wikipedia.org diblokir di environment sesi ini — riset jarak/rute memakai web_search tidak langsung, dicek-silang dengan screenshot Amap dari pengguna. Beberapa titik masih ⚠️ (ditandai di teks) karena tidak bisa diverifikasi lebih jauh dengan alat yang ada.
 >
-> ⚠️ **Keterbatasan alat dicatat di sini supaya sesi berikutnya tahu:** akses langsung ke amap.com, baike.baidu.com, dan zh.wikipedia.org **diblokir oleh network policy** di environment ini (`EGRESS_BLOCKED`) — riset jarak/rute di dokumen ini selama ini mengandalkan web_search tidak langsung (rawan kontradiksi/kurang presisi), bukan buka halaman Amap/peta asli. Verifikasi paling akurat untuk sesi ini datang dari screenshot Amap yang dikirim pengguna langsung dari HP, bukan dari riset mandiri.
->
-> **Hari 3 — catatan urutan (bukan salah data, tapi belum optimal):** Screenshot Amap pengguna menunjukkan **Jichang Garden (Northeast Gate) persis sebelah Wuxi Huishan Old Street**, sementara tabel Hari 3 saat ini mengunjungi Jichang Garden PALING TERAKHIR (15:30, setelah Huishan Ancient Town & Xihui Park) — kemungkinan bolak-balik yang tidak perlu karena gerbang utara Jichang dekat titik awal hari. Ada juga **Jichangyuan (South Gate)** terpisah yang mungkin jadi penghubung ke Xihui Park/Huishan Ancient Town. Karena Huishan Old Street+Jichang Garden+Xihui Park+Huishan Ancient Town Scenic Area adalah **satu kawasan pejalan kaki menyatu** (dikonfirmasi pengguna), urutan gerbang-per-gerbang yang presisi diputuskan **langsung di lapangan** via Amap real-time, bukan dipaksakan dari sini — tapi tetap cek ulang alokasi WAKTU per lokasi (poin 3 di atas) tetap perlu saat revisi komprehensif, supaya durasi kunjungan masuk akal meski urutan detailnya fleksibel di lapangan.
->
-> 🔴 **TEMUAN STRUKTURAL PALING BESAR — Hari 2 vs Hari 4 kemungkinan SALAH DIPISAH.** Screenshot Amap zoom-out pengguna menunjukkan **Liyuan Garden (Hari 4), Central Lihu Park, Lihu National Wetland Park, Lixi Park (semua Hari 2), dan Wuxi Binhu The Mixc — SEMUA mengelilingi danau Lihu Hu (蠡湖) YANG SAMA**, saling berdekatan di peta (bukan dua klaster terpisah jauh). Ini membatalkan alasan Hari 4 saya jadikan "hari dedicated terpisah" (tertulis: "jauh dari klaster utama & tidak ada MRT langsung") — dari peta ini Liyuan Garden justru dekat Lihu National Wetland Park. Konsekuensi: Hari 2 dan Hari 4 kemungkinan **bolak-balik ke area yang sama** 2 hari berbeda, alih-alih 1 rute besar efisien atau pembagian 2-hari yang benar-benar berdasarkan belahan danau yang searah. **Yuantouzhu Scenic Area** (juga Hari 4) kemungkinan TIDAK sedekat itu (danau Taihu, bukan Lihu) — perlu dicek terpisah apakah dia nyambung dari sisi Lihu atau butuh commute sendiri. Ini prioritas #1 saat revisi komprehensif — struktur pembagian hari harus dirombak dulu sebelum detail jarak/urutan per hari diperbaiki.
->
-> 🗺️ **Peta makro (skala 2km, screenshot pengguna) — urutan utara→selatan dari hotel:** **Hotel/Wuxi Taihu Square → Lixi Park (DEKAT hotel, sebelah Wanda Plaza, dekat Wuxi Railway Station — BUKAN 9km lewat Changguangxi seperti asumsi lama)** → [Central Lihu Park/Lihu Wetland Park — posisi persis belum terlihat jelas di screenshot ini, perlu konfirmasi] → **Liyuan Garden (Binhu, lebih ke selatan)** → jauh lagi ke selatan → **Gonghu Park** (dekat Nanquan Old Street/Nanjin Temple, paling selatan dari semua, dikonfirmasi pengguna "Gonghu ada di selatan"). Implikasi: Hari 2 kemungkinan TIDAK perlu mulai dengan commute MRT Line 1 ke Changguangxi dulu (rute saat ini) — titik masuk yang lebih dekat hotel (Lixi Park) mungkin harusnya jadi titik AWAL, bukan pertengahan rute.
->
-> 🗺️ **Konfirmasi peta lanjutan (screenshot pengguna berikutnya):** **Central Lihu Park, Liyuan Garden, Lihu National Wetland Park, DAN Yuantouzhu Scenic Area semua kelihatan berdekatan/mengelilingi bagian selatan-tengah Lihu Hu yang sama** (juga terlihat Bogong Island Ecology Park & Baojie Mountain Forest Park di area sama) — makin menguatkan temuan struktural di atas bahwa Hari 2 & Hari 4 kemungkinan satu kawasan besar yang sama, bukan dua klaster terpisah jauh.
->
-> ✂️ **KEPUTUSAN PENGGUNA — Taihu Xiandao (Pulau Sanshan) DIHAPUS dari itinerary utama Hari 4, pindah ke Cadangan (Plan C).** Alasan: instruksi eksplisit pengguna, tidak akan dikunjungi. Konsekuensi: sesi naik perahu (13:00-15:00 di tabel Hari 4 saat ini) dan sebagian tiket terusan Yuantouzhu (CNY 105/org, termasuk perahu+Xiandao) perlu dihitung ulang saat revisi — kemungkinan tiket Yuantouzhu-saja lebih murah tanpa terusan Xiandao, cek ulang harga terpisah.
-> **Kandidat pengganti (belum final, riset awal):** **Bogong Island Ecology Park (渤公岛生态公园)** — GRATIS masuk, persis bersebelahan dengan Yuantouzhu (tidak perlu commute tambahan, tinggal jalan kaki dari area Yuantouzhu, bukan naik perahu), bagian dari jalur wisata 38km lingkar Lihu, tema taman air+alam+budaya (dibangun untuk mengenang Zhang Bo, tokoh pengendali banjir kuno). Akses alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
->
-> Sebelum revisi: perlu verifikasi menyeluruh SEMUA jarak/urutan/moda transport di seluruh dokumen ini (bukan cuma Hari 2), sebelum ditandai selesai — permintaan eksplisit: revisi dilakukan **sekali saja secara komprehensif**, bukan bertahap.
+> (14) **Revisi komprehensif — Hari 2 & 4 dirombak total.** Lixi Park (alamat lama 151 Shuanghong Road SALAH, itu alamat Central Lihu Park — alamat benar: Lixi Road, alias Binjiang Park) ternyata dekat hotel via **Line 1 + transfer Line 2 ke Heliekou** (bukan Line 1 ke Changguangxi seperti versi lama — Changguangxi ternyata jauh ke selatan, bukan jalur ke klaster Lihu). Hari 2 disederhanakan jadi klaster **Lihu Timur** (Lixi Park + Central Lihu Park saja); **Gonghu Bay Wetland Park & Taihu Lake Promenade dikeluarkan** (±17km dari Lixi Park, akses buruk, dipindah ke Cadangan). Hari 4 jadi klaster **Lihu Barat** (Liyuan Garden + Yuantouzhu + **Bogong Island Ecology Park**, gratis, pengganti **Taihu Xiandao** yang dihapus atas instruksi pengguna) — diakses bus wisata **Leyou Line 1** dari halte Chong'an Temple (bukan 2x Didi terpisah). Tiket Yuantouzhu dikoreksi ke CNY 90 (reguler, tanpa terusan Xiandao CNY 105). Total Hari 2: 248→106 CNY. Total Hari 4: 534→484 CNY. Grand Total lengkap: 1.306→1.114 CNY.
 
 ## Informasi Transportasi
 
@@ -40,11 +27,11 @@
 |---|---|
 | Nama | **Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)** |
 | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China |
-| Ke Tanduqiao Metro Station | 650m jalan kaki, ±10 menit |
+| Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) |
 | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit |
 | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |
 
-Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan stasiun Line 1 dari hotel: **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)**, dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 di **Liutan**. Ke **Lihu National Wetland Park (Hari 2)** dan **Taihu Yuantouzhu/Liyuan Garden (Hari 4)** — kawasan Binhu/Taihu lakefront, ±9-10km dari hotel — pakai MRT Line 1 langsung (±11 halte ke Changguangxi, tanpa transfer) atau Didi/taksi.
+Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan stasiun Line 1 dari hotel: **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)**, dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 di **Liutan**. Ke **klaster Lihu Timur/Lixi Park (Hari 2)**: Line 1 + transfer **Line 2** ke Stasiun **Heliekou** (BUKAN Changguangxi). Ke **klaster Lihu Barat/Liyuan Garden+Yuantouzhu (Hari 4)**: bus wisata **Leyou Line 1** dari halte Chong'an Temple, ATAU Didi.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -76,31 +63,27 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ---
 
-## Hari 2 — Rabu, 7 Oktober (Klaster Lihu & Taihu Lakefront — ekor Golden Week, area luas jadi relatif lebih tahan ramai)
+## Hari 2 — Rabu, 7 Oktober (Klaster Lihu Timur — Lixi Park & Central Lihu Park)
 
-**Rute:** Lihu/Binhu lakefront ±9km dari hotel — naik **MRT Line 1 langsung ke Changguangxi (±11 halte, ±25 menit, tanpa transfer)**, lanjut Didi/bus singkat ke gerbang taman. Di dalam kompleks, taman-taman saling berdekatan (jalan kaki/sepeda sewa antar taman) — ⚠️ urutan jalan kaki persis di dalam kompleks belum terverifikasi detail per-gerbang, cek Amap on-site. Sore/malam balik ke Changguangxi, MRT langsung balik ke hotel.
+**Rute:** Hotel → jalan kaki ke Tanduqiao (732m, ±13 menit) → MRT Line 1 + transfer **Line 2** → Stasiun **Heliekou** (dekat Lixi Park, area Lixi Road) — 6 halte, ¥3/org, ±45 menit. **BUKAN lewat Changguangxi** seperti versi lama. Central Lihu Park ±2km dari Lixi Park (⚠️ jalur jalan kaki persis belum terverifikasi — Didi singkat kalau jauh/panas). Sore kembali via Heliekou, Line 2 + transfer Line 1.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–08:35 | Jalan kaki ke Stasiun Taihu Square/Tanduqiao | 650-860m dari hotel | — | — |
-| 08:35–09:00 | MRT Line 1 langsung ke **Changguangxi** (±11 halte, tanpa transfer) | Tarif jarak jauh ±CNY 4/org | 8 | Rp21.200 |
-| 09:00–09:15 | Didi/bus singkat dari Changguangxi ke gerbang **Lihu National Wetland Park** | Stasiun tidak persis di gerbang, ±2 halte bus/Didi singkat | 20 | Rp53.000 |
-| 09:15–11:00 | **Lihu National Wetland Park** — jalur wetland tepi danau, datar & teduh | Gratis | — | — |
-| 11:00–12:00 | **Central Lihu Park** — lanjutan searah, taman pusat tepi Lihu | Gratis | — | — |
-| 12:00–13:00 | Makan siang sekitar Lihu | ±CNY 25/org | 50 | Rp132.500 |
-| 13:00–14:30 | **Lixi Park** (Lihu Park, 151 Shuanghong Road) — lanjutan tepi danau, ada area Ferris wheel/Eropa-style | Gratis | — | — |
-| 14:30–16:30 | Lanjut ke **Gonghu Bay Wetland Park** — segmen paling scenic (±4km) via sepeda sewa/jalan santai di jalur wetland, ATAU taksi kalau sudah lelah | Gratis masuk. Sepeda opsional ±CNY 17/jam/org (2 jam) | 68 | Rp180.200 |
-| 16:30–17:00 | **Taihu Lake Promenade** — jalan santai tepi Danau Taihu, jalur datar & ramai warga lokal olahraga sore | Gratis, masih di kawasan lakefront yang sama | — | — |
-| 17:00–17:30 | Didi/bus balik ke Stasiun Changguangxi | — | 20 | Rp53.000 |
-| 17:30–18:30 | Makan malam sekitar Changguangxi/lakefront | ±CNY 25/org | 50 | Rp132.500 |
-| 18:30–19:00 | MRT Line 1 langsung balik ke hotel (±11 halte) | — | 8 | Rp21.200 |
-| **TOTAL HARI 2 (dengan sepeda ke Gonghu Bay)** | | | **248** | **Rp657.200** |
-| **TOTAL HARI 2 (skip Gonghu Bay, jalan kaki santai saja)** | | | **180** | **Rp477.000** |
+| 08:30–08:45 | Jalan kaki ke Stasiun Tanduqiao | 732m dari hotel | — | — |
+| 08:45–09:30 | MRT Line 1 + transfer Line 2 ke **Heliekou** | 6 halte, ¥3/org | 6 | Rp15.900 |
+| 09:30–11:00 | **Lixi Park** (alias Binjiang Park) — taman tepi Lihu, area Lixi Road | Gratis. ⚠️ Exit stasiun terdekat belum terverifikasi, cek Amap on-site | — | — |
+| 11:00–11:30 | Lanjut ke **Central Lihu Park** | ⚠️ ±2km, jalan kaki/Didi singkat tergantung kondisi | 20 | Rp53.000 |
+| 11:30–13:00 | **Central Lihu Park** — taman pusat tepi danau Lihu | Gratis | — | — |
+| 13:00–14:00 | Makan siang sekitar Central Lihu Park | ±CNY 25/org | 50 | Rp132.500 |
+| 14:00–14:45 | Kembali ke Heliekou, MRT Line 2 + transfer Line 1 ke hotel | — | 6 | Rp15.900 |
+| **TOTAL HARI 2** | | | **106** | **Rp280.900** |
 
-**Catatan fisik:** semua jalur datar di dalam taman, aman untuk lutut. Gonghu Bay agak jauh (±11km dari Wanghu Bridge, dalam kompleks) — kalau lelah di sore hari, skip & ganti Plan-B di bawah.
+**Catatan fisik:** semua jalur datar (taman kota, tepi danau), aman untuk lutut. Hari ini relatif ringan/santai — masih ada waktu sore luang, bisa jalan santai tambahan di sekitar Central Lihu Park kalau masih semangat.
 
-**Plan-B hari ini:** kalau hujan deras atau terlalu lelah untuk lanjut ke Gonghu Bay — jalan santai versi lebih pendek tetap di **Taihu Lake Promenade** (sudah masuk rute sore hari ini, tidak perlu pindah lokasi), atau kalau hujan deras sekali, **Wuxi Binhu The Mixc** (mal — akses Line 4 Stasiun Dajuyuan, sama-sama di kawasan Binhu, area rooftop garden & plaza luar bisa dinikmati gratis).
+**Plan-B hari ini:** kalau hujan deras, **Wuxi Binhu The Mixc** (mal, akses Line 4 Stasiun Dajuyuan — area rooftop/plaza luar gratis diakses tanpa belanja).
+
+⚠️ **Gonghu Bay Wetland Park dan Taihu Lake Promenade dihapus dari hari ini** (versi lama) — jaraknya ±17km dari Lixi Park, terlalu jauh & akses transportasi umum buruk (lihat Cadangan untuk detail & alasan).
 
 ---
 
@@ -132,30 +115,28 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 4 — Jumat, 9 Oktober (Klaster Taihu Yuantouzhu & Liyuan Garden — hari dedicated, jauh dari klaster utama)
 
-**Rute:** Klaster ini (Yuantouzhu, Liyuan Garden, & Taihu Xiandao) tidak ada MRT langsung dan berjarak cukup jauh dari hotel — makanya dijadikan 1 hari dedicated (bukan digabung ke hari lain yang beda arah), sesuai prinsip itinerary ini. Tiga destinasi berbeda hari ini: taman klasik (Liyuan), semenanjung tepi danau (Yuantouzhu), dan pulau via perahu (Taihu Xiandao) — bukan 1 lokasi yang sama sepanjang hari. Golden Week sudah usai (9 Okt), jadi area populer ini diperkirakan lebih tenang dibanding kalau dikunjungi 6–7 Okt.
+**Rute:** Klaster Lihu Barat — Liyuan Garden & Yuantouzhu ada di rute bus wisata yang sama, **Leyou Line 1 (乐游1号线)**: naik di halte **Chong'an Temple/Da Dongfang** (dekat hotel), turun langsung di Liyuan Garden, lanjut ke Yuantouzhu (Chongshan) — bukan 2x Didi terpisah seperti versi lama. ⚠️ Interval bus ±40-50 menit (jadwal dari Wuxi Central Station: 08:00, 08:40, 09:20, dst), tarif belum terverifikasi — Didi jadi cadangan fleksibel kalau tidak mau menunggu jadwal.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Didi dari hotel (Taihu Square) ke **Liyuan Garden** (±20-25 menit) | Tidak ada MRT langsung ke area ini | 40 | Rp106.000 |
-| 09:00–10:30 | **Liyuan Garden** — taman klasik tepi Li Lake, jembatan zigzag & paviliun tepi air, jalur datar | CNY 45/org | 90 | Rp238.500 |
-| 10:30–10:45 | Didi singkat ke **Taihu Yuantouzhu Scenic Area** (±10-15 menit, searah) | — | 20 | Rp53.000 |
-| 10:45–12:00 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | Tiket terusan CNY 105/org (termasuk perahu & Taihu Xiandao) — lihat alasan "worth it" di bawah | 210 | Rp556.500 |
-| 12:00–13:00 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
-| 13:00–13:20 | Naik perahu dari dermaga Yuantouzhu ke **Taihu Xiandao** (±15 menit) | Termasuk tiket terusan di atas, jadwal perahu terakhir ±16:50 | — | — |
-| 13:20–15:00 | **Taihu Xiandao** (Pulau Sanshan) — kuil & paviliun di pulau tengah danau | Jalur area selatan/dermaga datar; naik ke puncak Lingxiao Palace opsional (menanjak) — lihat catatan fisik | — | — |
-| 15:00–15:20 | Perahu balik ke Yuantouzhu | Termasuk tiket terusan di atas | — | — |
-| 15:20–16:30 | Lanjut jalan santai promenade Yuantouzhu daratan | Termasuk tiket di atas | — | — |
+| 08:30–08:45 | Jalan kaki/Didi singkat ke halte Chong'an Temple | — | — | — |
+| 08:45–09:30 | Naik **Leyou Line 1** ke **Liyuan Garden** | ⚠️ Tarif belum terverifikasi, siapkan cash/QR | 20 | Rp53.000 |
+| 09:30–11:00 | **Liyuan Garden** — taman klasik tepi Li Lake, jembatan zigzag & paviliun tepi air, jalur datar | CNY 45/org | 90 | Rp238.500 |
+| 11:00–11:30 | Lanjut **Leyou Line 1** (atau Didi kalau tidak mau tunggu jadwal) ke **Yuantouzhu** | ⚠️ Interval 40-50 menit | 20 | Rp53.000 |
+| 11:30–13:00 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, promenade & taman bunga, jalur datar | CNY 90/org (tiket reguler, tanpa perahu Xiandao) | 180 | Rp477.000 |
+| 13:00–14:00 | Makan siang di area Yuantouzhu | ±CNY 25/org | 50 | Rp132.500 |
+| 14:00–15:30 | **Bogong Island Ecology Park** — taman air+alam+budaya, persis sebelah Yuantouzhu | Gratis, jalan kaki dari Yuantouzhu | — | — |
+| 15:30–16:30 | Jalan santai lanjutan promenade Yuantouzhu | Gratis, lampu kawasan mulai menyala sore | — | — |
 | 16:30–17:30 | Makan malam di area Yuantouzhu/lakefront | ±CNY 25/org | 50 | Rp132.500 |
-| 17:30–18:30 | Jalan santai malam lanjutan di promenade Yuantouzhu | Gratis, lampu kawasan mulai menyala | — | — |
-| 18:30–19:10 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
-| **TOTAL HARI 4** | | | **534** | **Rp1.415.100** |
+| 17:30–18:15 | Didi kembali ke hotel (±30-40 menit, lebih fleksibel dari malam hari daripada tunggu bus) | — | 50 | Rp132.500 |
+| **TOTAL HARI 4** | | | **484** | **Rp1.282.600** |
 
-**Taihu Yuantouzhu:** salah satu spot paling ikonik Danau Taihu, taman bunga & promenade luas. ⏳ Tabel di atas masih pakai tiket terusan lama termasuk Taihu Xiandao (perahu 13:00-15:00) — Taihu Xiandao sudah dipindah ke Cadangan, tiket & jadwal perlu dihitung ulang saat revisi (lihat catatan di atas dokumen).
+**Taihu Yuantouzhu:** salah satu spot paling ikonik Danau Taihu, taman bunga & promenade luas.
 
-**Catatan fisik:** jalur di Liyuan Garden & Yuantouzhu datar, aman untuk lutut.
+**Catatan fisik:** jalur di Liyuan Garden, Yuantouzhu & Bogong Island datar, aman untuk lutut.
 
-**Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip seluruh hari ke Yuantouzhu/Liyuan (mahal & jauh), ganti dengan hari santai di sekitar hotel (kawasan Old Canal/Nanchan Temple, sudah dekat) — jalan santai ringan atau istirahat penuh.
+**Plan-B hari ini:** kalau hujan deras/lelah — skip Bogong Island, ganti jalan santai lebih pendek di promenade Yuantouzhu saja (searah, tidak perlu pindah lokasi).
 
 ---
 
@@ -188,22 +169,22 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 | Hari | CNY (skenario hemat) | CNY (skenario lengkap) | IDR (skenario lengkap) |
 |---|---|---|---|
 | Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
-| Hari 2 (7 Okt) | 180 | 248 | Rp657.200 |
+| Hari 2 (7 Okt) | 106 | 106 | Rp280.900 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
-| Hari 4 (9 Okt) | 534 | 534 | Rp1.415.100 |
+| Hari 4 (9 Okt) | 484 | 484 | Rp1.282.600 |
 | Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **GRAND TOTAL** | **1.148** | **1.306** | **Rp3.460.900** |
+| **GRAND TOTAL** | **1.024** | **1.114** | **Rp2.952.100** |
 
-*Skenario hemat = tanpa Jichang Garden (Hari 3) & tanpa perjalanan sepeda ke Gonghu Bay (Hari 2). Skenario lengkap = termasuk keduanya. Hari 4 & 5 tidak punya varian hemat terpisah (lihat catatan opsional skip Yuantouzhu di Hari 4 kalau ingin hemat lebih jauh).*
+*Skenario hemat/lengkap hanya beda di Jichang Garden (Hari 3, opsional CNY 90/2org). Hari 2 & 4 sudah direvisi (Gonghu Bay & Taihu Xiandao dikeluarkan) sehingga tidak ada lagi varian hemat terpisah untuk hari-hari itu.*
 
 ### Breakdown per kategori (skenario lengkap)
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu+Xiandao) | 410 | Rp1.086.500 |
-| Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
-| Transport lokal (metro, sepeda, Didi) | 330 | Rp874.500 |
-| **TOTAL** | **1.306** | **Rp3.460.900** |
+| Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
+| Makan (semua hari, termasuk jajan) | 516 | Rp1.367.400 |
+| Transport lokal (metro, Didi, bus wisata) | 218 | Rp577.700 |
+| **TOTAL** | **1.114** | **Rp2.952.100** |
 
 ---
 
@@ -211,7 +192,7 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 
 - **Fisik/lutut:** semua jalur datar (taman kota, tepi danau, pedestrian street, promenade). Tempat menanjak (Baojie Mountain Forest Park) sengaja tidak dimasukkan, lihat Cadangan.
 - **Makanan:** tidak pedas, tidak asam, tidak berminyak/gorengan.
-- **Transportasi:** hotel di Taihu Square (Line 1), 1 halte dari Qingmingqiao. ⏳ Jarak & rute ke klaster Lihu (Hari 2)/Yuantouzhu (Hari 4) sedang diverifikasi ulang, lihat catatan di atas. **Hari 5:** koper dititip di hotel setelah checkout, diambil siang sebelum ke stasiun. Metro Line 1 jalur utama (+transfer Line 4 di **Liutan** untuk Huishan).
+- **Transportasi:** hotel di Taihu Square (Line 1), 1 halte dari Qingmingqiao. Klaster Lihu Timur (Hari 2): Line 1 + transfer Line 2 ke Heliekou. Klaster Lihu Barat (Hari 4): bus wisata Leyou Line 1 dari Chong'an Temple. **Hari 5:** koper dititip di hotel setelah checkout, diambil siang sebelum ke stasiun. Metro Line 1 jalur utama (+transfer Line 4 di **Liutan** untuk Huishan).
 - **Tempat berbayar** (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) ditandai jelas & sebagian opsional untuk hemat biaya.
 - **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; Lihu/Taihu (tahan ramai) di 7 Okt; Taihu Yuantouzhu di 9 Okt, juga sudah lewat Golden Week.
 - **Jadwal:** tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. Qingming Bridge/Nanchang Street versi malam di Hari 3.
@@ -275,74 +256,33 @@ App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Te
 
 ## Hari 2 — Rabu, 7 Oktober
 
-### Lihu National Wetland Park (蠡湖国家湿地公园 · Líhú Guójiā Shīdì Gōngyuán) ⚠️
-Lihu Lake (juga disebut Wuli Lake) adalah danau tepi kota di barat daya Wuxi, ±10km dari pusat kota, membentang ±6km dengan luas 8 km². Menurut legenda berusia lebih dari 2.500 tahun, pejabat tinggi Kerajaan Yue bernama Fan Li — setelah membantu Raja Goujian mengalahkan Kerajaan Wu — pensiun dari kehidupan politik dan menetap di tepi danau ini bersama Xi Shi, salah satu dari "Empat Kecantikan Kuno China". Li Lake National Wetland Park sendiri mencakup area seluas 1.126 hektar dengan 15 sub-taman gratis di bawahnya.
+### Lixi Park (蠡溪公园 · Líxī Gōngyuán, alias Binjiang Park) ✅
+Taman tepi Lihu Lake di kawasan Lixi Road, Distrik Binhu — bagian dari rangkaian taman gratis di tepi Lihu Lake, rating 4.3 di Amap dengan 13 review.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+✅ Terverifikasi langsung di Amap oleh pengguna (nama, alamat: Lixi Road, seberang Lixi Xiyuan). Alamat lama di versi dokumen ini (151 Shuanghong Road) SALAH — itu alamat Central Lihu Park.
 
-**Akses:** dari hotel, MRT Line 1 langsung ke Stasiun Changguangxi (±11 halte, ±25 menit, tanpa transfer), lanjut Didi/bus singkat ke gerbang taman (stasiun tidak persis di tepi danau).
+**Akses:** dari hotel, jalan kaki ke Tanduqiao (732m) → MRT Line 1 + transfer Line 2 → Stasiun **Heliekou** (area Lixi Road), 6 halte, ¥3/org, ±45 menit. ⚠️ Exit/gerbang taman terdekat dari stasiun belum terverifikasi, cek Amap on-site.
 
-**Jam Operasional:** taman terbuka ±06:00–21:00, gratis, tidak ada hari libur rutin. Jam puncak: pagi (warga lokal olahraga) dan sore/malam akhir pekan.
+**Jam Operasional:** area taman terbuka, gratis, mengikuti jam kawasan Lihu (±06:00–21:00).
 
 **Tiket:** Gratis.
 
-- Foto/info: https://en.wikipedia.org/wiki/Lihu_Park
-- Video referensi: https://www.youtube.com/results?search_query=Lihu+National+Wetland+Park+Wuxi
+- Foto/info: https://ct-by.com/lihu-bridge-park-wuxi-ticket-price-opening-hours-location-and-highlights/
+- Video referensi: https://www.youtube.com/results?search_query=Lixi+Park+Wuxi
 
 ### Central Lihu Park (蠡湖中央公园 · Líhú Zhōngyāng Gōngyuán) ⚠️
-Bagian taman pusat dari kompleks Lihu Lake yang sama, jadi ruang publik utama tempat warga lokal jalan santai, olahraga, dan menikmati pemandangan danau — berbagi sejarah & legenda Fan Li–Xi Shi yang sama dengan Lihu National Wetland Park di sebelahnya.
+Taman pusat di persimpangan Huanhu Road/Shuanghong Bridge, dekat Baojie Bridge — ruang publik utama tempat warga lokal jalan santai & olahraga tepi danau Lihu.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap — beberapa sumber menyebut nama ini kadang tertukar/tumpang tindih dengan "蠡湖公园" (Líhú Gōngyuán, Lihu Park biasa), cek ulang di Amap sebelum berangkat.
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** lanjutan jalan kaki dari Lihu National Wetland Park, searah tepi danau yang sama.
+**Akses:** ±2km dari Lixi Park (⚠️ jalur jalan kaki persis belum terverifikasi — Didi singkat sebagai alternatif). ±1,2km dari Liyuan Garden (Hari 4), ±2km dari Yuantouzhu (Hari 4) — semua di sekitar danau Lihu yang sama meski beda hari kunjungan.
 
-**Jam Operasional:** sama seperti Lihu National Wetland Park — buka ±06:00–21:00, gratis, tidak ada hari libur rutin.
+**Jam Operasional:** buka ±06:00–21:00, gratis, tidak ada hari libur rutin.
 
 **Tiket:** Gratis.
 
 - Foto/info: https://www.trip.com/travel-guide/attraction/wuxi/lihu-central-park-91749/
 - Video referensi: https://www.youtube.com/results?search_query=Lihu+Central+Park+Wuxi
-
-### Lixi Park (蠡溪公园 · Líxī Gōngyuán) ⚠️
-Taman tepi Lihu Lake di 151 Shuanghong Road, Distrik Binhu — sebelumnya dikenal sebagai "European City" karena gaya arsitekturnya, dilengkapi ferris wheel kecil dan area lakefront santai. Bagian dari rangkaian taman gratis di sepanjang tepi Lihu Lake yang sama.
-
-⚠️ Nama Hanzi belum terverifikasi kuat — beberapa sumber menyebutnya sebagai bagian dari "蠡湖公园" (Líhú Gōngyuán, Lihu Park), bukan taman dengan nama resmi terpisah. Cek ulang di Amap/Trip.com sebelum berangkat.
-
-**Akses:** lanjutan jalan kaki dari Central Lihu Park, tetap di jalur tepi danau yang sama, ±151 Shuanghong Road.
-
-**Jam Operasional:** area taman terbuka, gratis, mengikuti jam kawasan Lihu (±06:00–21:00). Ferris wheel/wahana kecil di dalamnya kemungkinan punya jam operasional sendiri lebih pendek — cek langsung di lokasi.
-
-**Tiket:** Gratis masuk taman; wahana ferris wheel/kecil di dalamnya (kalau ada) bayar terpisah.
-
-- Foto/info: https://ct-by.com/lihu-bridge-park-wuxi-ticket-price-opening-hours-location-and-highlights/
-- Video referensi: https://www.youtube.com/results?search_query=Lixi+Park+Wuxi
-
-### Gonghu Bay Wetland Park (贡湖湾湿地公园 · Gònghú Wān Shīdì Gōngyuán) ⚠️
-Terletak di selatan persimpangan Gonghu Avenue dan Hongzhou Road, Distrik Binhu — bagian dari kawasan lindung ekologi tepi utara Danau Taihu. Taman ini dibangun lewat proyek "mengembalikan lahan ke danau" (return polders to lake), mengubah bekas area tambak/pemukiman menjadi barrier ekologi wetland alami. Segmen paling scenic ada di ±4km antara Gonghuwan East Gate dan Yanhu Wetland Park.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** lanjutan sepeda/jalan kaki dari Lixi Park menyusuri jalur wetland tepi danau (±4km ke gerbang timur Gonghuwan), ATAU taksi/Didi langsung kalau sudah lelah jalan.
-
-**Jam Operasional:** taman terbuka ±06:00–20:00 (lebih pendek dari taman kota biasa karena area wetland/ekologi), gratis, tidak ada hari libur rutin. Jam puncak: sore akhir pekan.
-
-**Tiket:** Gratis; sepeda sewa ±CNY 17/jam/org (opsional).
-
-- Foto/info: https://www.google.com/search?q=Gonghu+Bay+Wetland+Park+Wuxi
-- Video referensi: https://www.youtube.com/results?search_query=Gonghu+Bay+Wetland+Park+Wuxi
-
-### Taihu Lake Promenade (太湖广场滨湖步道 · Tàihú Guǎngchǎng Bīnhú Bùdào) ⚠️
-Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di China — jalur lakefront yang jadi acara jalan santai sore Hari 2 (sebelum kembali ke hotel), dengan suasana warga lokal olahraga sore di tepi danau.
-
-⚠️ Bukan nama resmi tunggal di Amap — merujuk ke jalur promenade umum di sekitar Taihu Square/Taihu New Town, pakai nama jalan/kawasan sebagai gantinya kalau dicari di Amap.
-
-**Akses:** sama seperti klaster Lihu (Stasiun Changguangxi Line 1, ±11 halte dari hotel) — bagian dari rute sore yang sama.
-
-**Jam Operasional:** promenade terbuka 24 jam, gratis, tidak ada hari libur. Jam puncak: sore/malam, warga lokal ramai jalan/olahraga.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://en.wikipedia.org/wiki/Lake_Tai
 - Video referensi: https://www.youtube.com/results?search_query=Taihu+Lake+Promenade+Wuxi
 
 ### 🏷️ Wuxi Binhu The Mixc (无锡滨湖万象城 · Wúxī Bīnhú Wànxiàng Chéng) ⚠️ — Plan-B Hari 2
@@ -472,7 +412,7 @@ Taman klasik tepi Li Lake (cabang utara Taihu Lake) di Distrik Binhu, dibangun a
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Didi/taksi dari hotel (Taihu Square), ±20-25 menit — tidak ada MRT langsung, di luar jangkauan jalan kaki dari klaster Lihu utama.
+**Akses:** dari hotel, jalan kaki/Didi singkat ke halte **Chong'an Temple/Da Dongfang**, naik bus wisata **Leyou Line 1 (乐游1号线)** — turun langsung di Liyuan Garden. ⚠️ Interval bus ±40-50 menit, tarif belum terverifikasi.
 
 **Jam Operasional:** ±07:30–17:30. Tidak ada hari libur rutin. Jam puncak: siang akhir pekan.
 
@@ -486,30 +426,28 @@ Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan ta
 
 ✅ Nama Hanzi umum dipakai di sumber travel guide China, konsisten dengan penamaan resmi scenic area — tetap disarankan cek ulang halaman ranking Amap sebelum benar-benar diandalkan.
 
-**Akses:** Didi/taksi singkat dari Liyuan Garden (±10-15 menit, searah) — tidak ada MRT langsung ke kawasan ini.
+**Akses:** lanjutan **Leyou Line 1** dari Liyuan Garden (±40-50 menit interval), ATAU Didi kalau tidak mau menunggu jadwal.
 
 **Jam Operasional:** ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan & musim bunga.
 
-**Tiket:** Tiket terusan (termasuk Taihu Xiandao + perahu pulang-pergi) CNY 105/org (naik saat musim bunga sakura Maret-April, tidak relevan untuk kunjungan Oktober ini).
+**Tiket:** CNY 90/org (tiket reguler). Taihu Xiandao (dulu termasuk tiket terusan CNY 105) dipindah ke Cadangan — lihat entri terpisah.
 
 - Foto/info: https://en.wikipedia.org/wiki/Yuantouzhu
 - Video referensi: https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi
 
-### Taihu Xiandao (太湖仙岛 · Tàihú Xiāndǎo) ⚠️
-Juga disebut Pulau Sanshan, pulau di tengah Danau Taihu yang dicapai naik perahu ±15 menit dari dermaga Yuantouzhu — dipenuhi kuil & paviliun bertema Taoisme, dengan "会仙桥" (jembatan kayu gantung) menghubungkan area utara-selatan pulau. Titik tertinggi pulau adalah Istana Lingxiao (凌霄宫) di puncak bukit.
+### Bogong Island Ecology Park (渤公岛生态公园 · Bógōng Dǎo Shēngtài Gōngyuán) ⚠️
+Persis bersebelahan dengan Yuantouzhu, dibangun lewat proyek "mengembalikan lahan ke danau" di sisi timur bendungan Dushan lama — panjang ±1.700m, luas ±37 hektar. Dinamai untuk mengenang Zhang Bo, tokoh legendaris pengendali banjir. Bagian dari jalur wisata 38km lingkar Lihu, gabungan tema rekayasa air + alam + budaya.
 
-⚠️ Nama Hanzi umum dipakai di sumber travel guide China, belum diverifikasi langsung dari halaman Amap.
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** naik perahu dari dermaga Taihu Yuantouzhu (±15 menit), tiket & perahu sudah termasuk dalam tiket terusan Yuantouzhu — tidak perlu beli terpisah untuk pengunjung dewasa tiket penuh.
+**Akses:** jalan kaki dari Yuantouzhu (bersebelahan langsung). Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
 
-**Jam Operasional:** perahu beroperasi ±08:20–16:50 (jadwal terakhir naik pulau, cek langsung di dermaga karena bisa berubah musiman) — jangan sampai tiba di dermaga setelah jadwal terakhir. Area pulau ±07:00–17:30, mengikuti jam Yuantouzhu.
+**Jam Operasional:** ⚠️ belum ditemukan jam operasional resmi spesifik — kemungkinan taman terbuka tanpa jam tutup ketat (umum untuk taman kota gratis), cek Amap on-site.
 
-**Tiket:** Termasuk dalam tiket terusan Yuantouzhu CNY 105/org.
+**Tiket:** Gratis.
 
-**Catatan fisik:** area selatan/dermaga datar. Puncak Istana Lingxiao butuh menanjak — akses lift/eskalator belum terverifikasi, jadi opsional; kalau lutut tidak nyaman, cukup jelajah area bawah & jembatan gantung saja.
-
-- Foto/info: https://www.google.com/search?q=Taihu+Xiandao+Wuxi
-- Video referensi: https://www.youtube.com/results?search_query=Taihu+Xiandao+Wuxi
+- Foto/info: https://www.google.com/search?q=Bogong+Island+Ecology+Park+Wuxi
+- Video referensi: https://www.youtube.com/results?search_query=Bogong+Island+Ecology+Park+Wuxi
 
 ## Hari 5 — Sabtu, 10 Oktober
 
@@ -560,6 +498,72 @@ Museum modern yang memaparkan sejarah masyarakat Wu dari masa prasejarah hingga 
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B kali ini — alasannya ditulis di masing-masing uraian.
+
+### Lihu National Wetland Park (蠡湖国家湿地公园 · Líhú Guójiā Shīdì Gōngyuán) ⚠️
+Nama payung yang mencakup 15 sub-taman gratis di sekitar Danau Lihu (termasuk Lihu Park, Central Lihu Park, Changguangxi Wetland), seluas 1.126 hektar. Legenda Fan Li & Xi Shi (pejabat Kerajaan Yue, >2.500 tahun lalu) terkait kawasan ini.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. Ada POI spesifik bernama sama di Amap, area Xuelang, dekat Yuantouzhu (sisi barat danau) — bukan dekat Lixi Park/Central Lihu Park (sisi timur) seperti asumsi versi lama dokumen ini.
+
+**Akses:** ⚠️ posisi persis relatif ke Yuantouzhu/stasiun Line 2 belum terverifikasi detail.
+
+**Jam Operasional:** ±06:00–21:00, gratis.
+
+**Tiket:** Gratis.
+
+**Kenapa tidak dimasukkan:** posisi geografisnya (sisi barat danau, dekat Yuantouzhu) baru terungkap saat revisi ini — Hari 4 sudah cukup padat dengan Liyuan Garden+Yuantouzhu+Bogong Island. Bisa jadi tambahan kalau Hari 4 ingin diperpanjang/direvisi lagi nanti.
+
+- Foto/info: https://en.wikipedia.org/wiki/Lihu_Park
+- Video referensi: https://www.youtube.com/results?search_query=Lihu+National+Wetland+Park+Wuxi
+
+### Gonghu Bay Wetland Park (贡湖湾湿地公园 · Gònghú Wān Shīdì Gōngyuán) ⚠️
+Kawasan lindung ekologi tepi utara Danau Taihu di persimpangan Gonghu Avenue & Hongzhou Road, Kec. Huazhuang — dibangun lewat proyek "mengembalikan lahan ke danau". Segmen paling scenic ±4km antara Gonghuwan East Gate dan Yanhu Wetland Park.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** ±17km dari Lixi Park (terverifikasi jarak via Amap pengguna) — akses transportasi umum buruk, sumber lokal menyarankan mobil sendiri/Didi khusus.
+
+**Jam Operasional:** taman terbuka ±06:00–20:00, gratis, tidak ada hari libur rutin.
+
+**Tiket:** Gratis; sepeda sewa ±CNY 17/jam/org (opsional).
+
+**Kenapa tidak dimasukkan:** ±17km dari klaster Lihu Timur (Hari 2), di luar Distrik Huazhuang yang terpisah — bukan bagian dari kawasan lakefront yang sama seperti diasumsikan versi lama dokumen ini. Akses MRT/bus buruk, butuh Didi khusus pulang-pergi. Pengalaman wetland serupa sudah tercakup lewat Bogong Island Ecology Park (Hari 4).
+
+- Foto/info: https://www.google.com/search?q=Gonghu+Bay+Wetland+Park+Wuxi
+- Video referensi: https://www.youtube.com/results?search_query=Gonghu+Bay+Wetland+Park+Wuxi
+
+### Taihu Lake Promenade (太湖广场滨湖步道 · Tàihú Guǎngchǎng Bīnhú Bùdào) ⚠️
+Jalur promenade publik di tepi Danau Taihu, danau air tawar terbesar ketiga di China.
+
+⚠️ Bukan nama resmi tunggal di Amap — merujuk ke jalur promenade umum di sekitar Taihu Square/Taihu New Town.
+
+**Akses:** kawasan sekitar Gonghu Bay/Taihu New Town — sama seperti entri Gonghu Bay di atas, jauh dari klaster utama.
+
+**Jam Operasional:** promenade terbuka 24 jam, gratis.
+
+**Tiket:** Gratis.
+
+**Kenapa tidak dimasukkan:** rutenya menyatu dengan Gonghu Bay Wetland Park (lihat entri di atas) yang sudah dikeluarkan dari itinerary karena terlalu jauh — Taihu Yuantouzhu (Hari 4) sudah memberi pengalaman promenade tepi Danau Taihu yang setara.
+
+- Foto/info: https://en.wikipedia.org/wiki/Lake_Tai
+- Video referensi: https://www.youtube.com/results?search_query=Taihu+Lake+Promenade+Wuxi
+
+### Taihu Xiandao (太湖仙岛 · Tàihú Xiāndǎo) ⚠️
+Juga disebut Pulau Sanshan, pulau di tengah Danau Taihu yang dicapai naik perahu ±15 menit dari dermaga Yuantouzhu — dipenuhi kuil & paviliun bertema Taoisme, dengan "会仙桥" (jembatan kayu gantung) menghubungkan area utara-selatan pulau. Titik tertinggi pulau adalah Istana Lingxiao (凌霄宫) di puncak bukit.
+
+⚠️ Nama Hanzi umum dipakai di sumber travel guide China, belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** naik perahu dari dermaga Taihu Yuantouzhu (±15 menit), dulu termasuk tiket terusan Yuantouzhu.
+
+**Jam Operasional:** perahu beroperasi ±08:20–16:50 (jadwal terakhir naik pulau). Area pulau ±07:00–17:30.
+
+**Tiket:** dulu termasuk tiket terusan Yuantouzhu CNY 105/org — kalau ingin ke sini, beli tiket terusan (bukan tiket reguler CNY 90) di Yuantouzhu.
+
+**Catatan fisik:** area selatan/dermaga datar. Puncak Istana Lingxiao butuh menanjak, akses lift/eskalator belum terverifikasi.
+
+**Kenapa tidak dimasukkan:** instruksi eksplisit pengguna — tidak akan dikunjungi. Diganti Bogong Island Ecology Park (Hari 4) yang gratis & bersebelahan langsung dengan Yuantouzhu, tanpa perlu naik perahu.
+
+- Foto/info: https://www.google.com/search?q=Taihu+Xiandao+Wuxi
+- Video referensi: https://www.youtube.com/results?search_query=Taihu+Xiandao+Wuxi
 
 ### Baojie Mountain Forest Park (宝界山森林公园 · Bǎojiè Shān Sēnlín Gōngyuán) ⚠️
 Taman hutan pegunungan di pinggiran Wuxi dengan jalur hiking & udara segar.
