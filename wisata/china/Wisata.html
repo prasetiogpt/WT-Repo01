@@ -1709,7 +1709,6 @@ function renderTransport(t){
 
   const det = document.createElement('details');
   det.className = 'transport';
-  if(t.openByDefault) det.open = true;
   det.innerHTML = `
     <summary>
       <div class="transport-icon">${icon}</div>
@@ -1729,7 +1728,6 @@ function renderDay(d, dest){
   const destId = dest.id;
   const det = document.createElement('details');
   det.className = 'day';
-  if(d.num===1) det.open = true;
 
   const rows = d.items.map((it,ii)=>{
     const [jam,destName,ket,catatan,valas,rupiah] = it;
@@ -1806,7 +1804,6 @@ function renderDay(d, dest){
 function renderBudget(b){
   const el = document.createElement('details');
   el.className = 'budget-card';
-  el.open = true;
   const dayRows = b.byDay.map(([l,c,i])=>`<tr><td>${l}</td><td>${c}</td><td>${i}</td></tr>`).join('');
   const catRows = b.byCategory.map(([l,c,i])=>`<tr><td>${l}</td><td>${c}</td><td>${i}</td></tr>`).join('');
   el.innerHTML = `
@@ -1851,7 +1848,6 @@ function renderCity(dest){
 
   const notesCard = document.createElement('details');
   notesCard.className = 'notes-card';
-  notesCard.open = true;
   notesCard.innerHTML = `<summary>Catatan Penting Lainnya${CHEV}</summary><div class="notes-card-body"><ul>${dest.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
   itinView.appendChild(notesCard);
 
@@ -1879,7 +1875,6 @@ function renderCity(dest){
 
     const groupEl = document.createElement('details');
     groupEl.className = 'lampiran-group';
-    if(gi===0) groupEl.open = true;
 
     const itemsHtml = entries.map(p=>{
       const noBody = !p.text && !p.wiki && !p.yt && !p.reserveInfo && (!p.nearby || !p.nearby.length) && (!p.hotels || !p.hotels.length);
