@@ -9,6 +9,8 @@
 
 > **Jadwal kedatangan & kepulangan dikunci sesuai instruksi Anda:** tiba di Wuxi **18:00 tepat, Selasa 6 Oktober**; berangkat (HSR ke Suzhou) **15:00 tepat, Sabtu 10 Oktober**. Konsekuensi: Hari 1 kedatangan malam (hanya check-in + makan malam ringan, bukan hari penuh), Hari 5 harus checkout & selesai sightseeing sebelum jam 15:00 (jendela pagi dipadatkan, tanpa waktu buffer luang seperti versi jadwal lama). **Qingming Bridge/Nanchang Street versi malam gelap total tetap di Hari 3 malam** (bukan Hari 5) — jadi tidak kena batasan jam kereta kepulangan.
 
+> ⏳ **VERIFIKASI TERTUNDA — belum direvisi, jangan diandalkan di lapangan sebelum ini diselesaikan.** Ditemukan Anda (belum dicek ulang oleh saya): jarak segmen Hari 2 klaster Lihu/Taihu berbeda jauh dari asumsi di tabel Hari 2 saat ini — **Lihu National Wetland Park → Central Lihu Park ±2km**, **Central Lihu Park → Lixi Park ±4km ke utara**, **Lixi Park → Gonghu Bay Wetland Park ±17km** (tabel saat ini menulis "±4km" untuk segmen terakhir ini, dan catatan fisik di bawah tabel malah menulis "±11km dari Wanghu Bridge" — dua angka yang saling kontradiksi, keduanya tidak diverifikasi peta). Sebelum revisi: perlu verifikasi menyeluruh SEMUA jarak/urutan/moda transport di seluruh dokumen ini (bukan cuma Hari 2) via routing peta yang bisa dicek, sebelum ditandai selesai — permintaan eksplisit: revisi dilakukan **sekali saja secara komprehensif**, bukan bertahap.
+
 ## Informasi Transportasi
 
 | | |
