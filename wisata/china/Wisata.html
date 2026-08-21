@@ -77,7 +77,7 @@
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 html{font-size:17px;}
-html,body{margin:0;padding:0;}
+html,body{margin:0;padding:0;overscroll-behavior-y:contain;}
 body{
   background:var(--paper);
   color:var(--ink);
@@ -403,7 +403,10 @@ function setAllDetails(open){
   if(!activeSubview) return;
   activeSubview.querySelectorAll('details').forEach(d=>{ d.open = open; });
 }
-document.getElementById('collapse-all-btn').addEventListener('click', ()=> setAllDetails(false));
+document.getElementById('collapse-all-btn').addEventListener('click', ()=>{
+  setAllDetails(false);
+  window.scrollTo(0,0);
+});
 document.getElementById('expand-all-btn').addEventListener('click', ()=> setAllDetails(true));
 
 const CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
