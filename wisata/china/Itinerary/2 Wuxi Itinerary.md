@@ -13,6 +13,8 @@
 >
 > ⚠️ **Keterbatasan alat dicatat di sini supaya sesi berikutnya tahu:** akses langsung ke amap.com, baike.baidu.com, dan zh.wikipedia.org **diblokir oleh network policy** di environment ini (`EGRESS_BLOCKED`) — riset jarak/rute di dokumen ini selama ini mengandalkan web_search tidak langsung (rawan kontradiksi/kurang presisi), bukan buka halaman Amap/peta asli. Verifikasi paling akurat untuk sesi ini datang dari screenshot Amap yang dikirim pengguna langsung dari HP, bukan dari riset mandiri.
 >
+> **Hari 3 — catatan urutan (bukan salah data, tapi belum optimal):** Screenshot Amap pengguna menunjukkan **Jichang Garden (Northeast Gate) persis sebelah Wuxi Huishan Old Street**, sementara tabel Hari 3 saat ini mengunjungi Jichang Garden PALING TERAKHIR (15:30, setelah Huishan Ancient Town & Xihui Park) — kemungkinan bolak-balik yang tidak perlu karena gerbang utara Jichang dekat titik awal hari. Ada juga **Jichangyuan (South Gate)** terpisah yang mungkin jadi penghubung ke Xihui Park/Huishan Ancient Town. Karena Huishan Old Street+Jichang Garden+Xihui Park+Huishan Ancient Town Scenic Area adalah **satu kawasan pejalan kaki menyatu** (dikonfirmasi pengguna), urutan gerbang-per-gerbang yang presisi diputuskan **langsung di lapangan** via Amap real-time, bukan dipaksakan dari sini — tapi tetap cek ulang alokasi WAKTU per lokasi (poin 3 di atas) tetap perlu saat revisi komprehensif, supaya durasi kunjungan masuk akal meski urutan detailnya fleksibel di lapangan.
+>
 > Sebelum revisi: perlu verifikasi menyeluruh SEMUA jarak/urutan/moda transport di seluruh dokumen ini (bukan cuma Hari 2), sebelum ditandai selesai — permintaan eksplisit: revisi dilakukan **sekali saja secara komprehensif**, bukan bertahap.
 
 ## Informasi Transportasi
