@@ -11,9 +11,7 @@
 
 > ⚠️ **Keterbatasan alat:** akses langsung ke amap.com/baike.baidu.com/zh.wikipedia.org diblokir di environment sesi ini — riset jarak/rute memakai web_search tidak langsung, dicek-silang dengan screenshot Amap dari pengguna. Beberapa titik masih ⚠️ (ditandai di teks) karena tidak bisa diverifikasi lebih jauh dengan alat yang ada.
 >
-> ⏳ **CATATAN TERTUNDA (belum direvisi, digabung ke revisi berikutnya):** rute jalan kaki Amap Lixi Park → Central Lihu Park (Hari 2) ternyata **4,5km, ±1 jam 7 menit jalan kaki** (bukan ±2km seperti ditulis di tabel Hari 2 saat ini) — terlalu jauh untuk jalan kaki, perlu diganti Didi (±11 CNY/trip, versi Amap "Recommended Plan"). Perlu update tabel Hari 2 + entri Central Lihu Park di Lampiran saat revisi berikutnya.
->
-> (14) **Revisi komprehensif — Hari 2 & 4 dirombak total.** Lixi Park (alamat lama 151 Shuanghong Road SALAH, itu alamat Central Lihu Park — alamat benar: Lixi Road, alias Binjiang Park) ternyata dekat hotel via **Line 1 + transfer Line 2 ke Heliekou** (bukan Line 1 ke Changguangxi seperti versi lama — Changguangxi ternyata jauh ke selatan, bukan jalur ke klaster Lihu). Hari 2 disederhanakan jadi klaster **Lihu Timur** (Lixi Park + Central Lihu Park saja); **Gonghu Bay Wetland Park & Taihu Lake Promenade dikeluarkan** (±17km dari Lixi Park, akses buruk, dipindah ke Cadangan). Hari 4 jadi klaster **Lihu Barat** (Liyuan Garden + Yuantouzhu + **Bogong Island Ecology Park**, gratis, pengganti **Taihu Xiandao** yang dihapus atas instruksi pengguna) — diakses bus wisata **Leyou Line 1** dari halte Chong'an Temple (bukan 2x Didi terpisah). Tiket Yuantouzhu dikoreksi ke CNY 90 (reguler, tanpa terusan Xiandao CNY 105). Total Hari 2: 248→106 CNY. Total Hari 4: 534→484 CNY. Grand Total lengkap: 1.306→1.114 CNY.
+> (14) **Revisi komprehensif — Hari 2 & 4 dirombak total.** Lixi Park (alamat lama 151 Shuanghong Road SALAH, itu alamat Central Lihu Park — alamat benar: Lixi Road, alias Binjiang Park) ternyata dekat hotel via **Line 1 + transfer Line 2 ke Heliekou** (bukan Line 1 ke Changguangxi seperti versi lama — Changguangxi ternyata jauh ke selatan, bukan jalur ke klaster Lihu). Hari 2 disederhanakan jadi klaster **Lihu Timur** (Lixi Park + Central Lihu Park saja); **Gonghu Bay Wetland Park & Taihu Lake Promenade dikeluarkan** (±17km dari Lixi Park, akses buruk, dipindah ke Cadangan). Hari 4 jadi klaster **Lihu Barat** (Liyuan Garden + Yuantouzhu + **Bogong Island Ecology Park**, gratis, pengganti **Taihu Xiandao** yang dihapus atas instruksi pengguna) — diakses bus wisata **Leyou Line 1** dari halte Chong'an Temple (bukan 2x Didi terpisah). Tiket Yuantouzhu dikoreksi ke CNY 90 (reguler, tanpa terusan Xiandao CNY 105). Total Hari 2: 248→106 CNY. Total Hari 4: 534→484 CNY. Grand Total lengkap: 1.306→1.114 CNY; (15) **Lixi Park → Central Lihu Park dikoreksi dari ±2km jadi 4,5km/±1 jam 7 menit jalan kaki** (rute Amap "Recommended Plan") — terlalu jauh untuk jalan kaki, diganti Didi (±11 CNY/trip, ±15 menit, lebih murah dari perkiraan CNY 20 di versi lama). Total Hari 2: 106→97 CNY, Grand Total lengkap: 1.114→1.105 CNY.
 
 ## Informasi Transportasi
 
@@ -67,7 +65,7 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 2 — Rabu, 7 Oktober (Klaster Lihu Timur — Lixi Park & Central Lihu Park)
 
-**Rute:** Hotel → jalan kaki ke Tanduqiao (732m, ±13 menit) → MRT Line 1 + transfer **Line 2** → Stasiun **Heliekou** (dekat Lixi Park, area Lixi Road) — 6 halte, ¥3/org, ±45 menit. **BUKAN lewat Changguangxi** seperti versi lama. Central Lihu Park ±2km dari Lixi Park (⚠️ jalur jalan kaki persis belum terverifikasi — Didi singkat kalau jauh/panas). Sore kembali via Heliekou, Line 2 + transfer Line 1.
+**Rute:** Hotel → jalan kaki ke Tanduqiao (732m, ±13 menit) → MRT Line 1 + transfer **Line 2** → Stasiun **Heliekou** (dekat Lixi Park, area Lixi Road) — 6 halte, ¥3/org, ±45 menit. Central Lihu Park 4,5km dari Lixi Park (±1 jam 7 menit jalan kaki — terlalu jauh, naik Didi ±15 menit). Sore kembali via Heliekou, Line 2 + transfer Line 1.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -75,11 +73,11 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | 08:30–08:45 | Jalan kaki ke Stasiun Tanduqiao | 732m dari hotel | — | — |
 | 08:45–09:30 | MRT Line 1 + transfer Line 2 ke **Heliekou** | 6 halte, ¥3/org | 6 | Rp15.900 |
 | 09:30–11:00 | **Lixi Park** (alias Binjiang Park) — taman tepi Lihu, area Lixi Road | Gratis. ⚠️ Exit stasiun terdekat belum terverifikasi, cek Amap on-site | — | — |
-| 11:00–11:30 | Lanjut ke **Central Lihu Park** | ⚠️ ±2km, jalan kaki/Didi singkat tergantung kondisi | 20 | Rp53.000 |
-| 11:30–13:00 | **Central Lihu Park** — taman pusat tepi danau Lihu | Gratis | — | — |
+| 11:00–11:15 | Didi ke **Central Lihu Park** | 4,5km/±1 jam 7 menit jalan kaki — terlalu jauh, naik Didi (±15 menit) | 11 | Rp29.150 |
+| 11:15–13:00 | **Central Lihu Park** — taman pusat tepi danau Lihu | Gratis | — | — |
 | 13:00–14:00 | Makan siang sekitar Central Lihu Park | ±CNY 25/org | 50 | Rp132.500 |
 | 14:00–14:45 | Kembali ke Heliekou, MRT Line 2 + transfer Line 1 ke hotel | — | 6 | Rp15.900 |
-| **TOTAL HARI 2** | | | **106** | **Rp280.900** |
+| **TOTAL HARI 2** | | | **97** | **Rp257.050** |
 
 **Catatan fisik:** semua jalur datar (taman kota, tepi danau), aman untuk lutut. Hari ini relatif ringan/santai — masih ada waktu sore luang, bisa jalan santai tambahan di sekitar Central Lihu Park kalau masih semangat.
 
@@ -171,11 +169,11 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 | Hari | CNY (skenario hemat) | CNY (skenario lengkap) | IDR (skenario lengkap) |
 |---|---|---|---|
 | Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
-| Hari 2 (7 Okt) | 106 | 106 | Rp280.900 |
+| Hari 2 (7 Okt) | 97 | 97 | Rp257.050 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
 | Hari 4 (9 Okt) | 484 | 484 | Rp1.282.600 |
 | Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **GRAND TOTAL** | **1.024** | **1.114** | **Rp2.952.100** |
+| **GRAND TOTAL** | **1.015** | **1.105** | **Rp2.928.250** |
 
 *Skenario hemat/lengkap hanya beda di Jichang Garden (Hari 3, opsional CNY 90/2org). Hari 2 & 4 sudah direvisi (Gonghu Bay & Taihu Xiandao dikeluarkan) sehingga tidak ada lagi varian hemat terpisah untuk hari-hari itu.*
 
@@ -185,8 +183,8 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 |---|---|---|
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
 | Makan (semua hari, termasuk jajan) | 516 | Rp1.367.400 |
-| Transport lokal (metro, Didi, bus wisata) | 218 | Rp577.700 |
-| **TOTAL** | **1.114** | **Rp2.952.100** |
+| Transport lokal (metro, Didi, bus wisata) | 209 | Rp553.850 |
+| **TOTAL** | **1.105** | **Rp2.928.250** |
 
 ---
 
@@ -277,7 +275,7 @@ Taman pusat di persimpangan Huanhu Road/Shuanghong Bridge, dekat Baojie Bridge �
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** ±2km dari Lixi Park (⚠️ jalur jalan kaki persis belum terverifikasi — Didi singkat sebagai alternatif). ±1,2km dari Liyuan Garden (Hari 4), ±2km dari Yuantouzhu (Hari 4) — semua di sekitar danau Lihu yang sama meski beda hari kunjungan.
+**Akses:** 4,5km dari Lixi Park (±1 jam 7 menit jalan kaki — terlalu jauh, naik Didi ±15 menit, ±CNY 11/trip). ±1,2km dari Liyuan Garden (Hari 4), ±2km dari Yuantouzhu (Hari 4) — semua di sekitar danau Lihu yang sama meski beda hari kunjungan.
 
 **Jam Operasional:** buka ±06:00–21:00, gratis, tidak ada hari libur rutin.
 
