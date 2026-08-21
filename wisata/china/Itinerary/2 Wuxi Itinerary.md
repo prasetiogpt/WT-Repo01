@@ -7,7 +7,7 @@
 
 > **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai; Lihu/Taihu (area luas, lebih tahan ramai) di 7 Okt; Taihu Yuantouzhu (destinasi populer lain) di 9 Okt, juga sudah lewat Golden Week.
 
-> **Jadwal kedatangan & kepulangan dikunci sesuai instruksi Anda:** tiba di Wuxi **18:00 tepat, Selasa 6 Oktober**; berangkat (HSR ke Suzhou) **15:00 tepat, Sabtu 10 Oktober**. Konsekuensi: Hari 1 kedatangan malam (hanya check-in + makan malam ringan, bukan hari penuh), Hari 5 harus checkout & selesai sightseeing sebelum jam 15:00 (jendela pagi dipadatkan, tanpa waktu buffer luang seperti versi jadwal lama). **Qingming Bridge/Nanchang Street versi malam gelap total tetap di Hari 3 malam** (bukan Hari 5) — jadi tidak kena batasan jam kereta kepulangan.
+> **Kedatangan:** 18:00 tepat, Selasa 6 Oktober. **Kepulangan (HSR ke Suzhou):** 15:00 tepat, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
 
 > ⏳ **VERIFIKASI TERTUNDA — belum direvisi, jangan diandalkan di lapangan sebelum ini diselesaikan.** Ditemukan Anda via Amap (belum diintegrasikan ke tabel): jarak segmen Hari 2 klaster Lihu/Taihu berbeda jauh dari asumsi tabel saat ini — **Lihu National Wetland Park → Central Lihu Park ±2km**, **Central Lihu Park → Lixi Park ±4km ke utara**, **Lixi Park → Gonghu Bay Wetland Park ±17km** (tabel saat ini menulis "±4km" untuk segmen terakhir, catatan fisik di bawahnya malah "±11km dari Wanghu Bridge" — kontradiksi, keduanya belum diverifikasi peta). **Alamat "Lixi Park" di tabel/Lampiran saat ini (151 Shuanghong Road) SALAH** — itu alamat Central Lihu Park; Lixi Park asli ada di **Lixi Road** (alias "Binjiang Park" di Amap, ✅ terverifikasi pengguna langsung di app). Rute Amap dari hotel (jalan kaki 732m/13menit ke Tanduqiao) menuju arah Lixi Park butuh **Line 1 + transfer Line 2** (6 halte, ¥3, ~45 menit) — BUKAN Line 1 langsung ke Changguangxi tanpa transfer seperti ditulis di rute Hari 2 saat ini.
 >
@@ -33,8 +33,6 @@
 | Kedatangan | Selasa, 6 Oktober, **18:00 tepat** — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
 | Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
-
-**Kenapa jadwal Hari 1 dimulai malam:** kedatangan di Wuxi dikunci **18:00 tepat** sesuai rencana Anda — Hari 1 disusun sebagai malam kedatangan santai saja, bukan hari penuh.
 
 ### Hotel
 
@@ -126,7 +124,7 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | **TOTAL HARI 3 (dengan Jichang Garden)** | | | **314** | **Rp832.100** |
 | **TOTAL HARI 3 (tanpa Jichang Garden)** | | | **224** | **Rp593.600** |
 
-**Kenapa Jichang Garden direkomendasikan meski berbayar:** taman klasik terbaik di Jiangnan (dibangun awal 1500-an), desainnya menginspirasi bagian Summer Palace Beijing. Kunjungan singkat (±30-45 menit), persis di dalam Xihui Park — bisa diskip untuk hemat tanpa mengubah rute.
+**Jichang Garden:** taman klasik terbaik di Jiangnan, menginspirasi bagian Summer Palace Beijing. ±30-45 menit, di dalam Xihui Park — bisa diskip untuk hemat.
 
 **Plan-B hari ini:** Jichang Garden bisa diganti **Huishan Temple (Cultural Relics Area)** (sama-sama di dalam Xihui Park, tiket kombinasi ±CNY 70) atau perpanjang jalan santai gratis di Huishan Ancient Town. Untuk sesi malam: kalau hujan deras, cukup lihat kanal dari area beratap terdekat.
 
@@ -153,9 +151,9 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | 18:30–19:10 | Didi kembali ke hotel (±30-40 menit) | — | 50 | Rp132.500 |
 | **TOTAL HARI 4** | | | **534** | **Rp1.415.100** |
 
-**Kenapa Taihu Yuantouzhu + Taihu Xiandao direkomendasikan meski berbayar (tiket terusan CNY 105/org):** Yuantouzhu salah satu spot paling ikonik untuk memandang Danau Taihu, dengan taman bunga & promenade tepi danau yang luas — berbeda dari pemandangan Lihu/Taihu di Hari 2 (yang gratis tapi lebih kecil skalanya). Taihu Xiandao menambah variasi hari ini — pulau kuil di tengah danau, dicapai naik perahu (bukan cuma jalan kaki lebih jauh di lokasi yang sama). Ada hari tambahan di trip ini, jadi cukup waktu untuk dedicated tanpa mengorbankan hari lain.
+**Taihu Yuantouzhu:** salah satu spot paling ikonik Danau Taihu, taman bunga & promenade luas. ⏳ Tabel di atas masih pakai tiket terusan lama termasuk Taihu Xiandao (perahu 13:00-15:00) — Taihu Xiandao sudah dipindah ke Cadangan, tiket & jadwal perlu dihitung ulang saat revisi (lihat catatan di atas dokumen).
 
-**Catatan fisik:** jalur di Liyuan Garden & Yuantouzhu datar (taman & promenade), aman untuk lutut. Di Taihu Xiandao, area selatan/dermaga datar — tapi **puncak Lingxiao Palace butuh menanjak**, akses lift/eskalator belum terverifikasi, jadi opsional saja: kalau lutut tidak nyaman, cukup jelajah area bawah/dermaga & lewati "会仙桥" (jembatan kayu gantung), tidak perlu naik ke puncak.
+**Catatan fisik:** jalur di Liyuan Garden & Yuantouzhu datar, aman untuk lutut.
 
 **Plan-B hari ini:** kalau hujan deras atau merasa terlalu jauh/lelah untuk Didi bolak-balik — skip seluruh hari ke Yuantouzhu/Liyuan (mahal & jauh), ganti dengan hari santai di sekitar hotel (kawasan Old Canal/Nanchan Temple, sudah dekat) — jalan santai ringan atau istirahat penuh.
 
@@ -163,7 +161,7 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Suzhou 15:00 Tepat)
 
-**Rute:** Qingming Bridge/Nanchang Street sudah selesai versi malam di Hari 3 — Hari 5 tinggal Nanchan Temple. Checkout pagi, **koper dititip di hotel** (layanan standar, umumnya gratis) supaya jalan-jalan & jajan pagi tidak perlu tarik koper — baru diambil lagi siang sebelum ke stasiun. **Kepulangan dikunci 15:00 tepat**, jadi jadwal pagi dipadatkan tanpa waktu buffer luang.
+**Rute:** Nanchan Temple saja (Qingming Bridge/Nanchang Street sudah di Hari 3). Checkout pagi, **koper dititip di hotel**, diambil lagi siang sebelum ke stasiun.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -213,10 +211,10 @@ Belum termasuk harga hotel. Angka di bawah murni biaya aktivitas harian (tiket m
 
 - **Fisik/lutut:** semua jalur datar (taman kota, tepi danau, pedestrian street, promenade). Tempat menanjak (Baojie Mountain Forest Park) sengaja tidak dimasukkan, lihat Cadangan.
 - **Makanan:** tidak pedas, tidak asam, tidak berminyak/gorengan.
-- **Transportasi:** hotel di area Taihu Square (Line 1), 1 halte dari Qingmingqiao (stasiun Qingming Bridge!) — TAPI ±9km/11 halte dari klaster Lihu/Taihu lakefront (Hari 2), jadi Hari 2 pakai MRT Line 1 langsung ke Changguangxi, bukan jalan kaki. **Hari 5: koper dititip di hotel setelah checkout** (bukan dibawa keliling) — diambil lagi siang sebelum ke stasiun, supaya jalan-jalan/jajan pagi tidak perlu tarik koper (tambahan 1 trip metro balik ke hotel, ±12 CNY/2 org). Metro Line 1 jadi jalur utama (+transfer Line 4 di **Liutan** khusus Huishan); Didi/taksi dipakai Hari 1 (stasiun→hotel), Hari 2 (last-mile Changguangxi↔gerbang taman), dan Hari 4 (klaster Yuantouzhu, tidak ada MRT langsung).
+- **Transportasi:** hotel di Taihu Square (Line 1), 1 halte dari Qingmingqiao. ⏳ Jarak & rute ke klaster Lihu (Hari 2)/Yuantouzhu (Hari 4) sedang diverifikasi ulang, lihat catatan di atas. **Hari 5:** koper dititip di hotel setelah checkout, diambil siang sebelum ke stasiun. Metro Line 1 jalur utama (+transfer Line 4 di **Liutan** untuk Huishan).
 - **Tempat berbayar** (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) ditandai jelas & sebagian opsional untuk hemat biaya.
 - **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; Lihu/Taihu (tahan ramai) di 7 Okt; Taihu Yuantouzhu di 9 Okt, juga sudah lewat Golden Week.
-- **Jadwal kedatangan & kepulangan dikunci** sesuai instruksi Anda — tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. **Qingming Bridge/Nanchang Street versi MALAM sudah diakomodasi di Hari 3** (bukan Hari 5, supaya tidak kena batas jam kereta), diperpanjang sampai ±21:00. Hari 2 selesai lebih awal (±19:00, sudah termasuk commute balik) karena klaster Lihu/Taihu jauh dari hotel — Taihu Lake Promenade jadi bagian rute sore di lakefront.
+- **Jadwal:** tiba 18:00 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. Qingming Bridge/Nanchang Street versi malam di Hari 3.
 - **Itinerary kota ini independen** — tidak menyambung otomatis ke jadwal Nanjing/Suzhou; penyambungan antar kota diatur terpisah oleh Anda.
 
 ---
