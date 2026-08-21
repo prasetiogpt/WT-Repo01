@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Suzhou Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Sinkronisasi format ke standar Nanjing/Wuxi** — kolom Kegiatan di semua tabel itinerary (Hari 1-4, Opsional A/B) sekarang bold selektif, hanya nama destinasi wisata yang di-`**bold**` (baris transit/logistik/makan polos dibiarkan tanpa bold); (2) seluruh 30 entri Lampiran (termasuk Cadangan & Plan-B) dilengkapi Hanzi + badge verifikasi, `**Akses:**` (jalur MRT/exit/jarak jalan kaki), `**Jam Operasional:**`, dan `**Tiket:**` (CNY+IDR, kurs tetap Rp2.650/CNY) — diriset via web search, ditandai ⚠️ kalau tidak ditemukan sumber resmi/pasti, bukan tebakan; (3) "Guanqian Street & Xuanmiao Temple" dan "Zhouzhuang / Tongli Water Town" dipecah masing-masing jadi 2 entri terpisah (satu `###` = satu tempat, sesuai aturan parser); (4) dikoreksi kerancuan penamaan di entri "Suzhou Amusement Land / Window of the World" — "Window of the World" sebenarnya taman berbeda di Shenzhen, bukan bagian dari Suzhou Amusement Land (苏州乐园); entri diganti jadi murni Suzhou Amusement Land dengan catatan koreksi; (5) diperbaiki bug parser `generate_wisata.py` — heading Lampiran "## Opsional A" dan "## Opsional B" sebelumnya tidak dikenali parser (entrinya diam-diam ter-skip dari Wisata.html); ditambahkan pengenalan generik untuk heading `## Opsional <label>` di parser; (6) **Revisi besar 2026-08-19** — tanggal digeser jadi **10–14 Oktober (4 malam, 5 hari)** sesuai jadwal baru; **hotel dikoreksi** ke Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden), Gusu District, dengan anchor MRT **Nanyuanbeilu (Line 5)** — SELURUH rute harian & moda transportasi disusun ulang dari titik ini (bukan lagi asumsi hotel lama); **city independence diterapkan** — Hari 1 & Hari 5 tidak lagi menyambung jadwal transportasi aktual kota sebelumnya (`[[itinerary-continuity]]` sudah SUPERSEDED), dipakai default kedatangan 17:00/kepulangan pola skill terbaru, dengan pengecualian Hari 5 yang pakai data riil jadwal HSR Suzhou→Ningbo; **Opsional A (Taihu Lake) & Opsional B (Jinji Lake malam/Music Fountain) diaktifkan kembali ke badan itinerary utama** (Hari 5 & Hari 4) karena durasi Suzhou diperpanjang jadi 5 hari — section "## Opsional" dihapus, entri Lampiran-nya dipindah ke grup Hari terkait; **rute Panmen & Wumen Bridge disederhanakan** karena sekarang persis 1 halte MRT dari hotel (dulu perlu perjalanan lebih jauh); **leg pulang dikoreksi** dari asumsi lama ke **HSR Suzhou → Ningbo** via Suzhou Railway Station (bukan Guangzhou — itu leg trip terpisah yang belum diputuskan); seluruh tabel budget dihitung ulang untuk struktur 5 hari; (7) **2026-08-21** — ditambahkan rating hotel (⭐⭐⭐⭐, 9.4/10, 17.650 ulasan) dan info stasiun tambahan **Suzhou Industrial Park Railway Station** (11,4km/±30 menit) dari screenshot Amap pengguna; (8) **2026-08-21 — bug fix parser**: sempat dicoba format tabel terpisah "## Hotel & Transportasi" — ternyata bikin info hotel HILANG dari Wisata.html, karena `generate_wisata.py` cuma mengenali heading persis `## Informasi Penerbangan`/`## Informasi Transportasi` (tidak match dengan varian "(Kedatangan)" yang dipakai di sini) dan tidak punya handler untuk heading `##` custom apa pun di luar daftar yang dikenali (di-skip diam-diam, bukan error) — heading "Informasi Transportasi (Kedatangan)" dikembalikan jadi persis "Informasi Transportasi", dan info hotel dikembalikan jadi prose (bukan tabel terpisah) menyatu di section yang sama, sesuai konvensi Nanjing/Wuxi (`### Hotel` sebagai sub-heading H3 tetap ikut ter-parse sebagai prose dalam section H2 induknya — H3 TIDAK memulai section baru, beda dari H2); (9) **2026-08-21 — dipangkas info berulang/kurang relevan**: paragraf "Kenapa Hari 1 dimulai sore" dan "Prioritas transportasi lokal" dihapus (sudah default skill, tidak perlu diulang per file), blockquote "Kota disusun independen" dihapus (duplikat), tabel Informasi Transportasi Pulang dipadatkan (alasan pemilihan stasiun/detail teknis dipangkas jadi 1 kalimat inti) — tujuan: layar lebih fokus ke info yang benar-benar spesifik trip ini; (10) **2026-08-21 — restrukturisasi hari & swap besar** atas beberapa temuan pengguna: **Jinji Lake + Music Fountain dipindah ke Hari 2 (Sabtu)** — Music Fountain cuma tayang Jumat & Sabtu, versi lama di hari Senin tidak terjamin tayang; **Kota Tua Bagian Tengah dipindah ke Hari 3 (Minggu)** — Suzhou Museum tutup tiap Senin jadi aman di hari Minggu; **Panmen→Hanshan→Shantang dipindah ke Hari 4 (Senin)** — tidak ada destinasi di kluster ini yang tutup hari Senin; **Gate of the Orient digeser ke sore/malam** (dari pagi) — gedung kaca ini lebih menarik dilihat saat lampu menyala, sekalian searah jalan ke titik nonton Music Fountain; **Taihu Lake Wetland Park (beserta Shoutao Lake & Wuzhong Taihu Tourist Zone yang satu kawasan) dipindah ke Cadangan, diganti Master of Nets Garden di Hari 5** — Taihu ±40-45 menit sekali jalan terlalu jauh untuk hari kepulangan, sementara Master of Nets Garden persis di kawasan hotel; Dayangshan & Tianpingshan (sebelumnya Plan-B untuk Taihu) ikut dipindah ke Cadangan karena Taihu sendiri sudah bukan itinerary utama; **Baoen Temple/North Pagoda dipindah ke Cadangan** atas permintaan pengguna. Total budget berubah dari 1.236 CNY (Rp3.275.400) jadi 1.104 CNY (Rp2.925.600) — turun karena Master of Nets Garden (CNY 40/org) lebih murah dari Taihu Lake Wetland Park (CNY 60/org) + ongkos transport jauhnya.
+> ⚠️ Riwayat revisi: (1) **Sinkronisasi format ke standar Nanjing/Wuxi** — kolom Kegiatan di semua tabel itinerary (Hari 1-4, Opsional A/B) sekarang bold selektif, hanya nama destinasi wisata yang di-`**bold**` (baris transit/logistik/makan polos dibiarkan tanpa bold); (2) seluruh 30 entri Lampiran (termasuk Cadangan & Plan-B) dilengkapi Hanzi + badge verifikasi, `**Akses:**` (jalur MRT/exit/jarak jalan kaki), `**Jam Operasional:**`, dan `**Tiket:**` (CNY+IDR, kurs tetap Rp2.650/CNY) — diriset via web search, ditandai ⚠️ kalau tidak ditemukan sumber resmi/pasti, bukan tebakan; (3) "Guanqian Street & Xuanmiao Temple" dan "Zhouzhuang / Tongli Water Town" dipecah masing-masing jadi 2 entri terpisah (satu `###` = satu tempat, sesuai aturan parser); (4) dikoreksi kerancuan penamaan di entri "Suzhou Amusement Land / Window of the World" — "Window of the World" sebenarnya taman berbeda di Shenzhen, bukan bagian dari Suzhou Amusement Land (苏州乐园); entri diganti jadi murni Suzhou Amusement Land dengan catatan koreksi; (5) diperbaiki bug parser `generate_wisata.py` — heading Lampiran "## Opsional A" dan "## Opsional B" sebelumnya tidak dikenali parser (entrinya diam-diam ter-skip dari Wisata.html); ditambahkan pengenalan generik untuk heading `## Opsional <label>` di parser; (6) **Revisi besar 2026-08-19** — tanggal digeser jadi **10–14 Oktober (4 malam, 5 hari)** sesuai jadwal baru; **hotel dikoreksi** ke Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden), Gusu District, dengan anchor MRT **Nanyuanbeilu (Line 5)** — SELURUH rute harian & moda transportasi disusun ulang dari titik ini (bukan lagi asumsi hotel lama); **city independence diterapkan** — Hari 1 & Hari 5 tidak lagi menyambung jadwal transportasi aktual kota sebelumnya (`[[itinerary-continuity]]` sudah SUPERSEDED), dipakai default kedatangan 17:00/kepulangan pola skill terbaru, dengan pengecualian Hari 5 yang pakai data riil jadwal HSR Suzhou→Ningbo; **Opsional A (Taihu Lake) & Opsional B (Jinji Lake malam/Music Fountain) diaktifkan kembali ke badan itinerary utama** (Hari 5 & Hari 4) karena durasi Suzhou diperpanjang jadi 5 hari — section "## Opsional" dihapus, entri Lampiran-nya dipindah ke grup Hari terkait; **rute Panmen & Wumen Bridge disederhanakan** karena sekarang persis 1 halte MRT dari hotel (dulu perlu perjalanan lebih jauh); **leg pulang dikoreksi** dari asumsi lama ke **HSR Suzhou → Ningbo** via Suzhou Railway Station (bukan Guangzhou — itu leg trip terpisah yang belum diputuskan); seluruh tabel budget dihitung ulang untuk struktur 5 hari; (7) **2026-08-21** — ditambahkan rating hotel (⭐⭐⭐⭐, 9.4/10, 17.650 ulasan) dan info stasiun tambahan **Suzhou Industrial Park Railway Station** (11,4km/±30 menit) dari screenshot Amap pengguna; (8) **2026-08-21 — bug fix parser**: sempat dicoba format tabel terpisah "## Hotel & Transportasi" — ternyata bikin info hotel HILANG dari Wisata.html, karena `generate_wisata.py` cuma mengenali heading persis `## Informasi Penerbangan`/`## Informasi Transportasi` (tidak match dengan varian "(Kedatangan)" yang dipakai di sini) dan tidak punya handler untuk heading `##` custom apa pun di luar daftar yang dikenali (di-skip diam-diam, bukan error) — heading "Informasi Transportasi (Kedatangan)" dikembalikan jadi persis "Informasi Transportasi", dan info hotel dikembalikan jadi prose (bukan tabel terpisah) menyatu di section yang sama, sesuai konvensi Nanjing/Wuxi (`### Hotel` sebagai sub-heading H3 tetap ikut ter-parse sebagai prose dalam section H2 induknya — H3 TIDAK memulai section baru, beda dari H2); (9) **2026-08-21 — dipangkas info berulang/kurang relevan**: paragraf "Kenapa Hari 1 dimulai sore" dan "Prioritas transportasi lokal" dihapus (sudah default skill, tidak perlu diulang per file), blockquote "Kota disusun independen" dihapus (duplikat), tabel Informasi Transportasi Pulang dipadatkan (alasan pemilihan stasiun/detail teknis dipangkas jadi 1 kalimat inti) — tujuan: layar lebih fokus ke info yang benar-benar spesifik trip ini; (10) **2026-08-21 — restrukturisasi hari & swap besar** atas beberapa temuan pengguna: **Jinji Lake + Music Fountain dipindah ke Hari 2 (Sabtu)** — Music Fountain cuma tayang Jumat & Sabtu, versi lama di hari Senin tidak terjamin tayang; **Kota Tua Bagian Tengah dipindah ke Hari 3 (Minggu)** — Suzhou Museum tutup tiap Senin jadi aman di hari Minggu; **Panmen→Hanshan→Shantang dipindah ke Hari 4 (Senin)** — tidak ada destinasi di kluster ini yang tutup hari Senin; **Gate of the Orient digeser ke sore/malam** (dari pagi) — gedung kaca ini lebih menarik dilihat saat lampu menyala, sekalian searah jalan ke titik nonton Music Fountain; **Taihu Lake Wetland Park (beserta Shoutao Lake & Wuzhong Taihu Tourist Zone yang satu kawasan) dipindah ke Cadangan, diganti Master of Nets Garden di Hari 5** — Taihu ±40-45 menit sekali jalan terlalu jauh untuk hari kepulangan, sementara Master of Nets Garden persis di kawasan hotel; Dayangshan & Tianpingshan (sebelumnya Plan-B untuk Taihu) ikut dipindah ke Cadangan karena Taihu sendiri sudah bukan itinerary utama; **Baoen Temple/North Pagoda dipindah ke Cadangan** atas permintaan pengguna. Total budget berubah dari 1.236 CNY (Rp3.275.400) jadi 1.104 CNY (Rp2.925.600) — turun karena Master of Nets Garden (CNY 40/org) lebih murah dari Taihu Lake Wetland Park (CNY 60/org) + ongkos transport jauhnya; (11) **2026-08-21** — **Suzhou Ancient Canal Night Cruise ditambahkan ke Hari 4** (naik perahu dari Baijuyi Wharf, Shantang Street, versi malam "Oriental Venice", CNY 100/org) setelah makan malam Shantang, menggantikan slot kembali langsung ke hotel — Total Hari 4 282→482 CNY, Grand Total 1.104→1.304 CNY (Rp2.925.600→Rp3.455.600); ditambahkan 4 entri baru ke Cadangan atas permintaan pengguna: **Lion Grove Garden** (searah Hari 3), **The Lingering Garden** (taman klasik UNESCO lain, tidak searah kluster manapun), **Yuanrong Times Square** (mal Jinji Lake, searah Hari 2), **Ruiguang Tower** (pagoda dalam kompleks Panmen, sudah termasuk kunjungan Hari 4).
 
 > **✅ Sudah lewat Golden Week:** Golden Week resmi 1–8 Oktober. Trip Suzhou 10–14 Oktober ini sepenuhnya di luar periode itu — jauh lebih tenang. Sabtu (11 Okt) tetap akhir pekan domestik biasa, jadi mungkin sedikit lebih ramai dari hari kerja tapi tidak sebanding puncak Golden Week.
 
@@ -111,8 +111,9 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 | 11:45–13:45 | **Hanshan Temple** (±CNY 20/org) + **Fengqiao Scenic Area** (gratis, jalan sekitar) | Situs kuil terkenal lewat puisi kuno, bersebelahan | 40 | Rp106.000 |
 | 14:00–16:00 | **Shantang Street** | "Jalan Kuno No.1 Suzhou", kanal & jembatan tua, gratis | — | — |
 | 16:00–17:30 | Makan malam sekitar Shantang | ±CNY 20/org | 40 | Rp106.000 |
-| 17:30 | Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu) | ±30-35 menit | 20 | Rp53.000 |
-| | **TOTAL HARI 4** | | **282** | **Rp747.300** |
+| 18:00–18:45 | **Suzhou Ancient Canal Night Cruise** | Naik perahu dari Baijuyi Wharf di Shantang Street, versi malam "Oriental Venice". Tiket ±CNY 100/org | 200 | Rp530.000 |
+| 19:00 | Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu) | ±30-35 menit | 20 | Rp53.000 |
+| | **TOTAL HARI 4** | | **482** | **Rp1.277.300** |
 
 **Plan-B hari ini:** **Xiyuan Temple (kelenteng kucing)** — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.
 
@@ -148,16 +149,16 @@ Belum termasuk harga hotel & tiket HSR Suzhou→Ningbo (masuk budget Ningbo, lih
 | Hari 1 (10 Okt) | 80 | Rp212.000 |
 | Hari 2 (11 Okt) | 194 | Rp514.100 |
 | Hari 3 (12 Okt) | 350 | Rp927.500 |
-| Hari 4 (13 Okt) | 282 | Rp747.300 |
+| Hari 4 (13 Okt) | 482 | Rp1.277.300 |
 | Hari 5 (14 Okt) | 198 | Rp524.700 |
-| **GRAND TOTAL** | **1.104** | **Rp2.925.600** |
+| **GRAND TOTAL** | **1.304** | **Rp3.455.600** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Xuanmiao Hall, Humble Administrator's Garden, Panmen, Hanshan Temple, Master of Nets Garden) | 400 | Rp1.060.000 |
+| Tiket masuk (Xuanmiao Hall, Humble Administrator's Garden, Panmen, Hanshan Temple, Master of Nets Garden, Suzhou Ancient Canal Night Cruise) | 600 | Rp1.590.000 |
 | Makan (semua hari) | 510 | Rp1.351.500 |
 | Transport lokal (metro + taksi singkat) | 194 | Rp514.100 |
-| **TOTAL** | **1.104** | **Rp2.925.600** |
+| **TOTAL** | **1.304** | **Rp3.455.600** |
 
 **Catatan:** Guanqian Street (pelataran), Jinji Lake, Shantang Street, Fengqiao gratis (tidak dihitung). Sanqing Hall Xuanmiao Temple sudah dihitung di baris terkait. Music Fountain (Hari 2) terjamin tayang karena jatuh di hari Sabtu.
 
@@ -444,10 +445,24 @@ Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair se
 
 **Jam Operasional:** jalan buka 24 jam (gratis); toko/atraksi umumnya ±09:00–22:00; boating 08:00–17:00 & 18:00–20:00.
 
-**Tiket:** Gratis jalan di sepanjang jalan; boat tour opsional CNY 55/org (Xinmin Wharf) atau CNY 100/org (versi malam "Oriental Venice").
+**Tiket:** Gratis jalan di sepanjang jalan. Boat tour terpisah — lihat entri **Suzhou Ancient Canal Night Cruise** di bawah untuk versi malam yang dipakai di Hari 4.
 
 - Foto/info: https://en.wikipedia.org/wiki/Shantang_Street
 - Video referensi: https://www.youtube.com/results?search_query=Shantang+Street+Suzhou
+
+### Suzhou Ancient Canal Night Cruise (苏州古运河夜游 · Sūzhōu Gǔ Yùnhé Yèyóu) ⚠️
+Perahu wisata menyusuri kanal kuno Suzhou di malam hari, berangkat dari dermaga di kawasan Shantang Street (Baijuyi Wharf) — versi malam dijuluki "Oriental Venice" karena suasana lampion & bangunan tepi kanal yang menyala. Cara paling santai untuk melihat kota tua dari sisi air, pelengkap jalan kaki di Shantang Street.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** Naik dari dermaga di Shantang Street (山塘街, Line 2, Exit 3) — sama persis dengan akses Shantang Street, tidak perlu transportasi tambahan.
+
+**Jam Operasional:** boating 08:00–17:00 (siang) & 18:00–20:00 (malam); durasi tiap sesi ±40 menit–1 jam.
+
+**Tiket:** Siang CNY 55/org (±Rp145.750/org), malam "Oriental Venice" CNY 100/org (±Rp265.000/org) — versi malam yang dipakai di Hari 4 itinerary ini.
+
+- Foto/info: https://www.tripadvisor.com/AttractionProductReview-g297442-d20003384-Suzhou_Ancient_Grand_Canal_Cruise_Experience-Suzhou_Jiangsu.html
+- Video referensi: https://www.youtube.com/results?search_query=Suzhou+Ancient+Canal+Night+Cruise+Shantang
 
 ### Xiyuan Temple (西园寺 · Xīyuán Sì, kelenteng kucing) ✅ — Plan-B Hari 4
 Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelenteng Buddha tahun 1635. Terkenal dengan kolam kura-kura besar dan Aula 500 Arhat berisi ratusan patung Buddha berlapis emas.
@@ -682,6 +697,76 @@ Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Childr
 
 - Foto/info: https://en.wikipedia.org/wiki/Suzhou_Amusement_Land
 - Video referensi: https://www.youtube.com/results?search_query=Suzhou+Amusement+Land
+
+### Lion Grove Garden (狮子林 · Shīzi Lín) ✅
+Salah satu 4 taman klasik terkenal Suzhou, dibangun tahun 1342 oleh biksu Buddha Tianru untuk menghormati gurunya — dijuluki "Lion Grove" karena batu-batu taihu-nya yang berbentuk menyerupai singa, dianggap kompleks batu buatan (rockery) terbesar & paling rumit di antara taman-taman klasik Suzhou. Kublai Khan's descendant dan pelukis terkenal Ni Zan pernah terlibat dalam desainnya.
+
+✅ Nama Hanzi terverifikasi dari sumber yang konsisten (Wikipedia & travel guide resmi).
+
+**Akses:** Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6), Exit 2, jalan kaki beberapa menit. Alternatif: Stasiun Beisita (Line 4), jalan kaki ±1km ke timur. No. 23 Yuanlin Road, Gusu District.
+
+**Jam Operasional:** 1 Maret–31 Oktober 07:30–17:30; 1 November–akhir Februari 07:30–17:00.
+
+**Tiket:** Musim ramai (April, Mei, Juli–Oktober) CNY 40/org (±Rp106.000/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 30/org (±Rp79.500/org).
+
+**Kenapa tidak dimasukkan:** persis searah/dekat kluster Suzhou Museum & Humble Administrator's Garden (Hari 3), tapi trip ini sudah cukup padat dengan Humble Administrator's Garden sebagai taman klasik utama hari itu — bisa disisipkan kalau ada waktu ekstra.
+
+**Terkait:** Hari 3
+
+- Foto/info: https://en.wikipedia.org/wiki/Lion_Grove_Garden
+- Video referensi: https://www.youtube.com/results?search_query=Lion+Grove+Garden+Suzhou
+
+### The Lingering Garden (留园 · Liú Yuán) ✅
+Salah satu 4 taman klasik terkenal China (bersama Humble Administrator's Garden, Summer Palace Beijing, dan Chengde Mountain Resort), pertama dibangun era Ming (1593) oleh pejabat Xu Taishi. Terkenal dengan koridor beratap sepanjang ±700m yang menghubungkan seluruh taman dan koleksi batu taihu raksasa termasuk "Cloud-Capped Peak" setinggi ±6,5m — situs UNESCO World Heritage.
+
+✅ Nama Hanzi terverifikasi dari sumber yang konsisten (Wikipedia & travel guide resmi).
+
+**Akses:** Stasiun Shi Road (石路, Line 2), Exit 1, jalan kaki ke utara ±300m via Guangji South Road.
+
+**Jam Operasional:** 1 Maret–31 Oktober 07:30–17:30 (loket tutup 17:00); 1 November–28 Februari 07:30–17:00 (loket tutup 16:30).
+
+**Tiket:** Musim ramai (April, Mei, Juli–Oktober) CNY 55/org (±Rp145.750/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 45/org (±Rp119.250/org).
+
+**Kenapa tidak dimasukkan:** lokasinya di barat kota (dekat Shi Road), tidak searah dengan kluster manapun di itinerary ini — situs UNESCO yang bagus, tapi butuh perjalanan tersendiri. Bisa jadi alternatif kalau ingin ganti Humble Administrator's Garden di kesempatan lain.
+
+- Foto/info: https://en.wikipedia.org/wiki/Lingering_Garden
+- Video referensi: https://www.youtube.com/results?search_query=Lingering+Garden+Suzhou
+
+### Yuanrong Times Square (圆融时代广场 · Yuánróng Shídài Guǎngchǎng) ⚠️
+Mal besar di tepi timur Jinji Lake, kompleks komersial-hiburan seluas ±210.000 m². Terkenal dengan kanopi LED sepanjang ±500m (salah satu terpanjang di dunia) yang menampilkan pertunjukan cahaya "daun teratai & ikan berenang" setiap malam — jadi daya tarik tersendiri di luar belanja.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** Stasiun Times Square (Line 1) — tersambung langsung ke mal.
+
+**Jam Operasional:** toko umumnya ±10:00–22:00; pertunjukan kanopi LED tayang rutin tiap malam (jadwal spesifik bervariasi, cek on-site).
+
+**Tiket:** Gratis masuk (mal).
+
+**Kenapa tidak dimasukkan:** sesi belanja/mal bukan prioritas trip ini (sama alasan seperti Suzhou Centre Plaza) — meski searah kawasan Jinji Lake (Hari 2), sengaja tidak ditambahkan supaya hari itu tetap fokus outdoor.
+
+**Terkait:** Hari 2
+
+- Foto/info: https://www.trip.com/travel-guide/shops/suzhou/yuanrong-times-square-10567883/
+- Video referensi: https://www.youtube.com/results?search_query=Yuanrong+Times+Square+Suzhou
+
+### Ruiguang Tower (瑞光塔 · Ruìguāng Tǎ) ✅
+Pagoda 7 lantai berbentuk oktagonal setinggi ±53,6m, dibangun era Dinasti Song Utara — bagian dari kompleks Panmen Scenic Spots, berdiri berdekatan dengan Wumen Bridge dan gerbang kota kuno.
+
+✅ Nama Hanzi terverifikasi dari sumber yang konsisten (Wikipedia & Trip.com).
+
+**Akses:** Sama dengan Panmen Scenic Spots — Stasiun Nanmen (Line 4 & Line 5), persis 1 halte MRT dari hotel.
+
+**Jam Operasional:** 08:30–16:00 sepanjang tahun.
+
+**Tiket:** Termasuk tiket masuk Panmen (CNY 40/org); tambahan CNY 6/org untuk naik ke atas pagoda.
+
+**Kenapa tidak dimasukkan:** sudah termasuk dalam kunjungan Panmen Scenic Spots di Hari 4 (dilihat dari luar sebagai bagian kompleks) — TIDAK naik ke atas pagoda (pertimbangan lutut, tangga tanpa lift/eskalator).
+
+**Terkait:** Hari 4
+
+- Foto/info: https://en.wikipedia.org/wiki/Ruiguang_Pagoda
+- Video referensi: https://www.youtube.com/results?search_query=Ruiguang+Pagoda+Suzhou
 
 ---
 

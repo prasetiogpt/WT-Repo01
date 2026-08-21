@@ -130,6 +130,16 @@ header.top{
 .city-tab.active{background:var(--indigo);color:var(--indigo-ink);border-color:var(--indigo);}
 .city-tab:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
 
+.search-row{margin:0 0 8px;}
+.dest-search{
+  width:100%;box-sizing:border-box;border:1px solid var(--border-strong);
+  background:var(--paper-raised);color:var(--ink);border-radius:9px;
+  padding:8px 12px;font-size:.85rem;font-family:inherit;
+}
+.dest-search::placeholder{color:var(--ink-soft);}
+.dest-search:focus-visible{outline:2px solid var(--amber);outline-offset:1px;}
+.search-hit{background:var(--amber-soft);outline:2px solid var(--amber);border-radius:4px;}
+
 .city-panel{display:none;padding-top:12px;}
 .city-panel.active{display:block;}
 .city-dates{color:var(--ink-soft);font-size:.8rem;margin-bottom:12px;}
@@ -366,6 +376,9 @@ footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-to
       </div>
     </div>
     <div class="city-tabs" id="city-tabs"></div>
+    <div class="search-row">
+      <input type="search" id="dest-search" class="dest-search" placeholder="Cari destinasi..." aria-label="Cari destinasi">
+    </div>
     <div class="subtabs" id="global-subtabs" role="tablist">
       <button class="subtab-btn active" data-view="itinerary" role="tab" aria-selected="true">Itinerary</button>
       <button class="subtab-btn" data-view="lampiran" role="tab" aria-selected="false">Lampiran</button>
@@ -403,6 +416,25 @@ function setAllDetails(open){
   if(!activeSubview) return;
   activeSubview.querySelectorAll('details').forEach(d=>{ d.open = open; });
 }
+
+function searchDestinations(query){
+  document.querySelectorAll('.search-hit').forEach(el=>el.classList.remove('search-hit'));
+  const q = query.trim().toLowerCase();
+  if(!q) return;
+  const activePanel = document.querySelector('.city-panel.active');
+  if(!activePanel) return;
+  const activeSubview = activePanel.querySelector('.subview.active');
+  if(!activeSubview) return;
+  const candidates = [...activeSubview.querySelectorAll('.cell-dest, .lampiran-item-title')];
+  const matches = candidates.filter(el => el.textContent.toLowerCase().includes(q));
+  matches.forEach(el=>{
+    el.classList.add('search-hit');
+    const det = el.closest('details');
+    if(det) det.open = true;
+  });
+  if(matches.length) matches[0].scrollIntoView({behavior:'smooth', block:'center'});
+}
+document.getElementById('dest-search').addEventListener('input', (e)=> searchDestinations(e.target.value));
 document.getElementById('collapse-all-btn').addEventListener('click', ()=>{
   setAllDetails(false);
   window.scrollTo(0,0);
@@ -1336,9 +1368,10 @@ const destinations = [
           [`11:45–13:45`,`<b>Hanshan Temple</b> (±CNY 20/org) + <b>Fengqiao Scenic Area</b> (gratis, jalan sekitar)`,`Situs kuil terkenal lewat puisi kuno, bersebelahan`,``,`40`,`106.000`],
           [`14:00–16:00`,`<b>Shantang Street</b>`,`"Jalan Kuno No.1 Suzhou", kanal &amp; jembatan tua, gratis`,``,``,``],
           [`16:00–17:30`,`Makan malam sekitar Shantang`,`±CNY 20/org`,``,`40`,`106.000`],
-          [`17:30`,`Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu)`,`±30-35 menit`,``,`20`,`53.000`],
+          [`18:00–18:45`,`<b>Suzhou Ancient Canal Night Cruise</b>`,`Naik perahu dari Baijuyi Wharf di Shantang Street, versi malam "Oriental Venice". Tiket ±CNY 100/org`,``,`200`,`530.000`],
+          [`19:00`,`Kembali ke hotel (Line 2 → Laodonglu → transfer Line 5 → Nanyuanbeilu)`,`±30-35 menit`,``,`20`,`53.000`],
         ],
-        total:{cny:`<b>282</b>`, idr:`<b>747.300</b>`},
+        total:{cny:`<b>482</b>`, idr:`<b>1.277.300</b>`},
         planb:`<b>Xiyuan Temple (kelenteng kucing)</b> — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.`,
       },
       {
@@ -1366,16 +1399,16 @@ const destinations = [
         [`Hari 1 (10 Okt)`,`80`,`212.000`],
         [`Hari 2 (11 Okt)`,`194`,`514.100`],
         [`Hari 3 (12 Okt)`,`350`,`927.500`],
-        [`Hari 4 (13 Okt)`,`282`,`747.300`],
+        [`Hari 4 (13 Okt)`,`482`,`1.277.300`],
         [`Hari 5 (14 Okt)`,`198`,`524.700`],
       ],
       byCategory:[
-        [`Tiket masuk (Xuanmiao Hall, Humble Administrator's Garden, Panmen, Hanshan Temple, Master of Nets Garden)`,`400`,`1.060.000`],
+        [`Tiket masuk (Xuanmiao Hall, Humble Administrator's Garden, Panmen, Hanshan Temple, Master of Nets Garden, Suzhou Ancient Canal Night Cruise)`,`600`,`1.590.000`],
         [`Makan (semua hari)`,`510`,`1.351.500`],
         [`Transport lokal (metro + taksi singkat)`,`194`,`514.100`],
       ],
-      grand:[`GRAND TOTAL`,`1.104`,`2.925.600`],
-      catTotal:[`TOTAL`,`1.104`,`2.925.600`],
+      grand:[`GRAND TOTAL`,`1.304`,`3.455.600`],
+      catTotal:[`TOTAL`,`1.304`,`3.455.600`],
       caveat:`Guanqian Street (pelataran), Jinji Lake, Shantang Street, Fengqiao gratis (tidak dihitung). Sanqing Hall Xuanmiao Temple sudah dihitung di baris terkait. Music Fountain (Hari 2) terjamin tayang karena jatuh di hari Sabtu.`,
     },
 
@@ -1531,9 +1564,15 @@ const destinations = [
       {group:`h4`, tag:`main`, label:`Itinerary utama`, title:`Shantang Street (七里山塘 · Qīlǐ Shāntáng)`,
        nameEn:`Shantang Street`,
        nameHanzi:`七里山塘`,
-       text:`Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair sekaligus gubernur Bai Juyi untuk menghubungkan kota dengan Tiger Hill sepanjang ±7 li (±3.6km). Sepanjang kanal berjejer rumah tradisional, jembatan batu era Ming-Qing, dan toko-toko kecil. <b>Akses:</b> Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan, satu jalur dengan Hanshan Temple. <b>Jam Operasional:</b> jalan buka 24 jam (gratis); toko/atraksi umumnya ±09:00–22:00; boating 08:00–17:00 &amp; 18:00–20:00. <b>Tiket:</b> Gratis jalan di sepanjang jalan; boat tour opsional CNY 55/org (Xinmin Wharf) atau CNY 100/org (versi malam "Oriental Venice").`,
+       text:`Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair sekaligus gubernur Bai Juyi untuk menghubungkan kota dengan Tiger Hill sepanjang ±7 li (±3.6km). Sepanjang kanal berjejer rumah tradisional, jembatan batu era Ming-Qing, dan toko-toko kecil. <b>Akses:</b> Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan, satu jalur dengan Hanshan Temple. <b>Jam Operasional:</b> jalan buka 24 jam (gratis); toko/atraksi umumnya ±09:00–22:00; boating 08:00–17:00 &amp; 18:00–20:00. <b>Tiket:</b> Gratis jalan di sepanjang jalan. Boat tour terpisah — lihat entri <b>Suzhou Ancient Canal Night Cruise</b> di bawah untuk versi malam yang dipakai di Hari 4.`,
        wiki:`https://en.wikipedia.org/wiki/Shantang_Street`,
        yt:`https://www.youtube.com/results?search_query=Shantang+Street+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itinerary utama`, title:`Suzhou Ancient Canal Night Cruise (苏州古运河夜游 · Sūzhōu Gǔ Yùnhé Yèyóu)`,
+       nameEn:`Suzhou Ancient Canal Night Cruise`,
+       nameHanzi:`苏州古运河夜游`,
+       text:`Perahu wisata menyusuri kanal kuno Suzhou di malam hari, berangkat dari dermaga di kawasan Shantang Street (Baijuyi Wharf) — versi malam dijuluki "Oriental Venice" karena suasana lampion &amp; bangunan tepi kanal yang menyala. Cara paling santai untuk melihat kota tua dari sisi air, pelengkap jalan kaki di Shantang Street. <b>Akses:</b> Naik dari dermaga di Shantang Street (山塘街, Line 2, Exit 3) — sama persis dengan akses Shantang Street, tidak perlu transportasi tambahan. <b>Jam Operasional:</b> boating 08:00–17:00 (siang) &amp; 18:00–20:00 (malam); durasi tiap sesi ±40 menit–1 jam. <b>Tiket:</b> Siang CNY 55/org (±Rp145.750/org), malam "Oriental Venice" CNY 100/org (±Rp265.000/org) — versi malam yang dipakai di Hari 4 itinerary ini.`,
+       wiki:`https://www.tripadvisor.com/AttractionProductReview-g297442-d20003384-Suzhou_Ancient_Grand_Canal_Cruise_Experience-Suzhou_Jiangsu.html`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Ancient+Canal+Night+Cruise+Shantang`},
       {group:`h4`, tag:`planb`, label:`Plan-B Hari 4`, title:`Xiyuan Temple (西园寺 · Xīyuán Sì, kelenteng kucing)`,
        nameEn:`Xiyuan Temple`,
        nameHanzi:`西园寺`,
@@ -1635,6 +1674,37 @@ const destinations = [
        text:`Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Children's World), wahana modern termasuk roller coaster gantung terbesar di China, serta beberapa instalasi bertema landmark dunia (mis. replika Coliseum Romawi, tanda mirip "HOLLYWOOD"). <b>Akses:</b> Stasiun Suzhou Amusement Park (苏州乐园, Line 1), jalan kaki ±5 menit. <b>Jam Operasional:</b> ⚠️ bervariasi per zona/musim, cek jadwal spesifik hari kunjungan di Trip.com/website resmi sebelum berangkat. <b>Tiket:</b> CNY 200–260/org dewasa, CNY 150–180/org anak/lansia (±Rp530.000–689.000 / Rp397.500–477.000 per org) tergantung zona &amp; musim; paket combo dewasa+anak mulai CNY 198.`,
        wiki:`https://en.wikipedia.org/wiki/Suzhou_Amusement_Land`,
        yt:`https://www.youtube.com/results?search_query=Suzhou+Amusement+Land`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Lion Grove Garden (狮子林 · Shīzi Lín)`,
+       nameEn:`Lion Grove Garden`,
+       nameHanzi:`狮子林`,
+       context:`Kenapa tidak dimasukkan: persis searah/dekat kluster Suzhou Museum &amp; Humble Administrator's Garden (Hari 3), tapi trip ini sudah cukup padat dengan Humble Administrator's Garden sebagai taman klasik utama hari itu — bisa disisipkan kalau ada waktu ekstra.`,
+       text:`Salah satu 4 taman klasik terkenal Suzhou, dibangun tahun 1342 oleh biksu Buddha Tianru untuk menghormati gurunya — dijuluki "Lion Grove" karena batu-batu taihu-nya yang berbentuk menyerupai singa, dianggap kompleks batu buatan (rockery) terbesar &amp; paling rumit di antara taman-taman klasik Suzhou. Kublai Khan's descendant dan pelukis terkenal Ni Zan pernah terlibat dalam desainnya. <b>Akses:</b> Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6), Exit 2, jalan kaki beberapa menit. Alternatif: Stasiun Beisita (Line 4), jalan kaki ±1km ke timur. No. 23 Yuanlin Road, Gusu District. <b>Jam Operasional:</b> 1 Maret–31 Oktober 07:30–17:30; 1 November–akhir Februari 07:30–17:00. <b>Tiket:</b> Musim ramai (April, Mei, Juli–Oktober) CNY 40/org (±Rp106.000/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 30/org (±Rp79.500/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Lion_Grove_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Lion+Grove+Garden+Suzhou`,
+       relatedDays:[3]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`The Lingering Garden (留园 · Liú Yuán)`,
+       nameEn:`The Lingering Garden`,
+       nameHanzi:`留园`,
+       context:`Kenapa tidak dimasukkan: lokasinya di barat kota (dekat Shi Road), tidak searah dengan kluster manapun di itinerary ini — situs UNESCO yang bagus, tapi butuh perjalanan tersendiri. Bisa jadi alternatif kalau ingin ganti Humble Administrator's Garden di kesempatan lain.`,
+       text:`Salah satu 4 taman klasik terkenal China (bersama Humble Administrator's Garden, Summer Palace Beijing, dan Chengde Mountain Resort), pertama dibangun era Ming (1593) oleh pejabat Xu Taishi. Terkenal dengan koridor beratap sepanjang ±700m yang menghubungkan seluruh taman dan koleksi batu taihu raksasa termasuk "Cloud-Capped Peak" setinggi ±6,5m — situs UNESCO World Heritage. <b>Akses:</b> Stasiun Shi Road (石路, Line 2), Exit 1, jalan kaki ke utara ±300m via Guangji South Road. <b>Jam Operasional:</b> 1 Maret–31 Oktober 07:30–17:30 (loket tutup 17:00); 1 November–28 Februari 07:30–17:00 (loket tutup 16:30). <b>Tiket:</b> Musim ramai (April, Mei, Juli–Oktober) CNY 55/org (±Rp145.750/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 45/org (±Rp119.250/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Lingering_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Lingering+Garden+Suzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Yuanrong Times Square (圆融时代广场 · Yuánróng Shídài Guǎngchǎng)`,
+       nameEn:`Yuanrong Times Square`,
+       nameHanzi:`圆融时代广场`,
+       context:`Kenapa tidak dimasukkan: sesi belanja/mal bukan prioritas trip ini (sama alasan seperti Suzhou Centre Plaza) — meski searah kawasan Jinji Lake (Hari 2), sengaja tidak ditambahkan supaya hari itu tetap fokus outdoor.`,
+       text:`Mal besar di tepi timur Jinji Lake, kompleks komersial-hiburan seluas ±210.000 m². Terkenal dengan kanopi LED sepanjang ±500m (salah satu terpanjang di dunia) yang menampilkan pertunjukan cahaya "daun teratai &amp; ikan berenang" setiap malam — jadi daya tarik tersendiri di luar belanja. <b>Akses:</b> Stasiun Times Square (Line 1) — tersambung langsung ke mal. <b>Jam Operasional:</b> toko umumnya ±10:00–22:00; pertunjukan kanopi LED tayang rutin tiap malam (jadwal spesifik bervariasi, cek on-site). <b>Tiket:</b> Gratis masuk (mal).`,
+       wiki:`https://www.trip.com/travel-guide/shops/suzhou/yuanrong-times-square-10567883/`,
+       yt:`https://www.youtube.com/results?search_query=Yuanrong+Times+Square+Suzhou`,
+       relatedDays:[2]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Ruiguang Tower (瑞光塔 · Ruìguāng Tǎ)`,
+       nameEn:`Ruiguang Tower`,
+       nameHanzi:`瑞光塔`,
+       context:`Kenapa tidak dimasukkan: sudah termasuk dalam kunjungan Panmen Scenic Spots di Hari 4 (dilihat dari luar sebagai bagian kompleks) — TIDAK naik ke atas pagoda (pertimbangan lutut, tangga tanpa lift/eskalator).`,
+       text:`Pagoda 7 lantai berbentuk oktagonal setinggi ±53,6m, dibangun era Dinasti Song Utara — bagian dari kompleks Panmen Scenic Spots, berdiri berdekatan dengan Wumen Bridge dan gerbang kota kuno. <b>Akses:</b> Sama dengan Panmen Scenic Spots — Stasiun Nanmen (Line 4 &amp; Line 5), persis 1 halte MRT dari hotel. <b>Jam Operasional:</b> 08:30–16:00 sepanjang tahun. <b>Tiket:</b> Termasuk tiket masuk Panmen (CNY 40/org); tambahan CNY 6/org untuk naik ke atas pagoda.`,
+       wiki:`https://en.wikipedia.org/wiki/Ruiguang_Pagoda`,
+       yt:`https://www.youtube.com/results?search_query=Ruiguang+Pagoda+Suzhou`,
+       relatedDays:[4]},
     ],
     lampiranGroups:[
       {key:`intro`, heading:`Suzhou (苏州 · Sūzhōu) — Sebelum Berangkat`},
@@ -1940,6 +2010,8 @@ function setGlobalSubview(view){
   if(!activePanel) return;
   activePanel.querySelectorAll('.subview').forEach(v=>v.classList.remove('active'));
   activePanel.querySelector('.subview.'+view).classList.add('active');
+  document.getElementById('dest-search').value = '';
+  document.querySelectorAll('.search-hit').forEach(el=>el.classList.remove('search-hit'));
 }
 document.querySelectorAll('#global-subtabs .subtab-btn').forEach(btn=>{
   btn.addEventListener('click', ()=> setGlobalSubview(btn.dataset.view));
