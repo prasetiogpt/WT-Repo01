@@ -17,20 +17,7 @@
 
 **Catatan biaya:** semua angka HKD/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.300/HKD** (kurs tetap khusus trip Hong Kong ini). Tanda — berarti gratis/tidak ada biaya. Ongkos pesawat kedatangan (di atas) dan hotel (di bawah) dicatat terpisah dari Ringkasan Budget Total harian, konsisten dengan format kota lain.
 
-## Hotel & Transportasi
-
-| | |
-|---|---|
-| Nama | Hong Kong H8 Hostel (Tsim Sha Tsui Store C2 Exit) ⭐⭐ rating 8,7/10 (135 ulasan) |
-| Alamat | Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Yau Tsim Mong District, Kowloon, Hong Kong |
-| Jarak ke pusat kota | ±2,4km (garis lurus) |
-| Metro terdekat | **Tsim Sha Tsui Metro Station** — <100m/±1 menit jalan kaki (Exit C2, langsung di Nathan Road) |
-| Metro alternatif | East Tsim Sha Tsui Metro Station — 210m/±3 menit jalan kaki |
-| Stasiun HSR (untuk Shenzhen) | Hong Kong West Kowloon Station — 1,9km/±27 menit jalan kaki (dengan koper lebih praktis naik taksi/MTR singkat, bukan jalan kaki) |
-| Stasiun kereta lain | Hung Hom Station — 1,7km/±24 menit jalan kaki (tidak relevan untuk rute trip ini) |
-| Bandara | Hong Kong International Airport — 32km/±30 menit naik mobil |
-
-**Kenapa area ini strategis:** Tsim Sha Tsui (TST) — hotel persis 1 menit jalan kaki dari MTR TST (interchange Tsuen Wan Line & East Rail Line), dekat Star Ferry Pier & Avenue of Stars, dan West Kowloon Station (HSR ke Shenzhen) masih dalam jangkauan jalan kaki/taksi singkat.
+**Hotel:** Hong Kong H8 Hostel (Tsim Sha Tsui Store C2 Exit) — ⭐⭐ rating 8,7/10 (135 ulasan). Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Yau Tsim Mong District, Kowloon. ±2,4km (garis lurus) dari pusat kota. Anchor MRT: **Tsim Sha Tsui Metro Station**, <100m/±1 menit jalan kaki (Exit C2, langsung di Nathan Road) — hotel persis di atas stasiun ini, jadi dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/titik lain di sekitar hotel: East Tsim Sha Tsui Metro Station (210m/±3 menit jalan kaki), Hong Kong West Kowloon Station (1,9km/±27 menit jalan kaki — dipakai untuk HSR ke Shenzhen Hari 3, lebih praktis naik taksi dengan koper), Hung Hom Station (1,7km, tidak relevan untuk rute trip ini), Hong Kong International Airport (32km/±30 menit naik mobil).
 
 **Kedatangan → Hotel:** Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut shuttle bus gratis ke Nathan Road/TST — ±5 menit jalan kaki dari halte shuttle ke hotel.
 
