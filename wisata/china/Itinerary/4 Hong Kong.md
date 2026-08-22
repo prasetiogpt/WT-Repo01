@@ -1,29 +1,34 @@
 # Itinerary Perjalanan Hong Kong
-2 – 5 November · 3 Malam · Direncanakan Independen (bukan sambungan kota lain)
+2 – 4 November · 2 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Hong Kong Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti. (2) **2026-08-21 — dipersingkat jadi 2 malam/3 hari** (dari 4 hari/3 malam), data kedatangan & hotel sudah FIXED: kedatangan **11:00 siang** (bukan default sore) dengan tiket ±Rp1.000.000/org, hotel **H8 Hostel (Tsim Sha Tsui, C2 Exit)** ±Rp1.000.000/malam — kedua angka estimasi lama dihapus. Karena hanya 1 hari penuh tersisa, kluster **Lantau Island (Ngong Ping 360, Big Buddha, Tai O) dipindah ke Cadangan** — dipilih kluster Hong Kong Island (Peak/Central/Sheung Wan) sebagai satu-satunya hari penuh karena lebih dekat & efisien dari TST dibanding Lantau yang perlu 1 hari dedicated tersendiri. Kota berikutnya sudah diketahui: **Shenzhen** (moda transportasi & jadwal pasti belum ditentukan, tidak dihitung di budget Hong Kong ini).
 
 ## Informasi Penerbangan
 
 | | |
 |---|---|
 | Rute | Ningbo (NGB) → Hong Kong (HKG) |
-| Tanggal & Jam Kedatangan | Senin, 2 November, **±17:00** (default kedatangan sore — jadwal penerbangan aktual belum dipesan) |
+| Tanggal & Jam Kedatangan | Senin, 2 November, **11:00** (fixed) |
 | Maskapai (opsi) | Cathay Pacific / China Eastern / Hong Kong Express — semua terbang nonstop rute ini |
 | Durasi | ±2 jam 35 menit (nonstop) |
-| ⚠️ Estimasi tiket | ±HKD 1.000/org economy (±Rp2.300.000/org) — harga bervariasi tergantung tanggal booking, cek 12–8 minggu sebelum keberangkatan untuk harga terbaik. **Belum termasuk di Ringkasan Budget Total, update di sini begitu tiket sudah dibeli.** |
+| Tiket | ±Rp1.000.000/org (fixed, sesuai booking) — **belum termasuk di Ringkasan Budget Total**, dicatat terpisah di sini |
 
-**Catatan biaya:** semua angka HKD/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.300/HKD** (kurs tetap khusus trip Hong Kong ini). Tanda — berarti gratis/tidak ada biaya. Ongkos pesawat kedatangan (di atas) dan hotel (di bawah) masih estimasi, dipisah dari Ringkasan Budget Total harian.
+**Catatan biaya:** semua angka HKD/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.300/HKD** (kurs tetap khusus trip Hong Kong ini). Tanda — berarti gratis/tidak ada biaya. Ongkos pesawat kedatangan (di atas) dan hotel (di bawah) dicatat terpisah dari Ringkasan Budget Total harian, konsisten dengan format kota lain.
 
 ## Hotel & Transportasi
 
 | | |
 |---|---|
-| Area disarankan | **Tsim Sha Tsui (TST), Kowloon** — pusat turis strategis: dekat MTR (interchange Tsuen Wan Line & East Rail Line), Star Ferry Pier, Avenue of Stars, dan jalur MTR langsung ke Tung Chung (Lantau) tanpa banyak transfer |
-| ⚠️ Estimasi harga hotel | ±HKD 750/malam (±Rp1.725.000/malam) — kelas budget-menengah, 2 dewasa/1 kamar/non-smoking. **Belum termasuk di Ringkasan Budget Total, update begitu hotel sudah dipesan.** |
-| Kedatangan → Hotel | Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut shuttle bus gratis ke hotel-hotel area TST |
+| Nama | **H8 Hostel (Tsim Sha Tsui, C2 Exit)** |
+| Alamat | Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Kowloon |
+| Ke MTR Tsim Sha Tsui | Exit C2, ±1-2 menit jalan kaki (langsung di Nathan Road) |
+| Harga | ±Rp1.000.000/malam (fixed) |
+
+**Kenapa area ini strategis:** Tsim Sha Tsui (TST) — dekat MTR (interchange Tsuen Wan Line & East Rail Line), Star Ferry Pier, dan Avenue of Stars.
+
+**Kedatangan → Hotel:** Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut shuttle bus gratis ke area TST.
 
 **Transportasi lokal:** Octopus Card (kartu isi ulang, beli di bandara/stasiun MTR) untuk semua MTR/bus/ferry/tram — jauh lebih praktis daripada beli tiket satuan. Prioritas: MTR > jalan kaki (banyak area pusat kota walkable) > Star Ferry/tram > taksi (hanya untuk bandara/bawaan berat).
 
@@ -37,16 +42,18 @@
 
 ---
 
-## Hari 1 — Senin, 2 November (Kedatangan Sore — Ringan)
+## Hari 1 — Senin, 2 November (Kedatangan Siang)
 
 | Jam | Kegiatan | Catatan | HKD | IDR |
 |---|---|---|---|---|
-| 17:00 | Landing HKG, imigrasi + ambil bagasi | — | — | — |
-| 17:30–18:00 | Airport Express ke Kowloon Station + shuttle ke hotel | ±24 menit naik Airport Express, shuttle gratis ke hotel area TST | 210 | Rp483.000 |
-| 18:00–18:30 | Check-in, taruh barang, istirahat | — | — | — |
-| 18:30–19:30 | Makan malam ringan sekitar Tsim Sha Tsui | Congee/dim sum kukus, ±HKD 30/org | 120 | Rp276.000 |
+| 11:00 | Landing HKG, imigrasi + ambil bagasi | — | — | — |
+| 11:30–12:00 | Airport Express ke Kowloon Station + shuttle ke hotel | ±24 menit naik Airport Express, shuttle gratis ke H8 Hostel (TST, C2 Exit) | 210 | Rp483.000 |
+| 12:00–12:30 | Check-in, taruh barang, istirahat | — | — | — |
+| 12:30–13:30 | Makan siang sekitar Tsim Sha Tsui | Wonton mie kuah, ±HKD 35/org | 140 | Rp322.000 |
+| 13:30–18:00 | Istirahat / jalan santai bebas sekitar TST | Buffer jetlag & jam biologis, opsional | — | — |
+| 18:00–19:00 | Makan malam ringan sekitar Tsim Sha Tsui | Congee/dim sum kukus, ±HKD 30/org | 120 | Rp276.000 |
 | 19:45–20:15 | **Avenue of Stars** + **A Symphony of Lights** (20:00) | Jalan santai promenade tepi Victoria Harbour, pertunjukan cahaya gratis tiap malam ±10 menit | — | — |
-| | **TOTAL HARI 1** | | **330** | **Rp759.000** |
+| | **TOTAL HARI 1** | | **470** | **Rp1.081.000** |
 
 **Plan-B hari ini:** kalau Symphony of Lights dibatalkan (cuaca badai) atau ingin variasi — **Temple Street Night Market** (jalan kaki dari TST, jajanan malam & suasana lokal, lihat Lampiran).
 
@@ -74,29 +81,7 @@
 
 ---
 
-## Hari 3 — Rabu, 4 November (Lantau Island — Ngong Ping & Tai O)
-
-> **Rute:** MTR ke Tung Chung (Tung Chung Line), naik cable car Ngong Ping 360 ke Big Buddha, lanjut bus ke Tai O Fishing Village — hari dedicated karena jauh dari kota, cocok jadi 1 hari penuh.
-
-| Jam | Kegiatan | Catatan | HKD | IDR |
-|---|---|---|---|---|
-| 08:00 | Sarapan | ±HKD 22/org | 90 | Rp207.000 |
-| 08:30–09:10 | MTR TST → Tung Chung (Tung Chung Line) | ±35-40 menit, transfer di Lai King | 50 | Rp115.000 |
-| 09:15–09:40 | **Ngong Ping 360 Cable Car** | Tung Chung → Ngong Ping, ±25 menit. Tiket round-trip ±HKD 235/org | 470 | Rp1.081.000 |
-| 09:40–11:00 | **Tian Tan Buddha (Big Buddha)** + Po Lin Monastery | Lihat dari halaman bawah — TIDAK naik 268 anak tangga ke patung (pertimbangan lutut). Gratis | — | — |
-| 11:00–11:20 | Bus 21 Ngong Ping → Tai O | ±20 menit, ±HKD 12/org | 24 | Rp55.200 |
-| 11:20–13:00 | **Tai O Fishing Village** | Jalan kaki datar menyusuri rumah panggung nelayan, jembatan kayu, gratis | — | — |
-| 13:00–14:00 | Makan siang di Tai O | Seafood congee/kukus, ±HKD 35/org | 140 | Rp322.000 |
-| 14:00–14:20 | Bus 11 Tai O → Tung Chung | ±30 menit, ±HKD 12/org | 24 | Rp55.200 |
-| 14:30–15:15 | MTR Tung Chung → TST | ±35-40 menit | 50 | Rp115.000 |
-| 18:00–19:00 | Makan malam sekitar TST | ±HKD 40/org | 160 | Rp368.000 |
-| | **TOTAL HARI 3** | | **1.008** | **Rp2.318.400** |
-
-**Plan-B hari ini:** kalau cuaca buruk (cable car ditutup saat angin kencang/badai) — **Chi Lin Nunnery & Nan Lian Garden** (Diamond Hill, gratis, lebih dekat kota, lihat Lampiran) sebagai pengganti hari Lantau.
-
----
-
-## Hari 4 — Kamis, 5 November (Kowloon Park Dekat Hotel, Checkout, Kepulangan)
+## Hari 3 — Rabu, 4 November (Kowloon Park Dekat Hotel, Checkout, Lanjut Shenzhen)
 
 > **Kenapa ini hari ringan:** Kowloon Park persis sebelah Stasiun MTR Tsim Sha Tsui/kawasan hotel — tidak perlu transportasi jauh sebelum checkout, pas untuk hari kepulangan.
 
@@ -107,44 +92,41 @@
 | 10:00–11:00 | Checkout hotel, siap-siap | — | — | — |
 | 11:00–12:00 | Makan siang dekat hotel | ±HKD 35/org | 140 | Rp322.000 |
 | 12:00–13:00 | Waktu buffer / santai | — | — | — |
-| 13:00–13:30 | Shuttle + Airport Express ke HKIA | ±24 menit naik Airport Express, HKD 105/org | 210 | Rp483.000 |
-| 15:00 | Penerbangan lanjut ke kota berikutnya | Rute/moda belum ditentukan — biaya masuk budget kota tujuan berikutnya | — | *(masuk budget kota berikutnya)* |
-| | **TOTAL HARI 4** | | **440** | **Rp1.012.000** |
+| 13:00 | Lanjut ke Shenzhen | Moda & jadwal pasti belum ditentukan — biaya masuk budget Shenzhen | — | *(masuk budget Shenzhen)* |
+| | **TOTAL HARI 3** | | **230** | **Rp529.000** |
 
 **Plan-B hari ini:** kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Hong Kong)
+## Ringkasan Budget Total (2 Orang, 2 Malam / 3 Hari di Hong Kong)
 
-Belum termasuk harga hotel (⚠️ estimasi ±HKD 750/malam) & tiket pesawat kedatangan (⚠️ estimasi ±HKD 1.000/org) — lihat "Informasi Penerbangan"/"Hotel & Transportasi" di atas. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.300/HKD.
+Belum termasuk harga hotel (Rp1.000.000/malam, fixed) & tiket pesawat kedatangan (Rp1.000.000/org, fixed) — lihat "Informasi Penerbangan"/"Hotel & Transportasi" di atas. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.300/HKD.
 
 | Hari | HKD | IDR |
 |---|---|---|
-| Hari 1 (2 Nov) | 330 | Rp759.000 |
+| Hari 1 (2 Nov) | 470 | Rp1.081.000 |
 | Hari 2 (3 Nov) | 728 | Rp1.674.400 |
-| Hari 3 (4 Nov) | 1.008 | Rp2.318.400 |
-| Hari 4 (5 Nov) | 440 | Rp1.012.000 |
-| **GRAND TOTAL** | **2.506** | **Rp5.763.800** |
+| Hari 3 (4 Nov) | 230 | Rp529.000 |
+| **GRAND TOTAL** | **1.428** | **Rp3.284.400** |
 
 | Kategori | HKD | IDR |
 |---|---|---|
-| Tiket masuk (Peak Tram + Sky Terrace, Ngong Ping 360 Cable Car) | 768 | Rp1.766.400 |
-| Makan (semua hari) | 1.150 | Rp2.645.000 |
-| Transport lokal (Airport Express, MTR, Star Ferry, bus) | 588 | Rp1.352.400 |
-| **TOTAL** | **2.506** | **Rp5.763.800** |
+| Tiket masuk (Peak Tram + Sky Terrace) | 298 | Rp685.400 |
+| Makan (semua hari) | 900 | Rp2.070.000 |
+| Transport lokal (Airport Express, MTR, Star Ferry) | 230 | Rp529.000 |
+| **TOTAL** | **1.428** | **Rp3.284.400** |
 
-**Catatan:** Man Mo Temple, PMQ, Central-Mid-Levels Escalator, Hong Kong Park, Tian Tan Buddha (dari bawah), Tai O Fishing Village, Avenue of Stars, Symphony of Lights, Kowloon Park semuanya gratis (tidak dihitung).
+**Catatan:** Man Mo Temple, PMQ, Central-Mid-Levels Escalator, Hong Kong Park, Avenue of Stars, Symphony of Lights, Kowloon Park semuanya gratis (tidak dihitung).
 
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** Tian Tan Buddha (Big Buddha) TIDAK naik 268 anak tangga — cukup lihat dari halaman bawah. Semua jalur di itinerary ini (taman, promenade, Tai O) datar dan aman untuk lutut. Central-Mid-Levels Escalator aman karena naik eskalator, bukan tangga.
+- **Fisik/lutut:** semua jalur di itinerary ini (taman, promenade) datar dan aman untuk lutut. Central-Mid-Levels Escalator aman karena naik eskalator, bukan tangga.
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — congee, dim sum kukus, wonton mie kuah, ikan/sayur kukus (hindari curry fish balls & gorengan pinggir jalan yang umum di HK).
 - **Transportasi:** Octopus Card WAJIB dibeli di awal (bandara/stasiun MTR) — dipakai di MTR, bus, Star Ferry, dan sebagian toko. Prioritas MTR/jalan kaki, taksi hanya untuk bandara.
-- **Tempat berbayar** ditandai jelas — Peak Tram & Ngong Ping 360 adalah pengeluaran terbesar (766 HKD/2 org), bisa dikurangi kalau ingin lebih hemat (skip salah satu).
-- **Estimasi biaya kedatangan & hotel** di atas WAJIB diupdate begitu ada booking pasti — jangan pakai angka estimasi untuk keputusan final.
+- **Tempat berbayar** ditandai jelas — Peak Tram + Sky Terrace (298 HKD/2 org) adalah satu-satunya tiket masuk trip ini.
 
 ---
 
@@ -337,82 +319,6 @@ Museum seni visual, desain, arsitektur, dan moving image kontemporer terbesar di
 
 ## Hari 3 — Rabu, 4 November
 
-### Ngong Ping 360 Cable Car (昂坪360) ✅
-Sistem cable car sepanjang ±5,7km yang menghubungkan Tung Chung dengan dataran tinggi Ngong Ping di Lantau Island, dibuka 2006 — perjalanan ±25 menit menyuguhkan pemandangan Laut China Selatan, Bandara HKIA, dan Jembatan Hong Kong-Zhuhai-Macau dari udara.
-
-✅ Nama & info terverifikasi dari sumber resmi (np360.com.hk).
-
-**Akses:** MTR Tung Chung Station, Exit B, jalan kaki ±5 menit ke terminal cable car.
-
-**Jam Operasional:** Senin-Jumat 10:00–18:00; weekend & libur nasional 09:00–18:30.
-
-**Tiket:** Round-trip standard cabin ±HKD 235/org (±Rp540.500/org); Crystal Cabin (lantai kaca) ±HKD 315/org.
-
-- Foto/info: https://en.wikipedia.org/wiki/Ngong_Ping_360
-- Video referensi: https://www.youtube.com/results?search_query=Ngong+Ping+360+Cable+Car
-
-### Tian Tan Buddha / Big Buddha (天壇大佛) ✅
-Patung Buddha perunggu duduk terbesar di dunia saat selesai dibangun tahun 1993, tinggi ±34m, menghadap ke utara — berbeda dari kebanyakan patung Buddha yang menghadap selatan, sebagai simbol menjaga rakyat China. Terletak di dataran tinggi Ngong Ping, satu kompleks dengan Po Lin Monastery.
-
-✅ Nama & info terverifikasi dari sumber yang konsisten.
-
-**Akses:** Ngong Ping Village (turun dari cable car), jalan kaki ±5 menit ke halaman bawah patung.
-
-**Jam Operasional:** area halaman & monastery ±09:00–18:00 setiap hari.
-
-**Tiket:** Gratis lihat dari halaman bawah. ⚠️ Naik ke platform dekat patung via 268 anak tangga tanpa lift — TIDAK disarankan untuk kondisi lutut, cukup nikmati dari bawah.
-
-- Foto/info: https://en.wikipedia.org/wiki/Tian_Tan_Buddha
-- Video referensi: https://www.youtube.com/results?search_query=Tian+Tan+Buddha+Big+Buddha+Hong+Kong
-
-### Tai O Fishing Village (大澳漁村) ✅
-Desa nelayan tertua di Hong Kong, dihuni etnis Tanka sejak berabad lalu — terkenal dengan rumah-rumah panggung kayu (stilt houses) di atas sungai pasang-surut, dijuluki "Venice of the Orient". Masih jadi tempat produksi terasi udang & ikan asin tradisional.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** Bus 21 dari Ngong Ping (±20 menit) atau bus 11 langsung dari Tung Chung (±30-45 menit).
-
-**Jam Operasional:** desa & jalan buka 24 jam (gratis); toko/warung umumnya ±09:00–18:00.
-
-**Tiket:** Gratis jalan-jalan; boat tour opsional melihat lumba-lumba merah muda ±HKD 25/org (tidak dihitung di itinerary ini).
-
-- Foto/info: https://en.wikipedia.org/wiki/Tai_O
-- Video referensi: https://www.youtube.com/results?search_query=Tai+O+Fishing+Village+Hong+Kong
-
-### Chi Lin Nunnery (志蓮淨苑) ✅ — Plan-B Hari 3
-Kompleks biara Buddha bergaya Dinasti Tang, dibangun 1934 & direkonstruksi 1998 tanpa satu paku pun (konstruksi kayu tradisional interlocking) — salah satu contoh arsitektur Tang terbesar di luar daratan China.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Diamond Hill, Exit C2 (Plaza Hollywood), jalan kaki ±5-10 menit.
-
-**Jam Operasional:** setiap hari 09:00–16:30.
-
-**Tiket:** Gratis.
-
-**Kenapa jadi Plan-B:** dekat kota (tidak perlu ke Lantau), cocok kalau cuaca buruk membatalkan rencana Ngong Ping/cable car (yang tutup saat angin kencang).
-
-- Foto/info: https://en.wikipedia.org/wiki/Chi_Lin_Nunnery
-- Video referensi: https://www.youtube.com/results?search_query=Chi+Lin+Nunnery+Hong+Kong
-
-### Nan Lian Garden (南蓮園池) ✅ — Plan-B Hari 3
-Taman klasik gaya Dinasti Tang seluas ±3,5 hektar, dibangun bersebelahan dengan Chi Lin Nunnery — memadukan kolam, batu, dan paviliun kayu dengan filosofi taman klasik China, jadi kontras hijau di tengah padatnya Kowloon.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** Sama dengan Chi Lin Nunnery — persis bersebelahan.
-
-**Jam Operasional:** setiap hari 07:00–21:00.
-
-**Tiket:** Gratis.
-
-**Kenapa jadi Plan-B:** satu kawasan dengan Chi Lin Nunnery, sama-sama alternatif dekat kota kalau Lantau dibatalkan cuaca.
-
-- Foto/info: https://en.wikipedia.org/wiki/Nan_Lian_Garden
-- Video referensi: https://www.youtube.com/results?search_query=Nan+Lian+Garden+Hong+Kong
-
-## Hari 4 — Kamis, 5 November
-
 ### Kowloon Park (九龍公園) ✅
 Taman kota seluas ±13 hektar persis di jantung Tsim Sha Tsui, dibangun di bekas Whitfield Barracks era militer Inggris (1910) — punya kolam flamingo, aviary burung, dan kolam renang publik, jadi oase hijau di tengah kepadatan Kowloon.
 
@@ -431,6 +337,86 @@ Taman kota seluas ±13 hektar persis di jantung Tsim Sha Tsui, dibangun di bekas
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B — alasannya ditulis di masing-masing uraian.
 
+### Ngong Ping 360 Cable Car (昂坪360) ✅
+Sistem cable car sepanjang ±5,7km yang menghubungkan Tung Chung dengan dataran tinggi Ngong Ping di Lantau Island, dibuka 2006 — perjalanan ±25 menit menyuguhkan pemandangan Laut China Selatan, Bandara HKIA, dan Jembatan Hong Kong-Zhuhai-Macau dari udara.
+
+✅ Nama & info terverifikasi dari sumber resmi (np360.com.hk).
+
+**Akses:** MTR Tung Chung Station, Exit B, jalan kaki ±5 menit ke terminal cable car.
+
+**Jam Operasional:** Senin-Jumat 10:00–18:00; weekend & libur nasional 09:00–18:30.
+
+**Tiket:** Round-trip standard cabin ±HKD 235/org (±Rp540.500/org); Crystal Cabin (lantai kaca) ±HKD 315/org.
+
+**Kenapa tidak dimasukkan:** trip dipersingkat jadi 2 malam — hanya 1 hari penuh tersisa, dan kluster Hong Kong Island dipilih karena lebih dekat/efisien dari TST dibanding Lantau yang butuh 1 hari dedicated sendiri.
+
+- Foto/info: https://en.wikipedia.org/wiki/Ngong_Ping_360
+- Video referensi: https://www.youtube.com/results?search_query=Ngong+Ping+360+Cable+Car
+
+### Tian Tan Buddha / Big Buddha (天壇大佛) ✅
+Patung Buddha perunggu duduk terbesar di dunia saat selesai dibangun tahun 1993, tinggi ±34m, menghadap ke utara — berbeda dari kebanyakan patung Buddha yang menghadap selatan, sebagai simbol menjaga rakyat China. Terletak di dataran tinggi Ngong Ping, satu kompleks dengan Po Lin Monastery.
+
+✅ Nama & info terverifikasi dari sumber yang konsisten.
+
+**Akses:** Ngong Ping Village (turun dari cable car), jalan kaki ±5 menit ke halaman bawah patung.
+
+**Jam Operasional:** area halaman & monastery ±09:00–18:00 setiap hari.
+
+**Tiket:** Gratis lihat dari halaman bawah. ⚠️ Naik ke platform dekat patung via 268 anak tangga tanpa lift — TIDAK disarankan untuk kondisi lutut, cukup nikmati dari bawah.
+
+**Kenapa tidak dimasukkan:** satu kawasan dengan Ngong Ping 360 (lihat entri di atas) — sama-sama tidak masuk karena Lantau tidak lagi dapat slot hari penuh.
+
+- Foto/info: https://en.wikipedia.org/wiki/Tian_Tan_Buddha
+- Video referensi: https://www.youtube.com/results?search_query=Tian+Tan+Buddha+Big+Buddha+Hong+Kong
+
+### Tai O Fishing Village (大澳漁村) ✅
+Desa nelayan tertua di Hong Kong, dihuni etnis Tanka sejak berabad lalu — terkenal dengan rumah-rumah panggung kayu (stilt houses) di atas sungai pasang-surut, dijuluki "Venice of the Orient". Masih jadi tempat produksi terasi udang & ikan asin tradisional.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** Bus 21 dari Ngong Ping (±20 menit) atau bus 11 langsung dari Tung Chung (±30-45 menit).
+
+**Jam Operasional:** desa & jalan buka 24 jam (gratis); toko/warung umumnya ±09:00–18:00.
+
+**Tiket:** Gratis jalan-jalan; boat tour opsional melihat lumba-lumba merah muda ±HKD 25/org.
+
+**Kenapa tidak dimasukkan:** satu kawasan dengan Ngong Ping 360/Lantau — sama-sama tidak masuk karena keterbatasan hari.
+
+- Foto/info: https://en.wikipedia.org/wiki/Tai_O
+- Video referensi: https://www.youtube.com/results?search_query=Tai+O+Fishing+Village+Hong+Kong
+
+### Chi Lin Nunnery (志蓮淨苑) ✅
+Kompleks biara Buddha bergaya Dinasti Tang, dibangun 1934 & direkonstruksi 1998 tanpa satu paku pun (konstruksi kayu tradisional interlocking) — salah satu contoh arsitektur Tang terbesar di luar daratan China.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Diamond Hill, Exit C2 (Plaza Hollywood), jalan kaki ±5-10 menit.
+
+**Jam Operasional:** setiap hari 09:00–16:30.
+
+**Tiket:** Gratis.
+
+**Kenapa tidak dimasukkan:** awalnya disiapkan sebagai Plan-B kalau Lantau dibatalkan cuaca, tapi Lantau sendiri sudah tidak masuk itinerary utama setelah trip dipersingkat — bisa disisipkan kalau ada waktu ekstra di Hari 2 atau Hari 3.
+
+- Foto/info: https://en.wikipedia.org/wiki/Chi_Lin_Nunnery
+- Video referensi: https://www.youtube.com/results?search_query=Chi+Lin+Nunnery+Hong+Kong
+
+### Nan Lian Garden (南蓮園池) ✅
+Taman klasik gaya Dinasti Tang seluas ±3,5 hektar, dibangun bersebelahan dengan Chi Lin Nunnery — memadukan kolam, batu, dan paviliun kayu dengan filosofi taman klasik China, jadi kontras hijau di tengah padatnya Kowloon.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** Sama dengan Chi Lin Nunnery — persis bersebelahan.
+
+**Jam Operasional:** setiap hari 07:00–21:00.
+
+**Tiket:** Gratis.
+
+**Kenapa tidak dimasukkan:** satu kawasan dengan Chi Lin Nunnery — sama-sama tidak masuk karena Lantau tidak lagi dapat slot hari penuh.
+
+- Foto/info: https://en.wikipedia.org/wiki/Nan_Lian_Garden
+- Video referensi: https://www.youtube.com/results?search_query=Nan+Lian+Garden+Hong+Kong
+
 ### Wong Tai Sin Temple (黃大仙祠) ✅
 Kelenteng paling ramai dikunjungi di Hong Kong (±3 juta pengunjung/tahun), memadukan ajaran Taoisme, Buddhisme, dan Konfusianisme — terkenal dengan tradisi kau cim (mengocok batang ramalan bambu) untuk memohon petunjuk/keberuntungan.
 
@@ -442,9 +428,7 @@ Kelenteng paling ramai dikunjungi di Hong Kong (±3 juta pengunjung/tahun), mema
 
 **Tiket:** Gratis.
 
-**Kenapa tidak dimasukkan:** searah/dekat Chi Lin Nunnery (Plan-B Hari 3), tapi kurang prioritas dibanding Nan Lian Garden yang lebih tenang — bisa disisipkan kalau ternyata Hari 3 diganti ke area Diamond Hill.
-
-**Terkait:** Hari 3
+**Kenapa tidak dimasukkan:** searah/dekat Chi Lin Nunnery & Nan Lian Garden (lihat entri di atas) — sama-sama kawasan Diamond Hill yang tidak masuk itinerary utama karena trip dipersingkat.
 
 - Foto/info: https://en.wikipedia.org/wiki/Wong_Tai_Sin_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Wong+Tai+Sin+Temple+Hong+Kong

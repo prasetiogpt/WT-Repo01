@@ -412,11 +412,13 @@ def parse_day_section(title, body_lines):
             advisory = final_html
 
     # find table
-    items, total = [], None
+    items, total, currency = [], None, None
     i = 0
     while i < len(body_lines):
         if body_lines[i].strip().startswith("|"):
             header, rows, i = parse_table(body_lines, i)
+            if len(header) >= 5 and header[3]:
+                currency = header[3].strip()
             for r in rows:
                 if len(r) < 5:
                     r = r + [""] * (5 - len(r))
@@ -448,6 +450,7 @@ def parse_day_section(title, body_lines):
         "num": num, "date": date, "label": label,
         "reserve": reserve, "advisory": advisory,
         "items": items, "total": total, "planb": planb,
+        "currency": currency,
     }
 
 
@@ -660,13 +663,15 @@ def parse_lampiran_place(title_line, body_lines, group_key, is_cadangan, is_intr
         tag, label = "planc", "Plan C"
     elif planb_m:
         tag = "planb"
-        label = "Plan-B " + planb_m.group(1).strip()
+        pb_short = re.sub(r"Hari\s+(\d+)", r"H\1", planb_m.group(1).strip())
+        label = "Plan-B " + pb_short
     elif is_food:
         tag, label = "food", "Kuliner"
     elif is_intro:
         tag, label = "info", "Sebelum Berangkat"
     else:
-        tag, label = "main", "Itinerary utama"
+        gk_num_m = re.match(r"^h(\d+)$", group_key)
+        tag, label = "main", (f"Itin H{gk_num_m.group(1)}" if gk_num_m else "Itinerary utama")
 
     if ctx_m:
         raw_ctx = re.sub(r"\s+", " ", ctx_m.group(2)).strip()
@@ -748,6 +753,7 @@ def parse_destination(md_path):
     days = []
     budget = None
     notes = []
+    dest_currency = None
 
     for level, heading, body in sections:
         if heading == "__preamble__":
@@ -779,6 +785,8 @@ def parse_destination(md_path):
                 days.append(d)
                 if not weekday_date_str:
                     weekday_date_str = d["date"]
+                if not dest_currency and d.get("currency"):
+                    dest_currency = d["currency"]
         elif heading.startswith("Ringkasan Budget Total"):
             budget = parse_budget_section(body)
         elif heading == "Catatan Penting Lainnya":
@@ -851,6 +859,7 @@ def parse_destination(md_path):
         "transport_js": transport_js, "transport_pulang_js": transport_pulang_js,
         "days": days, "budget": budget,
         "notes": notes, "lampiran": lampiran_entries, "lampiran_groups": lampiran_groups,
+        "currency": dest_currency or "CNY",
     }
 
 
@@ -860,6 +869,7 @@ def render_destination_js(dest):
     lines.append(f'    id:{jsraw(dest["id"])},')
     lines.append(f'    name:{jsraw(dest["name"])},')
     lines.append(f'    dates:{jsval(dest["dates_line"])},')
+    lines.append(f'    currency:{jsraw(dest["currency"])},')
     lines.append("")
     lines.append(dest["transport_js"])
     lines.append("")
