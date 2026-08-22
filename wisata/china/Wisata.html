@@ -2244,7 +2244,9 @@ const cityPanelsWrap = document.getElementById('city-panels');
 destinations.forEach((dest,i)=>{
   const tabBtn = document.createElement('button');
   tabBtn.className = 'city-tab' + (i===0 ? ' active' : '');
-  tabBtn.textContent = dest.name;
+  tabBtn.textContent = dest.name.replace(/\s+/g,'').slice(0,3).toUpperCase();
+  tabBtn.title = dest.name;
+  tabBtn.setAttribute('aria-label', dest.name);
   tabBtn.dataset.city = dest.id;
   tabBtn.addEventListener('click', ()=>{
     document.querySelectorAll('.city-tab').forEach(b=>b.classList.remove('active'));
