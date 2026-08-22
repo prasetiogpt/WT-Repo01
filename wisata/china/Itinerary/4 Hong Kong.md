@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Hong Kong Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti. (2) **2026-08-21 — dipersingkat jadi 2 malam/3 hari** (dari 4 hari/3 malam), data kedatangan & hotel sudah FIXED: kedatangan **11:00 siang** (bukan default sore) dengan tiket ±Rp1.000.000/org, hotel **H8 Hostel (Tsim Sha Tsui, C2 Exit)** ±Rp1.000.000/malam — kedua angka estimasi lama dihapus. Karena hanya 1 hari penuh tersisa, kluster **Lantau Island (Ngong Ping 360, Big Buddha, Tai O) dipindah ke Cadangan** — dipilih kluster Hong Kong Island (Peak/Central/Sheung Wan) sebagai satu-satunya hari penuh karena lebih dekat & efisien dari TST dibanding Lantau yang perlu 1 hari dedicated tersendiri. Kota berikutnya sudah diketahui: **Shenzhen** (moda transportasi & jadwal pasti belum ditentukan, tidak dihitung di budget Hong Kong ini). (3) **2026-08-21 — data hotel dilengkapi dari screenshot Amap pengguna**: jarak presisi ke MTR TST (<100m/±1 menit, Exit C2), MTR East TST (210m), Hong Kong West Kowloon Station (1,9km — dipakai sebagai titik keberangkatan HSR ke Shenzhen Futian, ±15-20 menit, ±HKD 70/org, masuk budget Shenzhen), dan bandara (32km/±30 menit). Hari 3 leg ke Shenzhen diperjelas: taksi ke West Kowloon Station (±HKD 40, ±10 menit) menggantikan baris generik "moda belum ditentukan" — Total Hari 3 230→270 HKD, Grand Total 1.428→1.468 HKD (Rp3.284.400→Rp3.376.400).
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti. (2) **2026-08-21 — dipersingkat jadi 2 malam/3 hari** (dari 4 hari/3 malam), data kedatangan & hotel sudah FIXED: kedatangan **11:00 siang** (bukan default sore) dengan tiket ±Rp1.000.000/org, hotel **H8 Hostel (Tsim Sha Tsui, C2 Exit)** ±Rp1.000.000/malam — kedua angka estimasi lama dihapus. Karena hanya 1 hari penuh tersisa, kluster **Lantau Island (Ngong Ping 360, Big Buddha, Tai O) dipindah ke Cadangan** — dipilih kluster Hong Kong Island (Peak/Central/Sheung Wan) sebagai satu-satunya hari penuh karena lebih dekat & efisien dari TST dibanding Lantau yang perlu 1 hari dedicated tersendiri. Kota berikutnya sudah diketahui: **Shenzhen** (moda transportasi & jadwal pasti belum ditentukan, tidak dihitung di budget Hong Kong ini). (3) **2026-08-21 — data hotel dilengkapi dari screenshot Amap pengguna**: jarak presisi ke MTR TST (<100m/±1 menit, Exit C2), MTR East TST (210m), Hong Kong West Kowloon Station (1,9km — dipakai sebagai titik keberangkatan HSR ke Shenzhen Futian, ±15-20 menit, ±HKD 70/org, masuk budget Shenzhen), dan bandara (32km/±30 menit). Hari 3 leg ke Shenzhen diperjelas: taksi ke West Kowloon Station (±HKD 40, ±10 menit) menggantikan baris generik "moda belum ditentukan" — Total Hari 3 230→270 HKD, Grand Total 1.428→1.468 HKD (Rp3.284.400→Rp3.376.400). (4) **2026-08-21 — koreksi salah hitung biaya makan**: semua baris makan (sarapan/siang/malam) di ketiga hari ternyata dihitung dengan kelipatan 4× harga per-org, bukan 2× (mis. "±HKD 35/org" tertulis totalnya 140, seharusnya 70 untuk 2 orang) — dikoreksi di semua baris. Total Hari 1 470→340, Hari 2 728→522, Hari 3 270→154, Grand Total 1.468→1.016 HKD (Rp3.376.400→Rp2.336.800).
 
 ## Informasi Penerbangan
 
@@ -40,11 +40,11 @@
 | 11:00 | Landing HKG, imigrasi + ambil bagasi | — | — | — |
 | 11:30–12:00 | Airport Express ke Kowloon Station + shuttle ke hotel | ±24 menit naik Airport Express, shuttle gratis ke H8 Hostel (TST, C2 Exit) | 210 | Rp483.000 |
 | 12:00–12:30 | Check-in, taruh barang, istirahat | — | — | — |
-| 12:30–13:30 | Makan siang sekitar Tsim Sha Tsui | Wonton mie kuah, ±HKD 35/org | 140 | Rp322.000 |
+| 12:30–13:30 | Makan siang sekitar Tsim Sha Tsui | Wonton mie kuah, ±HKD 35/org | 70 | Rp161.000 |
 | 13:30–18:00 | Istirahat / jalan santai bebas sekitar TST | Buffer jetlag & jam biologis, opsional | — | — |
-| 18:00–19:00 | Makan malam ringan sekitar Tsim Sha Tsui | Congee/dim sum kukus, ±HKD 30/org | 120 | Rp276.000 |
+| 18:00–19:00 | Makan malam ringan sekitar Tsim Sha Tsui | Congee/dim sum kukus, ±HKD 30/org | 60 | Rp138.000 |
 | 19:45–20:15 | **Avenue of Stars** + **A Symphony of Lights** (20:00) | Jalan santai promenade tepi Victoria Harbour, pertunjukan cahaya gratis tiap malam ±10 menit | — | — |
-| | **TOTAL HARI 1** | | **470** | **Rp1.081.000** |
+| | **TOTAL HARI 1** | | **340** | **Rp782.000** |
 
 **Plan-B hari ini:** kalau Symphony of Lights dibatalkan (cuaca badai) atau ingin variasi — **Temple Street Night Market** (jalan kaki dari TST, jajanan malam & suasana lokal, lihat Lampiran).
 
@@ -56,17 +56,17 @@
 
 | Jam | Kegiatan | Catatan | HKD | IDR |
 |---|---|---|---|---|
-| 08:00 | Sarapan | ±HKD 22/org | 90 | Rp207.000 |
+| 08:00 | Sarapan | ±HKD 22/org | 44 | Rp101.200 |
 | 08:30–08:45 | **Star Ferry** TST → Central | Naik kapal feri ikonik lintas Victoria Harbour, ±8 menit | 10 | Rp23.000 |
 | 09:00–09:45 | **Man Mo Temple** | Jalan kaki dari Central via Sheung Wan MTR Exit A2, ±10 menit | — | — |
 | 09:45–10:30 | Naik **Central-Mid-Levels Escalator** menuju **PMQ** | Eskalator gratis, aman untuk lutut (tidak perlu jalan menanjak) | — | — |
 | 10:30–11:15 | **PMQ** | Galeri seni & studio kreatif di bekas Police Married Quarters, gratis masuk | — | — |
-| 11:15–12:15 | Makan siang sekitar SoHo | Wonton mie kuah, ±HKD 35/org | 140 | Rp322.000 |
+| 11:15–12:15 | Makan siang sekitar SoHo | Wonton mie kuah, ±HKD 35/org | 70 | Rp161.000 |
 | 12:30–15:30 | **Victoria Peak** (Peak Tram + Sky Terrace 428) | Jalan kaki ke lower terminus Garden Road, ±10 menit dari Central. Tiket round-trip + Sky Terrace ±HKD 149/org | 298 | Rp685.400 |
 | 15:30–16:15 | **Hong Kong Park** | Turun dari Peak, searah balik ke Central — taman gratis, jalur datar | — | — |
 | 16:30–16:45 | Star Ferry Central → TST | — | 10 | Rp23.000 |
-| 18:00–19:00 | Makan malam sekitar TST | Cantonese ringan (ikan kukus/sayur), ±HKD 45/org | 180 | Rp414.000 |
-| | **TOTAL HARI 2** | | **728** | **Rp1.674.400** |
+| 18:00–19:00 | Makan malam sekitar TST | Cantonese ringan (ikan kukus/sayur), ±HKD 45/org | 90 | Rp207.000 |
+| | **TOTAL HARI 2** | | **522** | **Rp1.200.600** |
 
 **Plan-B hari ini:** kalau cuaca berkabut tebal (view Peak tidak worth it) atau hujan deras — **M+ Museum** (West Kowloon, indoor, lihat Lampiran) sebagai pengganti Victoria Peak.
 
@@ -78,13 +78,13 @@
 
 | Jam | Kegiatan | Catatan | HKD | IDR |
 |---|---|---|---|---|
-| 08:00 | Sarapan | ±HKD 22/org | 90 | Rp207.000 |
+| 08:00 | Sarapan | ±HKD 22/org | 44 | Rp101.200 |
 | 08:30–10:00 | **Kowloon Park** | Jalan kaki dari hotel, taman gratis dengan kolam flamingo & burung, jalur datar | — | — |
 | 10:00–11:00 | Checkout hotel, siap-siap | — | — | — |
-| 11:00–12:00 | Makan siang dekat hotel | ±HKD 35/org | 140 | Rp322.000 |
+| 11:00–12:00 | Makan siang dekat hotel | ±HKD 35/org | 70 | Rp161.000 |
 | 12:00–13:00 | Taksi/jalan kaki ke **Hong Kong West Kowloon Station** | ±1,9km dari hotel — taksi ±10 menit lebih praktis dengan koper (jalan kaki ±27 menit) | 40 | Rp92.000 |
 | 13:30 | HSR West Kowloon → Futian (Shenzhen) | ±15-20 menit, ±19 kereta/hari 07:11-22:01. Tiket ±HKD 70/org, masuk budget Shenzhen (bukan Hong Kong) | — | *(masuk budget Shenzhen)* |
-| | **TOTAL HARI 3** | | **270** | **Rp621.000** |
+| | **TOTAL HARI 3** | | **154** | **Rp354.200** |
 
 **Plan-B hari ini:** kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).
 
@@ -96,17 +96,17 @@ Belum termasuk harga hotel (Rp1.000.000/malam, fixed) & tiket pesawat kedatangan
 
 | Hari | HKD | IDR |
 |---|---|---|
-| Hari 1 (2 Nov) | 470 | Rp1.081.000 |
-| Hari 2 (3 Nov) | 728 | Rp1.674.400 |
-| Hari 3 (4 Nov) | 270 | Rp621.000 |
-| **GRAND TOTAL** | **1.468** | **Rp3.376.400** |
+| Hari 1 (2 Nov) | 340 | Rp782.000 |
+| Hari 2 (3 Nov) | 522 | Rp1.200.600 |
+| Hari 3 (4 Nov) | 154 | Rp354.200 |
+| **GRAND TOTAL** | **1.016** | **Rp2.336.800** |
 
 | Kategori | HKD | IDR |
 |---|---|---|
 | Tiket masuk (Peak Tram + Sky Terrace) | 298 | Rp685.400 |
-| Makan (semua hari) | 900 | Rp2.070.000 |
+| Makan (semua hari) | 448 | Rp1.030.400 |
 | Transport lokal (Airport Express, MTR, Star Ferry, taksi ke West Kowloon) | 270 | Rp621.000 |
-| **TOTAL** | **1.468** | **Rp3.376.400** |
+| **TOTAL** | **1.016** | **Rp2.336.800** |
 
 **Catatan:** Man Mo Temple, PMQ, Central-Mid-Levels Escalator, Hong Kong Park, Avenue of Stars, Symphony of Lights, Kowloon Park semuanya gratis (tidak dihitung).
 
