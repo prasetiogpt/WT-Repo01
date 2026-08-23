@@ -92,13 +92,6 @@
 
 ## Ringkasan Budget Total (2 Orang, 2 Malam / 3 Hari di Hong Kong)
 
-| Hari | HKD | IDR |
-|---|---|---|
-| Hari 1 (2 Nov) | 350 | Rp805.000 |
-| Hari 2 (3 Nov) | 522 | Rp1.200.600 |
-| Hari 3 (4 Nov) | 154 | Rp354.200 |
-| **Subtotal aktivitas harian** | **1.026** | **Rp2.359.800** |
-
 | Kategori | HKD | IDR |
 |---|---|---|
 | Tiket masuk (Peak Tram + Sky Terrace) | 298 | Rp685.400 |

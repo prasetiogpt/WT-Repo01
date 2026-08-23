@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Nanjing Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) blok "Sebelum Berangkat" ditambahkan di awal Lampiran; (2) Hanzi dilengkapi di judul entri destinasi Lampiran, dengan status verifikasi ditandai per entri; (3) Confucius Temple Pedestrian Street ditegaskan sebagai pedestrian street, Deji Plaza & Ming Palace Ruins Park dipromosikan jadi itinerary utama (memperbanyak wisata alam/taman); (4) Nanjing Museum & Presidential Palace dipindah dari itinerary utama jadi Plan-B; (5) kolom Keterangan dilengkapi detail navigasi (exit stasiun MRT spesifik, sisi gerbang masuk, lokasi loket tiket) untuk tiap perpindahan/kunjungan, detail lengkap ditaruh di entri Lampiran terkait sebagai baris "Akses"; (6) entri Cadangan yang searah dengan rute suatu hari ditandai `**Terkait:** Hari N` supaya muncul otomatis sebagai info "tempat sekitar lain" di bawah Plan-B hari itu di Wisata.html; (7) tiap entri destinasi di Lampiran dilengkapi `**Jam Operasional:**` (jam buka-tutup, hari libur rutin, jam puncak keramaian); (8) section baru "Informasi Transportasi Pulang" ditambahkan untuk detail HSR kepulangan/lanjut kota berikutnya; (9) 7 destinasi tambahan dimasukkan ke Cadangan: Niushoushan, Jinling Xiaocheng (Wenxin Pavilion), Java Forest Valley Cafe, Sun Yat-sen Mausoleum Music Stage, Kexiang Food Street, Wen Shu Archway & Double Dragon Screen Wall (bagian Confucius Temple), Nanjing Eye Footbridge; (10) kolom Kegiatan di tabel itinerary sekarang bold selektif — hanya nama destinasi wisata yang di-`**bold**` (mis. `**Zhonghua Gate**`), baris transit/logistik dibiarkan polos meski menyebut nama tempat; (11) format Lampiran diseragamkan — SEMUA 24 entri destinasi (termasuk Cadangan yang sebelumnya tidak punya Akses) sekarang lengkap `**Akses:**`, `**Jam Operasional:**`, dan `**Tiket:**` (harga tiket masuk lokal+IDR atau "Gratis"), diriset via web_search bukan tebakan; (12) "Rekomendasi tempat sekitar" tidak lagi jadi link Google Maps di Wisata.html — sekarang teks polos format Amap (Nama Inggris + Hanzi) supaya bisa dicari manual, sekalian mengoreksi "Zi Lan Garden" (nama salah) di entri Presidential Palace jadi "Xu Garden (煦园)" yang benar; **(13) Restrukturisasi besar atas permintaan pengguna** — Laomendong Old Street dipindah dari Hari 4 ke Hari 4→Hari 1 (malam kedatangan, sekalian jadi makan malam); Niushoushan & Jinling Xiaocheng dipromosikan dari Cadangan jadi Hari 2 (dijadikan 1 hari dedicated karena jauh dari kota & butuh Didi/bus 45-60 menit sekali jalan, TIDAK digabung dengan Deji Plaza/Mochou Lake Park karena beda arah total); Ming Palace Ruins Park, Jiming Temple, Ming Xiaoling Sacred Way, dan Zhonghua Gate (utuh, termasuk bagian ekshibisi yang sebelumnya di itinerary utama) dipindah ke Cadangan; Nanjing Massacre Memorial Hall dipindah dari Hari 2 ke Hari 4 (masih Selasa, bukan Senin — aman dari aturan tutup Senin), digabung dengan Deji Plaza & Mochou Lake Park (searah Line 2: Yunjinlu→Mochouhu→Xinjiekou) mengikuti logika "indoor dulu saat panas siang, taman sesudahnya"; ditambahkan destinasi baru Xiaojiuzhaigou ke Cadangan (BUKAN itinerary utama — lihat alasan di entrinya); dikoreksi kesalahan akses Ming Xiaoling Sacred Way yang sebelumnya salah ditulis "searah Jiming Temple" (harusnya searah Sun Yat-sen Mausoleum via Stasiun Muxuyuan); backup versi sebelum revisi ini disimpan di `Itinerary/Draft/1 Nanjing (backup pre-revisi).md`. **(14) Penyesuaian setelah diskusi lanjutan** — Jinling Xiaocheng di-skip dari Hari 2 (dipindah ke Cadangan; dinilai kurang worth-it dibanding Niushoushan yang sudah kaya konten, dan bikin hari terlalu panjang); Deji Plaza & Mochou Lake Park dipindah dari Hari 4 ke Hari 2 (nyambung langsung dari Niushoushan via Didi, tanpa balik hotel dulu — gantikan slot Jinling Xiaocheng); Hari 4 disederhanakan jadi HANYA Massacre Memorial Hall + checkout, karena diketahui ada **HSR kepulangan/lanjut kota fixed jam 18:00** dari Nanjing South — rencana lama (3 aktivitas di Hari 4) nyaris tanpa buffer waktu dan berisiko ketinggalan kereta; sekarang Hari 4 punya buffer besar sebelum jam 18:00. **(15) 2026-08-21** — info hotel dilengkapi dari screenshot Amap pengguna: jarak ke Fuqiao Metro Station dikoreksi jadi 170m/±3 menit (draft lama salah sebut ±400m), ditambahkan rating hotel (9.2/10, 2.400 ulasan), jarak ke Jimingsi Metro Station, Nanjing Railway Station, Nanjingnan Railway Station, dan Nanjing Lukou International Airport.
+> ⚠️ Riwayat revisi: (1) blok "Sebelum Berangkat" ditambahkan di awal Lampiran; (2) Hanzi dilengkapi di judul entri destinasi Lampiran, dengan status verifikasi ditandai per entri; (3) Confucius Temple Pedestrian Street ditegaskan sebagai pedestrian street, Deji Plaza & Ming Palace Ruins Park dipromosikan jadi itinerary utama (memperbanyak wisata alam/taman); (4) Nanjing Museum & Presidential Palace dipindah dari itinerary utama jadi Plan-B; (5) kolom Keterangan dilengkapi detail navigasi (exit stasiun MRT spesifik, sisi gerbang masuk, lokasi loket tiket) untuk tiap perpindahan/kunjungan, detail lengkap ditaruh di entri Lampiran terkait sebagai baris "Akses"; (6) entri Cadangan yang searah dengan rute suatu hari ditandai `**Terkait:** Hari N` supaya muncul otomatis sebagai info "tempat sekitar lain" di bawah Plan-B hari itu di Wisata.html; (7) tiap entri destinasi di Lampiran dilengkapi `**Jam Operasional:**` (jam buka-tutup, hari libur rutin, jam puncak keramaian); (8) section baru "Informasi Transportasi Pulang" ditambahkan untuk detail HSR kepulangan/lanjut kota berikutnya; (9) 7 destinasi tambahan dimasukkan ke Cadangan: Niushoushan, Jinling Xiaocheng (Wenxin Pavilion), Java Forest Valley Cafe, Sun Yat-sen Mausoleum Music Stage, Kexiang Food Street, Wen Shu Archway & Double Dragon Screen Wall (bagian Confucius Temple), Nanjing Eye Footbridge; (10) kolom Kegiatan di tabel itinerary sekarang bold selektif — hanya nama destinasi wisata yang di-`**bold**` (mis. `**Zhonghua Gate**`), baris transit/logistik dibiarkan polos meski menyebut nama tempat; (11) format Lampiran diseragamkan — SEMUA 24 entri destinasi (termasuk Cadangan yang sebelumnya tidak punya Akses) sekarang lengkap `**Akses:**`, `**Jam Operasional:**`, dan `**Tiket:**` (harga tiket masuk lokal+IDR atau "Gratis"), diriset via web_search bukan tebakan; (12) "Rekomendasi tempat sekitar" tidak lagi jadi link Google Maps di Wisata.html — sekarang teks polos format Amap (Nama Inggris + Hanzi) supaya bisa dicari manual, sekalian mengoreksi "Zi Lan Garden" (nama salah) di entri Presidential Palace jadi "Xu Garden (煦园)" yang benar; **(13) Restrukturisasi besar atas permintaan pengguna** — Laomendong Old Street dipindah dari Hari 4 ke Hari 4→Hari 1 (malam kedatangan, sekalian jadi makan malam); Niushoushan & Jinling Xiaocheng dipromosikan dari Cadangan jadi Hari 2 (dijadikan 1 hari dedicated karena jauh dari kota & butuh Didi/bus 45-60 menit sekali jalan, TIDAK digabung dengan Deji Plaza/Mochou Lake Park karena beda arah total); Ming Palace Ruins Park, Jiming Temple, Ming Xiaoling Sacred Way, dan Zhonghua Gate (utuh, termasuk bagian ekshibisi yang sebelumnya di itinerary utama) dipindah ke Cadangan; Nanjing Massacre Memorial Hall dipindah dari Hari 2 ke Hari 4 (masih Selasa, bukan Senin — aman dari aturan tutup Senin), digabung dengan Deji Plaza & Mochou Lake Park (searah Line 2: Yunjinlu→Mochouhu→Xinjiekou) mengikuti logika "indoor dulu saat panas siang, taman sesudahnya"; ditambahkan destinasi baru Xiaojiuzhaigou ke Cadangan (BUKAN itinerary utama — lihat alasan di entrinya); dikoreksi kesalahan akses Ming Xiaoling Sacred Way yang sebelumnya salah ditulis "searah Jiming Temple" (harusnya searah Sun Yat-sen Mausoleum via Stasiun Muxuyuan); backup versi sebelum revisi ini disimpan di `Itinerary/Draft/1 Nanjing (backup pre-revisi).md`. **(14) Penyesuaian setelah diskusi lanjutan** — Jinling Xiaocheng di-skip dari Hari 2 (dipindah ke Cadangan; dinilai kurang worth-it dibanding Niushoushan yang sudah kaya konten, dan bikin hari terlalu panjang); Deji Plaza & Mochou Lake Park dipindah dari Hari 4 ke Hari 2 (nyambung langsung dari Niushoushan via Didi, tanpa balik hotel dulu — gantikan slot Jinling Xiaocheng); Hari 4 disederhanakan jadi HANYA Massacre Memorial Hall + checkout, karena diketahui ada **HSR kepulangan/lanjut kota fixed jam 18:00** dari Nanjing South — rencana lama (3 aktivitas di Hari 4) nyaris tanpa buffer waktu dan berisiko ketinggalan kereta; sekarang Hari 4 punya buffer besar sebelum jam 18:00. **(15) 2026-08-21** — info hotel dilengkapi dari screenshot Amap pengguna: jarak ke Fuqiao Metro Station dikoreksi jadi 170m/±3 menit (draft lama salah sebut ±400m), ditambahkan rating hotel (9.2/10, 2.400 ulasan), jarak ke Jimingsi Metro Station, Nanjing Railway Station, Nanjingnan Railway Station, dan Nanjing Lukou International Airport. **(16) 2026-08-22** — jam kepulangan HSR Hari 4 dikoreksi dari 18:00 ke **15:00** (default skill terbaru) — jadwal Hari 4 dipadatkan ±3 jam (checkout & buffer lebih ketat, aktivitas inti Massacre Memorial Hall tidak berubah). Verifikasi ulang: rute transportasi harian sudah konsisten pakai **Fuqiao (hotel) sebagai anchor** di semua hari — tidak perlu revisi. **Hotel & tiket pesawat kedatangan+visa sekarang masuk GRAND TOTAL** Ringkasan Budget (sebelumnya dipisah "belum termasuk") — Tiket+visa Rp8.500.000 (3 org), Hotel Rp3.800.000 (3 malam), GRAND TOTAL naik dari 1.491 CNY (Rp3.951.150, aktivitas saja) jadi **6.133 CNY (Rp16.251.150)**. Estimasi harga tiket HSR Nanjing→Wuxi (±CNY 65/org) ditambahkan ke "Informasi Transportasi Pulang" — biaya ini masuk budget Wuxi (kota tujuan), bukan Nanjing, konsisten prinsip "biaya kedatangan milik kota tujuan".
 
 ## Informasi Penerbangan
 
@@ -15,6 +15,7 @@
 | Jadwal | Berangkat 06:50 → Tiba 14:25 (nonstop, 6j35m) |
 | Bagasi | Carry-on 1×8kg · Checked baggage 1×23kg |
 | Persiapan | Tiba di bandara CGK sekitar 04:30-05:00 pagi |
+| Tiket + visa | Rp8.500.000 (gabungan tiket pesawat + visa, 3 orang) |
 
 **Nonstop tanpa transit** — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.
 
@@ -22,7 +23,7 @@
 
 **Catatan biaya:** semua angka CNY/IDR di bawah adalah perkiraan biaya untuk **3 orang** (rombongan), sudah dijumlah per baris kegiatan. Kurs dipakai: **Rp2.650/CNY** (kurs tetap). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
+**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). Rp3.800.000 (3 malam). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
 
 **Transportasi:** semua "taksi" di itinerary ini maksudnya **Didi Rider** (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).
 
@@ -92,9 +93,9 @@
 
 ---
 
-## Hari 4 — Selasa, 6 Oktober (Massacre Memorial → Keberangkatan, HSR fixed 18:00)
+## Hari 4 — Selasa, 6 Oktober (Massacre Memorial → Keberangkatan, HSR fixed 15:00)
 
-**⚠️ Disederhanakan drastis setelah diketahui HSR kepulangan/lanjut kota FIXED jam 18:00 dari Nanjing South** — rencana sebelumnya (Massacre Memorial + Deji Plaza + Mochou Lake Park di hari yang sama) dihitung ulang dan HAMPIR TIDAK ADA buffer waktu, berisiko ketinggalan kereta. Deji Plaza & Mochou Lake Park sudah dipindah ke Hari 2 (nyambung dari Niushoushan). Hari 4 sekarang HANYA Massacre Memorial Hall (yang memang wajib reservasi, tidak bisa digeser sembarangan) + checkout, dengan buffer besar sebelum kereta. Massacre Memorial Hall tutup tiap Senin (kecuali libur nasional), dan Selasa (Hari 4) BUKAN Senin jadi tetap aman dari risiko tutup. **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi sore sebelum ke stasiun.
+**⚠️ Disederhanakan drastis setelah diketahui HSR kepulangan/lanjut kota FIXED jam 15:00 dari Nanjing South** — rencana sebelumnya (Massacre Memorial + Deji Plaza + Mochou Lake Park di hari yang sama) dihitung ulang dan HAMPIR TIDAK ADA buffer waktu, berisiko ketinggalan kereta. Deji Plaza & Mochou Lake Park sudah dipindah ke Hari 2 (nyambung dari Niushoushan). Hari 4 sekarang HANYA Massacre Memorial Hall (yang memang wajib reservasi, tidak bisa digeser sembarangan) + checkout, dengan buffer sebelum kereta. Massacre Memorial Hall tutup tiap Senin (kecuali libur nasional), dan Selasa (Hari 4) BUKAN Senin jadi tetap aman dari risiko tutup. **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -103,25 +104,22 @@
 | 08:00–08:30 | Fuqiao (Line 3) → transfer di Daxinggong → Line 2 arah barat, turun Yunjinlu | Transfer Daxinggong: platform Line 2/3 beda level, ikuti papan petunjuk tanpa keluar stasiun | 9 | Rp23.850 |
 | 08:30–11:00 | **Nanjing Massacre Memorial Hall** | Keluar Exit 2 Stasiun Yunjinlu — langsung di depan Gate 1. Gratis, wajib reservasi online (lihat Lampiran) | — | — |
 | 11:00–12:00 | Makan siang dekat Yunjinlu | CNY 20/org | 60 | Rp159.000 |
-| 12:00–14:30 | Waktu santai/buffer — jalan-jalan ringan sekitar Yunjinlu, atau balik lebih awal ke hotel untuk istirahat | Tidak ada tempat wajib — ini murni buffer, gunakan sesuka hati | — | — |
-| 14:30–15:00 | Line 2 Yunjinlu → transfer Daxinggong → Line 3 ke Fuqiao, ambil bagasi di hotel | — | 9 | Rp23.850 |
-| 15:00–16:00 | Siap-siap, buffer tambahan di hotel | — | — | — |
-| 16:00–16:45 | Didi ke Nanjing South Railway Station *(atau Line 3 langsung, tanpa transfer, kalau tidak bawa koper berat)* | Bawa koper, hindari MRT saat Golden Week. Berangkat cukup awal — beri buffer ±1j15m sebelum kereta | 50 | Rp132.500 |
-| 16:45–17:45 | Tiba stasiun, antre keamanan/boarding (Golden Week) | Buffer ekstra ±1 jam sebelum jadwal kereta | — | — |
-| **18:00** | **HSR berangkat dari Nanjing South** | Rombongan berpisah/lanjut sesuai opsi di bawah | — | — |
+| 12:00–12:30 | Line 2 Yunjinlu → transfer Daxinggong → Line 3 ke Fuqiao, ambil bagasi di hotel | — | 9 | Rp23.850 |
+| 12:30–13:00 | Siap-siap di hotel | — | — | — |
+| 13:00–13:45 | Didi ke Nanjing South Railway Station *(atau Line 3 langsung, tanpa transfer, kalau tidak bawa koper berat)* | Bawa koper, hindari MRT saat Golden Week | 50 | Rp132.500 |
+| 13:45–14:45 | Tiba stasiun, antre keamanan/boarding (Golden Week) | Buffer ±1 jam sebelum jadwal kereta | — | — |
+| **15:00** | **HSR berangkat dari Nanjing South** | Rombongan berpisah/lanjut sesuai opsi di bawah | — | — |
 | **TOTAL HARI 4** | | | **173** | **Rp458.450** |
 
 **Plan-B hari ini:** kalau Massacre Memorial Hall gagal (reservasi bermasalah, dll) — waktu buffer siang yang sudah longgar (12:00-14:30) otomatis jadi cadangan, tidak perlu rencana pengganti khusus. Prioritas hari ini tetap satu: jangan sampai ketinggalan kereta jam 18:00.
 
-**Update penting:** Nanjing South Railway Station ternyata ADA di jalur Line 3 yang sama, langsung dari Fuqiao tanpa transfer (beberapa stasiun ke selatan dari Fuzimiao). Didi tetap disarankan kalau bawa koper banyak & kondisi Golden Week padat, tapi Line 3 jadi opsi cadangan yang valid kalau Didi susah didapat. **Kedua opsi HSR (Ningbo & Wuxi) berangkat ±jam yang sama (18:00)** — rombongan bisa ke stasiun bareng sebelum berpisah platform. Untuk kereta ke Ningbo, pilih G-train tercepat (±2j11m) dan hindari kereta yang detour (lebih lambat & lebih mahal).
+**Update penting:** Nanjing South Railway Station ternyata ADA di jalur Line 3 yang sama, langsung dari Fuqiao tanpa transfer (beberapa stasiun ke selatan dari Fuzimiao). Didi tetap disarankan kalau bawa koper banyak & kondisi Golden Week padat, tapi Line 3 jadi opsi cadangan yang valid kalau Didi susah didapat. **Kedua opsi HSR (Ningbo & Wuxi) berangkat ±jam yang sama (15:00)** — rombongan bisa ke stasiun bareng sebelum berpisah platform. Untuk kereta ke Ningbo, pilih G-train tercepat (±2j11m) dan hindari kereta yang detour (lebih lambat & lebih mahal).
 
 ---
 
 ## Ringkasan Budget Total (3 Orang, 3 Malam di Nanjing)
 
-Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di bawah murni biaya aktivitas harian (tiket masuk, makan, transport lokal).
-
-⚠️ **Total naik dari versi awal (972 → 1.491 CNY)** — didorong hampir seluruhnya oleh tiket Niushoushan di Hari 2 (CNY 435, hampir sepertiga total budget). Kalau ingin lebih hemat, lihat Plan-B Hari 2.
+⚠️ **Total aktivitas harian naik dari versi awal (972 → 1.491 CNY)** — didorong hampir seluruhnya oleh tiket Niushoushan di Hari 2 (CNY 435, hampir sepertiga total budget). Kalau ingin lebih hemat, lihat Plan-B Hari 2.
 
 | Hari | CNY | IDR |
 |---|---|---|
@@ -129,7 +127,7 @@ Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di b
 | Hari 2 (4 Okt) | 885 | Rp2.345.250 |
 | Hari 3 (5 Okt) | 165 | Rp437.250 |
 | Hari 4 (6 Okt) | 173 | Rp458.450 |
-| **GRAND TOTAL** | **1.491** | **Rp3.951.150** |
+| **Subtotal aktivitas harian** | **1.491** | **Rp3.951.150** |
 
 ### Breakdown per kategori
 
@@ -138,9 +136,11 @@ Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di b
 | Tiket masuk (Niushoushan) | 435 | Rp1.152.750 |
 | Makan (semua hari + jajan Laomendong) | 630 | Rp1.669.500 |
 | Transport lokal (Didi + MRT) | 426 | Rp1.128.900 |
-| **TOTAL** | **1.491** | **Rp3.951.150** |
+| Tiket pesawat kedatangan + visa (3 org) | ≈3.208 | Rp8.500.000 |
+| Hotel (3 malam) | ≈1.434 | Rp3.800.000 |
+| **GRAND TOTAL** | **6.133** | **Rp16.251.150** |
 
-**Catatan:** Presidential Palace, Nanjing Museum, Jiming Temple, Ming Xiaoling Sacred Way, Zhonghua Gate, dan Jinling Xiaocheng sekarang semua di Plan-B/Cadangan, jadi TIDAK termasuk di total di atas. Beberapa item opsional lain (trolley Xuanwu Lake, masuk kompleks Confucius Temple, mobil wisata Niushoushan) juga belum dihitung.
+**Catatan:** Presidential Palace, Nanjing Museum, Jiming Temple, Ming Xiaoling Sacred Way, Zhonghua Gate, dan Jinling Xiaocheng sekarang semua di Plan-B/Cadangan, jadi TIDAK termasuk di total di atas. Beberapa item opsional lain (trolley Xuanwu Lake, masuk kompleks Confucius Temple, mobil wisata Niushoushan) juga belum dihitung. Baris tiket pesawat+visa dan hotel diberikan langsung dalam Rupiah (biaya gabungan rombongan, bukan per-org) — nilai CNY ditandai `≈` sebagai konversi kurs, Rupiah tetap angka otoritatif.
 
 ---
 
@@ -151,7 +151,7 @@ Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di b
 - **Transportasi:** prioritas MRT/jalan kaki untuk jarak dekat; Didi (bukan taksi jalanan, kendala bahasa) untuk bawa koper, jarak jauh (Niushoushan), atau saat kondisi terlalu padat (Golden Week).
 - **Tempat berbayar** ditandai jelas dan sebagian besar opsional — bisa diskip untuk hemat biaya. Niushoushan (Hari 2) adalah pengecualian besar — cukup mahal (CNY 145/org), pertimbangkan Plan-B kalau budget jadi prioritas utama.
 - **Keramaian:** Hari 2 (Niushoushan) risiko tertinggi karena Golden Week + Minggu — datang tepat jam buka.
-- **Kereta Hari 4:** kedua opsi HSR (ke Ningbo maupun ke Wuxi) berangkat ±18:00 dari Nanjing South — jadwal Hari 4 sengaja dibuat ringan (hanya Massacre Memorial Hall) dengan buffer besar demi keamanan jadwal ini, dan rombongan bisa ke stasiun bareng sebelum berpisah.
+- **Kereta Hari 4:** kedua opsi HSR (ke Ningbo maupun ke Wuxi) berangkat ±15:00 dari Nanjing South — jadwal Hari 4 sengaja dibuat ringan (hanya Massacre Memorial Hall) dengan buffer demi keamanan jadwal ini, dan rombongan bisa ke stasiun bareng sebelum berpisah.
 
 ---
 
@@ -159,8 +159,8 @@ Belum termasuk harga hotel & tiket pesawat — lihat `Final Info.md`. Angka di b
 
 | | |
 |---|---|
-| Opsi 1 (1 orang) | HSR ke Ningbo — **berangkat ±18:00**, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal) |
-| Opsi 2 (2 orang) | HSR lanjut ke Wuxi — **berangkat ±18:00** dari Nanjing South, menyambung ke itinerary Wuxi |
+| Opsi 1 (1 orang) | HSR ke Ningbo — **berangkat ±15:00**, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal) |
+| Opsi 2 (2 orang) | HSR lanjut ke Wuxi — **berangkat ±15:00** dari Nanjing South, menyambung ke itinerary Wuxi. HSR Nanjing→Wuxi ±44 menit (G-train tercepat), tiket ⚠️ estimasi ±CNY 65/org (±Rp172.250/org) — masuk budget Wuxi (kota tujuan), bukan Nanjing |
 | Tanggal | Selasa, 6 Oktober |
 | Stasiun | Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah |
