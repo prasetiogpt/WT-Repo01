@@ -495,8 +495,17 @@ def render_day_js(d, day_id):
 # --------------------------------------------------------------------------
 def parse_budget_section(body_lines):
     joined = "\n".join(body_lines)
-    note_m = re.match(r"\s*(.+?)\n\n\|", joined, re.S)
-    note = re.sub(r"\s+", " ", note_m.group(1)).strip() if note_m else ""
+    # Note: leading prose before the first table, if any. Must stop at the
+    # first line that starts a table — a section with NO intro paragraph
+    # (table right after the heading) would otherwise have its first table
+    # wrongly swallowed as "note" text (the old regex looked for the next
+    # blank-line+"|", which is the SECOND table when there's no intro).
+    note_lines = []
+    for line in body_lines:
+        if line.strip().startswith("|"):
+            break
+        note_lines.append(line)
+    note = re.sub(r"\s+", " ", "\n".join(note_lines)).strip()
 
     tables = []
     i = 0
