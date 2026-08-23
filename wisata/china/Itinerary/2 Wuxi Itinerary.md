@@ -19,7 +19,7 @@
 >
 > (17) **2026-08-22** — Hotel & tiket HSR kedatangan (dari Nanjing) sekarang masuk GRAND TOTAL Ringkasan Budget (sebelumnya "belum termasuk harga hotel"). Hotel Rp1.400.000 (4 malam, fixed), tiket HSR kedatangan ⚠️ estimasi ±CNY 65/org. GRAND TOTAL naik dari 1.287 CNY (Rp3.410.550, aktivitas saja) jadi **1.945 CNY (Rp5.155.050)**. Estimasi tiket HSR Wuxi→Suzhou ditambahkan ke "Informasi Transportasi Pulang" — biaya ini masuk budget Suzhou (kota tujuan), bukan Wuxi.
 >
-> (18) **2026-08-22 — koreksi harga dari pengguna**: tiket HSR kedatangan dari Nanjing dikoreksi dari estimasi ±CNY 65/org jadi harga fixed **CNY 200/org**; tiket HSR Wuxi→Suzhou (di "Informasi Transportasi Pulang") dikoreksi dari estimasi ±CNY 20/org jadi **CNY 50/org**; hotel dikoreksi dari Rp1.400.000 jadi **Rp2.000.000** (4 malam). GRAND TOTAL naik dari 1.945 CNY (Rp5.155.050) jadi **2.442 CNY (Rp6.470.550)**.
+> (18) **2026-08-22 — koreksi harga dari pengguna**: tiket HSR kedatangan dari Nanjing dikoreksi dari estimasi ±CNY 65/org jadi harga fixed **CNY 200/org**; tiket HSR Wuxi→Suzhou (di "Informasi Transportasi Pulang") dikoreksi dari estimasi ±CNY 20/org jadi **CNY 50/org**; hotel dikoreksi dari Rp1.400.000 jadi **Rp2.000.000** (4 malam). GRAND TOTAL naik dari 1.945 CNY (Rp5.155.050) jadi **2.442 CNY (Rp6.470.550)**. (19) **2026-08-22 — bug fix**: section "### Hotel" (format tabel) dikonversi jadi prose `**Hotel:** ...` (sama seperti Nanjing/Suzhou/Hong Kong) — format tabel lama bikin teks pipe mentah (`| Nama | ... |`) bocor ke kartu Transport Pergi di Wisata.html karena parser cuma baca tabel PERTAMA di section, tabel kedua (Hotel) ikut dianggap teks biasa. Sekaligus memperbaiki kotak Hotel yang tidak muncul sebagai banner terpisah (fitur baru hari ini) karena parser mencari paragraf berawalan `**Hotel:**`, bukan tabel.
 
 ## Informasi Transportasi
 
@@ -30,16 +30,7 @@
 | Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
 
-### Hotel
-
-| | |
-|---|---|
-| Nama | **Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)** |
-| Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China |
-| Harga | Rp2.000.000 (4 malam) |
-| Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) |
-| Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit |
-| Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |
+**Hotel:** Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road) — Rp2.000.000 (4 malam). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: **Tanduqiao/Taihu Square Metro Station** — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).
 
 Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan stasiun Line 1 dari hotel: **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)**, dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 di **Liutan**. Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: masuk via Line 1 + transfer **Line 2** ke Stasiun **Heliekou** (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.
 

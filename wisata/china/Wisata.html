@@ -240,13 +240,13 @@ details.day > summary::-webkit-details-marker{display:none;}
 }
 .cadangan-nearby b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
 
-/* Standalone Hotel / Perhatian boxes, shown below (not inside) a transport card */
+/* Hotel / Perhatian boxes inside a transport card's body (collapse with it) */
 .hotel-banner{
-  margin:12px 14px 0;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
+  margin:12px 14px;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
   color:var(--amber-ink);border-radius:10px;padding:10px 12px;font-size:.84rem;line-height:1.5;
 }
 .warn-banner{
-  margin:12px 14px 0;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
+  margin:0 14px 14px;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
   color:var(--amber-ink-light);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.5;
 }
 
@@ -941,8 +941,8 @@ const destinations = [
         [`Kepulangan (lanjut ke Suzhou)`,`Sabtu, 10 Oktober, <b>15:00 tepat</b>, via HSR`],
         [`Stasiun acuan`,`<b>Wuxi Railway Station</b> (pusat kota) — <b>BUKAN Wuxi East</b>, sesuai catatan Anda karena East di luar pusat kota`],
       ],
-      warn:`### Hotel<br><br>| | | |---|---| | Nama | <b>Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)</b> | | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China | | Harga | Rp2.000.000 (4 malam) | | Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) | | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit | | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |<br><br>Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`,
-      hotel:``
+      warn:`Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`,
+      hotel:`<b>Hotel:</b> Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road) — Rp2.000.000 (4 malam). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: <b>Tanduqiao/Taihu Square Metro Station</b> — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).`
     },
 
     days:[
@@ -2062,10 +2062,14 @@ function renderTransport(t){
       </div>
       <div class="flight-meta">${t.meta.map(([l,v])=>`<div><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
       ${t.note ? `<div class="flight-note">${t.note}</div>` : ``}
+      ${t.hotel ? `<div class="hotel-banner">${t.hotel}</div>` : ``}
+      ${t.warn ? `<div class="warn-banner">${t.warn}</div>` : ``}
     `;
   } else {
     body = `
       <div class="transit-list">${t.items.map(([l,v])=>`<div class="transit-row"><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
+      ${t.hotel ? `<div class="hotel-banner">${t.hotel}</div>` : ``}
+      ${t.warn ? `<div class="warn-banner">${t.warn}</div>` : ``}
     `;
   }
 
@@ -2084,21 +2088,6 @@ function renderTransport(t){
     <div class="transport-body">${body}</div>
   `;
   return det;
-}
-
-function appendBanners(container, t){
-  if(t.hotel){
-    const el = document.createElement('div');
-    el.className = 'hotel-banner';
-    el.innerHTML = t.hotel;
-    container.appendChild(el);
-  }
-  if(t.warn){
-    const el = document.createElement('div');
-    el.className = 'warn-banner';
-    el.innerHTML = t.warn;
-    container.appendChild(el);
-  }
 }
 
 function renderDay(d, dest){
@@ -2213,7 +2202,6 @@ function renderCity(dest){
 
   const itinView = panel.querySelector('.subview.itinerary');
   itinView.appendChild(renderTransport(dest.transportPergi));
-  appendBanners(itinView, dest.transportPergi);
 
   dest.days.forEach(d=>{
     const dayEl = renderDay(d, dest);
@@ -2228,10 +2216,7 @@ function renderCity(dest){
   notesCard.innerHTML = `<summary>Catatan Penting Lainnya${CHEV}</summary><div class="notes-card-body"><ul>${dest.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
   itinView.appendChild(notesCard);
 
-  if(dest.transportPulang){
-    itinView.appendChild(renderTransport(dest.transportPulang));
-    appendBanners(itinView, dest.transportPulang);
-  }
+  if(dest.transportPulang) itinView.appendChild(renderTransport(dest.transportPulang));
 
   const lampiranView = panel.querySelector('.subview.lampiran');
   lampiranView.innerHTML = '';
