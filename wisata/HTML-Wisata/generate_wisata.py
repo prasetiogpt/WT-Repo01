@@ -44,6 +44,11 @@ WHAT IT PARSES
   format and same flight/transit auto-detection as the outbound leg.
   Rendered as a second collapsible transport card, placed after the
   "Catatan Penting Lainnya" notes card in the Itinerary tab.
+- Within either transport section's trailing prose, a standalone paragraph
+  starting with "**Hotel:** ..." is pulled out into its own `hotel` field
+  and rendered as a separate always-visible amber banner right below the
+  transport card (not inside its collapsible body) -> keeps hotel info
+  visible without needing to expand the transport card.
 - Each "## Hari N — Weekday, Date (Label)" section:
     - an optional blockquote right after the heading -> reserve/advisory
       (classified as "reserve" if it mentions "wajib reservasi" /
@@ -282,8 +287,10 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
 
     # split trailing prose into warning-style paragraphs (blockquotes, or
     # plain paragraphs that open with a "**⚠️ ...**"/"**Perhatian...**"-style
-    # bold warning marker) vs plain informational paragraphs
-    warn_paras, note_paras = [], []
+    # bold warning marker), a standalone "**Hotel:** ..." paragraph (shown
+    # as its own banner below the transport card, not inside it), vs plain
+    # informational paragraphs
+    warn_paras, note_paras, hotel_paras = [], [], []
     buf, buf_is_quote = [], None
 
     def flush():
@@ -292,6 +299,9 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
         text = " ".join(buf)
         if re.search(r"catatan biaya|sumber tempat", text, re.I):
             return  # dropped intentionally (shown elsewhere / not needed)
+        if re.match(r"^\*\*Hotel:\*\*", text):
+            hotel_paras.append(text)
+            return
         looks_like_warning = bool(re.match(r"^\*\*(⚠️|■|Perhatian)", text))
         (warn_paras if (buf_is_quote or looks_like_warning) else note_paras).append(text)
 
@@ -313,6 +323,7 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
     # joined result is already-final HTML (wrap later with jswrap, not jsval)
     note = "<br><br>".join(htmlify(p) for p in note_paras)
     warn = "<br><br>".join(htmlify(p) for p in warn_paras)
+    hotel = "<br><br>".join(htmlify(p) for p in hotel_paras)
 
     if m:
         code1, city1, term1, code2, city2, term2 = m.groups()
@@ -349,7 +360,8 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
 {meta_js}
       ],
       note:{jswrap(note)},
-      warn:{jswrap(warn)}
+      warn:{jswrap(warn)},
+      hotel:{jswrap(hotel)}
     }},"""
     else:
         items = []
@@ -366,7 +378,8 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
       items:[
 {items_js}
       ],
-      warn:{jswrap(warn if warn else note)}
+      warn:{jswrap(warn if warn else note)},
+      hotel:{jswrap(hotel)}
     }},"""
 
 

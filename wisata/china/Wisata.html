@@ -240,6 +240,16 @@ details.day > summary::-webkit-details-marker{display:none;}
 }
 .cadangan-nearby b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
 
+/* Standalone Hotel / Perhatian boxes, shown below (not inside) a transport card */
+.hotel-banner{
+  margin:12px 14px 0;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
+  color:var(--amber-ink);border-radius:10px;padding:10px 12px;font-size:.84rem;line-height:1.5;
+}
+.warn-banner{
+  margin:12px 14px 0;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
+  color:var(--amber-ink-light);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.5;
+}
+
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 .table-scroll{overflow-x:auto;border-top:1px solid var(--border);-webkit-overflow-scrolling:touch;}
 table.itin{border-collapse:collapse;width:100%;min-width:680px;table-layout:fixed;}
@@ -553,8 +563,9 @@ const destinations = [
         [`Persiapan`,`Tiba di bandara CGK sekitar 04:30-05:00 pagi`],
         [`Tiket + visa`,`Rp8.500.000 (gabungan tiket pesawat + visa, 3 orang)`],
       ],
-      note:`<b>Nonstop tanpa transit</b> — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.<br><br><b>Hotel:</b> Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). Rp3.800.000 (3 malam). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: <b>Fuqiao Metro Station (Line 3)</b> — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.<br><br><b>Transportasi:</b> semua "taksi" di itinerary ini maksudnya <b>Didi Rider</b> (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).`,
-      warn:`<b>⚠️ Perhatian: China Golden Week (1-7 Oktober)</b> — Trip ini bertepatan dengan libur Hari Nasional China, periode liburan domestik terbesar. Hotel, tiket HSR, dan tempat wisata jauh lebih ramai &amp; mahal dari kondisi normal. Booking secepatnya dan siapkan buffer waktu ekstra di setiap aktivitas. <b>Hari 2 (Niushoushan) risiko keramaian PALING TINGGI</b> karena bertepatan Golden Week + hari Minggu sekaligus — datang tepat jam buka untuk menghindari antrean terpanjang.`
+      note:`<b>Nonstop tanpa transit</b> — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.<br><br><b>Transportasi:</b> semua "taksi" di itinerary ini maksudnya <b>Didi Rider</b> (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).`,
+      warn:`<b>⚠️ Perhatian: China Golden Week (1-7 Oktober)</b> — Trip ini bertepatan dengan libur Hari Nasional China, periode liburan domestik terbesar. Hotel, tiket HSR, dan tempat wisata jauh lebih ramai &amp; mahal dari kondisi normal. Booking secepatnya dan siapkan buffer waktu ekstra di setiap aktivitas. <b>Hari 2 (Niushoushan) risiko keramaian PALING TINGGI</b> karena bertepatan Golden Week + hari Minggu sekaligus — datang tepat jam buka untuk menghindari antrean terpanjang.`,
+      hotel:`<b>Hotel:</b> Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). Rp3.800.000 (3 malam). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: <b>Fuqiao Metro Station (Line 3)</b> — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.`
     },
 
     days:[
@@ -668,7 +679,8 @@ const destinations = [
         [`Stasiun`,`Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat`],
         [`Beli tiket`,`App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah`],
       ],
-      warn:`<b>⚠️ Booking tiket HSR sesegera mungkin</b> — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama sekitar jam yang sama (±18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.`
+      warn:`<b>⚠️ Booking tiket HSR sesegera mungkin</b> — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama sekitar jam yang sama (±18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.`,
+      hotel:``
     },
 
     lampiran:[
@@ -929,7 +941,8 @@ const destinations = [
         [`Kepulangan (lanjut ke Suzhou)`,`Sabtu, 10 Oktober, <b>15:00 tepat</b>, via HSR`],
         [`Stasiun acuan`,`<b>Wuxi Railway Station</b> (pusat kota) — <b>BUKAN Wuxi East</b>, sesuai catatan Anda karena East di luar pusat kota`],
       ],
-      warn:`### Hotel<br><br>| | | |---|---| | Nama | <b>Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)</b> | | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China | | Harga | Rp2.000.000 (4 malam) | | Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) | | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit | | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |<br><br>Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`
+      warn:`### Hotel<br><br>| | | |---|---| | Nama | <b>Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)</b> | | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China | | Harga | Rp2.000.000 (4 malam) | | Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) | | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit | | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |<br><br>Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`,
+      hotel:``
     },
 
     days:[
@@ -1071,7 +1084,8 @@ const destinations = [
         [`Tiket`,`CNY 50/org (2 org, ±Rp265.000) — masuk budget Suzhou (kota tujuan), bukan Wuxi`],
         [`Beli tiket`,`App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun`],
       ],
-      warn:`<b>Catatan:</b> biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 &amp; catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.`
+      warn:`<b>Catatan:</b> biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 &amp; catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.`,
+      hotel:``
     },
 
     lampiran:[
@@ -1330,7 +1344,8 @@ const destinations = [
         [`Tiket HSR kedatangan`,`CNY 50/org (2 org, ±Rp265.000)`],
         [`Titik kedatangan → Hotel`,`Taksi/Didi singkat ke hotel`],
       ],
-      warn:`<b>Hotel:</b> Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). Rp2.000.000 (4 malam). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: <b>Nanyuanbeilu Station (南园北路, Line 5)</b>, ±140m/±2 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).<br><br>Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: <b>1 halte ke arah barat daya → Nanmen (南门)</b>, interchange ke <b>Line 4</b> — juga stasiun MRT untuk kawasan <b>Panmen Scenic Spots</b>, jadi kluster selatan kota tua praktis di depan hotel; <b>3 halte ke arah barat daya → Laodonglu (劳动路)</b>, interchange ke <b>Line 2</b> — jalur ke kawasan Hanshan Temple/Shantang Street; <b>Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)</b>, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5) pakai taksi/Didi langsung ATAU Line 5→Nanmen/Laodonglu→transfer Line 2/4 (interchange Line 2 &amp; Line 4).`
+      warn:`Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: <b>1 halte ke arah barat daya → Nanmen (南门)</b>, interchange ke <b>Line 4</b> — juga stasiun MRT untuk kawasan <b>Panmen Scenic Spots</b>, jadi kluster selatan kota tua praktis di depan hotel; <b>3 halte ke arah barat daya → Laodonglu (劳动路)</b>, interchange ke <b>Line 2</b> — jalur ke kawasan Hanshan Temple/Shantang Street; <b>Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)</b>, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5) pakai taksi/Didi langsung ATAU Line 5→Nanmen/Laodonglu→transfer Line 2/4 (interchange Line 2 &amp; Line 4).`,
+      hotel:`<b>Hotel:</b> Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). Rp2.000.000 (4 malam). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: <b>Nanyuanbeilu Station (南园北路, Line 5)</b>, ±140m/±2 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).`
     },
 
     days:[
@@ -1457,7 +1472,8 @@ const destinations = [
         [`Estimasi biaya HSR`,`±CNY 147–218/org kelas 2 (masuk budget Ningbo, tidak dihitung di sini)`],
         [`Hotel → Stasiun`,`Taksi/Didi langsung, ±27 menit`],
       ],
-      warn:``
+      warn:``,
+      hotel:``
     },
 
     lampiran:[
@@ -1739,7 +1755,8 @@ const destinations = [
         [`Durasi`,`±2 jam 35 menit (nonstop)`],
         [`Tiket`,`±Rp1.000.000/org`],
       ],
-      warn:`<b>Hotel:</b> Hong Kong H8 Hostel (Tsim Sha Tsui Store C2 Exit) — ⭐⭐ rating 8,7/10 (135 ulasan). Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Yau Tsim Mong District, Kowloon. ±2,4km (garis lurus) dari pusat kota. Anchor MRT: <b>Tsim Sha Tsui Metro Station</b>, &lt;100m/±1 menit jalan kaki (Exit C2, langsung di Nathan Road) — hotel persis di atas stasiun ini, jadi dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/titik lain di sekitar hotel: East Tsim Sha Tsui Metro Station (210m/±3 menit jalan kaki), Hong Kong West Kowloon Station (1,9km/±27 menit jalan kaki — dipakai untuk HSR ke Shenzhen Hari 3, lebih praktis naik taksi dengan koper), Hung Hom Station (1,7km, tidak relevan untuk rute trip ini), Hong Kong International Airport (32km/±30 menit naik mobil).<br><br><b>Kedatangan → Hotel:</b> Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut MTR 1 halte (Tsuen Wan Line) ke Tsim Sha Tsui Exit C2 — persis di depan hotel. <b>Bukan</b> shuttle gratis hotel — H8 Hostel tidak termasuk daftar hotel yang dilayani Airport Express Hotel Shuttle Bus (shuttle itu hanya untuk hotel besar berjaringan seperti Peninsula/Sheraton/Langham).<br><br><b>Transportasi lokal:</b> Octopus Card (kartu isi ulang, beli di bandara/stasiun MTR) untuk semua MTR/bus/ferry/tram — jauh lebih praktis daripada beli tiket satuan. Prioritas: MTR &gt; jalan kaki (banyak area pusat kota walkable) &gt; Star Ferry/tram &gt; taksi (hanya untuk bandara/bawaan berat).`
+      warn:`<b>Kedatangan → Hotel:</b> Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut MTR 1 halte (Tsuen Wan Line) ke Tsim Sha Tsui Exit C2 — persis di depan hotel. <b>Bukan</b> shuttle gratis hotel — H8 Hostel tidak termasuk daftar hotel yang dilayani Airport Express Hotel Shuttle Bus (shuttle itu hanya untuk hotel besar berjaringan seperti Peninsula/Sheraton/Langham).<br><br><b>Transportasi lokal:</b> Octopus Card (kartu isi ulang, beli di bandara/stasiun MTR) untuk semua MTR/bus/ferry/tram — jauh lebih praktis daripada beli tiket satuan. Prioritas: MTR &gt; jalan kaki (banyak area pusat kota walkable) &gt; Star Ferry/tram &gt; taksi (hanya untuk bandara/bawaan berat).`,
+      hotel:`<b>Hotel:</b> Hong Kong H8 Hostel (Tsim Sha Tsui Store C2 Exit) — ⭐⭐ rating 8,7/10 (135 ulasan). Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Yau Tsim Mong District, Kowloon. ±2,4km (garis lurus) dari pusat kota. Anchor MRT: <b>Tsim Sha Tsui Metro Station</b>, &lt;100m/±1 menit jalan kaki (Exit C2, langsung di Nathan Road) — hotel persis di atas stasiun ini, jadi dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/titik lain di sekitar hotel: East Tsim Sha Tsui Metro Station (210m/±3 menit jalan kaki), Hong Kong West Kowloon Station (1,9km/±27 menit jalan kaki — dipakai untuk HSR ke Shenzhen Hari 3, lebih praktis naik taksi dengan koper), Hung Hom Station (1,7km, tidak relevan untuk rute trip ini), Hong Kong International Airport (32km/±30 menit naik mobil).`
     },
 
     days:[
@@ -2045,12 +2062,10 @@ function renderTransport(t){
       </div>
       <div class="flight-meta">${t.meta.map(([l,v])=>`<div><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
       ${t.note ? `<div class="flight-note">${t.note}</div>` : ``}
-      ${t.warn ? `<div class="flight-warn">${t.warn}</div>` : ``}
     `;
   } else {
     body = `
       <div class="transit-list">${t.items.map(([l,v])=>`<div class="transit-row"><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
-      ${t.warn ? `<div class="flight-warn" style="margin-top:2px;">${t.warn}</div>` : ``}
     `;
   }
 
@@ -2069,6 +2084,21 @@ function renderTransport(t){
     <div class="transport-body">${body}</div>
   `;
   return det;
+}
+
+function appendBanners(container, t){
+  if(t.hotel){
+    const el = document.createElement('div');
+    el.className = 'hotel-banner';
+    el.innerHTML = t.hotel;
+    container.appendChild(el);
+  }
+  if(t.warn){
+    const el = document.createElement('div');
+    el.className = 'warn-banner';
+    el.innerHTML = t.warn;
+    container.appendChild(el);
+  }
 }
 
 function renderDay(d, dest){
@@ -2183,6 +2213,7 @@ function renderCity(dest){
 
   const itinView = panel.querySelector('.subview.itinerary');
   itinView.appendChild(renderTransport(dest.transportPergi));
+  appendBanners(itinView, dest.transportPergi);
 
   dest.days.forEach(d=>{
     const dayEl = renderDay(d, dest);
@@ -2197,7 +2228,10 @@ function renderCity(dest){
   notesCard.innerHTML = `<summary>Catatan Penting Lainnya${CHEV}</summary><div class="notes-card-body"><ul>${dest.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
   itinView.appendChild(notesCard);
 
-  if(dest.transportPulang) itinView.appendChild(renderTransport(dest.transportPulang));
+  if(dest.transportPulang){
+    itinView.appendChild(renderTransport(dest.transportPulang));
+    appendBanners(itinView, dest.transportPulang);
+  }
 
   const lampiranView = panel.querySelector('.subview.lampiran');
   lampiranView.innerHTML = '';
