@@ -17,14 +17,16 @@
 >
 > (16) **Regrouping ulang atas instruksi pengguna: Hari 2 = Lixi Park + Central Lihu Park + Liyuan Garden + Gonghu Bay Wetland Park; Hari 4 = Lihu National Wetland Park + Taihu Yuantouzhu + Bogong Island + Taihu Lake Promenade — keduanya diperpanjang sampai ±21:00.** Lihu National Wetland Park dipindah dari Cadangan ke Hari 4 (sudah terverifikasi dekat Yuantouzhu, sisi barat danau, sebelumnya salah diasumsikan dekat Lixi Park). ⚠️ Beberapa leg baru (Liyuan Garden→Gonghu Bay, hotel→Yuantouzhu langsung, Yuantouzhu→Lihu National Wetland Park, Bogong Island→Taihu Lake Promenade) memakai estimasi jarak/waktu dari leg yang mirip di versi sebelumnya — belum di-Amap-kan spesifik untuk kombinasi baru ini, cek Amap on-site kalau memungkinkan. Total Hari 2: 465→339 CNY (lengkap)/305 CNY (hemat, tanpa sepeda Gonghu Bay). Total Hari 4: 228→424 CNY. Grand Total lengkap: 1.217→1.287 CNY, hemat: 1.093→1.163 CNY.
 >
-> (17) **2026-08-22** — Hotel & tiket HSR kedatangan (dari Nanjing) sekarang masuk GRAND TOTAL Ringkasan Budget (sebelumnya "belum termasuk harga hotel"). Hotel Rp1.400.000 (4 malam, fixed), tiket HSR kedatangan ⚠️ estimasi ±CNY 65/org. GRAND TOTAL naik dari 1.287 CNY (Rp3.410.550, aktivitas saja) jadi **1.945 CNY (Rp5.155.050)**. Estimasi tiket HSR Wuxi→Suzhou (±CNY 20/org) ditambahkan ke "Informasi Transportasi Pulang" — biaya ini masuk budget Suzhou (kota tujuan), bukan Wuxi.
+> (17) **2026-08-22** — Hotel & tiket HSR kedatangan (dari Nanjing) sekarang masuk GRAND TOTAL Ringkasan Budget (sebelumnya "belum termasuk harga hotel"). Hotel Rp1.400.000 (4 malam, fixed), tiket HSR kedatangan ⚠️ estimasi ±CNY 65/org. GRAND TOTAL naik dari 1.287 CNY (Rp3.410.550, aktivitas saja) jadi **1.945 CNY (Rp5.155.050)**. Estimasi tiket HSR Wuxi→Suzhou ditambahkan ke "Informasi Transportasi Pulang" — biaya ini masuk budget Suzhou (kota tujuan), bukan Wuxi.
+>
+> (18) **2026-08-22 — koreksi harga dari pengguna**: tiket HSR kedatangan dari Nanjing dikoreksi dari estimasi ±CNY 65/org jadi harga fixed **CNY 200/org**; tiket HSR Wuxi→Suzhou (di "Informasi Transportasi Pulang") dikoreksi dari estimasi ±CNY 20/org jadi **CNY 50/org**; hotel dikoreksi dari Rp1.400.000 jadi **Rp2.000.000** (4 malam). GRAND TOTAL naik dari 1.945 CNY (Rp5.155.050) jadi **2.442 CNY (Rp6.470.550)**.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
 | Kedatangan | Selasa, 6 Oktober, **18:00 tepat**, via HSR dari Nanjing — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Tiket HSR kedatangan | ⚠️ estimasi ±CNY 65/org (2 org, ±44 menit G-train tercepat) — CNY 130, ±Rp344.500 |
+| Tiket HSR kedatangan | CNY 200/org (2 org, ±44 menit G-train tercepat) — CNY 400, ±Rp1.060.000 |
 | Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
 
@@ -34,7 +36,7 @@
 |---|---|
 | Nama | **Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road)** |
 | Alamat | No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000, China |
-| Harga | Rp1.400.000 (4 malam) |
+| Harga | Rp2.000.000 (4 malam) |
 | Ke Tanduqiao Metro Station | 732m jalan kaki, ±13 menit (terverifikasi Amap) |
 | Ke Taihu Square Metro Station | 860m jalan kaki, ±13 menit |
 | Ke Wuxi Railway Station | 3,9km, ±12 menit naik mobil (Didi) |
@@ -197,9 +199,9 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
 | Transport lokal (metro, Didi, bus wisata) | 341 | Rp903.650 |
-| Tiket HSR kedatangan dari Nanjing (2 org) | ≈130 | Rp344.500 |
-| Hotel (4 malam) | ≈528 | Rp1.400.000 |
-| **GRAND TOTAL** | **1.945** | **Rp5.155.050** |
+| Tiket HSR kedatangan dari Nanjing (2 org) | 400 | Rp1.060.000 |
+| Hotel (4 malam) | ≈755 | Rp2.000.000 |
+| **GRAND TOTAL** | **2.442** | **Rp6.470.550** |
 
 ---
 
@@ -222,7 +224,7 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 | Rute | Wuxi Railway Station → Suzhou via HSR |
 | Tanggal & Jam | Sabtu, 10 Oktober, **15:00 tepat** |
 | Durasi HSR | ±18–30 menit (Wuxi-Suzhou termasuk segmen HSR terpendek di jalur ini, banyak pilihan jadwal G/D-train) |
-| Tiket | ⚠️ estimasi ±CNY 20/org (2 org, ±Rp106.000) — masuk budget Suzhou (kota tujuan), bukan Wuxi |
+| Tiket | CNY 50/org (2 org, ±Rp265.000) — masuk budget Suzhou (kota tujuan), bukan Wuxi |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun |
 
 **Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.
