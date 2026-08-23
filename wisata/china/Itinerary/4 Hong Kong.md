@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Hong Kong Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti. (2) **2026-08-21 — dipersingkat jadi 2 malam/3 hari** (dari 4 hari/3 malam), data kedatangan & hotel sudah FIXED: kedatangan **11:00 siang** (bukan default sore) dengan tiket ±Rp1.000.000/org, hotel **H8 Hostel (Tsim Sha Tsui, C2 Exit)** ±Rp1.000.000/malam — kedua angka estimasi lama dihapus. Karena hanya 1 hari penuh tersisa, kluster **Lantau Island (Ngong Ping 360, Big Buddha, Tai O) dipindah ke Cadangan** — dipilih kluster Hong Kong Island (Peak/Central/Sheung Wan) sebagai satu-satunya hari penuh karena lebih dekat & efisien dari TST dibanding Lantau yang perlu 1 hari dedicated tersendiri. Kota berikutnya sudah diketahui: **Shenzhen** (moda transportasi & jadwal pasti belum ditentukan, tidak dihitung di budget Hong Kong ini). (3) **2026-08-21 — data hotel dilengkapi dari screenshot Amap pengguna**: jarak presisi ke MTR TST (<100m/±1 menit, Exit C2), MTR East TST (210m), Hong Kong West Kowloon Station (1,9km — dipakai sebagai titik keberangkatan HSR ke Shenzhen Futian, ±15-20 menit, ±HKD 70/org, masuk budget Shenzhen), dan bandara (32km/±30 menit). Hari 3 leg ke Shenzhen diperjelas: taksi ke West Kowloon Station (±HKD 40, ±10 menit) menggantikan baris generik "moda belum ditentukan" — Total Hari 3 230→270 HKD, Grand Total 1.428→1.468 HKD (Rp3.284.400→Rp3.376.400). (4) **2026-08-21 — koreksi salah hitung biaya makan**: semua baris makan (sarapan/siang/malam) di ketiga hari ternyata dihitung dengan kelipatan 4× harga per-org, bukan 2× (mis. "±HKD 35/org" tertulis totalnya 140, seharusnya 70 untuk 2 orang) — dikoreksi di semua baris. Total Hari 1 470→340, Hari 2 728→522, Hari 3 270→154, Grand Total 1.468→1.016 HKD (Rp3.376.400→Rp2.336.800). (5) **2026-08-21 — beberapa koreksi lagi**: klaim "shuttle bus gratis ke H8 Hostel" dari Airport Express DIHAPUS — ternyata salah, shuttle itu cuma untuk hotel besar berjaringan (Peninsula/Sheraton/dst), bukan H8 Hostel; diganti MTR 1 halte dari Kowloon Station (+HKD 10/2 org, Hari 1 total 340→350). Rencana Tian Tan Buddha dari bandara langsung TIDAK jadi dimasukkan (masih tahap diskusi) — itinerary Hari 1 tetap seperti sebelumnya. Baris HSR ke Shenzhen dipadatkan (hapus keterangan "masuk budget Shenzhen", kolom biaya jadi kosong). **Hotel & tiket pesawat kedatangan sekarang IKUT masuk Ringkasan Budget Total** (sebelumnya dipisah) — GRAND TOTAL keseluruhan trip Hong Kong sekarang **2.766 HKD / Rp6.359.800** (aktivitas 1.026 + hotel ≈870 + tiket pesawat ≈870). Perubahan konvensi ini juga berlaku untuk Nanjing/Wuxi/Suzhou tapi BELUM diterapkan ke file-nya — akan dikerjakan saat masing-masing kota itu direvisi berikutnya.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-21** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib diisi). Kedatangan Ningbo→Hong Kong via pesawat (default 17:00, belum ada jadwal aktual), kepulangan default 15:00 ke kota berikutnya (belum ditentukan). Kurs dipakai: **1 HKD = Rp2.300** (ditetapkan khusus trip ini, lihat [[exchange-rates]]). Hotel & tiket pesawat kedatangan masih ESTIMASI — update begitu ada booking pasti. (2) **2026-08-21 — dipersingkat jadi 2 malam/3 hari** (dari 4 hari/3 malam), data kedatangan & hotel sudah FIXED: kedatangan **11:00 siang** (bukan default sore) dengan tiket ±Rp1.000.000/org, hotel **H8 Hostel (Tsim Sha Tsui, C2 Exit)** ±Rp1.000.000/malam — kedua angka estimasi lama dihapus. Karena hanya 1 hari penuh tersisa, kluster **Lantau Island (Ngong Ping 360, Big Buddha, Tai O) dipindah ke Cadangan** — dipilih kluster Hong Kong Island (Peak/Central/Sheung Wan) sebagai satu-satunya hari penuh karena lebih dekat & efisien dari TST dibanding Lantau yang perlu 1 hari dedicated tersendiri. Kota berikutnya sudah diketahui: **Shenzhen** (moda transportasi & jadwal pasti belum ditentukan, tidak dihitung di budget Hong Kong ini). (3) **2026-08-21 — data hotel dilengkapi dari screenshot Amap pengguna**: jarak presisi ke MTR TST (<100m/±1 menit, Exit C2), MTR East TST (210m), Hong Kong West Kowloon Station (1,9km — dipakai sebagai titik keberangkatan HSR ke Shenzhen Futian, ±15-20 menit, ±HKD 70/org, masuk budget Shenzhen), dan bandara (32km/±30 menit). Hari 3 leg ke Shenzhen diperjelas: taksi ke West Kowloon Station (±HKD 40, ±10 menit) menggantikan baris generik "moda belum ditentukan" — Total Hari 3 230→270 HKD, Grand Total 1.428→1.468 HKD (Rp3.284.400→Rp3.376.400). (4) **2026-08-21 — koreksi salah hitung biaya makan**: semua baris makan (sarapan/siang/malam) di ketiga hari ternyata dihitung dengan kelipatan 4× harga per-org, bukan 2× (mis. "±HKD 35/org" tertulis totalnya 140, seharusnya 70 untuk 2 orang) — dikoreksi di semua baris. Total Hari 1 470→340, Hari 2 728→522, Hari 3 270→154, Grand Total 1.468→1.016 HKD (Rp3.376.400→Rp2.336.800). (5) **2026-08-21 — beberapa koreksi lagi**: klaim "shuttle bus gratis ke H8 Hostel" dari Airport Express DIHAPUS — ternyata salah, shuttle itu cuma untuk hotel besar berjaringan (Peninsula/Sheraton/dst), bukan H8 Hostel; diganti MTR 1 halte dari Kowloon Station (+HKD 10/2 org, Hari 1 total 340→350). Rencana Tian Tan Buddha dari bandara langsung TIDAK jadi dimasukkan (masih tahap diskusi) — itinerary Hari 1 tetap seperti sebelumnya. Baris HSR ke Shenzhen dipadatkan (hapus keterangan "masuk budget Shenzhen", kolom biaya jadi kosong). **Hotel & tiket pesawat kedatangan sekarang IKUT masuk Ringkasan Budget Total** (sebelumnya dipisah) — GRAND TOTAL keseluruhan trip Hong Kong sekarang **2.766 HKD / Rp6.359.800** (aktivitas 1.026 + hotel ≈870 + tiket pesawat ≈870). Perubahan konvensi ini juga berlaku untuk Nanjing/Wuxi/Suzhou tapi BELUM diterapkan ke file-nya — akan dikerjakan saat masing-masing kota itu direvisi berikutnya. (6) **2026-08-23 — tambah Hanyu Pinyin ke semua 17 entri Lampiran berhanzi** (skill poin 11: format wajib `Nama Inggris (Hanzi · Pīnyīn)` untuk destinasi di China, sebelumnya cuma Hanzi tanpa Pinyin) — user konfirmasi Pinyin tetap dipakai di Hong Kong meski daerah berbahasa Kanton, karena tujuannya membantu pembaca Mandarin, bukan merepresentasikan lafal Kanton lokal.
 
 ## Informasi Penerbangan
 
@@ -155,7 +155,7 @@ Octopus Card (beli & top-up di bandara/stasiun MTR). Hong Kong pakai HKD, sebagi
 
 ## Hari 1 — Senin, 2 November
 
-### Avenue of Stars (星光大道) ✅
+### Avenue of Stars (星光大道 · Xīngguāng Dàdào) ✅
 Promenade tepi Victoria Harbour di Tsim Sha Tsui, didedikasikan untuk industri film Hong Kong — menampilkan cap tangan bintang film lokal (termasuk Bruce Lee) di sepanjang jalan. Pemandangan skyline Hong Kong Island dari sisi ini jadi salah satu spot foto paling ikonik kota.
 
 ✅ Nama terverifikasi dari sumber resmi (avenueofstars.com.hk).
@@ -169,7 +169,7 @@ Promenade tepi Victoria Harbour di Tsim Sha Tsui, didedikasikan untuk industri f
 - Foto/info: https://www.avenueofstars.com.hk/en/
 - Video referensi: https://www.youtube.com/results?search_query=Avenue+of+Stars+Hong+Kong
 
-### A Symphony of Lights (幻彩詠香江) ✅
+### A Symphony of Lights (幻彩詠香江 · Huàncǎi Yǒng Xiāngjiāng) ✅
 Pertunjukan cahaya & laser multimedia yang menyinkronkan pencahayaan ±44 gedung di kedua sisi Victoria Harbour dengan musik, tayang setiap malam pukul 20:00 selama ±10 menit — pernah masuk Guinness World Records sebagai "Permanent Light and Sound Show" terbesar di dunia.
 
 ✅ Nama & jadwal terverifikasi dari sumber resmi.
@@ -183,7 +183,7 @@ Pertunjukan cahaya & laser multimedia yang menyinkronkan pencahayaan ±44 gedung
 - Foto/info: https://www.avenueofstars.com.hk/en/a-symphony-of-lights/
 - Video referensi: https://www.youtube.com/results?search_query=Symphony+of+Lights+Hong+Kong
 
-### Temple Street Night Market (廟街) ✅ — Plan-B Hari 1
+### Temple Street Night Market (廟街 · Miào Jiē) ✅ — Plan-B Hari 1
 Pasar malam legendaris Hong Kong sejak era 1920-an di kawasan Yau Ma Tei/Jordan — deretan kios jajanan, suvenir, dan peramal jalanan yang jadi salah satu simbol kehidupan malam Kowloon lama.
 
 ✅ Nama terverifikasi dari sumber yang konsisten (Wikipedia & travel guide resmi HKTB).
@@ -201,7 +201,7 @@ Pasar malam legendaris Hong Kong sejak era 1920-an di kawasan Yau Ma Tei/Jordan 
 
 ## Hari 2 — Selasa, 3 November
 
-### Star Ferry (天星小輪) ✅
+### Star Ferry (天星小輪 · Tiānxīng Xiǎolún) ✅
 Layanan feri lintas Victoria Harbour yang beroperasi sejak 1888, salah satu moda transportasi tertua & paling ikonik Hong Kong — National Geographic pernah menobatkannya sebagai salah satu "50 places of a lifetime". Tarifnya sangat murah untuk pemandangan skyline sekelas ini.
 
 ✅ Nama & info terverifikasi dari sumber resmi (starferry.com.hk).
@@ -215,7 +215,7 @@ Layanan feri lintas Victoria Harbour yang beroperasi sejak 1888, salah satu moda
 - Foto/info: https://www.starferry.com.hk/en/service
 - Video referensi: https://www.youtube.com/results?search_query=Star+Ferry+Hong+Kong
 
-### Man Mo Temple (文武廟) ✅
+### Man Mo Temple (文武廟 · Wénwǔ Miào) ✅
 Salah satu kuil tertua & paling terkenal Hong Kong, dibangun era 1840-an, didedikasikan untuk Dewa Sastra (Man) dan Dewa Perang (Mo). Terkenal dengan gulungan-gulungan dupa spiral besar yang menggantung dari langit-langit, menciptakan suasana khas berkabut asap dupa.
 
 ✅ Nama & jam terverifikasi dari sumber yang konsisten.
@@ -229,7 +229,7 @@ Salah satu kuil tertua & paling terkenal Hong Kong, dibangun era 1840-an, didedi
 - Foto/info: https://en.wikipedia.org/wiki/Man_Mo_Temple,_Sheung_Wan
 - Video referensi: https://www.youtube.com/results?search_query=Man+Mo+Temple+Hong+Kong
 
-### Central-Mid-Levels Escalator (中環至半山自動扶梯系統) ✅
+### Central-Mid-Levels Escalator (中環至半山自動扶梯系統 · Zhōnghuán Zhì Bànshān Zìdòng Fútī Xìtǒng) ✅
 Sistem eskalator luar ruangan terpanjang di dunia (±800m, naik ±135m), dibangun 1993 untuk membantu komuter Mid-Levels turun ke Central tanpa kendaraan. Melewati SoHo, Hollywood Road, dan berbagai kawasan bersejarah — jadi atraksi tersendiri, bukan cuma transportasi.
 
 ✅ Nama & fakta terverifikasi dari sumber resmi HKTB.
@@ -243,7 +243,7 @@ Sistem eskalator luar ruangan terpanjang di dunia (±800m, naik ±135m), dibangu
 - Foto/info: https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-mid-levels-escalator.html
 - Video referensi: https://www.youtube.com/results?search_query=Central+Mid-Levels+Escalator+Hong+Kong
 
-### PMQ (元創方) ✅
+### PMQ (元創方 · Yuán Chuàng Fāng) ✅
 Bekas asrama polisi menikah era 1951 (Police Married Quarters) yang direvitalisasi tahun 2014 jadi hub seni & desain — sekarang berisi puluhan studio desainer lokal, galeri, dan ruang pameran, dibangun di atas situs sekolah pertama Hong Kong untuk warga lokal (Central School, 1889).
 
 ✅ Nama terverifikasi dari sumber resmi (pmq.org.hk).
@@ -257,7 +257,7 @@ Bekas asrama polisi menikah era 1951 (Police Married Quarters) yang direvitalisa
 - Foto/info: https://en.wikipedia.org/wiki/PMQ_(Hong_Kong)
 - Video referensi: https://www.youtube.com/results?search_query=PMQ+Hong+Kong
 
-### Victoria Peak (太平山) ✅
+### Victoria Peak (太平山 · Tàipíng Shān) ✅
 Puncak tertinggi Hong Kong Island (±552m), jadi kawasan elit sejak era kolonial Inggris karena udaranya lebih sejuk. Pemandangan skyline & Victoria Harbour dari atas jadi salah satu ikon foto paling terkenal di dunia, terutama saat malam hari dengan lampu gedung menyala.
 
 ✅ Nama & info terverifikasi dari sumber resmi.
@@ -271,7 +271,7 @@ Puncak tertinggi Hong Kong Island (±552m), jadi kawasan elit sejak era kolonial
 - Foto/info: https://en.wikipedia.org/wiki/Victoria_Peak
 - Video referensi: https://www.youtube.com/results?search_query=Victoria+Peak+Hong+Kong
 
-### Hong Kong Park (香港公園) ✅
+### Hong Kong Park (香港公園 · Xiānggǎng Gōngyuán) ✅
 Taman kota seluas ±8 hektar di tengah distrik bisnis Admiralty/Central, dibuka 1991 di bekas markas militer Victoria Barracks — memadukan taman modern dengan bangunan kolonial bersejarah, air terjun buatan, dan aviary burung tropis.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
@@ -285,7 +285,7 @@ Taman kota seluas ±8 hektar di tengah distrik bisnis Admiralty/Central, dibuka 
 - Foto/info: https://en.wikipedia.org/wiki/Hong_Kong_Park
 - Video referensi: https://www.youtube.com/results?search_query=Hong+Kong+Park
 
-### M+ Museum (M+博物館) ⚠️ — Plan-B Hari 2
+### M+ Museum (M+博物館 · M+ Bówùguǎn) ⚠️ — Plan-B Hari 2
 Museum seni visual, desain, arsitektur, dan moving image kontemporer terbesar di Asia, dibuka 2021 di West Kowloon Cultural District — bangunan modern karya Herzog & de Meuron dengan koleksi mencakup seni Asia & internasional.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari sumber resmi berbahasa China.
@@ -303,7 +303,7 @@ Museum seni visual, desain, arsitektur, dan moving image kontemporer terbesar di
 
 ## Hari 3 — Rabu, 4 November
 
-### Kowloon Park (九龍公園) ✅
+### Kowloon Park (九龍公園 · Jiǔlóng Gōngyuán) ✅
 Taman kota seluas ±13 hektar persis di jantung Tsim Sha Tsui, dibangun di bekas Whitfield Barracks era militer Inggris (1910) — punya kolam flamingo, aviary burung, dan kolam renang publik, jadi oase hijau di tengah kepadatan Kowloon.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
@@ -321,7 +321,7 @@ Taman kota seluas ±13 hektar persis di jantung Tsim Sha Tsui, dibangun di bekas
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B — alasannya ditulis di masing-masing uraian.
 
-### Ngong Ping 360 Cable Car (昂坪360) ✅
+### Ngong Ping 360 Cable Car (昂坪360 · Ángpíng 360) ✅
 Sistem cable car sepanjang ±5,7km yang menghubungkan Tung Chung dengan dataran tinggi Ngong Ping di Lantau Island, dibuka 2006 — perjalanan ±25 menit menyuguhkan pemandangan Laut China Selatan, Bandara HKIA, dan Jembatan Hong Kong-Zhuhai-Macau dari udara.
 
 ✅ Nama & info terverifikasi dari sumber resmi (np360.com.hk).
@@ -337,7 +337,7 @@ Sistem cable car sepanjang ±5,7km yang menghubungkan Tung Chung dengan dataran 
 - Foto/info: https://en.wikipedia.org/wiki/Ngong_Ping_360
 - Video referensi: https://www.youtube.com/results?search_query=Ngong+Ping+360+Cable+Car
 
-### Tian Tan Buddha / Big Buddha (天壇大佛) ✅
+### Tian Tan Buddha / Big Buddha (天壇大佛 · Tiāntán Dàfó) ✅
 Patung Buddha perunggu duduk terbesar di dunia saat selesai dibangun tahun 1993, tinggi ±34m, menghadap ke utara — berbeda dari kebanyakan patung Buddha yang menghadap selatan, sebagai simbol menjaga rakyat China. Terletak di dataran tinggi Ngong Ping, satu kompleks dengan Po Lin Monastery.
 
 ✅ Nama & info terverifikasi dari sumber yang konsisten.
@@ -353,7 +353,7 @@ Patung Buddha perunggu duduk terbesar di dunia saat selesai dibangun tahun 1993,
 - Foto/info: https://en.wikipedia.org/wiki/Tian_Tan_Buddha
 - Video referensi: https://www.youtube.com/results?search_query=Tian+Tan+Buddha+Big+Buddha+Hong+Kong
 
-### Tai O Fishing Village (大澳漁村) ✅
+### Tai O Fishing Village (大澳漁村 · Dà'ào Yúcūn) ✅
 Desa nelayan tertua di Hong Kong, dihuni etnis Tanka sejak berabad lalu — terkenal dengan rumah-rumah panggung kayu (stilt houses) di atas sungai pasang-surut, dijuluki "Venice of the Orient". Masih jadi tempat produksi terasi udang & ikan asin tradisional.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
@@ -369,7 +369,7 @@ Desa nelayan tertua di Hong Kong, dihuni etnis Tanka sejak berabad lalu — terk
 - Foto/info: https://en.wikipedia.org/wiki/Tai_O
 - Video referensi: https://www.youtube.com/results?search_query=Tai+O+Fishing+Village+Hong+Kong
 
-### Chi Lin Nunnery (志蓮淨苑) ✅
+### Chi Lin Nunnery (志蓮淨苑 · Zhìlián Jìngyuàn) ✅
 Kompleks biara Buddha bergaya Dinasti Tang, dibangun 1934 & direkonstruksi 1998 tanpa satu paku pun (konstruksi kayu tradisional interlocking) — salah satu contoh arsitektur Tang terbesar di luar daratan China.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
@@ -385,7 +385,7 @@ Kompleks biara Buddha bergaya Dinasti Tang, dibangun 1934 & direkonstruksi 1998 
 - Foto/info: https://en.wikipedia.org/wiki/Chi_Lin_Nunnery
 - Video referensi: https://www.youtube.com/results?search_query=Chi+Lin+Nunnery+Hong+Kong
 
-### Nan Lian Garden (南蓮園池) ✅
+### Nan Lian Garden (南蓮園池 · Nánlián Yuánchí) ✅
 Taman klasik gaya Dinasti Tang seluas ±3,5 hektar, dibangun bersebelahan dengan Chi Lin Nunnery — memadukan kolam, batu, dan paviliun kayu dengan filosofi taman klasik China, jadi kontras hijau di tengah padatnya Kowloon.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
@@ -401,7 +401,7 @@ Taman klasik gaya Dinasti Tang seluas ±3,5 hektar, dibangun bersebelahan dengan
 - Foto/info: https://en.wikipedia.org/wiki/Nan_Lian_Garden
 - Video referensi: https://www.youtube.com/results?search_query=Nan+Lian+Garden+Hong+Kong
 
-### Wong Tai Sin Temple (黃大仙祠) ✅
+### Wong Tai Sin Temple (黃大仙祠 · Huáng Dàxiān Cí) ✅
 Kelenteng paling ramai dikunjungi di Hong Kong (±3 juta pengunjung/tahun), memadukan ajaran Taoisme, Buddhisme, dan Konfusianisme — terkenal dengan tradisi kau cim (mengocok batang ramalan bambu) untuk memohon petunjuk/keberuntungan.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
