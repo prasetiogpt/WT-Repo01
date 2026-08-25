@@ -2858,7 +2858,11 @@ function getSearchHistory(){
 }
 function saveSearchHistory(term){
   term = (term||'').trim();
-  if(term.length < 2) return; // jangan simpan 1 huruf/kosong, kebanyakan noise
+  // Dulu minimal 2 karakter (anggap 1 huruf = noise) - tapi buat pencarian Mandarin, 1 karakter
+  // hanzi itu pencarian yang valid dan umum (beda dari 1 huruf Latin yang jarang berguna
+  // sendirian). Sekarang cuma nolak yang benar-benar kosong (2026-08-15, user's request - paste
+  // 1 karakter dilaporkan tidak masuk history).
+  if(!term) return;
   try{
     let hist = getSearchHistory().filter(t => t !== term);
     hist.unshift(term);
