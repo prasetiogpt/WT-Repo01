@@ -175,13 +175,12 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .tw table tbody tr.playing-row td.cn:first-child {
   background: #81c784 !important;
 }
-/* Tombol ◀ (goto-prev) - baris merah muda buat "intip" baris sebelumnya yang barusan diputar
-   (2026-08-15). Beda dari .playing-row (cuma sel No.) - ini nyala di SELURUH baris karena
-   tujuannya beda: bukan penanda ambient "audio lagi jalan di sini", tapi tanda "ini yang kamu
-   scroll balik untuk dilihat", jadi harus lebih jelas kelihatan begitu scroll balik. Bisa
-   nyala BARENGAN dengan .playing-row di baris lain kalau Play All masih jalan sementara user
-   lagi intip baris lama - itu memang disengaja. */
-.tw table tbody tr.peeked-row td {
+/* Tombol ◀ (goto-prev) - sel No. merah muda buat "intip" baris sebelumnya yang barusan diputar
+   (2026-08-15, disamakan ke sel No. saja per revisi user - awalnya seluruh baris, ternyata
+   kebanyakan). Sama persis pola-nya dengan .playing-row (hijau), cuma beda warna dan class -
+   bisa nyala BARENGAN dengan .playing-row di baris lain kalau Play All masih jalan sementara
+   user lagi intip baris lama - itu memang disengaja. */
+.tw table tbody tr.peeked-row td.cn:first-child {
   background: #f8bbd0 !important;
 }
 .tw table tbody tr:nth-child(even) td:first-child,
@@ -2917,7 +2916,7 @@ function debounce(fn, ms=300){let t;return function(...a){clearTimeout(t);t=setT
 // karena app dibuka via file:// - lihat diskusi sebelumnya). Ini cuma mengingat kata kunci yang
 // PERNAH diketik/dicari di kotak ini sebelumnya.
 const SEARCH_HISTORY_KEY = 'searchHistory';
-const SEARCH_HISTORY_MAX = 25;
+const SEARCH_HISTORY_MAX = 100;
 function getSearchHistory(){
   try{ return JSON.parse(localStorage.getItem(SEARCH_HISTORY_KEY) || '[]'); }catch(e){ return []; }
 }
