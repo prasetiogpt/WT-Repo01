@@ -417,10 +417,12 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
-      <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
-      <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
-      <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
-      <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
+        <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
+        <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
+        <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
+        <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
+      </div>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
     <div class="col-toggle-container" id="globalColToggles">
@@ -1213,6 +1215,13 @@ function updatePlaybackControlsVisibility(){
   document.querySelectorAll('.playback-only-control').forEach(el=>{
     el.style.display = isReference ? 'none' : '';
   });
+  // Status pesan (mis. "Play all dihentikan", "Mode MP3...") yang nyangkut dari sheet
+  // sebelumnya tidak relevan lagi begitu pindah ke Bank Referensi - tidak ada fitur play sama
+  // sekali di sini (lihat buildReferenceRowHTML) - jadi dibersihkan supaya tidak membingungkan
+  // (2026-08-15, user's request). Aman dibersihkan tanpa syarat: tidak ada kode lain yang
+  // men-set uploadMsg sebagai bagian dari switchTab() yang sama, jadi tidak ada pesan Done-nya
+  // sendiri yang ikut ke-wipe.
+  if(isReference) setUploadMsg('');
 }
 window.updatePlaybackControlsVisibility = updatePlaybackControlsVisibility;
 
@@ -2843,7 +2852,7 @@ function debounce(fn, ms=300){let t;return function(...a){clearTimeout(t);t=setT
 // karena app dibuka via file:// - lihat diskusi sebelumnya). Ini cuma mengingat kata kunci yang
 // PERNAH diketik/dicari di kotak ini sebelumnya.
 const SEARCH_HISTORY_KEY = 'searchHistory';
-const SEARCH_HISTORY_MAX = 15;
+const SEARCH_HISTORY_MAX = 25;
 function getSearchHistory(){
   try{ return JSON.parse(localStorage.getItem(SEARCH_HISTORY_KEY) || '[]'); }catch(e){ return []; }
 }
@@ -2861,16 +2870,19 @@ function saveSearchHistory(term){
 // - blur/Enter -> nangkep hasil AKHIR dari yang diketik manual, bukan tiap jeda ketik (kalau
 //   pakai debounce biasa, jeda ketik di tengah kata - mis. "dang" sebelum lanjut jadi "dangzhu" -
 //   ikut kesimpan sebagai entri terpisah).
-// - input dengan inputType insertFromPaste/insertFromDrop -> nangkep paste/drop secara terpisah
-//   dan LANGSUNG (tanpa nunggu blur/Enter), karena user yang paste buat cari biasanya tidak
-//   pernah blur atau tekan Enter (pencarian sudah live/instan) - sebelumnya paste jadi tidak
-//   kesimpan sama sekali karena cuma nunggu blur/Enter.
+// - event 'paste' native -> nangkep paste secara terpisah dan LANGSUNG (tanpa nunggu blur/
+//   Enter), karena user yang paste buat cari biasanya tidak pernah blur atau tekan Enter
+//   (pencarian sudah live/instan). Dulu paste dideteksi lewat InputEvent.inputType
+//   ('insertFromPaste') di listener 'input', tapi itu ternyata tidak selalu terisi di semua
+//   browser HP/in-app webview (2026-08-15, dilaporkan masih belum kesimpan) - event 'paste'
+//   asli jauh lebih universal didukung. Nilai input belum ke-update saat event 'paste' sendiri
+//   masih berjalan (browser belum sempat menyisipkan teksnya), jadi baca search.value harus
+//   ditunda ke tick berikutnya (setTimeout 0), bukan langsung di dalam handler.
 function wireSearchHistorySaving(search){
   search.addEventListener('change', ()=>saveSearchHistory(search.value));
   search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
-  search.addEventListener('input', e=>{
-    if(e.inputType==='insertFromPaste' || e.inputType==='insertFromDrop') saveSearchHistory(search.value);
-  });
+  search.addEventListener('paste', ()=>{ setTimeout(()=>saveSearchHistory(search.value), 0); });
+  search.addEventListener('drop', ()=>{ setTimeout(()=>saveSearchHistory(search.value), 0); });
 }
 // Dipakai bareng oleh sheet biasa (attachPanelEvents) dan Bank Referensi (attachReferenceEvents).
 // applyFilterFn dipanggil saat user pilih salah satu riwayat dari dropdown.
