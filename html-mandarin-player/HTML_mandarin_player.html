@@ -1409,6 +1409,9 @@ function stopPlayAll(){
   clearPlayTimer();
   paused=false;
   clearPlayingRowHighlight();
+  clearPeekHighlight(); // tanda pink (◀) juga harus lepas di sini, bukan cuma lewat tombol 🎯 -
+                         // sebelumnya nyangkut terus walau Play All di-stop/diulang dari awal
+                         // (2026-08-15, dilaporkan baris 2e tidak pernah hilang pink-nya)
   combineHighlightActive = false;
   stopCombineHighlightWatcher();
   stopActiveAudio();
@@ -1970,6 +1973,7 @@ function stopRowPlay(btn) {
     if (activePlayButton === btn) activePlayButton = null;
   }
   clearPlayingRowHighlight();
+  clearPeekHighlight();
   setPauseButtonText();
   setUploadMsg('■ Play baris dihentikan.');
 }
