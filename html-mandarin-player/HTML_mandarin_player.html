@@ -2271,7 +2271,7 @@ function toolbarHTML(tid){
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🕘</option></select>
+      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
       <label class="fl"><input type="checkbox" data-filter-excl> Excl.</label>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked checked> ✓</label>
       <label class="range-label">
@@ -2486,7 +2486,7 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
-    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🕘</option></select></div>
+    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
   <div class="sb"></div></div>`;
   refreshTabs();
@@ -2907,9 +2907,18 @@ function wireSearchHistory(panel, search, applyFilterFn){
   if(!historySel || !search) return;
   const refreshOptions = () => {
     const hist = getSearchHistory();
+    // Placeholder (posisi diam/tertutup dropdown) diganti dari jam (🕘, tidak ada artinya - jam
+    // berapa? tidak relevan) jadi kaca pembesar (🔍, menandakan "cari dari riwayat") - dan Hapus
+    // riwayat dipindah ke ATAS daftar (2026-08-15, user's request), langsung di bawah placeholder,
+    // bukan lagi di paling bawah. Placeholder sendiri TETAP dipertahankan (bukan dihapus total)
+    // supaya dropdown punya tampilan "netral" buat kembali setelah user pilih satu riwayat -
+    // kalau Hapus riwayat yang jadi opsi index-0, box akan balik menampilkan "Hapus riwayat"
+    // tiap habis pilih riwayat (karena historySel.value di-reset ke '' di bawah), padahal tidak
+    // ada yang dihapus - membingungkan walau secara fungsi tetap aman (tidak ke-trigger tanpa
+    // dipilih ulang secara eksplisit).
     const items = hist.map(t => `<option value="${escapeHTML(t)}">${escapeHTML(t)}</option>`).join('');
     const clearOpt = hist.length ? `<option value="${CLEAR_HISTORY_SENTINEL}">🗑 Hapus riwayat</option>` : '';
-    historySel.innerHTML = '<option value="">🕘</option>' + items + clearOpt;
+    historySel.innerHTML = '<option value="">🔍</option>' + clearOpt + items;
   };
   historySel.onmousedown = refreshOptions;
   historySel.onfocus = refreshOptions;
@@ -3629,7 +3638,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🕘</option></select>
+      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
       <label class="fl"><input type="checkbox" data-filter-excl=""> Excl.</label>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked="" checked=""> ✓</label>
       <label class="range-label">
