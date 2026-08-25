@@ -2866,36 +2866,60 @@ function saveSearchHistory(term){
     localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(hist));
   }catch(e){}
 }
+function clearSearchHistory(){
+  try{ localStorage.removeItem(SEARCH_HISTORY_KEY); }catch(e){}
+}
 // Kapan riwayat disimpan (dipakai bareng oleh sheet biasa & Bank Referensi):
 // - blur/Enter -> nangkep hasil AKHIR dari yang diketik manual, bukan tiap jeda ketik (kalau
 //   pakai debounce biasa, jeda ketik di tengah kata - mis. "dang" sebelum lanjut jadi "dangzhu" -
 //   ikut kesimpan sebagai entri terpisah).
-// - event 'paste' native -> nangkep paste secara terpisah dan LANGSUNG (tanpa nunggu blur/
-//   Enter), karena user yang paste buat cari biasanya tidak pernah blur atau tekan Enter
-//   (pencarian sudah live/instan). Dulu paste dideteksi lewat InputEvent.inputType
-//   ('insertFromPaste') di listener 'input', tapi itu ternyata tidak selalu terisi di semua
-//   browser HP/in-app webview (2026-08-15, dilaporkan masih belum kesimpan) - event 'paste'
-//   asli jauh lebih universal didukung. Nilai input belum ke-update saat event 'paste' sendiri
-//   masih berjalan (browser belum sempat menyisipkan teksnya), jadi baca search.value harus
-//   ditunda ke tick berikutnya (setTimeout 0), bukan langsung di dalam handler.
+// - lonjakan panjang value dalam SATU event 'input' -> ini cara deteksi paste yang dipakai
+//   sekarang (2026-08-15, revisi ke-2). Percobaan sebelumnya pakai InputEvent.inputType
+//   ('insertFromPaste') lalu event 'paste' native - dua-duanya ternyata TIDAK konsisten
+//   kejadiannya lintas keyboard/browser HP (dilaporkan sama sekali tidak masuk di HP, di laptop
+//   pun kadang masuk kadang tidak - kemungkinan besar karena banyak keyboard Android/IME/strip
+//   clipboard Gboard menyisipkan teks tanpa menembak event 'paste' ataupun mengisi inputType
+//   dengan benar). Ketikan manual - secepat apapun - HAMPIR SELALU menambah PERSIS 1 karakter
+//   per event 'input' (tiap tombol keyboard = 1 event terpisah), sedangkan paste/autofill/commit
+//   IME menyisipkan banyak karakter SEKALIGUS dalam satu event. Jadi kalau panjang value
+//   melompat lebih dari 1 karakter dalam satu event 'input', itu praktis pasti bukan ketikan -
+//   deteksi ini tidak bergantung pada event/inputType spesifik apapun, jadi harusnya konsisten
+//   di semua browser/keyboard.
 function wireSearchHistorySaving(search){
+  let lastLen = search.value.length;
   search.addEventListener('change', ()=>saveSearchHistory(search.value));
   search.addEventListener('keydown', e=>{ if(e.key==='Enter') saveSearchHistory(search.value); });
-  search.addEventListener('paste', ()=>{ setTimeout(()=>saveSearchHistory(search.value), 0); });
-  search.addEventListener('drop', ()=>{ setTimeout(()=>saveSearchHistory(search.value), 0); });
+  search.addEventListener('input', ()=>{
+    const newLen = search.value.length;
+    if(newLen - lastLen > 1) saveSearchHistory(search.value);
+    lastLen = newLen;
+  });
 }
 // Dipakai bareng oleh sheet biasa (attachPanelEvents) dan Bank Referensi (attachReferenceEvents).
 // applyFilterFn dipanggil saat user pilih salah satu riwayat dari dropdown.
+// Nilai sentinel buat opsi "Hapus riwayat" di dropdown yang sama - dipakai bareng dropdown
+// pencarian riwayat (bukan tombol terpisah) supaya tidak nambah elemen baru di toolbar yang
+// sudah padat, sekaligus otomatis ikut nempel di kedua jenis tab (sheet biasa & Bank Referensi)
+// yang sama-sama sudah punya dropdown ini (2026-08-15, user's request).
+const CLEAR_HISTORY_SENTINEL = '__CLEAR_SEARCH_HISTORY__';
 function wireSearchHistory(panel, search, applyFilterFn){
   const historySel = panel.querySelector('.sr-history-select');
   if(!historySel || !search) return;
   const refreshOptions = () => {
     const hist = getSearchHistory();
-    historySel.innerHTML = '<option value="">🕘</option>' + hist.map(t => `<option value="${escapeHTML(t)}">${escapeHTML(t)}</option>`).join('');
+    const items = hist.map(t => `<option value="${escapeHTML(t)}">${escapeHTML(t)}</option>`).join('');
+    const clearOpt = hist.length ? `<option value="${CLEAR_HISTORY_SENTINEL}">🗑 Hapus riwayat</option>` : '';
+    historySel.innerHTML = '<option value="">🕘</option>' + items + clearOpt;
   };
   historySel.onmousedown = refreshOptions;
   historySel.onfocus = refreshOptions;
   historySel.onchange = () => {
+    if(historySel.value === CLEAR_HISTORY_SENTINEL){
+      historySel.value = '';
+      if(confirm('Hapus semua riwayat pencarian?')) clearSearchHistory();
+      refreshOptions();
+      return;
+    }
     if(historySel.value){
       search.value = historySel.value;
       applyFilterFn();
