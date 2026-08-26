@@ -116,6 +116,7 @@ header.top{
 .theme-toggle svg,.icon-btn svg{width:16px;height:16px;}
 .icon-btn.active{background:var(--amber-soft);border-color:var(--amber);color:var(--amber-ink);}
 body.hide-reviewed .lampiran-item.reviewed{display:none;}
+body.hide-reviewed table.itin tbody tr.done{display:none;}
 .lampiran-item-head .lampiran-check{flex:0 0 auto;margin:0;}
 
 /* city tabs (top hierarchy) */
@@ -386,7 +387,7 @@ footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-to
         <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button"></button>
         <button class="icon-btn" id="collapse-all-btn" aria-label="Tutup semua" title="Tutup semua" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M4 10l4-4 4 4M4 6l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="icon-btn" id="expand-all-btn" aria-label="Buka semua" title="Buka semua" type="button" style="display:none"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <button class="icon-btn" id="hide-reviewed-btn" aria-label="Sembunyikan yang sudah ditinjau" title="Sembunyikan yang sudah ditinjau (Lampiran)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M2 2l12 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <button class="icon-btn" id="hide-reviewed-btn" aria-label="Sembunyikan yang sudah ditandai" title="Sembunyikan yang sudah ditandai (Itinerary + Lampiran)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M2 2l12 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
         <button class="icon-btn" id="download-html-btn" aria-label="Simpan salinan HTML" title="Simpan salinan HTML (termasuk centang saat ini)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5v8.5M8 10l-3-3M8 10l3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12v1.5A1.5 1.5 0 0 0 3.5 15h9A1.5 1.5 0 0 0 14 13.5V12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
       </div>
     </div>
