@@ -180,23 +180,16 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .tw table tbody tr:nth-child(even):hover td:nth-child(2) {
   background: #fef3e2 !important;
 }
-/* Highlight baris play/peek HARUS ditaruh SETELAH semua aturan :hover/:nth-child(even) di atas -
+/* Highlight baris play HARUS ditaruh SETELAH semua aturan :hover/:nth-child(even) di atas -
    selector-nya (.playing-row td.cn:first-child, 4 kelas) spesifisitasnya PERSIS SAMA dengan
    aturan :nth-child(even):hover di atas (juga 4 kelas), jadi kalau ditaruh SEBELUM, baris genap
    yang disentuh/hover akan menang (urutan lebih akhir menang saat spesifisitas seri) dan
    highlight-nya hilang/ketiban warna sentuh - persis bug yang dilaporkan (2026-08-15, "kadang
-   tidak muncul, hilang ketika baris disentuh"). Warna disamakan dengan tombol play aktif
-   (var(--gold), kuning) per revisi user - sebelumnya hijau. */
+   tidak muncul, hilang ketika baris disentuh"). Warna tetap hijau (bukan disamakan warna tombol
+   play aktif seperti sempat dicoba - dibatalkan karena butuh 2 class terpisah biar Play All dan
+   play per-baris beda warna, user memilih tetap simpel 1 warna/1 class). */
 .tw table tbody tr.playing-row td.cn:first-child {
-  background: var(--gold) !important;
-}
-/* Tombol ◀ (goto-prev) - sel No. merah muda buat "intip" baris sebelumnya yang barusan diputar
-   (2026-08-15, disamakan ke sel No. saja per revisi user - awalnya seluruh baris, ternyata
-   kebanyakan). Sama persis pola-nya dengan .playing-row, cuma beda warna dan class - bisa nyala
-   BARENGAN dengan .playing-row di baris lain kalau Play All masih jalan sementara user lagi
-   intip baris lama - itu memang disengaja. */
-.tw table tbody tr.peeked-row td.cn:first-child {
-  background: #f8bbd0 !important;
+  background: #81c784 !important;
 }
 @media (max-width: 768px) {
   /* Ini rule .tw yang SEBENARNYA menang di HP (media query mobile, datang paling akhir di file) -
@@ -1416,9 +1409,6 @@ function stopPlayAll(){
   clearPlayTimer();
   paused=false;
   clearPlayingRowHighlight();
-  clearPeekHighlight(); // tanda pink (◀) juga harus lepas di sini, bukan cuma lewat tombol 🎯 -
-                         // sebelumnya nyangkut terus walau Play All di-stop/diulang dari awal
-                         // (2026-08-15, dilaporkan baris 2e tidak pernah hilang pink-nya)
   combineHighlightActive = false;
   stopCombineHighlightWatcher();
   stopActiveAudio();
@@ -1518,62 +1508,11 @@ function shuffleRows(rows){
 }
 function setPlayingRowHighlight(tr){
   qa('tr.playing-row').forEach(r=>r.classList.remove('playing-row'));
-  if(tr){
-    tr.classList.add('playing-row');
-    pushPlayHistory(tr);
-  }
+  if(tr) tr.classList.add('playing-row');
 }
 function clearPlayingRowHighlight(){
   qa('tr.playing-row').forEach(r=>r.classList.remove('playing-row'));
 }
-
-// Riwayat baris yang barusan diputar (2026-08-15) - dipakai tombol ◀ (data-goto-prev) supaya
-// user bisa "intip" balik baris-baris sebelumnya tanpa menghentikan/mengganggu Play All yang
-// sedang jalan. Cuma navigasi visual (scroll + tanda beda warna), TIDAK memutar ulang audio -
-// itu keputusan sadar, bukan keterbatasan: mode Random bikin urutan baris tidak sama dengan
-// urutan tabel, jadi "lihat baris sebelumnya" (bukan "dengar lagi") itu yang sebenarnya
-// dibutuhkan (lihat diskusi). Ditaruh di sini, di titik satu-satunya (setPlayingRowHighlight)
-// yang dipanggil oleh SEMUA jalur play - Single, Pair, Alt/Combine, maupun play per-baris -
-// jadi tidak perlu nyentuh & duplikasi logika di tiap jalur itu.
-let playHistory = [];
-const PLAY_HISTORY_MAX = 10;
-let peekIndex = null; // null = belum/tidak lagi mengintip; angka = index di playHistory yang lagi ditandai pink
-function pushPlayHistory(tr){
-  // Dedupe transisi ke baris yang SAMA (mis. mode V1-V4 dalam satu baris manggil
-  // setPlayingRowHighlight berkali-kali untuk tr yang sama sebelum pindah baris) - riwayat cuma
-  // mau mencatat pindah baris, bukan tiap panggilan mode.
-  if(playHistory[playHistory.length-1] === tr) return;
-  playHistory.push(tr);
-  if(playHistory.length > PLAY_HISTORY_MAX) playHistory.shift();
-}
-function setPeekHighlight(tr){
-  qa('tr.peeked-row').forEach(r=>r.classList.remove('peeked-row'));
-  if(tr) tr.classList.add('peeked-row');
-}
-function clearPeekHighlight(){
-  qa('tr.peeked-row').forEach(r=>r.classList.remove('peeked-row'));
-  peekIndex = null;
-}
-// Tombol ◀ - mundur satu langkah tiap diklik, dimulai dari SATU baris SEBELUM baris live
-// sekarang (baris live sendiri sudah kelihatan lewat highlight hijau, tidak perlu diulang di
-// sini). Berhenti (clamp) di baris tertua yang masih tersimpan (maks 10 terakhir) - tidak ada
-// wraparound. Tidak menyentuh Play All sama sekali (baca komentar di atas).
-function goToPreviousPlayedRow(){
-  if(peekIndex === null){
-    if(playHistory.length < 2){ setUploadMsg('Belum ada baris sebelumnya untuk dilihat.'); return; }
-    peekIndex = playHistory.length - 2;
-  } else if(peekIndex > 0){
-    peekIndex--;
-  } else {
-    setUploadMsg('Sudah baris paling awal yang tersimpan (maks ' + PLAY_HISTORY_MAX + ' terakhir).');
-    return;
-  }
-  const tr = playHistory[peekIndex];
-  if(!tr || !tr.isConnected){ setUploadMsg('Baris itu sudah tidak ada di tabel.'); return; }
-  setPeekHighlight(tr);
-  tr.scrollIntoView({behavior:'smooth', block:'center'});
-}
-window.goToPreviousPlayedRow = goToPreviousPlayedRow;
 // Live row highlight for Alt/Combine playback. Runs ONLY while the tab is visible - this is the
 // load-bearing invariant that keeps screen-off playback JS-free (skill Rule 3). The timer just
 // reads currentTime off the already-playing <audio> element and toggles a CSS class; it never
@@ -1584,30 +1523,17 @@ function combineHighlightTick(){
   const audio = activeAudio;
   if(!audio) return;
   const t = audio.currentTime;
-  let matchIdx = -1;
-  for(let i=0;i<combinedRowOffsets.length;i++){
-    if(combinedRowOffsets[i].time <= t) matchIdx = i; else break;
+  let match = null;
+  for(const entry of combinedRowOffsets){
+    if(entry.time <= t) match = entry; else break;
   }
-  if(matchIdx < 0) return;
-  const match = combinedRowOffsets[matchIdx];
-  if(match.tr === combineHighlightedTr) return;
-  // Riwayat (playHistory, dipakai tombol ◀) sebelumnya cuma ketambahan baris yang PALING BARU
-  // di sini, walau layar mati lama dan audio sudah lompat jauh - karena timer ini (dan seluruh
-  // JS lain) memang WAJIB berhenti total selama layar mati (skill Rule 3, screen-off harus
-  // bebas-JS). Efeknya, begitu layar nyala lagi, tombol ◀ mundur ke baris SEBELUM layar mati,
-  // bukan baris sebelum posisi SEKARANG - baris-baris yang lewat selama mati jadi lubang di
-  // riwayat (2026-08-15, dilaporkan "tekan back ke nomor yang salah"). combinedRowOffsets sudah
-  // berisi jadwal LENGKAP tiap baris (dibangun sekali saat Pre-Combine, bukan diisi live), jadi
-  // begitu layar nyala lagi kita bisa susulkan sekaligus semua baris yang terlewat - dihitung
-  // SEKALI saat ini saja (momen layar baru nyala), bukan dengan JS yang terus jalan selama mati.
-  const lastIdx = combinedRowOffsets.findIndex(e => e.tr === combineHighlightedTr);
-  const startIdx = (lastIdx >= 0 && lastIdx < matchIdx) ? lastIdx + 1 : matchIdx;
-  for(let i=startIdx; i<matchIdx; i++) pushPlayHistory(combinedRowOffsets[i].tr);
-  // Highlight only, no scrollIntoView - matches MP3/TTS mode's setPlayingRowHighlight() call
-  // sites exactly, none of which auto-scroll either. An earlier version scrolled on every row
-  // change, which fought the user's manual scrolling.
-  setPlayingRowHighlight(match.tr);
-  combineHighlightedTr = match.tr;
+  if(match && match.tr !== combineHighlightedTr){
+    combineHighlightedTr = match.tr;
+    // Highlight only, no scrollIntoView - matches MP3/TTS mode's setPlayingRowHighlight() call
+    // sites exactly, none of which auto-scroll either. An earlier version scrolled on every row
+    // change, which fought the user's manual scrolling.
+    setPlayingRowHighlight(match.tr);
+  }
 }
 function stopCombineHighlightWatcher(){
   if(combineHighlightTimer){ clearInterval(combineHighlightTimer); combineHighlightTimer=null; }
@@ -1993,7 +1919,6 @@ function stopRowPlay(btn) {
     if (activePlayButton === btn) activePlayButton = null;
   }
   clearPlayingRowHighlight();
-  clearPeekHighlight();
   setPauseButtonText();
   setUploadMsg('■ Play baris dihentikan.');
 }
@@ -2345,7 +2270,7 @@ function applyVoicePreset(tid, presetNum){
 }
 window.applyVoicePreset = applyVoicePreset;
 function dropdownPlayControlsHTML(tid){
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button><button class="btn btn-check btn-icon" data-goto-prev="${tid}" type="button" title="Lihat baris sebelumnya yang barusan diputar (khusus mode Random)" style="display:none">◀</button>`;
+  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
 }
 
 function toolbarHTML(tid){
@@ -2931,11 +2856,6 @@ function syncPanelPlayOptions(panel){
   table.dataset.random = randomCb && randomCb.checked ? '1' : '0';
   panel.dataset.loop = table.dataset.loop;
   panel.dataset.random = table.dataset.random;
-  // Tombol ◀ (goto-prev) cuma relevan di mode Random - kalau tidak random, urutan baris = urutan
-  // tabel, jadi tinggal scroll ke atas cari baris yang ragu (sudah cukup, tidak perlu tombol
-  // ini). Disembunyikan/dimunculkan mengikuti status checkbox Rand (2026-08-15, user's request).
-  const gotoPrevBtn = panel.querySelector('[data-goto-prev]');
-  if(gotoPrevBtn) gotoPrevBtn.style.display = (randomCb && randomCb.checked) ? '' : 'none';
 }
 
 function debounce(fn, ms=300){let t;return function(...a){clearTimeout(t);t=setTimeout(()=>fn(...a),ms);}}
@@ -3457,13 +3377,11 @@ function init(){
     if(saveAllBtn){ e.preventDefault(); saveAllToClip(saveAllBtn); return; }
     const clearGlobal = e.target.closest('#globalClearClip');
     if(clearGlobal){ e.preventDefault(); clearAllAccum(); clearGlobal.style.opacity='0.5'; setTimeout(()=>{ clearGlobal.style.opacity=''; }, 400); return; }
-    const t=e.target.closest('[data-check-all],[data-uncheck-all],[data-final-play],[data-final-pair],[data-final-dropdown],[data-final-pause],[data-final-stop],[data-clear-accum],[data-ytube-open],[data-goto-active],[data-goto-prev]');
+    const t=e.target.closest('[data-check-all],[data-uncheck-all],[data-final-play],[data-final-pair],[data-final-dropdown],[data-final-pause],[data-final-stop],[data-clear-accum],[data-ytube-open],[data-goto-active]');
     if(!t) return;
     e.preventDefault(); e.stopPropagation();
     if(t.hasAttribute('data-ytube-open')){ const url=t.dataset.ytubeUrl; if(url) window.open(url, '_blank', 'noopener'); return; }
-    if(t.hasAttribute('data-goto-prev')){ goToPreviousPlayedRow(); return; }
     if(t.hasAttribute('data-goto-active')){
-      clearPeekHighlight(); // "kembali ke live" - lepas tanda pink intip kalau ada
       const activeRow = t.closest('.panel')?.querySelector('tr.playing-row');
       if(activeRow) activeRow.scrollIntoView({behavior:'smooth', block:'center'});
       else setUploadMsg('Tidak ada baris yang sedang diputar.');
@@ -3748,7 +3666,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
       </label>
       <button class="btn btn-check" data-check-all="dyn_000datatesting" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="dyn_000datatesting" type="button">Untick</button>
-      <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button><button class="btn btn-check btn-icon" data-goto-prev="dyn_000datatesting" type="button" title="Lihat baris sebelumnya yang barusan diputar (khusus mode Random)" style="display:none">◀</button>
+      <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon btn-stop-gap" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
       <span class="sm"></span>
     </div>
   </div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
