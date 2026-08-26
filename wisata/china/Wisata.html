@@ -114,6 +114,9 @@ header.top{
 }
 .theme-toggle:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
 .theme-toggle svg,.icon-btn svg{width:16px;height:16px;}
+.icon-btn.active{background:var(--amber-soft);border-color:var(--amber);color:var(--amber-ink);}
+body.hide-reviewed .lampiran-item.reviewed{display:none;}
+.lampiran-item-head .lampiran-check{flex:0 0 auto;margin:0;}
 
 /* city tabs (top hierarchy) */
 .city-tabs{
@@ -383,6 +386,8 @@ footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-to
         <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button"></button>
         <button class="icon-btn" id="collapse-all-btn" aria-label="Tutup semua" title="Tutup semua" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M4 10l4-4 4 4M4 6l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="icon-btn" id="expand-all-btn" aria-label="Buka semua" title="Buka semua" type="button" style="display:none"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="icon-btn" id="hide-reviewed-btn" aria-label="Sembunyikan yang sudah ditinjau" title="Sembunyikan yang sudah ditinjau (Lampiran)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M2 2l12 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <button class="icon-btn" id="download-html-btn" aria-label="Simpan salinan HTML" title="Simpan salinan HTML (termasuk centang saat ini)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5v8.5M8 10l-3-3M8 10l3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12v1.5A1.5 1.5 0 0 0 3.5 15h9A1.5 1.5 0 0 0 14 13.5V12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
       </div>
     </div>
     <div class="city-tabs" id="city-tabs"></div>
@@ -459,6 +464,53 @@ document.getElementById('collapse-all-btn').addEventListener('click', ()=>{
   window.scrollTo(0,0);
 });
 document.getElementById('expand-all-btn').addEventListener('click', ()=> setAllDetails(true));
+
+const HIDE_REVIEWED_KEY = 'wisata-hide-reviewed';
+let hideReviewed = localStorage.getItem(HIDE_REVIEWED_KEY) === '1';
+function applyHideReviewed(){
+  document.body.classList.toggle('hide-reviewed', hideReviewed);
+  const btn = document.getElementById('hide-reviewed-btn');
+  btn.classList.toggle('active', hideReviewed);
+  btn.setAttribute('aria-pressed', hideReviewed ? 'true' : 'false');
+}
+applyHideReviewed();
+document.getElementById('hide-reviewed-btn').addEventListener('click', ()=>{
+  hideReviewed = !hideReviewed;
+  localStorage.setItem(HIDE_REVIEWED_KEY, hideReviewed ? '1' : '0');
+  applyHideReviewed();
+});
+
+/* Downloads a static snapshot of the current page. The app rebuilds all
+   its DOM from `destinations` + localStorage on every load, so baking
+   `checked` attributes into cloned <input>s would just get discarded by
+   that rebuild — instead, inject a tiny seed script (before the main
+   script) that pre-populates localStorage with the CURRENT progress if
+   the browser opening the file doesn't already have its own (so it
+   carries over on a new device/browser, but won't clobber newer progress
+   if this same downloaded file is reopened later). */
+document.getElementById('download-html-btn').addEventListener('click', ()=>{
+  const clone = document.documentElement.cloneNode(true);
+  const seed = document.createElement('script');
+  seed.textContent =
+    'try{' +
+    'if(!localStorage.getItem(' + JSON.stringify(STORE_KEY) + '))' +
+    ' localStorage.setItem(' + JSON.stringify(STORE_KEY) + ',' + JSON.stringify(JSON.stringify(store)) + ');' +
+    'if(!localStorage.getItem(' + JSON.stringify(LAMP_STORE_KEY) + '))' +
+    ' localStorage.setItem(' + JSON.stringify(LAMP_STORE_KEY) + ',' + JSON.stringify(JSON.stringify(lampStore)) + ');' +
+    '}catch(e){}';
+  const mainScript = clone.querySelector('script');
+  mainScript.parentNode.insertBefore(seed, mainScript);
+  const html = '<!doctype html>\n' + clone.outerHTML;
+  const blob = new Blob([html], {type:'text/html'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Wisata.html';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+});
 
 const CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const PLANE_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>';
@@ -2361,6 +2413,14 @@ const STORE_KEY = "wisata-china-checks-v3";
 const store = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
 
+/* Independent "sudah ditinjau" checklist for Lampiran entries — not
+   linked to the Itinerary tab's checkboxes (different meaning: for
+   Cadangan it means "reviewed and confirmed not visiting", not "done"). */
+const LAMP_STORE_KEY = "wisata-china-lampiran-reviewed-v1";
+const lampStore = JSON.parse(localStorage.getItem(LAMP_STORE_KEY) || "{}");
+function saveLamp(){ localStorage.setItem(LAMP_STORE_KEY, JSON.stringify(lampStore)); }
+function lampiranKey(destId, title){ return destId + "::" + title; }
+
 function cell(v, cls){
   return v ? `<td class="${cls}">${v}</td>` : `<td class="${cls} dash">&ndash;</td>`;
 }
@@ -2584,9 +2644,13 @@ function renderCity(dest){
 
     const itemsHtml = entries.map(p=>{
       const noBody = !p.text && !p.wiki && !p.yt && !p.reserveInfo && (!p.nearby || !p.nearby.length) && (!p.hotels || !p.hotels.length);
+      const lampKey = lampiranKey(dest.id, p.title);
+      const lampChecked = lampStore[lampKey] ? 'checked' : '';
+      const lampDoneClass = !isIntro && lampStore[lampKey] ? ' reviewed' : '';
       return `
-        <div class="lampiran-item${isIntro?' intro':''}">
+        <div class="lampiran-item${isIntro?' intro':''}${lampDoneClass}"${!isIntro?` data-lamp-key="${lampKey}"`:``}>
           <div class="lampiran-item-head">
+            ${!isIntro ? `<input type="checkbox" class="lampiran-check" ${lampChecked} aria-label="Tandai sudah ditinjau: ${p.title}">` : ``}
             ${!isIntro ? `<span class="place-tag ${tagClass[p.tag]}">${p.label}</span>` : ``}
             <span class="lampiran-item-title">${p.title}</span>
           </div>
@@ -2607,6 +2671,16 @@ function renderCity(dest){
       <div class="lampiran-group-body">${itemsHtml}</div>
     `;
     lampiranView.appendChild(groupEl);
+  });
+
+  lampiranView.querySelectorAll('.lampiran-check').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const item = cb.closest('.lampiran-item');
+      const key = item.dataset.lampKey;
+      lampStore[key] = cb.checked;
+      item.classList.toggle('reviewed', cb.checked);
+      saveLamp();
+    });
   });
 
   return panel;
