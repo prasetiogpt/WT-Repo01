@@ -2515,7 +2515,10 @@ function attachReferenceEvents(panel){
   const clearBtn=panel.querySelector('.sr-clear-btn');
   // Tidak search.focus() lagi - samakan dengan sheet biasa (2026-08-12), supaya tombol ✕ tidak
   // otomatis munculkan keyboard HP.
-  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; if(searchModeSel) searchModeSel.value='general'; applyReferenceBankFilter(panel); };
+  // searchModeSel (Normal/OR Han/Excl.) sengaja TIDAK ikut direset di sini - itu pilihan mode,
+  // bukan bagian dari "apa yang lagi dicari", jadi ✕ tidak boleh mengembalikannya ke Normal
+  // begitu saja (2026-08-26, user's request).
+  if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); };
   wireSearchHistory(panel, search, ()=>applyReferenceBankFilter(panel));
 }
 
@@ -2547,16 +2550,26 @@ window.addOrReplaceReferenceTab = addOrReplaceReferenceTab;
 
 async function handleVocabUpload(files){
   if(!files || !files.length) return;
-  let count=0, totalRows=0;
+  // Sama seperti handleTextUpload (sheet biasa) - tanya dulu All vs Cuma-X, pakai modal yang
+  // sama persis (2026-08-26, user's request - "persis sheet biasa").
+  const mode=await showUploadFilterModal(files);
+  if(mode===null){ const input=document.getElementById('vocabUpload'); if(input) input.value=''; setUploadMsg('Upload dibatalkan.'); return; }
+  let count=0, totalRows=0; const warnings=[];
   for(const file of files){
     const raw=await file.text();
-    const rows=parseDelimitedText(raw);
+    let rows=parseDelimitedText(raw);
+    if(mode==='checked'){
+      const all=rows.length;
+      rows=rows.filter(r=>r.pilih);
+      if(rows.length===0) warnings.push(`"${file.name}": tidak ada baris ber-X (${all} baris dilewati)`);
+    }
     addOrReplaceReferenceTab(cleanTitle(file.name), rows);
     totalRows+=rows.length;
     count++;
   }
   const input=document.getElementById('vocabUpload'); if(input) input.value='';
-  setUploadMsg(`✓ ${count} bank referensi dimuat (${totalRows} baris total). Ketik di kotak cari untuk melihat hasil.`);
+  if(warnings.length) setUploadMsg(`⚠ ${count} bank referensi dimuat. ${warnings.join(' | ')}`);
+  else setUploadMsg(`✓ ${count} bank referensi dimuat (${totalRows} baris total). Ketik di kotak cari untuk melihat hasil.`);
 }
 window.handleVocabUpload = handleVocabUpload;
 
@@ -3001,13 +3014,14 @@ function attachPanelEvents(panel){
   // Reset: kosongkan search DAN filter No dari-sd sekaligus, terapkan filter langsung (tidak
   // nunggu debounce). Sengaja TIDAK search.focus() lagi - itu bikin keyboard HP selalu muncul
   // otomatis tiap tombol ✕ ditekan, padahal user cuma mau clear, bukan langsung mau ngetik lagi.
+  // searchModeSel (Normal/OR Han/Excl.) sengaja TIDAK ikut direset - itu pilihan mode, bukan
+  // bagian dari "apa yang lagi dicari" (2026-08-26, user's request).
   const searchClearBtn=panel.querySelector('.sr-clear-btn');
   if(searchClearBtn && search) searchClearBtn.onclick=()=>{
     search.value='';
     if(fromInput) fromInput.value='';
     if(toInput) toInput.value='';
     if(colScopeSel) colScopeSel.value='all';
-    if(searchModeSel) searchModeSel.value='general';
     applyFilter(panel);
   };
   wireSearchHistory(panel, search, ()=>applyFilter(panel));
