@@ -804,10 +804,7 @@ function warnMissingMp3(table,tr,mode){
   const row=getRowIndexFromTr(tr);
   const key=modeToMp3Key(mode) || mode;
   const sheetName=sheetFolderNameFromTable(table);
-  const available=([...new Set([...Object.keys(mp3SheetCounts), ...Object.keys(mp3ZipCounts)])]).sort().slice(0,6).join(', ') || 'belum dipilih';
-  const totalFolders=([...new Set([...Object.keys(mp3SheetCounts), ...Object.keys(mp3ZipCounts)])]).length;
-  const more=totalFolders>6 ? ' ...' : '';
-  setUploadMsg(`MP3 belum ada: folder ${sheetName} · row ${row} · ${key}. Folder audio tersedia: ${available}${more}.`);
+  setUploadMsg(`MP3 belum ada: folder ${sheetName} · row ${row} · ${key}.`);
 }
 function folderPrefixFromRelativePath(file){
   const rel=String(file.webkitRelativePath || file.name || '').toLowerCase();
@@ -879,9 +876,9 @@ function handleMp3Folder(files){
     const extra = ignored>0 ? ` (${ignored} MP3 sheet lain diabaikan)` : '';
     setUploadMsg(`✓ Sheet MP3 Folder dibaca: ${activeSheet} · ${list.length} MP3${extra}.`);
   } else if(rawList.length){
-    setUploadMsg(`Tidak ada MP3 yang cocok untuk sheet aktif ${activeSheet}. Pilih folder sheet yang sesuai, mis. ${activeSheet}, bukan folder induk.`);
+    setUploadMsg(`Tidak ada MP3 yang cocok untuk sheet aktif ${activeSheet}.`);
   } else {
-    setUploadMsg(`Tidak ada file MP3 di folder pilihan. Pilih folder sheet aktif, mis. ${activeSheet}.`);
+    setUploadMsg('Tidak ada file MP3 di folder pilihan.');
   }
 }
 window.handleMp3Folder = handleMp3Folder;
@@ -1299,7 +1296,7 @@ function deleteTab(index){
   refreshTabs();
   const remaining=getTabs();
   if(remaining.length) switchTab(Math.max(0, Math.min(index, remaining.length-1)));
-  setUploadMsg('✓ Tab dihapus. Klik Download HTML Baru agar permanen.');
+  setUploadMsg('✓ Tab dihapus.');
 }
 
 function tableForTid(tid, root=document){ return root.getElementById ? root.getElementById(tid) : root.querySelector('#'+CSS.escape(tid)); }
@@ -1640,7 +1637,7 @@ function playAllSingle(tid, mode, btn){
   const col=getModeColumn(table, mode); if(col<0){ setUploadMsg('Kolom tidak ditemukan.'); finishPlay(token); return false; }
   let rows=rowCycle(table, [mode]), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('▶ Play All berjalan. Tekan Pause / Stop.');
+  setUploadMsg('▶ Play All berjalan.');
   function next(){
     if(token!==playToken){ finishPlay(token); return; }
     if(i>=rows.length){
@@ -1670,7 +1667,7 @@ function playAllPair(tid, first, second, btn){
   const modes=[first,second];
   let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('▶ Combo play berjalan. Tekan Pause / Stop.');
+  setUploadMsg('▶ Combo play berjalan.');
   function playModeSequence(tr, tds, idx, hadPlayed, done){
     if(token!==playToken){ finishPlay(token); return; }
     if(idx>=modes.length){ done(hadPlayed); return; }
@@ -1783,7 +1780,7 @@ function playAllSequence(tid, modes, btn){
   if(cols.some(c=>c<0)){ setUploadMsg('Kolom tidak ditemukan.'); finishPlay(token); return false; }
   let rows=rowCycle(table, modes), i=getStartIndex(rows, table), playedInCycle=false;
   if(!rows.length){ setUploadMsg('Tidak ada baris tampil & dicentang / tidak ada teks.'); finishPlay(token); return false; }
-  setUploadMsg('▶ Sequence play berjalan. Tekan Pause / Stop.');
+  setUploadMsg('▶ Sequence play berjalan.');
   function playModeSequence(tr, tds, idx, hadPlayed, done){
     if(token!==playToken){ finishPlay(token); return; }
     if(idx>=modes.length){ done(hadPlayed); return; }
@@ -2569,7 +2566,7 @@ async function handleVocabUpload(files){
   }
   const input=document.getElementById('vocabUpload'); if(input) input.value='';
   if(warnings.length) setUploadMsg(`⚠ ${count} bank referensi dimuat. ${warnings.join(' | ')}`);
-  else setUploadMsg(`✓ ${count} bank referensi dimuat (${totalRows} baris total). Ketik di kotak cari untuk melihat hasil.`);
+  else setUploadMsg(`✓ ${count} bank referensi dimuat (${totalRows} baris total).`);
 }
 window.handleVocabUpload = handleVocabUpload;
 
@@ -2888,7 +2885,7 @@ async function handleTextUpload(files){
   if(audioMode && audioMode.value!=='tts'){ audioMode.value='tts'; audioMode.dispatchEvent(new Event('change')); }
   const input=document.getElementById('txtUpload'); if(input) input.value='';
   if(warnings.length) setUploadMsg(`⚠ ${count} file diproses. ${warnings.join(' | ')}`);
-  else setUploadMsg(`✓ ${count} file diproses. Baris hanya dihapus bila semua kolom kosong.`);
+  else setUploadMsg(`✓ ${count} file diproses.`);
 }
 window.handleTextUpload = handleTextUpload;
 
@@ -3070,8 +3067,8 @@ function attachAdmin(){
   h.onclick=()=>{ titleClicks++; clearTimeout(titleClickTimer); titleClickTimer=setTimeout(()=>titleClicks=0,1100); if(titleClicks>=5){ titleClicks=0; unlockAdmin(); } };
   q('#btnAdminClose').onclick=()=>showAdmin(false);
   q('#btnAdminChange').onclick=()=>changePassword();
-  q('#btnAdminLock').onclick=()=>{ const id=activePanelId(); if(id){ setLocked(id,true); setUploadMsg('✓ Sheet aktif dikunci. Download HTML Baru agar permanen.'); } };
-  q('#btnAdminUnlock').onclick=()=>{ const id=activePanelId(); if(id){ setLocked(id,false); setUploadMsg('✓ Sheet aktif dibuka. Download HTML Baru agar permanen.'); } };
+  q('#btnAdminLock').onclick=()=>{ const id=activePanelId(); if(id){ setLocked(id,true); setUploadMsg('✓ Sheet aktif dikunci.'); } };
+  q('#btnAdminUnlock').onclick=()=>{ const id=activePanelId(); if(id){ setLocked(id,false); setUploadMsg('✓ Sheet aktif dibuka.'); } };
 }
 
 function syncAttributes(root=document){
@@ -3299,7 +3296,7 @@ function init(){
   const audioMode=document.getElementById('audioModeSelect');
   if(audioMode){ audioMode.onchange = ()=>{
     const v = audioMode.value;
-    if(v==='mp3') setUploadMsg('Mode MP3. Pilih MP3 ZIP yang sesuai nama sheet.');
+    if(v==='mp3') setUploadMsg('Mode MP3.');
     else if(v==='combine'){
       // Don't blanket-tell the user to re-Pre-Comb: the cache survives mode switches (see
       // combineSignature()), so if it's still valid for the current selection, say so instead.
@@ -3630,7 +3627,7 @@ document.getElementById('preCombRefreshBtn').addEventListener('click', async (e)
       .filter(Boolean);
     lastCombineRowsHash = rowsHash;
     combineReadyFlag = true;
-    setUploadMsg('✓ Pre-Combine ready! Click Play All untuk mainkan.');
+    setUploadMsg('✓ Pre-Combine ready.');
   } finally {
     if(renderSpinnerTimer) clearInterval(renderSpinnerTimer);
     isCombining = false;
@@ -3656,7 +3653,7 @@ document.getElementById('audioModeSelect').addEventListener('change', ()=>{
 // Download the combined WAV as its own file - doesn't touch playback/combine state at all, just
 // reads combinedBlobCache (same object Play All plays from), so no screen-off risk either way.
 document.getElementById('downloadCombWavBtn').addEventListener('click', ()=>{
-  if(!combinedBlobCache){ setUploadMsg('Belum ada hasil combine. Klik Comb dulu.'); return; }
+  if(!combinedBlobCache){ setUploadMsg('Belum ada hasil combine.'); return; }
   const panel = activePanel ? activePanel() : document.querySelector('.panel.active');
   const sheetTitle = panel?.dataset?.sheetTitle || 'combine';
   const safeTitle = String(sheetTitle).replace(/[<>:"/\\|?*]/g, '_');
@@ -3675,7 +3672,7 @@ document.addEventListener('change', (e)=>{
   if(e.target.classList.contains('ck-box')){
     combineReadyFlag = false;
     if(getAudioMode()==='combine'){
-      setUploadMsg('Selection berubah. Click Pre-Comb lagi.');
+      setUploadMsg('Selection berubah.');
     }
   }
 });
