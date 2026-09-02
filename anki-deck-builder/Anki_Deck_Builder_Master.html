@@ -688,7 +688,7 @@ function hasMediaFile(filename){
   return !!(state.mediaFiles && (state.mediaFiles.get(filename) || state.mediaFiles.get(String(filename||'').toLowerCase())));
 }
 function inlineCombineColumns(itemList,row){
-  return itemList.filter(c=>state.columns.includes(c) && (c==='__Source' || /^no\.?$|^nomor$/i.test(normalizeName(c))) && String(row[c]||'').trim());
+  return itemList.filter(c=>state.columns.includes(c) && (c==='__Source' || /^no\.?$|^nomor$|^reff\.?$|^note2$/i.test(normalizeName(c))) && String(row[c]||'').trim());
 }
 function sideParts(itemList,row,rowIndex,deckName,options={}){
   const blocks=[], audioBlocks=[];
