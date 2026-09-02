@@ -567,7 +567,16 @@ function normalizeTabId(name){ let s=cleanTitle(name).toLowerCase(); try{s=s.nor
 function escapeHTML(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 function getTabs(root=document){ return qa('.tabs .tab', root); }
 function getPanels(root=document){ return qa('body > .panel', root); }
-function setUploadMsg(text){ document.querySelectorAll('#uploadMsg').forEach(el=>{ el.textContent=text; }); }
+// Bank Referensi (Done) tidak menampilkan status/pesan apapun di sini - bukan cuma dibersihkan
+// sekali saat pindah tab (itu titik lama, gampang ketimpa lagi oleh pesan yang di-set SETELAH
+// switchTab, mis. deleteTab() - lihat kasus "Tab dihapus" tetap muncul). Cek jenis tab aktif di
+// satu titik ini saja (2026-08-26, user's request: konsisten, tanpa kecuali) supaya semua
+// caller setUploadMsg tetap bisa apa adanya, tidak perlu tahu/peduli jenis tab aktif.
+function setUploadMsg(text){
+  const activePanel = document.querySelector('body > .panel.active');
+  if(activePanel && activePanel.dataset.tabType==='reference') text='';
+  document.querySelectorAll('#uploadMsg').forEach(el=>{ el.textContent=text; });
+}
 // Force the browser to actually paint before continuing a long synchronous-ish task
 // (setUploadMsg alone can go unpainted if the next work is a tight await-chain with no real yield).
 // Uses setTimeout, not requestAnimationFrame: rAF can stop firing entirely when the page isn't
@@ -1219,13 +1228,11 @@ function updatePlaybackControlsVisibility(){
   document.querySelectorAll('.playback-only-control').forEach(el=>{
     el.style.display = isReference ? 'none' : '';
   });
-  // Status pesan (mis. "Play all dihentikan", "Mode MP3...") yang nyangkut dari sheet
-  // sebelumnya tidak relevan lagi begitu pindah ke Bank Referensi - tidak ada fitur play sama
-  // sekali di sini (lihat buildReferenceRowHTML) - jadi dibersihkan supaya tidak membingungkan
-  // (2026-08-15, user's request). Aman dibersihkan tanpa syarat: tidak ada kode lain yang
-  // men-set uploadMsg sebagai bagian dari switchTab() yang sama, jadi tidak ada pesan Done-nya
-  // sendiri yang ikut ke-wipe.
-  if(isReference) setUploadMsg('');
+  // Status/pesan (uploadMsg) sekarang ditekan untuk SEMUA pemanggil langsung di dalam
+  // setUploadMsg() itu sendiri selama tab Done aktif (2026-08-26, user's request: konsisten
+  // tanpa kecuali - sebelumnya cuma dibersihkan sekali di sini, gampang ketimpa lagi oleh
+  // pesan yang di-set SETELAH switchTab, mis. deleteTab()'s "Tab dihapus"). Tidak perlu
+  // dibersihkan manual di sini lagi.
 }
 window.updatePlaybackControlsVisibility = updatePlaybackControlsVisibility;
 
