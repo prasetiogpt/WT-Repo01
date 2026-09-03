@@ -322,9 +322,16 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
 
 .lampiran-item{border-bottom:1px solid var(--border);padding:11px 16px 14px;}
 .lampiran-item:last-child{border-bottom:none;}
-.lampiran-item-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.lampiran-item-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;cursor:pointer;}
+.lampiran-item.intro .lampiran-item-head{cursor:default;}
 .lampiran-item-head .place-tag{margin-bottom:0;flex:0 0 auto;}
 .lampiran-item-title{flex:1;font-weight:700;font-size:.92rem;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;}
+.item-toggle{
+  flex:0 0 auto;border:none;background:none;cursor:pointer;padding:4px;
+  display:flex;align-items:center;justify-content:center;color:var(--ink-soft);
+}
+.item-toggle:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+.lampiran-item.open .item-toggle .chev{transform:rotate(180deg);}
 .copy-row{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px;}
 .copy-btn{
   font-size:.72rem;font-weight:700;line-height:1;cursor:pointer;
@@ -334,11 +341,13 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
 }
 .copy-btn:hover{background:var(--indigo-soft);}
 .copy-btn.copied{background:var(--jade);border-color:var(--jade);color:var(--indigo-ink);}
-.lampiran-item-body{padding:0;}
+.lampiran-item-body{padding:0;display:none;}
+.lampiran-item.open .lampiran-item-body{display:block;}
 .lampiran-item-body p{font-size:.89rem;color:var(--ink-soft);line-height:1.62;margin:0 0 10px;}
 
 .lampiran-item.intro{padding:9px 16px 12px;}
 .lampiran-item.intro .lampiran-item-head{margin-bottom:2px;}
+.lampiran-item.intro .lampiran-item-body{display:block;}
 .lampiran-item.intro .lampiran-item-title{
   font-size:.88rem;font-weight:700;color:var(--violet);font-family:inherit;
 }
@@ -2648,16 +2657,19 @@ function renderCity(dest){
       const lampKey = lampiranKey(dest.id, p.title);
       const lampChecked = lampStore[lampKey] ? 'checked' : '';
       const lampDoneClass = !isIntro && lampStore[lampKey] ? ' reviewed' : '';
+      const alwaysContext = p.tag === 'planc'; // "Kenapa tidak dimasukkan" stays visible even collapsed
       return `
         <div class="lampiran-item${isIntro?' intro':''}${lampDoneClass}"${!isIntro?` data-lamp-key="${lampKey}"`:``}>
           <div class="lampiran-item-head">
             ${!isIntro ? `<input type="checkbox" class="lampiran-check" ${lampChecked} aria-label="Tandai sudah ditinjau: ${p.title}">` : ``}
             ${!isIntro ? `<span class="place-tag ${tagClass[p.tag]}">${p.label}</span>` : ``}
             <span class="lampiran-item-title">${p.title}</span>
+            ${!isIntro ? `<button type="button" class="item-toggle" aria-label="Buka/tutup detail">${CHEV}</button>` : ``}
           </div>
+          ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
+          ${alwaysContext && p.context ? `<div class="card-context">${p.context}</div>` : ``}
           <div class="lampiran-item-body">
-            ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
-            ${p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
+            ${!alwaysContext && p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
             ${p.text ? `<p>${p.text}</p>` : ``}
             ${p.reserveInfo ? `<div class="reserve-info"><b>Cara reservasi</b>${p.reserveInfo}</div>` : ``}
             ${p.nearby && p.nearby.length ? `<div class="nearby"><b>Rekomendasi tempat sekitar:</b> ${nearbyLine(p.nearby)}</div>` : ``}
@@ -2681,6 +2693,15 @@ function renderCity(dest){
       lampStore[key] = cb.checked;
       item.classList.toggle('reviewed', cb.checked);
       saveLamp();
+    });
+  });
+
+  lampiranView.querySelectorAll('.lampiran-item-head').forEach(head=>{
+    const item = head.closest('.lampiran-item');
+    if(item.classList.contains('intro')) return;
+    head.addEventListener('click', (e)=>{
+      if(e.target.closest('.lampiran-check')) return;
+      item.classList.toggle('open');
     });
   });
 
