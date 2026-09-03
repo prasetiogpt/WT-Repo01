@@ -325,7 +325,7 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
 .lampiran-item-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;cursor:pointer;}
 .lampiran-item.intro .lampiran-item-head{cursor:default;}
 .lampiran-item-head .place-tag{margin-bottom:0;flex:0 0 auto;}
-.lampiran-item-title{flex:1;font-weight:700;font-size:.92rem;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;}
+.lampiran-item-title{flex:1;font-weight:400;font-size:.92rem;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;}
 .item-toggle{
   flex:0 0 auto;border:none;background:none;cursor:pointer;padding:4px;
   display:flex;align-items:center;justify-content:center;color:var(--ink-soft);
@@ -540,6 +540,14 @@ function copyBtnsHtml(nameEn, nameHanzi){
     html += `<button type="button" class="copy-btn" data-copy-idx="${hzIdx}" title="Salin nama Hanzi untuk Amap">📋 中文</button>`;
   }
   return `<div class="copy-row">${html}</div>`;
+}
+function titleHtml(p){
+  const t = p.title || '';
+  if(p.nameEn){
+    const enEsc = p.nameEn.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    if(t.startsWith(enEsc)) return `<b>${enEsc}</b>${t.slice(enEsc.length)}`;
+  }
+  return `<b>${t}</b>`;
 }
 function legacyCopy(text){
   // Fallback for contexts where navigator.clipboard is blocked (sandboxed
@@ -2662,7 +2670,7 @@ function renderCity(dest){
           <div class="lampiran-item-head">
             ${!isIntro ? `<input type="checkbox" class="lampiran-check" ${lampChecked} aria-label="Tandai sudah ditinjau: ${p.title}">` : ``}
             ${!isIntro ? `<span class="place-tag ${tagClass[p.tag]}">${p.label}</span>` : ``}
-            <span class="lampiran-item-title">${p.title}</span>
+            <span class="lampiran-item-title">${titleHtml(p)}</span>
             ${!isIntro ? `<button type="button" class="item-toggle" aria-label="Buka/tutup detail">${CHEV}</button>` : ``}
           </div>
           <div class="lampiran-item-body">
