@@ -31,7 +31,7 @@
 
 ## Hari 1 — Sabtu, 3 Oktober (Kedatangan + Laomendong Old Street malam)
 
-**⚠️ Dipindah dari Hari 4** — Laomendong justru lebih cocok dikunjungi MALAM (kawasan ini "hidup" setelah gelap karena lampion, per catatan di Lampiran) sehingga malam kedatangan sekalian jadi momen yang pas, bukan cuma "jalan santai ringan" generik seperti rencana sebelumnya. Aksesnya juga langsung 1 jalur Line 3 dari hotel (lewat Stasiun Wudingmen), tanpa transfer.
+Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap karena lampion, jadi momen yang pas untuk malam kedatangan. Akses langsung 1 jalur Line 3 dari hotel (Stasiun Wudingmen), tanpa transfer.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -49,9 +49,9 @@
 
 ---
 
-## Hari 2 — Minggu, 4 Oktober (Massacre Memorial Hall → Deji Plaza → Mochou Lake Park)
+## Hari 2 — Minggu, 4 Oktober (Massacre Memorial Hall → Deji Plaza → Mochou Lake Park → Nanjing 1912 Block malam)
 
-**⚠️ Direvisi — Niushoushan dipindah ke Cadangan** (dinilai terlalu jauh/mahal untuk trip kali ini, lihat Cadangan). **Nanjing Massacre Memorial Hall dipindah ke sini dari Hari 4**, digabung dengan Deji Plaza & Mochou Lake Park (searah Line 2: Yunjinlu → Xinjiekou → Mochouhu) mengikuti logika "indoor dulu saat panas siang, taman sesudahnya". Memorial Hall wajib reservasi online (lihat Lampiran) — booking sebelum berangkat.
+Rute searah Line 2: Yunjinlu → Xinjiekou → Mochouhu → Daxinggong (indoor Deji Plaza pas jam paling panas, taman Mochou Lake sesudahnya lebih sejuk). Massacre Memorial Hall wajib reservasi online (lihat Lampiran) — booking sebelum berangkat. Malamnya mampir Nanjing 1912 Block (persis di Daxinggong, jalur pulang) — kawasan bar & resto gaya Republik yang justru ramai & hidup setelah gelap, jadi penutup hari yang lebih pas daripada langsung pulang.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -63,9 +63,10 @@
 | 13:00–15:00 | **Deji Plaza** — jalan santai indoor, pas jam paling panas | Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1. Bukan sesi belanja. Snack/minum CNY 15/org | 45 | Rp119.250 |
 | 15:00–15:15 | Line 2 dari Xinjiekou ke Mochouhu (langsung, dekat) | — | 6 | Rp15.900 |
 | 15:15–17:00 | **Mochou Lake Park** | Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar, lebih sejuk sore hari | — | — |
-| 17:00–17:30 | Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuqiao/hotel | — | 9 | Rp23.850 |
-| 17:30 | Makan malam dekat hotel | CNY 30/org | 90 | Rp238.500 |
-| **TOTAL HARI 2** | | | **273** | **Rp723.450** |
+| 17:00–17:15 | Line 2 dari Mochouhu ke Daxinggong (langsung, dekat) | — | 6 | Rp15.900 |
+| 17:15–19:15 | **Nanjing 1912 Block** — jalan malam kawasan bar/resto gaya Republik, sekalian makan malam | Persis di Stasiun Daxinggong. Makan CNY 30/org | 90 | Rp238.500 |
+| 19:15–19:35 | Line 3 Daxinggong → Fuqiao/hotel | — | 9 | Rp23.850 |
+| **TOTAL HARI 2** | | | **279** | **Rp739.350** |
 
 **Plan-B hari ini:** kalau reservasi Massacre Memorial Hall gagal/slot habis — waktu paginya bisa dipakai perpanjang Deji Plaza/Mochou Lake Park, atau lihat Cadangan: Nanjing Folk Museum (searah Hari 1, dekat Laomendong).
 
@@ -73,7 +74,7 @@
 
 ## Hari 3 — Senin, 5 Oktober (Jiming Temple → Taman & Pedestrian Street, via Line 3 tanpa transfer)
 
-**⚠️ Jiming Temple dipromosikan dari Cadangan** — persis di Exit 5 Stasiun Jimingsi, area yang sama dengan Xuanwu Lake Park, jadi tinggal mampir sebelum masuk taman. Ming Xiaoling Sacred Way tetap di Cadangan (kurang prioritas). Rute tetap sangat simpel — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), TIDAK perlu transfer sama sekali.
+Jiming Temple persis di Exit 5 Stasiun Jimingsi, area yang sama dengan Xuanwu Lake Park — tinggal mampir sebelum masuk taman. Rute tetap sangat simpel, semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), tanpa transfer.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -92,7 +93,7 @@
 
 ## Hari 4 — Selasa, 6 Oktober (Nanjing Museum → Kexiang Food Street → Keberangkatan, HSR fixed 15:00)
 
-**⚠️ Direvisi — Massacre Memorial Hall dipindah ke Hari 2**, Hari 4 sekarang diisi **Nanjing Museum** (dipromosikan dari Cadangan, tutup Senin — Selasa aman) dan **Kexiang Food Street** (dipromosikan dari Cadangan, jadi sesi makan siang di Stasiun Daxinggong sekalian perjalanan pulang). **Buffer sebelum HSR jadi lebih ketat (±30 menit, sebelumnya ±1 jam)** karena hari ini lebih padat — kalau ada delay, skip Kexiang atau persingkat waktu museum, jangan tunda checkout. **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
+Nanjing Museum tutup setiap Senin (Selasa aman). Kexiang Food Street jadi sesi makan siang di Stasiun Daxinggong sekalian perjalanan pulang. **Buffer sebelum HSR ±30 menit** — kalau ada delay, skip Kexiang atau persingkat waktu museum, jangan tunda checkout. **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -118,26 +119,26 @@
 
 ## Ringkasan Budget Total (3 Orang, 3 Malam di Nanjing)
 
-⚠️ **Total aktivitas harian turun dari 1.491 → 915 CNY** setelah Niushoushan dipindah ke Cadangan — digantikan Massacre Memorial Hall & Nanjing Museum yang sama-sama gratis (reservasi online), jadi biaya tiket masuk hampir hilang total dari budget aktivitas.
+Massacre Memorial Hall & Nanjing Museum sama-sama gratis (reservasi online), jadi biaya tiket masuk itinerary ini kecil.
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 (3 Okt) | 268 | Rp710.200 |
-| Hari 2 (4 Okt) | 273 | Rp723.450 |
+| Hari 2 (4 Okt) | 279 | Rp739.350 |
 | Hari 3 (5 Okt) | 195 | Rp516.750 |
 | Hari 4 (6 Okt) | 179 | Rp474.350 |
-| **Subtotal aktivitas harian** | **915** | **Rp2.424.750** |
+| **Subtotal aktivitas harian** | **921** | **Rp2.440.650** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk (Jiming Temple) | 30 | Rp79.500 |
-| Makan (semua hari + jajan Laomendong + Kexiang) | 615 | Rp1.629.750 |
-| Transport lokal (Didi + MRT) | 270 | Rp715.500 |
+| Makan (semua hari + jajan Laomendong + Kexiang + Nanjing 1912 Block) | 615 | Rp1.629.750 |
+| Transport lokal (Didi + MRT) | 276 | Rp731.400 |
 | Tiket pesawat kedatangan + visa (3 org) | ≈3.208 | Rp8.500.000 |
 | Hotel (3 malam) | ≈1.434 | Rp3.800.000 |
-| **GRAND TOTAL** | **5.557** | **Rp14.724.750** |
+| **GRAND TOTAL** | **5.563** | **Rp14.740.650** |
 
 **Catatan:** Presidential Palace, Ming Xiaoling Sacred Way, Zhonghua Gate, Jinling Xiaocheng, dan Niushoushan sekarang semua di Plan-B/Cadangan, jadi TIDAK termasuk di total di atas. Beberapa item opsional lain (trolley Xuanwu Lake, masuk kompleks Confucius Temple) juga belum dihitung. Baris tiket pesawat+visa dan hotel diberikan langsung dalam Rupiah (biaya gabungan rombongan, bukan per-org) — nilai CNY ditandai `≈` sebagai konversi kurs, Rupiah tetap angka otoritatif.
 
@@ -282,6 +283,21 @@ Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (
 - Video referensi: https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing
 - Rekomendasi tempat sekitar: Shengqi Building/rock garden di dalam taman
 
+### Nanjing 1912 Block (南京1912 · Nánjīng 1912) ⚠️
+Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden sementara Republik China di Nanjing. Dulunya kawasan elite era Republik, sekarang berubah jadi kawasan bar & restoran ramai dengan 19 bangunan bata abu-abu bergaya Republik (1912-1949) yang tetap dipertahankan, mengingatkan pada suasana Shanghai/Beijing lama. Resmi dibuka Desember 2004, sekarang punya lebih dari 30 bar, kafe, dan resto — kawasan ini justru paling hidup setelah gelap, jadi penutup malam Hari 2 yang pas.
+
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+
+**Akses:** persis di Stasiun Daxinggong (Line 2/3) — dari Mochou Lake Park, naik Line 2 dari Mochouhu langsung ke Daxinggong, lanjut Line 3 satu stasiun ke Fuqiao/hotel sesudahnya.
+
+**Jam Operasional:** kawasan buka 24 jam, tapi mayoritas bar baru buka ±17:00–18:00, beberapa sampai dini hari (02:00–06:30). Tidak ada hari libur. Jam puncak: malam Jumat–Sabtu mulai ±21:00.
+
+**Tiket:** Gratis masuk kawasan; bar/resto di dalamnya bayar sendiri sesuai menu.
+
+- Foto/info: https://en.wikipedia.org/wiki/Nanjing_1912
+- Video referensi: https://www.youtube.com/results?search_query=Nanjing+1912+Block+bar+street
+- Rekomendasi tempat sekitar: Deretan café & resto gaya Republik di sepanjang jalan utama
+
 ## Hari 3 — Senin, 5 Oktober
 
 ### Xuanwu Lake Park (玄武湖景区 · Xuánwǔ Hú Jǐngqū) ✅
@@ -331,22 +347,6 @@ Kompleks ini menyimpan sejarah 6 abad China dalam satu tempat. Berawal sebagai k
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Presidential+Palace+Zongtongfu
 - Rekomendasi tempat sekitar: Xu Garden (煦园 · Xù Yuán) — juga disebut "West Garden", di dalam kompleks, bagian terindah; Nanjing 1912 Block (南京1912 · Nánjīng 1912) — persis sebelahan
 
-### 🏷️ Nanjing 1912 Block (南京1912 · Nánjīng 1912) ⚠️ — Plan-B Hari 3 (kalau Qinhuai River terlalu padat)
-Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden sementara Republik China di Nanjing. Dulunya kawasan elite era Republik, sekarang berubah jadi kawasan bar & restoran ramai dengan 19 bangunan bata abu-abu bergaya Republik (1912-1949) yang tetap dipertahankan, mengingatkan pada suasana Shanghai/Beijing lama. Resmi dibuka Desember 2004, sekarang punya lebih dari 30 bar, kafe, dan resto.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** persis sebelahan dengan Presidential Palace (lihat entri sebelumnya) — MRT Line 3, Stasiun Daxinggong.
-
-**Jam Operasional:** kawasan buka 24 jam, tapi mayoritas bar baru buka ±17:00–18:00, beberapa sampai dini hari (02:00–06:30). Tidak ada hari libur. Jam puncak: malam Jumat–Sabtu mulai ±21:00; kalau cuma ingin lihat suasana bangunan gaya Republik (siang), lebih sepi dan tetap bisa dinikmati.
-
-**Tiket:** Gratis masuk kawasan; bar/resto di dalamnya bayar sendiri sesuai menu.
-
-**Kenapa jadi Plan-B:** dekat pusat kota, sebagian area tertutup (bisa berteduh), jadi alternatif makan malam kalau Qinhuai River terlalu ramai saat Golden Week.
-
-- Foto/info: https://en.wikipedia.org/wiki/Nanjing_1912
-- Video referensi: https://www.youtube.com/results?search_query=Nanjing+1912+Block+bar+street
-- Rekomendasi tempat sekitar: Deretan café & resto gaya Republik di sepanjang jalan utama
 
 ## Hari 4 — Selasa, 6 Oktober
 
