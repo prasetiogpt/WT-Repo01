@@ -2657,7 +2657,6 @@ function renderCity(dest){
       const lampKey = lampiranKey(dest.id, p.title);
       const lampChecked = lampStore[lampKey] ? 'checked' : '';
       const lampDoneClass = !isIntro && lampStore[lampKey] ? ' reviewed' : '';
-      const alwaysContext = p.tag === 'planc'; // "Kenapa tidak dimasukkan" stays visible even collapsed
       return `
         <div class="lampiran-item${isIntro?' intro':''}${lampDoneClass}"${!isIntro?` data-lamp-key="${lampKey}"`:``}>
           <div class="lampiran-item-head">
@@ -2666,10 +2665,9 @@ function renderCity(dest){
             <span class="lampiran-item-title">${p.title}</span>
             ${!isIntro ? `<button type="button" class="item-toggle" aria-label="Buka/tutup detail">${CHEV}</button>` : ``}
           </div>
-          ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
-          ${alwaysContext && p.context ? `<div class="card-context">${p.context}</div>` : ``}
           <div class="lampiran-item-body">
-            ${!alwaysContext && p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
+            ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
+            ${p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
             ${p.text ? `<p>${p.text}</p>` : ``}
             ${p.reserveInfo ? `<div class="reserve-info"><b>Cara reservasi</b>${p.reserveInfo}</div>` : ``}
             ${p.nearby && p.nearby.length ? `<div class="nearby"><b>Rekomendasi tempat sekitar:</b> ${nearbyLine(p.nearby)}</div>` : ``}
