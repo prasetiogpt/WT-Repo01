@@ -237,13 +237,13 @@ details.day > summary::-webkit-details-marker{display:none;}
   color:var(--amber-ink);border-radius:10px;padding:10px 12px;font-size:.84rem;line-height:1.5;
 }
 .reserve-banner{margin:0 14px 12px;}
-.info-banner{margin:0 14px 12px;border-color:transparent;background:var(--indigo-soft);color:var(--ink);}
-.reserve-banner b,.planb-banner b,.info-banner b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;}
+.info-banner{margin:0 14px 12px;}
+.reserve-banner .banner-label,.planb-banner .banner-label,.info-banner .banner-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;}
 .cadangan-nearby{
   margin:0 14px 14px;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
   color:var(--amber-ink-light);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.5;
 }
-.cadangan-nearby b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
+.cadangan-nearby .banner-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
 
 /* Hotel / Perhatian boxes inside a transport card's body (collapse with it) */
 .hotel-banner{
@@ -371,7 +371,7 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
   background:var(--indigo-soft);border-radius:8px;padding:9px 11px;
   font-size:.83rem;line-height:1.55;color:var(--ink);margin:0 0 10px;
 }
-.reserve-info b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;color:var(--indigo);}
+.reserve-info .banner-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;color:var(--indigo);}
 .nearby{font-size:.82rem;color:var(--ink-soft);line-height:1.6;margin:0 0 10px;padding-top:8px;border-top:1px solid var(--border);}
 .nearby b{color:var(--ink);font-weight:700;}
 .hotels{font-size:.82rem;color:var(--ink-soft);line-height:1.6;margin:0 0 10px;padding-top:8px;border-top:1px solid var(--border);}
@@ -2544,7 +2544,7 @@ function renderDay(d, dest){
     p.tag === 'planc' && p.relatedDays && p.relatedDays.includes(d.num));
   const cadanganNearbyHtml = cadanganNearby.length ? `
     <div class="cadangan-nearby">
-      <b>Tempat sekitar lain (lihat Lampiran → Cadangan)</b>
+      <span class="banner-label">Tempat sekitar lain (lihat Lampiran → Cadangan)</span>
       ${cadanganNearby.map(p => p.title).join(', ')}
     </div>` : '';
 
@@ -2560,8 +2560,8 @@ function renderDay(d, dest){
       </div>
       ${CHEV}
     </summary>
-    ${d.reserve ? `<div class="reserve-banner"><b>Reservasi wajib</b>${d.reserve}</div>` : ``}
-    ${d.advisory ? `<div class="info-banner"><b>Perhatian</b>${d.advisory}</div>` : ``}
+    ${d.reserve ? `<div class="reserve-banner"><span class="banner-label">Reservasi wajib</span>${d.reserve}</div>` : ``}
+    ${d.advisory ? `<div class="info-banner"><span class="banner-label">Perhatian</span>${d.advisory}</div>` : ``}
     <div class="table-scroll">
       <table class="itin">
         <colgroup>
@@ -2574,7 +2574,7 @@ function renderDay(d, dest){
         ${footRow}
       </table>
     </div>
-    ${d.planb ? `<div class="planb-banner"><b>Plan-B hari ini</b>${d.planb}</div>` : ``}
+    ${d.planb ? `<div class="planb-banner"><span class="banner-label">Plan-B hari ini</span>${d.planb}</div>` : ``}
     ${cadanganNearbyHtml}
   `;
 
@@ -2684,7 +2684,7 @@ function renderCity(dest){
             ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
             ${p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
             ${p.text ? `<p>${p.text}</p>` : ``}
-            ${p.reserveInfo ? `<div class="reserve-info"><b>Cara reservasi</b>${p.reserveInfo}</div>` : ``}
+            ${p.reserveInfo ? `<div class="reserve-info"><span class="banner-label">Cara reservasi</span>${p.reserveInfo}</div>` : ``}
             ${p.nearby && p.nearby.length ? `<div class="nearby"><b>Rekomendasi tempat sekitar:</b> ${nearbyLine(p.nearby)}</div>` : ``}
             ${p.hotels && p.hotels.length ? `<div class="hotels"><b>Rekomendasi Hotel (Trip.com):</b> ${hotelsLine(p.hotels, dest.name)}</div>` : ``}
             ${placeLinks(p)}
