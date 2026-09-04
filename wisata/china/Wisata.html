@@ -317,6 +317,8 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
   display:flex;align-items:center;justify-content:space-between;gap:10px;
 }
 .lampiran-group > summary::-webkit-details-marker{display:none;}
+.lampiran-group[data-key^="h"] > summary{background:var(--jade-soft);}
+.lampiran-group[data-key="cadangan"] > summary{background:var(--border);}
 .lampiran-group-title{font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;font-weight:700;font-size:1rem;}
 .lampiran-group-body{border-top:1px solid var(--border);}
 
@@ -383,7 +385,6 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
 }
 .place-links a:hover{background:var(--indigo-soft);border-color:var(--indigo);}
 
-footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-top:32px;line-height:1.6;}
 
 @media (prefers-reduced-motion: reduce){.chev{transition:none;}}
 </style>
@@ -393,7 +394,7 @@ footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-to
     <div class="title-row">
       <div class="page-title serif">Wisata <span class="page-sub-inline">&mdash; Oktober 2026</span></div>
       <div class="top-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button"></button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button" style="display:none"></button>
         <button class="icon-btn" id="collapse-all-btn" aria-label="Tutup semua" title="Tutup semua" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M4 10l4-4 4 4M4 6l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="icon-btn" id="expand-all-btn" aria-label="Buka semua" title="Buka semua" type="button" style="display:none"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <button class="icon-btn" id="hide-reviewed-btn" aria-label="Sembunyikan yang sudah ditandai" title="Sembunyikan yang sudah ditandai (Itinerary + Lampiran)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M2 2l12 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
@@ -413,7 +414,6 @@ footer.credit{text-align:center;color:var(--ink-soft);font-size:.76rem;margin-to
 
 <div class="wrap">
   <div id="city-panels"></div>
-  <footer class="credit">Disusun berdasarkan preferensi jalur datar, ramah lutut, makanan tidak pedas/asam/berminyak, dan prioritas MRT.</footer>
 </div>
 
 <script>
@@ -426,7 +426,7 @@ function applyTheme(t){
   const btn = document.getElementById('theme-toggle');
   if(btn) btn.innerHTML = t === 'dark' ? MOON_ICON : SUN_ICON;
 }
-let currentTheme = localStorage.getItem(THEME_KEY) || systemTheme();
+let currentTheme = 'light';
 applyTheme(currentTheme);
 document.getElementById('theme-toggle').addEventListener('click', ()=>{
   currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -985,7 +985,7 @@ const destinations = [
        yt:`https://www.youtube.com/results?search_query=Nanjing+Eye+Footbridge+night+LED`},
     ],
     lampiranGroups:[
-      {key:`intro`, heading:`Nanjing (南京 · Nánjīng) — Sebelum Berangkat`},
+      {key:`intro`, heading:`Nanjing (南京 · Nánjīng)`},
       {key:`h1`, heading:`Hari 1 — Sabtu, 3 Oktober`},
       {key:`h2`, heading:`Hari 2 — Minggu, 4 Oktober`},
       {key:`h3`, heading:`Hari 3 — Senin, 5 Oktober`},
@@ -1389,7 +1389,7 @@ const destinations = [
        yt:`https://www.youtube.com/results?search_query=Wuxi+Plum+Garden+Meiyuan`},
     ],
     lampiranGroups:[
-      {key:`intro`, heading:`Wuxi (无锡 · Wúxī) — Sebelum Berangkat`},
+      {key:`intro`, heading:`Wuxi (无锡 · Wúxī)`},
       {key:`h2`, heading:`Hari 2 — Rabu, 7 Oktober`},
       {key:`h3`, heading:`Hari 3 — Kamis, 8 Oktober`},
       {key:`h4`, heading:`Hari 4 — Jumat, 9 Oktober`},
@@ -1798,7 +1798,7 @@ const destinations = [
        relatedDays:[4]},
     ],
     lampiranGroups:[
-      {key:`intro`, heading:`Suzhou (苏州 · Sūzhōu) — Sebelum Berangkat`},
+      {key:`intro`, heading:`Suzhou (苏州 · Sūzhōu)`},
       {key:`h1`, heading:`Hari 1 — Jumat, 10 Oktober`},
       {key:`h2`, heading:`Hari 2 — Sabtu, 11 Oktober`},
       {key:`h3`, heading:`Hari 3 — Minggu, 12 Oktober`},
@@ -2071,7 +2071,7 @@ const destinations = [
        yt:`https://www.youtube.com/results?search_query=Sai+Kung+Hong+Kong`},
     ],
     lampiranGroups:[
-      {key:`intro`, heading:`Hong Kong — Sebelum Berangkat`},
+      {key:`intro`, heading:`Hong Kong`},
       {key:`h1`, heading:`Hari 1 — Senin, 2 November`},
       {key:`h2`, heading:`Hari 2 — Selasa, 3 November`},
       {key:`h3`, heading:`Hari 3 — Rabu, 4 November`},
@@ -2412,7 +2412,7 @@ const destinations = [
        yt:`https://www.youtube.com/results?search_query=Wutong+Mountain+Shenzhen`},
     ],
     lampiranGroups:[
-      {key:`intro`, heading:`Shenzhen — Sebelum Berangkat`},
+      {key:`intro`, heading:`Shenzhen`},
       {key:`h1`, heading:`Hari 1 — Rabu, 4 November`},
       {key:`h2`, heading:`Hari 2 — Kamis, 5 November`},
       {key:`h3`, heading:`Hari 3 — Jumat, 6 November`},
@@ -2657,6 +2657,7 @@ function renderCity(dest){
 
     const groupEl = document.createElement('details');
     groupEl.className = 'lampiran-group';
+    groupEl.dataset.key = g.key;
 
     const itemsHtml = entries.map(p=>{
       const noBody = !p.text && !p.wiki && !p.yt && !p.reserveInfo && (!p.nearby || !p.nearby.length) && (!p.hotels || !p.hotels.length);

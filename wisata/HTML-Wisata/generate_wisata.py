@@ -855,7 +855,13 @@ def parse_destination(md_path):
         else:
             print(f"    [!] Heading Lampiran tidak dikenali, dilewati: '{heading}'")
             continue
-        lampiran_groups.append((group_key, heading.strip()))
+        display_heading = heading.strip()
+        if is_intro:
+            # "Nanjing (南京 · Nánjīng) — Sebelum Berangkat" -> just the city
+            # name; the intro group is always first/self-evident, so the
+            # "Sebelum Berangkat" suffix is redundant clutter on the page.
+            display_heading = re.sub(r"\s*[—-]\s*sebelum\s+berangkat\s*$", "", display_heading, flags=re.I).strip()
+        lampiran_groups.append((group_key, display_heading))
 
         # split this group's body into ### place entries
         place_sections = []
