@@ -215,6 +215,7 @@ details.day{
 }
 details.day > summary{
   list-style:none;cursor:pointer;padding:14px;display:flex;align-items:center;gap:12px;
+  background:var(--jade-soft);
 }
 details.day > summary::-webkit-details-marker{display:none;}
 .day-badge{
@@ -392,7 +393,7 @@ details.notes-card > summary::-webkit-details-marker{display:none;}
 <header class="top">
   <div class="top-inner">
     <div class="title-row">
-      <div class="page-title serif">Wisata <span class="page-sub-inline">&mdash; Oktober 2026</span></div>
+      <div class="page-title serif">Wisata</div>
       <div class="top-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button" style="display:none"></button>
         <button class="icon-btn" id="collapse-all-btn" aria-label="Tutup semua" title="Tutup semua" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M4 10l4-4 4 4M4 6l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -834,6 +835,13 @@ const destinations = [
        yt:`https://www.youtube.com/results?search_query=Nanjing+1912+Block+bar+street`,
        nearby:[`Deretan café &amp; resto gaya Republik di sepanjang jalan utama`]},
       // --- h3 ---
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Jiming Temple (古鸡鸣寺 · Gǔ Jīmíng Sì)`,
+       nameEn:`Jiming Temple`,
+       nameHanzi:`古鸡鸣寺`,
+       text:`Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalnya kuil Tao dibangun tahun 300 M, baru berkembang jadi tempat ibadah Buddha penting tahun 527 M. Sempat hancur saat Pemberontakan Taiping (1851-1860) lalu dibangun ulang. Landmark-nya, Pagoda Bhaisajyaguru setinggi 44.8m, baru selesai dibangun tahun 1991. <b>Akses:</b> MRT Line 3/4, turun Stasiun Jimingsi, keluar Exit 5, jalan kaki ±500m ke Jiefang Gate — persis di area yang sama dengan Xuanwu Lake Park. Tiket masuk kuil dibeli di loket depan gerbang kuil. <b>Jam Operasional:</b> ±07:30–17:00. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi. <b>Tiket:</b> CNY 10/org (gratis untuk anak di bawah 1,4m dan lansia 70+).`,
+       wiki:`https://en.wikipedia.org/wiki/Jiming_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Jiming+Temple+Nanjing`,
+       nearby:[`Baiweizhai Vegetarian Noodle Restaurant — mi vegetarian terkenal di dalam kompleks`]},
       {group:`h3`, tag:`main`, label:`Itin H3`, title:`Xuanwu Lake Park (玄武湖景区 · Xuánwǔ Hú Jǐngqū)`,
        nameEn:`Xuanwu Lake Park`,
        nameHanzi:`玄武湖景区`,

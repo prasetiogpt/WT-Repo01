@@ -300,6 +300,21 @@ Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden 
 
 ## Hari 3 — Senin, 5 Oktober
 
+### Jiming Temple (古鸡鸣寺 · Gǔ Jīmíng Sì) ✅
+Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalnya kuil Tao dibangun tahun 300 M, baru berkembang jadi tempat ibadah Buddha penting tahun 527 M. Sempat hancur saat Pemberontakan Taiping (1851-1860) lalu dibangun ulang. Landmark-nya, Pagoda Bhaisajyaguru setinggi 44.8m, baru selesai dibangun tahun 1991.
+
+✅ Nama Hanzi terverifikasi dari halaman ranking Amap.
+
+**Akses:** MRT Line 3/4, turun Stasiun Jimingsi, keluar Exit 5, jalan kaki ±500m ke Jiefang Gate — persis di area yang sama dengan Xuanwu Lake Park. Tiket masuk kuil dibeli di loket depan gerbang kuil.
+
+**Jam Operasional:** ±07:30–17:00. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi.
+
+**Tiket:** CNY 10/org (gratis untuk anak di bawah 1,4m dan lansia 70+).
+
+- Foto/info: https://en.wikipedia.org/wiki/Jiming_Temple
+- Video referensi: https://www.youtube.com/results?search_query=Jiming+Temple+Nanjing
+- Rekomendasi tempat sekitar: Baiweizhai Vegetarian Noodle Restaurant — mi vegetarian terkenal di dalam kompleks
+
 ### Xuanwu Lake Park (玄武湖景区 · Xuánwǔ Hú Jǐngqū) ✅
 Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad ke-3. Namanya "Xuanwu" berasal dari mitos naga hitam (perpaduan kura-kura & ular) yang konon pernah terlihat di sini, dipercaya sebagai dewa air oleh penganut Tao. Selama berabad-abad danau ini punya fungsi berubah-ubah: tempat latihan berburu keluarga kaisar, arena latihan perang laut di masa Dinasti Song, sampai gudang catatan sensus & pajak negara ('Gudang Registrasi Kuning') di masa Dinasti Ming. Baru pada 1911 diubah jadi taman publik seperti sekarang.
 
