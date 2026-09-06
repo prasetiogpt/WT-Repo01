@@ -414,7 +414,12 @@ td:nth-child(2), th:nth-child(2) {
       <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done</label>
       <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check playback-only-control" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
-      <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept=".zip,application/zip,application/x-zip-compressed" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+      <!-- accept sengaja dilonggarkan ke "*/*": iOS Safari kadang meng-gray-out file .zip di
+           picker "Browse" saat sumbernya provider cloud (Google Drive dll), karena UTI yang
+           dilaporkan provider itu ke iOS tidak selalu cocok dengan .zip/application/zip. Filter
+           .zip yang sesungguhnya tetap dilakukan di JS (lihat handleMp3ZipFiles), jadi accept ini
+           cuma hint UI, bukan validasi. -->
+      <input class="mp3-folder-input" id="mp3ZipInput" type="file" accept="*/*" multiple="" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <span class="mp3-status playback-only-control" id="mp3FolderMsg">ZIP belum ada</span>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
         <label class="tts-top-control playback-only-control">Speed: <select id="ttsSpeedSelect"><option value="0.4">0.4</option><option value="0.6">0.6</option><option value="0.8" selected="">0.8</option><option value="1.0">1.0</option><option value="1.2">1.2</option><option value="1.4">1.4</option><option value="1.6">1.6</option></select></label>
