@@ -439,6 +439,7 @@ td:nth-child(2), th:nth-child(2) {
         <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
         <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
         <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
+        <button class="btn btn-html" id="globalPushGit" onclick="pushToGit()" type="button" style="font-size:.74rem;padding:4px 10px">⬆ Git</button>
       </div>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
@@ -3274,13 +3275,16 @@ window.downloadMergeCSV = downloadMergeCSV;
 window.downloadActiveTabTXT = downloadActiveTabCSV;
 window.downloadMergeTXT = downloadMergeCSV;
 
-function downloadUpdatedHTML(){
+function buildSnapshotHtml(){
   syncAttributes(document);
   const clone=document.documentElement.cloneNode(true);
   clone.querySelectorAll('#txtUpload,#mp3FolderInput,#mp3ZipInput,#vocabUpload').forEach(i=>{ i.value=''; i.removeAttribute('value'); });
   sanitizeForDownload(clone);
   persistReferenceDataIntoClone(clone);
-  const data='<!DOCTYPE html>\n'+clone.outerHTML;
+  return '<!DOCTYPE html>\n'+clone.outerHTML;
+}
+function downloadUpdatedHTML(){
+  const data=buildSnapshotHtml();
   const d=new Date(); const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
   // Blob + object URL, bukan data: URI - sekarang file bisa berisi Bank Referensi berukuran
   // besar (bisa 10+ MB ter-encode), dan data: URI diam-diam gagal/kepotong di banyak browser HP
@@ -3293,6 +3297,100 @@ function downloadUpdatedHTML(){
   setUploadMsg('✓ HTML baru di-download.');
 }
 window.downloadUpdatedHTML = downloadUpdatedHTML;
+
+// --- Push ke Git (GitHub Contents API, langsung dari browser - repo publik + CORS didukung
+// GitHub sejak 2022, jadi tidak perlu backend). Token PAT diminta sekali via prompt() dan
+// disimpan di localStorage device ini saja - tidak pernah ikut ke HTML/commit manapun.
+const GIT_OWNER='prasetiogpt', GIT_REPO='WT-Repo01', GIT_DATA_DIR='html-mandarin-player/data', GIT_BRANCH='main';
+const GIT_TOKEN_KEY='ghPatToken';
+function getGitToken(){
+  let t=localStorage.getItem(GIT_TOKEN_KEY);
+  if(!t){
+    t=prompt('Paste GitHub Personal Access Token (disimpan di browser ini saja, tidak pernah dikirim ke tempat lain selain GitHub):');
+    if(t) localStorage.setItem(GIT_TOKEN_KEY, t.trim());
+  }
+  return t ? t.trim() : '';
+}
+function gitHeaders(token){
+  return {'Authorization':'token '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'};
+}
+function utf8ToBase64(str){
+  return btoa(unescape(encodeURIComponent(str)));
+}
+async function githubGetSha(token, path){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${path}?ref=${GIT_BRANCH}`,{headers:gitHeaders(token)});
+  if(res.status===404) return null;
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
+  if(!res.ok) throw new Error('GET '+path+' gagal: '+res.status);
+  const j=await res.json();
+  return j.sha;
+}
+async function githubPutFile(token, path, content, message){
+  const sha=await githubGetSha(token, path);
+  const body={message, content: utf8ToBase64(content), branch: GIT_BRANCH};
+  if(sha) body.sha=sha;
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${path}`,{method:'PUT',headers:gitHeaders(token),body:JSON.stringify(body)});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
+  if(!res.ok){
+    const j=await res.json().catch(()=>({}));
+    throw new Error('PUT '+path+' gagal: '+res.status+' '+(j.message||''));
+  }
+  return res.json();
+}
+async function githubListDataFiles(){
+  // Baca publik, tidak butuh token (repo sudah publik).
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${GIT_DATA_DIR}?ref=${GIT_BRANCH}`);
+  if(res.status===404) return [];
+  if(!res.ok) throw new Error('List data/ gagal: '+res.status);
+  const arr=await res.json();
+  return arr.filter(e=>e.type==='file' && /\.html$/i.test(e.name) && e.name.toLowerCase()!=='index.html').map(e=>e.name).sort();
+}
+function buildIndexHtml(names){
+  const items=names.map(n=>`<li><a href="${n}">${n.replace(/\.html$/i,'')}</a></li>`).join('\n');
+  return `<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandarin Player - Data Index</title>
+<style>body{font-family:sans-serif;padding:24px;max-width:480px;margin:0 auto}h1{font-size:1.1rem}ul{padding-left:1.2em}li{margin:8px 0}a{color:#2b6cb0;text-decoration:none;font-size:1.05rem}a:active{opacity:.6}</style>
+</head><body>
+<h1>🀄 Mandarin Player — Data Tersimpan</h1>
+<ul>
+${items || '<li>(belum ada data)</li>'}
+</ul>
+</body></html>`;
+}
+let gitPushBusy=false;
+async function pushToGit(){
+  if(gitPushBusy) return;
+  const btn=document.getElementById('globalPushGit');
+  const token=getGitToken();
+  if(!token){ setUploadMsg('Push dibatalkan (token kosong).'); return; }
+  let name=prompt('Nama dataset ini (dipakai sebagai nama file, tanpa .html):','');
+  if(!name){ setUploadMsg('Push dibatalkan (nama kosong).'); return; }
+  name=name.trim().toLowerCase().replace(/[^a-z0-9\-_]+/g,'-').replace(/^-+|-+$/g,'');
+  if(!name){ setUploadMsg('Nama tidak valid.'); return; }
+  gitPushBusy=true; if(btn) btn.disabled=true;
+  try{
+    setUploadMsg('Push ke Git: menyiapkan file...');
+    const html=buildSnapshotHtml();
+    const path=`${GIT_DATA_DIR}/${name}.html`;
+    setUploadMsg('Push ke Git: upload '+name+'.html ...');
+    await githubPutFile(token, path, html, `Update data: ${name}`);
+    setUploadMsg('Push ke Git: update index...');
+    const names=await githubListDataFiles();
+    if(!names.includes(name+'.html')) names.push(name+'.html');
+    names.sort();
+    const indexHtml=buildIndexHtml(names);
+    await githubPutFile(token, `${GIT_DATA_DIR}/index.html`, indexHtml, `Update index (${name})`);
+    setUploadMsg('✓ Berhasil push ke Git: '+name+'.html');
+  }catch(err){
+    console.error(err);
+    if(String(err.message||'').startsWith('401')) localStorage.removeItem(GIT_TOKEN_KEY);
+    setUploadMsg('✗ Gagal push ke Git: '+err.message);
+  }finally{
+    gitPushBusy=false; if(btn) btn.disabled=false;
+  }
+}
+window.pushToGit = pushToGit;
 
 function initMediaSession(){
   if('mediaSession' in navigator){
