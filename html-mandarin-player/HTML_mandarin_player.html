@@ -3346,16 +3346,81 @@ async function githubListDataFiles(){
   return arr.filter(e=>e.type==='file' && /\.html$/i.test(e.name) && e.name.toLowerCase()!=='index.html').map(e=>e.name).sort();
 }
 function buildIndexHtml(names){
-  const items=names.map(n=>`<li><a href="${n}">${n.replace(/\.html$/i,'')}</a></li>`).join('\n');
+  const items=names.map(n=>`<li><a href="${n}">${n.replace(/\.html$/i,'')}</a><button class="del" data-name="${n}" onclick="deleteEntry(this)" type="button">🗑</button></li>`).join('\n');
+  // Index ini file statis terpisah (dibuka langsung di Safari, bukan lewat player), jadi tombol
+  // hapus butuh salinan kecil dari logic token/API GitHub sendiri di dalam <script> di bawah -
+  // tidak bisa memanggil fungsi dari HTML_mandarin_player.html karena itu file lain. Sengaja
+  // pakai localStorage key yang SAMA (GIT_TOKEN_KEY) supaya token yang sudah dipaste di player
+  // otomatis terpakai di sini juga (satu origin GitHub Pages yang sama).
   return `<!DOCTYPE html>
 <html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mandarin Player - Data Index</title>
-<style>body{font-family:sans-serif;padding:24px;max-width:480px;margin:0 auto}h1{font-size:1.1rem}ul{padding-left:1.2em}li{margin:8px 0}a{color:#2b6cb0;text-decoration:none;font-size:1.05rem}a:active{opacity:.6}</style>
+<style>body{font-family:sans-serif;padding:24px;max-width:480px;margin:0 auto}h1{font-size:1.1rem}ul{padding-left:0;list-style:none}li{margin:8px 0;display:flex;align-items:center;gap:8px}a{color:#2b6cb0;text-decoration:none;font-size:1.05rem;flex:1}a:active{opacity:.6}button.del{border:none;background:#fee2e2;color:#b91c1c;border-radius:6px;padding:6px 10px;font-size:1rem;flex-shrink:0}button.del:active{opacity:.6}button.del:disabled{opacity:.4}#msg{margin-top:16px;font-size:.85rem;color:#555;min-height:1.2em}</style>
 </head><body>
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
-<ul>
+<ul id="list">
 ${items || '<li>(belum ada data)</li>'}
 </ul>
+<div id="msg"></div>
+<script>
+const GIT_OWNER='${GIT_OWNER}', GIT_REPO='${GIT_REPO}', GIT_DATA_DIR='${GIT_DATA_DIR}', GIT_BRANCH='${GIT_BRANCH}', GIT_TOKEN_KEY='${GIT_TOKEN_KEY}';
+function getGitToken(){
+  let t=localStorage.getItem(GIT_TOKEN_KEY);
+  if(!t){ t=prompt('Paste GitHub Personal Access Token (disimpan di browser ini saja):'); if(t) localStorage.setItem(GIT_TOKEN_KEY, t.trim()); }
+  return t ? t.trim() : '';
+}
+function gitHeaders(token){ return {'Authorization':'token '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'}; }
+function utf8ToBase64(str){ return btoa(unescape(encodeURIComponent(str))); }
+async function ghGetSha(token, path){
+  const res=await fetch('https://api.github.com/repos/'+GIT_OWNER+'/'+GIT_REPO+'/contents/'+path+'?ref='+GIT_BRANCH, {headers:gitHeaders(token)});
+  if(res.status===404) return null;
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
+  if(!res.ok) throw new Error('GET gagal: '+res.status);
+  return (await res.json()).sha;
+}
+function renderIndexHtml(names){
+  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">\\uD83D\\uDDD1</button></li>').join('\\n');
+  return document.documentElement.outerHTML.replace(
+    /<ul id="list">[\\s\\S]*?<\\/ul>/,
+    '<ul id="list">\\n'+(items || '<li>(belum ada data)</li>')+'\\n</ul>'
+  );
+}
+async function regenerateIndex(token, names){
+  const html='<!DOCTYPE html>\\n'+renderIndexHtml(names);
+  const path=GIT_DATA_DIR+'/index.html';
+  const sha=await ghGetSha(token, path);
+  const body={message:'Update index (delete)', content:utf8ToBase64(html), branch:GIT_BRANCH};
+  if(sha) body.sha=sha;
+  const res=await fetch('https://api.github.com/repos/'+GIT_OWNER+'/'+GIT_REPO+'/contents/'+path,{method:'PUT',headers:gitHeaders(token),body:JSON.stringify(body)});
+  if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Update index gagal: '+res.status+' '+(j.message||'')); }
+}
+async function deleteEntry(btn){
+  const name=btn.getAttribute('data-name');
+  if(!confirm('Hapus "'+name.replace(/\\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
+  const msg=document.getElementById('msg');
+  const token=getGitToken();
+  if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
+  btn.disabled=true;
+  try{
+    msg.textContent='Menghapus '+name+' ...';
+    const path=GIT_DATA_DIR+'/'+name;
+    const sha=await ghGetSha(token, path);
+    if(sha){
+      const res=await fetch('https://api.github.com/repos/'+GIT_OWNER+'/'+GIT_REPO+'/contents/'+path,{
+        method:'DELETE', headers:gitHeaders(token),
+        body: JSON.stringify({message:'Delete data: '+name, sha, branch:GIT_BRANCH})
+      });
+      if(res.status===401){ localStorage.removeItem(GIT_TOKEN_KEY); throw new Error('401: token ditolak (salah/kadaluarsa)'); }
+      if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Gagal hapus: '+res.status+' '+(j.message||'')); }
+    }
+    btn.closest('li').remove();
+    const names=Array.from(document.querySelectorAll('#list button.del')).map(b=>b.getAttribute('data-name'));
+    await regenerateIndex(token, names);
+    msg.textContent='✓ '+name+' dihapus.';
+  }catch(err){ msg.textContent='✗ '+err.message; }
+  finally{ btn.disabled=false; }
+}
+<\/script>
 </body></html>`;
 }
 let gitPushBusy=false;
