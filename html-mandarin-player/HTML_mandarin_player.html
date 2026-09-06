@@ -410,9 +410,14 @@ td:nth-child(2), th:nth-child(2) {
   <div class="global-upload-body" id="globalUploadBody">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;">
       <label class="btn btn-check" for="txtUpload" style="font-size:.74rem;padding:4px 10px">⬆ Tab</label>
-      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+      <!-- accept dilonggarkan ke "*/*" dengan alasan sama seperti mp3ZipInput di bawah: iOS
+           Safari bisa meng-gray-out file dari provider cloud (Google Drive dll) kalau accept
+           dibatasi ke MIME/extension tertentu. handleTextUpload/handleVocabUpload tidak
+           memvalidasi extension sama sekali (langsung file.text() + parseDelimitedText), jadi
+           tidak ada proteksi yang hilang dengan melonggarkan ini. -->
+      <input accept="*/*" class="file-input" id="txtUpload" multiple="" type="file" onchange="handleTextUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check" for="vocabUpload" style="font-size:.74rem;padding:4px 10px" title="Upload bank referensi (khusus search, tanpa play/checkbox) - untuk file besar yang terus bertambah">⬆ Done</label>
-      <input accept=".txt,.csv,text/plain,text/csv" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+      <input accept="*/*" class="file-input" id="vocabUpload" multiple="" type="file" onchange="handleVocabUpload(this.files)" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       <label class="btn btn-check playback-only-control" for="mp3ZipInput" style="font-size:.74rem;padding:4px 10px">⬆ MP3</label>
       <!-- accept sengaja dilonggarkan ke "*/*": iOS Safari kadang meng-gray-out file .zip di
            picker "Browse" saat sumbernya provider cloud (Google Drive dll), karena UTI yang
