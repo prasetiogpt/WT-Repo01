@@ -42,5 +42,6 @@ China, Google Maps di luar China). Skill itu tidak tahu soal struktur repo/git i
 itinerary dari skill itu mau disimpan permanen, taruh di subfolder trip yang sesuai di sini dan
 commit+push.
 
-Repo ini **private** — hindari commit data sangat sensitif (nomor paspor, dll) kalau ada di
-catatan itinerary.
+Repo ini **public** sejak 2026-09-06 (diaktifkan supaya GitHub Pages bisa serve HTML Mandarin
+Player langsung ke iPhone). Jangan commit data sangat sensitif (nomor paspor, dll) kalau ada di
+catatan itinerary — sekarang bisa diakses siapa saja, bukan cuma private.
