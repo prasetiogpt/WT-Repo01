@@ -3345,6 +3345,24 @@ async function githubListDataFiles(){
   const arr=await res.json();
   return arr.filter(e=>e.type==='file' && /\.html$/i.test(e.name) && e.name.toLowerCase()!=='index.html').map(e=>e.name).sort();
 }
+// Directory listing lewat Contents API kadang eventually-consistent (jeda propagasi sesaat
+// setelah PUT/DELETE), jadi bisa ketinggalan entry yang baru saja berubah - itu penyebab index
+// kadang tidak sinkron. Untuk merebuild daftar nama dataset, baca isi index.html ITU SENDIRI
+// (sumber yang sudah pasti akurat sampai request PUT terakhir yang berhasil), bukan list folder.
+async function githubGetFileContent(token, path){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${path}?ref=${GIT_BRANCH}`,{headers:gitHeaders(token)});
+  if(res.status===404) return null;
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
+  if(!res.ok) throw new Error('GET '+path+' gagal: '+res.status);
+  const j=await res.json();
+  return decodeURIComponent(escape(atob(j.content.replace(/\n/g,''))));
+}
+function parseIndexNames(html){
+  if(!html) return [];
+  const names=[]; const re=/data-name="([^"]+)"/g; let m;
+  while((m=re.exec(html))) names.push(m[1]);
+  return names;
+}
 function buildIndexHtml(names){
   const items=names.map(n=>`<li><a href="${n}">${n.replace(/\.html$/i,'')}</a><button class="del" data-name="${n}" onclick="deleteEntry(this)" type="button">🗑</button></li>`).join('\n');
   // Index ini file statis terpisah (dibuka langsung di Safari, bukan lewat player), jadi tombol
@@ -3415,9 +3433,20 @@ async function deleteEntry(btn){
     }
     btn.closest('li').remove();
     const names=Array.from(document.querySelectorAll('#list button.del')).map(b=>b.getAttribute('data-name'));
-    await regenerateIndex(token, names);
+    try{
+      await regenerateIndex(token, names);
+    }catch(indexErr){
+      // Data-nya sudah pasti terhapus di atas; kalau update index gagal, coba 1x lagi sebelum
+      // menyerah (biasanya cukup untuk error jaringan sesaat) - supaya index tidak diam-diam
+      // ketinggalan (file terhapus tapi masih muncul di daftar).
+      await new Promise(r=>setTimeout(r,1500));
+      await regenerateIndex(token, names);
+    }
     msg.textContent='✓ '+name+' dihapus.';
-  }catch(err){ msg.textContent='✗ '+err.message; }
+  }catch(err){
+    msg.textContent='✗ '+err.message;
+    alert('Hapus "'+name.replace(/\\.html$/i,'')+'" gagal atau index gagal ter-update:\\n'+err.message+'\\n\\nMuat ulang halaman ini untuk cek status sebenarnya.');
+  }
   finally{ btn.disabled=false; }
 }
 <\/script>
@@ -3441,7 +3470,8 @@ async function pushToGit(){
     setUploadMsg('Push ke Git: upload '+name+'.html ...');
     await githubPutFile(token, path, html, `Update data: ${name}`);
     setUploadMsg('Push ke Git: update index...');
-    const names=await githubListDataFiles();
+    const existingIndexHtml=await githubGetFileContent(token, `${GIT_DATA_DIR}/index.html`);
+    const names=parseIndexNames(existingIndexHtml);
     if(!names.includes(name+'.html')) names.push(name+'.html');
     names.sort();
     const indexHtml=buildIndexHtml(names);
@@ -3451,6 +3481,7 @@ async function pushToGit(){
     console.error(err);
     if(String(err.message||'').startsWith('401')) localStorage.removeItem(GIT_TOKEN_KEY);
     setUploadMsg('✗ Gagal push ke Git: '+err.message);
+    alert('Push ke Git gagal atau tidak selesai penuh:\n'+err.message+'\n\nData mungkin sudah ter-upload tapi index belum tentu ter-update - cek halaman index untuk pastikan.');
   }finally{
     gitPushBusy=false; if(btn) btn.disabled=false;
   }
