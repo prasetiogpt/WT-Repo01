@@ -5,9 +5,8 @@
 </head><body>
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
 <ul id="list">
-<li><a href="'+n+'">'+n+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">🗑</button></li>
-<li><a href="ap-mandarin-001-v01.html">ap-mandarin-001-v01</a><button class="del" data-name="ap-mandarin-001-v01.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
 <li><a href="ap-mandarin-001.html">ap-mandarin-001</a><button class="del" data-name="ap-mandarin-001.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
+<li><a href="ap-mandarin-001-v01.html">ap-mandarin-001-v01</a><button class="del" data-name="ap-mandarin-001-v01.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
 </ul>
 <div id="msg"></div>
 <script>
@@ -27,7 +26,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(names){
-  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">\uD83D\uDDD1</button></li>').join('\n');
+  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">🗑</button></li>').join('\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\s\S]*?<\/ul>/,
     '<ul id="list">\n'+(items || '<li>(belum ada data)</li>')+'\n</ul>'
