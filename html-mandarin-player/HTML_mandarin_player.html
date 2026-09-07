@@ -3439,15 +3439,15 @@ async function deleteEntry(btn){
     }
     btn.closest('li').remove();
     const names=Array.from(document.querySelectorAll('#list button.del')).map(b=>b.getAttribute('data-name'));
-    try{
-      await regenerateIndex(token, names);
-    }catch(indexErr){
-      // Data-nya sudah pasti terhapus di atas; kalau update index gagal, coba 1x lagi sebelum
-      // menyerah (biasanya cukup untuk error jaringan sesaat) - supaya index tidak diam-diam
-      // ketinggalan (file terhapus tapi masih muncul di daftar).
-      await new Promise(r=>setTimeout(r,1500));
-      await regenerateIndex(token, names);
+    // index.html bisa "ditabrak" push/hapus lain yang hampir bersamaan (409 sha tidak cocok) -
+    // data di atas sudah pasti terhapus, jadi coba beberapa kali sebelum menyerah supaya index
+    // tidak diam-diam ketinggalan (file terhapus tapi masih muncul di daftar).
+    let indexErr=null;
+    for(let attempt=1; attempt<=3; attempt++){
+      try{ await regenerateIndex(token, names); indexErr=null; break; }
+      catch(e){ indexErr=e; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
+    if(indexErr) throw indexErr;
     msg.textContent='✓ '+name+' dihapus.';
   }catch(err){
     msg.textContent='✗ '+err.message;
@@ -3476,12 +3476,28 @@ async function pushToGit(){
     setUploadMsg('Push ke Git: upload '+name+'.html ...');
     await githubPutFile(token, path, html, `Update data: ${name}`);
     setUploadMsg('Push ke Git: update index...');
-    const existingIndexHtml=await githubGetFileContent(token, `${GIT_DATA_DIR}/index.html`);
-    const names=parseIndexNames(existingIndexHtml);
-    if(!names.includes(name+'.html')) names.push(name+'.html');
-    names.sort();
-    const indexHtml=buildIndexHtml(names);
-    await githubPutFile(token, `${GIT_DATA_DIR}/index.html`, indexHtml, `Update index (${name})`);
+    // index.html adalah satu file yang sama disentuh setiap push/hapus - kalau ada proses lain
+    // (tab lain, atau push+hapus hampir bersamaan) yang mengubahnya di antara GET sha dan PUT di
+    // sini, GitHub akan menolak dengan 409 (sha tidak cocok lagi). Re-baca + re-coba beberapa kali
+    // supaya konflik sesaat seperti ini tidak langsung dianggap gagal total - data yang sudah
+    // ter-upload di atas tidak ikut hilang, cuma bagian index yang perlu diulang.
+    let indexAttemptErr=null;
+    for(let attempt=1; attempt<=3; attempt++){
+      try{
+        const existingIndexHtml=await githubGetFileContent(token, `${GIT_DATA_DIR}/index.html`);
+        const names=parseIndexNames(existingIndexHtml);
+        if(!names.includes(name+'.html')) names.push(name+'.html');
+        names.sort();
+        const indexHtml=buildIndexHtml(names);
+        await githubPutFile(token, `${GIT_DATA_DIR}/index.html`, indexHtml, `Update index (${name})`);
+        indexAttemptErr=null;
+        break;
+      }catch(err){
+        indexAttemptErr=err;
+        if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt));
+      }
+    }
+    if(indexAttemptErr) throw indexAttemptErr;
     setUploadMsg('✓ Berhasil push ke Git: '+name+'.html');
   }catch(err){
     console.error(err);
