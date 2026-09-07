@@ -3359,8 +3359,14 @@ async function githubGetFileContent(token, path){
 }
 function parseIndexNames(html){
   if(!html) return [];
+  // PENTING: cari data-name HANYA di dalam <ul id="list">...</ul>, bukan di seluruh file - isi
+  // <script> di index.html memuat teks kode `data-name="'+n+'"` secara harfiah (bagian dari kode
+  // renderIndexHtml/deleteEntry itu sendiri), yang kalau ikut ter-scan bakal salah kebaca sebagai
+  // nama dataset palsu ("'+n+'") dan tertanam ke index berikutnya.
+  const listMatch=html.match(/<ul id="list">([\s\S]*?)<\/ul>/);
+  const listHtml=listMatch ? listMatch[1] : '';
   const names=[]; const re=/data-name="([^"]+)"/g; let m;
-  while((m=re.exec(html))) names.push(m[1]);
+  while((m=re.exec(listHtml))) names.push(m[1]);
   return names;
 }
 function buildIndexHtml(names){
