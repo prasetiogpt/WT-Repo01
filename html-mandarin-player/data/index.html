@@ -6,7 +6,6 @@
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
 <ul id="list">
 <li><a href="ap-mandarin-001.html">ap-mandarin-001</a><button class="del" data-name="ap-mandarin-001.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
-<li><a href="ap001.html">ap001</a><button class="del" data-name="ap001.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
 </ul>
 <div id="msg"></div>
 <script>
@@ -26,7 +25,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(names){
-  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">\uD83D\uDDD1</button></li>').join('\n');
+  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">🗑</button></li>').join('\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\s\S]*?<\/ul>/,
     '<ul id="list">\n'+(items || '<li>(belum ada data)</li>')+'\n</ul>'
@@ -62,9 +61,20 @@ async function deleteEntry(btn){
     }
     btn.closest('li').remove();
     const names=Array.from(document.querySelectorAll('#list button.del')).map(b=>b.getAttribute('data-name'));
-    await regenerateIndex(token, names);
+    try{
+      await regenerateIndex(token, names);
+    }catch(indexErr){
+      // Data-nya sudah pasti terhapus di atas; kalau update index gagal, coba 1x lagi sebelum
+      // menyerah (biasanya cukup untuk error jaringan sesaat) - supaya index tidak diam-diam
+      // ketinggalan (file terhapus tapi masih muncul di daftar).
+      await new Promise(r=>setTimeout(r,1500));
+      await regenerateIndex(token, names);
+    }
     msg.textContent='✓ '+name+' dihapus.';
-  }catch(err){ msg.textContent='✗ '+err.message; }
+  }catch(err){
+    msg.textContent='✗ '+err.message;
+    alert('Hapus "'+name.replace(/\.html$/i,'')+'" gagal atau index gagal ter-update:\n'+err.message+'\n\nMuat ulang halaman ini untuk cek status sebenarnya.');
+  }
   finally{ btn.disabled=false; }
 }
 </script>
