@@ -6,7 +6,6 @@
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
 <ul id="list">
 <li><a href="ap-mandarin-001.html">ap-mandarin-001</a><button class="del" data-name="ap-mandarin-001.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
-<li><a href="ap-mandarin.html">ap-mandarin</a><button class="del" data-name="ap-mandarin.html" onclick="deleteEntry(this)" type="button">🗑</button></li>
 </ul>
 <div id="msg"></div>
 <script>
@@ -62,15 +61,15 @@ async function deleteEntry(btn){
     }
     btn.closest('li').remove();
     const names=Array.from(document.querySelectorAll('#list button.del')).map(b=>b.getAttribute('data-name'));
-    try{
-      await regenerateIndex(token, names);
-    }catch(indexErr){
-      // Data-nya sudah pasti terhapus di atas; kalau update index gagal, coba 1x lagi sebelum
-      // menyerah (biasanya cukup untuk error jaringan sesaat) - supaya index tidak diam-diam
-      // ketinggalan (file terhapus tapi masih muncul di daftar).
-      await new Promise(r=>setTimeout(r,1500));
-      await regenerateIndex(token, names);
+    // index.html bisa "ditabrak" push/hapus lain yang hampir bersamaan (409 sha tidak cocok) -
+    // data di atas sudah pasti terhapus, jadi coba beberapa kali sebelum menyerah supaya index
+    // tidak diam-diam ketinggalan (file terhapus tapi masih muncul di daftar).
+    let indexErr=null;
+    for(let attempt=1; attempt<=3; attempt++){
+      try{ await regenerateIndex(token, names); indexErr=null; break; }
+      catch(e){ indexErr=e; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
+    if(indexErr) throw indexErr;
     msg.textContent='✓ '+name+' dihapus.';
   }catch(err){
     msg.textContent='✗ '+err.message;
