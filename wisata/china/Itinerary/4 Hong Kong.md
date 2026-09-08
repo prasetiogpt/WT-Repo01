@@ -13,7 +13,6 @@
 | Tanggal & Jam Kedatangan | Senin, 2 November, **11:00** (fixed) |
 | Maskapai (opsi) | Cathay Pacific / China Eastern / Hong Kong Express — semua terbang nonstop rute ini |
 | Durasi | ±2 jam 35 menit (nonstop) |
-| Tiket | ±Rp1.000.000/org |
 
 **Catatan biaya:** semua angka HKD/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.300/HKD** (kurs tetap khusus trip Hong Kong ini). Tanda — berarti gratis/tidak ada biaya.
 
@@ -83,7 +82,7 @@
 | 10:00–11:00 | Checkout hotel, siap-siap | — | — | — |
 | 11:00–12:00 | Makan siang dekat hotel | ±HKD 35/org | 70 | Rp161.000 |
 | 12:00–13:00 | Taksi/jalan kaki ke **Hong Kong West Kowloon Station** | ±1,9km dari hotel — taksi ±10 menit lebih praktis dengan koper (jalan kaki ±27 menit) | 40 | Rp92.000 |
-| 13:30 | HSR West Kowloon → Futian (Shenzhen) | ±15-20 menit, ±19 kereta/hari 07:11-22:01. Tiket ±HKD 70/org | — | — |
+| 13:30 | HSR West Kowloon → Futian (Shenzhen) | ±15-20 menit, ±19 kereta/hari 07:11-22:01. Biaya masuk budget Shenzhen | — | — |
 | | **TOTAL HARI 3** | | **154** | **Rp354.200** |
 
 **Plan-B hari ini:** kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).

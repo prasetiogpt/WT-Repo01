@@ -15,7 +15,6 @@
 | Jadwal | Berangkat 06:50 → Tiba 14:25 (nonstop, 6j35m) |
 | Bagasi | Carry-on 1×8kg · Checked baggage 1×23kg |
 | Persiapan | Tiba di bandara CGK sekitar 04:30-05:00 pagi |
-| Tiket + visa | Rp8.500.000 (gabungan tiket pesawat + visa, 3 orang) |
 
 **Nonstop tanpa transit** — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.
 
@@ -23,7 +22,7 @@
 
 **Catatan biaya:** semua angka CNY/IDR di bawah adalah perkiraan biaya untuk **3 orang** (rombongan), sudah dijumlah per baris kegiatan. Kurs dipakai: **Rp2.650/CNY** (kurs tetap). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). Rp3.800.000 (3 malam). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
+**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.2/10 (2.400 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 170m/±3 menit jalan kaki (koreksi dari draft lama yang menyebut ±400m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
 
 **Transportasi:** semua "taksi" di itinerary ini maksudnya **Didi Rider** (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).
 
@@ -160,7 +159,7 @@ Massacre Memorial Hall & Nanjing Museum sama-sama gratis (reservasi online), jad
 | | |
 |---|---|
 | Opsi 1 (1 orang) | HSR ke Ningbo — **berangkat ±15:00**, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal) |
-| Opsi 2 (2 orang) | HSR lanjut ke Wuxi — **berangkat ±15:00** dari Nanjing South, menyambung ke itinerary Wuxi. HSR Nanjing→Wuxi ±44 menit (G-train tercepat), tiket CNY 200/org (±Rp530.000/org) — masuk budget Wuxi (kota tujuan), bukan Nanjing |
+| Opsi 2 (2 orang) | HSR lanjut ke Wuxi — **berangkat ±15:00** dari Nanjing South, menyambung ke itinerary Wuxi. HSR Nanjing→Wuxi ±44 menit (G-train tercepat) — biaya masuk budget Wuxi (kota tujuan), bukan Nanjing |
 | Tanggal | Selasa, 6 Oktober |
 | Stasiun | Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah |

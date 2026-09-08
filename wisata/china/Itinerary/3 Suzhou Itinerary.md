@@ -12,12 +12,11 @@
 | | |
 |---|---|
 | Tanggal & Jam Kedatangan | Jumat, 10 Oktober, **±17:00**, via HSR dari Wuxi |
-| Tiket HSR kedatangan | CNY 50/org (2 org, ±Rp265.000) |
 | Titik kedatangan → Hotel | Taksi/Didi singkat ke hotel |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). Rp2.000.000 (4 malam). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: **Nanyuanbeilu Station (南园北路, Line 5)**, ±140m/±2 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).
+**Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: **Nanyuanbeilu Station (南园北路, Line 5)**, ±140m/±2 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).
 
 Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel; **3 halte ke arah barat daya → Laodonglu (劳动路)**, interchange ke **Line 2** — jalur ke kawasan Hanshan Temple/Shantang Street; **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)**, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5) pakai taksi/Didi langsung ATAU Line 5→Nanmen/Laodonglu→transfer Line 2/4 (interchange Line 2 & Line 4).
 
@@ -29,7 +28,7 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 | Stasiun keberangkatan | **Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)** — lebih dekat dari hotel dibanding Suzhou North (5,9km vs ±16km) |
 | Tanggal & jam berangkat (rencana) | Selasa, 14 Oktober, **±15:00** (belum jadwal terkunci — ±19 kereta G/D per hari 07:15–18:08, cek nomor kereta persis di 12306/Trip.com H-7) |
 | Durasi HSR | ±2 jam 27 menit – 3,5 jam (tergantung kereta) |
-| Estimasi biaya HSR | ±CNY 147–218/org kelas 2 (masuk budget Ningbo, tidak dihitung di sini) |
+| Biaya HSR | Masuk budget Ningbo (kota tujuan), tidak dihitung di sini |
 | Hotel → Stasiun | Taksi/Didi langsung, ±27 menit |
 
 ---

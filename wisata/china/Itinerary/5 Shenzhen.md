@@ -13,11 +13,10 @@
 | Rute | Hong Kong West Kowloon → Shenzhen Futian (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
 | Tanggal & Jam Kedatangan | Rabu, 4 November, **17:00** (asumsi default skill — lihat catatan revisi di atas) |
 | Durasi | ±14 menit — salah satu rute HSR lintas-batas tercepat di dunia, ±47 keberangkatan/hari 07:11–22:01 |
-| Tiket | **Rp200.000/org** (harga riil dari user) — referensi resmi kelas ekonomi ±CNY 68/org (±Rp180.200/org) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)** — hotel bisnis baru (dibuka 2024, 700 kamar), No. 1, Shixia North 2nd Street, Futian District, Shenzhen, Guangdong. **Rp800.000/malam (2 dewasa), sudah dibooking.** Anchor MRT: **Shixia Metro Station** (Line 3, transfer Line 7), ±170m/±3 menit jalan kaki — persis di seberang hotel, dipakai sebagai basis SEMUA rute harian di bawah. Total 3 malam = Rp2.400.000.
+**Hotel:** **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)** — hotel bisnis baru (dibuka 2024, 700 kamar), sudah dibooking. No. 1, Shixia North 2nd Street, Futian District, Shenzhen, Guangdong. Anchor MRT: **Shixia Metro Station** (Line 3, transfer Line 7), ±170m/±3 menit jalan kaki — persis di seberang hotel, dipakai sebagai basis SEMUA rute harian di bawah.
 
 **Kedatangan → Hotel:** Imigrasi Tiongkok sudah diselesaikan di **West Kowloon (co-location, sebelum naik kereta)** — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: metro Line 3 ke Shixia, **2 halte, tanpa transfer** (±8 menit), lanjut jalan kaki ±3 menit ke hotel.
 

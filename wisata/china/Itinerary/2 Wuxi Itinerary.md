@@ -25,12 +25,11 @@
 
 | | |
 |---|---|
-| Kedatangan | Selasa, 6 Oktober, **18:00 tepat**, via HSR dari Nanjing — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Tiket HSR kedatangan | CNY 200/org (2 org, ±44 menit G-train tercepat) — CNY 400, ±Rp1.060.000 |
+| Kedatangan | Selasa, 6 Oktober, **18:00 tepat**, via HSR dari Nanjing, ±44 menit (G-train tercepat) — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
 | Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
 
-**Hotel:** Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road) — Rp2.000.000 (4 malam). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: **Tanduqiao/Taihu Square Metro Station** — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).
+**Hotel:** Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: **Tanduqiao/Taihu Square Metro Station** — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).
 
 Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan stasiun Line 1 dari hotel: **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)**, dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 di **Liutan**. Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: masuk via Line 1 + transfer **Line 2** ke Stasiun **Heliekou** (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.
 
@@ -215,7 +214,7 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 | Rute | Wuxi Railway Station → Suzhou via HSR |
 | Tanggal & Jam | Sabtu, 10 Oktober, **15:00 tepat** |
 | Durasi HSR | ±18–30 menit (Wuxi-Suzhou termasuk segmen HSR terpendek di jalur ini, banyak pilihan jadwal G/D-train) |
-| Tiket | CNY 50/org (2 org, ±Rp265.000) — masuk budget Suzhou (kota tujuan), bukan Wuxi |
+| Tiket | Biaya masuk budget Suzhou (kota tujuan), bukan Wuxi |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun |
 
 **Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.
