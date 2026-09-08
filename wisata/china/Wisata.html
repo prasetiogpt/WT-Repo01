@@ -525,6 +525,7 @@ document.getElementById('download-html-btn').addEventListener('click', ()=>{
 
 const CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const PLANE_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>';
+const TRAIN_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13" rx="4"/><path d="M5 12h14M9 16l-2.5 4M15 16l2.5 4"/><circle cx="9" cy="8.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="8.5" r="0.8" fill="currentColor" stroke="none"/></svg>';
 const TRANSIT_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>';
 
 /* Copy-to-clipboard buttons for Lampiran place names (Amap/Google Maps).
@@ -621,7 +622,7 @@ const destinations = [
     currency:`CNY`,
 
     transportPergi:{
-      mode:"flight", kicker:`Transport Pergi`,
+      mode:`flight`, kicker:`Transport Pergi`,
       title:`CGK &rarr; NKG &middot; Sabtu, 3 Oktober &middot; 06:50&ndash;14:25`,
       tag:"ok", openByDefault:true, code:`MF8694`,
       from:{code:`CGK`, name:`Jakarta &middot; T3`},
@@ -1007,15 +1008,20 @@ const destinations = [
     currency:`CNY`,
 
     transportPergi:{
-      mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Selasa, 6 Oktober (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Kedatangan`,`Selasa, 6 Oktober, <b>18:00 tepat</b>, via HSR dari Nanjing, ±44 menit (G-train tercepat) — moda &amp; asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen)`],
+      mode:`train`, kicker:`Transport Pergi`,
+      title:`NKG &rarr; WUX &middot; Selasa, 6 Oktober &middot; 17:16&ndash;18:00`,
+      tag:"ok", openByDefault:true, code:`G-train tercepat`,
+      from:{code:`NKG`, name:`Nanjing South &middot; HSR`},
+      to:{code:`WUX`, name:`Wuxi &middot; HSR`},
+      duration:`±44 menit &middot; langsung`,
+      meta:[
+        [`Kereta`,`G-train tercepat`],
+        [`Jadwal`,`Berangkat 17:16 → Tiba 18:00 (langsung, ±44 menit)`],
         [`Kepulangan (lanjut ke Suzhou)`,`Sabtu, 10 Oktober, <b>15:00 tepat</b>, via HSR`],
         [`Stasiun acuan`,`<b>Wuxi Railway Station</b> (pusat kota) — <b>BUKAN Wuxi East</b>, sesuai catatan Anda karena East di luar pusat kota`],
       ],
-      warn:`Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`,
+      note:`Hotel berada di kawasan <b>Old Canal/Nanchan Temple</b>, Liangxi District. Urutan stasiun Line 1 dari hotel: <b>Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)</b>, dan ke arah utara <b>Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station</b>, semua searah tanpa backtrack. Ke <b>Huishan (Hari 3)</b> transfer Line 4 di <b>Liutan</b>. Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: masuk via Line 1 + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island, Taihu Lake Promenade)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), pulang via Didi langsung dari Taihu Lake Promenade.`,
+      warn:`<b>⚠️ Catatan:</b> jam berangkat (17:16) dihitung mundur dari jam tiba yang sudah dikunci (18:00) minus durasi tempuh (±44 menit) — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.`,
       hotel:`<b>Hotel:</b> Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: <b>Tanduqiao/Taihu Square Metro Station</b> — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).`
     },
 
@@ -1819,15 +1825,18 @@ const destinations = [
     currency:`HKD`,
 
     transportPergi:{
-      mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Minggu, 1 November (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal`,`Minggu, 1 November`],
+      mode:`flight`, kicker:`Transport Pergi`,
+      title:`NGB &rarr; HKG &middot; Minggu, 1 November &middot; 08:50&ndash;11:20`,
+      tag:"ok", openByDefault:true, code:`UO227`,
+      from:{code:`NGB`, name:`Ningbo Lishe &middot; T2`},
+      to:{code:`HKG`, name:`Hong Kong &middot; T1`},
+      duration:`±2j30m &middot; nonstop`,
+      meta:[
         [`Maskapai`,`Hong Kong Express UO227 · Fare Lite (Class W)`],
         [`Jadwal`,`Berangkat 08:50 → Tiba 11:20 (nonstop, ±2j30m)`],
       ],
-      warn:`<b>Kedatangan → Hotel:</b> Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut MTR 1 halte (Tsuen Wan Line) ke Tsim Sha Tsui Exit C2 — persis di depan hotel. <b>Bukan</b> shuttle gratis hotel — H8 Hostel tidak termasuk daftar hotel yang dilayani Airport Express Hotel Shuttle Bus (shuttle itu hanya untuk hotel besar berjaringan seperti Peninsula/Sheraton/Langham).<br><br><b>Transportasi lokal:</b> Octopus Card (kartu isi ulang, beli di bandara/stasiun MTR) untuk semua MTR/bus/ferry/tram — jauh lebih praktis daripada beli tiket satuan. Prioritas: MTR &gt; jalan kaki (banyak area pusat kota walkable) &gt; Star Ferry/tram &gt; taksi (hanya untuk bandara/bawaan berat).`,
+      note:`<b>Kedatangan → Hotel:</b> Airport Express (bandara → Kowloon Station), ±24 menit, HKD 105/org, dilanjut MTR 1 halte (Tsuen Wan Line) ke Tsim Sha Tsui Exit C2 — persis di depan hotel. <b>Bukan</b> shuttle gratis hotel — H8 Hostel tidak termasuk daftar hotel yang dilayani Airport Express Hotel Shuttle Bus (shuttle itu hanya untuk hotel besar berjaringan seperti Peninsula/Sheraton/Langham).<br><br><b>Transportasi lokal:</b> Octopus Card (kartu isi ulang, beli di bandara/stasiun MTR) untuk semua MTR/bus/ferry/tram — jauh lebih praktis daripada beli tiket satuan. Prioritas: MTR &gt; jalan kaki (banyak area pusat kota walkable) &gt; Star Ferry/tram &gt; taksi (hanya untuk bandara/bawaan berat).`,
+      warn:``,
       hotel:`<b>Hotel:</b> Hong Kong H8 Hostel (Tsim Sha Tsui Store C2 Exit) — ⭐⭐ rating 8,7/10 (135 ulasan). Room D, 17/F, Healey Building, 81 Nathan Road, Tsim Sha Tsui, Yau Tsim Mong District, Kowloon. ±2,4km (garis lurus) dari pusat kota. Anchor MRT: <b>Tsim Sha Tsui Metro Station</b>, &lt;100m/±1 menit jalan kaki (Exit C2, langsung di Nathan Road) — hotel persis di atas stasiun ini, jadi dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/titik lain di sekitar hotel: East Tsim Sha Tsui Metro Station (210m/±3 menit jalan kaki), Hong Kong West Kowloon Station (1,9km/±27 menit jalan kaki — dipakai untuk HSR ke Shenzhen Hari 3, lebih praktis naik taksi dengan koper), Hung Hom Station (1,7km, tidak relevan untuk rute trip ini), Hong Kong International Airport (32km/±30 menit naik mobil).`
     },
 
@@ -3054,12 +3063,13 @@ function updateProgress(dayEl){
 
 function renderTransport(t){
   const isFlight = t.mode === "flight";
-  const icon = isFlight ? PLANE_ICON : TRANSIT_ICON;
+  const isTrain = t.mode === "train";
+  const icon = isFlight ? PLANE_ICON : isTrain ? TRAIN_ICON : TRANSIT_ICON;
   const tagClass = t.tag === "ok" ? "tag-ok" : "tag-tbd";
   const tagText = t.tag === "ok" ? "Confirmed" : "Belum pasti";
 
   let body = "";
-  if(isFlight){
+  if(isFlight || isTrain){
     body = `
       <div class="flight-route">
         <div class="route-city"><div class="route-code">${t.from.code}</div><div class="route-name">${t.from.name}</div></div>

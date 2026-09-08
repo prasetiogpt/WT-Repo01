@@ -25,9 +25,14 @@
 
 | | |
 |---|---|
-| Kedatangan | Selasa, 6 Oktober, **18:00 tepat**, via HSR dari Nanjing, ±44 menit (G-train tercepat) — moda & asal kedatangan menyesuaikan rencana Anda (kota ini direncanakan independen) |
+| Rute | NKG Nanjing South (HSR) → WUX Wuxi (HSR) |
+| Tanggal | Selasa, 6 Oktober |
+| Kereta | G-train tercepat |
+| Jadwal | Berangkat 17:16 → Tiba 18:00 (langsung, ±44 menit) |
 | Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
+
+**⚠️ Catatan:** jam berangkat (17:16) dihitung mundur dari jam tiba yang sudah dikunci (18:00) minus durasi tempuh (±44 menit) — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
 
 **Hotel:** Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: **Tanduqiao/Taihu Square Metro Station** — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).
 

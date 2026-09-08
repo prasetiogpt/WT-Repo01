@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| Rute | Ningbo Lishe (NGB, T2) → Hong Kong (HKG, T1) |
+| Rute | NGB Ningbo Lishe (T2) → HKG Hong Kong (T1) |
 | Tanggal | Minggu, 1 November |
 | Maskapai | Hong Kong Express UO227 · Fare Lite (Class W) |
 | Jadwal | Berangkat 08:50 → Tiba 11:20 (nonstop, ±2j30m) |

@@ -328,9 +328,12 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
     if m:
         code1, city1, term1, code2, city2, term2 = m.groups()
         maskapai = info_rows_dict.get("Maskapai", "")
+        kereta = info_rows_dict.get("Kereta", "")
         jadwal = info_rows_dict.get("Jadwal", "")
+        is_train = not maskapai and bool(kereta)
+        mode = "train" if is_train else "flight"
         fcode_m = FLIGHT_CODE_RE.search(maskapai)
-        code = fcode_m.group(1) if fcode_m else ""
+        code = fcode_m.group(1) if fcode_m else (kereta if is_train else "")
         jm = JADWAL_RE.search(jadwal)
         if jm:
             dep, arr, kind, dur = jm.groups()
@@ -350,7 +353,7 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
         from_name = f"{htmlify(city1)} &middot; {htmlify(term1)}"
         to_name = f"{htmlify(city2)} &middot; {htmlify(term2)}"
         return f"""    {field_key}:{{
-      mode:"flight", kicker:{jsval(kicker_flight)},
+      mode:{jsval(mode)}, kicker:{jsval(kicker_flight)},
       title:{jswrap(title)},
       tag:"ok", openByDefault:true, code:{jsval(code)},
       from:{{code:{jsval(code1)}, name:{jswrap(from_name)}}},
