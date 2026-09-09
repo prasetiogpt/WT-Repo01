@@ -435,9 +435,9 @@ td:nth-child(2), th:nth-child(2) {
       <label class="tts-top-control" style="display:none">MP3 Folder: <input class="mp3-folder-input" id="mp3FolderInput" type="file" webkitdirectory="" directory="" multiple=""></label>
       <label class="tts-top-control" style="display:none"><input id="mp3FallbackTts" type="checkbox" checked=""> Fallback</label>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:nowrap;">
-        <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.Clip</label>
-        <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Clip</button>
-        <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Clip</button>
+        <label class="tts-top-control"><input id="globalAccumClip" type="checkbox"> Ak.</label>
+        <button class="btn btn-check" id="globalSaveAll" type="button" style="font-size:.74rem;padding:4px 10px">Save Cl</button>
+        <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Cl</button>
         <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
         <button class="btn btn-html" id="globalPushGit" onclick="pushToGit()" type="button" style="font-size:.74rem;padding:4px 10px">⬆ Git</button>
       </div>
@@ -1231,7 +1231,7 @@ window.switchTab = switchTab;
 
 // Bank Referensi (Done Vocab) tidak punya fitur play sama sekali (lihat komentar di
 // buildReferenceRowHTML) - Speed/Au/upload MP3+status jadi tidak berguna saat tab itu aktif.
-// Murni sembunyikan tampilan (2026-08-12, user's choice - Ak.Clip/Save Clip/Clear Clip/↓HTML
+// Murni sembunyikan tampilan (2026-08-12, user's choice - Ak./Save Cl/Clear Cl/↓HTML
 // sengaja TIDAK ikut disembunyikan, tetap tampil terlepas dari tab jenis apa).
 function updatePlaybackControlsVisibility(){
   const panel = document.querySelector('body > .panel.active');
@@ -2050,14 +2050,24 @@ function scopeIndicesVisible(headers, colScope){
   return idxs.filter(i => !headers[i] || !headers[i].classList.contains('col-hidden'));
 }
 
-// Nilai valid: 'general' (biasa, dengan fallback pinyin tanpa nada), 'or-han' (cocok kalau
-// mengandung SALAH SATU karakter Han dari yang diketik/paste - bukan gabungan persis, dipakai
-// terutama di Bank Referensi/Done untuk cari kalimat yang mengandung karakter tertentu tanpa
-// perlu tahu urutan/kalimat lengkapnya), 'exclude' (kecualikan hasil yang cocok literal - TIDAK
-// pakai fallback pinyin, supaya cakupan "kecualikan" tidak melebar tak terduga). Gabungan dari
-// checkbox Excl. lama + fitur baru OR Han jadi satu dropdown (2026-08-15, user's request -
-// "kenapa harus 2 kontrol kalau cuma pilih salah satu mode").
+// Nilai valid: 'general' (biasa, dengan fallback pinyin tanpa nada), 'or-han' (label tampil
+// "Or" - cocok kalau mengandung SALAH SATU token dari yang diketik/paste, bukan gabungan
+// persis; dipakai terutama di Bank Referensi/Done untuk cari kalimat yang mengandung salah
+// satu dari beberapa kata/karakter tanpa perlu tahu urutan/kalimat lengkapnya), 'exclude'
+// (kecualikan hasil yang cocok literal - TIDAK pakai fallback pinyin, supaya cakupan
+// "kecualikan" tidak melebar tak terduga). Gabungan dari checkbox Excl. lama + fitur OR jadi
+// satu dropdown (2026-08-15).
+// 'or-han' awalnya cuma untuk karakter Han (tiap karakter jadi satu token OR) - direvisi
+// (2026-09-09, user's request) supaya berlaku juga untuk pinyin: kalau query TIDAK mengandung
+// karakter Han sama sekali, dipecah per KATA (dipisah spasi, masing-masing dianggap satu
+// suku kata pinyin) dan dicocokkan pakai pinyinCellsMatch() yang sama seperti mode 'general'
+// (toleran nada/tanpa nada) - bukan cuma substring literal, supaya "ni" tetap cocok "nǐ".
 const HAN_CHAR_REGEX = /[㐀-鿿]/;
+function orModeTokens(qText){
+  const hanChars = Array.from(qText).filter(ch=>HAN_CHAR_REGEX.test(ch));
+  if(hanChars.length) return {isHan:true, tokens:hanChars};
+  return {isHan:false, tokens:qText.split(/\s+/).filter(Boolean)};
+}
 function applyFilter(panel){
   const table = panel.querySelector('table');
   if(!table) return;
@@ -2087,11 +2097,8 @@ function applyFilter(panel){
   // scopeIndicesVisible(). Dihitung sekali per tabel, bukan per baris.
   const searchIdxs = scopeIndicesVisible(headers, colScope);
   const pinIdxs = (colScope==='all' || colScope==='pin') ? [2,6].filter(i => searchIdxs.includes(i)) : [];
-  // Karakter Han yang diketik/paste di mode 'or-han' - dihitung sekali per tabel, bukan per
-  // baris. Kalau kosong (mis. user pilih 'or-han' tapi ketik huruf Latin biasa), jatuh ke
-  // pencarian 'general' biasa di bawah - OR per-karakter untuk Latin nyaris tidak berguna
-  // (huruf tunggal cocok di hampir semua baris).
-  const hanChars = (searchMode==='or-han') ? Array.from(qText).filter(ch=>HAN_CHAR_REGEX.test(ch)) : [];
+  // Token OR yang diketik/paste di mode 'or-han' - dihitung sekali per tabel, bukan per baris.
+  const orTokens = (searchMode==='or-han' && qText) ? orModeTokens(qText) : null;
 
   qa('tbody tr', table).forEach(tr => {
     // Satu qa('td', tr) dipakai ulang untuk teks pencarian DAN cek kolom kosong - sebelumnya
@@ -2111,8 +2118,10 @@ function applyFilter(panel){
     let matchText;
     if(!qText){
       matchText = true;
-    } else if(hanChars.length){
-      matchText = hanChars.some(ch => txt.includes(ch));
+    } else if(orTokens && orTokens.tokens.length){
+      matchText = orTokens.isHan
+        ? orTokens.tokens.some(ch => txt.includes(ch))
+        : orTokens.tokens.some(w => txt.includes(w) || pinyinCellsMatch(cells, pinIdxs, w));
     } else if(searchMode==='exclude'){
       // Literal saja, TIDAK pakai fallback pinyin - supaya cakupan "kecualikan" tidak melebar
       // tak terduga (sama seperti sebelum digabung jadi dropdown).
@@ -2306,7 +2315,18 @@ function applyVoicePreset(tid, presetNum){
 }
 window.applyVoicePreset = applyVoicePreset;
 function dropdownPlayControlsHTML(tid){
-  return `<label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label><label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
+  // V1+V2 dan V3+V4+P masing-masing dibungkus flex-wrap:nowrap sendiri (2026-09-09, user's
+  // request) - sebelumnya kelimanya lepas dalam satu flex row besar, jadi titik potong baris di
+  // HP beda-beda tergantung lebar layar (kadang V1-V3 1 baris + V4-P baris lain, kadang V1-V2
+  // + V3-V4-P) - dengan dibungkus begini, tiap grup selalu utuh wrap bareng, tidak pernah
+  // terpotong di tengah grup.
+  return `<div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
+      <label class="final-play-select">V1: <select data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label>
+    </div>
+    <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
+      <label class="final-play-select">V3: <select data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+    </div>
+    <label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
 }
 
 function toolbarHTML(tid){
@@ -2321,7 +2341,7 @@ function toolbarHTML(tid){
   <div class="toolbar-body">
     <div class="sr">
       <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / OR Han (salah satu karakter) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">OR Han</option><option value="exclude">Excl.</option></select>
+      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked checked> ✓</label>
       <label class="range-label">
         No: 
@@ -2332,7 +2352,6 @@ function toolbarHTML(tid){
       <button class="btn btn-check" data-check-all="${tid}" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="${tid}" type="button">Untick</button>
       ${dropdownPlayControlsHTML(tid)}
-      <span class="sm"></span>
     </div>
   </div>`;
 }
@@ -2346,7 +2365,7 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   panel.dataset.sheetTitle=title; panel.dataset.loop='1'; panel.dataset.random='0';
   panel.dataset.youtubeUrl=youtubeUrl||'';
   const body=rows.map((r,i)=>buildRowHTML(tid,r,i)).join('\n');
-  panel.innerHTML=`<div class="ph">${toolbarHTML(tid)}<div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div><div class="sb"></div></div>`;
+  panel.innerHTML=`<div class="ph">${toolbarHTML(tid)}<div class="sb"></div><div class="tw"><table id="${tid}" data-loop="1" data-random="0"><thead><tr>${SHEET_HEADERS.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div></div>`;
   refreshTabs(); 
   attachPanelEvents(panel); 
   switchTab(getPanels().indexOf(panel)); 
@@ -2457,14 +2476,28 @@ function applyReferenceBankFilter(panel){
   const refHeaders=table.querySelectorAll('thead th');
   const searchIdxs=scopeIndicesVisible(refHeaders, colScope);
   const pinIdxs=(colScope==='all' || colScope==='pin') ? [2,6].filter(i=>searchIdxs.includes(i)) : [];
-  // Mode pencarian sama persis dengan sheet biasa (lihat komentar HAN_CHAR_REGEX/applyFilter) -
-  // ini justru kasus utama yang diminta user untuk fitur OR Han (2026-08-15): Bank Referensi
-  // sering berisi ribuan baris, cari "kalimat yang mengandung salah satu karakter ini" jauh
-  // lebih berguna di sini daripada di sheet biasa yang barisnya sedikit.
-  const hanChars = (searchMode==='or-han') ? Array.from(qText).filter(ch=>HAN_CHAR_REGEX.test(ch)) : [];
+  // Mode pencarian sama persis dengan sheet biasa (lihat komentar HAN_CHAR_REGEX/orModeTokens/
+  // applyFilter) - ini justru kasus utama yang diminta user untuk fitur OR (2026-08-15): Bank
+  // Referensi sering berisi ribuan baris, cari "kalimat yang mengandung salah satu token ini"
+  // jauh lebih berguna di sini daripada di sheet biasa yang barisnya sedikit. Berlaku juga untuk
+  // pinyin per-kata sejak 2026-09-09.
+  const orTokens = (searchMode==='or-han') ? orModeTokens(qText) : null;
+  const refPinyinMatchWord=(r,word)=>{
+    if(!pinIdxs.length) return false;
+    const hasDigit=/\d/.test(word);
+    const key=hasDigit ? normalizePinyinToneNumber(word) : normalizePinyinToneless(word);
+    const combined=hasDigit
+      ? pinIdxs.map(i=>r._pinToneNum[i]||'').join(' ')
+      : pinIdxs.map(i=>r._pinToneless[i]||'').join(' ');
+    return combined.includes(key);
+  };
   let matches=rows.filter(r=>{
     const txt=searchIdxs.map(i=>r._txtByCol[i]||'').join(' ');
-    if(hanChars.length) return hanChars.some(ch => txt.includes(ch));
+    if(orTokens && orTokens.tokens.length){
+      return orTokens.isHan
+        ? orTokens.tokens.some(ch => txt.includes(ch))
+        : orTokens.tokens.some(w => txt.includes(w) || refPinyinMatchWord(r,w));
+    }
     if(searchMode==='exclude') return !txt.includes(qText); // literal saja, sama seperti sheet biasa
     if(txt.includes(qText)) return true;
     if(!pinIdxs.length) return false;
@@ -2487,7 +2520,7 @@ function applyReferenceBankFilter(panel){
   // tampilkan 500 pertama (bukan kosong sama sekali), cuma baris ke-501 dst yang tidak perlu
   // dirender. Pesan status di bawah kasih tahu berapa dari berapa. Ini yang mencegah lag di HP
   // lama - render ribuan <tr> sekaligus, bukan proses filter-nya.
-  const REFERENCE_RESULT_CAP = 500;
+  const REFERENCE_RESULT_CAP = 1000;
   const totalMatches = matches.length;
   const cappedMatches = totalMatches > REFERENCE_RESULT_CAP ? matches.slice(0, REFERENCE_RESULT_CAP) : matches;
   tbody.innerHTML=cappedMatches.map((r,i)=>buildReferenceRowHTML(r,i)).join('\n');
@@ -2530,7 +2563,7 @@ function attachReferenceEvents(panel){
   const clearBtn=panel.querySelector('.sr-clear-btn');
   // Tidak search.focus() lagi - samakan dengan sheet biasa (2026-08-12), supaya tombol ✕ tidak
   // otomatis munculkan keyboard HP.
-  // searchModeSel (Normal/OR Han/Excl.) sengaja TIDAK ikut direset di sini - itu pilihan mode,
+  // searchModeSel (Normal/Or/Excl.) sengaja TIDAK ikut direset di sini - itu pilihan mode,
   // bukan bagian dari "apa yang lagi dicari", jadi ✕ tidak boleh mengembalikannya ke Normal
   // begitu saja (2026-08-26, user's request).
   if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); };
@@ -2548,7 +2581,7 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
-    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / OR Han (salah satu karakter) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">OR Han</option><option value="exclude">Excl.</option></select></div>
+    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
   <div class="sb"></div></div>`;
   refreshTabs();
@@ -3029,7 +3062,7 @@ function attachPanelEvents(panel){
   // Reset: kosongkan search DAN filter No dari-sd sekaligus, terapkan filter langsung (tidak
   // nunggu debounce). Sengaja TIDAK search.focus() lagi - itu bikin keyboard HP selalu muncul
   // otomatis tiap tombol ✕ ditekan, padahal user cuma mau clear, bukan langsung mau ngetik lagi.
-  // searchModeSel (Normal/OR Han/Excl.) sengaja TIDAK ikut direset - itu pilihan mode, bukan
+  // searchModeSel (Normal/Or/Excl.) sengaja TIDAK ikut direset - itu pilihan mode, bukan
   // bagian dari "apa yang lagi dicari" (2026-08-26, user's request).
   const searchClearBtn=panel.querySelector('.sr-clear-btn');
   if(searchClearBtn && search) searchClearBtn.onclick=()=>{
@@ -3663,7 +3696,7 @@ function init(){
       else setUploadMsg('Tidak ada baris yang sedang diputar.');
       return;
     }
-    if(t.dataset.clearAccum!==undefined){ const tid=t.dataset.clearAccum; clearAccum(tid); copyToClipboard('', t, 'Clear Clip'); return; }
+    if(t.dataset.clearAccum!==undefined){ const tid=t.dataset.clearAccum; clearAccum(tid); copyToClipboard('', t, 'Clear Cl'); return; }
     if(t.dataset.checkAll) return setAllPilih(t.dataset.checkAll, true);
     if(t.dataset.uncheckAll) return setAllPilih(t.dataset.uncheckAll, false);
     if(t.hasAttribute('data-final-stop')){ lastPlayedTr=null; return stopPlayAll(); }
@@ -3932,7 +3965,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
   <div class="toolbar-body">
     <div class="sr">
       <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / OR Han (salah satu karakter) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">OR Han</option><option value="exclude">Excl.</option></select>
+      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked="" checked=""> ✓</label>
       <label class="range-label">
         No: 
@@ -3942,10 +3975,15 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
       </label>
       <button class="btn btn-check" data-check-all="dyn_000datatesting" type="button">Tick All</button>
       <button class="btn btn-check" data-uncheck-all="dyn_000datatesting" type="button">Untick</button>
-      <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
-      <span class="sm"></span>
+      <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
+        <label class="final-play-select">V1: <select data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label>
+      </div>
+      <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
+        <label class="final-play-select">V3: <select data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+      </div>
+      <label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
     </div>
-  </div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
+  </div><div class="sb">Menampilkan 12 dari 17 · 12 ditandai ✓</div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
     <td class="cn">1a</td>
     <td class="cp"><input type="checkbox" class="ck-box" id="dyn_000datatesting_0" checked=""><label for="dyn_000datatesting_0"></label></td>
     <td class="ck">nín</td>
@@ -4199,5 +4237,5 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <td class="cn col-hidden"></td>
     <td class="cn col-hidden"></td>
     <td class="cb"><button class="ab play-row-btn" data-tid="dyn_000datatesting" data-row="16" type="button" title="Play V1-V4 berurutan">▶</button><button class="ab copy-han-btn" type="button" title="Copy kalimat Hanzi">Man</button><button class="ab copy-eng-btn" type="button" title="Copy kalimat English">Eng</button></td>
-  </tr></tbody></table></div><div class="sb">Menampilkan 12 dari 17 · 12 ditandai ✓</div></div></div>
+  </tr></tbody></table></div></div></div>
 </body></html>
