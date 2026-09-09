@@ -1,9 +1,9 @@
-# Itinerary Perjalanan Custom Test Xiamen
+# Itinerary Perjalanan Xiamen xia1
 Xiamen · Sabtu, 7 November · Jendela 2 Jam (18:00–20:00) — Revisi Custom (Test Skill)
 
 > Revisi custom dari "7 Xiamen.md" — Sabtu, 7 November, jam 18:00–20:00.
 >
-> ⚠️ File ini murni untuk TEST mekanisme skill custom (Mode Itinerary Kustom, poin 13) — bukan revisi jadwal trip aktual. Destinasi diambil ulang dari `7 Xiamen.md` Hari 1 (Zhongshan Road), tidak ada riset baru. Sengaja diberi nomor file `9` (bukan `7 Xiamen C1.md` sesuai konvensi baku) supaya tab ini render di posisi PALING BELAKANG di Wisata.html, sesuai permintaan eksplisit — tidak menimpa `7 Xiamen.md` maupun tab lain.
+> ⚠️ File ini murni untuk TEST mekanisme skill custom (Mode Itinerary Kustom, poin 13) — bukan revisi jadwal trip aktual. Destinasi diambil ulang dari `7 Xiamen.md` Hari 1 (Zhongshan Road), tidak ada riset baru. Sengaja diberi nomor file `9` dan nama `xia1` (bukan `7 Xiamen C1.md` sesuai konvensi baku) supaya tab ini render di posisi PALING BELAKANG di Wisata.html dan gampang dibedakan dari tab "Xiamen" asli — tidak menimpa `7 Xiamen.md` maupun tab lain. Tes berikutnya pakai `xia2`, `xia3`, dst.
 
 ## Hari 1 — Sabtu, 7 November (Zhongshan Road Malam — 2 Jam)
 

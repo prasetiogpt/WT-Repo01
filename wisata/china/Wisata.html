@@ -3648,8 +3648,8 @@ const destinations = [
     ],
   },
   {
-    id:`customtestxiamen`,
-    name:`Custom Test Xiamen`,
+    id:`xiamenxia1`,
+    name:`Xiamen xia1`,
     dates:`Xiamen · Sabtu, 7 November · Jendela 2 Jam (18:00–20:00) — Revisi Custom (Test Skill)`,
     currency:`CNY`,
 
@@ -4009,7 +4009,7 @@ function renderCity(dest){
 const cityTabsWrap = document.getElementById('city-tabs');
 const cityPanelsWrap = document.getElementById('city-panels');
 
-const AIRPORT_CODES = {nanjing:'NKG', wuxi:'WUX', hongkong:'HKG'};
+const AIRPORT_CODES = {nanjing:'NKG', wuxi:'WUX', hongkong:'HKG', xiamen:'XIA', xiamenxia1:'XIA1'};
 destinations.forEach((dest,i)=>{
   const tabBtn = document.createElement('button');
   tabBtn.className = 'city-tab' + (i===0 ? ' active' : '');
