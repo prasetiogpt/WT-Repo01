@@ -3647,6 +3647,70 @@ const destinations = [
       {key:`cadangan`, heading:`Cadangan`},
     ],
   },
+  {
+    id:`customtestxiamen`,
+    name:`Custom Test Xiamen`,
+    dates:`Xiamen · Sabtu, 7 November · Jendela 2 Jam (18:00–20:00) — Revisi Custom (Test Skill)`,
+    currency:`CNY`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Sabtu, 7 November (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+
+      ],
+      warn:``,
+      hotel:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Sabtu, 7 November`, label:`Zhongshan Road Malam — 2 Jam`,
+        advisory:`Jendela custom 2 jam sore-malam — jalan santai di jalan pedestrian utama kota lama, sekalian coba jajanan legendaris. Diambil ulang persis dari Hari 1 file \`7 Xiamen.md\` (Akses/Jam/Tiket sama), dipersempit ke jendela 18:00–20:00 sesuai permintaan test ini.`,
+        items:[
+          [`18:00–19:00`,`Makan malam sekitar Zhongshan Road`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`19:00–20:00`,`<b>Zhongshan Road</b> — jalan malam pedestrian utama, coba peanut soup Huangzehe`,`Jajan opsional ±CNY 10/org`,``,`20`,`53.000`],
+        ],
+        total:{cny:`<b>70</b>`, idr:`<b>185.500</b>`},
+        planb:`kalau area makan malam pilihan penuh/tutup — makan di mana saja sekitar Zhongshan Road (banyak pilihan sepanjang jalan), tidak mengubah rencana jalan santai sesudahnya.`,
+      },
+    ],
+
+    budget:{
+      note:``,
+      byDay:[
+        [`Hari 1 (7 Nov, 18:00–20:00)`,`70`,`185.500`],
+      ],
+      byCategory:[
+        [`Makan`,`50`,`132.500`],
+        [`Jajan/aktivitas`,`20`,`53.000`],
+        [`GRAND TOTAL`,`70`,`185.500`],
+      ],
+      grand:[`GRAND TOTAL`,`70`,`185.500`],
+      catTotal:[`GRAND TOTAL`,`70`,`185.500`],
+      caveat:``,
+    },
+
+    notes:[
+      `File test untuk skill custom — tidak menimpa \`7 Xiamen.md\` (7 hari penuh) yang tetap jadi rencana utama.`,
+      `<b>Fisik/lutut:</b> jalur pedestrian datar, aman.`,
+      `<b>Makanan:</b> peanut soup Huangzehe ramah lambung (manis, tidak pedas/berminyak).`,
+    ],
+
+    lampiran:[
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itin H1`, title:`Zhongshan Road (中山路 · Zhōngshān Lù)`,
+       nameEn:`Zhongshan Road`,
+       nameHanzi:`中山路`,
+       text:`Jalan pedestrian utama kota lama Xiamen, dinamai untuk menghormati Sun Yat-sen seperti banyak jalan utama kota-kota China lainnya — dipenuhi arcade bergaya "qilou" (bangunan dengan lorong beratap di lantai dasar, perpaduan arsitektur Eropa &amp; Asia Tenggara) peninggalan era Xiamen jadi pelabuhan dagang internasional. Salah satu toko paling legendaris di sini, Huangzehe Peanut Soup Shop, sudah berjualan sup kacang manis sejak awal abad ke-20. <b>Akses:</b> dekat Stasiun Zhenhai Road (Line 1), ±200m jalan kaki. <b>Jam Operasional:</b> jalan pedestrian buka 24 jam (gratis), toko/kios umumnya ±09:00–22:00. <b>Tiket:</b> Gratis masuk kawasan, bayar jajanan/toko saja.`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen`,
+       yt:`https://www.youtube.com/results?search_query=Zhongshan+Road+Xiamen+night`},
+    ],
+    lampiranGroups:[
+      {key:`h1`, heading:`Hari 1 — Sabtu, 7 November`},
+    ],
+  },
 ];
 /* === DESTINATIONS:END === */
 
