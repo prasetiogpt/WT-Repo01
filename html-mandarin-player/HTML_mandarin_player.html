@@ -237,6 +237,31 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .col-toggle-label .col-name {
   font-weight: 500;
 }
+/* Pilih Kolom dibungkus <details> (2026-09-09, dicoba atas permintaan user) - bukan dropdown
+   custom melayang (rawan kepotong/ketutup di HP, app ini sudah beberapa kali kena masalah
+   positioning mobile) - <details> buka/tutup native, isinya dorong konten di bawahnya turun,
+   tidak pernah overlap/kepotong. Konsekuensinya status kolom aktif tidak kelihatan saat
+   tertutup - user sudah oke dengan itu, lebih sering pakai preset kolom. Kalau ternyata tidak
+   cocok, tinggal balikin ke .col-toggle-container biasa tanpa <details>. */
+.col-toggle-details { display: inline-block; }
+.col-toggle-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: .72rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #f0ede8;
+  border: 1px solid #e0d8d0;
+  list-style: none;
+}
+.col-toggle-summary::-webkit-details-marker { display: none; }
+.col-toggle-summary:hover { background: #e5e0d8; }
 .col-preset-select {
   font: inherit;
   color: inherit;
@@ -443,21 +468,26 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
-    <div class="col-toggle-container" id="globalColToggles">
-      <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
-        <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">PinKW</span></label>
-        <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">IndKW</span></label>
-        <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">ManKW</span></label>
-        <label class="col-toggle-label" title="Eng KW"><input type="checkbox" data-col-index="5" checked=""> <span class="col-name">EngKW</span></label>
-      </div>
-      <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
-        <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">PinKal</span></label>
-        <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">IndKal</span></label>
-        <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">ManKal</span></label>
-        <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">EngKal</span></label>
-      </div>
-      <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
-      <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;width:100%;">
+      <details class="col-toggle-details">
+        <summary class="col-toggle-summary">Pilih Kolom ▾</summary>
+        <div class="col-toggle-container" id="globalColToggles">
+          <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+            <label class="col-toggle-label" title="Pin Yin KW"><input type="checkbox" data-col-index="2" checked=""> <span class="col-name">PinKW</span></label>
+            <label class="col-toggle-label" title="Indo KW"><input type="checkbox" data-col-index="3"> <span class="col-name">IndKW</span></label>
+            <label class="col-toggle-label" title="Mand KW"><input type="checkbox" data-col-index="4" checked=""> <span class="col-name">ManKW</span></label>
+            <label class="col-toggle-label" title="Eng KW"><input type="checkbox" data-col-index="5" checked=""> <span class="col-name">EngKW</span></label>
+          </div>
+          <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+            <label class="col-toggle-label" title="Pin Yin"><input type="checkbox" data-col-index="6" checked=""> <span class="col-name">PinKal</span></label>
+            <label class="col-toggle-label" title="Indonesia"><input type="checkbox" data-col-index="7"> <span class="col-name">IndKal</span></label>
+            <label class="col-toggle-label" title="Mandarin"><input type="checkbox" data-col-index="8" checked=""> <span class="col-name">ManKal</span></label>
+            <label class="col-toggle-label" title="English"><input type="checkbox" data-col-index="9" checked=""> <span class="col-name">EngKal</span></label>
+          </div>
+          <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
+          <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
+        </div>
+      </details>
       <label class="col-toggle-label" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" autocomplete="off" onchange="applyColumnPreset(this.value)"><option value="1" selected>1 V+S</option><option value="2">2 Vocab</option><option value="3">3 Sent.</option></select></label>
       <button class="col-toggle-label" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
