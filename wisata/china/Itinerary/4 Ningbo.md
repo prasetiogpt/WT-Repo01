@@ -3,7 +3,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou. (3) **2026-09-10 — koreksi lokasi tempat tinggal berdasarkan screenshot Amap pengguna**: anchor MRT dikoreksi dari **Yinzhou Higher Education Park Station** jadi **Southern Business District Station** (satu halte lebih ke arah pusat kota di Line 8) — unit ternyata di kawasan Taikang Road, lebih dekat Ningbo Museum/Southern Business District, BUKAN di ujung tenggara dekat Dongqian Lake seperti anggapan draft awal. Dampak: paragraf Tempat Tinggal & baris Hari 1 diperbarui ke nama stasiun baru; framing "Dongqian Lake dekat rumah" (Hari 2, Hari 14, Lampiran) dilunakkan jadi "perlu transfer Line 8→Line 4, jarak persis belum terverifikasi" — estimasi Didi/MRT ke Dongqian Lake dinaikkan dari CNY 20 ke CNY 25/leg (Hari 2, Total naik 230→240 CNY). Rute umum "Line 8 → transfer Line X" di hari-hari lain TIDAK diubah — sudah tidak menyebut nama stasiun spesifik & sudah ditandai ⚠️ belum terverifikasi sejak draft awal, jadi tetap valid terlepas dari anchor mana yang dipakai. ⚠️ amap.com terblokir di environment sesi ini sehingga jarak jalan kaki persis unit↔stasiun & titik transfer Line 8→Line 4 tetap belum bisa diverifikasi — cek Amap on-site sebelum berangkat.
 
 ## Informasi Transportasi
 
@@ -14,7 +14,7 @@
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā) — kompleks residensial pribadi (BUKAN hotel, jadi tidak dihitung biaya menginap), di Qianhu South Road (钱湖南路), Yinzhou District, Ningbo. Anchor MRT: **Yinzhou Higher Education Park Station (鄞州高教园区站, Line 8)** — ⚠️ jarak jalan kaki persis dari kompleks ke stasiun belum terverifikasi Amap, kemungkinan perlu Didi/bus pendek dulu (ada beberapa halte bus di dekat kompleks: Yongcheng Shijia Timur, Higher Education Park, dll). Lokasi ini berada di ujung tenggara kota, dekat kawasan **Dongqian Lake** (danau terbesar Zhejiang, lihat Hari 2) — beberapa destinasi lain butuh perjalanan lebih jauh ke pusat kota (Line 1/2) via transfer dari Line 8.
+**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: **Southern Business District Station (南部商务区站, Line 8)** — dikoreksi dari Yinzhou Higher Education Park Station (satu halte lebih jauh ke arah tenggara) berdasarkan screenshot Amap pengguna. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum & Southern Business District), BUKAN persis di ujung tenggara dekat Dongqian Lake seperti versi sebelumnya — Dongqian Lake (Hari 2) tetap dijangkau via Line 8 lalu transfer, tapi jaraknya sedikit lebih jauh dari anggapan awal.
 
 **Transportasi lokal:** Ningbo Rail Transit sudah punya 8 jalur aktif per pertengahan 2026 (Line 8 dibuka Juni 2025, Line 7 Agustus 2025) — jaringan cukup luas untuk kota sekelas Ningbo. Bayar via **WeChat Pay/Alipay QR code** di gerbang MRT (tidak perlu kartu fisik). Untuk destinasi di luar kota (Xikou, Qiantong, Hemudu) naik bus antar-kota dari **Ningbo South Bus Station (宁波汽车南站)** — persis di sebelah Stasiun Ningbo (Line 2/Line 1 Ximenkou). Prioritas: MRT > jalan kaki > bus antar-kota (untuk day-trip jauh) > Didi (fleksibel kalau MRT tidak menjangkau/titip koper).
 
@@ -39,7 +39,7 @@ Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat ru
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 17:00 | Tiba di tempat tinggal, unpacking, istirahat | — | — | — |
-| 17:00–17:30 | Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
+| 17:00–17:30 | Didi/jalan kaki ke Stasiun Southern Business District (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
 | 17:30–18:00 | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
 | 18:00–19:00 | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
 | 19:00–20:00 | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
@@ -52,18 +52,18 @@ Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat ru
 
 ## Hari 2 — Kamis, 15 Oktober (Dongqian Lake — Danau Terbesar Zhejiang)
 
-Dongqian Lake (東錢湖) persis di ujung Line 4, dekat rumah — danau air tawar terbesar di Zhejiang, 3× lebih luas dari West Lake Hangzhou. Satu hari penuh untuk bersepeda/jalan santai keliling tepi danau.
+Dongqian Lake (東錢湖) di ujung timur Line 4 — danau air tawar terbesar di Zhejiang, 3× lebih luas dari West Lake Hangzhou. Satu hari penuh untuk bersepeda/jalan santai keliling tepi danau.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–09:00 | Didi/MRT ke Stasiun Dongqian Lake (Line 4, terminus timur) | ⚠️ jarak dari rumah relatif dekat, tapi belum terverifikasi presisi — kemungkinan Didi langsung lebih praktis | 20 | Rp53.000 |
-| 09:00–12:00 | **Dongqian Lake** — sepeda sewa keliling tepi danau, Xiaoputuo causeway | Gratis masuk kawasan; sepeda sewa ±CNY 20/org/2 jam | 40 | Rp106.000 |
+| 08:30–09:15 | Didi/MRT ke Stasiun Dongqian Lake (Line 4, terminus timur) | ⚠️ titik transfer Line 8→Line 4 belum terverifikasi Amap — Didi langsung kemungkinan lebih praktis | 25 | Rp66.250 |
+| 09:15–12:00 | **Dongqian Lake** — sepeda sewa keliling tepi danau, Xiaoputuo causeway | Gratis masuk kawasan; sepeda sewa ±CNY 20/org/2 jam | 40 | Rp106.000 |
 | 12:00–13:00 | Makan siang sekitar danau | ±CNY 30/org | 60 | Rp159.000 |
 | 13:00–17:00 | Lanjut jalan santai/boating di area lain danau | Boating opsional ±CNY 40/org (tidak dihitung) | — | — |
-| 17:00–18:00 | Didi/MRT kembali ke rumah | — | 20 | Rp53.000 |
+| 17:00–17:45 | Didi/MRT kembali ke rumah | — | 25 | Rp66.250 |
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 2** | | **230** | **Rp609.500** |
+| | **TOTAL HARI 2** | | **240** | **Rp636.000** |
 
 **Plan-B hari ini:** kalau cuaca hujan — kunjungan diperpendek, fokus area yang ada atap/kafe tepi danau saja, atau tunda ke Hari 16 (hari santai) kalau perlu diulang.
 
@@ -290,7 +290,7 @@ Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 j
 
 ## Hari 14 — Selasa, 27 Oktober (Xiaoputuo & Fuquan Mountain — Dongqian Lake Sisi Lain)
 
-Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil & bukit pemandangan, tetap dekat rumah.
+Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil & bukit pemandangan, tetap area yang sama seperti Hari 2.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -365,24 +365,24 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 
 | Hari | CNY | IDR |
 |---|---|---|
-| Hari 1 (15 Okt) | 116 | Rp307.400 |
-| Hari 2 (16 Okt) | 230 | Rp609.500 |
-| Hari 3 (17 Okt) | 238 | Rp630.700 |
-| Hari 4 (18 Okt) | 258 | Rp683.700 |
-| Hari 5 (19 Okt) | 174 | Rp461.100 |
-| Hari 6 (20 Okt) | 198 | Rp524.700 |
-| Hari 7 (21 Okt) | 290 | Rp768.500 |
-| Hari 8 (22 Okt) | 528 | Rp1.399.200 |
-| Hari 9 (23 Okt) | 468 | Rp1.240.200 |
-| Hari 10 (24 Okt) | 288 | Rp763.200 |
-| Hari 11 (25 Okt) | 214 | Rp567.100 |
-| Hari 12 (26 Okt) | 174 | Rp461.100 |
-| Hari 13 (27 Okt) | 378 | Rp1.001.700 |
-| Hari 14 (28 Okt) | 240 | Rp636.000 |
-| Hari 15 (29 Okt) | 364 | Rp964.600 |
-| Hari 16 (30 Okt) | 188 | Rp498.200 |
-| Hari 17 (31 Okt) | 80 | Rp212.000 |
-| **GRAND TOTAL** | **4.426** | **Rp11.728.900** |
+| Hari 1 (14 Okt) | 116 | Rp307.400 |
+| Hari 2 (15 Okt) | 240 | Rp636.000 |
+| Hari 3 (16 Okt) | 238 | Rp630.700 |
+| Hari 4 (17 Okt) | 258 | Rp683.700 |
+| Hari 5 (18 Okt) | 174 | Rp461.100 |
+| Hari 6 (19 Okt) | 198 | Rp524.700 |
+| Hari 7 (20 Okt) | 290 | Rp768.500 |
+| Hari 8 (21 Okt) | 528 | Rp1.399.200 |
+| Hari 9 (22 Okt) | 468 | Rp1.240.200 |
+| Hari 10 (23 Okt) | 288 | Rp763.200 |
+| Hari 11 (24 Okt) | 214 | Rp567.100 |
+| Hari 12 (25 Okt) | 174 | Rp461.100 |
+| Hari 13 (26 Okt) | 378 | Rp1.001.700 |
+| Hari 14 (27 Okt) | 240 | Rp636.000 |
+| Hari 15 (28 Okt) | 364 | Rp964.600 |
+| Hari 16 (29 Okt) | 188 | Rp498.200 |
+| Hari 17 (30 Okt) | 80 | Rp212.000 |
+| **GRAND TOTAL** | **4.436** | **Rp11.755.400** |
 
 ### Breakdown per kategori
 
@@ -390,8 +390,8 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 |---|---|---|
 | Tiket masuk (Tianyi Pavilion, Xikou, Qiantong, Tianfeng Pagoda, Sanjiangkou Cruise, dll) | 1.076 | Rp2.851.400 |
 | Makan (semua hari) | 1.220 | Rp3.233.000 |
-| Transport lokal & antar-kota (MRT, Didi, bus) | 1.130 | Rp2.994.500 |
-| **GRAND TOTAL AKTIVITAS** | **4.426** | **Rp11.728.900** |
+| Transport lokal & antar-kota (MRT, Didi, bus) | 1.140 | Rp3.021.000 |
+| **GRAND TOTAL AKTIVITAS** | **4.436** | **Rp11.755.400** |
 
 **Catatan:** Yushan Islands, Mount Putuo/Zhoushan, Xiangshan Global Studios, Youngor Zoo semuanya di Cadangan, jadi TIDAK termasuk di total di atas. Biaya menginap tidak dihitung (properti pribadi). Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.
 
@@ -430,7 +430,7 @@ Bandara utama: **Ningbo Lishe International Airport (宁波栎社国际机场 ·
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport
 
 ### Area Menginap yang Disarankan
-Untuk kunjungan singkat, kawasan **Tianyi Square/Ximenkou** (pusat kota lama, Line 1) atau **Old Bund/Sanjiangkou** (Line 2) paling strategis — dekat mayoritas destinasi utama & jalur MRT. Untuk trip ini, tempat tinggal sudah fixed di **Yinzhou District** (dekat Dongqian Lake), sedikit lebih jauh dari pusat kota tapi strategis untuk destinasi timur (Dongqian Lake, Ashoka Temple, Tiantong Temple).
+Untuk kunjungan singkat, kawasan **Tianyi Square/Ximenkou** (pusat kota lama, Line 1) atau **Old Bund/Sanjiangkou** (Line 2) paling strategis — dekat mayoritas destinasi utama & jalur MRT. Untuk trip ini, tempat tinggal sudah fixed di **Yinzhou District** (area Taikang Road, anchor Line 8), sedikit lebih jauh dari pusat kota tapi tetap terhubung via transfer Line 8 ke destinasi timur (Dongqian Lake, Ashoka Temple, Tiantong Temple).
 
 ### Destinasi Terkenal Lain di Ningbo
 Di luar itinerary utama: **Mount Putuo (普陀山 · Pǔtuóshān)** — salah satu 4 gunung suci Buddha di China, tapi berada di Zhoushan (kepulauan terpisah, butuh feri, lebih cocok trip tersendiri (lihat Cadangan). **Yushan Islands (渔山列岛 · Yúshān Lièdǎo)** — "No.1 Fishing Site di Asia", remote, butuh feri (lihat Cadangan).
@@ -486,7 +486,7 @@ Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber (nama danau resmi Zhejiang).
 
-**Akses:** MRT Line 4, turun Stasiun Dongqian Lake (terminus timur jalur ini) — dekat dari rumah (Yinzhou), Didi juga jadi opsi praktis.
+**Akses:** MRT Line 4, turun Stasiun Dongqian Lake (terminus timur jalur ini) — dari rumah (Line 8, Southern Business District) perlu transfer, ⚠️ titik transfer persis belum terverifikasi Amap, Didi langsung jadi opsi praktis.
 
 **Jam Operasional:** kawasan danau terbuka 24 jam, gratis. Wahana (sepeda sewa, boating) mengikuti jam operasional masing-masing operator, umumnya ±08:00–17:00.
 
