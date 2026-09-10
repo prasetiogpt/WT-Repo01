@@ -1822,7 +1822,7 @@ const destinations = [
   {
     id:`ningbo`,
     name:`Ningbo`,
-    dates:`14 – 30 Oktober · 16 Malam · Nyambung dari Suzhou via HSR (kepulangan masih independen — kota/moda berikutnya belum ditentukan)`,
+    dates:`14 – 30 Oktober · 16 Malam · Direncanakan Independen (bukan sambungan kota lain)`,
     currency:`CNY`,
 
     transportPergi:{
@@ -1830,7 +1830,7 @@ const destinations = [
       title:`Rute belum ditentukan &middot; Rabu, 14 Oktober (perkiraan)`,
       tag:"tbd", openByDefault:true,
       items:[
-        [`Kedatangan`,`Rabu, 14 Oktober, <b>±17:30–18:30</b> (estimasi), via HSR dari Suzhou — Suzhou berangkat ±15:00, durasi ±2,5–3,5 jam (lihat itinerary Suzhou, "Informasi Transportasi Pulang")`],
+        [`Kedatangan`,`Rabu, 14 Oktober, <b>±17:00</b> — moda &amp; kota asal menyesuaikan rencana Anda (kota ini direncanakan independen)`],
         [`Kepulangan`,`Jumat, 30 Oktober, <b>±15:00</b>, lanjut ke kota berikutnya — moda &amp; tujuan belum ditentukan`],
       ],
       warn:`<b>⚠️ Keterbatasan alat:</b> akses langsung ke amap.com terbatas di environment sesi ini — riset destinasi &amp; transfer MRT memakai web_search (Wikipedia Ningbo Rail Transit, blog lokal, situs resmi). Beberapa titik transfer &amp; jarak jalan kaki presisi belum bisa diverifikasi visual — ditandai ⚠️ di teks terkait, cek Amap on-site sebelum berangkat kalau memungkinkan.`,
@@ -1842,13 +1842,12 @@ const destinations = [
         id:"h1", num:1, date:`Rabu, 14 Oktober`, label:`Kedatangan Santai — Ningbo Museum &amp; Yinzhou Park`,
         advisory:`Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat rumah, jadi tidak perlu buru-buru menyesuaikan jetlag/perjalanan.`,
         items:[
-          [`±17:30–18:30`,`Tiba di Ningbo (HSR dari Suzhou, jam pasti tergantung kereta), Didi ke tempat tinggal`,`Estimasi, moda dari stasiun tidak dihitung terpisah — sisa jadwal Hari 1 di bawah mundur menyesuaikan jam tiba aktual`,``,`35`,`92.750`],
-          [`+0–30 menit`,`Unpacking, istirahat sejenak`,``,``,``,``],
-          [`+30–60 menit`,`Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8)`,`⚠️ jarak persis belum terverifikasi`,``,`20`,`53.000`],
-          [`+60–90 menit`,`Line 8 menuju kluster <b>Ningbo Museum &amp; Yinzhou Park</b>`,`⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif`,``,`16`,`42.400`],
-          [`+90–120 menit`,`<b>Yinzhou Park</b> — jalan santai sore, taman kota "Central Park" Ningbo`,`Gratis, jalur datar`,``,``,``],
-          [`+120–180 menit`,`Makan malam sekitar Yinzhou Park`,`±CNY 30/org`,``,`60`,`159.000`],
-          [`+180 menit`,`Kembali ke tempat tinggal`,`Didi/MRT`,``,`20`,`53.000`],
+          [`17:00`,`Tiba di tempat tinggal, unpacking, istirahat`,``,``,``,``],
+          [`17:00–17:30`,`Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8)`,`⚠️ jarak persis belum terverifikasi`,``,`20`,`53.000`],
+          [`17:30–18:00`,`Line 8 menuju kluster <b>Ningbo Museum &amp; Yinzhou Park</b>`,`⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif`,``,`16`,`42.400`],
+          [`18:00–19:00`,`<b>Yinzhou Park</b> — jalan santai sore, taman kota "Central Park" Ningbo`,`Gratis, jalur datar`,``,``,``],
+          [`19:00–20:00`,`Makan malam sekitar Yinzhou Park`,`±CNY 30/org`,``,`60`,`159.000`],
+          [`20:00`,`Kembali ke tempat tinggal`,`Didi/MRT`,``,`20`,`53.000`],
         ],
         total:{cny:`<b>116</b>`, idr:`<b>307.400</b>`},
         planb:`kalau kelelahan perjalanan — cukup istirahat penuh, tunda Yinzhou Park ke sela-sela hari lain (persis di dekat rumah, gampang disisipkan kapan saja).`,

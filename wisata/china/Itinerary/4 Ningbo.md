@@ -1,15 +1,15 @@
 # Itinerary Perjalanan Ningbo
-14 – 30 Oktober · 16 Malam · Nyambung dari Suzhou via HSR (kepulangan masih independen — kota/moda berikutnya belum ditentukan)
+14 – 30 Oktober · 16 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — kedatangan disambungkan ke jadwal riil Suzhou**: sebelumnya kedatangan Ningbo pakai default independen (Kamis 15 Okt ±17:00, moda/kota asal belum ditentukan) — tapi itinerary Suzhou sudah punya jadwal riil HSR Suzhou→Ningbo (Selasa 14 Okt, berangkat ±15:00), jadi ada selisih 1 hari yang tidak konsisten antar file. Dikoreksi: **seluruh tanggal/hari di itinerary ini digeser mundur 1 hari** (kedatangan 15→**14 Oktober**, kepulangan 31→**30 Oktober**, tetap 16 malam/17 hari) supaya nyambung dengan hari keberangkatan HSR dari Suzhou; kedatangan diubah dari "independen 17:00" jadi **±17:30–18:30 (estimasi) via HSR dari Suzhou** (durasi ±2,5–3,5 jam dari keberangkatan 15:00); kepulangan (Jumat 30 Oktober) TETAP independen — kota/moda lanjutan belum ditentukan, tidak berubah. Tabel Hari 1 diubah ke jam relatif (bukan jam mutlak) karena jam tiba HSR bervariasi ±1 jam tergantung kereta.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
-| Kedatangan | Rabu, 14 Oktober, **±17:30–18:30** (estimasi), via HSR dari Suzhou — Suzhou berangkat ±15:00, durasi ±2,5–3,5 jam (lihat itinerary Suzhou, "Informasi Transportasi Pulang") |
+| Kedatangan | Rabu, 14 Oktober, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
 | Kepulangan | Jumat, 30 Oktober, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
@@ -38,13 +38,12 @@ Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat ru
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| ±17:30–18:30 | Tiba di Ningbo (HSR dari Suzhou, jam pasti tergantung kereta), Didi ke tempat tinggal | Estimasi, moda dari stasiun tidak dihitung terpisah — sisa jadwal Hari 1 di bawah mundur menyesuaikan jam tiba aktual | 35 | Rp92.750 |
-| +0–30 menit | Unpacking, istirahat sejenak | — | — | — |
-| +30–60 menit | Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
-| +60–90 menit | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
-| +90–120 menit | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
-| +120–180 menit | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
-| +180 menit | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
+| 17:00 | Tiba di tempat tinggal, unpacking, istirahat | — | — | — |
+| 17:00–17:30 | Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
+| 17:30–18:00 | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
+| 18:00–19:00 | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
+| 19:00–20:00 | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
+| 20:00 | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
 | | **TOTAL HARI 1** | | **116** | **Rp307.400** |
 
 **Plan-B hari ini:** kalau kelelahan perjalanan — cukup istirahat penuh, tunda Yinzhou Park ke sela-sela hari lain (persis di dekat rumah, gampang disisipkan kapan saja).
