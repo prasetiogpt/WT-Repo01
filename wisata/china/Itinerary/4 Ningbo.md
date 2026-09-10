@@ -1,16 +1,16 @@
 # Itinerary Perjalanan Ningbo
-15 – 31 Oktober · 16 Malam · Direncanakan Independen (bukan sambungan kota lain)
+14 – 30 Oktober · 16 Malam · Nyambung dari Suzhou via HSR (kepulangan masih independen — kota/moda berikutnya belum ditentukan)
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — kedatangan disambungkan ke jadwal riil Suzhou**: sebelumnya kedatangan Ningbo pakai default independen (Kamis 15 Okt ±17:00, moda/kota asal belum ditentukan) — tapi itinerary Suzhou sudah punya jadwal riil HSR Suzhou→Ningbo (Selasa 14 Okt, berangkat ±15:00), jadi ada selisih 1 hari yang tidak konsisten antar file. Dikoreksi: **seluruh tanggal/hari di itinerary ini digeser mundur 1 hari** (kedatangan 15→**14 Oktober**, kepulangan 31→**30 Oktober**, tetap 16 malam/17 hari) supaya nyambung dengan hari keberangkatan HSR dari Suzhou; kedatangan diubah dari "independen 17:00" jadi **±17:30–18:30 (estimasi) via HSR dari Suzhou** (durasi ±2,5–3,5 jam dari keberangkatan 15:00); kepulangan (Jumat 30 Oktober) TETAP independen — kota/moda lanjutan belum ditentukan, tidak berubah. Tabel Hari 1 diubah ke jam relatif (bukan jam mutlak) karena jam tiba HSR bervariasi ±1 jam tergantung kereta.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
-| Kedatangan | Kamis, 15 Oktober, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Kepulangan | Sabtu, 31 Oktober, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
+| Kedatangan | Rabu, 14 Oktober, **±17:30–18:30** (estimasi), via HSR dari Suzhou — Suzhou berangkat ±15:00, durasi ±2,5–3,5 jam (lihat itinerary Suzhou, "Informasi Transportasi Pulang") |
+| Kepulangan | Jumat, 30 Oktober, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -32,25 +32,26 @@
 
 ---
 
-## Hari 1 — Kamis, 15 Oktober (Kedatangan Santai — Ningbo Museum & Yinzhou Park)
+## Hari 1 — Rabu, 14 Oktober (Kedatangan Santai — Ningbo Museum & Yinzhou Park)
 
 Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat rumah, jadi tidak perlu buru-buru menyesuaikan jetlag/perjalanan.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 17:00 | Tiba di tempat tinggal, unpacking, istirahat | — | — | — |
-| 17:00–17:30 | Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
-| 17:30–18:00 | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
-| 18:00–19:00 | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
-| 19:00–20:00 | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
-| 20:00 | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
+| ±17:30–18:30 | Tiba di Ningbo (HSR dari Suzhou, jam pasti tergantung kereta), Didi ke tempat tinggal | Estimasi, moda dari stasiun tidak dihitung terpisah — sisa jadwal Hari 1 di bawah mundur menyesuaikan jam tiba aktual | 35 | Rp92.750 |
+| +0–30 menit | Unpacking, istirahat sejenak | — | — | — |
+| +30–60 menit | Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
+| +60–90 menit | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
+| +90–120 menit | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
+| +120–180 menit | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
+| +180 menit | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
 | | **TOTAL HARI 1** | | **116** | **Rp307.400** |
 
 **Plan-B hari ini:** kalau kelelahan perjalanan — cukup istirahat penuh, tunda Yinzhou Park ke sela-sela hari lain (persis di dekat rumah, gampang disisipkan kapan saja).
 
 ---
 
-## Hari 2 — Jumat, 16 Oktober (Dongqian Lake — Danau Terbesar Zhejiang)
+## Hari 2 — Kamis, 15 Oktober (Dongqian Lake — Danau Terbesar Zhejiang)
 
 Dongqian Lake (東錢湖) persis di ujung Line 4, dekat rumah — danau air tawar terbesar di Zhejiang, 3× lebih luas dari West Lake Hangzhou. Satu hari penuh untuk bersepeda/jalan santai keliling tepi danau.
 
@@ -69,7 +70,7 @@ Dongqian Lake (東錢湖) persis di ujung Line 4, dekat rumah — danau air tawa
 
 ---
 
-## Hari 3 — Sabtu, 17 Oktober (Ashoka Temple → Tiantong Temple)
+## Hari 3 — Jumat, 16 Oktober (Ashoka Temple → Tiantong Temple)
 
 Dua kuil Buddha kuno paling terkenal di Ningbo, sama-sama di kaki Gunung Taibai, ±10km terpisah (terhubung bus) — dijadikan 1 hari dedicated karena jauh dari pusat kota.
 
@@ -90,7 +91,7 @@ Dua kuil Buddha kuno paling terkenal di Ningbo, sama-sama di kaki Gunung Taibai,
 
 ---
 
-## Hari 4 — Minggu, 18 Oktober (Tianyi Pavilion & Yuehu Lake — Kota Tua)
+## Hari 4 — Sabtu, 17 Oktober (Tianyi Pavilion & Yuehu Lake — Kota Tua)
 
 Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpustakaan pribadi tertua di Asia + danau bersejarah 1.400 tahun.
 
@@ -108,7 +109,7 @@ Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpu
 
 ---
 
-## Hari 5 — Senin, 19 Oktober (Old Bund → Sanjiangkou → Tianyi Square Malam)
+## Hari 5 — Minggu, 18 Oktober (Old Bund → Sanjiangkou → Tianyi Square Malam)
 
 Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemuan tiga sungai, ditutup jalan santai malam di alun-alun pusat kota.
 
@@ -129,7 +130,7 @@ Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemu
 
 ---
 
-## Hari 6 — Selasa, 20 Oktober (Nantang Old Street)
+## Hari 6 — Senin, 19 Oktober (Nantang Old Street)
 
 Jalan pedestrian 500m+ dengan arsitektur kuno & jajanan khas — satu hari santai penuh untuk menjelajah tiap sudut & mencicipi kuliner lokal.
 
@@ -148,7 +149,7 @@ Jalan pedestrian 500m+ dengan arsitektur kuno & jajanan khas — satu hari santa
 
 ---
 
-## Hari 7 — Rabu, 21 Oktober (Baoguo Temple)
+## Hari 7 — Selasa, 20 Oktober (Baoguo Temple)
 
 Kuil kayu tertua & paling terjaga di China (1.000+ tahun, dibangun TANPA paku) — agak jauh dari pusat kota, jadi hari santai dengan waktu longgar untuk eksplorasi detail arsitektur.
 
@@ -167,7 +168,7 @@ Kuil kayu tertua & paling terjaga di China (1.000+ tahun, dibangun TANPA paku) �
 
 ---
 
-## Hari 8 — Kamis, 22 Oktober (Xikou Ancient Town → Xuedou Temple, Fenghua)
+## Hari 8 — Rabu, 21 Oktober (Xikou Ancient Town → Xuedou Temple, Fenghua)
 
 Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, plus salah satu dari 5 gunung Zen paling terkenal di China. Day trip dedicated karena butuh bus antar-kota.
 
@@ -188,7 +189,7 @@ Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, pl
 
 ---
 
-## Hari 9 — Jumat, 23 Oktober (Qiantong Ancient Town)
+## Hari 9 — Kamis, 22 Oktober (Qiantong Ancient Town)
 
 Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat hidup". Day trip dedicated via bus antar-kota ke Ninghai County.
 
@@ -209,7 +210,7 @@ Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat
 
 ---
 
-## Hari 10 — Sabtu, 24 Oktober (Hemudu Site Museum, Yuyao)
+## Hari 10 — Jumat, 23 Oktober (Hemudu Site Museum, Yuyao)
 
 Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi tertua di China selatan. Day trip dedicated.
 
@@ -231,7 +232,7 @@ Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi 
 
 ---
 
-## Hari 11 — Minggu, 25 Oktober (Cicheng Ancient Town)
+## Hari 11 — Sabtu, 24 Oktober (Cicheng Ancient Town)
 
 Kota kuno Cicheng (慈城), ujung barat Line 4 — jauh lebih dekat & mudah dijangkau dibanding day-trip lain minggu ini, cocok jadi hari lebih santai setelah beberapa hari perjalanan jauh.
 
@@ -249,7 +250,7 @@ Kota kuno Cicheng (慈城), ujung barat Line 4 — jauh lebih dekat & mudah dija
 
 ---
 
-## Hari 12 — Senin, 26 Oktober (Zhaobao Mountain & Coastal Defense History, Zhenhai)
+## Hari 12 — Minggu, 25 Oktober (Zhaobao Mountain & Coastal Defense History, Zhenhai)
 
 Zhaobao Mountain di Zhenhai — sejarah pertahanan pesisir Ningbo sejak Dinasti Han, akses MRT langsung (Line 2), tidak perlu Didi/bus jauh.
 
@@ -267,7 +268,7 @@ Zhaobao Mountain di Zhenhai — sejarah pertahanan pesisir Ningbo sejak Dinasti 
 
 ---
 
-## Hari 13 — Selasa, 27 Oktober (Xiangshan — Shipu Ancient Fishing Port)
+## Hari 13 — Senin, 26 Oktober (Xiangshan — Shipu Ancient Fishing Port)
 
 Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 jam), dijadikan 1 hari penuh dedicated untuk suasana laut & seafood otentik.
 
@@ -288,7 +289,7 @@ Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 j
 
 ---
 
-## Hari 14 — Rabu, 28 Oktober (Xiaoputuo & Fuquan Mountain — Dongqian Lake Sisi Lain)
+## Hari 14 — Selasa, 27 Oktober (Xiaoputuo & Fuquan Mountain — Dongqian Lake Sisi Lain)
 
 Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil & bukit pemandangan, tetap dekat rumah.
 
@@ -307,7 +308,7 @@ Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil 
 
 ---
 
-## Hari 15 — Kamis, 29 Oktober (Tianfeng Pagoda Siang → Sanjiangkou Night Cruise)
+## Hari 15 — Rabu, 28 Oktober (Tianfeng Pagoda Siang → Sanjiangkou Night Cruise)
 
 Pagoda ikonik pusat kota di siang hari, ditutup dengan pengalaman unik: kapal malam menyusuri pertemuan tiga sungai dengan lampu kota menyala.
 
@@ -326,7 +327,7 @@ Pagoda ikonik pusat kota di siang hari, ditutup dengan pengalaman unik: kapal ma
 
 ---
 
-## Hari 16 — Jumat, 30 Oktober (Ningbo City God Temple & Zhongshan Road — Hari Santai Penutup)
+## Hari 16 — Kamis, 29 Oktober (Ningbo City God Temple & Zhongshan Road — Hari Santai Penutup)
 
 Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup santai sebelum kepulangan, tanpa destinasi jauh/melelahkan.
 
@@ -345,7 +346,7 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 
 ---
 
-## Hari 17 — Sabtu, 31 Oktober (Kepulangan)
+## Hari 17 — Jumat, 30 Oktober (Kepulangan)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -448,7 +449,7 @@ Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi intern
 ### Yang Perlu Disiapkan (Khusus China)
 App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank & adaptor tipe A/I. VPN aktif SEBELUM masuk China kalau butuh akses Google/WhatsApp/Instagram.
 
-## Hari 1 — Kamis, 15 Oktober
+## Hari 1 — Rabu, 14 Oktober
 
 ### Ningbo Museum (宁波博物馆 · Níngbō Bówùguǎn) ⚠️
 Dirancang oleh arsitek pemenang Pritzker Prize Wang Shu (Amateur Architecture Studio), museum ini terkenal dengan fasad "wa pian qiang" (瓦爿墙) — dinding yang dibangun dari bata & genteng bekas bangunan-bangunan tua yang dibongkar di sekitar Ningbo, sebagai bentuk pelestarian memori kota. Bentuk bangunannya terinspirasi dari lanskap gunung & pola desa tradisional Zhejiang, memenangkan berbagai penghargaan arsitektur internasional sejak dibuka 2008.
@@ -479,7 +480,7 @@ Dijuluki "Central Park"-nya Ningbo — taman kota luas dengan pepohonan rindang,
 - Foto/info: https://en.wikipedia.org/wiki/Yinzhou_District
 - Video referensi: https://www.youtube.com/results?search_query=Yinzhou+Park+Ningbo
 
-## Hari 2 — Jumat, 16 Oktober
+## Hari 2 — Kamis, 15 Oktober
 
 ### Dongqian Lake (东钱湖 · Dōngqián Hú) ✅
 Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di kaki perbukitan timur Ningbo. Selama berabad-abad jadi tempat inspirasi sastrawan & pejabat era Song-Ming, dengan berbagai pulau kecil, causeway, dan kuil kuno tersebar di sekitarnya — sering dijuluki "West Lake versi liar" karena suasananya yang lebih tenang & kurang komersial dibanding Hangzhou.
@@ -496,7 +497,7 @@ Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di
 - Video referensi: https://www.youtube.com/results?search_query=Dongqian+Lake+Ningbo
 - Rekomendasi tempat sekitar: Xiaoputuo causeway; Fuquan Mountain (lihat Hari 14)
 
-## Hari 3 — Sabtu, 17 Oktober
+## Hari 3 — Jumat, 16 Oktober
 
 ### Ashoka Temple (阿育王寺 · Āyùwáng Sì) ✅
 Kuil berusia lebih dari 1.700 tahun yang menyimpan relik Buddha paling berharga di China — fragmen tulang tengkorak Sakyamuni (pendiri agama Buddha), diklaim dibawa dari India oleh biksu di era Dinasti Jin (280 M). Namanya diambil dari Kaisar Ashoka, penguasa Buddha terkenal dari Kekaisaran Maurya India, dan arsitekturnya memadukan gaya Tang dengan lanskap perbukitan Taibai Mountain di sekelilingnya.
@@ -527,7 +528,7 @@ Salah satu dari sepuluh kuil paling suci sekte Chan (Zen) di China, dibangun tah
 - Foto/info: https://en.wikipedia.org/wiki/Tiantong_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Tiantong+Temple+Ningbo
 
-## Hari 4 — Minggu, 18 Oktober
+## Hari 4 — Sabtu, 17 Oktober
 
 ### Tianyi Pavilion (天一阁 · Tiānyī Gé) ✅
 Dibangun tahun 1561 oleh Fan Qin, Wakil Menteri Perang Dinasti Ming, sebagai perpustakaan pribadi tertua yang masih berdiri di China — salah satu dari tiga perpustakaan keluarga tertua di dunia. Menyimpan lebih dari 300.000 volume buku kuno (80.000 di antaranya edisi langka), dengan desain arsitektur unik anti-api, anti-lembap, dan anti-serangga yang jadi contoh terbaik arsitektur perpustakaan kuno China.
@@ -558,7 +559,7 @@ Digali sejak era Tang Zhenguan (±1.400 tahun lalu), danau ini jadi pusat akadem
 - Foto/info: https://www.loongwander.com/en-US/article/tianyi-pavilion-and-yuehu-lake-scenic-area
 - Video referensi: https://www.youtube.com/results?search_query=Yuehu+Lake+Ningbo
 
-## Hari 5 — Senin, 19 Oktober
+## Hari 5 — Minggu, 18 Oktober
 
 ### Old Bund / Laowaitan (老外滩 · Lǎo Wàitān) ✅
 Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertama China yang dibuka untuk perdagangan asing setelah Perang Candu Pertama — lebih tua dari The Bund Shanghai yang lebih terkenal. Arsitektur bergaya Inggris, Jerman, Belanda, dan Prancis masih berdiri, termasuk Gereja Katolik Jiangbei bergaya Gothic, kini jadi kawasan bar & resto trendi tepi sungai.
@@ -603,7 +604,7 @@ Alun-alun pusat kota modern Ningbo, dinamai dari Tianyi Pavilion yang lokasinya 
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo
 - Video referensi: https://www.youtube.com/results?search_query=Tianyi+Square+Ningbo+night
 
-## Hari 6 — Selasa, 20 Oktober
+## Hari 6 — Senin, 19 Oktober
 
 ### Nantang Old Street (南塘老街 · Nántáng Lǎojiē) ✅
 Jalan pedestrian sepanjang 500+ meter yang direstorasi dengan mempertahankan arsitektur kuno khas Zhejiang Timur, kini jadi pusat jajanan & suvenir lokal paling populer di Ningbo. Terkenal dengan berbagai jajanan legendaris seperti hairy tofu goreng dan kue beras Ningbo, jalan ini jadi representasi terbaik suasana kota lama yang hidup, bukan sekadar museum terbuka.
@@ -619,7 +620,7 @@ Jalan pedestrian sepanjang 500+ meter yang direstorasi dengan mempertahankan ars
 - Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
 - Video referensi: https://www.youtube.com/results?search_query=Nantang+Old+Street+Ningbo
 
-## Hari 7 — Rabu, 21 Oktober
+## Hari 7 — Selasa, 20 Oktober
 
 ### Baoguo Temple (保国寺 · Bǎoguó Sì) ✅
 Salah satu struktur kayu tertua & paling terjaga di China, berusia lebih dari 1.000 tahun, dibangun TANPA menggunakan satu paku pun — sambungan kayunya murni memakai teknik dougong (bracket) tradisional. Aula utamanya (dibangun 1013, era Song Utara) jadi contoh langka arsitektur kayu era awal yang selamat dari kebakaran & perang selama satu milenium.
@@ -635,7 +636,7 @@ Salah satu struktur kayu tertua & paling terjaga di China, berusia lebih dari 1.
 - Foto/info: https://en.wikipedia.org/wiki/Baoguo_Temple_(Ningbo)
 - Video referensi: https://www.youtube.com/results?search_query=Baoguo+Temple+Ningbo
 
-## Hari 8 — Kamis, 22 Oktober
+## Hari 8 — Rabu, 21 Oktober
 
 ### Xikou Ancient Town (溪口古镇 · Xīkǒu Gǔzhèn) ✅
 Kampung halaman Chiang Kai-shek dan putranya Chiang Ching-kuo — dua tokoh penting Republik China yang kelak memimpin Taiwan. Kota kuno ini menyimpan kediaman keluarga Chiang yang terpelihara baik, termasuk Wenchang Pavilion (perpustakaan pribadi Chiang & istrinya Soong Mei-ling dari era Qing), jadi tujuan ziarah sejarah populer dari seluruh dunia berbahasa Mandarin.
@@ -666,7 +667,7 @@ Terletak di jantung Xuedou Mountain, kuil ini merupakan salah satu dari lima gun
 - Foto/info: https://en.wikipedia.org/wiki/Xuedou_Mountain
 - Video referensi: https://www.youtube.com/results?search_query=Xuedou+Temple+Ningbo
 
-## Hari 9 — Jumat, 23 Oktober
+## Hari 9 — Kamis, 22 Oktober
 
 ### Qiantong Ancient Town (前童古镇 · Qiántóng Gǔzhèn) ✅
 Desa kuno seperti labirin di Ninghai County, dengan tata letak rumah-rumah era Ming-Qing yang saling terhubung lewat gang sempit & kanal air kecil — dijuluki "museum rakyat hidup" karena penduduk lokal masih benar-benar tinggal & beraktivitas sehari-hari di dalamnya, bukan sekadar situs wisata kosong. Terkenal dengan kerajinan tradisional yang masih dipraktikkan warganya, dari pembuatan tahu hingga anyaman bambu.
@@ -682,7 +683,7 @@ Desa kuno seperti labirin di Ninghai County, dengan tata letak rumah-rumah era M
 - Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
 - Video referensi: https://www.youtube.com/results?search_query=Qiantong+Ancient+Town+Ningbo
 
-## Hari 10 — Sabtu, 24 Oktober
+## Hari 10 — Jumat, 23 Oktober
 
 ### Hemudu Site Museum (河姆渡遗址博物馆 · Hémǔdù Yízhǐ Bówùguǎn) ✅
 Situs arkeologi Neolitikum berusia 7.000-5.000 tahun dekat Yuyao — salah satu bukti tertua peradaban pertanian padi basah di dunia. Penggalian di sini menemukan tembikar, perkakas tulang, dan struktur rumah panggung kayu yang direkonstruksi skala penuh di museum, memberi gambaran nyata kehidupan manusia prasejarah China Selatan ribuan tahun sebelum Dinasti pertama berdiri.
@@ -698,7 +699,7 @@ Situs arkeologi Neolitikum berusia 7.000-5.000 tahun dekat Yuyao — salah satu 
 - Foto/info: https://en.wikipedia.org/wiki/Hemudu_culture
 - Video referensi: https://www.youtube.com/results?search_query=Hemudu+Site+Museum+Ningbo
 
-## Hari 11 — Minggu, 25 Oktober
+## Hari 11 — Sabtu, 24 Oktober
 
 ### Cicheng Ancient Town (慈城古镇 · Cíchéng Gǔzhèn) ✅
 Kota kuno terjaga baik di ujung barat Ningbo, pernah jadi pusat administratif county Cixi kuno selama lebih dari 1.000 tahun sebelum pusat pemerintahan dipindah. Arsitektur Ming-Qing-nya termasuk yang paling utuh di Zhejiang Timur, dengan tata kota grid tradisional yang masih terlihat jelas — jadi lokasi syuting populer untuk drama sejarah China.
@@ -714,7 +715,7 @@ Kota kuno terjaga baik di ujung barat Ningbo, pernah jadi pusat administratif co
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo
 - Video referensi: https://www.youtube.com/results?search_query=Cicheng+Ancient+Town+Ningbo
 
-## Hari 12 — Senin, 26 Oktober
+## Hari 12 — Minggu, 25 Oktober
 
 ### Zhaobao Mountain & Zhenhai Coastal Defense History Memorial Hall (招宝山·镇海口海防历史纪念馆 · Zhāobǎo Shān · Zhènhǎi Kǒu Hǎifáng Lìshǐ Jìniànguǎn) ✅
 Pertahanan pesisir Ningbo bermula sejak tahun 132 M (era Dinasti Han Barat) di kawasan Zhenhaikou ini, menjadikannya salah satu titik strategis militer tertua di China. Memorial hall yang dibangun 1997 ini memaparkan sejarah panjang pertahanan pesisir dari era kuno hingga Perang Candu, sementara Zhaobao Mountain di atasnya menawarkan pemandangan muara sungai & laut yang jadi alasan lokasi ini strategis secara militer.
@@ -730,7 +731,7 @@ Pertahanan pesisir Ningbo bermula sejak tahun 132 M (era Dinasti Han Barat) di k
 - Foto/info: https://zh.wikipedia.org/zh-hans/%E9%95%87%E6%B5%B7%E5%8F%A3%E6%B5%B7%E9%98%B2%E9%81%97%E5%9D%80
 - Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Ningbo+coastal+defense
 
-## Hari 13 — Selasa, 27 Oktober
+## Hari 13 — Senin, 26 Oktober
 
 ### Shipu Ancient Fishing Port (石浦渔港古城 · Shípǔ Yúgǎng Gǔchéng) ✅
 Salah satu pelabuhan nelayan tertua & terbesar di China, di Xiangshan County — kawasan pesisir ini masih jadi pusat kehidupan nelayan otentik dengan dermaga tua, kuil-kuil nelayan lokal, dan seafood segar langsung dari kapal. Berbeda dari destinasi kota Ningbo lainnya yang lebih historis-formal, Shipu menawarkan suasana laut & budaya maritim yang lebih hidup & sehari-hari.
@@ -746,7 +747,7 @@ Salah satu pelabuhan nelayan tertua & terbesar di China, di Xiangshan County —
 - Foto/info: https://en.wikipedia.org/wiki/Xiangshan_County
 - Video referensi: https://www.youtube.com/results?search_query=Shipu+Ancient+Fishing+Port+Xiangshan
 
-## Hari 14 — Rabu, 28 Oktober
+## Hari 14 — Selasa, 27 Oktober
 
 ### Xiaoputuo (小普陀 · Xiǎo Pǔtuó) ⚠️
 Causeway kecil di Dongqian Lake yang menghubungkan tepi danau dengan pulau mini berisi replika kuil Guanyin — namanya ("Putuo Kecil") merujuk pada Mount Putuo, gunung suci Buddha sesungguhnya yang jauh lebih besar di kepulauan Zhoushan. Jadi spot foto & jalan santai populer bagi warga lokal yang ingin merasakan suasana spiritual tanpa perlu menyeberang ke pulau sungguhan.
@@ -776,7 +777,7 @@ Bukit pemandangan di tepi Dongqian Lake yang menawarkan panorama danau dari keti
 - Foto/info: https://en.wikipedia.org/wiki/Dongqian_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Fuquan+Mountain+Ningbo
 
-## Hari 15 — Kamis, 29 Oktober
+## Hari 15 — Rabu, 28 Oktober
 
 ### Tianfeng Pagoda (天封塔 · Tiānfēng Tǎ) ✅
 Pagoda ikonik di jantung Distrik Haishu, pusat kota lama Ningbo — namanya diambil dari era pembangunannya (Tianfeng, Dinasti Tang, akhir abad ke-7). Meski sudah direnovasi berkali-kali sepanjang sejarah, pagoda ini tetap jadi salah satu landmark paling dikenali kota, terutama saat malam hari ketika lampu-lampunya menyala.
@@ -806,7 +807,7 @@ Kapal wisata malam yang menyusuri pertemuan tiga sungai (Yong, Yao, Fenghua) dar
 - Foto/info: https://www.dahepiao.com/lvyounews1/20220822292069.html
 - Video referensi: https://www.youtube.com/results?search_query=Sanjiangkou+Night+Cruise+Ningbo
 
-## Hari 16 — Jumat, 30 Oktober
+## Hari 16 — Kamis, 29 Oktober
 
 ### Ningbo City God Temple (府城隍庙 · Fǔ Chénghuáng Miào) ⚠️
 Kuil rakyat bersejarah di pusat kota lama Ningbo, didedikasikan untuk dewa pelindung kota dalam kepercayaan rakyat Tionghoa — arsitekturnya memadukan elemen kuil Tao tradisional dengan ukiran kayu halus khas Zhejiang Timur. Kuil semacam ini biasanya jadi pusat kehidupan komunitas lokal sejak era kekaisaran, tempat warga berdoa untuk keselamatan & kemakmuran kota.

@@ -1822,16 +1822,16 @@ const destinations = [
   {
     id:`ningbo`,
     name:`Ningbo`,
-    dates:`15 – 31 Oktober · 16 Malam · Direncanakan Independen (bukan sambungan kota lain)`,
+    dates:`14 – 30 Oktober · 16 Malam · Nyambung dari Suzhou via HSR (kepulangan masih independen — kota/moda berikutnya belum ditentukan)`,
     currency:`CNY`,
 
     transportPergi:{
       mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Kamis, 15 Oktober (perkiraan)`,
+      title:`Rute belum ditentukan &middot; Rabu, 14 Oktober (perkiraan)`,
       tag:"tbd", openByDefault:true,
       items:[
-        [`Kedatangan`,`Kamis, 15 Oktober, <b>±17:00</b> — moda &amp; kota asal menyesuaikan rencana Anda (kota ini direncanakan independen)`],
-        [`Kepulangan`,`Sabtu, 31 Oktober, <b>±15:00</b>, lanjut ke kota berikutnya — moda &amp; tujuan belum ditentukan`],
+        [`Kedatangan`,`Rabu, 14 Oktober, <b>±17:30–18:30</b> (estimasi), via HSR dari Suzhou — Suzhou berangkat ±15:00, durasi ±2,5–3,5 jam (lihat itinerary Suzhou, "Informasi Transportasi Pulang")`],
+        [`Kepulangan`,`Jumat, 30 Oktober, <b>±15:00</b>, lanjut ke kota berikutnya — moda &amp; tujuan belum ditentukan`],
       ],
       warn:`<b>⚠️ Keterbatasan alat:</b> akses langsung ke amap.com terbatas di environment sesi ini — riset destinasi &amp; transfer MRT memakai web_search (Wikipedia Ningbo Rail Transit, blog lokal, situs resmi). Beberapa titik transfer &amp; jarak jalan kaki presisi belum bisa diverifikasi visual — ditandai ⚠️ di teks terkait, cek Amap on-site sebelum berangkat kalau memungkinkan.`,
       hotel:``
@@ -1839,21 +1839,22 @@ const destinations = [
 
     days:[
       {
-        id:"h1", num:1, date:`Kamis, 15 Oktober`, label:`Kedatangan Santai — Ningbo Museum &amp; Yinzhou Park`,
+        id:"h1", num:1, date:`Rabu, 14 Oktober`, label:`Kedatangan Santai — Ningbo Museum &amp; Yinzhou Park`,
         advisory:`Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat rumah, jadi tidak perlu buru-buru menyesuaikan jetlag/perjalanan.`,
         items:[
-          [`17:00`,`Tiba di tempat tinggal, unpacking, istirahat`,``,``,``,``],
-          [`17:00–17:30`,`Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8)`,`⚠️ jarak persis belum terverifikasi`,``,`20`,`53.000`],
-          [`17:30–18:00`,`Line 8 menuju kluster <b>Ningbo Museum &amp; Yinzhou Park</b>`,`⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif`,``,`16`,`42.400`],
-          [`18:00–19:00`,`<b>Yinzhou Park</b> — jalan santai sore, taman kota "Central Park" Ningbo`,`Gratis, jalur datar`,``,``,``],
-          [`19:00–20:00`,`Makan malam sekitar Yinzhou Park`,`±CNY 30/org`,``,`60`,`159.000`],
-          [`20:00`,`Kembali ke tempat tinggal`,`Didi/MRT`,``,`20`,`53.000`],
+          [`±17:30–18:30`,`Tiba di Ningbo (HSR dari Suzhou, jam pasti tergantung kereta), Didi ke tempat tinggal`,`Estimasi, moda dari stasiun tidak dihitung terpisah — sisa jadwal Hari 1 di bawah mundur menyesuaikan jam tiba aktual`,``,`35`,`92.750`],
+          [`+0–30 menit`,`Unpacking, istirahat sejenak`,``,``,``,``],
+          [`+30–60 menit`,`Didi/jalan kaki ke Stasiun Yinzhou Higher Education Park (Line 8)`,`⚠️ jarak persis belum terverifikasi`,``,`20`,`53.000`],
+          [`+60–90 menit`,`Line 8 menuju kluster <b>Ningbo Museum &amp; Yinzhou Park</b>`,`⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif`,``,`16`,`42.400`],
+          [`+90–120 menit`,`<b>Yinzhou Park</b> — jalan santai sore, taman kota "Central Park" Ningbo`,`Gratis, jalur datar`,``,``,``],
+          [`+120–180 menit`,`Makan malam sekitar Yinzhou Park`,`±CNY 30/org`,``,`60`,`159.000`],
+          [`+180 menit`,`Kembali ke tempat tinggal`,`Didi/MRT`,``,`20`,`53.000`],
         ],
         total:{cny:`<b>116</b>`, idr:`<b>307.400</b>`},
         planb:`kalau kelelahan perjalanan — cukup istirahat penuh, tunda Yinzhou Park ke sela-sela hari lain (persis di dekat rumah, gampang disisipkan kapan saja).`,
       },
       {
-        id:"h2", num:2, date:`Jumat, 16 Oktober`, label:`Dongqian Lake — Danau Terbesar Zhejiang`,
+        id:"h2", num:2, date:`Kamis, 15 Oktober`, label:`Dongqian Lake — Danau Terbesar Zhejiang`,
         advisory:`Dongqian Lake (東錢湖) persis di ujung Line 4, dekat rumah — danau air tawar terbesar di Zhejiang, 3× lebih luas dari West Lake Hangzhou. Satu hari penuh untuk bersepeda/jalan santai keliling tepi danau.`,
         items:[
           [`08:00–08:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1868,7 +1869,7 @@ const destinations = [
         planb:`kalau cuaca hujan — kunjungan diperpendek, fokus area yang ada atap/kafe tepi danau saja, atau tunda ke Hari 16 (hari santai) kalau perlu diulang.`,
       },
       {
-        id:"h3", num:3, date:`Sabtu, 17 Oktober`, label:`Ashoka Temple → Tiantong Temple`,
+        id:"h3", num:3, date:`Jumat, 16 Oktober`, label:`Ashoka Temple → Tiantong Temple`,
         advisory:`Dua kuil Buddha kuno paling terkenal di Ningbo, sama-sama di kaki Gunung Taibai, ±10km terpisah (terhubung bus) — dijadikan 1 hari dedicated karena jauh dari pusat kota.`,
         items:[
           [`08:00–08:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1885,7 +1886,7 @@ const destinations = [
         planb:`kalau waktu tidak cukup untuk keduanya — prioritaskan Tiantong Temple (kompleks lebih besar, suasana pegunungan lebih kental), sisakan Ashoka Temple untuk hari lain (lebih dekat pusat kota, gampang disisipkan).`,
       },
       {
-        id:"h4", num:4, date:`Minggu, 18 Oktober`, label:`Tianyi Pavilion &amp; Yuehu Lake — Kota Tua`,
+        id:"h4", num:4, date:`Sabtu, 17 Oktober`, label:`Tianyi Pavilion &amp; Yuehu Lake — Kota Tua`,
         advisory:`Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpustakaan pribadi tertua di Asia + danau bersejarah 1.400 tahun.`,
         items:[
           [`08:30–09:15`,`Line 8 → transfer Line 1, turun Stasiun Ximenkou`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
@@ -1899,7 +1900,7 @@ const destinations = [
         planb:`kalau Tianyi Pavilion terlalu ramai/antre — cukup nikmati Yuehu Lake lebih lama, tunda Tianyi Pavilion ke hari kerja (weekday) yang lebih sepi.`,
       },
       {
-        id:"h5", num:5, date:`Senin, 19 Oktober`, label:`Old Bund → Sanjiangkou → Tianyi Square Malam`,
+        id:"h5", num:5, date:`Minggu, 18 Oktober`, label:`Old Bund → Sanjiangkou → Tianyi Square Malam`,
         advisory:`Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemuan tiga sungai, ditutup jalan santai malam di alun-alun pusat kota.`,
         items:[
           [`08:30–09:15`,`Line 8 → transfer Line 2, turun Stasiun Waitan Daqiao`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
@@ -1916,7 +1917,7 @@ const destinations = [
         planb:`kalau hujan — Old Bund &amp; Sanjiangkou tetap bisa dinikmati dari sisi beratap (kafe/resto tepi sungai), Tianyi Square malam bisa diganti pulang lebih awal.`,
       },
       {
-        id:"h6", num:6, date:`Selasa, 20 Oktober`, label:`Nantang Old Street`,
+        id:"h6", num:6, date:`Senin, 19 Oktober`, label:`Nantang Old Street`,
         advisory:`Jalan pedestrian 500m+ dengan arsitektur kuno &amp; jajanan khas — satu hari santai penuh untuk menjelajah tiap sudut &amp; mencicipi kuliner lokal.`,
         items:[
           [`08:30–09:15`,`Line 8 → transfer Line 2, turun Stasiun Ningbo Railway Station`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
@@ -1931,7 +1932,7 @@ const destinations = [
         planb:`kalau Nantang terlalu padat (akhir pekan) — geser ke hari kerja, atau perpendek waktu &amp; lanjut ke Tianfeng Pagoda (Hari 15) yang searah.`,
       },
       {
-        id:"h7", num:7, date:`Rabu, 21 Oktober`, label:`Baoguo Temple`,
+        id:"h7", num:7, date:`Selasa, 20 Oktober`, label:`Baoguo Temple`,
         advisory:`Kuil kayu tertua &amp; paling terjaga di China (1.000+ tahun, dibangun TANPA paku) — agak jauh dari pusat kota, jadi hari santai dengan waktu longgar untuk eksplorasi detail arsitektur.`,
         items:[
           [`08:00–08:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1946,7 +1947,7 @@ const destinations = [
         planb:`kalau Didi susah didapat/mahal — cek bus 332 dari pusat kota sebagai alternatif lebih murah (⚠️ jadwal &amp; rute belum terverifikasi presisi).`,
       },
       {
-        id:"h8", num:8, date:`Kamis, 22 Oktober`, label:`Xikou Ancient Town → Xuedou Temple, Fenghua`,
+        id:"h8", num:8, date:`Rabu, 21 Oktober`, label:`Xikou Ancient Town → Xuedou Temple, Fenghua`,
         advisory:`Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, plus salah satu dari 5 gunung Zen paling terkenal di China. Day trip dedicated karena butuh bus antar-kota.`,
         items:[
           [`07:30–08:00`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1963,7 +1964,7 @@ const destinations = [
         planb:`kalau waktu mepet — prioritaskan Xikou (bekas kediaman lebih historis &amp; terkenal), skip Xuedou Temple (jaraknya lebih jauh naik gunung), balik lebih awal.`,
       },
       {
-        id:"h9", num:9, date:`Jumat, 23 Oktober`, label:`Qiantong Ancient Town`,
+        id:"h9", num:9, date:`Kamis, 22 Oktober`, label:`Qiantong Ancient Town`,
         advisory:`Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat hidup". Day trip dedicated via bus antar-kota ke Ninghai County.`,
         items:[
           [`07:30–08:00`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1980,7 +1981,7 @@ const destinations = [
         planb:`kalau minibus lokal ke Qiantong susah dijadwalkan — Didi langsung dari Ninghai (±15 menit) sebagai alternatif lebih pasti, meski lebih mahal.`,
       },
       {
-        id:"h10", num:10, date:`Sabtu, 24 Oktober`, label:`Hemudu Site Museum, Yuyao`,
+        id:"h10", num:10, date:`Jumat, 23 Oktober`, label:`Hemudu Site Museum, Yuyao`,
         advisory:`Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi tertua di China selatan. Day trip dedicated.`,
         items:[
           [`07:00–07:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -1998,7 +1999,7 @@ const destinations = [
         planb:`kalau jadwal kereta/bus regional ke Yuyao tidak pasti — Didi langsung dari Ningbo (±1 jam, lebih mahal tapi fleksibel jadwal).`,
       },
       {
-        id:"h11", num:11, date:`Minggu, 25 Oktober`, label:`Cicheng Ancient Town`,
+        id:"h11", num:11, date:`Sabtu, 24 Oktober`, label:`Cicheng Ancient Town`,
         advisory:`Kota kuno Cicheng (慈城), ujung barat Line 4 — jauh lebih dekat &amp; mudah dijangkau dibanding day-trip lain minggu ini, cocok jadi hari lebih santai setelah beberapa hari perjalanan jauh.`,
         items:[
           [`08:30–09:30`,`Line 8 → transfer Line 4, turun Stasiun Cicheng`,`⚠️ titik transfer belum terverifikasi — Line 4 melintasi Cicheng-Dongqian Lage jadi kemungkinan cukup 1 transfer`,``,`32`,`84.800`],
@@ -2012,7 +2013,7 @@ const destinations = [
         planb:`hari ini relatif santai, kalau ingin lebih ringan lagi — cukup setengah hari di Cicheng, sisanya istirahat di rumah.`,
       },
       {
-        id:"h12", num:12, date:`Senin, 26 Oktober`, label:`Zhaobao Mountain &amp; Coastal Defense History, Zhenhai`,
+        id:"h12", num:12, date:`Minggu, 25 Oktober`, label:`Zhaobao Mountain &amp; Coastal Defense History, Zhenhai`,
         advisory:`Zhaobao Mountain di Zhenhai — sejarah pertahanan pesisir Ningbo sejak Dinasti Han, akses MRT langsung (Line 2), tidak perlu Didi/bus jauh.`,
         items:[
           [`08:30–09:30`,`Line 8 → transfer Line 2, turun Stasiun Zhaobaoshan`,`⚠️ titik transfer belum terverifikasi`,``,`32`,`84.800`],
@@ -2026,7 +2027,7 @@ const destinations = [
         planb:`kalau museum tutup/renovasi — cukup naik Zhaobao Mountain untuk city view &amp; jalan santai kawasan pesisir kuno.`,
       },
       {
-        id:"h13", num:13, date:`Selasa, 27 Oktober`, label:`Xiangshan — Shipu Ancient Fishing Port`,
+        id:"h13", num:13, date:`Senin, 26 Oktober`, label:`Xiangshan — Shipu Ancient Fishing Port`,
         advisory:`Salah satu pelabuhan nelayan tertua &amp; terbesar di China — day trip jauh (±2 jam), dijadikan 1 hari penuh dedicated untuk suasana laut &amp; seafood otentik.`,
         items:[
           [`07:00–07:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -2043,7 +2044,7 @@ const destinations = [
         planb:`kalau perjalanan bus terlalu jauh/melelahkan — pertimbangkan ganti dengan hari santai di rumah, geser Xiangshan ke Cadangan (lihat catatan risiko jarak).`,
       },
       {
-        id:"h14", num:14, date:`Rabu, 28 Oktober`, label:`Xiaoputuo &amp; Fuquan Mountain — Dongqian Lake Sisi Lain`,
+        id:"h14", num:14, date:`Selasa, 27 Oktober`, label:`Xiaoputuo &amp; Fuquan Mountain — Dongqian Lake Sisi Lain`,
         advisory:`Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil &amp; bukit pemandangan, tetap dekat rumah.`,
         items:[
           [`08:00–08:30`,`Sarapan sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
@@ -2058,7 +2059,7 @@ const destinations = [
         planb:`kalau sudah cukup puas dengan Dongqian Lake dari Hari 2 — hari ini bisa diganti hari santai/istirahat penuh di rumah.`,
       },
       {
-        id:"h15", num:15, date:`Kamis, 29 Oktober`, label:`Tianfeng Pagoda Siang → Sanjiangkou Night Cruise`,
+        id:"h15", num:15, date:`Rabu, 28 Oktober`, label:`Tianfeng Pagoda Siang → Sanjiangkou Night Cruise`,
         advisory:`Pagoda ikonik pusat kota di siang hari, ditutup dengan pengalaman unik: kapal malam menyusuri pertemuan tiga sungai dengan lampu kota menyala.`,
         items:[
           [`08:30–09:15`,`Line 8 → transfer Line 1, turun Stasiun Ximenkou/pusat kota`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
@@ -2073,7 +2074,7 @@ const destinations = [
         planb:`kalau tiket night cruise habis — cukup jalan santai malam Old Bund saja (gratis), coba lagi di hari lain.`,
       },
       {
-        id:"h16", num:16, date:`Jumat, 30 Oktober`, label:`Ningbo City God Temple &amp; Zhongshan Road — Hari Santai Penutup`,
+        id:"h16", num:16, date:`Kamis, 29 Oktober`, label:`Ningbo City God Temple &amp; Zhongshan Road — Hari Santai Penutup`,
         advisory:`Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup santai sebelum kepulangan, tanpa destinasi jauh/melelahkan.`,
         items:[
           [`09:00–09:45`,`Line 8 → transfer Line 1, turun Stasiun Ximenkou/pusat kota`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
@@ -2088,7 +2089,7 @@ const destinations = [
         planb:`hari ini fleksibel — kalau ada destinasi Cadangan yang masih penasaran (lihat Lampiran), bisa ditukar di sini asal masih dalam radius MRT dari pusat kota.`,
       },
       {
-        id:"h17", num:17, date:`Sabtu, 31 Oktober`, label:`Kepulangan`,
+        id:"h17", num:17, date:`Jumat, 30 Oktober`, label:`Kepulangan`,
         items:[
           [`08:00–08:30`,`Sarapan terakhir sekitar rumah`,`±CNY 15/org`,``,`30`,`79.500`],
           [`08:30–12:00`,`Packing, siap-siap, waktu buffer`,``,``,``,``],
@@ -2390,22 +2391,22 @@ const destinations = [
     ],
     lampiranGroups:[
       {key:`intro`, heading:`Ningbo (宁波 · Níngbō)`},
-      {key:`h1`, heading:`Hari 1 — Kamis, 15 Oktober`},
-      {key:`h2`, heading:`Hari 2 — Jumat, 16 Oktober`},
-      {key:`h3`, heading:`Hari 3 — Sabtu, 17 Oktober`},
-      {key:`h4`, heading:`Hari 4 — Minggu, 18 Oktober`},
-      {key:`h5`, heading:`Hari 5 — Senin, 19 Oktober`},
-      {key:`h6`, heading:`Hari 6 — Selasa, 20 Oktober`},
-      {key:`h7`, heading:`Hari 7 — Rabu, 21 Oktober`},
-      {key:`h8`, heading:`Hari 8 — Kamis, 22 Oktober`},
-      {key:`h9`, heading:`Hari 9 — Jumat, 23 Oktober`},
-      {key:`h10`, heading:`Hari 10 — Sabtu, 24 Oktober`},
-      {key:`h11`, heading:`Hari 11 — Minggu, 25 Oktober`},
-      {key:`h12`, heading:`Hari 12 — Senin, 26 Oktober`},
-      {key:`h13`, heading:`Hari 13 — Selasa, 27 Oktober`},
-      {key:`h14`, heading:`Hari 14 — Rabu, 28 Oktober`},
-      {key:`h15`, heading:`Hari 15 — Kamis, 29 Oktober`},
-      {key:`h16`, heading:`Hari 16 — Jumat, 30 Oktober`},
+      {key:`h1`, heading:`Hari 1 — Rabu, 14 Oktober`},
+      {key:`h2`, heading:`Hari 2 — Kamis, 15 Oktober`},
+      {key:`h3`, heading:`Hari 3 — Jumat, 16 Oktober`},
+      {key:`h4`, heading:`Hari 4 — Sabtu, 17 Oktober`},
+      {key:`h5`, heading:`Hari 5 — Minggu, 18 Oktober`},
+      {key:`h6`, heading:`Hari 6 — Senin, 19 Oktober`},
+      {key:`h7`, heading:`Hari 7 — Selasa, 20 Oktober`},
+      {key:`h8`, heading:`Hari 8 — Rabu, 21 Oktober`},
+      {key:`h9`, heading:`Hari 9 — Kamis, 22 Oktober`},
+      {key:`h10`, heading:`Hari 10 — Jumat, 23 Oktober`},
+      {key:`h11`, heading:`Hari 11 — Sabtu, 24 Oktober`},
+      {key:`h12`, heading:`Hari 12 — Minggu, 25 Oktober`},
+      {key:`h13`, heading:`Hari 13 — Senin, 26 Oktober`},
+      {key:`h14`, heading:`Hari 14 — Selasa, 27 Oktober`},
+      {key:`h15`, heading:`Hari 15 — Rabu, 28 Oktober`},
+      {key:`h16`, heading:`Hari 16 — Kamis, 29 Oktober`},
       {key:`cadangan`, heading:`Cadangan`},
     ],
   },
