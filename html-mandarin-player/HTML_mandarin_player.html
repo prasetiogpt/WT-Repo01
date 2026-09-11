@@ -2073,7 +2073,11 @@ function applyFilter(panel){
   if(!table) return;
   const qText = (panel.querySelector('.sr input[type="text"]')?.value || '').toLowerCase();
   const colScope = panel.querySelector('.col-scope-select')?.value || 'all';
-  const checkedOnly = !!panel.querySelector('[data-filter-checked]')?.checked;
+  // Dulu checkbox 2-keadaan (centang = tampilkan yang ber-Pilih saja, kosong = tampilkan semua) -
+  // direvisi (2026-09-11, user's request) jadi dropdown 3-keadaan: V (ber-Pilih saja, default -
+  // sama seperti checkbox tercentang dulu), _ (BELUM ber-Pilih saja - baru, sebelumnya tidak ada
+  // cara untuk ini), All (semua, sama seperti checkbox kosong dulu).
+  const checkFilterMode = panel.querySelector('[data-filter-checkmode]')?.value || 'checked';
   const searchMode = panel.querySelector('[data-search-mode]')?.value || 'general';
 
   const fromInput = panel.querySelector('[data-filter-from]');
@@ -2132,7 +2136,8 @@ function applyFilter(panel){
       // tanpa peduli tanda nada (atau persis nada tertentu kalau query ada angkanya).
       if(!matchText) matchText = pinyinCellsMatch(cells, pinIdxs, qText);
     }
-    const matchChecked = !checkedOnly || tr.dataset.pilih === '1';
+    const isPilih = tr.dataset.pilih === '1';
+    const matchChecked = checkFilterMode==='unchecked' ? !isPilih : (checkFilterMode==='all' ? true : isPilih);
     const hasVisibleData = rowHasVisibleData(cells, visibleDataCols);
 
     tr.classList.toggle('hidden', !(matchText && matchChecked && matchNo && hasVisibleData));
@@ -2344,7 +2349,7 @@ function toolbarHTML(tid){
     <div class="sr">
       <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
       <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked checked> ✓</label>
+      <select class="search-mode-select" data-filter-checkmode title="Tampilkan: V = ber-Pilih saja / _ = belum ber-Pilih saja / All = semua"><option value="checked" selected>V</option><option value="unchecked">_</option><option value="all">All</option></select>
       <label class="range-label">
         No: 
         <input type="number" data-filter-from min="1" placeholder="dari">
@@ -3130,7 +3135,7 @@ function attachPanelEvents(panel){
     applyFilter(panel);
   };
   wireSearchHistory(panel, search, ()=>applyFilter(panel));
-  const filter=panel.querySelector('[data-filter-checked]'); if(filter) filter.onchange=()=>applyFilter(panel);
+  const filter=panel.querySelector('[data-filter-checkmode]'); if(filter) filter.onchange=()=>applyFilter(panel);
   panel.querySelectorAll('.ck-box').forEach(cb=>{ cb.onchange=()=>{ const tr=cb.closest('tr'); tr.dataset.pilih=cb.checked?'1':'0'; if(cb.checked) cb.setAttribute('checked',''); else cb.removeAttribute('checked'); applyFilter(panel); }; });
   panel.querySelectorAll('[data-final-loop]').forEach(cb=>cb.onchange=()=>{ syncPanelPlayOptions(panel); if(cb.checked) cb.setAttribute('checked',''); else cb.removeAttribute('checked'); });
   panel.querySelectorAll('[data-final-random]').forEach(cb=>cb.onchange=()=>{ syncPanelPlayOptions(panel); if(cb.checked) cb.setAttribute('checked',''); else cb.removeAttribute('checked'); });
@@ -4023,7 +4028,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
     <div class="sr">
       <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
       <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked="" checked=""> ✓</label>
+      <select class="search-mode-select" data-filter-checkmode title="Tampilkan: V = ber-Pilih saja / _ = belum ber-Pilih saja / All = semua"><option value="checked" selected>V</option><option value="unchecked">_</option><option value="all">All</option></select>
       <label class="range-label">
         No: 
         <input type="number" data-filter-from="" min="1" placeholder="dari">
