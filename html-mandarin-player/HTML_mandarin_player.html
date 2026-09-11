@@ -2290,7 +2290,7 @@ function voiceOptionsHTML(selected){
 // had set each dropdown by hand; doesn't touch other sheets or become a new default for uploads.
 const V_PRESETS = {
   '1': ['hanzi-keyword', 'english-keyword', 'mandarin', 'english'],
-  '2': ['english-keyword', 'hanzi-keyword', '', ''],
+  '2': ['english-keyword', 'hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword'],
   '3': ['mandarin', 'mandarin', '', ''],
   '4': ['hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword'],
   '5': ['mandarin', 'mandarin', 'mandarin', 'mandarin']
@@ -2342,8 +2342,8 @@ function toolbarHTML(tid){
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
+      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
+      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked checked> ✓</label>
       <label class="range-label">
         No: 
@@ -2459,9 +2459,11 @@ function buildReferenceRowHTML(r, i){
 
 // Filter tambahan (baris 2 di Bank Referensi/Done saja, 2026-09-11 user's request) - AND dengan
 // kotak cari utama (baris 1), khusus untuk membatasi ke Ref./Note2 (mis. kode sumber sheet
-// "001_xxx_xxx" di Note2). Sengaja TIDAK punya mode Or/Exclude atau riwayat sendiri - selalu
-// substring biasa, biar tetap ringan. Awalnya ada dropdown scope-nya sendiri (All/Ref./Note2),
-// tapi user minta dihapus juga - selalu cari di Ref.+Note2 sekaligus, lebih simpel.
+// "001_xxx_xxx" di Note2). Awalnya ada dropdown scope sendiri (All/Ref./Note2), tapi user minta
+// dihapus - selalu cari di Ref.+Note2 sekaligus. Sekarang PUNYA mode Normal/Or/Excl. sendiri
+// juga (revisi 2026-09-11) - "Or" berguna kalau butuh beberapa sheet sekaligus muncul, mis.
+// ketik "001 002" supaya baris dari sheet 001 ATAU 002 dua-duanya lolos. Tidak punya riwayat
+// sendiri (dianggap tidak perlu, isinya cuma kode singkat).
 const REF_FILTER2_SCOPE_INDICES = [10,11];
 function applyReferenceBankFilter(panel){
   const table=panel.querySelector('table'); if(!table) return;
@@ -2472,7 +2474,9 @@ function applyReferenceBankFilter(panel){
   const colScope=panel.querySelector('.col-scope-select')?.value||'all';
   const searchMode=panel.querySelector('[data-search-mode]')?.value||'general';
   const qText2=(panel.querySelector('[data-ref-filter2]')?.value||'').trim().toLowerCase();
+  const searchMode2=panel.querySelector('[data-ref-mode2]')?.value||'general';
   const scope2Idxs=REF_FILTER2_SCOPE_INDICES;
+  const orTokens2 = (searchMode2==='or-han' && qText2) ? orModeTokens(qText2) : null;
   // Baris 1 kosong TAPI baris 2 terisi harus tetap jalan (2026-09-11) - sebelumnya kotak 1
   // kosong = langsung berhenti/kosongkan tabel tanpa lihat apapun lagi, yang berarti baris 2
   // tidak akan pernah sempat dicek. Sekarang baru berhenti kalau KEDUANYA kosong.
@@ -2528,7 +2532,17 @@ function applyReferenceBankFilter(panel){
     if(!matchBox1) return false;
     if(qText2){
       const txt2 = scope2Idxs.map(i=>r._txtByCol[i]||'').join(' ');
-      if(!txt2.includes(qText2)) return false;
+      let matchBox2;
+      if(orTokens2 && orTokens2.tokens.length){
+        matchBox2 = orTokens2.isHan
+          ? orTokens2.tokens.some(ch => txt2.includes(ch))
+          : orTokens2.tokens.some(w => txt2.includes(w));
+      } else if(searchMode2==='exclude'){
+        matchBox2 = !txt2.includes(qText2);
+      } else {
+        matchBox2 = txt2.includes(qText2);
+      }
+      if(!matchBox2) return false;
     }
     return true;
   });
@@ -2597,9 +2611,12 @@ function attachReferenceEvents(panel){
   // Filter tambahan (baris 2, khusus Done) - lihat komentar di applyReferenceBankFilter/
   // REF_FILTER2_SCOPE_INDICES. Independen total dari baris 1: tidak ada riwayat, tidak ada
   // mode, tidak ada dropdown scope (selalu Ref.+Note2), dan tombol ✕-nya sendiri TIDAK
-  // menyentuh kotak baris 1 sama sekali.
+  // menyentuh kotak baris 1 sama sekali. Sekarang punya mode sendiri (data-ref-mode2) juga -
+  // ✕ TIDAK mereset mode2, sama seperti mode baris 1 tidak direset oleh ✕ baris 1.
   const filter2=panel.querySelector('[data-ref-filter2]');
   if(filter2) filter2.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
+  const mode2Sel=panel.querySelector('[data-ref-mode2]');
+  if(mode2Sel) mode2Sel.onchange=()=>applyReferenceBankFilter(panel);
   const clear2Btn=panel.querySelector('[data-ref-clear2]');
   if(clear2Btn && filter2) clear2Btn.onclick=()=>{ filter2.value=''; applyReferenceBankFilter(panel); };
 }
@@ -2615,10 +2632,11 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
-    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select></div>
+    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select></div>
     <div class="sr">
       <input type="text" data-ref-filter2 placeholder="Filter tambahan di Ref./Note2 (mis. kode sheet)...">
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
+      <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / Exclude"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
@@ -4003,8 +4021,8 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
   </div>
   <div class="toolbar-body">
     <div class="sr">
-      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
-      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
+      <span class="sr-search-wrap"><input type="text" placeholder="Cari..."><select class="col-scope-select" title="Cari di kolom tertentu saja"><option value="all" selected>All</option><option value="pin">Pin</option><option value="ind">Ind</option><option value="man">Man</option><option value="eng">Eng</option></select></span><button class="sr-clear-btn" type="button" title="Reset: kosongkan Cari + No dari-sd">✕</button>
+      <select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select>
       <label class="fl" title="Tampilkan hanya baris yang dicentang"><input type="checkbox" data-filter-checked="" checked=""> ✓</label>
       <label class="range-label">
         No: 
