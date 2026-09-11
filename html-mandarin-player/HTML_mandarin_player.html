@@ -2460,14 +2460,9 @@ function buildReferenceRowHTML(r, i){
 // Filter tambahan (baris 2 di Bank Referensi/Done saja, 2026-09-11 user's request) - AND dengan
 // kotak cari utama (baris 1), khusus untuk membatasi ke Ref./Note2 (mis. kode sumber sheet
 // "001_xxx_xxx" di Note2). Sengaja TIDAK punya mode Or/Exclude atau riwayat sendiri - selalu
-// substring biasa, biar tetap ringan. Scope-nya sendiri (bukan pakai COL_SCOPE_TO_INDICES yang
-// dipakai bareng sheet biasa) supaya kode baris 1 (sudah ada & sudah teruji) tidak perlu
-// disentuh sama sekali.
-const REF_FILTER2_SCOPE_OPTIONS = [['all','All'],['ref','Ref.'],['note2','Note2']];
-const REF_FILTER2_SCOPE_TO_INDICES = { all:[10,11], ref:[10], note2:[11] };
-function refFilter2ScopeOptionsHTML(){
-  return REF_FILTER2_SCOPE_OPTIONS.map(([v,t],i)=>`<option value="${v}" ${i===0?'selected':''}>${t}</option>`).join('');
-}
+// substring biasa, biar tetap ringan. Awalnya ada dropdown scope-nya sendiri (All/Ref./Note2),
+// tapi user minta dihapus juga - selalu cari di Ref.+Note2 sekaligus, lebih simpel.
+const REF_FILTER2_SCOPE_INDICES = [10,11];
 function applyReferenceBankFilter(panel){
   const table=panel.querySelector('table'); if(!table) return;
   const rows=REFERENCE_DATA.get(table.id)||[];
@@ -2477,8 +2472,7 @@ function applyReferenceBankFilter(panel){
   const colScope=panel.querySelector('.col-scope-select')?.value||'all';
   const searchMode=panel.querySelector('[data-search-mode]')?.value||'general';
   const qText2=(panel.querySelector('[data-ref-filter2]')?.value||'').trim().toLowerCase();
-  const scope2=panel.querySelector('[data-ref-scope2]')?.value||'all';
-  const scope2Idxs=REF_FILTER2_SCOPE_TO_INDICES[scope2]||[10,11];
+  const scope2Idxs=REF_FILTER2_SCOPE_INDICES;
   // Baris 1 kosong TAPI baris 2 terisi harus tetap jalan (2026-09-11) - sebelumnya kotak 1
   // kosong = langsung berhenti/kosongkan tabel tanpa lihat apapun lagi, yang berarti baris 2
   // tidak akan pernah sempat dicek. Sekarang baru berhenti kalau KEDUANYA kosong.
@@ -2601,14 +2595,13 @@ function attachReferenceEvents(panel){
   if(clearBtn && search) clearBtn.onclick=()=>{ search.value=''; if(colScopeSel) colScopeSel.value='all'; applyReferenceBankFilter(panel); };
   wireSearchHistory(panel, search, ()=>applyReferenceBankFilter(panel));
   // Filter tambahan (baris 2, khusus Done) - lihat komentar di applyReferenceBankFilter/
-  // REF_FILTER2_SCOPE_OPTIONS. Independen total dari baris 1: tidak ada riwayat, tidak ada
-  // mode, dan tombol ✕-nya sendiri TIDAK menyentuh kotak/scope baris 1 sama sekali.
+  // REF_FILTER2_SCOPE_INDICES. Independen total dari baris 1: tidak ada riwayat, tidak ada
+  // mode, tidak ada dropdown scope (selalu Ref.+Note2), dan tombol ✕-nya sendiri TIDAK
+  // menyentuh kotak baris 1 sama sekali.
   const filter2=panel.querySelector('[data-ref-filter2]');
   if(filter2) filter2.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
-  const scope2Sel=panel.querySelector('[data-ref-scope2]');
-  if(scope2Sel) scope2Sel.onchange=()=>applyReferenceBankFilter(panel);
   const clear2Btn=panel.querySelector('[data-ref-clear2]');
-  if(clear2Btn && filter2) clear2Btn.onclick=()=>{ filter2.value=''; if(scope2Sel) scope2Sel.value='all'; applyReferenceBankFilter(panel); };
+  if(clear2Btn && filter2) clear2Btn.onclick=()=>{ filter2.value=''; applyReferenceBankFilter(panel); };
 }
 
 function addOrReplaceReferenceTab(title, rows){
@@ -2624,8 +2617,7 @@ function addOrReplaceReferenceTab(title, rows){
   panel.innerHTML=`<div class="ph">
     <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select></div>
     <div class="sr">
-      <input type="text" data-ref-filter2 placeholder="Filter tambahan (mis. kode sheet)...">
-      <select class="col-scope-select" data-ref-scope2 title="Cari filter tambahan di kolom mana">${refFilter2ScopeOptionsHTML()}</select>
+      <input type="text" data-ref-filter2 placeholder="Filter tambahan di Ref./Note2 (mis. kode sheet)...">
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
     </div>
   <div class="sb"></div>
