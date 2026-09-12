@@ -620,7 +620,6 @@ function applyConfig(config, presetName=state.activePreset){
   renderAll();
 }
 function applyPreset(name){
-  if(!state.columns.length) loadSample(false);
   state.activePreset=name;
   const saved=getStoredPreset(name);
   const cfg=saved || builtinPreset(name);
