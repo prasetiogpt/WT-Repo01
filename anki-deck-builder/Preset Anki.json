@@ -1,0 +1,235 @@
+{
+  "version": 19,
+  "presetName": "english",
+  "frontItems": [
+    "Eng KW"
+  ],
+  "backItems": [
+    "Mand KW",
+    "Pin Yin KW",
+    "Mandarin",
+    "Pin Yin",
+    "English",
+    "Indonesia",
+    "__Source",
+    "No"
+  ],
+  "styles": {
+    "No": {
+      "font": "Arial",
+      "size": 11,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#ed0000",
+      "space": 8
+    },
+    "Pilih": {
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "Pin Yin KW": {
+      "font": "IBM Plex Mono, Arial",
+      "size": 22,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#555555",
+      "space": 8
+    },
+    "Indo KW": {
+      "font": "Arial",
+      "size": 28,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "Mand KW": {
+      "font": "Noto Sans SC, Microsoft YaHei, Arial",
+      "size": 32,
+      "bold": true,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "Eng KW": {
+      "font": "Arial",
+      "size": 34,
+      "bold": true,
+      "italic": false,
+      "align": "center",
+      "color": "#007af5",
+      "space": 8
+    },
+    "Pin Yin": {
+      "font": "IBM Plex Mono, Arial",
+      "size": 20,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#555555",
+      "space": 8
+    },
+    "Indonesia": {
+      "font": "Arial",
+      "size": 16,
+      "bold": false,
+      "italic": true,
+      "align": "center",
+      "color": "#5da800",
+      "space": 8
+    },
+    "Mandarin": {
+      "font": "Noto Sans SC, Microsoft YaHei, Arial",
+      "size": 28,
+      "bold": true,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "English": {
+      "font": "Arial",
+      "size": 18,
+      "bold": false,
+      "italic": true,
+      "align": "center",
+      "color": "#007af5",
+      "space": 8
+    },
+    "Reff.": {
+      "font": "Arial",
+      "size": 24,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "Note2": {
+      "font": "Arial",
+      "size": 12,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#1f2933",
+      "space": 8
+    },
+    "__Source": {
+      "font": "Arial",
+      "size": 12,
+      "bold": false,
+      "italic": false,
+      "align": "center",
+      "color": "#ed0000",
+      "space": 8
+    }
+  },
+  "audio": {
+    "No": {
+      "enabled": false,
+      "lang": "auto",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Pilih": {
+      "enabled": false,
+      "lang": "auto",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Pin Yin KW": {
+      "enabled": false,
+      "lang": "zh-CN",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Indo KW": {
+      "enabled": false,
+      "lang": "id-ID",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Mand KW": {
+      "enabled": true,
+      "lang": "zh-CN",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Eng KW": {
+      "enabled": true,
+      "lang": "en-US",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Pin Yin": {
+      "enabled": false,
+      "lang": "zh-CN",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Indonesia": {
+      "enabled": false,
+      "lang": "id-ID",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Mandarin": {
+      "enabled": true,
+      "lang": "zh-CN",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "English": {
+      "enabled": true,
+      "lang": "en-US",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3",
+      "userSet": true
+    },
+    "Reff.": {
+      "enabled": false,
+      "lang": "auto",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "Note2": {
+      "enabled": false,
+      "lang": "auto",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    },
+    "__Source": {
+      "enabled": false,
+      "lang": "auto",
+      "rate": 1,
+      "filename": "{deck}_{row}_{column}.mp3"
+    }
+  },
+  "deckMode": "master",
+  "parentDeck": "A2. Ci Hui::Dari 001",
+  "deckName": "Mandarin",
+  "subdeckName": "011 Text",
+  "autoDeckName": true,
+  "noteType": "WT Basic",
+  "customNoteType": "WT Custom",
+  "onlyChecked": true,
+  "skipEmptyCards": true,
+  "includeHeader": true,
+  "showFrontOnBack": true,
+  "nativeAnkiTts": true,
+  "voiceOnFront": true,
+  "voiceOnBack": true,
+  "repeatQuestionVoiceOnBack": false,
+  "showAnswerDivider": true,
+  "showFieldSeparators": false,
+  "fillSentenceByNo": true
+}
