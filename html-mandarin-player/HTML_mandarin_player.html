@@ -1476,10 +1476,6 @@ function speakOne(text, lang, token, done, rateOverride){
   }catch(e){ done(false); }
 }
 
-function isRowChecked(tr){
-  const cb=tr?.querySelector('input.ck-box');
-  return !!(cb && cb.checked) || tr?.dataset?.pilih === '1';
-}
 function hasPlayableText(table,tr,modes){
   const tds=tr.querySelectorAll('td');
   return modes.some(mode=>{
@@ -1489,10 +1485,13 @@ function hasPlayableText(table,tr,modes){
 }
 function visibleRows(table){ return qa('tbody tr', table).filter(r=>!r.classList.contains('hidden')); }
 
+// Play All/Pair/Sequence memutar apa yang TAMPIL di layar (baris hidden saja yang dilewati),
+// tidak lagi mensyaratkan baris harus ter-tick secara terpisah (2026-09-12, user's request) -
+// sebelumnya baris tampil (mis. lolos filter ☐/belum-tick) tetap dilewati Play All kalau
+// belum ter-tick, jadi filter tampilan dan "apa yang diputar" tidak sinkron. Sekarang keduanya
+// selalu sama: yang kelihatan, itu yang diputar.
 function playableRows(table, modes=[]){
-  let rows = qa('tbody tr', table).filter(r => 
-    !r.classList.contains('hidden') && isRowChecked(r)
-  );
+  let rows = visibleRows(table);
   if(modes && modes.length){
     rows = rows.filter(r => {
       const tds = r.querySelectorAll('td');
@@ -3388,7 +3387,7 @@ function downloadUpdatedHTML(){
   // punya batas praktis seperti itu.
   const blob=new Blob([data], {type:'text/html;charset=utf-8'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.download=`mandarin-text-clean-v25-freeze-toggle-collapse-${stamp}.html`; a.href=url; a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>{ a.remove(); URL.revokeObjectURL(url); },1000);
+  const a=document.createElement('a'); a.download=`Mandarin_${stamp}.html`; a.href=url; a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>{ a.remove(); URL.revokeObjectURL(url); },1000);
   setUploadMsg('✓ HTML baru di-download.');
 }
 window.downloadUpdatedHTML = downloadUpdatedHTML;
