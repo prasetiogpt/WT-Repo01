@@ -2294,17 +2294,16 @@ function voiceOptionsHTML(selected){
 // had set each dropdown by hand; doesn't touch other sheets or become a new default for uploads.
 const V_PRESETS = {
   '1': ['hanzi-keyword', 'english-keyword', 'mandarin', 'english'],
-  '2': ['english-keyword', 'hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword'],
+  '2': ['english-keyword', 'hanzi-keyword', 'english-keyword', 'hanzi-keyword'],
   '3': ['mandarin', 'mandarin', '', ''],
-  '4': ['hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword'],
-  '5': ['mandarin', 'mandarin', 'mandarin', 'mandarin']
+  '4': ['hanzi-keyword', '', '', '']
 };
-// Preset audio V1-V4 -> preset kolom (2026-08-12, user's choice, direvisi 2026-09-09 - preset 4
-// lama "all-Mandarin" digeser jadi 5, preset 4 baru "all-Mand KW" disisipkan): 1->1(V+S),
-// 2->2(Vocab), 3->3(Sent.), 4->2(Vocab, karena isinya semua Mand KW - kata, bukan kalimat),
-// 5->3(Sent., karena isinya semua Mandarin - kalimat). Kolom tetap bisa dicentang/di-uncheck
-// manual sesudahnya seperti biasa - ini cuma titik-awal, bukan mengunci kontrol kolom.
-const V_PRESET_TO_COL_PRESET = { '1': '1', '2': '2', '3': '3', '4': '2', '5': '3' };
+// Preset audio V1-V4 -> preset kolom (2026-08-12, user's choice, direvisi 2026-09-12 - preset 5
+// "all-Mandarin" dihapus, preset 4 kini cuma V1=Mand KW/V2-4=Diam): 1->1(V+S), 2->2(Vocab),
+// 3->3(Sent.), 4->2(Vocab, karena isinya kata Mand KW, bukan kalimat). Kolom tetap bisa
+// dicentang/di-uncheck manual sesudahnya seperti biasa - ini cuma titik-awal, bukan mengunci
+// kontrol kolom.
+const V_PRESET_TO_COL_PRESET = { '1': '1', '2': '2', '3': '3', '4': '2' };
 function applyVoicePreset(tid, presetNum){
   const preset = V_PRESETS[presetNum];
   if(!preset) return;
@@ -2330,7 +2329,7 @@ function dropdownPlayControlsHTML(tid){
       <label class="final-play-select">V1: <select autocomplete="off" data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select autocomplete="off" data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label>
     </div>
     <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
-      <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+      <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
     </div>
     <label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
 }
@@ -4040,7 +4039,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
         <label class="final-play-select">V1: <select autocomplete="off" data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select autocomplete="off" data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label>
       </div>
       <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
-        <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+        <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
       </div>
       <label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
     </div>
