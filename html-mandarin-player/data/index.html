@@ -5,7 +5,7 @@
 </head><body>
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
 <ul id="list">
-<li><a href="ap-html-mandarin-001-010.html">ap-html-mandarin-001-010</a><span class="ts">14 Sep 2026, 16.31</span><button class="del" data-name="ap-html-mandarin-001-010.html" data-updated="2026-09-14T09:31:58.000Z" onclick="deleteEntry(this)" type="button">🗑</button></li>
+<li><a href="ap-html-mandarin-001-010.html">ap-html-mandarin-001-010</a><span class="ts">14 Sep 2026, 16.41</span><button class="del" data-name="ap-html-mandarin-001-010.html" data-updated="2026-09-14T09:41:36.427Z" onclick="deleteEntry(this)" type="button">🗑</button></li>
 </ul>
 <div id="msg"></div>
 <script>
@@ -33,7 +33,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(entries){
-  const items=entries.map(({name:n, updatedAt})=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+n+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">🗑</button></li>').join('\n');
+  const items=entries.map(({name:n, updatedAt})=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+n+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">\uD83D\uDDD1</button></li>').join('\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\s\S]*?<\/ul>/,
     '<ul id="list">\n'+(items || '<li>(belum ada data)</li>')+'\n</ul>'
