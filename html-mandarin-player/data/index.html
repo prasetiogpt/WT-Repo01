@@ -25,7 +25,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(names){
-  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">🗑</button></li>').join('\n');
+  const items=names.map(n=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><button class="del" data-name="'+n+'" onclick="deleteEntry(this)" type="button">\uD83D\uDDD1</button></li>').join('\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\s\S]*?<\/ul>/,
     '<ul id="list">\n'+(items || '<li>(belum ada data)</li>')+'\n</ul>'
@@ -42,10 +42,17 @@ async function regenerateIndex(token, names){
 }
 async function deleteEntry(btn){
   const name=btn.getAttribute('data-name');
-  if(!confirm('Hapus "'+name.replace(/\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
   const msg=document.getElementById('msg');
-  const token=getGitToken();
-  if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
+  let token;
+  try{
+    if(!confirm('Hapus "'+name.replace(/\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
+    token=getGitToken();
+    if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
+  }catch(promptErr){
+    msg.textContent='✗ Gagal buka dialog: '+promptErr.message;
+    alert('Tidak bisa menampilkan dialog konfirmasi/token:\n'+promptErr.message+'\n\nCoba reload halaman ini, atau buka di tab Safari biasa (bukan dari dalam app lain).');
+    return;
+  }
   btn.disabled=true;
   try{
     msg.textContent='Menghapus '+name+' ...';
