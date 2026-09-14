@@ -3194,6 +3194,14 @@ function sanitizeForDownload(clone){
   const admin=clone.querySelector('#adminPanel'); if(admin) admin.classList.remove('active'); const mp3Msg=clone.querySelector('#mp3FolderMsg'); if(mp3Msg) mp3Msg.textContent='ZIP belum ada';
   qa('.tab.active', clone).forEach(x=>x.classList.remove('active')); qa('.panel.active', clone).forEach(x=>x.classList.remove('active'));
   applyLocks(clone);
+  // PENTING: buildSnapshotHtml() dipanggil dari DALAM pushToGit(), persis saat globalPushGit
+  // sengaja di-disable (guard anti-klik-dobel selama upload). Tanpa baris ini, keadaan disabled
+  // itu ikut ter-simpan ke file - jadi SETIAP file yang pernah di-push lewat tombol Git akan
+  // membuka dengan tombol Git yang mati permanen (klik tidak bereaksi apa pun, sampai baru
+  // ketahuan lewat laporan "tombol tidak ada respon" yang berulang). ↓HTML (download manual)
+  // juga lewat fungsi ini jadi ikut aman kalau suatu saat dipanggil di tengah proses lain.
+  const gitBtn=clone.querySelector('#globalPushGit'); if(gitBtn) gitBtn.removeAttribute('disabled');
+  const tsEl=clone.querySelector('#gitBuildStamp'); if(tsEl) tsEl.textContent='';
   const tabs=getTabs(clone), panels=getPanels(clone); const first=tabs.find(t=>!t.classList.contains('locked-hidden')) || tabs[0]; if(first){ first.classList.add('active'); const idx=tabs.indexOf(first); if(panels[idx]) panels[idx].classList.add('active'); }
 }
 
@@ -3403,7 +3411,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-14.4-versioned-urls';
+const GIT_PUSH_BUILD='2026-09-14.5-fix-disabled-button';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3737,6 +3745,10 @@ function initMediaSession(){
 }
 function init(){
   const stampEl=document.getElementById('gitBuildStamp'); if(stampEl) stampEl.textContent=GIT_PUSH_BUILD;
+  // Pengaman tambahan: gitPushBusy selalu false di awal load ini (variabel JS, tidak ikut
+  // tersimpan ke file), jadi tombol Git tidak boleh disabled di titik ini - kalau tetap disabled
+  // berarti atribut itu ikut terbakar ke file saat disimpan (lihat catatan di sanitizeForDownload).
+  const gitBtn=document.getElementById('globalPushGit'); if(gitBtn) gitBtn.disabled=false;
   initMediaSession();
   const mp3Input=document.getElementById('mp3FolderInput');
   if(mp3Input){ mp3Input.onchange = e=>handleMp3Folder(e.target.files); }
