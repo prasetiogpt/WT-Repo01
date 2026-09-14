@@ -3557,10 +3557,17 @@ async function regenerateIndex(token, names){
 }
 async function deleteEntry(btn){
   const name=btn.getAttribute('data-name');
-  if(!confirm('Hapus "'+name.replace(/\\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
   const msg=document.getElementById('msg');
-  const token=getGitToken();
-  if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
+  let token;
+  try{
+    if(!confirm('Hapus "'+name.replace(/\\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
+    token=getGitToken();
+    if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
+  }catch(promptErr){
+    msg.textContent='✗ Gagal buka dialog: '+promptErr.message;
+    alert('Tidak bisa menampilkan dialog konfirmasi/token:\\n'+promptErr.message+'\\n\\nCoba reload halaman ini, atau buka di tab Safari biasa (bukan dari dalam app lain).');
+    return;
+  }
   btn.disabled=true;
   try{
     msg.textContent='Menghapus '+name+' ...';
@@ -3599,12 +3606,24 @@ let gitPushBusy=false;
 async function pushToGit(){
   if(gitPushBusy) return;
   const btn=document.getElementById('globalPushGit');
-  const token=getGitToken();
-  if(!token){ setUploadMsg('Push dibatalkan (token kosong).'); return; }
-  let name=prompt('Nama dataset ini (dipakai sebagai nama file, tanpa .html):','');
-  if(!name){ setUploadMsg('Push dibatalkan (nama kosong).'); return; }
-  name=name.trim().toLowerCase().replace(/[^a-z0-9\-_]+/g,'-').replace(/^-+|-+$/g,'');
-  if(!name){ setUploadMsg('Nama tidak valid.'); return; }
+  // getGitToken()/prompt() SENGAJA masuk try/catch juga di sini (bukan cuma bagian upload di
+  // bawah) - kalau prompt() gagal/dilarang oleh browser karena alasan apa pun (mode tertentu,
+  // pembatasan WebView, dll), sebelumnya exception itu lolos begitu saja di luar try/catch dan
+  // tombol Git terlihat "tidak merespons" sama sekali tanpa pesan apa pun.
+  let token, name;
+  try{
+    token=getGitToken();
+    if(!token){ setUploadMsg('Push dibatalkan (token kosong).'); return; }
+    name=prompt('Nama dataset ini (dipakai sebagai nama file, tanpa .html):','');
+    if(!name){ setUploadMsg('Push dibatalkan (nama kosong).'); return; }
+    name=name.trim().toLowerCase().replace(/[^a-z0-9\-_]+/g,'-').replace(/^-+|-+$/g,'');
+    if(!name){ setUploadMsg('Nama tidak valid.'); return; }
+  }catch(promptErr){
+    console.error(promptErr);
+    setUploadMsg('✗ Gagal buka dialog token/nama: '+promptErr.message);
+    alert('Tidak bisa menampilkan dialog untuk token/nama dataset:\n'+promptErr.message+'\n\nBrowser ini mungkin memblokir popup/dialog di halaman ini. Coba reload halaman, atau buka di tab Safari biasa (bukan dari dalam app lain).');
+    return;
+  }
   gitPushBusy=true; if(btn) btn.disabled=true;
   try{
     setUploadMsg('Push ke Git: menyiapkan file...');
