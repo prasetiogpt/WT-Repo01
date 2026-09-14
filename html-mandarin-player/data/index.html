@@ -5,7 +5,7 @@
 </head><body>
 <h1>🀄 Mandarin Player — Data Tersimpan</h1>
 <ul id="list">
-<li><a href="ap-html-mandarin-001-010.html">ap-html-mandarin-001-010</a><span class="ts">14 Sep 2026, 16.50</span><button class="del" data-name="ap-html-mandarin-001-010.html" data-label="ap-html-mandarin-001-010" data-updated="2026-09-14T09:50:05.792Z" onclick="deleteEntry(this)" type="button">🗑</button></li>
+<li><a href="ap-html-mandarin-001-010.html">ap-html-mandarin-001-010</a><span class="ts">14 Sep 2026, 16.59</span><button class="del" data-name="ap-html-mandarin-001-010.html" data-updated="2026-09-14T09:59:44.055Z" onclick="deleteEntry(this)" type="button">🗑</button></li>
 </ul>
 <div id="msg"></div>
 <script>
@@ -33,7 +33,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(entries){
-  const items=entries.map(({file, label, updatedAt})=>'<li><a href="'+file+'">'+label+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+file+'" data-label="'+label+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">🗑</button></li>').join('\n');
+  const items=entries.map(({name:n, updatedAt})=>'<li><a href="'+n+'">'+n.replace(/\.html$/i,'')+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+n+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">\uD83D\uDDD1</button></li>').join('\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\s\S]*?<\/ul>/,
     '<ul id="list">\n'+(items || '<li>(belum ada data)</li>')+'\n</ul>'
@@ -50,11 +50,10 @@ async function regenerateIndex(token, names){
 }
 async function deleteEntry(btn){
   const name=btn.getAttribute('data-name');
-  const label=btn.getAttribute('data-label')||name.replace(/\.html$/i,'');
   const msg=document.getElementById('msg');
   let token;
   try{
-    if(!confirm('Hapus "'+label+'"? Tindakan ini tidak bisa dibatalkan.')) return;
+    if(!confirm('Hapus "'+name.replace(/\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
     token=getGitToken();
     if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
   }catch(promptErr){
@@ -76,7 +75,7 @@ async function deleteEntry(btn){
       if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Gagal hapus: '+res.status+' '+(j.message||'')); }
     }
     btn.closest('li').remove();
-    const entries=Array.from(document.querySelectorAll('#list button.del')).map(b=>({file:b.getAttribute('data-name'), label:b.getAttribute('data-label')||b.getAttribute('data-name').replace(/\.html$/i,''), updatedAt:b.getAttribute('data-updated')||''}));
+    const entries=Array.from(document.querySelectorAll('#list button.del')).map(b=>({name:b.getAttribute('data-name'), updatedAt:b.getAttribute('data-updated')||''}));
     // index.html bisa "ditabrak" push/hapus lain yang hampir bersamaan (409 sha tidak cocok) -
     // data di atas sudah pasti terhapus, jadi coba beberapa kali sebelum menyerah supaya index
     // tidak diam-diam ketinggalan (file terhapus tapi masih muncul di daftar).
@@ -86,10 +85,10 @@ async function deleteEntry(btn){
       catch(e){ indexErr=e; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
     if(indexErr) throw indexErr;
-    msg.textContent='✓ '+label+' dihapus.';
+    msg.textContent='✓ '+name+' dihapus.';
   }catch(err){
     msg.textContent='✗ '+err.message;
-    alert('Hapus "'+label+'" gagal atau index gagal ter-update:\n'+err.message+'\n\nMuat ulang halaman ini untuk cek status sebenarnya.');
+    alert('Hapus "'+name.replace(/\.html$/i,'')+'" gagal atau index gagal ter-update:\n'+err.message+'\n\nMuat ulang halaman ini untuk cek status sebenarnya.');
   }
   finally{ btn.disabled=false; }
 }
