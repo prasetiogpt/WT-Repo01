@@ -3403,7 +3403,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-14.3-timestamps';
+const GIT_PUSH_BUILD='2026-09-14.4-versioned-urls';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3518,12 +3518,12 @@ function parseIndexEntries(html){
   // nama dataset palsu ("'+n+'") dan tertanam ke index berikutnya.
   const listMatch=html.match(/<ul id="list">([\s\S]*?)<\/ul>/);
   const listHtml=listMatch ? listMatch[1] : '';
-  const entries=[]; const re=/data-name="([^"]+)" data-updated="([^"]*)"/g; let m;
-  while((m=re.exec(listHtml))) entries.push({name:m[1], updatedAt:m[2]});
+  const entries=[]; const re=/data-name="([^"]+)" data-label="([^"]*)" data-updated="([^"]*)"/g; let m;
+  while((m=re.exec(listHtml))) entries.push({file:m[1], label:m[2]||m[1].replace(/\.html$/i,''), updatedAt:m[3]});
   return entries;
 }
 function buildIndexHtml(entries){
-  const items=entries.map(({name:n, updatedAt})=>`<li><a href="${n}">${n.replace(/\.html$/i,'')}</a><span class="ts">${formatTs(updatedAt)}</span><button class="del" data-name="${n}" data-updated="${updatedAt||''}" onclick="deleteEntry(this)" type="button">🗑</button></li>`).join('\n');
+  const items=entries.map(({file, label, updatedAt})=>`<li><a href="${file}">${label}</a><span class="ts">${formatTs(updatedAt)}</span><button class="del" data-name="${file}" data-label="${label}" data-updated="${updatedAt||''}" onclick="deleteEntry(this)" type="button">🗑</button></li>`).join('\n');
   // Index ini file statis terpisah (dibuka langsung di Safari, bukan lewat player), jadi tombol
   // hapus butuh salinan kecil dari logic token/API GitHub sendiri di dalam <script> di bawah -
   // tidak bisa memanggil fungsi dari HTML_mandarin_player.html karena itu file lain. Sengaja
@@ -3564,7 +3564,7 @@ async function ghGetSha(token, path){
   return (await res.json()).sha;
 }
 function renderIndexHtml(entries){
-  const items=entries.map(({name:n, updatedAt})=>'<li><a href="'+n+'">'+n.replace(/\\.html$/i,'')+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+n+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">\\uD83D\\uDDD1</button></li>').join('\\n');
+  const items=entries.map(({file, label, updatedAt})=>'<li><a href="'+file+'">'+label+'</a><span class="ts">'+formatTs(updatedAt)+'</span><button class="del" data-name="'+file+'" data-label="'+label+'" data-updated="'+(updatedAt||'')+'" onclick="deleteEntry(this)" type="button">\\uD83D\\uDDD1</button></li>').join('\\n');
   return document.documentElement.outerHTML.replace(
     /<ul id="list">[\\s\\S]*?<\\/ul>/,
     '<ul id="list">\\n'+(items || '<li>(belum ada data)</li>')+'\\n</ul>'
@@ -3581,10 +3581,11 @@ async function regenerateIndex(token, names){
 }
 async function deleteEntry(btn){
   const name=btn.getAttribute('data-name');
+  const label=btn.getAttribute('data-label')||name.replace(/\\.html$/i,'');
   const msg=document.getElementById('msg');
   let token;
   try{
-    if(!confirm('Hapus "'+name.replace(/\\.html$/i,'')+'"? Tindakan ini tidak bisa dibatalkan.')) return;
+    if(!confirm('Hapus "'+label+'"? Tindakan ini tidak bisa dibatalkan.')) return;
     token=getGitToken();
     if(!token){ msg.textContent='Dibatalkan (token kosong).'; return; }
   }catch(promptErr){
@@ -3606,7 +3607,7 @@ async function deleteEntry(btn){
       if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Gagal hapus: '+res.status+' '+(j.message||'')); }
     }
     btn.closest('li').remove();
-    const entries=Array.from(document.querySelectorAll('#list button.del')).map(b=>({name:b.getAttribute('data-name'), updatedAt:b.getAttribute('data-updated')||''}));
+    const entries=Array.from(document.querySelectorAll('#list button.del')).map(b=>({file:b.getAttribute('data-name'), label:b.getAttribute('data-label')||b.getAttribute('data-name').replace(/\\.html$/i,''), updatedAt:b.getAttribute('data-updated')||''}));
     // index.html bisa "ditabrak" push/hapus lain yang hampir bersamaan (409 sha tidak cocok) -
     // data di atas sudah pasti terhapus, jadi coba beberapa kali sebelum menyerah supaya index
     // tidak diam-diam ketinggalan (file terhapus tapi masih muncul di daftar).
@@ -3616,10 +3617,10 @@ async function deleteEntry(btn){
       catch(e){ indexErr=e; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
     if(indexErr) throw indexErr;
-    msg.textContent='✓ '+name+' dihapus.';
+    msg.textContent='✓ '+label+' dihapus.';
   }catch(err){
     msg.textContent='✗ '+err.message;
-    alert('Hapus "'+name.replace(/\\.html$/i,'')+'" gagal atau index gagal ter-update:\\n'+err.message+'\\n\\nMuat ulang halaman ini untuk cek status sebenarnya.');
+    alert('Hapus "'+label+'" gagal atau index gagal ter-update:\\n'+err.message+'\\n\\nMuat ulang halaman ini untuk cek status sebenarnya.');
   }
   finally{ btn.disabled=false; }
 }
@@ -3648,19 +3649,27 @@ async function pushToGit(){
     alert('Tidak bisa menampilkan dialog untuk token/nama dataset:\n'+promptErr.message+'\n\nBrowser ini mungkin memblokir popup/dialog di halaman ini. Coba reload halaman, atau buka di tab Safari biasa (bukan dari dalam app lain).');
     return;
   }
+  const label=name;
   gitPushBusy=true; if(btn) btn.disabled=true;
   try{
     setUploadMsg('Push ke Git: menyiapkan file...');
     const html=buildSnapshotHtml();
-    const path=`${GIT_DATA_DIR}/${name}.html`;
-    setUploadMsg('Push ke Git: upload '+name+'.html ('+Math.round(html.length/1024)+' KB) ...');
+    // Nama file SELALU dibubuhi versi (timestamp) - dulu nama file dipakai ulang persis (mis.
+    // "label.html"), jadi setiap push menimpa URL yang SAMA. GitHub Pages/CDN meng-cache tiap URL
+    // secara terpisah dari index.html, dan cache itu bisa terlambat menyerap isi baru (butuh
+    // sampai ~10 menit) - hasilnya klik link di index bisa membuka isi lama walau index sendiri
+    // sudah menunjukkan timestamp terbaru. Dengan nama file BARU tiap push, URL-nya juga baru -
+    // CDN tidak akan pernah punya versi basi untuk URL yang belum pernah dilihatnya.
+    const fileName=`${label}.v${Date.now()}.html`;
+    const path=`${GIT_DATA_DIR}/${fileName}`;
+    setUploadMsg('Push ke Git: upload '+fileName+' ('+Math.round(html.length/1024)+' KB) ...');
     // File data bisa lewat 1MB (batas Contents API) karena setiap push membawa SEMUA tab yang
     // sedang terbuka, bukan cuma yang baru diubah - kalau dibuka dari file git sebelumnya, tab
     // lama ikut menumpuk. Pakai Git Data API (tidak ada batas 1MB), dengan retry kalau branch
     // berubah duluan di antara baca-ref dan update-ref (push/hapus lain hampir bersamaan).
     let dataAttemptErr=null;
     for(let attempt=1; attempt<=3; attempt++){
-      try{ await githubPutFileGitData(token, path, html, `Update data: ${name}`); dataAttemptErr=null; break; }
+      try{ await githubPutFileGitData(token, path, html, `Update data: ${label}`); dataAttemptErr=null; break; }
       catch(err){ dataAttemptErr=err; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
     if(dataAttemptErr) throw dataAttemptErr;
@@ -3671,17 +3680,18 @@ async function pushToGit(){
     // supaya konflik sesaat seperti ini tidak langsung dianggap gagal total - data yang sudah
     // ter-upload di atas tidak ikut hilang, cuma bagian index yang perlu diulang.
     let indexAttemptErr=null;
+    let oldFileToClean=null;
     for(let attempt=1; attempt<=3; attempt++){
       try{
         const existingIndexHtml=await githubGetFileContent(token, `${GIT_DATA_DIR}/index.html`);
         const entries=parseIndexEntries(existingIndexHtml);
         const nowIso=new Date().toISOString();
-        const existingIdx=entries.findIndex(e=>e.name===name+'.html');
-        if(existingIdx>=0) entries[existingIdx]={name:name+'.html', updatedAt:nowIso};
-        else entries.push({name:name+'.html', updatedAt:nowIso});
-        entries.sort((a,b)=>a.name.localeCompare(b.name));
+        const existingIdx=entries.findIndex(e=>e.label===label);
+        if(existingIdx>=0){ oldFileToClean=entries[existingIdx].file; entries[existingIdx]={file:fileName, label, updatedAt:nowIso}; }
+        else entries.push({file:fileName, label, updatedAt:nowIso});
+        entries.sort((a,b)=>a.label.localeCompare(b.label));
         const indexHtml=buildIndexHtml(entries);
-        await githubPutFile(token, `${GIT_DATA_DIR}/index.html`, indexHtml, `Update index (${name})`);
+        await githubPutFile(token, `${GIT_DATA_DIR}/index.html`, indexHtml, `Update index (${label})`);
         indexAttemptErr=null;
         break;
       }catch(err){
@@ -3690,7 +3700,20 @@ async function pushToGit(){
       }
     }
     if(indexAttemptErr) throw indexAttemptErr;
-    setUploadMsg('✓ Berhasil push ke Git: '+name+'.html');
+    // Bersihkan versi lama dari dataset yang sama (kalau ada) supaya data/ tidak menumpuk file
+    // usang - ini best-effort, kalau gagal tidak menggagalkan push (data terbaru sudah aman).
+    if(oldFileToClean && oldFileToClean!==fileName){
+      try{
+        const oldSha=await githubGetSha(token, `${GIT_DATA_DIR}/${oldFileToClean}`);
+        if(oldSha){
+          await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${GIT_DATA_DIR}/${oldFileToClean}`,{
+            method:'DELETE', headers:gitHeaders(token),
+            body: JSON.stringify({message:`Cleanup old version: ${oldFileToClean}`, sha:oldSha, branch:GIT_BRANCH})
+          });
+        }
+      }catch(cleanupErr){ console.warn('Gagal bersihkan versi lama (tidak fatal):', cleanupErr); }
+    }
+    setUploadMsg('✓ Berhasil push ke Git: '+fileName);
   }catch(err){
     console.error(err);
     if(String(err.message||'').startsWith('401')) localStorage.removeItem(GIT_TOKEN_KEY);
