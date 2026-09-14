@@ -3430,6 +3430,50 @@ async function githubPutFile(token, path, content, message){
   }
   return res.json();
 }
+// Contents API (githubPutFile di atas) menolak content>1MB (400/422). File data Mandarin Player
+// gampang lewat itu karena setiap push membakukan SEMUA tab yang lagi terbuka di halaman (bukan
+// cuma yang baru direvisi) - kalau dibuka dari file git sebelumnya, tab-tab lama ikut terbawa dan
+// ukurannya menumpuk terus tiap sesi. Git Data API (blob+tree+commit+ref) adalah cara resmi yang
+// direkomendasikan GitHub untuk file besar - dipakai khusus untuk file DATA (bukan index.html,
+// yang selalu kecil dan tetap lewat githubPutFile biasa).
+async function githubGetRef(token, branch){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/ref/heads/${branch}`, {headers:gitHeaders(token)});
+  if(!res.ok) throw new Error('GET ref gagal: '+res.status);
+  return (await res.json()).object.sha;
+}
+async function githubGetCommitTreeSha(token, commitSha){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/commits/${commitSha}`, {headers:gitHeaders(token)});
+  if(!res.ok) throw new Error('GET commit gagal: '+res.status);
+  return (await res.json()).tree.sha;
+}
+async function githubCreateBlob(token, content){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/blobs`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({content: utf8ToBase64(content), encoding:'base64'})});
+  if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create blob gagal: '+res.status+' '+(j.message||'')); }
+  return (await res.json()).sha;
+}
+async function githubCreateTree(token, baseTreeSha, path, blobSha){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/trees`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({base_tree: baseTreeSha, tree:[{path, mode:'100644', type:'blob', sha:blobSha}]})});
+  if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create tree gagal: '+res.status+' '+(j.message||'')); }
+  return (await res.json()).sha;
+}
+async function githubCreateCommit(token, message, treeSha, parentSha){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/commits`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({message, tree:treeSha, parents:[parentSha]})});
+  if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create commit gagal: '+res.status+' '+(j.message||'')); }
+  return (await res.json()).sha;
+}
+async function githubUpdateRef(token, branch, commitSha){
+  const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/refs/heads/${branch}`, {method:'PATCH', headers:gitHeaders(token), body:JSON.stringify({sha:commitSha})});
+  if(res.status===422 || res.status===409){ const j=await res.json().catch(()=>({})); throw new Error('409: ref sudah berubah - '+(j.message||'')); }
+  if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Update ref gagal: '+res.status+' '+(j.message||'')); }
+}
+async function githubPutFileGitData(token, path, content, message){
+  const refSha=await githubGetRef(token, GIT_BRANCH);
+  const baseTreeSha=await githubGetCommitTreeSha(token, refSha);
+  const blobSha=await githubCreateBlob(token, content);
+  const newTreeSha=await githubCreateTree(token, baseTreeSha, path, blobSha);
+  const newCommitSha=await githubCreateCommit(token, message, newTreeSha, refSha);
+  await githubUpdateRef(token, GIT_BRANCH, newCommitSha);
+}
 async function githubListDataFiles(){
   // Baca publik, tidak butuh token (repo sudah publik).
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/contents/${GIT_DATA_DIR}?ref=${GIT_BRANCH}`);
@@ -3566,8 +3610,17 @@ async function pushToGit(){
     setUploadMsg('Push ke Git: menyiapkan file...');
     const html=buildSnapshotHtml();
     const path=`${GIT_DATA_DIR}/${name}.html`;
-    setUploadMsg('Push ke Git: upload '+name+'.html ...');
-    await githubPutFile(token, path, html, `Update data: ${name}`);
+    setUploadMsg('Push ke Git: upload '+name+'.html ('+Math.round(html.length/1024)+' KB) ...');
+    // File data bisa lewat 1MB (batas Contents API) karena setiap push membawa SEMUA tab yang
+    // sedang terbuka, bukan cuma yang baru diubah - kalau dibuka dari file git sebelumnya, tab
+    // lama ikut menumpuk. Pakai Git Data API (tidak ada batas 1MB), dengan retry kalau branch
+    // berubah duluan di antara baca-ref dan update-ref (push/hapus lain hampir bersamaan).
+    let dataAttemptErr=null;
+    for(let attempt=1; attempt<=3; attempt++){
+      try{ await githubPutFileGitData(token, path, html, `Update data: ${name}`); dataAttemptErr=null; break; }
+      catch(err){ dataAttemptErr=err; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
+    }
+    if(dataAttemptErr) throw dataAttemptErr;
     setUploadMsg('Push ke Git: update index...');
     // index.html adalah satu file yang sama disentuh setiap push/hapus - kalau ada proses lain
     // (tab lain, atau push+hapus hampir bersamaan) yang mengubahnya di antara GET sha dan PUT di
