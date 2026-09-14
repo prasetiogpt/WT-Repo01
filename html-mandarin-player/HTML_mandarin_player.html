@@ -440,6 +440,7 @@ td:nth-child(2), th:nth-child(2) {
         <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Cl</button>
         <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
         <button class="btn btn-html" id="globalPushGit" onclick="pushToGit()" type="button" style="font-size:.74rem;padding:4px 10px">⬆ Git</button>
+        <span id="gitBuildStamp" style="font-size:.62rem;color:#aaa;margin-left:4px"></span>
       </div>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
@@ -3396,6 +3397,13 @@ window.downloadUpdatedHTML = downloadUpdatedHTML;
 // disimpan di localStorage device ini saja - tidak pernah ikut ke HTML/commit manapun.
 const GIT_OWNER='prasetiogpt', GIT_REPO='WT-Repo01', GIT_DATA_DIR='html-mandarin-player/data', GIT_BRANCH='main';
 const GIT_TOKEN_KEY='ghPatToken';
+// Penanda versi kode Git-push (naikkan manual tiap kali logic push/index berubah) - GitHub Pages
+// butuh beberapa menit untuk menyebarkan perubahan kode, jadi halaman yang baru dibuka bisa saja
+// masih menjalankan JS versi lama walau file HTML_mandarin_player.html sumbernya sudah diperbarui.
+// Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
+// index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
+// dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
+const GIT_PUSH_BUILD='2026-09-14.3-timestamps';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3705,6 +3713,7 @@ function initMediaSession(){
   }
 }
 function init(){
+  const stampEl=document.getElementById('gitBuildStamp'); if(stampEl) stampEl.textContent=GIT_PUSH_BUILD;
   initMediaSession();
   const mp3Input=document.getElementById('mp3FolderInput');
   if(mp3Input){ mp3Input.onchange = e=>handleMp3Folder(e.target.files); }
