@@ -1,6 +1,8 @@
 # Itinerary Perjalanan Fuzhou
 13 – 19 November · 6 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
+← [[7 Xiamen]] | [[China Trip Overview]]
+
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Fuzhou Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
 > ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 7 hari/6 malam disusun dari nol sesuai skill terbaru (kota independen, hotel belum ditentukan jadi hanya direkomendasikan kawasan). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). Hari 2-3 dikelompokkan sesuai kluster kota tua Gulou District (Sanfang Qixiang, Lin Zexu Memorial, Yushan, West Lake Park, Fujian Museum) yang ternyata semuanya berjarak jalan kaki ±15 menit satu sama lain, jadi cukup 2 hari santai bukan 1 hari dipadatkan.

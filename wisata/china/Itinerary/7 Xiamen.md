@@ -1,6 +1,8 @@
 # Itinerary Perjalanan Xiamen
 7 – 13 November · 6 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
+← [[6 Shenzhen]] | [[China Trip Overview]] | [[8 Fuzhou]] →
+
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Xiamen Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
 > ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 7 hari/6 malam disusun dari nol sesuai skill terbaru (kota independen, hotel belum ditentukan jadi hanya direkomendasikan kawasan, bukan nama hotel spesifik). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). Rute Hari 3-5 disusun mengikuti Line 3 yang kebetulan melewati Shapowei → Xiamen University/Nanputuo → Hulishan Fortress/Baicheng Beach → Zengcuoan berurutan dalam 1 jalur — jadi 3 hari terpisah untuk waktu lebih longgar di tiap tempat, bukan dipaksa 1 hari. **Fujian Tulou (Yongding/Nanjing) TIDAK dimasukkan ke itinerary utama** — jarak tempuh 2,5-3 jam sekali jalan dinilai terlalu jauh untuk trip 7 hari yang sudah padat, dipindah ke Cadangan sesuai instruksi pengguna untuk menyediakan banyak opsi cadangan.
