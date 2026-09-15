@@ -3411,7 +3411,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-15.1-hide-stamp';
+const GIT_PUSH_BUILD='2026-09-15.2-clear-bad-token-on-401';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3454,31 +3454,37 @@ async function githubPutFile(token, path, content, message){
 // yang selalu kecil dan tetap lewat githubPutFile biasa).
 async function githubGetRef(token, branch){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/ref/heads/${branch}`, {headers:gitHeaders(token)});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(!res.ok) throw new Error('GET ref gagal: '+res.status);
   return (await res.json()).object.sha;
 }
 async function githubGetCommitTreeSha(token, commitSha){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/commits/${commitSha}`, {headers:gitHeaders(token)});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(!res.ok) throw new Error('GET commit gagal: '+res.status);
   return (await res.json()).tree.sha;
 }
 async function githubCreateBlob(token, content){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/blobs`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({content: utf8ToBase64(content), encoding:'base64'})});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create blob gagal: '+res.status+' '+(j.message||'')); }
   return (await res.json()).sha;
 }
 async function githubCreateTree(token, baseTreeSha, path, blobSha){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/trees`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({base_tree: baseTreeSha, tree:[{path, mode:'100644', type:'blob', sha:blobSha}]})});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create tree gagal: '+res.status+' '+(j.message||'')); }
   return (await res.json()).sha;
 }
 async function githubCreateCommit(token, message, treeSha, parentSha){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/commits`, {method:'POST', headers:gitHeaders(token), body:JSON.stringify({message, tree:treeSha, parents:[parentSha]})});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Create commit gagal: '+res.status+' '+(j.message||'')); }
   return (await res.json()).sha;
 }
 async function githubUpdateRef(token, branch, commitSha){
   const res=await fetch(`https://api.github.com/repos/${GIT_OWNER}/${GIT_REPO}/git/refs/heads/${branch}`, {method:'PATCH', headers:gitHeaders(token), body:JSON.stringify({sha:commitSha})});
+  if(res.status===401) throw new Error('401: token ditolak (salah/kadaluarsa)');
   if(res.status===422 || res.status===409){ const j=await res.json().catch(()=>({})); throw new Error('409: ref sudah berubah - '+(j.message||'')); }
   if(!res.ok){ const j=await res.json().catch(()=>({})); throw new Error('Update ref gagal: '+res.status+' '+(j.message||'')); }
 }
@@ -3724,7 +3730,7 @@ async function pushToGit(){
     setUploadMsg('✓ Berhasil push ke Git: '+fileName);
   }catch(err){
     console.error(err);
-    if(String(err.message||'').startsWith('401')) localStorage.removeItem(GIT_TOKEN_KEY);
+    if(String(err.message||'').includes('401')) localStorage.removeItem(GIT_TOKEN_KEY);
     setUploadMsg('✗ Gagal push ke Git: '+err.message);
     alert('Push ke Git gagal atau tidak selesai penuh:\n'+err.message+'\n\nData mungkin sudah ter-upload tapi index belum tentu ter-update - cek halaman index untuk pastikan.');
   }finally{
