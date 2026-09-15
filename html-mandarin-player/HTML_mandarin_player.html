@@ -440,7 +440,7 @@ td:nth-child(2), th:nth-child(2) {
         <button class="btn btn-check" id="globalClearClip" type="button" style="font-size:.74rem;padding:4px 10px">Clear Cl</button>
         <button class="btn btn-html" onclick="downloadUpdatedHTML()" type="button" style="font-size:.74rem;padding:4px 10px">↓HTML</button>
         <button class="btn btn-html" id="globalPushGit" onclick="pushToGit()" type="button" style="font-size:.74rem;padding:4px 10px">⬆ Git</button>
-        <span id="gitBuildStamp" style="font-size:.62rem;color:#aaa;margin-left:4px"></span>
+        <span id="gitBuildStamp" style="display:none"></span>
       </div>
       <span id="uploadMsg" style="font-size:.72rem;color:var(--green);margin-left:12px;font-weight:500"></span>
     </div>
@@ -3411,7 +3411,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-14.5-fix-disabled-button';
+const GIT_PUSH_BUILD='2026-09-15.1-hide-stamp';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
