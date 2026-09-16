@@ -3424,7 +3424,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-16.1-git-msgs-on-done-tab';
+const GIT_PUSH_BUILD='2026-09-16.2-stronger-conflict-retry';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3639,9 +3639,9 @@ async function deleteEntry(btn){
     // data di atas sudah pasti terhapus, jadi coba beberapa kali sebelum menyerah supaya index
     // tidak diam-diam ketinggalan (file terhapus tapi masih muncul di daftar).
     let indexErr=null;
-    for(let attempt=1; attempt<=3; attempt++){
+    for(let attempt=1; attempt<=5; attempt++){
       try{ await regenerateIndex(token, entries); indexErr=null; break; }
-      catch(e){ indexErr=e; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
+      catch(e){ indexErr=e; if(attempt<5) await new Promise(r=>setTimeout(r, 700*attempt+Math.random()*400)); }
     }
     if(indexErr) throw indexErr;
     msg.textContent='✓ '+label+' dihapus.';
@@ -3694,10 +3694,15 @@ async function pushToGit(){
     // sedang terbuka, bukan cuma yang baru diubah - kalau dibuka dari file git sebelumnya, tab
     // lama ikut menumpuk. Pakai Git Data API (tidak ada batas 1MB), dengan retry kalau branch
     // berubah duluan di antara baca-ref dan update-ref (push/hapus lain hampir bersamaan).
+    // 5x percobaan (bukan 3x) dengan jeda + jitter acak - konflik "ref sudah berubah" (409) di
+    // sini berarti operasi lain (push/hapus dari tab/jendela LAIN yang sama-sama terbuka) sempat
+    // menggeser branch tepat di antara baca-ref dan update-ref punya push ini. 3x kadang tidak
+    // cukup kalau ada beberapa tab aktif bersamaan; jitter mengurangi peluang dua percobaan
+    // bertabrakan lagi di waktu yang persis sama.
     let dataAttemptErr=null;
-    for(let attempt=1; attempt<=3; attempt++){
+    for(let attempt=1; attempt<=5; attempt++){
       try{ await githubPutFileGitData(token, path, html, `Update data: ${label}`); dataAttemptErr=null; break; }
-      catch(err){ dataAttemptErr=err; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
+      catch(err){ dataAttemptErr=err; if(attempt<5) await new Promise(r=>setTimeout(r, 700*attempt+Math.random()*400)); }
     }
     if(dataAttemptErr) throw dataAttemptErr;
     setUploadMsg('Push ke Git: update index...', true);
@@ -3708,7 +3713,7 @@ async function pushToGit(){
     // ter-upload di atas tidak ikut hilang, cuma bagian index yang perlu diulang.
     let indexAttemptErr=null;
     let oldFileToClean=null;
-    for(let attempt=1; attempt<=3; attempt++){
+    for(let attempt=1; attempt<=5; attempt++){
       try{
         const existingIndexHtml=await githubGetFileContent(token, `${GIT_DATA_DIR}/index.html`);
         const entries=parseIndexEntries(existingIndexHtml);
@@ -3723,7 +3728,7 @@ async function pushToGit(){
         break;
       }catch(err){
         indexAttemptErr=err;
-        if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt));
+        if(attempt<5) await new Promise(r=>setTimeout(r, 700*attempt+Math.random()*400));
       }
     }
     if(indexAttemptErr) throw indexAttemptErr;
