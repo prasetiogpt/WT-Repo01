@@ -584,9 +584,12 @@ function getPanels(root=document){ return qa('body > .panel', root); }
 // switchTab, mis. deleteTab() - lihat kasus "Tab dihapus" tetap muncul). Cek jenis tab aktif di
 // satu titik ini saja (2026-08-26, user's request: konsisten, tanpa kecuali) supaya semua
 // caller setUploadMsg tetap bisa apa adanya, tidak perlu tahu/peduli jenis tab aktif.
-function setUploadMsg(text){
+function setUploadMsg(text, force){
+  // `force` (2026-09-16): fitur Git (push/hapus dataset) sengaja BISA dipakai dari tab Done -
+  // tanpa ini, pesan progress/sukses/error-nya ikut dibungkam sama seperti pesan upload biasa,
+  // jadi tombol Git terlihat "tidak bereaksi" padahal proses aslinya jalan normal di background.
   const activePanel = document.querySelector('body > .panel.active');
-  if(activePanel && activePanel.dataset.tabType==='reference') text='';
+  if(!force && activePanel && activePanel.dataset.tabType==='reference') text='';
   document.querySelectorAll('#uploadMsg').forEach(el=>{ el.textContent=text; });
 }
 // Force the browser to actually paint before continuing a long synchronous-ish task
@@ -3406,7 +3409,7 @@ function downloadUpdatedHTML(){
   const blob=new Blob([data], {type:'text/html;charset=utf-8'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a'); a.download=`Mandarin_${stamp}.html`; a.href=url; a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>{ a.remove(); URL.revokeObjectURL(url); },1000);
-  setUploadMsg('✓ HTML baru di-download.');
+  setUploadMsg('✓ HTML baru di-download.', true);
 }
 window.downloadUpdatedHTML = downloadUpdatedHTML;
 
@@ -3421,7 +3424,7 @@ const GIT_TOKEN_KEY='ghPatToken';
 // Push dari kode lama diam-diam menghasilkan file/index yang juga versi lama (misalnya timestamp
 // index hilang lagi). Tampilkan stempel ini di sebelah tombol Git supaya sebelum push bisa
 // dicek dulu: kalau stempelnya beda dari yang diharapkan, reload dulu (atau tunggu) sebelum push.
-const GIT_PUSH_BUILD='2026-09-15.2-clear-bad-token-on-401';
+const GIT_PUSH_BUILD='2026-09-16.1-git-msgs-on-done-tab';
 function getGitToken(){
   let t=localStorage.getItem(GIT_TOKEN_KEY);
   if(!t){
@@ -3662,21 +3665,21 @@ async function pushToGit(){
   let token, name;
   try{
     token=getGitToken();
-    if(!token){ setUploadMsg('Push dibatalkan (token kosong).'); return; }
+    if(!token){ setUploadMsg('Push dibatalkan (token kosong).', true); return; }
     name=prompt('Nama dataset ini (dipakai sebagai nama file, tanpa .html):','');
-    if(!name){ setUploadMsg('Push dibatalkan (nama kosong).'); return; }
+    if(!name){ setUploadMsg('Push dibatalkan (nama kosong).', true); return; }
     name=name.trim().toLowerCase().replace(/[^a-z0-9\-_]+/g,'-').replace(/^-+|-+$/g,'');
-    if(!name){ setUploadMsg('Nama tidak valid.'); return; }
+    if(!name){ setUploadMsg('Nama tidak valid.', true); return; }
   }catch(promptErr){
     console.error(promptErr);
-    setUploadMsg('✗ Gagal buka dialog token/nama: '+promptErr.message);
+    setUploadMsg('✗ Gagal buka dialog token/nama: '+promptErr.message, true);
     alert('Tidak bisa menampilkan dialog untuk token/nama dataset:\n'+promptErr.message+'\n\nBrowser ini mungkin memblokir popup/dialog di halaman ini. Coba reload halaman, atau buka di tab Safari biasa (bukan dari dalam app lain).');
     return;
   }
   const label=name;
   gitPushBusy=true; if(btn) btn.disabled=true;
   try{
-    setUploadMsg('Push ke Git: menyiapkan file...');
+    setUploadMsg('Push ke Git: menyiapkan file...', true);
     const html=buildSnapshotHtml();
     // Nama file SELALU dibubuhi versi (timestamp) - dulu nama file dipakai ulang persis (mis.
     // "label.html"), jadi setiap push menimpa URL yang SAMA. GitHub Pages/CDN meng-cache tiap URL
@@ -3686,7 +3689,7 @@ async function pushToGit(){
     // CDN tidak akan pernah punya versi basi untuk URL yang belum pernah dilihatnya.
     const fileName=`${label}.v${Date.now()}.html`;
     const path=`${GIT_DATA_DIR}/${fileName}`;
-    setUploadMsg('Push ke Git: upload '+fileName+' ('+Math.round(html.length/1024)+' KB) ...');
+    setUploadMsg('Push ke Git: upload '+fileName+' ('+Math.round(html.length/1024)+' KB) ...', true);
     // File data bisa lewat 1MB (batas Contents API) karena setiap push membawa SEMUA tab yang
     // sedang terbuka, bukan cuma yang baru diubah - kalau dibuka dari file git sebelumnya, tab
     // lama ikut menumpuk. Pakai Git Data API (tidak ada batas 1MB), dengan retry kalau branch
@@ -3697,7 +3700,7 @@ async function pushToGit(){
       catch(err){ dataAttemptErr=err; if(attempt<3) await new Promise(r=>setTimeout(r, 800*attempt)); }
     }
     if(dataAttemptErr) throw dataAttemptErr;
-    setUploadMsg('Push ke Git: update index...');
+    setUploadMsg('Push ke Git: update index...', true);
     // index.html adalah satu file yang sama disentuh setiap push/hapus - kalau ada proses lain
     // (tab lain, atau push+hapus hampir bersamaan) yang mengubahnya di antara GET sha dan PUT di
     // sini, GitHub akan menolak dengan 409 (sha tidak cocok lagi). Re-baca + re-coba beberapa kali
@@ -3737,11 +3740,11 @@ async function pushToGit(){
         }
       }catch(cleanupErr){ console.warn('Gagal bersihkan versi lama (tidak fatal):', cleanupErr); }
     }
-    setUploadMsg('✓ Berhasil push ke Git: '+fileName);
+    setUploadMsg('✓ Berhasil push ke Git: '+fileName, true);
   }catch(err){
     console.error(err);
     if(String(err.message||'').includes('401')) localStorage.removeItem(GIT_TOKEN_KEY);
-    setUploadMsg('✗ Gagal push ke Git: '+err.message);
+    setUploadMsg('✗ Gagal push ke Git: '+err.message, true);
     alert('Push ke Git gagal atau tidak selesai penuh:\n'+err.message+'\n\nData mungkin sudah ter-upload tapi index belum tentu ter-update - cek halaman index untuk pastikan.');
   }finally{
     gitPushBusy=false; if(btn) btn.disabled=false;
