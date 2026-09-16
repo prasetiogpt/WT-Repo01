@@ -459,7 +459,7 @@ td:nth-child(2), th:nth-child(2) {
       </div>
       <label class="col-toggle-label" title="Ref." style="border-color:var(--blue);"><input type="checkbox" data-col-index="10"> <span class="col-name" style="color:var(--blue);">Ref.</span></label>
       <label class="col-toggle-label" title="Note2" style="border-color:var(--blue);"><input type="checkbox" data-col-index="11" checked=""> <span class="col-name" style="color:var(--blue);">Note2</span></label>
-      <label class="col-toggle-label col-preset-only-control" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" autocomplete="off" onchange="applyColumnPreset(this.value)"><option value="1" selected>1 V+S</option><option value="2">2 Vocab</option><option value="3">3 Sent.</option></select></label>
+      <label class="col-toggle-label col-preset-only-control" title="Preset kolom"><select id="colPresetSelect" class="col-preset-select" autocomplete="off" onchange="applyColumnPreset(this.value)"><option value="A1" selected>A1</option><option value="V1">V1</option><option value="S1">S1</option></select></label>
       <button class="col-toggle-label" id="globalYtubeBtn" data-ytube-open="global" data-ytube-url="" type="button" style="display:none" title="Buka video YouTube sheet ini">Ytube</button>
     </div>
   </div>
@@ -2302,17 +2302,19 @@ function voiceOptionsHTML(selected){
 // four selects below it. Picking a number sets V1-V4 for THIS sheet only, same as if the user
 // had set each dropdown by hand; doesn't touch other sheets or become a new default for uploads.
 const V_PRESETS = {
-  '1': ['hanzi-keyword', 'english-keyword', 'mandarin', 'english'],
-  '2': ['english-keyword', 'hanzi-keyword', 'english-keyword', 'hanzi-keyword'],
-  '3': ['mandarin', 'mandarin', '', ''],
-  '4': ['hanzi-keyword', '', '', '']
+  'A1': ['hanzi-keyword', 'english-keyword', 'mandarin', 'english'],
+  'A2': ['hanzi-keyword', 'mandarin', 'hanzi-keyword', 'mandarin'],
+  'V1': ['english-keyword', 'hanzi-keyword', 'english-keyword', 'hanzi-keyword'],
+  'V2': ['hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword', 'hanzi-keyword'],
+  'S1': ['mandarin', 'mandarin', '', ''],
+  'S2': ['mandarin', 'mandarin', 'mandarin', 'mandarin']
 };
-// Preset audio V1-V4 -> preset kolom (2026-08-12, user's choice, direvisi 2026-09-12 - preset 5
-// "all-Mandarin" dihapus, preset 4 kini cuma V1=Mand KW/V2-4=Diam): 1->1(V+S), 2->2(Vocab),
-// 3->3(Sent.), 4->2(Vocab, karena isinya kata Mand KW, bukan kalimat). Kolom tetap bisa
-// dicentang/di-uncheck manual sesudahnya seperti biasa - ini cuma titik-awal, bukan mengunci
-// kontrol kolom.
-const V_PRESET_TO_COL_PRESET = { '1': '1', '2': '2', '3': '3', '4': '2' };
+// Preset audio V1-V4 -> preset kolom (2026-09-16, diganti total ke skema A1/A2/V1/V2/S1/S2 -
+// A1/A2 pasangan KW+Kal, V1/V2 KW-saja, S1/S2 Kal-saja). Tiap pasangan berbagi kolom yang sama
+// (A2 ikut kolom A1, V2 ikut kolom V1, S2 ikut kolom S1) karena bedanya cuma kombinasi suara,
+// bukan kolom yang relevan. Kolom tetap bisa dicentang/di-uncheck manual sesudahnya seperti
+// biasa - ini cuma titik-awal, bukan mengunci kontrol kolom.
+const V_PRESET_TO_COL_PRESET = { 'A1': 'A1', 'A2': 'A1', 'V1': 'V1', 'V2': 'V1', 'S1': 'S1', 'S2': 'S1' };
 function applyVoicePreset(tid, presetNum){
   const preset = V_PRESETS[presetNum];
   if(!preset) return;
@@ -2338,7 +2340,7 @@ function dropdownPlayControlsHTML(tid){
       <label class="final-play-select">V1: <select autocomplete="off" data-final-voice1="${tid}">${voiceOptionsHTML('hanzi-keyword')}</select></label><label class="final-play-select">V2: <select autocomplete="off" data-final-voice2="${tid}">${voiceOptionsHTML('english-keyword')}</select></label>
     </div>
     <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
-      <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('${tid}', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+      <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('${tid}', this.value)"><option value="A1" selected>A1</option><option value="A2">A2</option><option value="V1">V1</option><option value="V2">V2</option><option value="S1">S1</option><option value="S2">S2</option></select></label>
     </div>
     <label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
 }
@@ -2385,12 +2387,12 @@ function addOrReplaceTextTab(title, rows, youtubeUrl){
   switchTab(getPanels().indexOf(panel)); 
   applyFilter(panel);
   initTableToolbar(panel);
-  // Setiap upload sheet baru selalu dipaksa balik ke preset kolom V+S (bukan ikut status
-  // global terakhir yang mungkin masih "Vocab"/"Sent." dari sheet lain yang lagi dilihat).
+  // Setiap upload sheet baru selalu dipaksa balik ke preset kolom A1 (bukan ikut status
+  // global terakhir yang mungkin masih "V1"/"S1" dari sheet lain yang lagi dilihat).
   setTimeout(function() {
-    applyColumnPreset('1');
+    applyColumnPreset('A1');
     const presetSel = document.getElementById('colPresetSelect');
-    if (presetSel) presetSel.value = '1';
+    if (presetSel) presetSel.value = 'A1';
   }, 50);
   return tid;
 }
@@ -2830,8 +2832,8 @@ function columnStateForType(type){
   const saved = loadColumnState(type);
   if (saved) return saved;
   const defaults = {};
-  [2,3,4,5,6,7,8,9,10,11].forEach(i => { defaults[i] = COL_PRESETS['1'].includes(i); });
-  defaults._presetNum = '1';
+  [2,3,4,5,6,7,8,9,10,11].forEach(i => { defaults[i] = COL_PRESETS['A1'].includes(i); });
+  defaults._presetNum = 'A1';
   return defaults;
 }
 // scopeType ('sheet'/'reference') membatasi panel mana yang kena - dipakai supaya ganti checkbox
@@ -2931,7 +2933,7 @@ function syncColumnCheckboxesToActiveTab() {
     if (state[idx] !== undefined) cb.checked = state[idx];
   });
   const presetSel = document.getElementById('colPresetSelect');
-  if (presetSel) presetSel.value = state._presetNum || '1';
+  if (presetSel) presetSel.value = state._presetNum || 'A1';
 }
 
 // Kolom preset dropdown - ganti tombol Reset. Opsi selalu tampil nama pendek apa adanya
@@ -2941,14 +2943,14 @@ function syncColumnCheckboxesToActiveTab() {
 // terlihat rusak). Konsekuensinya lebar kotak sedikit berbeda antar pilihan, tapi stabil/tidak
 // glitchy.
 const COL_PRESET_LABELS = {
-  '1': '1 V+S',
-  '2': '2 Vocab',
-  '3': '3 Sent.'
+  'A1': 'A1',
+  'V1': 'V1',
+  'S1': 'S1'
 };
 const COL_PRESETS = {
-  '1': [2, 4, 5, 6, 8, 9, 11],
-  '2': [2, 5],
-  '3': [6]
+  'A1': [2, 4, 5, 6, 8, 9],
+  'V1': [2, 4, 5],
+  'S1': [6, 8]
 };
 function applyColumnPreset(presetNum) {
   const preset = COL_PRESETS[presetNum];
@@ -4188,7 +4190,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
         <label class="final-play-select">V1: <select autocomplete="off" data-final-voice1="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword" selected="">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V2: <select autocomplete="off" data-final-voice2="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword" selected="">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english">English</option></select></label>
       </div>
       <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
-        <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+        <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="A1" selected>A1</option><option value="A2">A2</option><option value="V1">V1</option><option value="V2">V2</option><option value="S1">S1</option><option value="S2">S2</option></select></label>
       </div>
       <label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
     </div>
