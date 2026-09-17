@@ -1,18 +1,18 @@
 # Itinerary Perjalanan Xiamen
-7 – 13 November · 6 Malam · Direncanakan Independen (bukan sambungan kota lain)
+7 – 12 November · 5 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 ← [[6 Shenzhen]] | [[China Trip Overview]] | [[8 Fuzhou]] →
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Xiamen Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 7 hari/6 malam disusun dari nol sesuai skill terbaru (kota independen, hotel belum ditentukan jadi hanya direkomendasikan kawasan, bukan nama hotel spesifik). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). Rute Hari 3-5 disusun mengikuti Line 3 yang kebetulan melewati Shapowei → Xiamen University/Nanputuo → Hulishan Fortress/Baicheng Beach → Zengcuoan berurutan dalam 1 jalur — jadi 3 hari terpisah untuk waktu lebih longgar di tiap tempat, bukan dipaksa 1 hari. **Fujian Tulou (Yongding/Nanjing) TIDAK dimasukkan ke itinerary utama** — jarak tempuh 2,5-3 jam sekali jalan dinilai terlalu jauh untuk trip 7 hari yang sudah padat, dipindah ke Cadangan sesuai instruksi pengguna untuk menyediakan banyak opsi cadangan.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 7 hari/6 malam disusun dari nol sesuai skill terbaru (kota independen, hotel belum ditentukan jadi hanya direkomendasikan kawasan, bukan nama hotel spesifik). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). Rute Hari 3-5 disusun mengikuti Line 3 yang kebetulan melewati Shapowei → Xiamen University/Nanputuo → Hulishan Fortress/Baicheng Beach → Zengcuoan berurutan dalam 1 jalur — jadi 3 hari terpisah untuk waktu lebih longgar di tiap tempat, bukan dipaksa 1 hari. **Fujian Tulou (Yongding/Nanjing) TIDAK dimasukkan ke itinerary utama** — jarak tempuh 2,5-3 jam sekali jalan dinilai terlalu jauh untuk trip 7 hari yang sudah padat, dipindah ke Cadangan sesuai instruksi pengguna untuk menyediakan banyak opsi cadangan. (2) **Dipersingkat 2026-09-17** — trip dipendekkan dari 7 hari/6 malam jadi 6 hari/5 malam sesuai permintaan pengguna. Hari Jimei School Village (heritage pendidikan Chen Jiageng) dihapus dari itinerary utama dan dipindah ke Cadangan — dipilih Claude sebagai yang paling masuk akal dikorbankan karena satu-satunya kluster yang berdiri sendiri (Line 1 tanpa transfer, tidak searah dengan kluster Line 3 lain yang mengisi Hari 3-5), jadi penghapusannya tidak mengganggu alur hari lain. Kepulangan mundur dari Jumat 13 November jadi Kamis 12 November; hari kepulangan (dulu Hari 7) jadi Hari 6 baru, angkanya tidak berubah.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
 | Kedatangan | Sabtu, 7 November, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Kepulangan | Jumat, 13 November, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
+| Kepulangan | Kamis, 12 November, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -128,27 +128,7 @@ Pelabuhan tua yang berubah jadi distrik seni, lanjut ke desa nelayan yang kini j
 
 ---
 
-## Hari 6 — Kamis, 12 November (Jimei School Village — Warisan Chen Jiageng)
-
-Kompleks pendidikan & memorial yang dibangun filantropis Chen Jiageng — seberang selat dari pulau utama, via Line 1.
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 08:00–08:30 | Sarapan sekitar penginapan | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–09:15 | Line 1, turun Stasiun Jimei School Village | Langsung, tanpa transfer | 24 | Rp63.600 |
-| 09:15–11:00 | **Jimei School Village** — jalan santai kampus, arsitektur unik | Gratis jalan kawasan | — | — |
-| 11:00–12:30 | **Aoyuan (鳌园)** — taman memorial & makam Chen Jiageng | Gratis | — | — |
-| 12:30–13:30 | Makan siang sekitar Jimei | ±CNY 25/org | 50 | Rp132.500 |
-| 13:30–16:00 | **Dragon Boat Pond (龙舟池) & Jiageng Park** — jalan santai tepi kolam | Gratis | — | — |
-| 16:00–16:45 | Line 1 kembali ke penginapan | — | 24 | Rp63.600 |
-| 18:00–19:00 | Makan malam terakhir sekitar penginapan | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 6** | | **188** | **Rp498.200** |
-
-**Plan-B hari ini:** kalau waktu tidak cukup untuk semua — prioritaskan Jimei School Village & Aoyuan (paling ikonik), Dragon Boat Pond/Jiageng Park bisa dipersingkat.
-
----
-
-## Hari 7 — Jumat, 13 November (Kepulangan)
+## Hari 6 — Kamis, 12 November (Kepulangan)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -156,13 +136,13 @@ Kompleks pendidikan & memorial yang dibangun filantropis Chen Jiageng — sebera
 | 08:30–12:00 | Packing, siap-siap, waktu buffer | — | — | — |
 | 12:00–13:00 | Makan siang ringan sekitar penginapan | ±CNY 25/org | 50 | Rp132.500 |
 | **15:00** | **Keberangkatan lanjut kota berikutnya** | Moda & tujuan belum ditentukan | — | — |
-| | **TOTAL HARI 7** | | **80** | **Rp212.000** |
+| | **TOTAL HARI 6** | | **80** | **Rp212.000** |
 
 **Plan-B hari ini:** tidak ada destinasi terjadwal, jadi tidak ada risiko — waktu buffer bisa dipakai kalau packing lebih lama dari perkiraan.
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 6 Malam di Xiamen)
+## Ringkasan Budget Total (2 Orang, 5 Malam di Xiamen)
 
 ⚠️ Angka aktivitas harian di bawah TIDAK termasuk biaya menginap (belum ada hotel fixed, lihat "Area Menginap yang Disarankan") dan tiket kedatangan/kepulangan (moda belum ditentukan).
 
@@ -173,18 +153,17 @@ Kompleks pendidikan & memorial yang dibangun filantropis Chen Jiageng — sebera
 | Hari 3 (9 Nov) | 238 | Rp630.700 |
 | Hari 4 (10 Nov) | 228 | Rp604.200 |
 | Hari 5 (11 Nov) | 174 | Rp461.100 |
-| Hari 6 (12 Nov) | 188 | Rp498.200 |
-| Hari 7 (13 Nov) | 80 | Rp212.000 |
-| **GRAND TOTAL** | **1.368** | **Rp3.625.200** |
+| Hari 6 (12 Nov) | 80 | Rp212.000 |
+| **GRAND TOTAL** | **1.180** | **Rp3.127.000** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk (Gulangyu, Hulishan Fortress, Wanshi Botanical Garden, sewa sepeda) | 320 | Rp848.000 |
-| Makan (semua hari) | 660 | Rp1.749.000 |
-| Transport lokal (MRT, feri) | 388 | Rp1.028.200 |
-| **GRAND TOTAL AKTIVITAS** | **1.368** | **Rp3.625.200** |
+| Makan (semua hari) | 520 | Rp1.378.000 |
+| Transport lokal (MRT, feri) | 340 | Rp901.000 |
+| **GRAND TOTAL AKTIVITAS** | **1.180** | **Rp3.127.000** |
 
 **Catatan:** Fujian Tulou, Wuyi Mountains, dan destinasi Cadangan lain semuanya TIDAK termasuk di total di atas. Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.
 
@@ -382,7 +361,9 @@ Dulunya kampung nelayan kecil, kini berubah jadi kawasan bohemian dengan gang-ga
 - Foto/info: https://chinaexplorertour.com/2026/blog/plan-xiamen-zengcuoan-coastal-art-village-trip-2026-guide/
 - Video referensi: https://www.youtube.com/results?search_query=Zengcuoan+Xiamen+night+market
 
-## Hari 6 — Kamis, 12 November
+## Cadangan
+
+Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau Anda ingin pertimbangkan sendiri (kunjungan susulan di trip ini kalau ada waktu ekstra) atau untuk kunjungan berikutnya.
 
 ### Jimei School Village (集美学村 · Jíměi Xuécūn) ✅
 Kompleks pendidikan yang dibangun mulai 1913 oleh Tan Kah Kee (Chen Jiageng), filantropis perantau Tionghoa yang juga mendirikan Xiamen University — dari sini lahir gaya arsitektur "jiageng" khas yang memadukan atap tradisional China dengan struktur bata-batu Barat, jadi cetak biru banyak bangunan kampus di Xiamen. Kawasan ini mencakup beberapa sekolah & universitas sekaligus, menjadikannya salah satu kompleks pendidikan tertua & paling berpengaruh di China Selatan.
@@ -394,6 +375,8 @@ Kompleks pendidikan yang dibangun mulai 1913 oleh Tan Kah Kee (Chen Jiageng), fi
 **Jam Operasional:** kawasan kampus terbuka untuk umum, gratis, tidak ada jam tutup ketat.
 
 **Tiket:** Gratis.
+
+**Kenapa tidak dimasukkan:** dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari (revisi 2026-09-17) — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.
 
 - Foto/info: https://en.wikipedia.org/wiki/Tan_Kah_Kee
 - Video referensi: https://www.youtube.com/results?search_query=Jimei+School+Village+Xiamen
@@ -410,6 +393,8 @@ Taman memorial seluas ±9.000 m² yang dibangun Chen Jiageng selama 10 tahun (se
 
 **Tiket:** Gratis.
 
+**Kenapa tidak dimasukkan:** satu paket dengan Jimei School Village (lihat di atas) — ikut terpangkas saat trip dipersingkat dari 7 hari jadi 6 hari.
+
 - Foto/info: https://baike.baidu.com/item/%E9%9B%86%E7%BE%8E%E9%B3%8C%E5%9B%AD/6683809
 - Video referensi: https://www.youtube.com/results?search_query=Aoyuan+Jimei+Xiamen
 
@@ -424,12 +409,10 @@ Kolam besar di jantung Jimei School Village yang dipakai untuk lomba perahu naga
 
 **Tiket:** Gratis.
 
+**Kenapa tidak dimasukkan:** satu paket dengan Jimei School Village (lihat di atas) — ikut terpangkas saat trip dipersingkat dari 7 hari jadi 6 hari.
+
 - Foto/info: https://en.wikipedia.org/wiki/Jimei_District
 - Video referensi: https://www.youtube.com/results?search_query=Dragon+Boat+Pond+Jimei+Xiamen
-
-## Cadangan
-
-Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau Anda ingin pertimbangkan sendiri (kunjungan susulan di trip ini kalau ada waktu ekstra) atau untuk kunjungan berikutnya.
 
 ### Fujian Tulou — Yongding Hongkeng Cluster (福建土楼·永定洪坑土楼群 · Fújiàn Tǔlóu · Yǒngdìng Hóngkēng Tǔlóu Qún) ✅
 Rumah komunal berbentuk bundar dari tanah liat padat, dibangun etnis Hakka mulai abad ke-12 sebagai benteng pertahanan sekaligus rumah komunal beberapa generasi keluarga — situs UNESCO World Heritage sejak 2008, sering disebut mirip "piring terbang" dari udara. Kluster Hongkeng di Yongding County adalah salah satu yang paling terkenal & terjaga baik.
