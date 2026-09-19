@@ -1,24 +1,23 @@
 # Itinerary Perjalanan Shenzhen
-
-4 – 7 November · 3 Malam · Direncanakan Independen (bukan sambungan kota lain)
+3 – 5 November · 2 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 ← [[5 Hong Kong]] | [[China Trip Overview]] | [[7 Xiamen]] →
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Shenzhen Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-23** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib masuk GRAND TOTAL). Kedatangan Hong Kong → Shenzhen via HSR (asumsi default skill **17:00**, tiket **Rp200.000/org** — harga riil dari user, 2 orang), kepulangan default **15:00** via HSR ke kota berikutnya (kemungkinan **Xiamen**, moda & jadwal belum ditentukan). Hotel & 2 tiket masuk masih ESTIMASI. Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]). ⚠️ **Catatan independensi:** jam kedatangan 17:00 di sini pakai ASUMSI DEFAULT skill, BUKAN hasil sambungan presisi dari jadwal HSR aktual di Hari 3 file Hong Kong (keberangkatan 13:30, tempuh HSR hanya ±14 menit) — kedua file sengaja belum disinkronkan sesuai prinsip "kota independen"; kalau nanti mau presisi, revisi jam kedatangan Shenzhen jadi ±13:45–14:00 saat kedua file direvisi bersamaan. (2) **2026-08-23 — revisi gabungan setelah diskusi**: **Hotel FIXED** — **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)**, dipilih dari 2 kandidat riset user (menang karena 170m/±3 menit jalan kaki ke Stasiun Shixia vs kandidat lain 950m, dan basis ulasan 4x lebih banyak) — **Rp800.000/malam (2 org), sudah dibooking**, real bukan estimasi lagi. Karena hotel di Shixia (BUKAN Civic Center seperti asumsi draft awal), semua rute jalan-kaki-ke-destinasi di draft awal diganti jadi naik metro Line 3 (sudah dicek stasiun-per-stasiun: Shixia↔Futian Station 2 halte tanpa transfer, Shixia↔Children's Palace/Lianhua Mountain 3 halte tanpa transfer, Shixia↔Laojie/Dongmen 8 halte tanpa transfer, ke Civic Center & Nanshan butuh 1x transfer). **2 tiket mahal DIHAPUS dari itinerary utama** (dipindah ke Cadangan) sesuai prinsip skill "prioritaskan tempat gratis" (poin 3) yang terlewat di draft awal — Window of the World (CNY220/org) diganti waktu ekstra di OCT-LOFT + He Xiangning Art Museum (keduanya gratis, sebelahan) di Hari 2; Ping An Finance Center Free Sky (CNY280/org) diganti jalan santai gratis di Xinghe COCO Park (1 halte dari hotel) di Hari 3 malam. Budget GRAND TOTAL turun drastis **2.803 CNY/Rp7.427.800 → 1.791 CNY/Rp4.745.100** (hotel real lebih murah dari estimasi, 2 tiket mahal hilang, transport lokal naik sedikit karena beberapa rute yang tadinya "jalan kaki" kini naik metro). Juga: bug tabel budget "Hari 1-4" yang bocor jadi teks mentah di Wisata.html — akar masalahnya di parser `generate_wisata.py` (regex note-intro salah menangkap tabel pertama kalau section budget tidak ada kalimat pengantar) — **diperbaiki permanen di parser**, berlaku semua kota ke depannya. (3) **2026-08-23 — tambah Hanyu Pinyin ke semua 14 entri Lampiran berhanzi** (skill poin 11, terlewat di draft awal). **Shuiwei Night Market ditambahkan** menggantikan Xinghe COCO Park sebagai destinasi malam Hari 3 (1 halte dari hotel via Line 7, tanpa transfer, lebih otentik — COCO Park dipindah ke Cadangan sebagai Plan-B). **Civic Center Cultural Plaza & Shenzhen Library ditambahkan** ke Hari 3 pagi (satu kompleks dengan Shenzhen Museum, tanpa biaya/transport tambahan). 7 destinasi lain dari daftar user (Huaqiangbei, Nantou Ancient City, MixC Shenzhen Bay, Shenzhen Bay Cultural Plaza, Sea World, K11 ECOAST, Dutch Flower Town) diriset & masuk Cadangan — semuanya butuh transfer & jauh dari kluster Futian/Luohu/Nanshan-tengah yang jadi fokus trip ini. "Hongqiao Park" hanya ketemu versi di Distrik Guangming (jauh dari semua kluster) — ditandai ⚠️, kemungkinan bukan yang dimaksud, perlu klarifikasi lokasi kalau memang mau dimasukkan.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-08-23** — itinerary 4 hari/3 malam disusun dari nol sesuai skill terbaru (kota independen, estimasi biaya kedatangan & hotel wajib masuk GRAND TOTAL). Kedatangan Hong Kong → Shenzhen via HSR (asumsi default skill **17:00**, tiket **Rp200.000/org** — harga riil dari user, 2 orang), kepulangan default **15:00** via HSR ke kota berikutnya (kemungkinan **Xiamen**, moda & jadwal belum ditentukan). Hotel & 2 tiket masuk masih ESTIMASI. Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]). ⚠️ **Catatan independensi:** jam kedatangan 17:00 di sini pakai ASUMSI DEFAULT skill, BUKAN hasil sambungan presisi dari jadwal HSR aktual di Hari 3 file Hong Kong (keberangkatan 13:30, tempuh HSR hanya ±14 menit) — kedua file sengaja belum disinkronkan sesuai prinsip "kota independen"; kalau nanti mau presisi, revisi jam kedatangan Shenzhen jadi ±13:45–14:00 saat kedua file direvisi bersamaan. (2) **2026-08-23 — revisi gabungan setelah diskusi**: **Hotel FIXED** — **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)**, dipilih dari 2 kandidat riset user (menang karena 170m/±3 menit jalan kaki ke Stasiun Shixia vs kandidat lain 950m, dan basis ulasan 4x lebih banyak) — **Rp800.000/malam (2 org), sudah dibooking**, real bukan estimasi lagi. Karena hotel di Shixia (BUKAN Civic Center seperti asumsi draft awal), semua rute jalan-kaki-ke-destinasi di draft awal diganti jadi naik metro Line 3 (sudah dicek stasiun-per-stasiun: Shixia↔Futian Station 2 halte tanpa transfer, Shixia↔Children's Palace/Lianhua Mountain 3 halte tanpa transfer, Shixia↔Laojie/Dongmen 8 halte tanpa transfer, ke Civic Center & Nanshan butuh 1x transfer). **2 tiket mahal DIHAPUS dari itinerary utama** (dipindah ke Cadangan) sesuai prinsip skill "prioritaskan tempat gratis" (poin 3) yang terlewat di draft awal — Window of the World (CNY220/org) diganti waktu ekstra di OCT-LOFT + He Xiangning Art Museum (keduanya gratis, sebelahan) di Hari 2; Ping An Finance Center Free Sky (CNY280/org) diganti jalan santai gratis di Xinghe COCO Park (1 halte dari hotel) di Hari 3 malam. Budget GRAND TOTAL turun drastis **2.803 CNY/Rp7.427.800 → 1.791 CNY/Rp4.745.100** (hotel real lebih murah dari estimasi, 2 tiket mahal hilang, transport lokal naik sedikit karena beberapa rute yang tadinya "jalan kaki" kini naik metro). Juga: bug tabel budget "Hari 1-4" yang bocor jadi teks mentah di Wisata.html — akar masalahnya di parser `generate_wisata.py` (regex note-intro salah menangkap tabel pertama kalau section budget tidak ada kalimat pengantar) — **diperbaiki permanen di parser**, berlaku semua kota ke depannya. (3) **2026-08-23 — tambah Hanyu Pinyin ke semua 14 entri Lampiran berhanzi** (skill poin 11, terlewat di draft awal). **Shuiwei Night Market ditambahkan** menggantikan Xinghe COCO Park sebagai destinasi malam Hari 3 (1 halte dari hotel via Line 7, tanpa transfer, lebih otentik — COCO Park dipindah ke Cadangan sebagai Plan-B). **Civic Center Cultural Plaza & Shenzhen Library ditambahkan** ke Hari 3 pagi (satu kompleks dengan Shenzhen Museum, tanpa biaya/transport tambahan). 7 destinasi lain dari daftar user (Huaqiangbei, Nantou Ancient City, MixC Shenzhen Bay, Shenzhen Bay Cultural Plaza, Sea World, K11 ECOAST, Dutch Flower Town) diriset & masuk Cadangan — semuanya butuh transfer & jauh dari kluster Futian/Luohu/Nanshan-tengah yang jadi fokus trip ini. "Hongqiao Park" hanya ketemu versi di Distrik Guangming (jauh dari semua kluster) — ditandai ⚠️, kemungkinan bukan yang dimaksud, perlu klarifikasi lokasi kalau memang mau dimasukkan. (4) **2026-09-19 — dipadatkan jadi 2 malam/3 hari: datang Selasa 3 November, pulang Kamis 5 November** (sebelumnya 4–7 November, 3 malam/4 hari). Jam kedatangan tetap 17:00 & kepulangan 15:00 (belum ada tiket/jadwal aktual). **Shenzhen Museum dipertahankan** (Hari 2), tanpa destinasi utama lama yang hilang: Shuiwei Night Market dipindah jadi makan malam Hari 1 digabung Lianhua Mountain Park malam, Dongmen dipindah ke pagi Hari 3, dan sehari penuh Hari 2 diisi Civic Center (Plaza, Library, Museum) + He Xiangning Art Museum + OCT-LOFT (rute via Convention & Exhibition Center Line 4→Line 1, ⚠️ jumlah halte belum diverifikasi). Koreksi: jam buka Shenzhen Museum 10:00 (sebelumnya dijadwalkan 09:00, bentrok dengan jam resmi); exit Children's Palace yang sebelumnya saling bertentangan (tabel F1/F2 vs Lampiran H/I) — stasiun hanya punya Exit A–D dan F, jadi ditulis Exit F ⚠️ konfirmasi papan petunjuk; bullet "Tempat berbayar" yang keliru menyebut Window of the World & Ping An sebagai tiket utama dihapus (keduanya di Cadangan, tidak masuk budget). Xinghe COCO Park naik jadi Plan-B Hari 1 & 3, Shenzhen Bay Park jadi Plan-B Hari 2 (sebelumnya keduanya Cadangan). Hotel Qiyu tetap: 2 malam × Rp800.000 ⚠️ Estimasi — booking lama (4–7 November) perlu diubah ke 3–5 November. GRAND TOTAL turun dari 1.791 CNY/Rp4.745.100 jadi **1.273 CNY/Rp3.372.700**.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
 | Rute | Hong Kong West Kowloon → Shenzhen Futian (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
-| Tanggal & Jam Kedatangan | Rabu, 4 November, **17:00** (asumsi default skill — lihat catatan revisi di atas) |
+| Tanggal & Jam Kedatangan | Selasa, 3 November, **17:00** (perkiraan, belum ada tiket) |
 | Durasi | ±14 menit — salah satu rute HSR lintas-batas tercepat di dunia, ±47 keberangkatan/hari 07:11–22:01 |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)** — hotel bisnis baru (dibuka 2024, 700 kamar), sudah dibooking. No. 1, Shixia North 2nd Street, Futian District, Shenzhen, Guangdong. Anchor MRT: **Shixia Metro Station** (Line 3, transfer Line 7), ±170m/±3 menit jalan kaki — persis di seberang hotel, dipakai sebagai basis SEMUA rute harian di bawah.
+**Hotel:** **Qiyu Hotel (Futian Port Branch of Shenzhen Convention and Exhibition Center)** — hotel bisnis baru (dibuka 2024, 700 kamar). No. 1, Shixia North 2nd Street, Futian District, Shenzhen, Guangdong. Anchor MRT: **Shixia Metro Station** (Line 3, transfer Line 7), ±170m/±3 menit jalan kaki — persis di seberang hotel, dipakai sebagai basis SEMUA rute harian di bawah. ⚠️ Booking lama (4–7 November) perlu diubah ke **3–5 November (2 malam)**.
 
 **Kedatangan → Hotel:** Imigrasi Tiongkok sudah diselesaikan di **West Kowloon (co-location, sebelum naik kereta)** — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: metro Line 3 ke Shixia, **2 halte, tanpa transfer** (±8 menit), lanjut jalan kaki ±3 menit ke hotel.
 
@@ -30,87 +29,69 @@
 
 - Suhu siang **±27–29°C**, malam **±19–22°C** — awal musim kering subtropis, kelembapan mulai turun dari puncak musim panas, salah satu bulan paling nyaman berkunjung.
 - Hujan jauh lebih jarang dibanding musim panas, tapi tetap bawa payung lipat untuk jaga-jaga. ⚠️ Angka rata-rata historis, bukan forecast real-time — cek forecast H-7 sebelum berangkat.
-- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan yang nyaman (banyak area Cadangan berupa taman/kaki gunung), sunblock.
+- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan yang nyaman (Hari 2 banyak berjalan), sunblock.
 
 ---
 
-## Hari 1 — Rabu, 4 November (Kedatangan Sore, Sekitar Hotel)
+## Hari 1 — Selasa, 3 November (Kedatangan Sore — Shuiwei Night Market & Lianhua Mountain Malam)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 17:00 | Turun di Futian Station | Imigrasi Tiongkok sudah kelar di West Kowloon (co-location) — langsung keluar tanpa pemeriksaan tambahan | — | — |
 | 17:15–17:25 | Metro Line 3 ke Shixia | 2 halte, tanpa transfer, ±8 menit | 8 | Rp21.200 |
-| 17:25–17:35 | Jalan kaki ke **Qiyu Hotel** | ±170m/±3 menit, persis seberang stasiun | — | — |
+| 17:25–17:35 | Jalan kaki ke Qiyu Hotel | ±170m/±3 menit, persis seberang stasiun | — | — |
 | 17:35–18:00 | Check-in hotel, taruh barang | — | — | — |
-| 18:00–19:00 | Makan malam dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
-| 19:15–19:30 | Metro Line 3 ke Children's Palace | 3 halte, tanpa transfer, ±8 menit | 8 | Rp21.200 |
-| 19:30–21:00 | **Lianhua Mountain Park** (city view malam) | Exit F1/F2, ±5 menit jalan kaki ke gerbang barat, gratis, buka s/d 23:00 | — | — |
-| 21:00–21:15 | Metro balik ke hotel | ±8 menit | 8 | Rp21.200 |
-| | **TOTAL HARI 1** | | **94** | **Rp249.100** |
+| 18:00–18:10 | Metro Line 7 ke Huanggangcun | 1 halte, tanpa transfer, ±5 menit | 6 | Rp15.900 |
+| 18:10–19:45 | **Shuiwei Night Market** — jalan santai + makan malam | Exit B2, buka penuh dari 17:00. Pilih yang berkuah/kukus (sup bakso sapi, bubur), hindari gorengan & saus pedas. ±CNY 35/org | 70 | Rp185.500 |
+| 19:45–20:20 | Metro ke Children's Palace | Line 7 balik ke Shixia (1 halte), transfer Line 3 (3 halte), ±25 menit | 8 | Rp21.200 |
+| 20:20–21:30 | **Lianhua Mountain Park** (city view malam) | Children's Palace Exit F ⚠️ (cek papan petunjuk), ±5 menit jalan kaki ke gerbang barat, gratis, buka s/d 23:00 | — | — |
+| 21:30–22:00 | Metro Line 3 balik ke Shixia, jalan ke hotel | 3 halte tanpa transfer, ±8 menit + ±3 menit jalan | 8 | Rp21.200 |
+| | **TOTAL HARI 1** | | **100** | **Rp265.000** |
 
-**Plan-B hari ini:** kalau kelelahan perjalanan/gelap terlalu cepat untuk naik Lianhua Mountain — jalan santai di sekitar hotel (Shixia/Futian Port) saja, gratis.
+**Plan-B hari ini:** **Xinghe COCO Park** — kalau lelah perjalanan atau gerimis, gantikan Lianhua Mountain: 1 halte dari hotel (Line 3), datar, gratis, ramai sampai malam.
 
 ---
 
-## Hari 2 — Kamis, 5 November (Nanshan — OCT-LOFT & He Xiangning Art Museum)
+## Hari 2 — Rabu, 4 November (Civic Center → Nanshan: Shenzhen Museum, He Xiangning & OCT-LOFT)
 
-> **Rute:** Metro Line 3 ke Laojie, transfer Line 1 ke Qiaocheng East (OCT-LOFT) — sehari penuh di kluster seni kreatif Nanshan, dua destinasi gratis bersebelahan.
+> **Rute:** Pagi kompleks Civic Center (Plaza, Library, Museum — satu kompleks jalan kaki), siang metro via Convention & Exhibition Center (Line 4 → Line 1) ke Qiaocheng East untuk He Xiangning Art Museum & OCT-LOFT, malam kembali ke hotel.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
-| 08:30–09:15 | Metro ke **OCT-LOFT** (Qiaocheng East, Exit A) | Line 3 → transfer Line 1 di Laojie, ±45 menit, ±CNY 7/org | 14 | Rp37.100 |
-| 09:30–12:30 | **OCT-LOFT** — galeri seni, studio kreatif, kafe | Gratis masuk | — | — |
-| 12:30–13:30 | Makan siang dekat OCT-LOFT | ±CNY 35/org | 70 | Rp185.500 |
-| 13:30–15:00 | **He Xiangning Art Museum** | Persis sebelahan OCT-LOFT, gratis, koleksi lukisan Lingnan | — | — |
-| 15:00–18:00 | Waktu bebas OCT-LOFT | Ramai & hidup sore-malam, banyak spot foto | — | — |
+| 08:30–09:00 | Metro ke Civic Center | Line 3 ke Children's Palace, transfer Line 4, ±20-25 menit | 10 | Rp26.500 |
+| 09:00–10:00 | **Civic Center Cultural Plaza** & **Shenzhen Library** | Plaza terbuka 24 jam, perpustakaan buka 09:00, sekompleks dengan Museum — jalan kaki, gratis | — | — |
+| 10:00–12:00 | **Shenzhen Museum** (History & Folk Culture) | Buka 10:00, gratis, tanpa reservasi (sejak Juli 2024), tutup Senin — aman karena kunjungan Rabu | — | — |
+| 12:00–13:00 | Makan siang sekitar Civic Center | ±CNY 35/org | 70 | Rp185.500 |
+| 13:00–13:45 | Metro ke Qiaocheng East (OCT-LOFT) | Line 4 ke Convention & Exhibition Center (1 halte), transfer Line 1 arah Airport East ke Qiaocheng East, Exit A, ±CNY 6/org ⚠️ jumlah halte Line 1 belum diverifikasi | 12 | Rp31.800 |
+| 13:45–15:30 | **He Xiangning Art Museum** | Persis sebelahan OCT-LOFT, gratis, koleksi lukisan Lingnan, tutup 17:30 — dikunjungi lebih dulu sebelum tutup | — | — |
+| 15:30–18:00 | **OCT-LOFT** — galeri seni, studio kreatif, kafe | Gratis masuk, makin hidup sore-malam, banyak spot foto | — | — |
 | 18:00–19:00 | Makan malam di OCT-LOFT | ±CNY 35/org | 70 | Rp185.500 |
-| 19:00–19:45 | Metro balik ke hotel | Transfer Line 1 → Line 3 di Laojie, ±CNY 7/org | 14 | Rp37.100 |
-| | **TOTAL HARI 2** | | **238** | **Rp630.700** |
+| 19:00–19:50 | Metro balik ke hotel | Line 1 ke Laojie, transfer Line 3 ke Shixia, ±45 menit, ±CNY 7/org | 14 | Rp37.100 |
+| | **TOTAL HARI 2** | | **246** | **Rp651.900** |
 
-**Plan-B hari ini:** kalau OCT-LOFT terasa cukup setengah hari — tambah **Shenzhen Bay Park** (gratis, lihat Lampiran → Cadangan) untuk sore hari, meski butuh transfer tambahan.
-
----
-
-## Hari 3 — Jumat, 6 November (Civic Center, Dongmen, Malam di Shuiwei Night Market)
-
-> **Rute:** Pagi metro ke Civic Center untuk Shenzhen Museum + Cultural Plaza/Library (satu kompleks, jalan kaki), siang lanjut Dongmen, sore balik dekat hotel untuk Shuiwei Night Market — 1 halte dari Shixia, tanpa transfer.
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 08:00 | Sarapan | ±CNY 35/org | 70 | Rp185.500 |
-| 08:30–08:55 | Metro ke **Shenzhen Museum** (Civic Center) | Line 3 ke Children's Palace, transfer Line 4, ±20-25 menit | 10 | Rp26.500 |
-| 09:00–11:00 | **Shenzhen Museum** (History & Folk Culture) | Gratis, tanpa reservasi (sejak Juli 2024), tutup Senin — aman karena kita kunjungi Jumat | — | — |
-| 11:00–11:30 | **Civic Center Cultural Plaza & Shenzhen Library** | Jalan kaki, sama kompleks dengan Museum, gratis | — | — |
-| 11:30–12:15 | Metro ke **Dongmen** (Laojie) | Balik ke Line 3, langsung ke Laojie tanpa transfer lagi | 10 | Rp26.500 |
-| 12:30–13:30 | Makan siang di Dongmen (jajanan lokal) | ±CNY 35/org | 70 | Rp185.500 |
-| 13:30–16:00 | **Dongmen Pedestrian Street** | Belanja & suasana pasar tertua Shenzhen, gratis jalan-jalan | — | — |
-| 16:00–16:30 | Metro Line 3 balik ke Shixia | Langsung, tanpa transfer, 8 halte, ±20 menit | 12 | Rp31.800 |
-| 17:00–17:10 | Metro 1 halte (Line 7) ke **Shuiwei Night Market** (Huanggangcun) | Tanpa transfer | 6 | Rp15.900 |
-| 17:10–19:00 | **Shuiwei Night Market** — jalan santai, jajanan Chaoshan | Buka mulai 17:00 s/d tengah malam | — | — |
-| 19:00–20:00 | Makan malam di Shuiwei (jajanan malam) | ±CNY 35/org | 70 | Rp185.500 |
-| 20:00–20:10 | Metro balik ke hotel | — | 6 | Rp15.900 |
-| | **TOTAL HARI 3** | | **254** | **Rp673.100** |
-
-**Plan-B hari ini:** kalau Shuiwei terlalu ramai/tidak sesuai selera — jalan santai gratis di **Xinghe COCO Park** (1 halte dari hotel via Line 3, lihat Lampiran → Cadangan) sebagai alternatif malam.
+**Plan-B hari ini:** **Shenzhen Bay Park** — kalau OCT-LOFT terasa cukup setengah hari, tambah taman pesisir gratis ini untuk sore (butuh transfer tambahan, lihat Lampiran).
 
 ---
 
-## Hari 4 — Sabtu, 7 November (Checkout, Lanjut Perjalanan)
+## Hari 3 — Kamis, 5 November (Dongmen Pagi, Checkout, Lanjut Perjalanan)
 
-> **Kenapa ini hari ringan:** hotel hanya 2 halte (tanpa transfer) dari Futian Station tempat keberangkatan HSR — tidak perlu transportasi jauh sebelum checkout, pas untuk hari kepulangan.
+> **Rute:** Pagi ke Dongmen via Line 3 langsung tanpa transfer, balik ambil bagasi di hotel, lalu berangkat dari Futian Station.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:00 | Sarapan | ±CNY 35/org | 70 | Rp185.500 |
-| 08:30–10:00 | Waktu santai / checkout | — | — | — |
-| 10:00–13:00 | Waktu bebas dekat hotel | Opsional jalan santai sekitar Shixia/COCO Park, gratis | — | — |
-| 13:00–14:00 | Makan siang dekat hotel/stasiun | ±CNY 35/org | 70 | Rp185.500 |
-| 14:00–14:20 | Metro Line 3 ke Futian Station | 2 halte, tanpa transfer, ±8 menit | 8 | Rp21.200 |
+| 07:30 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
+| 08:00–08:30 | Checkout, titip bagasi di hotel | ⚠️ Konfirmasi ke resepsionis sehari sebelumnya bahwa bagasi bisa dititip sampai siang | — | — |
+| 08:30–09:00 | Metro Line 3 ke Laojie | Langsung tanpa transfer, 8 halte, ±20 menit | 12 | Rp31.800 |
+| 09:00–11:45 | **Dongmen Pedestrian Street** | Exit A Laojie langsung di pintu masuk. Pagi lebih lengang, toko mulai buka ±10:00, jalur datar | — | — |
+| 11:45–12:30 | Makan siang di Dongmen (jajanan lokal) | ±CNY 35/org | 70 | Rp185.500 |
+| 12:30–13:00 | Metro Line 3 balik ke Shixia | Langsung tanpa transfer, ±20 menit | 12 | Rp31.800 |
+| 13:00–13:30 | Ambil bagasi di hotel | ±3 menit jalan dari stasiun | — | — |
+| 13:30–13:50 | Metro Line 3 ke Futian Station | 2 halte, tanpa transfer, ±8 menit | 8 | Rp21.200 |
 | 15:00 | HSR Futian → kota berikutnya | Kemungkinan **Xiamen** — stasiun/moda belum pasti, lihat Informasi Transportasi Pulang | — | — |
-| | **TOTAL HARI 4** | | **148** | **Rp392.200** |
+| | **TOTAL HARI 3** | | **172** | **Rp455.800** |
 
-**Plan-B hari ini:** kalau ada waktu lebih sebelum jam 15:00 — jalan singkat ke **Lianhua Mountain Park** (kalau belum sempat Hari 1) atau sekadar kopi santai dekat hotel.
+**Plan-B hari ini:** **Xinghe COCO Park** — kalau Dongmen terlalu ramai atau kurang sesuai selera, jalan santai gratis 1 halte dari hotel (Line 3, searah Futian Station).
 
 ---
 
@@ -126,37 +107,36 @@
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Shenzhen)
+## Ringkasan Budget Total (2 Orang, 2 Malam / 3 Hari di Shenzhen)
 
-Semua destinasi di itinerary utama sekarang gratis — transport lokal naik sedikit karena hotel di Shixia butuh metro (bukan jalan kaki) ke sebagian besar destinasi, tapi jauh lebih hemat setelah 2 tiket mahal dihapus.
+Semua destinasi di itinerary utama gratis — biaya hanya makan dan metro, plus hotel dan tiket HSR kedatangan.
 
 | Hari | CNY | IDR |
 |---|---|---|
-| Hari 1 | 94 | Rp249.100 |
-| Hari 2 | 238 | Rp630.700 |
-| Hari 3 | 254 | Rp673.100 |
-| Hari 4 | 148 | Rp392.200 |
-| **Subtotal aktivitas harian** | **734** | **Rp1.945.100** |
+| Hari 1 | 100 | Rp265.000 |
+| Hari 2 | 246 | Rp651.900 |
+| Hari 3 | 172 | Rp455.800 |
+| **Subtotal aktivitas harian** | **518** | **Rp1.372.700** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk | — | — |
-| Makan (semua hari, 9x makan) | 630 | Rp1.669.500 |
-| Transport lokal (metro) | 104 | Rp275.600 |
+| Makan (semua hari, 6x makan) | 420 | Rp1.113.000 |
+| Transport lokal (metro) | 98 | Rp259.700 |
 | Tiket HSR kedatangan dari Hong Kong (2 org) | ≈151 | Rp400.000 |
-| Hotel (3 malam, Qiyu Hotel, sudah dibooking) | ≈906 | Rp2.400.000 |
-| **GRAND TOTAL** | **1.791** | **Rp4.745.100** |
+| Hotel (2 malam, Qiyu Hotel) ⚠️ Estimasi | ≈604 | Rp1.600.000 |
+| **GRAND TOTAL** | **1.273** | **Rp3.372.700** |
 
-**Catatan:** Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, OCT-LOFT, He Xiangning Art Museum, Dongmen Pedestrian Street, Shuiwei Night Market semuanya gratis masuk (tidak dihitung, hanya biaya makan/transport terkait yang masuk tabel). Window of the World dan Ping An Finance Center Free Sky (tiket masuk berbayar) dipindah ke Cadangan, tidak masuk budget ini.
+**Catatan:** Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, He Xiangning Art Museum, OCT-LOFT, Dongmen Pedestrian Street, Shuiwei Night Market semuanya gratis masuk (tidak dihitung, hanya biaya makan/transport terkait yang masuk tabel). Harga hotel memakai Rp800.000/malam dari booking lama — konfirmasi ulang untuk tanggal 3–5 November.
 
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur di itinerary ini (taman, promenade, area belanja) datar dan aman untuk lutut. Lianhua Mountain hanya ±100m ketinggian dengan jalur landai/tangga rendah.
+- **Fisik/lutut:** semua jalur di itinerary ini (taman, plaza, area belanja) datar dan aman untuk lutut. Lianhua Mountain hanya ±100m ketinggian dengan jalur landai/tangga rendah. Hari 2 paling padat (±3 perpindahan metro) — sela dengan duduk santai di OCT-LOFT.
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — hindari makanan Sichuan/Hunan pedas yang umum di food court Shenzhen, prioritaskan masakan Cantonese ringan (kukus/sup).
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima luas dibanding kartu kredit asing — siapkan salah satunya sebelum berangkat (tautkan kartu asing atau top-up tunai di bandara/stasiun).
-- **Tempat berbayar** ditandai jelas — Window of the World (440 CNY/2 org) dan Ping An FC Free Sky (560 CNY/2 org) adalah dua tiket masuk utama trip ini.
+- **Tempat berbayar:** tidak ada di itinerary utama — semua destinasi gratis masuk.
 - **VPN:** diperlukan di Shenzhen (Tiongkok daratan) untuk akses Google/WhatsApp/Instagram — beda dari Hong Kong yang tidak perlu VPN.
 
 ---
@@ -200,14 +180,28 @@ Siapkan WeChat Pay/Alipay sebelum berangkat — banyak tempat makan kecil/warung
 ### Yang Perlu Disiapkan
 VPN aktif sebelum masuk perbatasan. WeChat Pay/Alipay (tautkan kartu asing atau top-up tunai). Shenzhen pakai CNY (Renminbi/RMB) — beda mata uang dari Hong Kong (HKD), jangan tertukar. Salinan paspor/visa Tiongkok (fisik & digital) — cek syarat visa Indonesia untuk Tiongkok daratan sebelum berangkat (beda dari syarat masuk Hong Kong SAR).
 
-## Hari 1 — Rabu, 4 November
+## Hari 1 — Selasa, 3 November
+
+### Shuiwei Night Market (水围夜市 · Shuǐwéi Yèshì) ✅
+Kawasan jajanan malam & food street di Shuiwei Village, Futian — bagian dari "Shuiwei 1368 Cultural District", dengan lebih dari 30 kios kuliner khas Chaoshan (Teochew) plus kafe & bar kreatif, salah satu night market paling dianjurkan di Shenzhen dan persis dekat area Futian Port.
+
+✅ Nama & info terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Huanggangcun Station (Line 7), Exit B2 — 1 halte dari Shixia (hotel), **tanpa transfer**, ±5 menit, lanjut jalan kaki singkat.
+
+**Jam Operasional:** mulai buka/setup dari 16:00, ramai penuh 17:00 hingga tengah malam.
+
+**Tiket:** Gratis masuk, jajan sesuai selera.
+
+- Foto/info: https://www.eastchinatrip.com/shuiwei-night-market-travel-guide/
+- Video referensi: https://www.youtube.com/results?search_query=Shuiwei+Night+Market+Shenzhen
 
 ### Lianhua Mountain Park (莲花山公园 · Liánhuā Shān Gōngyuán) ✅
 Taman kota di jantung Futian, dengan bukit setinggi ±100m yang mudah didaki — di puncaknya ada patung Deng Xiaoping dan plaza luas yang jadi salah satu spot terbaik memandang skyline CBD Futian, terutama saat lampu kota menyala malam hari.
 
 ✅ Nama & info terverifikasi dari sumber yang konsisten.
 
-**Akses:** Dari hotel (Shixia), metro Line 3 ke Children's Palace Station — 3 halte, **tanpa transfer**, ±8 menit. Exit H/I, jalan kaki ke gerbang barat taman. Juga bisa dari Civic Center Station (Line 2/4) atau Lianhua North Station (Line 4), semuanya dalam jarak jalan kaki dari Children's Palace.
+**Akses:** Dari Shuiwei/Huanggangcun: Line 7 balik ke Shixia (1 halte), transfer Line 3 ke Children's Palace Station — 3 halte, ±25 menit total. Dari hotel langsung: Line 3 ke Children's Palace, 3 halte tanpa transfer, ±8 menit. Stasiun ini punya Exit A–D dan F — pilih Exit F ke arah gerbang barat taman ⚠️ (cek papan petunjuk "Lianhua Mountain"), lalu jalan kaki ±5 menit. Alternatif: Civic Center Station (Line 2/4) atau Lianhua North Station (Line 4).
 
 **Jam Operasional:** setiap hari 06:00–23:00.
 
@@ -216,58 +210,30 @@ Taman kota di jantung Futian, dengan bukit setinggi ±100m yang mudah didaki —
 - Foto/info: https://us.trip.com/moments/poi-lian-hua-shan-park-83245/
 - Video referensi: https://www.youtube.com/results?search_query=Lianhua+Mountain+Park+Shenzhen
 
-## Hari 2 — Kamis, 5 November
+### Xinghe COCO Park (星河COCO Park · Xīnghé COCO Park) ✅ — Plan-B Hari 1 & Hari 3 (dekat hotel, jalur datar)
+Kompleks perbelanjaan & kuliner terbuka-tertutup di jantung Futian, dibuka 2007 — salah satu titik nongkrong warga lokal paling populer, taman kecil di tengahnya sering jadi tempat pertunjukan musik/seni jalanan gratis di sore-malam hari.
 
-### OCT-LOFT (华侨城创意文化园 · Huáqiáochéng Chuàngyì Wénhuà Yuán) ✅
-Bekas kawasan pabrik era 1980-an yang direvitalisasi jadi distrik kreatif — galeri seni kontemporer, studio desainer independen, dan kafe/bar bergaya industrial, sering disebut versi Shenzhen dari 798 Art District Beijing.
+✅ Nama terverifikasi dari sumber yang konsisten (nama stasiun metro terdekat resmi: Shopping Park).
 
-✅ Nama terverifikasi dari sumber yang konsisten.
+**Akses:** MTR Shopping Park Station (Line 3), 1 halte dari Shixia (hotel), **tanpa transfer**, ±5 menit.
 
-**Akses:** Dari hotel (Shixia), metro Line 3 ke Laojie lalu transfer Line 1 ke Stasiun Qiaocheng East (侨城东站), Exit A, ±5 menit jalan kaki — total ±45 menit.
+**Jam Operasional:** area luar 24 jam; toko/restoran umumnya 10:00–22:00.
 
-**Jam Operasional:** area terbuka 24 jam, gratis; toko/galeri umumnya 10:00–22:00, ramai & hidup sore-malam.
+**Tiket:** Gratis masuk & jalan-jalan, jajan sesuai selera.
 
-**Tiket:** Gratis masuk area.
+**Kenapa jadi Plan-B:** Hari 1 — pengganti Lianhua Mountain kalau lelah/gerimis; Hari 3 — pengganti Dongmen kalau terlalu ramai. Sama-sama 1 halte dari hotel, tanpa transfer, datar dan aman untuk lutut.
 
-- Foto/info: https://www.eastchinatrip.com/shenzhen-oct-loft-creative-culture-park-guide/
-- Video referensi: https://www.youtube.com/results?search_query=OCT-LOFT+Shenzhen
+- Foto/info: https://www.trip.com/guide/destination/coco-park-shenzhen.html
+- Video referensi: https://www.youtube.com/results?search_query=Xinghe+COCO+Park+Shenzhen
 
-### He Xiangning Art Museum (何香凝美术馆 · Hé Xiāngníng Měishùguǎn) ✅
-Museum seni yang didedikasikan untuk pelukis & aktivis politik He Xiangning (salah satu pendiri Kuomintang, kemudian tokoh penting RRT awal) — koleksi lukisan tradisional China gaya Lingnan, persis bersebelahan dengan OCT-LOFT.
-
-⚠️ Jam operasional dari sumber sekunder, belum diverifikasi dari situs resmi.
-
-**Akses:** Sama dengan OCT-LOFT — persis bersebelahan, Metro Line 1 Qiaocheng East.
-
-**Jam Operasional:** umumnya Selasa–Minggu 10:00–17:30, tutup Senin.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://en.wikipedia.org/wiki/He_Xiangning_Art_Museum
-- Video referensi: https://www.youtube.com/results?search_query=He+Xiangning+Art+Museum+Shenzhen
-
-## Hari 3 — Jumat, 6 November
-
-### Shenzhen Museum (深圳博物馆 · Shēnzhèn Bówùguǎn) ✅
-Museum utama kota yang memaparkan sejarah Shenzhen dari desa nelayan kecil hingga jadi kota metropolitan raksasa dalam kurun kurang dari 50 tahun — koleksi mencakup sejarah, seni, dan budaya rakyat (folk culture) Guangdong.
-
-✅ Nama & info terverifikasi dari sumber resmi.
-
-**Akses:** Dari hotel (Shixia), metro Line 3 ke Children's Palace lalu transfer Line 4 ke Civic Center Station, Exit B — total ±20-25 menit, 1x transfer.
-
-**Jam Operasional:** Selasa–Minggu 10:00–18:00, tutup Senin. Tidak perlu reservasi sejak Juli 2024 (langsung masuk setelah pemeriksaan keamanan).
-
-**Tiket:** Gratis.
-
-- Foto/info: https://shenzhenmuseum.com/museum/html/aboutus/visit-service.html
-- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Museum
+## Hari 2 — Rabu, 4 November
 
 ### Civic Center Cultural Plaza (市民中心文化广场 · Shìmín Zhōngxīn Wénhuà Guǎngchǎng) ✅
 Ruang publik terbuka di depan gedung Civic Center Shenzhen — jadi salah satu plaza foto paling populer warga lokal, dengan latar gedung pemerintahan berbentuk atap melengkung ikonik ("bird's wings").
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** Persis sebelahan Shenzhen Museum, sama-sama di kompleks Civic Center — jalan kaki, tidak perlu transportasi tambahan.
+**Akses:** Dari hotel (Shixia): metro Line 3 ke Children's Palace, transfer Line 4 ke Civic Center Station, Exit B — total ±20-25 menit, 1x transfer. Persis sebelahan Shenzhen Museum & Library, jalan kaki, tidak perlu transportasi tambahan.
 
 **Jam Operasional:** area terbuka 24 jam, gratis.
 
@@ -290,6 +256,66 @@ Perpustakaan utama kota, bagian dari Shenzhen Cultural Center — salah satu per
 - Foto/info: https://en.wikipedia.org/wiki/Shenzhen_Library
 - Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Library+Civic+Center
 
+### Shenzhen Museum (深圳博物馆 · Shēnzhèn Bówùguǎn) ✅
+Museum utama kota yang memaparkan sejarah Shenzhen dari desa nelayan kecil hingga jadi kota metropolitan raksasa dalam kurun kurang dari 50 tahun — koleksi mencakup sejarah, seni, dan budaya rakyat (folk culture) Guangdong.
+
+✅ Nama & info terverifikasi dari sumber resmi.
+
+**Akses:** Civic Center Station (Line 2/4), Exit B, jalan kaki ke kompleks Civic Center — satu kawasan dengan Cultural Plaza & Library di atas.
+
+**Jam Operasional:** Selasa–Minggu 10:00–18:00, tutup Senin. Tidak perlu reservasi sejak Juli 2024 (langsung masuk setelah pemeriksaan keamanan).
+
+**Tiket:** Gratis.
+
+- Foto/info: https://shenzhenmuseum.com/museum/html/aboutus/visit-service.html
+- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Museum
+
+### He Xiangning Art Museum (何香凝美术馆 · Hé Xiāngníng Měishùguǎn) ✅
+Museum seni yang didedikasikan untuk pelukis & aktivis politik He Xiangning (salah satu pendiri Kuomintang, kemudian tokoh penting RRT awal) — koleksi lukisan tradisional China gaya Lingnan, persis bersebelahan dengan OCT-LOFT.
+
+⚠️ Jam operasional dari sumber sekunder, belum diverifikasi dari situs resmi.
+
+**Akses:** Metro Line 1 Qiaocheng East (Exit A). Dari Civic Center: Line 4 ke Convention & Exhibition Center (1 halte), transfer Line 1 arah Airport East ⚠️ (jumlah halte belum diverifikasi), total ±25-30 menit. Dari hotel (Shixia): Line 3 ke Laojie, transfer Line 1, ±45 menit.
+
+**Jam Operasional:** umumnya Selasa–Minggu 10:00–17:30, tutup Senin.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://en.wikipedia.org/wiki/He_Xiangning_Art_Museum
+- Video referensi: https://www.youtube.com/results?search_query=He+Xiangning+Art+Museum+Shenzhen
+
+### OCT-LOFT (华侨城创意文化园 · Huáqiáochéng Chuàngyì Wénhuà Yuán) ✅
+Bekas kawasan pabrik era 1980-an yang direvitalisasi jadi distrik kreatif — galeri seni kontemporer, studio desainer independen, dan kafe/bar bergaya industrial, sering disebut versi Shenzhen dari 798 Art District Beijing.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** Stasiun Qiaocheng East (侨城东站, Line 1), Exit A, ±5 menit jalan kaki. Rute dari hotel (Shixia): Line 3 ke Laojie lalu transfer Line 1, total ±45 menit; dari Civic Center: via Convention & Exhibition Center (lihat He Xiangning Art Museum).
+
+**Jam Operasional:** area terbuka 24 jam, gratis; toko/galeri umumnya 10:00–22:00, ramai & hidup sore-malam.
+
+**Tiket:** Gratis masuk area.
+
+- Foto/info: https://www.eastchinatrip.com/shenzhen-oct-loft-creative-culture-park-guide/
+- Video referensi: https://www.youtube.com/results?search_query=OCT-LOFT+Shenzhen
+
+### Shenzhen Bay Park (深圳湾公园 · Shēnzhèn Wān Gōngyuán) ✅ — Plan-B Hari 2 (taman pesisir gratis untuk sore)
+Taman pesisir sepanjang ±13km di sisi barat Shenzhen, dengan jalur mangrove boardwalk ±2km dan lebih dari 189 spesies burung — jadi salah satu spot sunset & bersepeda favorit warga lokal, memandang langsung ke Hong Kong di seberang teluk.
+
+✅ Nama & info terverifikasi dari sumber yang konsisten.
+
+**Akses:** Metro Line 9 atau 11, Stasiun Shenzhen Bay Park, Exit D2 — langsung di tepi laut. Dari kawasan OCT-LOFT butuh transfer tambahan (⚠️ rute belum diverifikasi, cek Amap saat di lokasi).
+
+**Jam Operasional:** taman buka 24 jam, gratis. Sepeda sewaan ±CNY 30/jam (dilarang naik weekend/libur 09:00-18:00 kecuali sepeda pribadi).
+
+**Tiket:** Gratis.
+
+**Kenapa jadi Plan-B:** kalau OCT-LOFT terasa cukup setengah hari, taman pesisir ini pengganti sore yang santai dan datar — tapi arah berlawanan dari kluster utama sehingga hanya cocok kalau waktu longgar.
+
+- Foto/info: https://intotravelchina.com/attractions/shenzhen_attraction/shenzhen_bay_park.html
+- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Bay+Park
+
+## Hari 3 — Kamis, 5 November
+
 ### Dongmen Pedestrian Street (东门步行街 · Dōngmén Bùxíng Jiē) ✅
 Kawasan pasar pejalan kaki tertua & terbesar Shenzhen di Distrik Luohu — pusat perbelanjaan murah, jajanan kaki lima, dan suasana lokal otentik sejak sebelum era reformasi ekonomi Shenzhen.
 
@@ -304,39 +330,9 @@ Kawasan pasar pejalan kaki tertua & terbesar Shenzhen di Distrik Luohu — pusat
 - Foto/info: https://en.wikipedia.org/wiki/Dongmen,_Shenzhen
 - Video referensi: https://www.youtube.com/results?search_query=Dongmen+Pedestrian+Street+Shenzhen
 
-### Shuiwei Night Market (水围夜市 · Shuǐwéi Yèshì) ✅
-Kawasan jajanan malam & food street di Shuiwei Village, Futian — bagian dari "Shuiwei 1368 Cultural District", dengan lebih dari 30 kios kuliner khas Chaoshan (Teochew) plus kafe & bar kreatif, salah satu night market paling dianjurkan di Shenzhen dan persis dekat area Futian Port.
-
-✅ Nama & info terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Huanggangcun Station (Line 7), Exit B2 — 1 halte dari Shixia (hotel), **tanpa transfer**, ±5 menit, lanjut jalan kaki singkat.
-
-**Jam Operasional:** mulai buka/setup dari 16:00, ramai penuh 17:00 hingga tengah malam.
-
-**Tiket:** Gratis masuk, jajan sesuai selera.
-
-- Foto/info: https://www.eastchinatrip.com/shuiwei-night-market-travel-guide/
-- Video referensi: https://www.youtube.com/results?search_query=Shuiwei+Night+Market+Shenzhen
-
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary maupun Plan-B — alasannya ditulis di masing-masing uraian.
-
-### Xinghe COCO Park (星河COCO Park · Xīnghé COCO Park) ✅
-Kompleks perbelanjaan & kuliner terbuka-tertutup di jantung Futian, dibuka 2007 — salah satu titik nongkrong warga lokal paling populer, taman kecil di tengahnya sering jadi tempat pertunjukan musik/seni jalanan gratis di sore-malam hari.
-
-✅ Nama terverifikasi dari sumber yang konsisten (nama stasiun metro terdekat resmi: Shopping Park).
-
-**Akses:** MTR Shopping Park Station (Line 3), 1 halte dari Shixia (hotel), **tanpa transfer**, ±5 menit.
-
-**Jam Operasional:** area luar 24 jam; toko/restoran umumnya 10:00–22:00.
-
-**Tiket:** Gratis masuk & jalan-jalan, jajan sesuai selera.
-
-**Kenapa tidak dimasukkan:** digantikan Shuiwei Night Market (Hari 3) yang lebih otentik (jajanan Chaoshan, bukan mal) dan sama-sama 1 halte dari hotel — jadi Plan-B malam kalau Shuiwei tidak sesuai selera.
-
-- Foto/info: https://www.trip.com/guide/destination/coco-park-shenzhen.html
-- Video referensi: https://www.youtube.com/results?search_query=Xinghe+COCO+Park+Shenzhen
 
 ### Huaqiangbei (华强北 · Huáqiángběi) ✅
 Kawasan pusat elektronik terbesar Asia — deretan mal khusus komponen elektronik, gadget, dan aksesoris sejak era 1980-an, jadi simbol kebangkitan industri teknologi Shenzhen ("Silicon Valley China").
@@ -397,7 +393,7 @@ Landmark budaya terbaru Shenzhen, baru dibuka November 2025 — dirancang arsite
 
 **Tiket:** Area plaza & sebagian pameran gratis; pameran khusus (kolaborasi Tate/Design Museum London) kemungkinan berbayar.
 
-**Kenapa tidak dimasukkan:** satu kawasan dengan Shenzhen Bay Park (lihat entri sebelumnya) — jauh dari kluster Futian/Luohu itinerary ini, cocok jadi dedicated half-day di Nanshan kalau trip diperpanjang.
+**Kenapa tidak dimasukkan:** satu kawasan dengan Shenzhen Bay Park (lihat Plan-B Hari 2) — jauh dari kluster Futian/Luohu itinerary ini, cocok jadi dedicated half-day di Nanshan kalau trip diperpanjang.
 
 - Foto/info: https://en.wikipedia.org/wiki/Shenzhen_Bay_Cultural_Plaza
 - Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Bay+Cultural+Plaza
@@ -530,22 +526,6 @@ Desa yang berkembang sejak 1989 jadi pusat produksi lukisan minyak reproduksi te
 - Foto/info: https://www.eastchinatrip.com/shenzhen-dafen-oil-painting-village-guide/
 - Video referensi: https://www.youtube.com/results?search_query=Dafen+Oil+Painting+Village
 
-### Shenzhen Bay Park (深圳湾公园 · Shēnzhèn Wān Gōngyuán) ✅
-Taman pesisir sepanjang ±13km di sisi barat Shenzhen, dengan jalur mangrove boardwalk ±2km dan lebih dari 189 spesies burung — jadi salah satu spot sunset & bersepeda favorit warga lokal, memandang langsung ke Hong Kong di seberang teluk.
-
-✅ Nama & info terverifikasi dari sumber yang konsisten.
-
-**Akses:** Metro Line 9 atau 11, Stasiun Shenzhen Bay Park, Exit D2 — langsung di tepi laut.
-
-**Jam Operasional:** taman buka 24 jam, gratis. Sepeda sewaan ±CNY 30/jam (dilarang naik weekend/libur 09:00-18:00 kecuali sepeda pribadi).
-
-**Tiket:** Gratis.
-
-**Kenapa tidak dimasukkan:** di Distrik Nanshan bagian barat, arah berlawanan dari kluster Window of the World/OCT-LOFT — butuh hari tersendiri kalau ingin dinikmati santai, dijadikan Plan-B Hari 3 saja.
-
-- Foto/info: https://intotravelchina.com/attractions/shenzhen_attraction/shenzhen_bay_park.html
-- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Bay+Park
-
 ### Xiaomeisha Beach (小梅沙 · Xiǎoméishā) ⚠️
 Pantai populer di sisi timur Shenzhen (Distrik Yantian), pasir putih dan air lebih jernih dibanding pantai kota lain di China — kini terhubung Metro Line 8 sejak 2023, jadi jauh lebih mudah dijangkau dibanding sebelumnya.
 
@@ -557,7 +537,7 @@ Pantai populer di sisi timur Shenzhen (Distrik Yantian), pasir putih dan air leb
 
 **Tiket:** Pantai gratis masuk; fasilitas tambahan (Xiaomeisha Sea World, dll) berbayar terpisah.
 
-**Kenapa tidak dimasukkan:** di sisi timur jauh (Yantian), butuh ±1 jam perjalanan dari hotel — cocok untuk trip khusus pantai sehari penuh, di luar fokus itinerary 4 hari ini.
+**Kenapa tidak dimasukkan:** di sisi timur jauh (Yantian), butuh ±1 jam perjalanan dari hotel — cocok untuk trip khusus pantai sehari penuh, di luar fokus itinerary 3 hari ini.
 
 - Foto/info: https://en.wikipedia.org/wiki/Xiaomeisha
 - Video referensi: https://www.youtube.com/results?search_query=Xiaomeisha+Beach+Shenzhen
