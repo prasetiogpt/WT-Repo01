@@ -105,15 +105,15 @@ header.top{
 .title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;}
 .page-title{font-size:1.15rem;font-weight:700;letter-spacing:-.01em;white-space:nowrap;}
 .page-title .page-sub-inline{font-weight:500;color:var(--ink-soft);font-size:.85rem;}
-.top-actions{display:flex;gap:6px;flex:0 0 auto;}
+.top-actions{display:flex;gap:4px;flex:0 0 auto;}
 .theme-toggle,.icon-btn{
-  flex:0 0 auto;width:32px;height:32px;border-radius:9px;
+  flex:0 0 auto;width:26px;height:26px;border-radius:7px;
   border:1px solid var(--border-strong);background:var(--paper-raised);
   color:var(--ink);display:flex;align-items:center;justify-content:center;
   cursor:pointer;
 }
 .theme-toggle:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
-.theme-toggle svg,.icon-btn svg{width:16px;height:16px;}
+.theme-toggle svg,.icon-btn svg{width:13px;height:13px;}
 .icon-btn.active{background:var(--amber-soft);border-color:var(--amber);color:var(--amber-ink);}
 body.hide-reviewed .lampiran-item.reviewed{display:none;}
 body.hide-reviewed table.itin tbody tr.done{display:none;}
@@ -501,6 +501,10 @@ document.getElementById('hide-reviewed-btn').addEventListener('click', ()=>{
    if this same downloaded file is reopened later). */
 document.getElementById('download-html-btn').addEventListener('click', ()=>{
   const clone = document.documentElement.cloneNode(true);
+  // Tab & panel kota dibangun ulang oleh script saat file dibuka — kosongkan
+  // di salinan supaya tidak dobel (dan file hasil download jadi jauh lebih kecil).
+  clone.querySelector('#city-tabs').innerHTML = '';
+  clone.querySelector('#city-panels').innerHTML = '';
   const seed = document.createElement('script');
   seed.textContent =
     'try{' +
@@ -3874,6 +3878,10 @@ const cityTabsWrap = document.getElementById('city-tabs');
 const cityPanelsWrap = document.getElementById('city-panels');
 
 const AIRPORT_CODES = {nanjing:'NKG', wuxi:'WUX', hongkong:'HKG', xiamen:'XIA'};
+// Pengaman: kosongkan wadah dulu supaya tab/panel tidak dobel kalau HTML
+// yang dibuka adalah salinan DOM yang sudah terender.
+cityTabsWrap.innerHTML = '';
+cityPanelsWrap.innerHTML = '';
 destinations.forEach((dest,i)=>{
   const tabBtn = document.createElement('button');
   tabBtn.className = 'city-tab' + (i===0 ? ' active' : '');
