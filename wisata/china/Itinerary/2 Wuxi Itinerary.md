@@ -21,7 +21,7 @@
 >
 > (17) **2026-08-22** — Hotel & tiket HSR kedatangan (dari Nanjing) sekarang masuk GRAND TOTAL Ringkasan Budget (sebelumnya "belum termasuk harga hotel"). Hotel Rp1.400.000 (4 malam, fixed), tiket HSR kedatangan ⚠️ estimasi ±CNY 65/org. GRAND TOTAL naik dari 1.287 CNY (Rp3.410.550, aktivitas saja) jadi **1.945 CNY (Rp5.155.050)**. Estimasi tiket HSR Wuxi→Suzhou ditambahkan ke "Informasi Transportasi Pulang" — biaya ini masuk budget Suzhou (kota tujuan), bukan Wuxi.
 >
-> (18) **2026-08-22 — koreksi harga dari pengguna**: tiket HSR kedatangan dari Nanjing dikoreksi dari estimasi ±CNY 65/org jadi harga fixed **CNY 200/org**; tiket HSR Wuxi→Suzhou (di "Informasi Transportasi Pulang") dikoreksi dari estimasi ±CNY 20/org jadi **CNY 50/org**; hotel dikoreksi dari Rp1.400.000 jadi **Rp2.000.000** (4 malam). GRAND TOTAL naik dari 1.945 CNY (Rp5.155.050) jadi **2.442 CNY (Rp6.470.550)**. (19) **2026-08-22 — bug fix**: section "### Hotel" (format tabel) dikonversi jadi prose `**Hotel:** ...` (sama seperti Nanjing/Suzhou/Hong Kong) — format tabel lama bikin teks pipe mentah (`| Nama | ... |`) bocor ke kartu Transport Pergi di Wisata.html karena parser cuma baca tabel PERTAMA di section, tabel kedua (Hotel) ikut dianggap teks biasa. Sekaligus memperbaiki kotak Hotel yang tidak muncul sebagai banner terpisah (fitur baru hari ini) karena parser mencari paragraf berawalan `**Hotel:**`, bukan tabel.
+> (18) **2026-08-22 — koreksi harga dari pengguna**: tiket HSR kedatangan dari Nanjing dikoreksi dari estimasi ±CNY 65/org jadi harga fixed **CNY 200/org**; tiket HSR Wuxi→Suzhou (di "Informasi Transportasi Pulang") dikoreksi dari estimasi ±CNY 20/org jadi **CNY 50/org**; hotel dikoreksi dari Rp1.400.000 jadi **Rp2.000.000** (4 malam). GRAND TOTAL naik dari 1.945 CNY (Rp5.155.050) jadi **2.442 CNY (Rp6.470.550)**. (19) **2026-08-22 — bug fix**: section "### Hotel" (format tabel) dikonversi jadi prose `**Hotel:** ...` (sama seperti Nanjing/Suzhou/Hong Kong) — format tabel lama bikin teks pipe mentah (`| Nama | ... |`) bocor ke kartu Transport Pergi di Wisata.html karena parser cuma baca tabel PERTAMA di section, tabel kedua (Hotel) ikut dianggap teks biasa. Sekaligus memperbaiki kotak Hotel yang tidak muncul sebagai banner terpisah (fitur baru hari ini) karena parser mencari paragraf berawalan `**Hotel:**`, bukan tabel. (20) **2026-09-20 — verifikasi Amap (3 foto dari pengguna)**: (a) **Heliekou exit ke Lixi Park dikonfirmasi Exit 6** (sebelumnya ⚠️ belum terverifikasi). (b) **Liyuan Garden→Gonghu Bay Wetland Park dikoreksi dari estimasi ±17km/±35-40 menit jadi ±13-14km/±19-22 menit** (terverifikasi Amap, dua opsi rute) — jadwal Hari 2 dipadatkan (Didi 15:30–15:50, bukan 15:30–16:15), tarif Didi tetap estimasi CNY 35/2org karena foto tidak menampilkan fare langsung. (c) ⚠️ **Temuan terbuka, BELUM ditindaklanjuti**: foto ketiga menunjukkan **Taihu Yuantouzhu → Central Lihu Park cuma ±2,1-2,4km/±31-36 menit jalan kaki** — jauh lebih dekat dari asumsi bahwa klaster "Lihu Timur" (Hari 2) dan "Lihu Barat" (Hari 4) adalah 2 klaster jauh yang perlu hari terpisah. **Belum direstrukturisasi** karena jarak Yuantouzhu↔Lihu National Wetland Park, Yuantouzhu/Bogong Island↔klaster Lihu Timur, dan posisi Taihu Lake Promenade masih belum diverifikasi Amap — merombak pembagian Hari 2/Hari 4 sekarang berisiko mengulang pola salah-tebak-jarak yang sudah terjadi di revisi (13)/(15)/(16). Perlu foto Amap tambahan dulu sebelum keputusan gabung/pisah hari diambil.
 
 ## Informasi Transportasi
 
@@ -72,7 +72,7 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 2 — Rabu, 7 Oktober (Klaster Lihu Timur — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)
 
-**Rute:** Hotel → Tanduqiao (732m jalan kaki) → Line 1 + transfer **Line 2** → **Heliekou** (Lixi Park). Lanjut Didi ke **Central Lihu Park** (±4,5km, terverifikasi Amap). Central Lihu Park → **Liyuan Garden** ±1,2km (jalan kaki). Liyuan Garden → **Gonghu Bay Wetland Park** via Didi (⚠️ jarak persis leg baru ini belum di-Amap-kan — dipakai estimasi yang sama dengan leg hotel↔Gonghu Bay versi sebelumnya, ±17km/±35-40 menit, cek Amap on-site kalau memungkinkan). Malam Didi langsung balik ke hotel dari Gonghu Bay.
+**Rute:** Hotel → Tanduqiao (732m jalan kaki) → Line 1 + transfer **Line 2** → **Heliekou, Exit 6** (Lixi Park) — exit terverifikasi Amap. Lanjut Didi ke **Central Lihu Park** (±4,5km, terverifikasi Amap). Central Lihu Park → **Liyuan Garden** ±1,2km (jalan kaki). Liyuan Garden → **Gonghu Bay Wetland Park** via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min atau alternatif 13km/22min; jauh lebih dekat dari estimasi lama ±17km/±35-40 menit). Malam Didi langsung balik ke hotel dari Gonghu Bay.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -85,8 +85,8 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | 12:30–13:00 | Jalan kaki ke **Liyuan Garden** | ±1,2km | — | — |
 | 13:00–14:00 | Makan siang sekitar Liyuan Garden | ±CNY 25/org | 50 | Rp132.500 |
 | 14:00–15:30 | **Liyuan Garden** — taman klasik tepi Li Lake, jembatan zigzag & paviliun tepi air | CNY 45/org | 90 | Rp238.500 |
-| 15:30–16:15 | Didi ke **Gonghu Bay Wetland Park** | ⚠️ Estimasi ±17km/±35-40 menit (dipakai dari leg hotel↔Gonghu versi lama, belum diverifikasi Amap untuk leg baru ini) | 35 | Rp92.750 |
-| 16:15–18:30 | **Gonghu Bay Wetland Park** — jalur wetland tepi danau, segmen paling scenic ±4km | Gratis. Sepeda sewa opsional ±CNY 17/jam/org (2 jam) | 34 | Rp90.100 |
+| 15:30–15:50 | Didi ke **Gonghu Bay Wetland Park** | 14km/19min terverifikasi Amap (tarif tetap estimasi) | 35 | Rp92.750 |
+| 15:50–18:30 | **Gonghu Bay Wetland Park** — jalur wetland tepi danau, segmen paling scenic ±4km | Gratis. Sepeda sewa opsional ±CNY 17/jam/org (2 jam) | 34 | Rp90.100 |
 | 18:30–19:30 | Makan malam sekitar Gonghu Bay/Taihu New Town | ±CNY 25/org | 50 | Rp132.500 |
 | 19:30–20:30 | Lanjut jalan santai Gonghu Bay/tepi danau (opsional, isi waktu sampai malam) | Gratis | — | — |
 | 20:30–21:10 | Didi kembali ke hotel | ⚠️ Estimasi ±35-40 menit | 35 | Rp92.750 |
@@ -276,7 +276,7 @@ Taman tepi Lihu Lake di kawasan Lixi Road, Distrik Binhu — bagian dari rangkai
 
 ✅ Terverifikasi langsung di Amap oleh pengguna (nama, alamat: Lixi Road, seberang Lixi Xiyuan). Alamat lama di versi dokumen ini (151 Shuanghong Road) SALAH — itu alamat Central Lihu Park.
 
-**Akses:** dari hotel, jalan kaki ke Tanduqiao (732m) → MRT Line 1 + transfer Line 2 → Stasiun **Heliekou** (area Lixi Road), 6 halte, ¥3/org, ±45 menit. ⚠️ Exit/gerbang taman terdekat dari stasiun belum terverifikasi, cek Amap on-site.
+**Akses:** dari hotel, jalan kaki ke Tanduqiao (732m) → MRT Line 1 + transfer Line 2 → Stasiun **Heliekou, keluar Exit 6** (area Lixi Road) — exit terverifikasi Amap, 6 halte, ¥3/org, ±45 menit.
 
 **Jam Operasional:** area taman terbuka, gratis, mengikuti jam kawasan Lihu (±06:00–21:00).
 
@@ -318,7 +318,7 @@ Kawasan lindung ekologi tepi utara Danau Taihu di persimpangan Gonghu Avenue & H
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** ±17km dari Lixi Park/Central Lihu Park via Didi. ⚠️ Leg Liyuan Garden→Gonghu Bay (rute Hari 2 saat ini) memakai estimasi yang sama — belum di-Amap-kan spesifik, cek on-site.
+**Akses:** dari **Liyuan Garden** (rute Hari 2 saat ini) via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min, alternatif 13km/22min). Tarif Didi tetap estimasi ±CNY 35/2 org (belum ada angka fare langsung dari Amap).
 
 **Jam Operasional:** taman terbuka ±06:00–20:00, gratis, tidak ada hari libur rutin.
 
