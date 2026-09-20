@@ -256,8 +256,12 @@ function uniqueHeaders(headers){
 function parseText(raw, sourceName=''){
   const lines=String(raw || '').replace(/^\uFEFF/,'').split(/\r?\n/).filter(line=>line.trim()!=='');
   if(!lines.length) return {columns:[], rows:[]};
-  let headerIndex=lines.findIndex(line=>/pilih|mandarin|english|pin\s*yin|pinyin|mand\s*kw|eng\s*kw|indo\s*kw/i.test(line));
-  if(headerIndex<0) headerIndex=0;
+  const headerWords=[/pilih/i,/mandarin/i,/english/i,/pin\s*yin|pinyin/i,/mand\s*kw/i,/eng\s*kw/i,/indo\s*kw/i];
+  let headerIndex=0, bestScore=0;
+  lines.slice(0,15).forEach((line,i)=>{
+    const score=headerWords.filter(re=>re.test(line)).length;
+    if(score>bestScore){ bestScore=score; headerIndex=i; }
+  });
   const delimiter=detectDelimiter(lines[headerIndex]);
   const columns=uniqueHeaders(splitSmart(lines[headerIndex], delimiter));
   const rows=[];
