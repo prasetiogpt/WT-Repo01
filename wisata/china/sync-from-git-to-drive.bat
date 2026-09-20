@@ -2,8 +2,8 @@
 setlocal
 
 set "REPO=C:\Users\admin\git-repos\wt-repo01"
-set "DRIVE_ITIN=I:\My Drive\Travelling\China\Itinerary"
-set "DRIVE_HTML=I:\My Drive\Travelling\HTML Wisata"
+set "DRIVE_ITIN=I:\My Drive\WS Fam\Travelling\China\Itinerary"
+set "DRIVE_HTML=I:\My Drive\WS Fam\Travelling\HTML Wisata"
 set "LOG=%REPO%\wisata\china\sync.log"
 
 echo [%date% %time%] Starting wisata git sync... >> "%LOG%"

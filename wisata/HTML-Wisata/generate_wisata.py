@@ -942,7 +942,16 @@ def main():
     if not MD_DIR.exists():
         sys.exit(f"[!] Folder tidak ketemu: {MD_DIR}")
 
-    md_paths = sorted(MD_DIR.glob("*.md"), key=lambda p: p.name.lower())
+    # Urut: nomor file (angka di depan), lalu kota utama SEBELUM varian custom
+    # (mis. "1 Nanjing.md" sebelum "1 Nanjing C1.md"), lalu nama. Tanpa ini
+    # "1 Nanjing C1.md" ikut terurut sebelum "1 Nanjing.md" (spasi < titik)
+    # dan tab custom jadi tab pertama yang terbuka.
+    def _sort_key(p):
+        m = re.match(r"^(\d+)", p.name)
+        num = int(m.group(1)) if m else 10**6
+        is_custom = bool(re.search(r"\sC\d+[a-z]?\.md$", p.name, re.I))
+        return (num, is_custom, p.name.lower())
+    md_paths = sorted(MD_DIR.glob("*.md"), key=_sort_key)
     if not md_paths:
         sys.exit(f"[!] Tidak ada file .md di {MD_DIR}")
 

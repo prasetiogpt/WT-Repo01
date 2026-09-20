@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wisata-china",
+      "runtimeExecutable": "py",
+      "runtimeArgs": ["-m", "http.server", "8743", "--directory", "wisata/china"],
+      "port": 8743
+    },
+    {
+      "name": "html-mandarin-player",
+      "runtimeExecutable": "py",
+      "runtimeArgs": ["-m", "http.server", "8744", "--directory", "html-mandarin-player"],
+      "port": 8744
+    }
+  ]
+}

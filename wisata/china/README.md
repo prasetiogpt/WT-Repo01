@@ -54,8 +54,19 @@ jadi angka lebih besar otomatis render sebagai tab paling belakang). **Bukan** k
 `C<Angka>` default skill (itu untuk revisi custom yang memang menempel ke jadwal kota asli) —
 `xia1`/`xia2` khusus supaya (a) selalu di tab paling belakang, (b) nama/id destinasi beda dari
 kota aslinya jadi tidak ketuker di tab bar (tambahkan juga entri `AIRPORT_CODES` di
-`Wisata.html` kalau kode 3-huruf fallback-nya bentrok dengan tab lain, lihat contoh
-`xiamenxia1:'XIA1'`).
+`Wisata.html` kalau kode 3-huruf fallback-nya bentrok dengan tab lain — file test xia1 sudah
+dihapus, contoh entri yang masih dipakai: `'1nanjingc1':'NKG·C1'`).
+
+**Urutan & label tab custom `C<Angka>` (revisi custom yang menempel ke kota asli):** generator
+mengurutkan per nomor file, kota utama dulu lalu varian custom-nya (mis. `1 Nanjing.md`, lalu
+`1 Nanjing C1.md`, `1 Nanjing C1b.md`), supaya tab pertama yang terbuka selalu kota utama. Tiap
+varian custom WAJIB didaftarkan di `AIRPORT_CODES` (di `Wisata.html`, bagian tengah file yang
+ditulis manual, tidak ditimpa generator) dengan label yang beda, mis. `NKG·C1` — kalau tidak,
+fallback-nya cuma 3 huruf pertama nama (mis. "1NA") dan beberapa tab jadi kembar. Kunci entrinya
+adalah `id` destinasi yang muncul di `Wisata.html` (huruf kecil tanpa spasi).
+
+**Tombol download di header** menyimpan snapshot halaman; tab & panel kota dikosongkan di salinan
+karena dibangun ulang oleh script saat file dibuka (kalau tidak, tab jadi dobel tiap download).
 
 Repo ini **publik** (lihat catatan Pages di atas) — hindari commit data sangat sensitif (nomor
 paspor, dll) kalau ada di catatan itinerary.
