@@ -620,6 +620,78 @@ function hotelsLine(items, city){
 /* === DESTINATIONS:START === */
 const destinations = [
   {
+    id:`1nanjingc1`,
+    name:`1 Nanjing C1`,
+    dates:`10 Oktober · Jendela waktu 12:00–18:00`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Sabtu, 10 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+
+      ],
+      warn:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Sabtu, 10 Oktober`, label:`Xuanwu Lake → Mochou Lake → Qinhuai River`,
+        items:[
+          [`12:00–12:10`,`Makan siang cepat dekat hotel sebelum berangkat`,`CNY 20/org`,``,`CNY 60`,`Rp159.000`],
+          [`12:10–12:20`,`Line 3 dari Fuqiao ke Jimingsi (1 stasiun ke utara, langsung)`,`Keluar Exit 5`,``,`CNY 6`,`Rp15.900`],
+          [`12:20–14:20`,`<b>Xuanwu Lake Park</b>`,`Dari Exit 5 Jimingsi, jalan kaki ±500m ke Jiefang Gate. Gratis, jalur datar. (Jiming Temple persis di area yang sama TIDAK dikunjungi — sudah ditandai dikunjungi/dilewatkan)`,``,``,``],
+          [`14:20–14:55`,`Line 3 Jimingsi → transfer Daxinggong → Line 2 ke Mochouhu`,`Transfer Daxinggong: platform Line 2/3 beda level, ikuti papan petunjuk tanpa keluar stasiun`,``,`CNY 9`,`Rp23.850`],
+          [`14:55–16:25`,`<b>Mochou Lake Park</b>`,`Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar`,``,``,``],
+          [`16:25–16:50`,`Line 2 Mochouhu → transfer Daxinggong → Line 3 ke Fuzimiao`,`Transfer Daxinggong lagi, turun Fuzimiao Exit 2`,``,`CNY 9`,`Rp23.850`],
+          [`16:50–18:00`,`<b>Confucius Temple Pedestrian Street &amp; Qinhuai River</b>`,`Keluar Exit 2 Fuzimiao, jalan kaki ±300m. Gratis, mulai terlihat lampion menjelang malam`,``,``,``],
+          [`18:00`,`Selesai jendela waktu — lanjut makan malam sesuai rencana masing-masing`,``,``,``,``],
+        ],
+        total:{cny:`CNY <b>84</b>`, idr:`<b>Rp222.600</b>`},
+        planb:`<b>Presidential Palace</b> (总统府) — searah/1 stasiun dari Daxinggong (titik transfer yang sudah dilewati 2x hari ini), jadi gampang disisipkan kalau salah satu dari 3 destinasi utama ternyata terlalu padat/gagal dikunjungi. Buka Sabtu (cuma tutup Senin, hari ini aman). Detail lengkap lihat Lampiran.`,
+      },
+    ],
+
+    notes:[
+    ],
+
+    lampiran:[
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Xuanwu Lake Park (玄武湖景区)`,
+       nameEn:`Xuanwu Lake Park`,
+       nameHanzi:`玄武湖景区`,
+       text:`Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad ke-3. Namanya "Xuanwu" berasal dari mitos naga hitam (perpaduan kura-kura &amp; ular) yang konon pernah terlihat di sini, dipercaya sebagai dewa air oleh penganut Tao. Selama berabad-abad danau ini punya fungsi berubah-ubah: tempat latihan berburu keluarga kaisar, arena latihan perang laut di masa Dinasti Song, sampai gudang catatan sensus &amp; pajak negara ('Gudang Registrasi Kuning') di masa Dinasti Ming. Baru pada 1911 diubah jadi taman publik seperti sekarang. <b>Akses:</b> MRT Line 3/4, turun Stasiun Jimingsi, keluar Exit 5, jalan kaki ±500m ke Jiefang Gate (salah satu pintu masuk taman). Tiket trolley listrik keliling danau dibeli langsung di loket dekat dermaga, bukan online. <b>Jam Operasional:</b> ±06:00–21:00 setiap hari, gratis, tidak ada hari libur rutin. Jam puncak: pagi hari (warga lokal olahraga) dan sore/malam akhir pekan. <b>Tiket:</b> Gratis masuk taman; trolley listrik keliling danau CNY 30/org (opsional).`,
+       wiki:`https://en.wikipedia.org/wiki/Xuanwu_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Xuanwu+Lake+Nanjing`,
+       nearby:[`Cuizhou Islet (翠洲) — pulau paling populer`,`Trolley listrik keliling 5 pulau (CNY 30)`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Mochou Lake Park (莫愁湖公园)`,
+       nameEn:`Mochou Lake Park`,
+       nameHanzi:`莫愁湖公园`,
+       text:`Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (386-589 M). Versi paling populer: ia menikah dan hidup bahagia, sampai suaminya direkrut jadi tentara dan tak pernah kembali. Saking rindunya, konon ia "berubah menjadi danau" dengan harapan airnya mengalir sampai ke tempat suaminya berada — makanya danau ini dinamai untuk mengenang kesetiaannya. Dulunya bagian dari Sungai Yangtze sebelum aliran sungai bergeser, taman ini resmi dibuka tahun 1929. <b>Akses:</b> MRT Line 2/7, turun Stasiun Mochouhu, keluar Exit 1 — langsung di depan loket taman. <b>Jam Operasional:</b> Juni–Agustus 06:30–21:30; September–Mei 07:00–21:00. Gratis, tidak perlu reservasi, tidak ada hari libur rutin (aula pameran di dalamnya 08:30–17:00). Jam puncak: pagi &amp; sore akhir pekan. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Mochou_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing`,
+       nearby:[`Shengqi Building/rock garden di dalam taman`]},
+      {group:`h1`, tag:`main`, label:`Itinerary utama`, title:`Confucius Temple Pedestrian Street &amp; Qinhuai River (夫子庙秦淮风光带)`,
+       nameEn:`Confucius Temple Pedestrian Street & Qinhuai River`,
+       nameHanzi:`夫子庙秦淮风光带`,
+       text:`Kawasan ini bermula dari Universitas Kekaisaran Nanjing yang didirikan tahun 337 M di tepi Sungai Qinhuai. Kuil Konfusius pertama dibangun tahun 384 M, lalu dibangun ulang secara resmi tahun 1034 (Dinasti Song) sebagai tempat pemujaan Konfusius — salah satu yang paling terjaga di China untuk jenisnya. Bangunan yang berdiri sekarang berasal dari abad ke-19 (Dinasti Qing), setelah kompleks aslinya dibakar habis tentara Jepang tahun 1937. Direstorasi ulang tahun 1985 dengan gaya Ming-Qing, dan sekarang jadi kawasan pedestrian street budaya paling ikonik di Nanjing — terkenal dengan suasana malamnya yang dihiasi lampion di sepanjang sungai. <b>Akses:</b> MRT Line 3, turun Stasiun Fuzimiao, keluar Exit 2, jalan kaki ±300m ke arah barat daya. Tiket masuk kompleks kuil (opsional) dibeli di loket dekat gerbang utama, tidak perlu online. <b>Jam Operasional:</b> area pedestrian street &amp; kanal buka 24 jam (gratis, tidak ada jam tutup); kompleks kuil ±08:00–21:00. Boat cruise malam ±18:30–22:00. <b>Jam puncak: 10:00–14:00 dan malam akhir pekan/libur nasional</b> — jendela kunjungan revisi ini (16:50–18:00) pas menjelang jam lampion mulai ramai, sedikit lebih tenang dari puncak malam penuh. <b>Tiket:</b> Gratis jalan di pedestrian street &amp; tepi kanal; opsional masuk kompleks kuil CNY 30/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Nanjing_Fuzimiao`,
+       yt:`https://www.youtube.com/results?search_query=Confucius+Temple+Qinhuai+River+Nanjing+night`,
+       nearby:[`Duck Blood Vermicelli Soup versi tidak pedas (minta tanpa cabai)`,`Qinhuai River night boat cruise`]},
+      {group:`h1`, tag:`planb`, label:`Plan-B Hari 1`, title:`Presidential Palace (总统府)`,
+       nameEn:`Presidential Palace`,
+       nameHanzi:`总统府`,
+       context:`Kenapa jadi Plan-B: aksesnya paling nyambung dengan rute hari ini (persis di titik transfer Daxinggong yang dilewati bolak-balik), jadi paling gampang disisipkan kalau ada waktu lebih atau salah satu destinasi utama gagal dikunjungi.`,
+       text:`Kompleks ini menyimpan sejarah 6 abad China dalam satu tempat. Berawal sebagai kediaman kerajaan di era Dinasti Ming, lalu jadi kantor gubernur di era Qing. Tahun 1853 sempat jadi istana "Raja Surgawi" saat Pemberontakan Taiping. Momen paling bersejarah: 1 Januari 1912, di sinilah Sun Yat-sen dilantik sebagai Presiden Sementara Republik China pertama. Sempat jadi markas tentara Jepang (1937), lalu direbut kembali tentara pembebasan tahun 1949. Sekarang jadi museum sejarah modern China. <b>Catatan:</b> tutup setiap Senin (kecuali libur nasional) — 10 Oktober adalah Sabtu, aman. <b>Akses:</b> MRT Line 3, turun Stasiun Daxinggong — titik transfer yang sudah dilewati 2x di rute utama hari ini, ikuti papan petunjuk ke Presidential Palace, masuk lewat pintu di sisi barat gerbang (per Desember 2024, gerbang utama/gatehouse ditutup permanen untuk pengunjung). <b>Jam Operasional:</b> musim sepi (15 Oktober–28/29 Feb) 08:30–17:00 — 10 Oktober masih masuk musim ramai (1 Maret–14 Oktober) 08:30–18:00 (tiket terakhir 17:00). <b>Tutup setiap Senin</b>, kecuali libur nasional. <b>Tiket:</b> ±CNY 40/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Presidential_Palace_(Nanjing)`,
+       yt:`https://www.youtube.com/results?search_query=Nanjing+Presidential+Palace+Zongtongfu`,
+       nearby:[`Xu Garden (煦园) — juga disebut "West Garden", di dalam kompleks, bagian terindah`,`Nanjing 1912 Block (南京1912) — persis sebelahan`]},
+    ],
+    lampiranGroups:[
+      {key:`h1`, heading:`Hari 1 — Sabtu, 10 Oktober`},
+    ],
+  },
+  {
     id:`nanjing`,
     name:`Nanjing`,
     dates:`3–6 Oktober · 3 Malam · Golden Week China`,
