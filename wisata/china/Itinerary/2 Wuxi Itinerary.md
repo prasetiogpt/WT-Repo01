@@ -28,6 +28,8 @@
 > (22) **2026-09-20 — keputusan pengguna: hapus Taihu Lake Promenade**. Ditindaklanjuti dari (21c): promenade dihapus sebagai stop terpisah di Hari 4 (bukan diganti destinasi lain) — riset lanjutan menunjukkan kemungkinan besar itu adalah jalur di dalam kawasan tiket Taihu Yuantouzhu sendiri, bukan tempat gratis terpisah. Waktu yang dibebaskan dipakai memperpanjang sesi Bogong Island Ecology Park (14:15–17:00, sebelumnya 14:15–16:00), dan Hari 4 selesai lebih awal (±18:40, sebelumnya 21:40). **TOTAL HARI 4 turun dari 454 jadi 434 CNY** (hapus Didi 20 CNY ke promenade), Subtotal aktivitas harian 1.193/1.317→**1.173/1.297 CNY**, Transport lokal 371→**351 CNY**, **GRAND TOTAL 2.472→2.452 CNY (Rp6.497.800)**.
 >
 > (23) **2026-09-20 — verifikasi jarak Gonghu Bay↔Bogong Island, konfirmasi struktur Hari 2/4 dipertahankan**: dikonfirmasi Amap **18-19km/27-28 menit** — lebih jauh dari jarak Gonghu Bay↔Liyuan Garden yang sudah ada (13-14km/19-22 menit). Ini menegaskan Gonghu Bay memang lebih tepat tetap di klaster Hari 2 (bukan dipindah ke klaster Yuantouzhu/Hari 4). Setelah analisis (estimasi total waktu kunjungan gabungan 6 tempat ±10,5 jam kalau digabung jadi 1 hari — terlalu padat untuk prinsip "santai" itinerary ini), **struktur Hari 2 (Lixi Park+Central Lihu Park+Liyuan Garden+Gonghu Bay) dan Hari 4 (Yuantouzhu+Lihu Wetland+Bogong Island) DIPERTAHANKAN seperti sekarang** — tidak digabung/direstrukturisasi lebih lanjut, atas keputusan pengguna.
+>
+> (24) **2026-09-20 — preferensi baru: sewa sepeda untuk jarak 2-3km**. Atas instruksi pengguna, 2 leg Didi di Hari 4 (Yuantouzhu→Lihu National Wetland Park 3,7km, dan lanjutan ke Bogong Island 2,1km) diganti **sewa sepeda** (Meituan/Hellobike, jalur tepi danau relatif datar) — lebih murah & santai untuk jarak segini. Preferensi ini juga ditambahkan ke skill `wisata-itinerary-planner` sebagai aturan umum ke depan (prioritas moda: sepeda sebelum Didi untuk 2-3km tanpa MRT langsung, kalau jalurnya datar). **TOTAL HARI 4 turun dari 434 jadi 416 CNY**, Transport lokal 351→**333 CNY**, Subtotal aktivitas harian 1.173/1.297→**1.155/1.279 CNY**, **GRAND TOTAL 2.452→2.434 CNY (Rp6.450.100)**.
 
 ## Informasi Transportasi
 
@@ -133,21 +135,21 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 4 — Jumat, 9 Oktober (Klaster Lihu Barat — Lihu National Wetland Park, Taihu Yuantouzhu, Bogong Island)
 
-**Rute:** Hotel → Didi langsung ke **Taihu Yuantouzhu** (±9-10km, ±30-40 menit — tidak ada MRT langsung; jalur promenade tepi danau sudah termasuk di dalam kawasan tiket Yuantouzhu, tidak perlu kunjungan terpisah). **Lihu National Wetland Park** — Didi **3,7km/9 menit dari Yuantouzhu, terverifikasi Amap** (BUKAN jalan kaki seperti versi lama, jaraknya terlalu jauh untuk jalan kaki). **Bogong Island Ecology Park** — ⚠️ Yuantouzhu→Bogong terverifikasi Amap **2,1km/7 menit** (BUKAN "persis sebelah/jalan kaki" seperti asumsi lama dokumen ini), tapi rute sebenarnya dari Lihu Wetland Park, jarak persisnya belum di-Amap-kan — dipakai estimasi Didi singkat serupa. Sore/malam Didi langsung balik ke hotel — hari ini sekarang selesai lebih awal (±18:40, bukan 21:40) karena "Taihu Lake Promenade" (tidak ditemukan di Amap) dihapus sebagai stop terpisah.
+**Rute:** Hotel → Didi langsung ke **Taihu Yuantouzhu** (±9-10km, ±30-40 menit — tidak ada MRT langsung; jalur promenade tepi danau sudah termasuk di dalam kawasan tiket Yuantouzhu, tidak perlu kunjungan terpisah). **Lihu National Wetland Park** — **sewa sepeda 3,7km dari Yuantouzhu** (jarak terverifikasi Amap; jalur tepi danau relatif datar, ganti dari Didi — lebih santai & murah untuk jarak segini). **Bogong Island Ecology Park** — ⚠️ Yuantouzhu→Bogong terverifikasi Amap **2,1km** (tapi rute sebenarnya dari Lihu Wetland Park, jarak persisnya belum di-Amap-kan) — **lanjut sepeda** dari Wetland Park (sepeda bisa dilanjut/disewa ulang, tidak perlu ganti Didi untuk jarak sedekat ini). Sore/malam Didi langsung balik ke hotel — hari ini sekarang selesai lebih awal (±18:40, bukan 21:40) karena "Taihu Lake Promenade" (tidak ditemukan di Amap) dihapus sebagai stop terpisah.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
 | 08:30–09:10 | Didi ke **Taihu Yuantouzhu Scenic Area** | ±9-10km, ±30-40 menit — tidak ada MRT langsung | 50 | Rp132.500 |
 | 09:10–11:00 | **Taihu Yuantouzhu Scenic Area** — semenanjung ikonik tepi Danau Taihu, termasuk jalur promenade & taman bunga di dalam kawasan tiket | CNY 90/org (tiket reguler) | 180 | Rp477.000 |
-| 11:00–11:15 | Didi ke **Lihu National Wetland Park** | 3,7km/9 menit — terverifikasi Amap (bukan jalan kaki, terlalu jauh) | 15 | Rp39.750 |
-| 11:15–13:00 | **Lihu National Wetland Park** — jalur wetland tepi danau, datar & teduh | Gratis | — | — |
+| 11:00–11:15 | Sewa sepeda ke **Lihu National Wetland Park** | 3,7km, jalur tepi danau relatif datar — terverifikasi Amap. Sepeda ±CNY 3/30menit/org (bike-share Meituan/Hellobike) | 12 | Rp31.800 |
+| 11:15–13:00 | **Lihu National Wetland Park** — jalur wetland tepi danau, datar & teduh | Gratis (sepeda tetap disewa/lanjut) | — | — |
 | 13:00–14:00 | Makan siang sekitar Yuantouzhu/Lihu Wetland | ±CNY 25/org | 50 | Rp132.500 |
-| 14:00–14:15 | Didi ke **Bogong Island Ecology Park** | ⚠️ Yuantouzhu→Bogong terverifikasi Amap 2,1km/7menit (BUKAN jalan kaki sebelahan seperti asumsi lama) — tapi rute sebenarnya dari Lihu Wetland Park, jarak persisnya belum di-Amap-kan, dipakai estimasi terdekat | 15 | Rp39.750 |
-| 14:15–17:00 | **Bogong Island Ecology Park** — taman air+alam+budaya ±37 hektar, jalan santai diperpanjang menggantikan sesi promenade yang dihapus | Gratis | — | — |
+| 14:00–14:10 | Lanjut sepeda ke **Bogong Island Ecology Park** | ⚠️ Yuantouzhu→Bogong terverifikasi Amap 2,1km (jarak persis dari Lihu Wetland Park belum di-Amap-kan, dipakai estimasi terdekat) | — | — |
+| 14:10–17:00 | **Bogong Island Ecology Park** — taman air+alam+budaya ±37 hektar, jalan santai diperpanjang menggantikan sesi promenade yang dihapus | Gratis. Kembalikan sepeda di sini | — | — |
 | 17:00–18:00 | Makan malam sekitar area Taihu | ±CNY 25/org | 50 | Rp132.500 |
 | 18:00–18:40 | Didi kembali ke hotel | ±30-40 menit | 50 | Rp132.500 |
-| **TOTAL HARI 4** | | | **434** | **Rp1.150.100** |
+| **TOTAL HARI 4** | | | **416** | **Rp1.102.400** |
 
 **Catatan fisik:** jalur di Yuantouzhu, Lihu National Wetland Park & Bogong Island semuanya datar, aman untuk lutut.
 
@@ -186,9 +188,9 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 | Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
 | Hari 2 (7 Okt) | 305 | 339 | Rp898.350 |
 | Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
-| Hari 4 (9 Okt) | 434 | 434 | Rp1.150.100 |
+| Hari 4 (9 Okt) | 416 | 416 | Rp1.102.400 |
 | Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **Subtotal aktivitas harian** | **1.173** | **1.297** | **Rp3.437.050** |
+| **Subtotal aktivitas harian** | **1.155** | **1.279** | **Rp3.389.350** |
 
 *Skenario hemat/lengkap beda di: Jichang Garden (Hari 3, opsional CNY 90/2org) & sepeda sewa Gonghu Bay (Hari 2, opsional CNY 34/2org). Hari 4 tidak punya varian hemat terpisah.*
 
@@ -198,10 +200,10 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 |---|---|---|
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
-| Transport lokal (metro, Didi, bus wisata) | 351 | Rp930.150 |
+| Transport lokal (metro, Didi, sepeda sewa, bus wisata) | 333 | Rp882.450 |
 | Tiket HSR kedatangan dari Nanjing (2 org) | 400 | Rp1.060.000 |
 | Hotel (4 malam) | ≈755 | Rp2.000.000 |
-| **GRAND TOTAL** | **2.452** | **Rp6.497.800** |
+| **GRAND TOTAL** | **2.434** | **Rp6.450.100** |
 
 ---
 
@@ -469,7 +471,7 @@ Nama payung yang mencakup 15 sub-taman gratis di sekitar Danau Lihu (termasuk Li
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Didi dari Yuantouzhu, **3,7km/9 menit — terverifikasi Amap**.
+**Akses:** Sewa sepeda dari Yuantouzhu, **3,7km — terverifikasi Amap**, jalur tepi danau relatif datar (Meituan/Hellobike, umumnya tersedia di area wisata Wuxi).
 
 **Jam Operasional:** ±06:00–21:00, gratis.
 
@@ -483,7 +485,7 @@ Persis bersebelahan dengan Yuantouzhu, dibangun lewat proyek "mengembalikan laha
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** ⚠️ **Koreksi**: BUKAN jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island via mobil **2,1km/7 menit** (rute muter lewat jalan sekitar danau, jalan kaki langsung ±25-30 menit kalau memang ada jalur pejalan kaki). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
+**Akses:** ⚠️ **Koreksi**: BUKAN jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island **2,1km** (rute muter lewat jalan sekitar danau). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. **Sewa sepeda** (lanjutan dari Lihu Wetland Park) — jarak segini nyaman untuk sepeda, jalur relatif datar. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
 
 **Jam Operasional:** ⚠️ belum ditemukan jam operasional resmi spesifik — kemungkinan taman terbuka tanpa jam tutup ketat (umum untuk taman kota gratis), cek Amap on-site.
 

@@ -44,6 +44,8 @@ Prioritaskan jalur datar. Tanjakan kecil oke selama tidak curam/panjang. Tempat 
 
 Urutan wajib: 1) MRT/subway 2) jalan kaki (hanya <1km, cuaca/waktu mendukung) 3) sewa sepeda/motor 4) taksi/bis. Susun urutan kunjungan berdasarkan searah/berdekatan untuk minimalkan perpindahan moda.
 
+**Jarak 2-3km, kalau tidak ada MRT langsung**: prioritaskan sewa sepeda (Meituan/Hellobike/bike-share lokal, umumnya tersedia di kota-kota besar China) SEBELUM Didi/taksi — asalkan jalur relatif datar (cek kontur, hindari kalau ada tanjakan curam panjang sesuai poin 4 kriteria fisik). Baru pakai Didi kalau jalur menanjak/tidak aman untuk sepeda, cuaca buruk, atau bike-share tidak tersedia di area itu.
+
 **Hotel adalah anchor, bukan catatan administratif** — tentukan lokasinya dulu (atau rekomendasikan kawasan strategis, poin 10.5), lalu pakai sebagai basis: (a) alokasi destinasi searah ke hari yang sama, destinasi jauh jadi 1 hari dedicated; (b) tiap hari mulai & kalau masuk akal kembali ke hotel, moda tiap leg berdasar jarak/jalur aktual dari hotel, bukan asumsi generik.
 
 **⚠️ Jangan tebak jarak dari NAMA stasiun/kawasan saja** (nama bisa menyesatkan — pernah terjadi berkali-kali) — verifikasi via web_search/koordinat/urutan stasiun resmi sebelum menulis "jalan kaki"/"1 halte". Kalau tidak yakin, tandai ⚠️ dan pakai Didi/moda fleksibel. Aturan sama berlaku untuk jarak ANTAR-destinasi dalam satu klaster, bukan cuma hotel↔destinasi — dua tempat yang "kelihatan searah" di peta skala kecil bisa beda jauh; verifikasi tiap leg sebelum memutuskan penggabungan hari.
