@@ -7,8 +7,8 @@ China: `.md` itinerary dan `Wisata.html`. Sudah dipindahkan dari laptop ke repo 
 tidak ada lagi kebingungan versi antara laptop dan HP.
 
 **Google Drive laptop sekarang cuma mirror/working-copy lokal (view-only):**
-- `I:\My Drive\Travelling\China\Itinerary\*.md`
-- `I:\My Drive\Travelling\HTML Wisata\Wisata.html`
+- `I:\My Drive\WS Fam\Travelling\China\Itinerary\*.md`
+- `I:\My Drive\WS Fam\Travelling\HTML Wisata\Wisata.html`
 
 **Repo ini publik sejak 2026-09-06, dan `Wisata.html` dibuka lewat GitHub Pages di HP:**
 ```
@@ -41,8 +41,14 @@ wisata/china/
     1 Nanjing.md
     2 Wuxi Itinerary.md
     3 Suzhou Itinerary.md
+    4 Ningbo.md
+    5 Hong Kong.md
+    6 Shenzhen.md
+    7 Xiamen.md
+    8 Fuzhou.md
   Wisata.html            <- output generator (generator-nya sendiri ada di ../HTML-Wisata/, shared)
   sync-from-git-to-drive.bat
+  Update Semua (Generate + Push + Sync ke Drive).bat
   README.md   (file ini)
 ```
 

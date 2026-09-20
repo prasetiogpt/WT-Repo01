@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 
 set "REPO=C:\Users\admin\git-repos\wt-repo01"
-set "DRIVE_ITIN=I:\My Drive\Travelling\China\Itinerary"
-set "DRIVE_HTML=I:\My Drive\Travelling\HTML Wisata"
+set "DRIVE_ITIN=I:\My Drive\WS Fam\Travelling\China\Itinerary"
+set "DRIVE_HTML=I:\My Drive\WS Fam\Travelling\HTML Wisata"
 
 echo ============================================
 echo   1/6 - Tarik perubahan terbaru dari GitHub
