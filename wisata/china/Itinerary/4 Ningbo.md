@@ -5,7 +5,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou. (3) **2026-09-10 — koreksi lokasi tempat tinggal berdasarkan screenshot Amap pengguna**: anchor MRT dikoreksi dari **Yinzhou Higher Education Park Station** jadi **Southern Business District Station** (satu halte lebih ke arah pusat kota di Line 8) — unit ternyata di kawasan Taikang Road, lebih dekat Ningbo Museum/Southern Business District, BUKAN di ujung tenggara dekat Dongqian Lake seperti anggapan draft awal. Dampak: paragraf Tempat Tinggal & baris Hari 1 diperbarui ke nama stasiun baru; framing "Dongqian Lake dekat rumah" (Hari 2, Hari 14, Lampiran) dilunakkan jadi "perlu transfer Line 8→Line 4, jarak persis belum terverifikasi" — estimasi Didi/MRT ke Dongqian Lake dinaikkan dari CNY 20 ke CNY 25/leg (Hari 2, Total naik 230→240 CNY). Rute umum "Line 8 → transfer Line X" di hari-hari lain TIDAK diubah — sudah tidak menyebut nama stasiun spesifik & sudah ditandai ⚠️ belum terverifikasi sejak draft awal, jadi tetap valid terlepas dari anchor mana yang dipakai. ⚠️ amap.com terblokir di environment sesi ini sehingga jarak jalan kaki persis unit↔stasiun & titik transfer Line 8→Line 4 tetap belum bisa diverifikasi — cek Amap on-site sebelum berangkat.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou. (3) **2026-09-10 — koreksi lokasi tempat tinggal berdasarkan screenshot Amap pengguna**: anchor MRT dikoreksi dari **Yinzhou Higher Education Park Station** jadi **Southern Business District Station** (satu halte lebih ke arah pusat kota di Line 8) — unit ternyata di kawasan Taikang Road, lebih dekat Ningbo Museum/Southern Business District, BUKAN di ujung tenggara dekat Dongqian Lake seperti anggapan draft awal. Dampak: paragraf Tempat Tinggal & baris Hari 1 diperbarui ke nama stasiun baru; framing "Dongqian Lake dekat rumah" (Hari 2, Hari 14, Lampiran) dilunakkan jadi "perlu transfer Line 8→Line 4, jarak persis belum terverifikasi" — estimasi Didi/MRT ke Dongqian Lake dinaikkan dari CNY 20 ke CNY 25/leg (Hari 2, Total naik 230→240 CNY). Rute umum "Line 8 → transfer Line X" di hari-hari lain TIDAK diubah — sudah tidak menyebut nama stasiun spesifik & sudah ditandai ⚠️ belum terverifikasi sejak draft awal, jadi tetap valid terlepas dari anchor mana yang dipakai. ⚠️ amap.com terblokir di environment sesi ini sehingga jarak jalan kaki persis unit↔stasiun & titik transfer Line 8→Line 4 tetap belum bisa diverifikasi — cek Amap on-site sebelum berangkat. (4) **2026-09-22 — verifikasi Amap untuk 4 rute utama + 1 rute payung** (screenshot pengguna, sesi ingest wiki): **Dongqian Lake (Hari 2)** ternyata butuh **2 kali transfer** (Line 8→Miaoyan→Line 5→South Higher Education Park→Line 4→Dongqian Lake Exit A), 10 halte, ¥4/org, ±55 menit — bukan 1 transfer seperti asumsi, tapi tarif malah turun karena base fare kecil (CNY 25→8/leg). **Tianyi Pavilion (Hari 4)**: transfer di Stasiun **Zemin** (dalam-stasiun 466m/±7 menit) ke Line 1, 11 halte, ¥5/org, ±49 menit (CNY 24→10/leg). **Old Bund (Hari 5)**: 12 halte via Liyuan South Rd, ¥4/org, ±40 menit, turun **Waitan Bridge** (bukan "Waitan Daqiao" — nama lama kemungkinan tidak presisi) (CNY 24→8/leg). **Ningbo South Bus Station** (dipakai Hari 6/8/9/10/13 untuk Nantang/Xikou/Qiantong/Hemudu/Shipu): 9 halte via Liyuan South Rd + Ningbo Railway Station Exit C, ¥4/org, ±31 menit — menutup verifikasi 5 hari sekaligus (CNY 24→8/leg tiap kali). **Hari 14** (sisi lain Dongqian Lake/Xiaoputuo) sebagian diperbaiki: MRT sampai Dongqian Lake Exit A memakai rute terverifikasi yang sama seperti Hari 2, lanjut Didi/jalan kaki pendek ke sisi Xiaoputuo (exit spesifik masih belum diverifikasi). **Total dampak biaya:** Hari 2 240→**206**, Hari 4 258→**230**, Hari 5 174→**142**, Hari 6 198→**166**, Hari 8 528→**496**, Hari 9 468→**436**, Hari 10 288→**256**, Hari 13 378→**346**, Hari 14 240→**228**. Sekaligus ditemukan **kesalahan hitung lama di kategori "Transport lokal & antar-kota"**: tertulis 1.140 CNY, padahal jumlah 17 hari (4.436) dikurangi Tiket (1.076) dan Makan (1.220) seharusnya 2.140 — selisih 1.000 CNY/Rp2.650.000 yang tidak match total per-hari, diperbaiki jadi 2.140 sebelum dikurangi koreksi rute di atas. **GRAND TOTAL turun dari 4.436 CNY/Rp11.755.400 jadi 4.170 CNY/Rp11.050.500** (koreksi rute) — kategori Transport lokal jadi **1.874 CNY** (2.140 dikurangi 266 dari koreksi rute), bukan 1.140. **Dua kejelasan tambahan (bukan koreksi rute)**: (a) Hari 12 (Zhaobao) — kalimat Lampiran yang membingungkan ("Hari 12 kebetulan jatuh Senin") diperbaiki karena Hari 12 di itinerary ini sebenarnya **Minggu 25 Oktober**, jadi aman terlepas dari aturan tutup Senin; (b) Xikou (Hari 8) — dua angka tiket (CNY 120 vs 200) diperjelas sebagai dua opsi paket berbeda, bukan kontradiksi, tabel tetap memakai CNY 120/org.
 
 ## Informasi Transportasi
 
@@ -59,13 +59,13 @@ Dongqian Lake (東錢湖) di ujung timur Line 4 — danau air tawar terbesar di 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–09:15 | Didi/MRT ke Stasiun Dongqian Lake (Line 4, terminus timur) | ⚠️ titik transfer Line 8→Line 4 belum terverifikasi Amap — Didi langsung kemungkinan lebih praktis | 25 | Rp66.250 |
+| 08:30–09:25 | MRT ke Dongqian Lake: Line 8 (3 halte ke Miaoyan) → Line 5 (4 halte ke South Higher Education Park) → Line 4 (3 halte, Exit A) | 10 halte, 2× transfer, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 09:15–12:00 | **Dongqian Lake** — sepeda sewa keliling tepi danau, Xiaoputuo causeway | Gratis masuk kawasan; sepeda sewa ±CNY 20/org/2 jam | 40 | Rp106.000 |
 | 12:00–13:00 | Makan siang sekitar danau | ±CNY 30/org | 60 | Rp159.000 |
 | 13:00–17:00 | Lanjut jalan santai/boating di area lain danau | Boating opsional ±CNY 40/org (tidak dihitung) | — | — |
-| 17:00–17:45 | Didi/MRT kembali ke rumah | — | 25 | Rp66.250 |
+| 17:00–17:55 | MRT kembali ke rumah (rute sama, arah sebaliknya) | 10 halte, ¥4/org | 8 | Rp21.200 |
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 2** | | **240** | **Rp636.000** |
+| | **TOTAL HARI 2** | | **206** | **Rp545.900** |
 
 **Plan-B hari ini:** kalau cuaca hujan — kunjungan diperpendek, fokus area yang ada atap/kafe tepi danau saja, atau tunda ke Hari 16 (hari santai) kalau perlu diulang.
 
@@ -98,13 +98,13 @@ Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpu
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:30–09:15 | Line 8 → transfer Line 1, turun Stasiun Ximenkou | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 08:30–09:20 | MRT ke Ximenkou: Line 8 (9 halte) → transfer di **Zemin** (dalam-stasiun 466m/±7 menit) → Line 1 (2 halte, Exit D) | 11 halte, ¥5/org — rute terverifikasi Amap 2026-09-22 | 10 | Rp26.500 |
 | 09:15–12:00 | **Tianyi Pavilion** — perpustakaan pribadi tertua di China | Tiket CNY 30/org (kombinasi CNY 50 termasuk Yintai Mansion) | 100 | Rp265.000 |
 | 12:00–13:00 | Makan siang sekitar Ximenkou | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–17:00 | **Yuehu Lake (Moon Lake)** — jalan santai tepi danau, paviliun kuno | Gratis | — | — |
 | 17:00–18:00 | Makan malam sekitar Yuehu | ±CNY 30/org | 60 | Rp159.000 |
-| 18:00–18:45 | Line 1 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
-| | **TOTAL HARI 4** | | **258** | **Rp683.700** |
+| 18:00–18:50 | Line 1 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 11 halte, ¥5/org | 10 | Rp26.500 |
+| | **TOTAL HARI 4** | | **230** | **Rp609.500** |
 
 **Plan-B hari ini:** kalau Tianyi Pavilion terlalu ramai/antre — cukup nikmati Yuehu Lake lebih lama, tunda Tianyi Pavilion ke hari kerja (weekday) yang lebih sepi.
 
@@ -116,7 +116,7 @@ Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemu
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:30–09:15 | Line 8 → transfer Line 2, turun Stasiun Waitan Daqiao | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 08:30–09:10 | MRT ke **Waitan Bridge**: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) | 12 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao") | 8 | Rp21.200 |
 | 09:15–12:00 | **Old Bund (Laowaitan)** — arsitektur Eropa 1844, Jiangbei Catholic Church | Gratis jalan kawasan | — | — |
 | 12:00–13:00 | Makan siang sekitar Old Bund | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–15:00 | **Sanjiangkou** — pertemuan Sungai Yong, Yao, Fenghua | Gratis, jalur datar tepi sungai | — | — |
@@ -124,8 +124,8 @@ Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemu
 | 15:30–18:00 | Waktu santai/istirahat sekitar Tianyi Square | — | — | — |
 | 18:00–19:00 | Makan malam sekitar Tianyi Square | ±CNY 30/org | 60 | Rp159.000 |
 | 19:00–20:30 | **Tianyi Square** — jalan malam alun-alun pusat kota, bukan sesi belanja | Gratis | — | — |
-| 20:30–21:15 | MRT kembali ke rumah | — | 24 | Rp63.600 |
-| | **TOTAL HARI 5** | | **174** | **Rp461.100** |
+| 20:30–21:10 | MRT kembali ke rumah (rute sama, arah sebaliknya) | 12 halte, ¥4/org | 8 | Rp21.200 |
+| | **TOTAL HARI 5** | | **142** | **Rp376.300** |
 
 **Plan-B hari ini:** kalau hujan — Old Bund & Sanjiangkou tetap bisa dinikmati dari sisi beratap (kafe/resto tepi sungai), Tianyi Square malam bisa diganti pulang lebih awal.
 
@@ -137,14 +137,14 @@ Jalan pedestrian 500m+ dengan arsitektur kuno & jajanan khas — satu hari santa
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:30–09:15 | Line 8 → transfer Line 2, turun Stasiun Ningbo Railway Station | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 08:30–08:55 | MRT ke Ningbo Railway Station: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (2 halte, Exit C) | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 09:15–09:30 | Jalan kaki ke **Nantang Old Street** | ±15 menit jalan kaki | — | — |
 | 09:30–12:00 | **Nantang Old Street** — jalan santai, arsitektur kuno | Gratis masuk kawasan | — | — |
 | 12:00–13:00 | Makan siang di Nantang (jajanan khas: hairy tofu goreng dilewati, cari yang tidak digoreng) | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–17:00 | Lanjut jelajah Nantang & sekitar, jajan ringan | ±CNY 20/org total | 40 | Rp106.000 |
 | 17:00–18:00 | Makan malam di Nantang | ±CNY 30/org | 60 | Rp159.000 |
-| 18:00–18:45 | Line 2 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
-| | **TOTAL HARI 6** | | **198** | **Rp524.700** |
+| 18:00–18:25 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
+| | **TOTAL HARI 6** | | **166** | **Rp439.900** |
 
 **Plan-B hari ini:** kalau Nantang terlalu padat (akhir pekan) — geser ke hari kerja, atau perpendek waktu & lanjut ke Tianfeng Pagoda (Hari 15) yang searah.
 
@@ -176,15 +176,15 @@ Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, pl
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:00–08:45 | Line 8 → transfer Line 2, turun Ningbo Railway Station (sebelahan Ningbo South Bus Station) | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 08:00–08:25 | MRT ke Ningbo Railway Station (sebelahan Ningbo South Bus Station): Line 8 (7 halte) → transfer Line 2 (2 halte, Exit C) | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 08:45–10:00 | Bus antar-kota Ningbo South → Xikou, Fenghua | ±CNY 15/org, ±1 jam (⚠️ jadwal cek langsung di loket) | 30 | Rp79.500 |
 | 10:00–12:30 | **Xikou Ancient Town** — bekas kediaman Chiang Kai-shek, Wenchang Pavilion | Tiket kawasan ±CNY 120/org (kombinasi beberapa titik, ⚠️ estimasi) | 240 | Rp636.000 |
 | 12:30–13:30 | Makan siang di Xikou | ±CNY 25/org | 50 | Rp132.500 |
 | 13:30–16:00 | **Xuedou Temple** — salah satu 5 gunung Zen terkenal China | Bus lokal/Didi dari Xikou (±20 menit), tiket kuil ±CNY 10/org | 40 | Rp106.000 |
 | 16:00–17:15 | Bus kembali ke Ningbo South Bus Station | — | 30 | Rp79.500 |
-| 17:15–18:00 | Line 2 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
+| 17:15–17:40 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
 | 18:30–19:30 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 8** | | **528** | **Rp1.399.200** |
+| | **TOTAL HARI 8** | | **496** | **Rp1.314.400** |
 
 **Plan-B hari ini:** kalau waktu mepet — prioritaskan Xikou (bekas kediaman lebih historis & terkenal), skip Xuedou Temple (jaraknya lebih jauh naik gunung), balik lebih awal.
 
@@ -197,15 +197,15 @@ Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:00–08:45 | Line 8 → transfer Line 2, turun Ningbo Railway Station | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 08:00–08:25 | MRT ke Ningbo Railway Station: Line 8 (7 halte) → transfer Line 2 (2 halte, Exit C) | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 08:45–10:15 | Bus antar-kota Ningbo South → Ninghai, lanjut minibus lokal ke Qiantong | ±CNY 20/org total, ±25 menit segmen terakhir | 40 | Rp106.000 |
 | 10:15–13:00 | **Qiantong Ancient Town** — desa labirin Ming-Qing | Tiket ±CNY 100/org (⚠️ estimasi, cek loket) | 200 | Rp530.000 |
 | 13:00–14:00 | Makan siang di Qiantong | ±CNY 25/org | 50 | Rp132.500 |
 | 14:00–16:00 | Lanjut jelajah Qiantong, jajan ringan | Gratis jalan kawasan | — | — |
 | 16:00–17:45 | Minibus + bus antar-kota kembali ke Ningbo South | — | 40 | Rp106.000 |
-| 17:45–18:30 | Line 2 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
+| 17:45–18:10 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
 | 18:30–19:30 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 9** | | **468** | **Rp1.240.200** |
+| | **TOTAL HARI 9** | | **436** | **Rp1.155.400** |
 
 **Plan-B hari ini:** kalau minibus lokal ke Qiantong susah dijadwalkan — Didi langsung dari Ninghai (±15 menit) sebagai alternatif lebih pasti, meski lebih mahal.
 
@@ -218,16 +218,16 @@ Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:00–07:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 07:30–08:15 | Line 8 → transfer Line 2/1, ke Stasiun Ningbo Railway Station | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 07:30–07:55 | MRT ke Ningbo Railway Station: Line 8 (7 halte) → transfer Line 2 (2 halte, Exit C) | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 (bukan Line 2/1) | 8 | Rp21.200 |
 | 08:15–09:15 | Kereta regional/bus ke Yuyao East Bus Station | ±CNY 20/org (⚠️ estimasi, cek jadwal) | 40 | Rp106.000 |
 | 09:15–09:45 | Bus lokal 333 dari Yuyao East ke Hemudu Site Museum | ±CNY 5/org, berangkat tiap jam | 10 | Rp26.500 |
 | 09:45–12:30 | **Hemudu Site Museum** — situs Neolitikum 7.000 tahun | Gratis (museum negeri) |  — | — |
 | 12:30–13:30 | Makan siang sekitar Hemudu | ±CNY 25/org | 50 | Rp132.500 |
 | 13:30–14:00 | Bus 333 kembali ke Yuyao East | — | 10 | Rp26.500 |
 | 14:00–15:00 | Kereta/bus kembali ke Ningbo Railway Station | — | 40 | Rp106.000 |
-| 15:00–15:45 | Line 1/2 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
+| 15:00–15:25 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 10** | | **288** | **Rp763.200** |
+| | **TOTAL HARI 10** | | **256** | **Rp678.400** |
 
 **Plan-B hari ini:** kalau jadwal kereta/bus regional ke Yuyao tidak pasti — Didi langsung dari Ningbo (±1 jam, lebih mahal tapi fleksibel jadwal).
 
@@ -276,15 +276,15 @@ Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 j
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:00–07:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 07:30–08:15 | Line 8 → transfer Line 2, ke Ningbo South Bus Station | ⚠️ titik transfer belum terverifikasi | 24 | Rp63.600 |
+| 07:30–07:55 | MRT ke Ningbo Railway Station (sebelahan Ningbo South Bus Station): Line 8 (7 halte) → transfer Line 2 (2 halte, Exit C) | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 08:15–10:15 | Bus antar-kota Ningbo South → Xiangshan/Shipu | ±CNY 40/org, ±2 jam (⚠️ jadwal cek loket) | 80 | Rp212.000 |
 | 10:15–12:30 | **Shipu Ancient Fishing Port** — pelabuhan nelayan tertua China, jalan santai dermaga | Gratis jalan kawasan | — | — |
 | 12:30–14:00 | Makan siang seafood segar di Shipu | ±CNY 40/org (seafood lebih mahal dari makan biasa) | 80 | Rp212.000 |
 | 14:00–16:00 | Lanjut jalan santai pesisir, area kuil nelayan lokal | Gratis | — | — |
 | 16:00–18:00 | Bus kembali ke Ningbo South Bus Station | — | 80 | Rp212.000 |
-| 18:00–18:45 | Line 2 → transfer Line 8 kembali ke rumah | — | 24 | Rp63.600 |
+| 18:00–18:25 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
 | 19:00–20:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 13** | | **378** | **Rp1.001.700** |
+| | **TOTAL HARI 13** | | **346** | **Rp916.900** |
 
 **Plan-B hari ini:** kalau perjalanan bus terlalu jauh/melelahkan — pertimbangkan ganti dengan hari santai di rumah, geser Xiangshan ke Cadangan (lihat catatan risiko jarak).
 
@@ -297,13 +297,13 @@ Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–09:00 | Didi/MRT ke area Dongqian Lake sisi Xiaoputuo | ⚠️ rute spesifik belum terverifikasi | 30 | Rp79.500 |
+| 08:30–09:25 | MRT ke Dongqian Lake Exit A (rute sama seperti Hari 2, terverifikasi Amap), lanjut jalan kaki/Didi singkat ke sisi Xiaoputuo | 10 halte ¥4/org (8 CNY) + Didi pendek ±CNY 10/2org ke sisi Xiaoputuo (exit spesifik belum diverifikasi) | 18 | Rp47.700 |
 | 09:00–12:00 | **Xiaoputuo** — causeway pulau kecil, replika kuil Guanyin mini | Gratis jalan kawasan | — | — |
 | 12:00–13:00 | Makan siang sekitar Dongqian Lake | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–16:00 | **Fuquan Mountain** — bukit pemandangan danau, jalur landai | Gratis; tiket area tertentu ±CNY 20/org (⚠️ estimasi) | 40 | Rp106.000 |
 | 16:00–17:00 | Didi/MRT kembali ke rumah | — | 30 | Rp79.500 |
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 14** | | **240** | **Rp636.000** |
+| | **TOTAL HARI 14** | | **228** | **Rp604.200** |
 
 **Plan-B hari ini:** kalau sudah cukup puas dengan Dongqian Lake dari Hari 2 — hari ini bisa diganti hari santai/istirahat penuh di rumah.
 
@@ -368,23 +368,23 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 (14 Okt) | 116 | Rp307.400 |
-| Hari 2 (15 Okt) | 240 | Rp636.000 |
+| Hari 2 (15 Okt) | 206 | Rp545.900 |
 | Hari 3 (16 Okt) | 238 | Rp630.700 |
-| Hari 4 (17 Okt) | 258 | Rp683.700 |
-| Hari 5 (18 Okt) | 174 | Rp461.100 |
-| Hari 6 (19 Okt) | 198 | Rp524.700 |
+| Hari 4 (17 Okt) | 230 | Rp609.500 |
+| Hari 5 (18 Okt) | 142 | Rp376.300 |
+| Hari 6 (19 Okt) | 166 | Rp439.900 |
 | Hari 7 (20 Okt) | 290 | Rp768.500 |
-| Hari 8 (21 Okt) | 528 | Rp1.399.200 |
-| Hari 9 (22 Okt) | 468 | Rp1.240.200 |
-| Hari 10 (23 Okt) | 288 | Rp763.200 |
+| Hari 8 (21 Okt) | 496 | Rp1.314.400 |
+| Hari 9 (22 Okt) | 436 | Rp1.155.400 |
+| Hari 10 (23 Okt) | 256 | Rp678.400 |
 | Hari 11 (24 Okt) | 214 | Rp567.100 |
 | Hari 12 (25 Okt) | 174 | Rp461.100 |
-| Hari 13 (26 Okt) | 378 | Rp1.001.700 |
-| Hari 14 (27 Okt) | 240 | Rp636.000 |
+| Hari 13 (26 Okt) | 346 | Rp916.900 |
+| Hari 14 (27 Okt) | 228 | Rp604.200 |
 | Hari 15 (28 Okt) | 364 | Rp964.600 |
 | Hari 16 (29 Okt) | 188 | Rp498.200 |
 | Hari 17 (30 Okt) | 80 | Rp212.000 |
-| **GRAND TOTAL** | **4.436** | **Rp11.755.400** |
+| **GRAND TOTAL** | **4.170** | **Rp11.050.500** |
 
 ### Breakdown per kategori
 
@@ -392,8 +392,8 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 |---|---|---|
 | Tiket masuk (Tianyi Pavilion, Xikou, Qiantong, Tianfeng Pagoda, Sanjiangkou Cruise, dll) | 1.076 | Rp2.851.400 |
 | Makan (semua hari) | 1.220 | Rp3.233.000 |
-| Transport lokal & antar-kota (MRT, Didi, bus) | 1.140 | Rp3.021.000 |
-| **GRAND TOTAL AKTIVITAS** | **4.436** | **Rp11.755.400** |
+| Transport lokal & antar-kota (MRT, Didi, bus) | 1.874 | Rp4.966.100 |
+| **GRAND TOTAL AKTIVITAS** | **4.170** | **Rp11.050.500** |
 
 **Catatan:** Yushan Islands, Mount Putuo/Zhoushan, Xiangshan Global Studios, Youngor Zoo semuanya di Cadangan, jadi TIDAK termasuk di total di atas. Biaya menginap tidak dihitung (properti pribadi). Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.
 
@@ -488,7 +488,7 @@ Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber (nama danau resmi Zhejiang).
 
-**Akses:** MRT Line 4, turun Stasiun Dongqian Lake (terminus timur jalur ini) — dari rumah (Line 8, Southern Business District) perlu transfer, ⚠️ titik transfer persis belum terverifikasi Amap, Didi langsung jadi opsi praktis.
+**Akses:** dari rumah (Southern Business District): Line 8 (3 halte ke Miaoyan) → Line 5 (4 halte ke South Higher Education Park) → Line 4 (3 halte, Exit A) — total 10 halte, 2× transfer, ¥4/org, ±55 menit, rute terverifikasi Amap 2026-09-22.
 
 **Jam Operasional:** kawasan danau terbuka 24 jam, gratis. Wahana (sepeda sewa, boating) mengikuti jam operasional masing-masing operator, umumnya ±08:00–17:00.
 
@@ -536,7 +536,7 @@ Dibangun tahun 1561 oleh Fan Qin, Wakil Menteri Perang Dinasti Ming, sebagai per
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber.
 
-**Akses:** MRT Line 1, turun Stasiun Ximenkou.
+**Akses:** dari rumah: Line 8 (9 halte) → transfer di Zemin (dalam-stasiun 466m/±7 menit) → Line 1 (2 halte, Exit D) — total 11 halte, ¥5/org, ±49 menit, rute terverifikasi Amap 2026-09-22.
 
 **Jam Operasional:** ±08:30–17:00 (musim panas sampai 17:30). Tidak ada hari libur rutin.
 
@@ -567,7 +567,7 @@ Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertam
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber.
 
-**Akses:** MRT Line 2, turun Stasiun Waitan Daqiao.
+**Akses:** dari rumah: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) — total 12 halte, ¥4/org, ±40 menit, rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao" jadi **Waitan Bridge**).
 
 **Jam Operasional:** kawasan jalan terbuka 24 jam, gratis. Bar/resto umumnya buka sore-malam.
 
@@ -582,7 +582,7 @@ Titik pertemuan tiga sungai — Yong, Yao, dan Fenghua — yang secara historis 
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber.
 
-**Akses:** jalan kaki dari Old Bund, tetap di kawasan Stasiun Waitan Daqiao (Line 2).
+**Akses:** jalan kaki dari Old Bund, tetap di kawasan Stasiun Waitan Bridge (Line 2).
 
 **Jam Operasional:** area terbuka 24 jam, gratis.
 
@@ -648,7 +648,7 @@ Kampung halaman Chiang Kai-shek dan putranya Chiang Ching-kuo — dua tokoh pent
 
 **Jam Operasional:** ±08:00–17:00. Tidak ada hari libur rutin.
 
-**Tiket:** ±CNY 120/org untuk tiket kombinasi beberapa titik dalam kawasan (⚠️ estimasi, cek loket — beberapa sumber menyebut paket tur seharga ±CNY 200/org termasuk transport).
+**Tiket:** ±CNY 120/org untuk tiket kombinasi beberapa titik dalam kawasan (dipakai di tabel Hari 8, ⚠️ estimasi, cek loket) — ATAU paket tur ±CNY 200/org dari beberapa sumber yang sudah termasuk transport; dua opsi berbeda, bukan kontradiksi.
 
 - Foto/info: https://www.topchinatravel.com/china-attractions/xikou-town.htm
 - Video referensi: https://www.youtube.com/results?search_query=Xikou+Ancient+Town+Ningbo
@@ -725,7 +725,7 @@ Pertahanan pesisir Ningbo bermula sejak tahun 132 M (era Dinasti Han Barat) di k
 
 **Akses:** MRT Line 2, turun Stasiun Zhaobaoshan — akses langsung tanpa transfer jauh.
 
-**Jam Operasional:** ±08:30–16:30. Tutup Senin (⚠️ cek dulu — Hari 12 di itinerary ini kebetulan jatuh hari Senin, verifikasi ulang sebelum berangkat atau siapkan Plan-B).
+**Jam Operasional:** ±08:30–16:30. Tutup Senin, kecuali libur nasional — Hari 12 di itinerary ini adalah **Minggu 25 Oktober**, jadi aman.
 
 **Tiket:** Gratis (museum negeri); naik Zhaobao Mountain gratis.
 
@@ -799,7 +799,7 @@ Kapal wisata malam yang menyusuri pertemuan tiga sungai (Yong, Yao, Fenghua) dar
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber.
 
-**Akses:** dermaga Old Bund (Waima Road 195, seberang bekas City Exhibition Hall), Stasiun Waitan Daqiao (Line 2).
+**Akses:** dermaga Old Bund (Waima Road 195, seberang bekas City Exhibition Hall), Stasiun Waitan Bridge (Line 2).
 
 **Jam Operasional:** 19:00–21:45 setiap hari, keberangkatan kapal 19:00 & 20:00 (⚠️ jadwal bisa berubah, cek di lokasi/aplikasi resmi).
 
