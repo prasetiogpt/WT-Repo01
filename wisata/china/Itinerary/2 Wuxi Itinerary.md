@@ -29,7 +29,7 @@
 >
 > (23) **2026-09-20 — verifikasi jarak Gonghu Bay↔Bogong Island, konfirmasi struktur Hari 2/4 dipertahankan**: dikonfirmasi Amap **18-19km/27-28 menit** — lebih jauh dari jarak Gonghu Bay↔Liyuan Garden yang sudah ada (13-14km/19-22 menit). Ini menegaskan Gonghu Bay memang lebih tepat tetap di klaster Hari 2 (bukan dipindah ke klaster Yuantouzhu/Hari 4). Setelah analisis (estimasi total waktu kunjungan gabungan 6 tempat ±10,5 jam kalau digabung jadi 1 hari — terlalu padat untuk prinsip "santai" itinerary ini), **struktur Hari 2 (Lixi Park+Central Lihu Park+Liyuan Garden+Gonghu Bay) dan Hari 4 (Yuantouzhu+Lihu Wetland+Bogong Island) DIPERTAHANKAN seperti sekarang** — tidak digabung/direstrukturisasi lebih lanjut, atas keputusan pengguna.
 >
-> (24) **2026-09-20 — preferensi baru: sewa sepeda untuk jarak 2-3km**. Atas instruksi pengguna, 2 leg Didi di Hari 4 (Yuantouzhu→Lihu National Wetland Park 3,7km, dan lanjutan ke Bogong Island 2,1km) diganti **sewa sepeda** (Meituan/Hellobike, jalur tepi danau relatif datar) — lebih murah & santai untuk jarak segini. Preferensi ini juga ditambahkan ke skill `wisata-itinerary-planner` sebagai aturan umum ke depan (prioritas moda: sepeda sebelum Didi untuk 2-3km tanpa MRT langsung, kalau jalurnya datar). **TOTAL HARI 4 turun dari 434 jadi 416 CNY**, Transport lokal 351→**333 CNY**, Subtotal aktivitas harian 1.173/1.297→**1.155/1.279 CNY**, **GRAND TOTAL 2.452→2.434 CNY (Rp6.450.100)**. (25) **2026-09-20 — perbaikan dari audit wiki (butir 1–10)**: (a) **jam HSR Nanjing→Wuxi disamakan berangkat 17:00 (file Nanjing), tiba ±17:45** — menggantikan kunci 18:00 dan hitung mundur 17:16; Hari 1 digeser 15 menit lebih awal, tanpa perubahan biaya; (b) Bogong Island **tidak bersebelahan** dengan Yuantouzhu (±2,1km) — deskripsi Lampiran dan alasan Cadangan Taihu Xiandao dikoreksi (Bogong di Hari 4, bukan Hari 2); (c) paragraf Informasi Transportasi tidak lagi menyebut Taihu Lake Promenade (sudah dihapus di revisi 22); (d) area menginap dikoreksi — hotel ±9km dari tepi danau, bukan "di gerbang klaster Lihu/Taihu"; (e) baris Lixi Park Hari 2 kini menyebut Exit 6 Heliekou (terverifikasi Amap, revisi 20); (f) badge Yuantouzhu ✅ diselaraskan dengan isinya; (g) **selisih Rp750 diselesaikan**: GRAND TOTAL Rupiah mengikuti jumlah kategori = **Rp6.449.350** (hotel diberikan langsung Rp2.000.000, CNY ≈755 hanya konversi), CNY tetap 2.434; (h) klip Trip.com Home Inn memakai tanggal 6–9 Okt (3 malam) tetapi **tidak memuat harga kamar** — harga hotel Rp2.000.000 untuk 4 malam (6–10 Okt) dari pengguna tetap berlaku; (i) entri Cadangan "Nianhua Bay Smile Plaza" dan "Nianhuawan Chanyi Town" digabung jadi satu (kemungkinan satu kawasan); (j) `Info Wisata/Wuxi.md` (rekomendasi hotel untuk draft lama Xuzhou–Wuxi) dipindah ke `tbd`.
+> (24) **2026-09-20 — preferensi baru: sewa sepeda untuk jarak 2-3km**. Atas instruksi pengguna, 2 leg Didi di Hari 4 (Yuantouzhu→Lihu National Wetland Park 3,7km, dan lanjutan ke Bogong Island 2,1km) diganti **sewa sepeda** (Meituan/Hellobike, jalur tepi danau relatif datar) — lebih murah & santai untuk jarak segini. Preferensi ini juga ditambahkan ke skill `wisata-itinerary-planner` sebagai aturan umum ke depan (prioritas moda: sepeda sebelum Didi untuk 2-3km tanpa MRT langsung, kalau jalurnya datar). **TOTAL HARI 4 turun dari 434 jadi 416 CNY**, Transport lokal 351→**333 CNY**, Subtotal aktivitas harian 1.173/1.297→**1.155/1.279 CNY**, **GRAND TOTAL 2.452→2.434 CNY (Rp6.450.100)**. (25) **2026-09-20 — perbaikan dari audit wiki (butir 1–10)**: (a) **jam HSR Nanjing→Wuxi disamakan berangkat 17:00 (file Nanjing), tiba ±17:45** — menggantikan kunci 18:00 dan hitung mundur 17:16; Hari 1 digeser 15 menit lebih awal, tanpa perubahan biaya; (b) Bogong Island **tidak bersebelahan** dengan Yuantouzhu (±2,1km) — deskripsi Lampiran dan alasan Cadangan Taihu Xiandao dikoreksi (Bogong di Hari 4, bukan Hari 2); (c) paragraf Informasi Transportasi tidak lagi menyebut Taihu Lake Promenade (sudah dihapus di revisi 22); (d) area menginap dikoreksi — hotel ±9km dari tepi danau, bukan "di gerbang klaster Lihu/Taihu"; (e) baris Lixi Park Hari 2 kini menyebut Exit 6 Heliekou (terverifikasi Amap, revisi 20); (f) badge Yuantouzhu ✅ diselaraskan dengan isinya; (g) **selisih Rp750 diselesaikan**: GRAND TOTAL Rupiah mengikuti jumlah kategori = **Rp6.449.350** (hotel diberikan langsung Rp2.000.000, CNY ≈755 hanya konversi), CNY tetap 2.434; (h) klip Trip.com Home Inn memakai tanggal 6–9 Okt (3 malam) tetapi **tidak memuat harga kamar** — harga hotel Rp2.000.000 untuk 4 malam (6–10 Okt) dari pengguna tetap berlaku; (i) entri Cadangan "Nianhua Bay Smile Plaza" dan "Nianhuawan Chanyi Town" digabung jadi satu (kemungkinan satu kawasan); (j) `Info Wisata/Wuxi.md` (rekomendasi hotel untuk draft lama Xuzhou–Wuxi) dipindah ke `tbd`. (26) **2026-09-22 — hotel diganti ke Beauty Coffetel** (keputusan pengguna, mengikuti rekomendasi wiki setelah perbandingan 3 hotel): dari Homeinn Hotel (Tanduqiao, Rp2.000.000/4 malam, sarapan termasuk) ke **Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station · 美啡酒店, alias James Joyce Coffetel/喆啡酒店)**, Tower D Meilin Center No. 169 Caozhang New Village — **Rp1.587.240/4 malam** (Trip.com 6–10 Okt, sarapan CNY 15/org tidak termasuk, anggaran makan itinerary tidak berubah), rating 9,4/10 (693 ulasan), **Taihu Square Exit 1 hanya 350m/±6 menit** (vs Tanduqiao 732m sebelumnya), check-in 14:00/check-out 12:00, titip koper Hari 5 tercantum resmi di fasilitas hotel (luggage storage). Sekaligus memperbaiki kesalahan lama "Tanduqiao/Taihu Square dianggap satu kompleks" (raw sebelumnya salah — keduanya stasiun terpisah 1 halte) dengan rute Line 1 penuh yang diverifikasi Amap 2026-09-22: Qingmingqiao–Taihu Square–Tanduqiao–Nanchan Temple–Sanyang Plaza–Shenglimen–Wuxi Railway Station–...–Liutan. Koreksi rute berdampak biaya: **Huishan Hari 3** (AM+PM metro) 16→6 CNY tiap leg (rute 12 halte ¥3/org terverifikasi, sebelumnya estimasi longgar), **Hari 5** (3 leg metro ke/dari Nanchan Temple & Wuxi Railway Station) 12→4 CNY tiap leg (masing-masing 2 atau 5 halte langsung ¥2/org, terverifikasi Amap — Wuxi Railway Station bahkan bisa dicapai metro tanpa transfer, dicatat sebagai alternatif MRT hemat mengganti sebagian Didi), **Hari 1** Didi bandara→hotel naik dari CNY 20 (3,9km/12 menit) jadi **CNY 25 (4,8km/±24 menit)** karena hotel sedikit lebih jauh dari stasiun kereta. Heliekou (Hari 2) jadi 7 halte (dari 6), tarif dipertahankan ¥3/org karena kemungkinan masih tingkat tarif dasar. **GRAND TOTAL turun dari 2.434 CNY/Rp6.449.350 jadi ≈2.239 CNY/Rp5.933.240** — gabungan hotel lebih murah (−Rp412.760) dan koreksi rute metro (−Rp103.350). Detail perbandingan hotel (termasuk kandidat Jinjiang Inn yang tidak dipilih) ada di wiki [[wuxi-hotel-comparison]].
 
 ## Informasi Transportasi
 
@@ -44,9 +44,9 @@
 
 **⚠️ Catatan:** jam berangkat 17:00 mengikuti file Nanjing (Hari 4); jam tiba ±17:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
 
-**Hotel:** Homeinn Hotel (Wuxi Nanchan Temple Nanchang Street Yongle Road). No. 58 Yongle Road, Liangxi District, Wuxi, Jiangsu, 214000. Anchor MRT: **Tanduqiao/Taihu Square Metro Station** — 732m/±13 menit jalan kaki (terverifikasi Amap). Stasiun/titik lain: Taihu Square Metro Station (860m/±13 menit jalan kaki, sama kompleks dengan Tanduqiao), Wuxi Railway Station (3,9km/±12 menit naik mobil).
+**Hotel:** Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station) · 美啡酒店, alias James Joyce Coffetel/喆啡酒店. Tower D, Meilin Center, No. 169 Caozhang New Village, Yongle Road, Liangxi District, Wuxi 214000. Rating 9,4/10 (693 ulasan). Anchor MRT: **Taihu Square Metro Station, Exit 1** — 350m/±6 menit jalan kaki (terverifikasi Amap). Stasiun lain: Tanduqiao (1km/±16 menit jalan kaki, 1 halte Line 1). Wuxi Railway Station: 4,8km/±24 menit naik mobil, atau 5 halte MRT langsung tanpa transfer (¥2/org, ±10 menit). Check-in setelah 14:00, check-out sebelum 12:00. Titip koper (Hari 5): tercantum di fasilitas resmi hotel (luggage storage).
 
-Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan stasiun Line 1 dari hotel: **Tanduqiao/Taihu Square → Qingming Bridge (1 halte selatan)**, dan ke arah utara **Tanduqiao → Nanchan Temple → ... → Wuxi Railway Station**, semua searah tanpa backtrack. Ke **Huishan (Hari 3)** transfer Line 4 di **Liutan**. Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: masuk via Line 1 + transfer **Line 2** ke Stasiun **Heliekou** (BUKAN Changguangxi), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
+Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi District — bukan satu kompleks dengan Tanduqiao seperti tercatat sebelumnya, melainkan 1 halte terpisah (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): **Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan** (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke **Huishan (Hari 3)**: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** ke Stasiun **Heliekou** (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -67,12 +67,12 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 17:45 | Tiba di Wuxi (Wuxi Railway Station) | HSR dari Nanjing South berangkat 17:00 | — | — |
-| 17:45–18:05 | Didi dari Wuxi Railway Station ke hotel (area Taihu Square, ±12 menit) | — | 20 | Rp53.000 |
-| 18:05–18:45 | Check-in, taruh barang, istirahat | — | — | — |
-| 18:45–19:45 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, area ikonik diperkirakan sangat padat. Makan ±CNY 25/org | 50 | Rp132.500 |
+| 17:45–18:10 | Didi dari Wuxi Railway Station ke hotel (Taihu Square, 4,8km/±24 menit) | — | 25 | Rp66.250 |
+| 18:10–18:45 | Check-in, taruh barang, istirahat | — | — | — |
+| 18:45–19:45 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, dan hotel juga tidak dekat kanal (Coffetel ±1,3km dari Nanchang Street). Banyak pilihan makan dalam kompleks gedung yang sama. Makan ±CNY 25/org | 50 | Rp132.500 |
 | 19:45–20:30 | Jalan santai ringan dekat hotel (opsional) | Gratis | — | — |
 | 20:30 | Kembali ke hotel, istirahat | — | — | — |
-| **TOTAL HARI 1** | | | **70** | **Rp185.500** |
+| **TOTAL HARI 1** | | | **75** | **Rp198.750** |
 
 **Plan-B hari ini:** kalau kedatangan terlambat/lebih malam dari ±17:45 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
 
@@ -80,13 +80,13 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 2 — Rabu, 7 Oktober (Klaster Lihu Timur — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)
 
-**Rute:** Hotel → Tanduqiao (732m jalan kaki) → Line 1 + transfer **Line 2** → **Heliekou, Exit 6** (Lixi Park) — exit terverifikasi Amap. Lanjut Didi ke **Central Lihu Park** (±4,5km, terverifikasi Amap). Central Lihu Park → **Liyuan Garden** ±1,2km (jalan kaki). Liyuan Garden → **Gonghu Bay Wetland Park** via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min atau alternatif 13km/22min; jauh lebih dekat dari estimasi lama ±17km/±35-40 menit). Malam Didi langsung balik ke hotel dari Gonghu Bay.
+**Rute:** Hotel (Stasiun Taihu Square) → Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** → **Heliekou, Exit 6** (Lixi Park), total 7 halte — exit terverifikasi Amap. Lanjut Didi ke **Central Lihu Park** (±4,5km, terverifikasi Amap). Central Lihu Park → **Liyuan Garden** ±1,2km (jalan kaki). Liyuan Garden → **Gonghu Bay Wetland Park** via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min atau alternatif 13km/22min; jauh lebih dekat dari estimasi lama ±17km/±35-40 menit). Malam Didi langsung balik ke hotel dari Gonghu Bay.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–08:45 | Jalan kaki ke Stasiun Tanduqiao | 732m dari hotel | — | — |
-| 08:45–09:30 | MRT Line 1 + transfer Line 2 ke **Heliekou** | 6 halte, ¥3/org | 6 | Rp15.900 |
+| 08:30–08:40 | Jalan kaki ke Stasiun Taihu Square | 350m/±6 menit dari hotel | — | — |
+| 08:40–09:25 | MRT Line 1 (3 halte ke Sanyang Plaza) + transfer Line 2 (4 halte) ke **Heliekou** | 7 halte total, ¥3/org (estimasi — 1 halte lebih jauh dari Tanduqiao, tarif kemungkinan masih tingkat dasar) | 6 | Rp15.900 |
 | 09:30–11:00 | **Lixi Park** (alias Binjiang Park) — taman tepi Lihu, area Lixi Road | Gratis. Dari Heliekou keluar Exit 6 (terverifikasi Amap) | — | — |
 | 11:00–11:20 | Didi ke **Central Lihu Park** | 4,5km terverifikasi Amap (±11 CNY/trip, "Recommended Plan") | 15 | Rp39.750 |
 | 11:20–12:30 | **Central Lihu Park** — taman pusat tepi danau Lihu | Gratis | — | — |
@@ -109,23 +109,23 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 
 ## Hari 3 — Kamis, 8 Oktober (Klaster Huishan — Golden Week sudah usai, jalur pedestrian sempit jauh lebih nyaman)
 
-**Rute:** Pagi-siang di klaster Huishan (Metro Line 1 dari hotel → transfer Line 4 di **Liutan** → **Huishan Ancient Town Station**). Sore, balik Line 4 → Line 1, tapi TERUSKAN 1 halte lewat Taihu Square sampai **Qingmingqiao** (bukan turun di Nanchan Temple) — Qingming Bridge & Nanchang Street ternyata langsung punya stasiun sendiri, cuma 1 halte dari hotel. Setelahnya tinggal 1 halte balik ke hotel.
+**Rute:** Pagi-siang di klaster Huishan — Metro Line 1 dari hotel (Taihu Square) ke **Liutan** (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4 lewat Guangshi Road, Huangxiang, Sheng'an ke **Huishan Ancient Town, Exit 6** — total 12 halte, ¥3/org, rute terverifikasi Amap 2026-09-22. Sore, balik Line 4 → Line 1, tapi TERUSKAN 1 halte lewat Taihu Square sampai **Qingmingqiao** (bukan turun di Nanchan Temple) — Qingming Bridge & Nanchang Street ternyata langsung punya stasiun sendiri, cuma 1 halte dari hotel. Setelahnya tinggal 1 halte balik ke hotel.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–09:00 | Metro Line 1 → transfer Line 4 di Liutan → Huishan Ancient Town Station | — | 16 | Rp42.400 |
+| 08:30–09:00 | Metro Line 1 → transfer Line 4 di Liutan → Huishan Ancient Town Station | 12 halte, ¥3/org — rute terverifikasi Amap | 6 | Rp15.900 |
 | 09:00–10:00 | **Wuxi Huishan Old Street** (pagi) — jalan santai + jajan pagi khas lokal | Gratis masuk, bayar jajanan | 30 | Rp79.500 |
 | 10:00–12:00 | **Huishan Ancient Town Scenic Area** — kawasan kanal & klenteng leluhur kuno | Sebagian besar area jalan gratis | — | — |
 | 12:00–13:00 | Makan siang sekitar Huishan | ±CNY 20/org | 40 | Rp106.000 |
 | 13:00–15:30 | **Xihui Park Huishan** — taman utama, termasuk Huishan Spring & area Huishan Temple | Tiket CNY 10/org | 20 | Rp53.000 |
 | 15:30–16:15 | *(Opsional, sangat direkomendasikan)* **Jichang Garden** — taman klasik di dalam Xihui Park | CNY 45/org — lihat alasan "worth it" di bawah | 90 | Rp238.500 |
 | 16:15–17:00 | Keluar Huishan, makan malam awal sekitar Huishan | ±CNY 25/org | 50 | Rp132.500 |
-| 17:00–17:45 | Metro Line 4 → Line 1 langsung ke Stasiun **Qingmingqiao** (lewat Liutan, terus lewat Taihu Square) | — | 16 | Rp42.400 |
+| 17:00–17:45 | Metro Line 4 → Line 1 langsung ke Stasiun **Qingmingqiao** (lewat Liutan, terus lewat Taihu Square) | ¥3/org (estimasi, simetris dengan rute AM terverifikasi — 1 halte lebih jauh) | 6 | Rp15.900 |
 | 18:00–20:00 | **Qingming Bridge Ancient Canal Scenic Spot** + **Nanchang Street Pedestrian Street** — versi MALAM, lampu kanal menyala penuh | Gratis area luar/jalan kanal. Jajan malam opsional ±CNY 20 | 20 | Rp53.000 |
 | 20:00–20:15 | Metro Line 1, 1 halte kembali ke hotel (Qingmingqiao → Taihu Square) | — | 8 | Rp21.200 |
-| **TOTAL HARI 3 (dengan Jichang Garden)** | | | **314** | **Rp832.100** |
-| **TOTAL HARI 3 (tanpa Jichang Garden)** | | | **224** | **Rp593.600** |
+| **TOTAL HARI 3 (dengan Jichang Garden)** | | | **294** | **Rp779.100** |
+| **TOTAL HARI 3 (tanpa Jichang Garden)** | | | **204** | **Rp540.600** |
 
 **Jichang Garden:** taman klasik terbaik di Jiangnan, menginspirasi bagian Summer Palace Beijing. ±30-45 menit, di dalam Xihui Park — bisa diskip untuk hemat.
 
@@ -164,16 +164,16 @@ Hotel berada di kawasan **Old Canal/Nanchan Temple**, Liangxi District. Urutan s
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar hotel | ±CNY 12/org | 24 | Rp63.600 |
-| 08:30–08:45 | Checkout hotel, **titip koper di front desk** (tanpa bawa koper mulai sini) | Layanan standar hotel, umumnya gratis — konfirmasi langsung ke resepsionis saat checkout | — | — |
-| 08:45–09:15 | Metro Line 1 ke area Old City (Nanchan Temple), tangan kosong | — | 12 | Rp31.800 |
+| 08:30–08:45 | Checkout hotel, **titip koper di front desk** (tanpa bawa koper mulai sini) | Tercantum di fasilitas resmi hotel (luggage storage) — tetap konfirmasi biaya (kalau ada) saat checkout | — | — |
+| 08:45–09:15 | Metro Line 1 ke Nanchan Temple, tangan kosong | 2 halte, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
 | 09:15–10:15 | **Nanchan Temple** (buka 07:00–16:45) — pagi/siang, lebih tenang | Tiket kemungkinan gratis/murah — cek langsung di lokasi | — | — |
 | 10:15–11:00 | Jajan & jalan santai **Nanchan Temple Pedestrian Street** | ±CNY 15/org | 30 | Rp79.500 |
 | 11:00–12:00 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
-| 12:00–12:30 | Metro Line 1 balik ke hotel, **ambil koper di front desk** | — | 12 | Rp31.800 |
-| 12:30–13:00 | Metro Line 1 lanjut ke Wuxi Railway Station, bawa koper | — | 12 | Rp31.800 |
+| 12:00–12:30 | Metro Line 1 balik ke hotel, **ambil koper di front desk** | 2 halte, ¥2/org | 4 | Rp10.600 |
+| 12:30–13:00 | Metro Line 1 langsung ke Wuxi Railway Station, bawa koper | 5 halte tanpa transfer, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
 | 13:00–15:00 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±2 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan) | — | — |
 | 15:00 | HSR Wuxi → Suzhou | *Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou* | — | — |
-| **TOTAL HARI 5** | | | **140** | **Rp371.000** |
+| **TOTAL HARI 5** | | | **116** | **Rp307.400** |
 
 **Plan-B hari ini:** hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).
 
@@ -185,12 +185,12 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 
 | Hari | CNY (skenario hemat) | CNY (skenario lengkap) | IDR (skenario lengkap) |
 |---|---|---|---|
-| Hari 1 (6 Okt) | 70 | 70 | Rp185.500 |
+| Hari 1 (6 Okt) | 75 | 75 | Rp198.750 |
 | Hari 2 (7 Okt) | 305 | 339 | Rp898.350 |
-| Hari 3 (8 Okt) | 224 | 314 | Rp832.100 |
+| Hari 3 (8 Okt) | 204 | 294 | Rp779.100 |
 | Hari 4 (9 Okt) | 416 | 416 | Rp1.102.400 |
-| Hari 5 (10 Okt) | 140 | 140 | Rp371.000 |
-| **Subtotal aktivitas harian** | **1.155** | **1.279** | **Rp3.389.350** |
+| Hari 5 (10 Okt) | 116 | 116 | Rp307.400 |
+| **Subtotal aktivitas harian** | **1.116** | **1.240** | **Rp3.286.000** |
 
 *Skenario hemat/lengkap beda di: Jichang Garden (Hari 3, opsional CNY 90/2org) & sepeda sewa Gonghu Bay (Hari 2, opsional CNY 34/2org). Hari 4 tidak punya varian hemat terpisah.*
 
@@ -200,10 +200,10 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 |---|---|---|
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
-| Transport lokal (metro, Didi, sepeda sewa, bus wisata) | 333 | Rp882.450 |
+| Transport lokal (metro, Didi, sepeda sewa, bus wisata) | 294 | Rp779.100 |
 | Tiket HSR kedatangan dari Nanjing (2 org) | 400 | Rp1.060.000 |
-| Hotel (4 malam) | ≈755 | Rp2.000.000 |
-| **GRAND TOTAL** | **2.434** | **Rp6.449.350** |
+| Hotel (4 malam, Beauty Coffetel) | ≈599 | Rp1.587.240 |
+| **GRAND TOTAL** | **2.239** | **Rp5.933.240** |
 
 ---
 
@@ -256,7 +256,7 @@ Bandara utama: **Sunan Shuofang International Airport (苏南硕放国际机场 
 - Foto/info: https://en.wikipedia.org/wiki/Sunan_Shuofang_International_Airport
 
 ### Area Menginap yang Disarankan
-Area **Taihu Square/Tanduqiao**, di jalur **Metro Line 1** — ±3,9km/12 menit dari Wuxi Railway Station (bukan jalan kaki, tapi 1 jalur tanpa transfer). Berada di kawasan Old Canal/Nanchan Temple, ±9km (11 halte Line 1) dari tepi Danau Lihu/Taihu — ke klaster Lihu/Taihu perlu Didi atau Line 1 + transfer; ke Old City/Nanchan Temple & stasiun tinggal Line 1 lurus; ke Huishan perlu transfer Line 4.
+Area **Taihu Square**, di jalur **Metro Line 1** — ±4,8km/24 menit naik mobil dari Wuxi Railway Station, atau 5 halte MRT langsung tanpa transfer (¥2, ±10 menit). Berada di kawasan Old Canal/Nanchan Temple, ±9km (11 halte Line 1) dari tepi Danau Lihu/Taihu — ke klaster Lihu/Taihu perlu Didi atau Line 1 + transfer; ke Old City/Nanchan Temple & stasiun tinggal Line 1 lurus (1 halte ke Qingmingqiao ke arah selatan); ke Huishan perlu transfer Line 4 di Liutan.
 
 ### Destinasi Terkenal Lain di Wuxi
 Di luar itinerary utama: **Lingshan Grand Buddha (灵山大佛 · Língshān Dàfó)** — patung Buddha berdiri 88m, salah satu ikon wisata religi terbesar di China Timur. **The Plum Garden/Meiyuan (梅园 · Méiyuán)** — terkenal saat ribuan pohon plum mekar di musim semi. Keduanya ada di bagian Cadangan dengan alasan tidak dimasukkan.
@@ -281,7 +281,7 @@ Taman tepi Lihu Lake di kawasan Lixi Road, Distrik Binhu — bagian dari rangkai
 
 ✅ Terverifikasi langsung di Amap oleh pengguna (nama, alamat: Lixi Road, seberang Lixi Xiyuan). Alamat lama di versi dokumen ini (151 Shuanghong Road) SALAH — itu alamat Central Lihu Park.
 
-**Akses:** dari hotel, jalan kaki ke Tanduqiao (732m) → MRT Line 1 + transfer Line 2 → Stasiun **Heliekou, keluar Exit 6** (area Lixi Road) — exit terverifikasi Amap, 6 halte, ¥3/org, ±45 menit.
+**Akses:** dari hotel (Taihu Square) → MRT Line 1 (3 halte ke Sanyang Plaza) + transfer Line 2 (4 halte) → Stasiun **Heliekou, keluar Exit 6** (area Lixi Road) — exit terverifikasi Amap; total 7 halte, ¥3/org (estimasi), ±45 menit.
 
 **Jam Operasional:** area taman terbuka, gratis, mengikuti jam kawasan Lihu (±06:00–21:00).
 
@@ -355,7 +355,7 @@ Jalan pedestrian tua di kaki Gunung Hui, pintu masuk ke kawasan Huishan Ancient 
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1 → transfer Line 4 di **Liutan** (dari hotel Taihu Square, Liutan lebih dekat daripada Civic Center) → turun Stasiun Huishan Ancient Town, keluar Exit 6 — ±5 menit jalan kaki, langsung di tourist center kawasan.
+**Akses:** MRT Line 1 dari hotel (Taihu Square) → transfer dalam-stasiun ke Line 4 di **Liutan** (219m/±4 menit) → Guangshi Road → Huangxiang → Sheng'an → Huishan Ancient Town, Exit 6 — total 12 halte, ¥3/org, rute terverifikasi Amap 2026-09-22; ±5 menit jalan kaki dari Exit 6, langsung di tourist center kawasan.
 
 **Jam Operasional:** kios & jalan buka ±07:00–18:00 (paling ramai jajanan pagi 07:00–10:00), gratis masuk. Tidak ada hari libur rutin.
 
