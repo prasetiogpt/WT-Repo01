@@ -10,6 +10,8 @@
 > (2) **2026-09-24 — dipersingkat jadi 3 malam/4 hari (6–9 November) atas keputusan pengguna.** Pengguna menetapkan daftar **Primary** (Beijing Road, Shangxiajiu, Guangzhou Library, Yongqing Fang, Shamian Island, Sun Yat-sen Memorial Hall, Yuexiu Park, Huacheng Square, plus Canton Tower Observation Deck & Pearl River Night Cruise), **Secondary** (Liurong Temple, Haixinsha Island, Sacred Heart Cathedral, Zhenhai Tower, Baiyun Mountain, Dafo Temple), dan **Skip** (Chen Clan Ancestral Hall, Nanyue King Museum, Guangdong Museum, Nanyue King Museum — Palace Site, Foshan Ancestral Temple). **Keputusan tukar:** Canton Tower Observation Deck (berbayar ±CNY 135–228/org) diganti **Haixinsha Island** (gratis, pemandangan menara dari luar) sesuai prinsip "prioritaskan tempat gratis"; **Pearl River Night Cruise dicoret** — cukup jalan-jalan di sekitar Canton Tower. **Dafo Temple** dimasukkan karena berada di dalam kawasan Beijing Road tanpa biaya/transport tambahan. Hari 4 jatuh **Senin**, sehingga diisi Sun Yat-sen Memorial Hall & Yuexiu Park (buka Senin); Sacred Heart Cathedral & Zhenhai Tower tutup Senin. Guangzhou Library ditaruh hari Minggu karena sumber jamnya bertentangan (tutup Senin vs tutup Rabu). Destinasi Skip, Canton Tower Observation Deck, Pearl River Night Cruise, dan sisa Secondary dipindah ke **Cadangan**. GRAND TOTAL ≈1.442 CNY / Rp3.821.300 (dari ≈2.356 CNY / Rp6.243.400 pada draft 5 malam).
 >
 > (3) **2026-09-24 — data pasti dari pengguna:** hotel **Home Inn** (cabang & harga belum diberikan, harga tetap estimasi ¥250/malam); HSR dari Shenzhen berangkat **14:00** (harga ±Rp400.000/2 org, belum dibeli); kepulangan **pesawat CAN → Ningbo 17:00** (tiket ±Rp3.000.000/2 org). Hari 1 digeser 1 jam. Hari 4 diperpanjang: **Liurong Temple dipindah dari Cadangan ke itinerary utama** (ada jeda sebelum bandara), metro ke Bandara Baiyun (⚠️ estimasi ±75 menit) menggantikan metro ke Guangzhou South. GRAND TOTAL ≈1.442 CNY/Rp3.821.300 → **≈1.489 CNY / Rp3.945.700** (Rupiah otoritatif untuk tiket HSR). Kunjungan kedua ke Ningbo kini disusun di `10 Ningbo 2.md` (9 Nov – 2 Des), tiket pesawatnya masuk budget di sana.
+>
+> (5) **2026-09-24 — data hotel dari `Info Hotel/Guangzhou`:** hotel = **Homeinn · neo (Beijing Road Pedestrian Street Gongyuanqian Subway Station)**, No. 410 Jiefang Middle Road, anchor Gongyuanqian Exit I2 (270m). Harga Trip.com 4 malam (6–10 Nov) Rp2.289.788 → **3 malam ≈Rp1.717.341** (prorata, ⚠️ estimasi), **sarapan termasuk** — biaya sarapan Hari 2–4 dihapus dari tabel. Hari 2 168→128, Hari 3 176→136, Hari 4 174→134 CNY. GRAND TOTAL ≈1.489 CNY/Rp3.945.700 → **≈1.267 CNY / Rp3.357.541**.
 
 ## Informasi Transportasi
 
@@ -22,7 +24,7 @@
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** **Home Inn (如家 · Rújiā)** — pilihan pengguna (2026-09-24); ⚠️ cabang & alamat belum diberikan, disarankan cabang di kawasan **Gongyuanqian / Beijing Road (公园前 / 北京路), Yuexiu District**: pusat kota lama Guangzhou, jalan kaki ke Beijing Road Pedestrian Street & Dafo Temple, dilayani **Line 1 & Line 2 (Gongyuanqian)** dan **Line 6 (Beijing Road)**. Tersambung langsung ke Guangzhou South (Line 2) tanpa transfer dan ke semua kluster itinerary (Xiguan, Yuexiu Park, Zhujiang New Town) dengan 1–2 kali naik. Kabari cabang Home Inn yang dipilih untuk update rute per-hari (jarak jalan kaki presisi). Pastikan hotel bisa titip bagasi setelah check-out (dibutuhkan Hari 4).
+**Hotel:** **Homeinn · neo (Guangzhou Beijing Road Pedestrian Street Gongyuanqian Subway Station)** — rating 9,0/10 (1.749 ulasan). 4th–5th Floors, Caixing Building (Wenxingge), No. 410 Jiefang Middle Road, Yuexiu District, Guangzhou 510030. Anchor MRT: **Gongyuanqian Station, Exit I2** (Line 1/2) — 270m/±5 menit jalan kaki (data Trip.com); stasiun lain: Ximenkou Exit B (810m/±14 menit jalan kaki). Beijing Road Pedestrian Street 590m, Sacred Heart Cathedral 1,3 km. Sarapan buffet termasuk, laundry room, kamar berjendela tersedia. Ulasan negatif: sebagian kamar sempit & kedap suara kurang. Bandara Baiyun 31,8 km/±29 menit naik mobil; Guangzhou Railway Station 3,5 km/±11 menit naik mobil. Titip bagasi setelah check-out (dibutuhkan Hari 4): ⚠️ konfirmasi ke hotel.
 
 **Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, ±12 halte → Gongyuanqian** (⚠️ jumlah halte & waktu ±30–35 menit dari web_search, belum diverifikasi Amap). Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
 
@@ -66,7 +68,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:00 | Sarapan dim sum/congee sekitar hotel | ±CNY 20/org | 40 | Rp106.000 |
+| 08:00 | Sarapan buffet di hotel | Sudah termasuk harga kamar | — | — |
 | 08:30–09:15 | Metro ke Huangsha | Line 1 dari Gongyuanqian arah barat, ±4 halte → Huangsha, ¥2/org ⚠️ | 4 | Rp10.600 |
 | 09:30–11:30 | **Yongqing Fang** — gang tua Xiguan, kafe, museum opera Kanton | Keluar Huangsha Exit B; gratis, buka 24 jam (toko 10:00–22:30) | — | — |
 | 11:30–12:30 | Makan siang sekitar Yongqing Fang | ±CNY 30/org | 60 | Rp159.000 |
@@ -75,7 +77,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 16:30–17:00 | Jalan/sepeda ke Shangxiajiu | ⚠️ jarak & rute belum diverifikasi (satu kawasan Xiguan) | — | — |
 | 17:00–19:00 | **Shangxiajiu Pedestrian Street** — arkade Lingnan + makan malam | Gratis jalan-jalan; makan malam ±CNY 30/org | 60 | Rp159.000 |
 | 19:00–19:45 | Metro kembali ke Gongyuanqian | Line 1 arah timur, ±4 halte, ¥2/org ⚠️ (stasiun terdekat dari Shangxiajiu belum diverifikasi) | 4 | Rp10.600 |
-| | **TOTAL HARI 2** | | **168** | **Rp445.200** |
+| | **TOTAL HARI 2** | | **128** | **Rp339.200** |
 
 **Plan-B hari ini:** kalau Sabtu terlalu ramai — persingkat Yongqing Fang dan Shamian, atau lewati Shangxiajiu dan makan malam dekat hotel.
 
@@ -87,7 +89,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:00 | Sarapan dekat hotel | ±CNY 20/org | 40 | Rp106.000 |
+| 08:00 | Sarapan buffet di hotel | Sudah termasuk harga kamar | — | — |
 | 08:30–09:15 | Metro ke Zhujiang New Town | Dari Gongyuanqian, 1 transfer ke Line 3 atau Line 5 ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
 | 09:15–11:15 | **Guangzhou Library** — perpustakaan modern 11,8 juta koleksi | Gratis, No. 4 Zhujiang East Road, buka Selasa–Minggu 09:00–21:00 ⚠️ (sumber bertentangan soal hari tutup, Minggu aman) | — | — |
 | 11:15–12:30 | **Huacheng Square** — plaza kota terbesar Guangzhou | Gratis, jalur datar, sekompleks Library | — | — |
@@ -96,7 +98,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 17:30–18:30 | Makan malam sekitar Zhujiang New Town | ±CNY 30/org | 60 | Rp159.000 |
 | 18:30–19:30 | Jalan malam sekitar Haixinsha & tepi sungai — Canton Tower berlampu | Gratis, tanpa naik dek/perahu ⚠️ jam lampu menyala belum diverifikasi | — | — |
 | 19:30–20:15 | Metro kembali ke Gongyuanqian | ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| | **TOTAL HARI 3** | | **176** | **Rp466.400** |
+| | **TOTAL HARI 3** | | **136** | **Rp360.400** |
 
 **Plan-B hari ini:** kalau cerah & ingin suasana di atas air — **Pearl River Night Cruise** (berbayar, sudah dicoret pengguna kecuali berubah pikiran, lihat Lampiran → Cadangan).
 
@@ -108,7 +110,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 07:30 | Sarapan dekat hotel, check-out & titip bagasi | ±CNY 20/org | 40 | Rp106.000 |
+| 07:30 | Sarapan buffet di hotel, check-out & titip bagasi | Sarapan sudah termasuk harga kamar | — | — |
 | 08:00–08:30 | Metro ke Sun Yat-sen Memorial Hall | Line 2 dari Gongyuanqian arah utara, ±1 halte → Memorial Hall Exit C, ¥2/org ⚠️ | 4 | Rp10.600 |
 | 08:30–10:00 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
 | 10:00–10:15 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
@@ -119,7 +121,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 13:45–15:00 | Metro ke Guangzhou Baiyun International Airport (CAN) | Gongyuanqian → Line 1 ke Tiyu Xilu → Line 3 utara ke Airport South (T1) ⚠️ estimasi ±75 menit, ¥8/org — belum diverifikasi Amap | 16 | Rp42.400 |
 | 15:00–17:00 | Check-in bagasi & tunggu boarding | Tiba bandara ≥2 jam sebelum berangkat | — | — |
 | 17:00 | Pesawat CAN → Ningbo (NGB) | Tiket sudah didapat pengguna, biaya di luar budget Guangzhou (lihat Informasi Penerbangan Pulang) | — | — |
-| | **TOTAL HARI 4** | | **174** | **Rp461.100** |
+| | **TOTAL HARI 4** | | **134** | **Rp355.100** |
 
 **Plan-B hari ini:** kalau tenaga kurang atau waktu ke bandara mepet — lewati Liurong Temple, santai makan siang di dekat hotel lalu berangkat ke bandara lebih awal.
 ---
@@ -142,28 +144,28 @@ Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memor
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
-| Hari 2 | 168 | Rp445.200 |
-| Hari 3 | 176 | Rp466.400 |
-| Hari 4 | 174 | Rp461.100 |
-| **Subtotal aktivitas harian** | **588** | **Rp1.558.200** |
+| Hari 2 | 128 | Rp339.200 |
+| Hari 3 | 136 | Rp360.400 |
+| Hari 4 | 134 | Rp355.100 |
+| **Subtotal aktivitas harian** | **468** | **Rp1.240.200** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk (Sun Yat-sen Memorial Hall, Liurong Temple) | 50 | Rp132.500 |
-| Makan (semua hari, 10x makan) | 480 | Rp1.272.000 |
+| Makan (7x makan; sarapan sudah termasuk kamar) | 360 | Rp954.000 |
 | Transport lokal (metro) | 58 | Rp153.700 |
 | Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈151 | Rp400.000 |
-| Hotel (3 malam, Home Inn) ⚠️ Estimasi | ≈750 | Rp1.987.500 |
-| **GRAND TOTAL** | **≈1.489** | **Rp3.945.700** |
+| Hotel (3 malam, Homeinn · neo, sarapan termasuk) ⚠️ Estimasi | ≈648 | Rp1.717.341 |
+| **GRAND TOTAL** | **≈1.267** | **Rp3.357.541** |
 
-**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam untuk Home Inn kawasan Yuexiu, belum ada booking/harga cabang) masih estimasi. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli, banyak pilihan kereta). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
+**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel dihitung prorata dari kutipan Trip.com 4 malam (6–10 Nov, sarapan termasuk, gratis pembatalan) Rp2.289.788 → 3 malam ≈Rp1.717.341; belum ada kutipan untuk 3 malam (6–9 Nov), cek ulang sebelum booking. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli, banyak pilihan kereta). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya
 
 - **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Zhenhai Tower dan Baiyun Mountain (Cadangan) yang menanjak sengaja tidak masuk itinerary utama. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — pilih congee, dim sum kukus, sup, ikan/ayam kukus, bubur; hindari roast goose berminyak, claypot pedas, dan gorengan.
-- **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu. Pesawat 17:00 dari Baiyun (jauh dari kota, ±75 menit): berangkat dari hotel paling lambat 13:45.
+- **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu. Pesawat 17:00 dari Baiyun (jauh dari kota, metro ±75 menit): berangkat dari hotel paling lambat 13:45. Alternatif Didi ±29 menit (hotel→bandara 31,8 km, data Trip.com) ⚠️ biayanya belum dihitung.
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.
 - **VPN:** diperlukan untuk akses Google/WhatsApp/Instagram.
 
