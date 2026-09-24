@@ -9,7 +9,7 @@
 >
 > (2) **2026-09-24 — dipersingkat jadi 3 malam/4 hari (6–9 November) atas keputusan pengguna.** Pengguna menetapkan daftar **Primary** (Beijing Road, Shangxiajiu, Guangzhou Library, Yongqing Fang, Shamian Island, Sun Yat-sen Memorial Hall, Yuexiu Park, Huacheng Square, plus Canton Tower Observation Deck & Pearl River Night Cruise), **Secondary** (Liurong Temple, Haixinsha Island, Sacred Heart Cathedral, Zhenhai Tower, Baiyun Mountain, Dafo Temple), dan **Skip** (Chen Clan Ancestral Hall, Nanyue King Museum, Guangdong Museum, Nanyue King Museum — Palace Site, Foshan Ancestral Temple). **Keputusan tukar:** Canton Tower Observation Deck (berbayar ±CNY 135–228/org) diganti **Haixinsha Island** (gratis, pemandangan menara dari luar) sesuai prinsip "prioritaskan tempat gratis"; **Pearl River Night Cruise dicoret** — cukup jalan-jalan di sekitar Canton Tower. **Dafo Temple** dimasukkan karena berada di dalam kawasan Beijing Road tanpa biaya/transport tambahan. Hari 4 jatuh **Senin**, sehingga diisi Sun Yat-sen Memorial Hall & Yuexiu Park (buka Senin); Sacred Heart Cathedral & Zhenhai Tower tutup Senin. Guangzhou Library ditaruh hari Minggu karena sumber jamnya bertentangan (tutup Senin vs tutup Rabu). Destinasi Skip, Canton Tower Observation Deck, Pearl River Night Cruise, dan sisa Secondary dipindah ke **Cadangan**. GRAND TOTAL ≈1.442 CNY / Rp3.821.300 (dari ≈2.356 CNY / Rp6.243.400 pada draft 5 malam).
 >
-> (3) **2026-09-24 — data pasti dari pengguna:** hotel **Home Inn** (cabang & harga belum diberikan, harga tetap estimasi ¥250/malam); HSR dari Shenzhen berangkat **14:00** (harga ±Rp400.000/2 org, belum dibeli); kepulangan **pesawat CAN → Ningbo 17:00** (tiket ±Rp3.000.000/2 org). Hari 1 digeser 1 jam. Hari 4 diperpanjang: **Liurong Temple dipindah dari Cadangan ke itinerary utama** (ada jeda sebelum bandara), metro ke Bandara Baiyun (⚠️ estimasi ±75 menit) menggantikan metro ke Guangzhou South. GRAND TOTAL ≈1.442 CNY/Rp3.821.300 → **≈1.489 CNY / Rp3.945.700** (Rupiah otoritatif untuk tiket HSR). Kunjungan kedua ke Ningbo setelah Guangzhou belum disusun, jadi tiket pesawatnya belum masuk budget.
+> (3) **2026-09-24 — data pasti dari pengguna:** hotel **Home Inn** (cabang & harga belum diberikan, harga tetap estimasi ¥250/malam); HSR dari Shenzhen berangkat **14:00** (harga ±Rp400.000/2 org, belum dibeli); kepulangan **pesawat CAN → Ningbo 17:00** (tiket ±Rp3.000.000/2 org). Hari 1 digeser 1 jam. Hari 4 diperpanjang: **Liurong Temple dipindah dari Cadangan ke itinerary utama** (ada jeda sebelum bandara), metro ke Bandara Baiyun (⚠️ estimasi ±75 menit) menggantikan metro ke Guangzhou South. GRAND TOTAL ≈1.442 CNY/Rp3.821.300 → **≈1.489 CNY / Rp3.945.700** (Rupiah otoritatif untuk tiket HSR). Kunjungan kedua ke Ningbo kini disusun di `10 Ningbo 2.md` (9 Nov – 2 Des), tiket pesawatnya masuk budget di sana.
 
 ## Informasi Transportasi
 
@@ -132,7 +132,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Tanggal | Senin, 9 November |
 | Jadwal | Berangkat 17:00 → Tiba 19:00 (estimasi ±2 jam, ⚠️ jam tiba belum dari tiket) |
 
-**Catatan:** tiket sudah diberikan pengguna; biaya belum masuk budget kota manapun karena kunjungan kedua ke Ningbo belum disusun (lihat catatan di Ringkasan Budget Total).
+**Catatan:** tiket sudah diberikan pengguna; biayanya masuk budget kota tujuan ([[10 Ningbo 2]], kunjungan kedua ke Ningbo).
 ---
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Guangzhou)
@@ -156,7 +156,7 @@ Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memor
 | Hotel (3 malam, Home Inn) ⚠️ Estimasi | ≈750 | Rp1.987.500 |
 | **GRAND TOTAL** | **≈1.489** | **Rp3.945.700** |
 
-**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam untuk Home Inn kawasan Yuexiu, belum ada booking/harga cabang) masih estimasi. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli, banyak pilihan kereta). **Tiket pesawat CAN → Ningbo (±Rp3.000.000/2 org, dari pengguna) belum masuk budget kota manapun** — Ningbo kunjungan kedua belum disusun. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
+**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam untuk Home Inn kawasan Yuexiu, belum ada booking/harga cabang) masih estimasi. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli, banyak pilihan kereta). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya
