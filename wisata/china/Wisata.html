@@ -547,6 +547,28 @@ function copyBtnsHtml(nameEn, nameHanzi){
   }
   return `<div class="copy-row">${html}</div>`;
 }
+/* Salin SEMUA destinasi satu kota (Hari 1 s/d terakhir + Cadangan) jadi 1 daftar.
+   Entri yang sudah di-tick (tanda "sudah ditinjau") diberi awalan "X ". Dibaca
+   saat tombol ditekan, jadi selalu mengikuti tick terbaru. */
+function copyAllText(destId, lang){
+  const dest = destinations.find(d=>d.id===destId);
+  if(!dest) return '';
+  const seen = new Map();
+  dest.lampiran.forEach(p=>{
+    if(p.group === 'intro' || p.tag === 'food') return;
+    const name = lang === 'zh' ? p.nameHanzi : p.nameEn;
+    if(!name) return;
+    const ticked = !!lampStore[lampiranKey(destId, p.title)];
+    seen.set(name, (seen.get(name) || false) || ticked);
+  });
+  return [...seen].map(([n,t])=>(t ? 'X ' : '') + n).join('\n');
+}
+function copyAllBtnsHtml(destId){
+  return `<div class="copy-row">
+    <button type="button" class="copy-btn" data-copy-all="en" data-dest="${destId}" title="Salin semua destinasi (nama Inggris); yang sudah di-tick diberi awalan X">📋 EN</button>
+    <button type="button" class="copy-btn" data-copy-all="zh" data-dest="${destId}" title="Salin semua destinasi (nama Hanzi); yang sudah di-tick diberi awalan X">📋 中文</button>
+  </div>`;
+}
 function titleHtml(p){
   const t = p.title || '';
   if(p.nameEn){
@@ -574,8 +596,10 @@ function legacyCopy(text){
 document.addEventListener('click', e=>{
   const btn = e.target.closest('.copy-btn');
   if(!btn) return;
-  const text = copyMap[+btn.dataset.copyIdx];
-  if(text == null) return;
+  const text = btn.dataset.copyAll
+    ? copyAllText(btn.dataset.dest, btn.dataset.copyAll)
+    : copyMap[+btn.dataset.copyIdx];
+  if(text == null || text === '') return;
   const orig = btn.innerHTML;
   const showResult = ok=>{
     btn.textContent = ok ? 'Tersalin ✓' : 'Gagal, coba lagi';
@@ -4205,6 +4229,7 @@ function renderCity(dest){
     const itemsHtml = entries.map(p=>{
       const noBody = !p.text && !p.wiki && !p.yt && !p.reserveInfo && (!p.nearby || !p.nearby.length) && (!p.hotels || !p.hotels.length);
       const lampKey = lampiranKey(dest.id, p.title);
+      const isDestList = isIntro && /^Destinasi Terkenal Lain/.test(p.title || '');
       const lampChecked = lampStore[lampKey] ? 'checked' : '';
       const lampDoneClass = !isIntro && lampStore[lampKey] ? ' reviewed' : '';
       return `
@@ -4212,10 +4237,11 @@ function renderCity(dest){
           <div class="lampiran-item-head">
             ${!isIntro ? `<input type="checkbox" class="lampiran-check" ${lampChecked} aria-label="Tandai sudah ditinjau: ${p.title}">` : ``}
             ${!isIntro ? `<span class="place-tag ${tagClass[p.tag]}">${p.label}</span>` : ``}
-            <span class="lampiran-item-title">${titleHtml(p)}</span>
+            <span class="lampiran-item-title">${isDestList ? '<b>Destinasi</b>' : titleHtml(p)}</span>
             ${!isIntro ? `<button type="button" class="item-toggle" aria-label="Buka/tutup detail">${CHEV}</button>` : ``}
           </div>
           <div class="lampiran-item-body">
+            ${isDestList ? copyAllBtnsHtml(dest.id) : ``}
             ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
             ${p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
             ${p.text ? `<p>${p.text}</p>` : ``}
