@@ -1,11 +1,13 @@
 # Itinerary Perjalanan Guangzhou
-6 – 11 November · 5 Malam · Direncanakan Independen (bukan sambungan kota lain)
+6 – 9 November · 3 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
 ← [[6 Shenzhen]] | [[China Trip Overview]]
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Guangzhou Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — itinerary 6 hari/5 malam disusun dari nol sesuai skill terbaru sebagai **kandidat kota setelah Shenzhen** (belum dikonfirmasi pengguna; urutan kota belum final, file ini sengaja diberi nomor terakhir sampai pengguna menyetujui). Malam dihitung 6, 7, 8, 9, 10 November (check-out 11 November) mengikuti konvensi file kota lain. Kedatangan mengikuti jadwal aktual pengguna dari Shenzhen (HSR berangkat **13:00** dari Futian, tiba Guangzhou South ±13:45 — jam tiba estimasi), kepulangan default skill **15:00**, kota berikutnya belum ditentukan. Hotel belum ditentukan (hanya direkomendasikan kawasan); harga hotel & tiket HSR kedatangan masih **ESTIMASI** dan sudah masuk GRAND TOTAL. Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]). **Semua rute & jarak antar-titik disusun dari web_search (Amap tidak bisa dipakai di sesi ini) dan ditandai ⚠️ di teks terkait — minta screenshot Amap dari pengguna untuk verifikasi sebelum finalisasi.** Urutan hari mempertimbangkan hari tutup Senin (Guangdong Museum, Nanyue King Museum, Zhenhai Tower, Sacred Heart Cathedral tutup setiap Senin) sehingga Senin 9 November diisi kawasan Zhujiang New Town yang seluruhnya outdoor.
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — itinerary 6 hari/5 malam disusun dari nol sebagai **kandidat kota setelah Shenzhen** (belum dikonfirmasi pengguna; urutan kota belum final, file ini sengaja diberi nomor terakhir). Kedatangan mengikuti jadwal aktual pengguna dari Shenzhen (HSR berangkat **13:00** dari Futian, tiba Guangzhou South ±13:45 — jam tiba estimasi), kepulangan default skill **15:00**. Hotel belum ditentukan (hanya direkomendasikan kawasan); harga hotel & tiket HSR kedatangan **ESTIMASI** dan masuk GRAND TOTAL. Kurs: **1 CNY = Rp2.650** (lihat [[exchange-rates]]). Semua rute & jarak antar-titik dari web_search (Amap tidak bisa dipakai di sesi ini), ditandai ⚠️.
+>
+> (2) **2026-09-24 — dipersingkat jadi 3 malam/4 hari (6–9 November) atas keputusan pengguna.** Pengguna menetapkan daftar **Primary** (Beijing Road, Shangxiajiu, Guangzhou Library, Yongqing Fang, Shamian Island, Sun Yat-sen Memorial Hall, Yuexiu Park, Huacheng Square, plus Canton Tower Observation Deck & Pearl River Night Cruise), **Secondary** (Liurong Temple, Haixinsha Island, Sacred Heart Cathedral, Zhenhai Tower, Baiyun Mountain, Dafo Temple), dan **Skip** (Chen Clan Ancestral Hall, Nanyue King Museum, Guangdong Museum, Nanyue King Museum — Palace Site, Foshan Ancestral Temple). **Keputusan tukar:** Canton Tower Observation Deck (berbayar ±CNY 135–228/org) diganti **Haixinsha Island** (gratis, pemandangan menara dari luar) sesuai prinsip "prioritaskan tempat gratis"; **Pearl River Night Cruise dicoret** — cukup jalan-jalan di sekitar Canton Tower. **Dafo Temple** dimasukkan karena berada di dalam kawasan Beijing Road tanpa biaya/transport tambahan. Hari 4 jatuh **Senin**, sehingga diisi Sun Yat-sen Memorial Hall & Yuexiu Park (buka Senin); Sacred Heart Cathedral & Zhenhai Tower tutup Senin. Guangzhou Library ditaruh hari Minggu karena sumber jamnya bertentangan (tutup Senin vs tutup Rabu). Destinasi Skip, Canton Tower Observation Deck, Pearl River Night Cruise, dan sisa Secondary dipindah ke **Cadangan**. GRAND TOTAL ≈1.442 CNY / Rp3.821.300 (dari ≈2.356 CNY / Rp6.243.400 pada draft 5 malam).
 
 ## Informasi Transportasi
 
@@ -14,11 +16,11 @@
 | Rute | Shenzhen Futian → Guangzhou South (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
 | Tanggal & Jam Kedatangan | Jumat, 6 November, **±13:45** (HSR berangkat 13:00 dari Futian — jam tiba estimasi, rata-rata tempuh ±30–45 menit) |
 | Durasi | ±30–45 menit (⚠️ bergantung nomor kereta yang dibeli) |
-| Tanggal & Jam Kepulangan | Rabu, 11 November, **±15:00** (default skill, belum jadwal terkunci), lihat Informasi Transportasi Pulang |
+| Tanggal & Jam Kepulangan | Senin, 9 November, **±15:00** (default skill, belum jadwal terkunci), lihat Informasi Transportasi Pulang |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** ⚠️ belum ditentukan — pilih & booking sendiri di kawasan **Gongyuanqian / Beijing Road (公园前 / 北京路), Yuexiu District**: pusat kota lama Guangzhou, jalan kaki ke Beijing Road Pedestrian Street & Dafo Temple, dilayani **Line 1 & Line 2 (Gongyuanqian)** dan **Line 6 (Beijing Road)**. Tersambung langsung ke Guangzhou South (Line 2) tanpa transfer dan ke semua kluster itinerary (Xiguan, Yuexiu Park, Zhujiang New Town) dengan 1–2 kali naik. Kabari nama hotel setelah dipilih untuk update rute per-hari (jarak jalan kaki presisi). Pastikan hotel bisa titip bagasi setelah check-out (dibutuhkan Hari 6).
+**Hotel:** ⚠️ belum ditentukan — pilih & booking sendiri di kawasan **Gongyuanqian / Beijing Road (公园前 / 北京路), Yuexiu District**: pusat kota lama Guangzhou, jalan kaki ke Beijing Road Pedestrian Street & Dafo Temple, dilayani **Line 1 & Line 2 (Gongyuanqian)** dan **Line 6 (Beijing Road)**. Tersambung langsung ke Guangzhou South (Line 2) tanpa transfer dan ke semua kluster itinerary (Xiguan, Yuexiu Park, Zhujiang New Town) dengan 1–2 kali naik. Kabari nama hotel setelah dipilih untuk update rute per-hari (jarak jalan kaki presisi). Pastikan hotel bisa titip bagasi setelah check-out (dibutuhkan Hari 4).
 
 **Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, ±12 halte → Gongyuanqian** (⚠️ jumlah halte & waktu ±30–35 menit dari web_search, belum diverifikasi Amap). Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
 
@@ -30,9 +32,9 @@
 
 ## Ringkasan Cuaca & Persiapan (November di Guangzhou)
 
-- Suhu siang **±26–27°C**, malam **±17–19°C** di awal November (menurun ke ±24°C/±15°C akhir bulan) — musim kering, kelembapan ±66%, salah satu bulan terbaik berkunjung. ⚠️ Angka rata-rata historis, bukan forecast real-time — cek forecast H-7.
+- Suhu siang **±26–27°C**, malam **±17–19°C** di awal November — musim kering, kelembapan ±66%, salah satu bulan terbaik berkunjung. ⚠️ Angka rata-rata historis, bukan forecast real-time — cek forecast H-7.
 - Curah hujan rendah (±35 mm, ±6 hari hujan sepanjang bulan, umumnya gerimis singkat) — bawa payung lipat untuk jaga-jaga.
-- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan nyaman (Hari 2 & 4 paling banyak berjalan), sunblock.
+- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan nyaman (Hari 2 & 3 paling banyak berjalan), sunblock.
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — masakan Cantonese umumnya ringan (kukus, sup, congee), sangat cocok dengan kriteria ini.
 
 ---
@@ -52,107 +54,71 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 19:00–20:30 | Jalan santai malam Beijing Road | Gratis, kawasan paling hidup malam hari | — | — |
 | | **TOTAL HARI 1** | | **70** | **Rp185.500** |
 
-**Plan-B hari ini:** kalau kelelahan perjalanan — cukup istirahat, atau lihat **Nanyue King Museum — Palace Site** (persis di Beijing Road, lihat Lampiran → Cadangan).
+**Plan-B hari ini:** kalau masih bertenaga dan ingin tambahan — **Sacred Heart Cathedral** (2 halte Line 6 dari Beijing Road, Jumat buka sore 14:30–17:30, lihat Lampiran → Cadangan).
 
 ---
 
-## Hari 2 — Sabtu, 7 November (Xiguan: Chen Clan → Yongqing Fang → Shamian Island)
+## Hari 2 — Sabtu, 7 November (Xiguan: Yongqing Fang → Shamian Island → Shangxiajiu)
 
-> **Rute:** Line 1 arah barat dari Gongyuanqian — Chen Clan Academy (2 halte), lanjut Huangsha (Yongqing Fang & Shamian), pulang ke hotel dengan Line 1 yang sama. ⚠️ jumlah halte & jarak jalan kaki antar-titik dari web_search.
+> **Rute:** Line 1 arah barat dari Gongyuanqian ke Huangsha (Yongqing Fang & Shamian), sore jalan ke Shangxiajiu untuk makan malam, pulang dengan Line 1. ⚠️ jumlah halte & jarak jalan kaki antar-titik dari web_search.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan dim sum/congee sekitar hotel | ±CNY 20/org | 40 | Rp106.000 |
-| 08:30–09:00 | Metro ke Chen Clan Academy | Line 1 dari Gongyuanqian arah barat, ±2 halte → Chen Clan Academy Exit D (langsung di pintu masuk), ¥2/org ⚠️ | 4 | Rp10.600 |
-| 09:00–11:00 | **Chen Clan Ancestral Hall** — arsitektur Lingnan, ukiran & keramik | Tiket ±CNY 10/org, buka 08:30–17:30 | 20 | Rp53.000 |
-| 11:00–11:30 | Metro ke Huangsha | Line 1 arah barat, ±2 halte → Huangsha, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 11:30–13:30 | **Yongqing Fang** — gang tua Xiguan, kafe, museum opera Kanton + makan siang | Keluar Huangsha Exit B; gratis, buka 24 jam (toko 10:00–22:30). Makan siang ±CNY 30/org | 60 | Rp159.000 |
-| 13:30–14:00 | Jalan santai ke Shamian Island | ⚠️ ±1–1,5 km dari Yongqing Fang — kalau kaki lelah, sewa sepeda bike-share atau Didi singkat | — | — |
-| 14:00–17:00 | **Shamian Island** — pulau kolonial, jalan rindang, gereja Lourdes | Gratis; Huangsha Exit F ke pulau; Gereja Our Lady of Lourdes buka Sabtu 06:00–17:30 | — | — |
-| 17:00–17:30 | Metro kembali ke Gongyuanqian | Line 1 arah timur dari Huangsha, ±4 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 2** | | **192** | **Rp508.800** |
+| 08:30–09:15 | Metro ke Huangsha | Line 1 dari Gongyuanqian arah barat, ±4 halte → Huangsha, ¥2/org ⚠️ | 4 | Rp10.600 |
+| 09:30–11:30 | **Yongqing Fang** — gang tua Xiguan, kafe, museum opera Kanton | Keluar Huangsha Exit B; gratis, buka 24 jam (toko 10:00–22:30) | — | — |
+| 11:30–12:30 | Makan siang sekitar Yongqing Fang | ±CNY 30/org | 60 | Rp159.000 |
+| 12:30–13:00 | Jalan santai ke Shamian Island | ⚠️ ±1–1,5 km dari Yongqing Fang — kalau kaki lelah, sewa sepeda bike-share atau Didi singkat | — | — |
+| 13:00–16:30 | **Shamian Island** — pulau kolonial, jalan rindang, gereja Lourdes | Gratis; Huangsha Exit F ke pulau; Gereja Our Lady of Lourdes buka Sabtu 06:00–17:30 | — | — |
+| 16:30–17:00 | Jalan/sepeda ke Shangxiajiu | ⚠️ jarak & rute belum diverifikasi (satu kawasan Xiguan) | — | — |
+| 17:00–19:00 | **Shangxiajiu Pedestrian Street** — arkade Lingnan + makan malam | Gratis jalan-jalan; makan malam ±CNY 30/org | 60 | Rp159.000 |
+| 19:00–19:45 | Metro kembali ke Gongyuanqian | Line 1 arah timur, ±4 halte, ¥2/org ⚠️ (stasiun terdekat dari Shangxiajiu belum diverifikasi) | 4 | Rp10.600 |
+| | **TOTAL HARI 2** | | **168** | **Rp445.200** |
 
-**Plan-B hari ini:** kalau Yongqing Fang terlalu ramai (Sabtu) atau ingin lebih banyak jajanan — lanjut ke **Shangxiajiu Pedestrian Street** (satu kawasan Xiguan, lihat Lampiran → Cadangan).
-
----
-
-## Hari 3 — Minggu, 8 November (Yuexiu: Sun Yat-sen Memorial Hall → Yuexiu Park → Nanyue King Museum)
-
-> **Rute:** semua di Line 2 utara dari Gongyuanqian — Memorial Hall (1 halte), Yuexiu Park (jalan ±10 menit atau 1 halte lagi). ⚠️ jumlah halte & jarak dari web_search.
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 08:00 | Sarapan dekat hotel | ±CNY 20/org | 40 | Rp106.000 |
-| 08:30–09:00 | Metro ke Sun Yat-sen Memorial Hall | Line 2 dari Gongyuanqian arah utara, ±1 halte → Memorial Hall Exit C, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 09:00–10:30 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
-| 10:30–10:45 | Jalan ke Yuexiu Park | ±10 menit jalan kaki dari Memorial Hall (per sumber web) ⚠️ | — | — |
-| 10:45–12:15 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing, tembok kuno | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
-| 12:15–13:15 | Makan siang sekitar taman | ±CNY 30/org | 60 | Rp159.000 |
-| 13:15–15:15 | **Nanyue King Museum** (situs makam) — makam Raja Wen Nanyue, jubah giok | Tiket ±CNY 10/org ⚠️ (wajib paspor asli, reservasi online); Line 2 Yuexiu Park Exit E; buka Selasa–Minggu 09:00–17:30 | 20 | Rp53.000 |
-| 15:15–15:45 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 3** | | **208** | **Rp551.200** |
-
-**Plan-B hari ini:** kalau Nanyue King Museum penuh/antrean — naik ke **Zhenhai Tower** di dalam Yuexiu Park (museum kota Guangzhou dengan pemandangan, lihat Lampiran → Cadangan).
+**Plan-B hari ini:** kalau Sabtu terlalu ramai — persingkat Yongqing Fang dan Shamian, atau lewati Shangxiajiu dan makan malam dekat hotel.
 
 ---
 
-## Hari 4 — Senin, 9 November (Zhujiang New Town: Huacheng Square → Haixinsha Island)
+## Hari 3 — Minggu, 8 November (Zhujiang New Town: Guangzhou Library → Huacheng Square → Haixinsha & Canton Tower)
 
-> **Rute:** Senin — museum & perpustakaan tutup, jadi hari ini murni jalan outdoor kawasan CBD baru. Metro ke Zhujiang New Town (Line 3/5), semua destinasi jalan kaki. ⚠️ total waktu & transfer belum diverifikasi Amap.
+> **Rute:** satu klaster CBD baru, semua jalan kaki gratis; sore–malam menikmati Canton Tower dari luar (Haixinsha) tanpa naik dek atau perahu. ⚠️ total waktu & transfer belum diverifikasi Amap.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan dekat hotel | ±CNY 20/org | 40 | Rp106.000 |
 | 08:30–09:15 | Metro ke Zhujiang New Town | Dari Gongyuanqian, 1 transfer ke Line 3 atau Line 5 ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| 09:15–11:45 | **Huacheng Square** — plaza kota terbesar Guangzhou, sumbu Canton Tower | Gratis; dari Zhujiang New Town Exit B1 jalan ±1 km (per sumber web) ⚠️; jalur datar | — | — |
-| 11:45–12:45 | Makan siang sekitar Zhujiang New Town | ±CNY 30/org | 60 | Rp159.000 |
-| 12:45–15:30 | **Haixinsha Island** — pulau plaza terbuka, pemandangan Canton Tower | Gratis; akses jembatan pejalan kaki dari Huacheng Square, atau APM ke Opera House lalu jalan ±450 m ⚠️ | — | — |
-| 15:30–16:15 | Metro kembali ke Gongyuanqian | ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 4** | | **176** | **Rp466.400** |
-
-**Plan-B hari ini:** kalau cerah & ingin suasana malam — **Pearl River Night Cruise** (berbayar, lihat Lampiran → Cadangan); kalau hujan deras — **Guangzhou Library** (indoor, ⚠️ jam Senin belum jelas, lihat Cadangan).
-
----
-
-## Hari 5 — Selasa, 10 November (Guangdong Museum → Sacred Heart Cathedral)
-
-> **Rute:** pagi ke Zhujiang New Town lagi (Guangdong Museum buka Selasa), sore kembali ke pusat kota lama untuk Sacred Heart Cathedral (Line 6). ⚠️ transfer & waktu estimasi.
-
-| Jam | Kegiatan | Catatan | CNY | IDR |
-|---|---|---|---|---|
-| 08:00 | Sarapan dekat hotel | ±CNY 20/org | 40 | Rp106.000 |
-| 08:30–09:15 | Metro ke Zhujiang New Town | ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| 09:30–12:30 | **Guangdong Museum** — koleksi Lingnan, keramik, ukiran, arsitektur "kotak harta karun" | Gratis, **wajib reservasi** WeChat mini-program (bahasa Inggris tersedia), buka 09:00–17:00 (masuk terakhir 16:00), tutup Senin | — | — |
+| 09:15–11:15 | **Guangzhou Library** — perpustakaan modern 11,8 juta koleksi | Gratis, No. 4 Zhujiang East Road, buka Selasa–Minggu 09:00–21:00 ⚠️ (sumber bertentangan soal hari tutup, Minggu aman) | — | — |
+| 11:15–12:30 | **Huacheng Square** — plaza kota terbesar Guangzhou | Gratis, jalur datar, sekompleks Library | — | — |
 | 12:30–13:30 | Makan siang sekitar Zhujiang New Town | ±CNY 30/org | 60 | Rp159.000 |
-| 13:30–14:15 | Metro ke Yide Road | Menuju Line 6 → Yide Road Exit B ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| 15:30–17:00 | **Sacred Heart Cathedral** — katedral granit gaya Gothic, "Notre-Dame dari Timur" | Gratis, jalan ±5 menit dari Yide Road Exit B; Selasa buka 08:30–11:30 & 14:30–17:30 ⚠️ | — | — |
-| 17:00–17:20 | Metro ke area hotel | Line 6 Yide Road → Beijing Road, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 5** | | **180** | **Rp477.000** |
+| 13:30–17:00 | **Haixinsha Island** — jalan santai, pemandangan Canton Tower | Gratis; jembatan pejalan kaki dari Huacheng Square, atau APM ke Opera House lalu jalan ±450 m ⚠️. Istirahat sebentar di plaza kalau perlu | — | — |
+| 17:30–18:30 | Makan malam sekitar Zhujiang New Town | ±CNY 30/org | 60 | Rp159.000 |
+| 18:30–19:30 | Jalan malam sekitar Haixinsha & tepi sungai — Canton Tower berlampu | Gratis, tanpa naik dek/perahu ⚠️ jam lampu menyala belum diverifikasi | — | — |
+| 19:30–20:15 | Metro kembali ke Gongyuanqian | ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
+| | **TOTAL HARI 3** | | **176** | **Rp466.400** |
 
-**Plan-B hari ini:** kalau reservasi Guangdong Museum penuh — **Guangzhou Library** persis di sebelahnya, gratis (lihat Lampiran → Cadangan).
+**Plan-B hari ini:** kalau cerah & ingin suasana di atas air — **Pearl River Night Cruise** (berbayar, sudah dicoret pengguna kecuali berubah pikiran, lihat Lampiran → Cadangan).
 
 ---
 
-## Hari 6 — Rabu, 11 November (Liurong Temple, Checkout, Berangkat)
+## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park, Checkout, Berangkat)
 
-> **Rute:** pagi ringan di Liurong Temple (jalan kaki dari Gongyuanqian), check-out, ke Guangzhou South.
+> **Rute:** Senin — semua tempat pagi ini buka (Memorial Hall & Yuexiu Park). Check-out pagi, titip bagasi, lalu ke Guangzhou South. ⚠️ jumlah halte dari web_search.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 07:30 | Sarapan dekat hotel | ±CNY 20/org | 40 | Rp106.000 |
-| 08:00–09:30 | **Liurong Temple** — Pagoda Bunga 57 m, pohon banyan | Jalan ±600–700 m dari Gongyuanqian Exit B ⚠️; tiket ±CNY 15/org (tiket kuil ±¥5 + pagoda ±¥10 ⚠️ bervariasi per pintu masuk), buka 08:00–17:00 | 30 | Rp79.500 |
-| 09:30–10:30 | Jalan kembali ke hotel, check-out | Titip bagasi kalau perlu | — | — |
-| 11:00–12:00 | Makan siang | ±CNY 30/org | 60 | Rp159.000 |
-| 12:15–13:00 | Metro ke Guangzhou South | Line 2 arah selatan dari Gongyuanqian, ±12 halte ⚠️ estimasi ±35 menit, ¥5/org | 10 | Rp26.500 |
-| 13:00–15:00 | Buffer check-in stasiun | Tiba stasiun ≥1 jam sebelum berangkat | — | — |
+| 07:30 | Sarapan dekat hotel, check-out & titip bagasi | ±CNY 20/org | 40 | Rp106.000 |
+| 08:00–08:30 | Metro ke Sun Yat-sen Memorial Hall | Line 2 dari Gongyuanqian arah utara, ±1 halte → Memorial Hall Exit C, ¥2/org ⚠️ | 4 | Rp10.600 |
+| 08:30–10:00 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
+| 10:00–10:15 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
+| 10:15–11:45 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
+| 11:45–12:15 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
+| 12:15–13:00 | Makan siang, ambil bagasi | ±CNY 30/org | 60 | Rp159.000 |
+| 13:00–13:45 | Metro ke Guangzhou South | Line 2 arah selatan, ±12 halte ⚠️ estimasi ±35 menit, ¥5/org | 10 | Rp26.500 |
+| 13:45–15:00 | Buffer check-in stasiun | Tiba stasiun ≥1 jam sebelum berangkat | — | — |
 | 15:00 | HSR Guangzhou South → kota berikutnya | Tujuan & moda belum ditentukan, lihat Informasi Transportasi Pulang | — | — |
-| | **TOTAL HARI 6** | | **140** | **Rp371.000** |
+| | **TOTAL HARI 4** | | **138** | **Rp365.700** |
 
-**Plan-B hari ini:** kalau Liurong Temple terlalu ramai/tutup — lewati saja, santai dim sum pagi di sekitar hotel lalu check-out lebih awal.
+**Plan-B hari ini:** kalau Memorial Hall/Yuexiu Park terasa cukup lebih cepat — tambah **Liurong Temple & Flower Pagoda** (jalan ±600–700 m dari Gongyuanqian, lihat Lampiran → Cadangan).
 
 ---
 
@@ -168,39 +134,36 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 5 Malam / 6 Hari di Guangzhou)
+## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Guangzhou)
 
-Destinasi utama hampir seluruhnya gratis — biaya tiket hanya 4 titik kecil (±CNY 10–15/org).
+Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall (±CNY 10/org).
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
-| Hari 2 | 192 | Rp508.800 |
-| Hari 3 | 208 | Rp551.200 |
-| Hari 4 | 176 | Rp466.400 |
-| Hari 5 | 180 | Rp477.000 |
-| Hari 6 | 140 | Rp371.000 |
-| **Subtotal aktivitas harian** | **966** | **Rp2.559.900** |
+| Hari 2 | 168 | Rp445.200 |
+| Hari 3 | 176 | Rp466.400 |
+| Hari 4 | 138 | Rp365.700 |
+| **Subtotal aktivitas harian** | **552** | **Rp1.462.800** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Chen Clan, Memorial Hall, Nanyue King, Liurong) | 90 | Rp238.500 |
-| Makan (semua hari, 15x makan) | 800 | Rp2.120.000 |
-| Transport lokal (metro) | 76 | Rp201.400 |
+| Tiket masuk (Sun Yat-sen Memorial Hall) | 20 | Rp53.000 |
+| Makan (semua hari, 10x makan) | 480 | Rp1.272.000 |
+| Transport lokal (metro) | 52 | Rp137.800 |
 | Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈140 | Rp371.000 |
-| Hotel (5 malam, kawasan Gongyuanqian/Beijing Road) ⚠️ Estimasi | ≈1.250 | Rp3.312.500 |
-| **GRAND TOTAL** | **≈2.356** | **Rp6.243.400** |
+| Hotel (3 malam, kawasan Gongyuanqian/Beijing Road) ⚠️ Estimasi | ≈750 | Rp1.987.500 |
+| **GRAND TOTAL** | **≈1.442** | **Rp3.821.300** |
 
-**Catatan:** Guangdong Museum, Guangzhou Library, Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Yuexiu Park, Huacheng Square, Haixinsha Island, dan Sacred Heart Cathedral gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam kawasan Yuexiu, belum ada booking) dan tiket HSR (asumsi ±CNY 70/org, kisaran ¥54–83) masih estimasi — GRAND TOTAL akan berubah begitu ada angka pasti. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
+**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam kawasan Yuexiu, belum ada booking) dan tiket HSR (asumsi ±CNY 70/org, kisaran ¥54–83) masih estimasi — GRAND TOTAL akan berubah begitu ada angka pasti. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pesisir) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai — Zhenhai Tower dan puncak Baiyun Mountain (Cadangan) yang menanjak sengaja tidak masuk itinerary utama. Hari 4 paling banyak jalan kaki di plaza terbuka (bawa topi/sunblock).
+- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Zhenhai Tower dan Baiyun Mountain (Cadangan) yang menanjak sengaja tidak masuk itinerary utama. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — pilih congee, dim sum kukus, sup, ikan/ayam kukus, bubur; hindari roast goose berminyak, claypot pedas, dan gorengan.
-- **Hari tutup Senin:** Guangdong Museum, Nanyue King Museum, Zhenhai Tower, Sacred Heart Cathedral tutup Senin — itinerary sudah disusun menghindari itu; jangan geser Hari 4 (Senin) ke destinasi indoor.
-- **Reservasi:** Guangdong Museum (gratis) wajib reservasi via WeChat mini-program; Nanyue King Museum butuh paspor asli & reservasi online ⚠️.
+- **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu — jangan geser Hari 4 ke destinasi yang tutup Senin.
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.
 - **VPN:** diperlukan untuk akses Google/WhatsApp/Instagram.
 
@@ -243,7 +206,7 @@ Cerita kuliner Cantonese — **dim sum** (hidangan kukus), **congee** (bubur), *
 Siapkan WeChat Pay/Alipay dan VPN sebelum berangkat. Hindari taksi jalanan tanpa alamat tertulis Hanzi. Hindari kunjungan Senin ke museum & katedral (tutup).
 
 ### Yang Perlu Disiapkan
-VPN aktif, WeChat Pay/Alipay, salinan paspor, adaptor tipe A/I, payung lipat, baterai cadangan. Guangdong Museum wajib reservasi WeChat.
+VPN aktif, WeChat Pay/Alipay, salinan paspor, adaptor tipe A/I, payung lipat, baterai cadangan.
 
 ## Hari 1 — Jumat, 6 November
 
@@ -277,20 +240,6 @@ Kuil Buddha yang berakar dari era Southern Han (917–971 M), berada di tengah B
 
 ## Hari 2 — Sabtu, 7 November
 
-### Chen Clan Ancestral Hall (陈家祠 · Chénjiā Cí) ✅
-Kompleks aula leluhur marga Chen yang dibangun 1888–1894 — mahakarya arsitektur Lingnan dengan ukiran kayu, batu, keramik, dan plester berwarna, kini juga jadi Guangdong Folk Art Museum.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Chen Clan Academy (陈家祠站), Line 1 Exit D atau Line 8 Exit E, langsung di depan pintu masuk.
-
-**Jam Operasional:** 08:30–17:30 (masuk terakhir 17:00).
-
-**Tiket:** ±CNY 10/org.
-
-- Foto/info: https://en.wikipedia.org/wiki/Chen_Clan_Ancestral_Hall
-- Video referensi: https://www.youtube.com/results?search_query=Chen+Clan+Ancestral+Hall+Guangzhou
-
 ### Yongqing Fang (永庆坊 · Yǒngqìng Fāng) ✅
 Kawasan gang tua Xiguan di Enning Road, Distrik Liwan — direvitalisasi jadi distrik budaya dengan arsitektur Lingnan, kafe, toko kerajinan, dan Museum Opera Kanton.
 
@@ -319,7 +268,65 @@ Pulau kecil di tepi Sungai Mutiara yang jadi konsesi Inggris & Prancis pada abad
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/shamian-island.htm
 - Video referensi: https://www.youtube.com/results?search_query=Shamian+Island+Guangzhou
 
+### Shangxiajiu Pedestrian Street (上下九步行街 · Shàngxiàjiǔ Bùxíng Jiē) ✅
+Jalan pejalan kaki arkade Lingnan klasik di Xiguan — pusat kuliner Cantonese dan salah satu jalan belanja tertua Guangzhou, menyambung Yongqing Fang dan Shamian Island.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** kawasan Xiguan, dekat Line 1 (Changshou Road) / Line 6 ⚠️ belum diverifikasi stasiun terdekat & jarak dari Shamian.
+
+**Jam Operasional:** area terbuka sepanjang hari; toko/kuliner ±10:00–22:00.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://www.newsgd.com/node_99363c4f3b/0d0dfa02d8.shtml
+- Video referensi: https://www.youtube.com/results?search_query=Shangxiajiu+Pedestrian+Street+Guangzhou
+
 ## Hari 3 — Minggu, 8 November
+
+### Guangzhou Library (广州图书馆 · Guǎngzhōu Túshūguǎn) ✅
+Perpustakaan kota di tengah Huacheng Square, buka penuh sejak 2013 — bangunan modern dengan 11,8 juta koleksi dan ±4.500 kursi baca, arsitekturnya sendiri jadi daya tarik.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** No. 4 Zhujiang East Road, dari Zhujiang New Town (Line 3/5) ⚠️ jarak jalan kaki belum diverifikasi.
+
+**Jam Operasional:** ⚠️ sumber bertentangan — Selasa–Minggu 09:00–21:00 (Senin tutup) atau tutup Rabu; Minggu aman untuk keduanya, cek sebelum berangkat.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://en.wikipedia.org/wiki/Guangzhou_Library
+- Video referensi: https://www.youtube.com/results?search_query=Guangzhou+Library+Zhujiang+New+Town
+
+### Huacheng Square (花城广场 · Huāchéng Guǎngchǎng) ✅
+Plaza publik terbesar Guangzhou (±56 hektare) di jantung Zhujiang New Town — sumbu kota baru yang menghubungkan Guangdong Museum, Guangzhou Library, Opera House, dan Canton Tower; terbaik saat lampu menyala malam hari.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Zhujiang New Town (Line 3/5), Exit B1, jalan ±1 km ke plaza ⚠️.
+
+**Jam Operasional:** area terbuka 24 jam.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://en.wikipedia.org/wiki/Zhujiang_New_City
+- Video referensi: https://www.youtube.com/results?search_query=Huacheng+Square+Guangzhou
+
+### Haixinsha Island (海心沙 · Hǎixīnshā) ✅
+Pulau buatan di Sungai Mutiara yang jadi lokasi upacara pembukaan Asian Games 2010 — kini plaza terbuka dengan pemandangan langsung ke Canton Tower dan sumbu kota baru; pengganti gratis untuk dek observasi Canton Tower.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** jembatan pejalan kaki dari Huacheng Square, atau APM ke Opera House lalu jalan ±450 m ⚠️.
+
+**Jam Operasional:** area terbuka sepanjang hari.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://en.wikipedia.org/wiki/Haixinsha
+- Video referensi: https://www.youtube.com/results?search_query=Haixinsha+Island+Guangzhou
+
+## Hari 4 — Senin, 9 November
 
 ### Sun Yat-sen Memorial Hall (中山纪念堂 · Zhōngshān Jìniàntáng) ✅
 Aula memorial berarsitektur istana China berkubah biru-oktagon, dibangun 1931 untuk mengenang Dr. Sun Yat-sen, bapak Republik China; kini gedung pertunjukan & landmark kota.
@@ -349,65 +356,9 @@ Taman kota terbesar di pusat Guangzhou (±86 hektare) di lereng Bukit Yuexiu —
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/yuexiu.htm
 - Video referensi: https://www.youtube.com/results?search_query=Yuexiu+Park+Guangzhou
 
-### Nanyue King Museum (西汉南越王博物馆 · Xīhàn Nányuèwáng Bówùguǎn) ✅
-Museum di atas makam Raja Wen dari Kerajaan Nanyue (±122 SM), ditemukan 1983 — koleksi jubah giok berbenang sutra, cap emas, dan lebih dari 1.000 artefak; museum nasional kelas satu.
+## Cadangan
 
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Yuexiu Park (Line 2), Exit E, jalan singkat. Situs makam: No. 867 Jiefang North Road.
-
-**Jam Operasional:** Selasa–Minggu 09:00–17:30 (tiket berhenti 17:00), **tutup Senin**.
-
-**Tiket:** ±CNY 10/org ⚠️; wajib reservasi online & bawa paspor asli.
-
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
-- Video referensi: https://www.youtube.com/results?search_query=Nanyue+King+Museum+Guangzhou
-
-## Hari 4 — Senin, 9 November
-
-### Huacheng Square (花城广场 · Huāchéng Guǎngchǎng) ✅
-Plaza publik terbesar Guangzhou (±56 hektare) di jantung Zhujiang New Town — sumbu kota baru yang menghubungkan Guangdong Museum, Guangzhou Library, Opera House, dan Canton Tower; terbaik saat lampu menyala malam hari.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Zhujiang New Town (Line 3/5), Exit B1, jalan ±1 km ke plaza ⚠️.
-
-**Jam Operasional:** area terbuka 24 jam.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://en.wikipedia.org/wiki/Zhujiang_New_City
-- Video referensi: https://www.youtube.com/results?search_query=Huacheng+Square+Guangzhou
-
-### Haixinsha Island (海心沙 · Hǎixīnshā) ✅
-Pulau buatan di Sungai Mutiara yang jadi lokasi upacara pembukaan Asian Games 2010 — kini plaza terbuka dengan pemandangan langsung ke Canton Tower dan sumbu kota baru.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** jembatan pejalan kaki dari Huacheng Square, atau APM ke Opera House lalu jalan ±450 m ⚠️.
-
-**Jam Operasional:** area terbuka sepanjang hari.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://en.wikipedia.org/wiki/Haixinsha
-- Video referensi: https://www.youtube.com/results?search_query=Haixinsha+Island+Guangzhou
-
-## Hari 5 — Selasa, 10 November
-
-### Guangdong Museum (广东省博物馆 · Guǎngdōngshěng Bówùguǎn) ✅
-Museum provinsi Guangdong berbentuk kotak harta karun di Zhujiang New Town — koleksi sejarah alam, keramik, ukiran Chaozhou & Guangdong, serta budaya Lingnan.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Zhujiang New Town (Line 3/5), jalan kaki ke Huacheng Square ⚠️; alamat No. 2 Zhujiang East Road, sekompleks dengan Guangzhou Library.
-
-**Jam Operasional:** Selasa–Minggu 09:00–17:00 (masuk terakhir 16:00), tutup Senin.
-
-**Tiket:** Gratis, **wajib reservasi** WeChat mini-program resmi (bahasa Inggris tersedia).
-
-- Foto/info: https://www.eastchinatrip.com/guangdong-museum-travel-guide/
-- Video referensi: https://www.youtube.com/results?search_query=Guangdong+Museum+Guangzhou
+Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary utama — alasannya ditulis di masing-masing uraian.
 
 ### Sacred Heart Cathedral (石室圣心大教堂 · Shíshì Shèngxīn Dàjiàotáng) ✅
 Katedral Katolik bergaya Gothic yang seluruhnya dibangun dari granit (1863–1888), dijuluki "Notre-Dame dari Timur" — salah satu katedral Gothic granit terbesar di Asia.
@@ -420,82 +371,12 @@ Katedral Katolik bergaya Gothic yang seluruhnya dibangun dari granit (1863–188
 
 **Tiket:** Gratis.
 
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/sacred-heart-cathedral.htm
-- Video referensi: https://www.youtube.com/results?search_query=Sacred+Heart+Cathedral+Guangzhou
-
-## Hari 6 — Rabu, 11 November
-
-### Liurong Temple (六榕寺 · Liùróng Sì) ✅
-Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sisi — namanya dari enam pohon banyan yang dulu tumbuh di halaman; salah satu situs Buddha tertua Guangzhou.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Gongyuanqian (Line 1/2), Exit B, jalan ±600–700 m ke No. 87 Liurong Road ⚠️.
-
-**Jam Operasional:** 08:00–17:00 (⚠️ sebagian sumber menyebut 17:30).
-
-**Tiket:** ±CNY 15/org ⚠️ (kuil ±¥5 + pagoda ±¥10, bervariasi per pintu masuk).
-
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
-- Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
-
-## Cadangan
-
-Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary utama — alasannya ditulis di masing-masing uraian.
-
-### Nanyue King Museum — Palace Site (南越国宫署遗址 · Nányuèguó Gōngshǔ Yízhǐ) ⚠️
-Situs istana taman kerajaan Nanyue di No. 374 Beijing Road — bagian kedua Nanyue King Museum, berisi sisa kolam taman istana era Nanyue dan istana Southern Han, tepat di jalur Beijing Road.
-
-⚠️ Jam & tiket dari sumber sekunder yang bertentangan (ada yang menyebut gratis dengan reservasi) — cek sebelum kunjungan.
-
-**Akses:** Line 1 Gongyuanqian, jalan ke Beijing Road (No. 374).
-
-**Jam Operasional:** ⚠️ diperkirakan Selasa–Minggu sekitar 09:00–17:30, tutup Senin.
-
-**Tiket:** ⚠️ gratis dengan reservasi atau ±CNY 10 (belum jelas).
-
-**Kenapa tidak dimasukkan:** sudah ada Nanyue King Museum (situs makam) di Hari 3 dengan koleksi yang lebih ikonik — situs istana lebih cocok jadi Plan-B kalau sempat di Beijing Road.
+**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — tidak searah kluster manapun, dan Hari 4 (Senin) tutup. Cocok jadi Plan-B kalau masih bertenaga di Hari 1 sore (Jumat buka 14:30–17:30).
 
 **Terkait:** Hari 1
 
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
-- Video referensi: https://www.youtube.com/results?search_query=Nanyue+Palace+Site+Beijing+Road+Guangzhou
-
-### Shangxiajiu Pedestrian Street (上下九步行街 · Shàngxiàjiǔ Bùxíng Jiē) ✅
-Jalan pejalan kaki arkade Lingnan klasik di Xiguan — pusat kuliner Cantonese dan salah satu jalan belanja tertua Guangzhou, menyambung Yongqing Fang dan Shamian Island.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** kawasan Xiguan, dekat Line 1 (Changshou Road) / Line 6 ⚠️ belum diverifikasi stasiun terdekat.
-
-**Jam Operasional:** area terbuka sepanjang hari; toko/kuliner ±10:00–22:00.
-
-**Tiket:** Gratis.
-
-**Kenapa tidak dimasukkan:** satu kawasan dengan Yongqing Fang & Shamian (Hari 2) yang sudah cukup padat — bisa jadi tambahan makan/jajan kalau masih ada tenaga.
-
-**Terkait:** Hari 2
-
-- Foto/info: https://www.newsgd.com/node_99363c4f3b/0d0dfa02d8.shtml
-- Video referensi: https://www.youtube.com/results?search_query=Shangxiajiu+Pedestrian+Street+Guangzhou
-
-### Zhenhai Tower (镇海楼 · Zhènhǎi Lóu) ✅
-Menara lima lantai era Ming (1380) di puncak Yuexiu Hill, kini Guangzhou Museum — memajang sejarah kota dan pemandangan kota dari atas, ikon Yuexiu Park.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** di dalam Yuexiu Park, dari Yuexiu Park Station (Line 2) — jalan menanjak landai ⚠️.
-
-**Jam Operasional:** 09:00–17:30, tutup Senin.
-
-**Tiket:** ±CNY 10/org.
-
-**Kenapa tidak dimasukkan:** tanjakan menuju menara lebih berat untuk lutut, dan Nanyue King Museum sudah mengisi sore Hari 3.
-
-**Terkait:** Hari 3
-
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/museum.htm
-- Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Tower+Guangzhou
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/sacred-heart-cathedral.htm
+- Video referensi: https://www.youtube.com/results?search_query=Sacred+Heart+Cathedral+Guangzhou
 
 ### Pearl River Night Cruise (珠江夜游 · Zhūjiāng Yèyóu) ✅
 Pelayaran malam di Sungai Mutiara melewati skyline Zhujiang New Town, Canton Tower berlampu, dan jembatan-jembatan kota — 70–90 menit, salah satu pengalaman malam klasik Guangzhou.
@@ -508,30 +389,46 @@ Pelayaran malam di Sungai Mutiara melewati skyline Zhujiang New Town, Canton Tow
 
 **Tiket:** ⚠️ kisaran ±CNY 90–300/org tergantung kapal & dermaga.
 
-**Kenapa tidak dimasukkan:** berbayar cukup mahal untuk konsep trip merakyat, dan Huacheng Square/Haixinsha (Hari 4) sudah memberi pemandangan lampu Canton Tower gratis.
+**Kenapa tidak dimasukkan:** **dicoret pengguna (2026-09-24)** — berbayar, dan pemandangan Canton Tower dari Haixinsha/tepi sungai gratis sudah cukup di Hari 3.
 
-**Terkait:** Hari 4
+**Terkait:** Hari 3
 
 - Foto/info: https://www.trip.com/travel-guide/attraction/guangzhou/pearl-river-night-cruise-tianzi-pier-10758762/
 - Video referensi: https://www.youtube.com/results?search_query=Pearl+River+Night+Cruise+Guangzhou
 
-### Guangzhou Library (广州图书馆 · Guǎngzhōu Túshūguǎn) ✅
-Perpustakaan kota di tengah Huacheng Square, buka penuh sejak 2013 — bangunan modern dengan 11,8 juta koleksi dan ±4.500 kursi baca, arsitekturnya sendiri jadi daya tarik.
+### Liurong Temple (六榕寺 · Liùróng Sì) ✅
+Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sisi — namanya dari enam pohon banyan yang dulu tumbuh di halaman; salah satu situs Buddha tertua Guangzhou.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** No. 4 Zhujiang East Road, sekompleks Guangdong Museum, dari Zhujiang New Town (Line 3/5) ⚠️.
+**Akses:** MTR Gongyuanqian (Line 1/2), Exit B, jalan ±600–700 m ke No. 87 Liurong Road ⚠️.
 
-**Jam Operasional:** ⚠️ sumber bertentangan — Selasa–Minggu 09:00–21:00 (Senin tutup) atau tutup Rabu; cek sebelum berangkat.
+**Jam Operasional:** 08:00–17:00 (⚠️ sebagian sumber menyebut 17:30).
 
-**Tiket:** Gratis.
+**Tiket:** ±CNY 15/org ⚠️ (kuil ±¥5 + pagoda ±¥10, bervariasi per pintu masuk).
 
-**Kenapa tidak dimasukkan:** Guangdong Museum sudah cukup mengisi pagi Hari 5; perpustakaan lebih cocok jadi Plan-B kalau reservasi museum penuh.
+**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — Hari 4 sudah berisi Memorial Hall & Yuexiu Park sebelum berangkat 15:00, jadi cocok hanya sebagai tambahan kalau waktu longgar.
 
-**Terkait:** Hari 5
+**Terkait:** Hari 4
 
-- Foto/info: https://en.wikipedia.org/wiki/Guangzhou_Library
-- Video referensi: https://www.youtube.com/results?search_query=Guangzhou+Library+Zhujiang+New+Town
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
+- Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
+
+### Zhenhai Tower (镇海楼 · Zhènhǎi Lóu) ✅
+Menara lima lantai era Ming (1380) di puncak Yuexiu Hill, kini Guangzhou Museum — memajang sejarah kota dan pemandangan kota dari atas, ikon Yuexiu Park.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** di dalam Yuexiu Park, dari Yuexiu Park Station (Line 2) — jalan menanjak landai ⚠️.
+
+**Jam Operasional:** 09:00–17:30, tutup Senin.
+
+**Tiket:** ±CNY 10/org.
+
+**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — tutup Senin (Hari 4 = Senin, satu-satunya hari di Yuexiu Park) dan tanjakan menuju menara lebih berat untuk lutut.
+
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/museum.htm
+- Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Tower+Guangzhou
 
 ### Canton Tower Observation Deck (广州塔 · Guǎngzhōu Tǎ) ✅
 Menara TV setinggi 604 m (antena) di tepi Sungai Mutiara, dibuka 2010 — dek observasi di ketinggian ±433–488 m dengan pemandangan 360° kota, wahana bubble tram, dan ferris wheel horizontal.
@@ -544,7 +441,7 @@ Menara TV setinggi 604 m (antena) di tepi Sungai Mutiara, dibuka 2010 — dek ob
 
 **Tiket:** ±CNY 135–228/org tergantung level dek; paket lengkap lebih mahal.
 
-**Kenapa tidak dimasukkan:** prioritas tempat gratis — Haixinsha Island dan Huacheng Square (Hari 4) memberi pemandangan menara dari luar tanpa tiket ±CNY 150+/org.
+**Kenapa tidak dimasukkan:** **ditukar dengan Haixinsha Island atas keputusan pengguna (2026-09-24)** — prioritas tempat gratis; Haixinsha memberi pemandangan menara dari luar tanpa tiket ±CNY 150+/org.
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/canton-tower.htm
 - Video referensi: https://www.youtube.com/results?search_query=Canton+Tower+Guangzhou
@@ -560,10 +457,74 @@ Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru 
 
 **Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
 
-**Kenapa tidak dimasukkan:** butuh setengah hari (±2 jam dengan kereta gantung, ±5 jam jalan kaki penuh) dan medan menanjak kurang cocok untuk lutut — hanya kalau ingin trip khusus alam.
+**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — butuh setengah hari (±2 jam dengan kereta gantung, ±5 jam jalan kaki penuh) dan medan menanjak kurang cocok untuk lutut; trip 3 malam tidak punya hari tersisa.
 
 - Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
 - Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou
+
+### Chen Clan Ancestral Hall (陈家祠 · Chénjiā Cí) ✅
+Kompleks aula leluhur marga Chen yang dibangun 1888–1894 — mahakarya arsitektur Lingnan dengan ukiran kayu, batu, keramik, dan plester berwarna, kini juga jadi Guangdong Folk Art Museum.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Chen Clan Academy (陈家祠站), Line 1 Exit D atau Line 8 Exit E, langsung di depan pintu masuk.
+
+**Jam Operasional:** 08:30–17:30 (masuk terakhir 17:00).
+
+**Tiket:** ±CNY 10/org.
+
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; sebenarnya searah Line 1 menuju Huangsha di Hari 2 kalau kelak berubah pikiran.
+
+- Foto/info: https://en.wikipedia.org/wiki/Chen_Clan_Ancestral_Hall
+- Video referensi: https://www.youtube.com/results?search_query=Chen+Clan+Ancestral+Hall+Guangzhou
+
+### Nanyue King Museum (西汉南越王博物馆 · Xīhàn Nányuèwáng Bówùguǎn) ✅
+Museum di atas makam Raja Wen dari Kerajaan Nanyue (±122 SM), ditemukan 1983 — koleksi jubah giok berbenang sutra, cap emas, dan lebih dari 1.000 artefak; museum nasional kelas satu.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Yuexiu Park (Line 2), Exit E, jalan singkat. Situs makam: No. 867 Jiefang North Road.
+
+**Jam Operasional:** Selasa–Minggu 09:00–17:30 (tiket berhenti 17:00), **tutup Senin**.
+
+**Tiket:** ±CNY 10/org ⚠️; wajib reservasi online & bawa paspor asli.
+
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; juga tutup Senin, satu-satunya hari di Yuexiu Park.
+
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
+- Video referensi: https://www.youtube.com/results?search_query=Nanyue+King+Museum+Guangzhou
+
+### Nanyue King Museum — Palace Site (南越国宫署遗址 · Nányuèguó Gōngshǔ Yízhǐ) ⚠️
+Situs istana taman kerajaan Nanyue di No. 374 Beijing Road — bagian kedua Nanyue King Museum, berisi sisa kolam taman istana era Nanyue dan istana Southern Han, tepat di jalur Beijing Road.
+
+⚠️ Jam & tiket dari sumber sekunder yang bertentangan (ada yang menyebut gratis dengan reservasi) — cek sebelum kunjungan.
+
+**Akses:** Line 1 Gongyuanqian, jalan ke Beijing Road (No. 374).
+
+**Jam Operasional:** ⚠️ diperkirakan Selasa–Minggu sekitar 09:00–17:30, tutup Senin.
+
+**Tiket:** ⚠️ gratis dengan reservasi atau ±CNY 10 (belum jelas).
+
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip.
+
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
+- Video referensi: https://www.youtube.com/results?search_query=Nanyue+Palace+Site+Beijing+Road+Guangzhou
+
+### Guangdong Museum (广东省博物馆 · Guǎngdōngshěng Bówùguǎn) ✅
+Museum provinsi Guangdong berbentuk kotak harta karun di Zhujiang New Town — koleksi sejarah alam, keramik, ukiran Chaozhou & Guangdong, serta budaya Lingnan.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Zhujiang New Town (Line 3/5), jalan kaki ke Huacheng Square ⚠️; alamat No. 2 Zhujiang East Road, sekompleks dengan Guangzhou Library.
+
+**Jam Operasional:** Selasa–Minggu 09:00–17:00 (masuk terakhir 16:00), tutup Senin.
+
+**Tiket:** Gratis, **wajib reservasi** WeChat mini-program resmi (bahasa Inggris tersedia).
+
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; satu kompleks dengan Guangzhou Library (Hari 3), mudah ditambahkan kalau kelak berminat.
+
+- Foto/info: https://www.eastchinatrip.com/guangdong-museum-travel-guide/
+- Video referensi: https://www.youtube.com/results?search_query=Guangdong+Museum+Guangzhou
 
 ### Foshan Ancestral Temple (佛山祖庙 · Fóshān Zǔmiào) ✅
 Kuil Taois dari abad ke-11 di kota tetangga Foshan — kompleks kuil dengan ukiran Lingnan dan tempat kelahiran budaya kung fu Wing Chun/Huang Feihong.
@@ -576,7 +537,7 @@ Kuil Taois dari abad ke-11 di kota tetangga Foshan — kompleks kuil dengan ukir
 
 **Tiket:** ±CNY 20/org.
 
-**Kenapa tidak dimasukkan:** butuh 1 hari dedicated ke kota lain (Foshan), berbayar, dan di luar fokus itinerary 6 hari di Guangzhou.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; butuh 1 hari dedicated ke kota lain (Foshan).
 
 - Foto/info: https://www.topchinatravel.com/china-attractions/foshan-ancestral-temple.htm
 - Video referensi: https://www.youtube.com/results?search_query=Foshan+Ancestral+Temple
