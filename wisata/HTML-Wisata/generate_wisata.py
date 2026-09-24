@@ -942,8 +942,8 @@ def render_destination_js(dest):
 
 
 def main():
-    if DRAFT and not HTML_PATH.exists():
-        # Wisata Draft.html pertama kali: salin kerangka dari Wisata.html utama
+    if DRAFT:
+        # Wisata Draft.html: selalu salin kerangka terbaru dari Wisata.html utama (blok data diganti di bawah)
         base = WISATA_DIR / COUNTRY / "Wisata.html"
         if base.exists():
             HTML_PATH.write_text(base.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
