@@ -1948,4 +1948,141 @@ function setGlobalSubview(view){
 document.querySelectorAll('#global-subtabs .subtab-btn').forEach(btn=>{
   btn.addEventListener('click', ()=> setGlobalSubview(btn.dataset.view));
 });
+
+/* ---------------------------------------------------------
+   TAB BUDGET — ringkasan budget tiap kota + total semua kota.
+   Dibaca otomatis dari destinations[].budget (tidak perlu edit manual).
+   Kategori dinormalisasi: Tiket masuk, Makan, Transport, Tiket HSR,
+   Tiket pesawat (+ visa), Hotel — HSR/pesawat/hotel selalu terpisah.
+--------------------------------------------------------- */
+const BGT_CATS = [
+  ['tiket','Tiket masuk'],
+  ['makan','Makan'],
+  ['transport','Transport lokal & antar-kota'],
+  ['hsr','Tiket HSR'],
+  ['pesawat','Tiket pesawat (+ visa)'],
+  ['hotel','Hotel']
+];
+const BGT_RATE = {CNY:'Rp2.650', HKD:'Rp2.300'};
+function bgtNum(s){
+  const t = String(s == null ? '' : s).replace(/<[^>]*>/g,'').replace(/&[a-z]+;/g,'').replace(/[≈Rp\s*]/g,'').replace(/\./g,'').replace(',','.');
+  const n = parseFloat(t);
+  return isNaN(n) ? 0 : n;
+}
+function bgtFmt(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.'); }
+function bgtClass(label){
+  const l = String(label).replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').toLowerCase();
+  if(/grand|^total|subtotal/.test(l)) return 'skip';
+  if(/hsr/.test(l)) return 'hsr';
+  if(/pesawat|penerbangan|flight|visa/.test(l)) return 'pesawat';
+  if(/^hotel/.test(l)) return 'hotel';
+  if(/^tiket masuk/.test(l)) return 'tiket';
+  if(/^makan/.test(l)) return 'makan';
+  if(/^transport/.test(l)) return 'transport';
+  return 'lain';
+}
+function bgtCityData(dest){
+  const b = dest.budget || {};
+  const rows = (b.byCategory && b.byCategory.length) ? b.byCategory : (b.byDay || []);
+  const groups = {};
+  let approx = false;
+  rows.forEach(([l,c,i])=>{
+    const k = bgtClass(l);
+    if(k === 'skip' || k === 'lain') return;
+    if(bgtNum(c) === 0 && bgtNum(i) === 0) return;
+    if(String(c).indexOf('≈') !== -1) approx = true;
+    (groups[k] = groups[k] || []).push({label:l, c:c, i:i});
+  });
+  let local = 0, idr = 0;
+  const cats = {};
+  BGT_CATS.forEach(([k])=>{
+    const g = groups[k] || [];
+    cats[k] = {local: g.reduce((s,r)=>s+bgtNum(r.c),0), idr: g.reduce((s,r)=>s+bgtNum(r.i),0)};
+    local += cats[k].local; idr += cats[k].idr;
+  });
+  return {groups, cats, local, idr, approx};
+}
+function bgtEsc(s){ return String(s).replace(/&amp;/g,'&').replace(/&/g,'&amp;'); }
+function renderBudgetTab(){
+  const panel = document.createElement('div');
+  panel.className = 'city-panel';
+  panel.id = 'panel-budget';
+  panel.innerHTML = '<div class="subview itinerary active"></div><div class="subview lampiran"></div>';
+  const view = panel.querySelector('.subview.itinerary');
+  const all = {};
+  BGT_CATS.forEach(([k])=>{ all[k] = 0; });
+  let grandIdr = 0;
+  const cityRows = [];
+  destinations.forEach(dest=>{
+    if(!dest.budget) return;
+    const cur = dest.currency || 'CNY';
+    const d = bgtCityData(dest);
+    const rowsHtml = BGT_CATS.map(([k,name])=>{
+      const g = d.groups[k];
+      if(!g || !g.length) return '';
+      return g.map(r=>`<tr><td>${r.label}</td><td>${r.c || '—'}</td><td>${r.i || '—'}</td></tr>`).join('');
+    }).join('');
+    const el = document.createElement('details');
+    el.className = 'budget-card';
+    el.open = true;
+    const shortDates = (dest.dates || '').split('·')[0].trim();
+    el.innerHTML = `
+      <summary><h3 class="serif">${dest.name} <span style="font-weight:400;font-size:.78em;opacity:.75">· ${shortDates} · mata uang ${cur}</span></h3>${CHEV}</summary>
+      <div class="budget-card-body">
+        <table class="budget">
+          <thead><tr><th>Kategori</th><th>${cur}</th><th>IDR</th></tr></thead>
+          <tbody>${rowsHtml}<tr class="grand"><td>GRAND TOTAL</td><td>${d.approx ? '≈' : ''}${bgtFmt(d.local)}</td><td>${bgtFmt(d.idr)}</td></tr></tbody>
+        </table>
+        <div class="budget-note">Kurs 1 ${cur} = ${BGT_RATE[cur] || '—'}.</div>
+      </div>`;
+    view.appendChild(el);
+    BGT_CATS.forEach(([k])=>{ all[k] += d.cats[k].idr; });
+    grandIdr += d.idr;
+    cityRows.push({name: dest.name, cur: cur, local: d.local, approx: d.approx, idr: d.idr});
+  });
+  const sumRows = BGT_CATS.filter(([k])=>all[k] > 0).map(([k,name])=>`<tr><td>${name}</td><td>${bgtFmt(all[k])}</td></tr>`).join('');
+  const cityHtml = cityRows.map(r=>`<tr><td>${r.name}</td><td>${r.cur}</td><td>${r.approx ? '≈' : ''}${bgtFmt(r.local)}</td><td>${bgtFmt(r.idr)}</td></tr>`).join('');
+  const sum = document.createElement('details');
+  sum.className = 'budget-card';
+  sum.open = true;
+  sum.innerHTML = `
+    <summary><h3 class="serif">Total Semua Kota <span style="font-weight:400;font-size:.78em;opacity:.75">· dalam IDR</span></h3>${CHEV}</summary>
+    <div class="budget-card-body">
+      <div class="budget-sub">Summary per kategori seluruh kota (semua mata uang sudah dikonversi ke Rupiah).</div>
+      <table class="budget">
+        <thead><tr><th>Kategori</th><th>IDR</th></tr></thead>
+        <tbody>${sumRows}<tr class="grand"><td>TOTAL SEMUA KOTA</td><td>${bgtFmt(grandIdr)}</td></tr></tbody>
+      </table>
+      <div class="budget-sub" style="margin-top:12px">Per kota (total lokal tidak dijumlah karena mata uang berbeda).</div>
+      <table class="budget">
+        <thead><tr><th>Kota</th><th>Mata uang</th><th>Total lokal</th><th>IDR</th></tr></thead>
+        <tbody>${cityHtml}<tr class="grand"><td>TOTAL</td><td>—</td><td>—</td><td>${bgtFmt(grandIdr)}</td></tr></tbody>
+      </table>
+      <div class="budget-note">Komponen bertanda ⚠️ Estimasi masih perkiraan. Hotel Ningbo tidak dihitung (properti pribadi). Tiket pulang ke Jakarta ada di Ningbo 2; tiket pesawat Ningbo → Hong Kong ada di Hong Kong.</div>
+    </div>`;
+  view.appendChild(sum);
+  return panel;
+}
+(function(){
+  const btn = document.createElement('button');
+  btn.className = 'city-tab';
+  btn.textContent = 'BGT';
+  btn.title = 'Budget';
+  btn.setAttribute('aria-label', 'Budget');
+  btn.dataset.city = '__budget';
+  const panel = renderBudgetTab();
+  cityPanelsWrap.appendChild(panel);
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.city-tab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.city-panel').forEach(p=>p.classList.remove('active'));
+    panel.classList.add('active');
+  });
+  cityTabsWrap.appendChild(btn);
+  cityTabsWrap.addEventListener('click', e=>{
+    const b = e.target.closest('.city-tab');
+    if(!b) return;
+    document.getElementById('global-subtabs').style.display = (b.dataset.city === '__budget') ? 'none' : '';
+  });
+})();
 </script>

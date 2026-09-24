@@ -5,7 +5,7 @@
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo 2 Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
-> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — kunjungan **kedua** ke Ningbo setelah Guangzhou (kunjungan pertama: [[4 Ningbo]], 10 Okt – 1 Nov). Disusun atas permintaan pengguna: **destinasi sengaja dikosongkan dulu**, budget tetap dibuat dengan perkiraan makan & transport standar (makan ±CNY 150/hari untuk 2 orang = sarapan 15 + siang 25 + malam 35 per orang; transport lokal ±CNY 40/hari). Tempat tinggal = properti pribadi yang sama (tanpa biaya hotel). Kedatangan pesawat CAN → NGB **17:00** (tiket ±Rp3.000.000/2 org dari pengguna, masuk GRAND TOTAL kota ini); kepulangan default skill **15:00** pada 2 Desember, moda & tujuan belum ditentukan. Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]).
+> ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — kunjungan **kedua** ke Ningbo setelah Guangzhou (kunjungan pertama: [[4 Ningbo]], 10 Okt – 1 Nov). Disusun atas permintaan pengguna: **destinasi sengaja dikosongkan dulu**, budget tetap dibuat dengan perkiraan makan & transport standar (makan ±CNY 150/hari untuk 2 orang = sarapan 15 + siang 25 + malam 35 per orang; transport lokal ±CNY 40/hari). Tempat tinggal = properti pribadi yang sama (tanpa biaya hotel). Kedatangan pesawat CAN → NGB **17:00** (tiket ±Rp3.000.000/2 org dari pengguna, masuk GRAND TOTAL kota ini); kepulangan 2 Desember jam **12:00** pesawat Ningbo → Jakarta (tiket ±Rp6.000.000/2 org dari pengguna, masuk GRAND TOTAL kota ini). Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]).
 
 ## Informasi Penerbangan
 
@@ -14,7 +14,7 @@
 | Rute | CAN Guangzhou Baiyun → NGB Ningbo Lishe (T2) |
 | Tanggal | Senin, 9 November |
 | Jadwal | Berangkat 17:00 → Tiba 19:00 (estimasi ±2 jam, ⚠️ jam tiba belum dari tiket) |
-| Kepulangan | Rabu, 2 Desember, **±15:00** (default skill) — moda & tujuan belum ditentukan |
+| Kepulangan | Rabu, 2 Desember, **12:00** — pesawat Ningbo → Jakarta (lihat Informasi Penerbangan Pulang) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -380,18 +380,29 @@ Hari kedatangan — tiba malam dari Guangzhou, langsung ke tempat tinggal.
 
 ---
 
-## Hari 24 — Rabu, 2 Desember (Kepulangan)
+## Hari 24 — Rabu, 2 Desember (Kepulangan ke Jakarta — Pesawat 12:00)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 07:30–08:00 | Sarapan terakhir sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:00–12:00 | Packing, checkout, waktu buffer | — | — | — |
-| 12:00–13:00 | Makan siang ringan sekitar rumah | ±CNY 25/org | 50 | Rp132.500 |
-| 13:00–14:00 | Didi ke stasiun/bandara | ⚠️ ±CNY 40 (estimasi standar; tujuan belum ditentukan) | 40 | Rp106.000 |
-| 15:00 | Keberangkatan lanjut / pulang | Moda & tujuan belum ditentukan | — | — |
-| | **TOTAL HARI 24** | | **120** | **Rp318.000** |
+| 07:00–07:30 | Sarapan terakhir sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
+| 07:30–08:30 | Didi ke Ningbo Lishe International Airport | ⚠️ ±CNY 70 dari Yinzhou; MRT belum tentu beroperasi pagi ini | 70 | Rp185.500 |
+| 08:30–12:00 | Check-in bagasi, imigrasi keberangkatan, tunggu boarding | Tiba di bandara ≥3 jam sebelum berangkat (penerbangan internasional ke Jakarta) | — | — |
+| 12:00 | Pesawat Ningbo (NGB) → Jakarta (CGK) | Tiket masuk budget kota ini; jam tiba & transit belum diketahui | — | — |
+| | **TOTAL HARI 24** | | **100** | **Rp265.000** |
 
-**Plan-B hari ini:** tidak ada destinasi terjadwal — waktu buffer dipakai kalau packing lebih lama.
+**Plan-B hari ini:** tidak ada destinasi terjadwal — siapkan packing & Didi ke bandara sejak malam sebelumnya (berangkat pagi).
+
+---
+
+## Informasi Penerbangan Pulang
+
+| | |
+|---|---|
+| Rute | NGB Ningbo Lishe → CGK Jakarta Soekarno-Hatta |
+| Tanggal | Rabu, 2 Desember |
+| Jadwal | Berangkat 12:00 → Tiba (belum diketahui, ⚠️ kemungkinan transit) |
+
+**Catatan:** tiket dari pengguna; biaya masuk budget kota ini. Maskapai & jam tiba menyusul.
 
 ---
 
@@ -424,18 +435,19 @@ Hari kedatangan — tiba malam dari Guangzhou, langsung ke tempat tinggal.
 | Hari 21 (29 Nov) | 190 | Rp503.500 |
 | Hari 22 (30 Nov) | 190 | Rp503.500 |
 | Hari 23 (1 Des) | 190 | Rp503.500 |
-| Hari 24 (2 Des) | 120 | Rp318.000 |
-| **Subtotal aktivitas harian** | **4.440** | **Rp11.766.000** |
+| Hari 24 (2 Des) | 100 | Rp265.000 |
+| **Subtotal aktivitas harian** | **4.420** | **Rp11.713.000** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk | — | — |
-| Makan (semua hari, perkiraan standar) | 3.450 | Rp9.142.500 |
-| Transport lokal (perkiraan standar) | 990 | Rp2.623.500 |
+| Makan (semua hari, perkiraan standar) | 3.400 | Rp9.010.000 |
+| Transport lokal (perkiraan standar) | 1.020 | Rp2.703.000 |
 | Tiket pesawat kedatangan dari Guangzhou (2 org) | ≈1.132 | Rp3.000.000 |
-| **GRAND TOTAL** | **≈5.572** | **Rp14.766.000** |
+| Tiket pesawat pulang Ningbo → Jakarta (2 org) | ≈2.264 | Rp6.000.000 |
+| **GRAND TOTAL** | **≈7.816** | **Rp20.713.000** |
 
 **Catatan:** tiket masuk destinasi belum dihitung karena destinasi belum ditentukan — akan menambah total begitu diisi. Biaya menginap tidak dihitung (properti pribadi).
 
@@ -447,7 +459,7 @@ Hari kedatangan — tiba malam dari Guangzhou, langsung ke tempat tinggal.
 - **Cuaca dingin:** jaket hangat wajib, terutama akhir November–Desember.
 - **Makanan:** tidak pedas/asam/berminyak — pilih sup, kukus, hidangan hangat.
 - **Kunjungan kedua:** destinasi yang sudah dikunjungi di Ningbo pertama (10 Okt – 1 Nov) tidak perlu diulang — lihat [[4 Ningbo]].
-- **Kepulangan 2 Desember:** moda & tujuan belum ditentukan.
+- **Kepulangan 2 Desember:** pesawat Ningbo → Jakarta jam 12:00 — berangkat ke bandara pagi sekali (Didi).
 
 ---
 
