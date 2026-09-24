@@ -53,6 +53,7 @@ echo ============================================
 echo   3/6 - Generate Wisata.html dari .md terbaru
 echo ============================================
 cd /d "%REPO%\wisata\china"
+py ..\HTML-Wisata\generate_wisata.py china draft
 py ..\HTML-Wisata\generate_wisata.py china
 if errorlevel 1 (
     echo.
@@ -82,12 +83,15 @@ echo   5/6 - Copy ke folder Drive
 echo ============================================
 if exist "%DRIVE_ITIN%" (
     copy /Y "%REPO%\wisata\china\Itinerary\*.md" "%DRIVE_ITIN%\"
+    if not exist "%DRIVE_ITIN%\Draft Kota" mkdir "%DRIVE_ITIN%\Draft Kota"
+    copy /Y "%REPO%\wisata\china\Itinerary\Draft Kota\*.md" "%DRIVE_ITIN%\Draft Kota\"
     echo   - Itinerary .md ter-copy ke Drive.
 ) else (
     echo   - SKIPPED: folder Drive Itinerary tidak ditemukan.
 )
 if exist "%DRIVE_HTML%" (
     copy /Y "%REPO%\wisata\china\Wisata.html" "%DRIVE_HTML%\"
+    copy /Y "%REPO%\wisata\china\Wisata Draft.html" "%DRIVE_HTML%\"
     echo   - Wisata.html ter-copy ke Drive.
 ) else (
     echo   - SKIPPED: folder Drive HTML Wisata tidak ditemukan.

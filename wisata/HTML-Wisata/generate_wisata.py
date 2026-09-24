@@ -96,7 +96,8 @@ try:
 except Exception:
     pass
 
-if len(sys.argv) != 2:
+DRAFT = len(sys.argv) == 3 and sys.argv[2] == "draft"
+if len(sys.argv) != 2 and not DRAFT:
     sys.exit(
         "Usage: py generate_wisata.py <country>\n"
         "  <country> = subfolder name under wisata/, e.g. 'china'\n"
@@ -107,6 +108,10 @@ COUNTRY = sys.argv[1]
 WISATA_DIR = Path(__file__).resolve().parent.parent  # .../wisata/
 MD_DIR = WISATA_DIR / COUNTRY / "Itinerary"
 HTML_PATH = WISATA_DIR / COUNTRY / "Wisata.html"
+if DRAFT:
+    # Mode draft: kota cadangan di Itinerary/Draft Kota/ -> Wisata Draft.html
+    MD_DIR = MD_DIR / "Draft Kota"
+    HTML_PATH = WISATA_DIR / COUNTRY / "Wisata Draft.html"
 # All *.md files in MD_DIR are picked up automatically — no need to list
 # them by hand. City tabs appear in alphabetical filename order; if you
 # want a specific order (e.g. Nanjing before Suzhou before Wuxi), prefix
@@ -937,6 +942,11 @@ def render_destination_js(dest):
 
 
 def main():
+    if DRAFT and not HTML_PATH.exists():
+        # Wisata Draft.html pertama kali: salin kerangka dari Wisata.html utama
+        base = WISATA_DIR / COUNTRY / "Wisata.html"
+        if base.exists():
+            HTML_PATH.write_text(base.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
     if not HTML_PATH.exists():
         sys.exit(f"[!] Tidak ketemu {HTML_PATH}")
     if not MD_DIR.exists():
@@ -988,8 +998,13 @@ def main():
     if n != 1:
         sys.exit("[!] Gagal mengganti blok data (marker rusak?)")
 
+    if DRAFT:
+        new_html = new_html.replace("<title>Wisata China</title>", "<title>Wisata Draft</title>")
+        new_html = new_html.replace('<div class="page-title serif">Wisata</div>', '<div class="page-title serif">Wisata Draft</div>')
+        new_html = new_html.replace("a.download = 'Wisata.html';", "a.download = 'Wisata Draft.html';")
+
     HTML_PATH.write_text(new_html, encoding="utf-8", newline="\n")
-    print(f"[OK] Wisata.html diperbarui ({len(dest_blocks)} destinasi).")
+    print(f"[OK] {HTML_PATH.name} diperbarui ({len(dest_blocks)} destinasi).")
 
 
 if __name__ == "__main__":

@@ -13,6 +13,8 @@ git pull origin main >> "%LOG%" 2>&1
 
 if exist "%DRIVE_ITIN%" (
   copy /Y "%REPO%\wisata\china\Itinerary\*.md" "%DRIVE_ITIN%\" >> "%LOG%" 2>&1
+  if not exist "%DRIVE_ITIN%\Draft Kota" mkdir "%DRIVE_ITIN%\Draft Kota"
+  copy /Y "%REPO%\wisata\china\Itinerary\Draft Kota\*.md" "%DRIVE_ITIN%\Draft Kota\" >> "%LOG%" 2>&1
   echo   - Itinerary .md copied to Drive >> "%LOG%"
 ) else (
   echo   - SKIPPED: Drive Itinerary folder not found, ^(mount offline?^) >> "%LOG%"
@@ -20,6 +22,7 @@ if exist "%DRIVE_ITIN%" (
 
 if exist "%DRIVE_HTML%" (
   copy /Y "%REPO%\wisata\china\Wisata.html" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
+  copy /Y "%REPO%\wisata\china\Wisata Draft.html" "%DRIVE_HTML%\" >> "%LOG%" 2>&1
   echo   - Wisata.html copied to Drive ^(viewing only - generate/edit from the repo, not here^) >> "%LOG%"
 ) else (
   echo   - SKIPPED: Drive HTML Wisata folder not found ^(mount offline?^) >> "%LOG%"

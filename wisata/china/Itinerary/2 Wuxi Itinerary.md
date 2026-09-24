@@ -1,7 +1,7 @@
 # Itinerary Perjalanan Wuxi
 6 – 10 Oktober · 4 Malam · Direncanakan independen (tidak terikat jadwal kota lain)
 
-← [[1 Nanjing]] | [[China Trip Overview]] | [[3 Suzhou Itinerary]] →
+← [[1 Nanjing]] | [[China Trip Overview]] | [[4 Ningbo]] →
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Wuxi Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
@@ -9,7 +9,7 @@
 
 > **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai. Klaster Lihu Timur (Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay) tetap di 7 Okt — area luas & taman gratis, relatif lebih tahan ramai. Klaster Lihu Barat termasuk **Yuantouzhu** (destinasi populer) ditaruh 9 Okt — sudah lewat Golden Week, jadi lebih tenang.
 
-> **Kedatangan:** ±17:45 (HSR Nanjing South berangkat 17:00), Selasa 6 Oktober. **Kepulangan (HSR ke Suzhou):** 15:00 tepat, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
+> **Kedatangan:** ±18:45 (HSR Nanjing South berangkat 18:00), Selasa 6 Oktober. **Kepulangan (HSR ke Ningbo):** 14:00, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
 
 > ⚠️ **Keterbatasan alat:** akses langsung ke amap.com/baike.baidu.com/zh.wikipedia.org diblokir di environment sesi ini — riset jarak/rute memakai web_search tidak langsung, dicek-silang dengan screenshot Amap dari pengguna. Beberapa titik masih ⚠️ (ditandai di teks) karena tidak bisa diverifikasi lebih jauh dengan alat yang ada.
 >
@@ -30,6 +30,8 @@
 > (23) **2026-09-20 — verifikasi jarak Gonghu Bay↔Bogong Island, konfirmasi struktur Hari 2/4 dipertahankan**: dikonfirmasi Amap **18-19km/27-28 menit** — lebih jauh dari jarak Gonghu Bay↔Liyuan Garden yang sudah ada (13-14km/19-22 menit). Ini menegaskan Gonghu Bay memang lebih tepat tetap di klaster Hari 2 (bukan dipindah ke klaster Yuantouzhu/Hari 4). Setelah analisis (estimasi total waktu kunjungan gabungan 6 tempat ±10,5 jam kalau digabung jadi 1 hari — terlalu padat untuk prinsip "santai" itinerary ini), **struktur Hari 2 (Lixi Park+Central Lihu Park+Liyuan Garden+Gonghu Bay) dan Hari 4 (Yuantouzhu+Lihu Wetland+Bogong Island) DIPERTAHANKAN seperti sekarang** — tidak digabung/direstrukturisasi lebih lanjut, atas keputusan pengguna.
 >
 > (24) **2026-09-20 — preferensi baru: sewa sepeda untuk jarak 2-3km**. Atas instruksi pengguna, 2 leg Didi di Hari 4 (Yuantouzhu→Lihu National Wetland Park 3,7km, dan lanjutan ke Bogong Island 2,1km) diganti **sewa sepeda** (Meituan/Hellobike, jalur tepi danau relatif datar) — lebih murah & santai untuk jarak segini. Preferensi ini juga ditambahkan ke skill `wisata-itinerary-planner` sebagai aturan umum ke depan (prioritas moda: sepeda sebelum Didi untuk 2-3km tanpa MRT langsung, kalau jalurnya datar). **TOTAL HARI 4 turun dari 434 jadi 416 CNY**, Transport lokal 351→**333 CNY**, Subtotal aktivitas harian 1.173/1.297→**1.155/1.279 CNY**, **GRAND TOTAL 2.452→2.434 CNY (Rp6.450.100)**. (25) **2026-09-20 — perbaikan dari audit wiki (butir 1–10)**: (a) **jam HSR Nanjing→Wuxi disamakan berangkat 17:00 (file Nanjing), tiba ±17:45** — menggantikan kunci 18:00 dan hitung mundur 17:16; Hari 1 digeser 15 menit lebih awal, tanpa perubahan biaya; (b) Bogong Island **tidak bersebelahan** dengan Yuantouzhu (±2,1km) — deskripsi Lampiran dan alasan Cadangan Taihu Xiandao dikoreksi (Bogong di Hari 4, bukan Hari 2); (c) paragraf Informasi Transportasi tidak lagi menyebut Taihu Lake Promenade (sudah dihapus di revisi 22); (d) area menginap dikoreksi — hotel ±9km dari tepi danau, bukan "di gerbang klaster Lihu/Taihu"; (e) baris Lixi Park Hari 2 kini menyebut Exit 6 Heliekou (terverifikasi Amap, revisi 20); (f) badge Yuantouzhu ✅ diselaraskan dengan isinya; (g) **selisih Rp750 diselesaikan**: GRAND TOTAL Rupiah mengikuti jumlah kategori = **Rp6.449.350** (hotel diberikan langsung Rp2.000.000, CNY ≈755 hanya konversi), CNY tetap 2.434; (h) klip Trip.com Home Inn memakai tanggal 6–9 Okt (3 malam) tetapi **tidak memuat harga kamar** — harga hotel Rp2.000.000 untuk 4 malam (6–10 Okt) dari pengguna tetap berlaku; (i) entri Cadangan "Nianhua Bay Smile Plaza" dan "Nianhuawan Chanyi Town" digabung jadi satu (kemungkinan satu kawasan); (j) `Info Wisata/Wuxi.md` (rekomendasi hotel untuk draft lama Xuzhou–Wuxi) dipindah ke `tbd`. (26) **2026-09-22 — hotel diganti ke Beauty Coffetel** (keputusan pengguna, mengikuti rekomendasi wiki setelah perbandingan 3 hotel): dari Homeinn Hotel (Tanduqiao, Rp2.000.000/4 malam, sarapan termasuk) ke **Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station · 美啡酒店, alias James Joyce Coffetel/喆啡酒店)**, Tower D Meilin Center No. 169 Caozhang New Village — **Rp1.587.240/4 malam** (Trip.com 6–10 Okt, sarapan CNY 15/org tidak termasuk, anggaran makan itinerary tidak berubah), rating 9,4/10 (693 ulasan), **Taihu Square Exit 1 hanya 350m/±6 menit** (vs Tanduqiao 732m sebelumnya), check-in 14:00/check-out 12:00, titip koper Hari 5 tercantum resmi di fasilitas hotel (luggage storage). Sekaligus memperbaiki kesalahan lama "Tanduqiao/Taihu Square dianggap satu kompleks" (raw sebelumnya salah — keduanya stasiun terpisah 1 halte) dengan rute Line 1 penuh yang diverifikasi Amap 2026-09-22: Qingmingqiao–Taihu Square–Tanduqiao–Nanchan Temple–Sanyang Plaza–Shenglimen–Wuxi Railway Station–...–Liutan. Koreksi rute berdampak biaya: **Huishan Hari 3** (AM+PM metro) 16→6 CNY tiap leg (rute 12 halte ¥3/org terverifikasi, sebelumnya estimasi longgar), **Hari 5** (3 leg metro ke/dari Nanchan Temple & Wuxi Railway Station) 12→4 CNY tiap leg (masing-masing 2 atau 5 halte langsung ¥2/org, terverifikasi Amap — Wuxi Railway Station bahkan bisa dicapai metro tanpa transfer, dicatat sebagai alternatif MRT hemat mengganti sebagian Didi), **Hari 1** Didi bandara→hotel naik dari CNY 20 (3,9km/12 menit) jadi **CNY 25 (4,8km/±24 menit)** karena hotel sedikit lebih jauh dari stasiun kereta. Heliekou (Hari 2) jadi 7 halte (dari 6), tarif dipertahankan ¥3/org karena kemungkinan masih tingkat tarif dasar. **GRAND TOTAL turun dari 2.434 CNY/Rp6.449.350 jadi ≈2.239 CNY/Rp5.933.240** — gabungan hotel lebih murah (−Rp412.760) dan koreksi rute metro (−Rp103.350). Detail perbandingan hotel (termasuk kandidat Jinjiang Inn yang tidak dipilih) ada di wiki [[wuxi-hotel-comparison]].
+>
+> (26) **2026-09-24 — sinkron dengan urutan kota baru (Suzhou dikeluarkan) & data tiket dari pengguna.** Kedatangan: HSR Nanjing South berangkat **18:00** (tiket sudah didapat), tiba ±18:45; Hari 1 digeser 1 jam. Tiket HSR kedatangan dari Nanjing **¥210/2 org** (semula ¥400). Hotel: **total ¥524 (4 malam)** dari pengguna (semula Beauty Coffetel Rp1.587.240) — Rupiah dihitung ¥524×2.650. Kepulangan: HSR ke **Ningbo 14:00** (bukan Suzhou 15:00); Hari 5 buffer di stasiun jadi ±1 jam. GRAND TOTAL 2.239 CNY/Rp5.933.240 → **1.974 CNY/Rp5.231.100**. Biaya HSR ke Ningbo (¥400/2 org) masuk budget Ningbo.
 
 ## Informasi Transportasi
 
@@ -38,11 +40,11 @@
 | Rute | NKG Nanjing South (HSR) → WUX Wuxi (HSR) |
 | Tanggal | Selasa, 6 Oktober |
 | Kereta | G-train tercepat |
-| Jadwal | Berangkat 17:00 → Tiba 17:45 (langsung, ±44 menit) |
-| Kepulangan (lanjut ke Suzhou) | Sabtu, 10 Oktober, **15:00 tepat**, via HSR |
+| Jadwal | Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit) |
+| Kepulangan (lanjut ke Ningbo) | Sabtu, 10 Oktober, **14:00**, via HSR |
 | Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
 
-**⚠️ Catatan:** jam berangkat 17:00 mengikuti file Nanjing (Hari 4); jam tiba ±17:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
+**⚠️ Catatan:** jam berangkat 18:00 sesuai tiket yang sudah didapat pengguna; jam tiba ±18:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
 
 **Hotel:** Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station) · 美啡酒店, alias James Joyce Coffetel/喆啡酒店. Tower D, Meilin Center, No. 169 Caozhang New Village, Yongle Road, Liangxi District, Wuxi 214000. Rating 9,4/10 (693 ulasan). Anchor MRT: **Taihu Square Metro Station, Exit 1** — 350m/±6 menit jalan kaki (terverifikasi Amap). Stasiun lain: Tanduqiao (1km/±16 menit jalan kaki, 1 halte Line 1). Wuxi Railway Station: 4,8km/±24 menit naik mobil, atau 5 halte MRT langsung tanpa transfer (¥2/org, ±10 menit). Check-in setelah 14:00, check-out sebelum 12:00. Titip koper (Hari 5): tercantum di fasilitas resmi hotel (luggage storage).
 
@@ -66,15 +68,15 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 17:45 | Tiba di Wuxi (Wuxi Railway Station) | HSR dari Nanjing South berangkat 17:00 | — | — |
-| 17:45–18:10 | Didi dari Wuxi Railway Station ke hotel (Taihu Square, 4,8km/±24 menit) | — | 25 | Rp66.250 |
-| 18:10–18:45 | Check-in, taruh barang, istirahat | — | — | — |
-| 18:45–19:45 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, dan hotel juga tidak dekat kanal (Coffetel ±1,3km dari Nanchang Street). Banyak pilihan makan dalam kompleks gedung yang sama. Makan ±CNY 25/org | 50 | Rp132.500 |
-| 19:45–20:30 | Jalan santai ringan dekat hotel (opsional) | Gratis | — | — |
-| 20:30 | Kembali ke hotel, istirahat | — | — | — |
+| 18:45 | Tiba di Wuxi (Wuxi Railway Station) | HSR dari Nanjing South berangkat 18:00 | — | — |
+| 18:45–19:10 | Didi dari Wuxi Railway Station ke hotel (Taihu Square, 4,8km/±24 menit) | — | 25 | Rp66.250 |
+| 19:10–19:45 | Check-in, taruh barang, istirahat | — | — | — |
+| 19:45–20:45 | Makan malam santai dekat hotel | **Sengaja TIDAK ke kawasan kanal/Old City malam ini** — masih hari terakhir Golden Week, dan hotel juga tidak dekat kanal (Coffetel ±1,3km dari Nanchang Street). Banyak pilihan makan dalam kompleks gedung yang sama. Makan ±CNY 25/org | 50 | Rp132.500 |
+| 20:45–21:15 | Jalan santai ringan dekat hotel (opsional) | Gratis | — | — |
+| 21:15 | Kembali ke hotel, istirahat | — | — | — |
 | **TOTAL HARI 1** | | | **75** | **Rp198.750** |
 
-**Plan-B hari ini:** kalau kedatangan terlambat/lebih malam dari ±17:45 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
+**Plan-B hari ini:** kalau kedatangan terlambat/lebih malam dari ±18:45 — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja.
 
 ---
 
@@ -157,7 +159,7 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 
 ---
 
-## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Suzhou 15:00 Tepat)
+## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Ningbo 14:00)
 
 **Rute:** Nanchan Temple saja (Qingming Bridge/Nanchang Street sudah di Hari 3). Checkout pagi, **koper dititip di hotel**, diambil lagi siang sebelum ke stasiun.
 
@@ -171,8 +173,8 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 | 11:00–12:00 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
 | 12:00–12:30 | Metro Line 1 balik ke hotel, **ambil koper di front desk** | 2 halte, ¥2/org | 4 | Rp10.600 |
 | 12:30–13:00 | Metro Line 1 langsung ke Wuxi Railway Station, bawa koper | 5 halte tanpa transfer, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
-| 13:00–15:00 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±2 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan) | — | — |
-| 15:00 | HSR Wuxi → Suzhou | *Di luar budget Wuxi. Makan malam disarankan setibanya di Suzhou* | — | — |
+| 13:00–14:00 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±1 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan) | — | — |
+| 14:00 | HSR Wuxi → Ningbo | *Di luar budget Wuxi (biaya masuk budget Ningbo). Makan malam disarankan setibanya di Ningbo* | — | — |
 | **TOTAL HARI 5** | | | **116** | **Rp307.400** |
 
 **Plan-B hari ini:** hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).
@@ -201,9 +203,9 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 | Tiket masuk (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) | 380 | Rp1.007.000 |
 | Makan (semua hari, termasuk jajan) | 566 | Rp1.499.900 |
 | Transport lokal (metro, Didi, sepeda sewa, bus wisata) | 294 | Rp779.100 |
-| Tiket HSR kedatangan dari Nanjing (2 org) | 400 | Rp1.060.000 |
-| Hotel (4 malam, Beauty Coffetel) | ≈599 | Rp1.587.240 |
-| **GRAND TOTAL** | **2.239** | **Rp5.933.240** |
+| Tiket HSR kedatangan dari Nanjing (2 org) | 210 | Rp556.500 |
+| Hotel (4 malam, total) | 524 | Rp1.388.600 |
+| **GRAND TOTAL** | **1.974** | **Rp5.231.100** |
 
 ---
 
@@ -214,8 +216,8 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 - **Transportasi:** hotel di Taihu Square (Line 1), 1 halte dari Qingmingqiao. Klaster Lihu Timur (Hari 2, hari penuh s/d ±21:00): Line 1 + transfer Line 2 ke Heliekou, lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari. Klaster Lihu Barat (Hari 4, hari penuh s/d ±21:00): Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT). **Hari 5:** koper dititip di hotel setelah checkout, diambil siang sebelum ke stasiun. Metro Line 1 jalur utama (+transfer Line 4 di **Liutan** untuk Huishan).
 - **Tempat berbayar** (Xihui Park, Jichang Garden, Liyuan Garden, Taihu Yuantouzhu) ditandai jelas & sebagian opsional untuk hemat biaya.
 - **Golden Week:** Huishan (rawan macet) di 8 Okt setelah liburan usai; klaster Lihu Timur (area luas, tahan ramai) di 7 Okt. Klaster Lihu Barat termasuk **Yuantouzhu** (destinasi populer) ditaruh 9 Okt — sudah lewat Golden Week, jadi lebih tenang.
-- **Jadwal:** tiba ±17:45 (6 Okt), pulang 15:00 (10 Okt) via HSR ke Suzhou. Qingming Bridge/Nanchang Street versi malam di Hari 3.
-- **Itinerary kota ini independen** — tidak menyambung otomatis ke jadwal Nanjing/Suzhou; penyambungan antar kota diatur terpisah oleh Anda.
+- **Jadwal:** tiba ±18:45 (6 Okt), pulang 14:00 (10 Okt) via HSR ke Ningbo. Qingming Bridge/Nanchang Street versi malam di Hari 3.
+- **Itinerary kota ini independen** — tidak menyambung otomatis ke jadwal Nanjing/Ningbo; penyambungan antar kota diatur terpisah oleh Anda.
 
 ---
 
@@ -223,13 +225,13 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 
 | | |
 |---|---|
-| Rute | Wuxi Railway Station → Suzhou via HSR |
-| Tanggal & Jam | Sabtu, 10 Oktober, **15:00 tepat** |
-| Durasi HSR | ±18–30 menit (Wuxi-Suzhou termasuk segmen HSR terpendek di jalur ini, banyak pilihan jadwal G/D-train) |
-| Tiket | Biaya masuk budget Suzhou (kota tujuan), bukan Wuxi |
+| Rute | Wuxi Railway Station → Ningbo via HSR |
+| Tanggal & Jam | Sabtu, 10 Oktober, **14:00** |
+| Durasi HSR | ±3 jam (⚠️ estimasi, tergantung nomor kereta; banyak pilihan jadwal G/D-train) |
+| Tiket | Biaya masuk budget Ningbo (kota tujuan), bukan Wuxi |
 | Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun |
 
-**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Suzhou diperkirakan ±15:20–15:30, cukup waktu untuk check-in sore.
+**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Ningbo diperkirakan ±17:00–17:30 (⚠️ estimasi), cukup waktu untuk sampai ke tempat tinggal & makan malam.
 
 ---
 

@@ -1,0 +1,1951 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wisata Draft</title>
+<style>
+:root{
+  --paper:#FAF7F0;
+  --paper-raised:#FFFFFF;
+  --ink:#1C2430;
+  --ink-soft:#5B6472;
+  --amber:#B9781F;
+  --amber-ink:#7A5115;
+  --amber-soft:#F1E0C4;
+  --amber-soft-border:#E0C692;
+  --amber-ink-light:#9C7238;
+  --amber-soft-light:#F8EEDC;
+  --amber-soft-light-border:#EDDBB0;
+  --indigo:#2C4870;
+  --indigo-ink:#FFFFFF;
+  --indigo-soft:#E4EBF5;
+  --jade:#4F7A6B;
+  --jade-soft:#E1EDE7;
+  --violet:#6B5CA5;
+  --violet-soft:#EBE6F5;
+  --border:#E4DDCC;
+  --border-strong:#D2C8AE;
+  --row-alt: rgba(44,72,112,.035);
+  --shadow: 0 1px 2px rgba(28,36,48,.06), 0 4px 16px rgba(28,36,48,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#14181F;
+    --paper-raised:#1C222C;
+    --ink:#EDE7DA;
+    --ink-soft:#A7ADBB;
+    --amber:#E0A354;
+    --amber-ink:#F3D9AE;
+    --amber-soft:#3A2E1A;
+    --amber-soft-border:#5A4526;
+    --amber-ink-light:#C9AD82;
+    --amber-soft-light:#2A2416;
+    --amber-soft-light-border:#443722;
+    --indigo:#3E5F8F;
+    --indigo-ink:#FFFFFF;
+    --indigo-soft:#212C3D;
+    --jade:#84BCA6;
+    --jade-soft:#1D2E28;
+    --violet:#B4A4E0;
+    --violet-soft:#282137;
+    --border:#2B323F;
+    --border-strong:#3A4353;
+    --row-alt: rgba(255,255,255,.03);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 20px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14181F;
+  --paper-raised:#1C222C;
+  --ink:#EDE7DA;
+  --ink-soft:#A7ADBB;
+  --amber:#E0A354;
+  --amber-ink:#F3D9AE;
+  --amber-soft:#3A2E1A;
+  --amber-soft-border:#5A4526;
+  --amber-ink-light:#C9AD82;
+  --amber-soft-light:#2A2416;
+  --amber-soft-light-border:#443722;
+  --indigo:#3E5F8F;
+  --indigo-ink:#FFFFFF;
+  --indigo-soft:#212C3D;
+  --jade:#84BCA6;
+  --jade-soft:#1D2E28;
+  --border:#2B323F;
+  --border-strong:#3A4353;
+  --row-alt: rgba(255,255,255,.03);
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 20px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{font-size:17px;}
+html,body{margin:0;padding:0;overscroll-behavior-y:contain;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;}
+h1,h2,h3{
+  font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;
+  text-wrap:balance;margin:0;
+}
+a{color:var(--indigo);}
+button{font:inherit;}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px 64px;}
+
+/* page header */
+header.top{
+  position:fixed;top:0;left:0;right:0;z-index:30;
+  background:color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border);
+}
+.top-inner{max-width:760px;margin:0 auto;padding:10px 14px 0;}
+.title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.page-title{font-size:1.15rem;font-weight:700;letter-spacing:-.01em;white-space:nowrap;}
+.page-title .page-sub-inline{font-weight:500;color:var(--ink-soft);font-size:.85rem;}
+.top-actions{display:flex;gap:4px;flex:0 0 auto;}
+.theme-toggle,.icon-btn{
+  flex:0 0 auto;width:26px;height:26px;border-radius:7px;
+  border:1px solid var(--border-strong);background:var(--paper-raised);
+  color:var(--ink);display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+}
+.theme-toggle:focus-visible,.icon-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+.theme-toggle svg,.icon-btn svg{width:13px;height:13px;}
+.icon-btn.active{background:var(--amber-soft);border-color:var(--amber);color:var(--amber-ink);}
+body.hide-reviewed .lampiran-item.reviewed{display:none;}
+body.hide-reviewed table.itin tbody tr.done{display:none;}
+.lampiran-item-head .lampiran-check{flex:0 0 auto;margin:0;}
+
+/* city tabs (top hierarchy) */
+.city-tabs{
+  display:flex;gap:6px;overflow-x:auto;
+  padding:8px 14px 8px;margin:0 -14px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.city-tabs::-webkit-scrollbar{display:none;}
+.city-tab{
+  flex:0 0 auto;border:1px solid var(--border-strong);background:var(--paper-raised);
+  color:var(--ink);padding:5px 13px;border-radius:99px;
+  font-size:.78rem;font-weight:700;cursor:pointer;white-space:nowrap;
+}
+.city-tab.active{background:var(--indigo);color:var(--indigo-ink);border-color:var(--indigo);}
+.city-tab:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+
+.search-row{margin:0 0 8px;}
+.dest-search{
+  width:100%;box-sizing:border-box;border:1px solid var(--border-strong);
+  background:var(--paper-raised);color:var(--ink);border-radius:9px;
+  padding:8px 12px;font-size:.85rem;font-family:inherit;
+}
+.dest-search::placeholder{color:var(--ink-soft);}
+.dest-search:focus-visible{outline:2px solid var(--amber);outline-offset:1px;}
+.search-hit{background:var(--amber-soft);outline:2px solid var(--amber);border-radius:4px;}
+
+.city-panel{display:none;padding-top:12px;}
+.city-panel.active{display:block;}
+.city-dates{color:var(--ink-soft);font-size:.8rem;margin-bottom:12px;}
+
+/* second-level: itinerary / lampiran (sticky, lives in header) */
+.subtabs{display:flex;gap:5px;background:var(--paper-raised);border:1px solid var(--border);border-radius:9px;padding:3px;margin:0 0 8px;}
+.subtab-btn{
+  flex:1;border:none;background:transparent;color:var(--ink-soft);
+  padding:6px 8px;border-radius:7px;font-size:.8rem;font-weight:700;cursor:pointer;
+}
+.subtab-btn.active{background:var(--indigo);color:var(--indigo-ink);}
+.subtab-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+.subview{display:none;}
+.subview.active{display:block;}
+
+.section-heading{font-size:1.08rem;font-weight:700;margin:22px 0 10px;}
+.section-heading:first-child{margin-top:0;}
+.section-intro{color:var(--ink-soft);font-size:.88rem;margin-bottom:14px;line-height:1.6;}
+
+/* ---- transport card, collapsible ---- */
+details.transport{
+  background:var(--paper-raised);border:1px solid var(--border);border-radius:14px;
+  box-shadow:var(--shadow);overflow:hidden;margin-bottom:14px;
+}
+details.transport > summary{
+  list-style:none;cursor:pointer;padding:10px 12px;
+  display:flex;align-items:center;gap:10px;
+}
+details.transport > summary::-webkit-details-marker{display:none;}
+.transport-icon{
+  flex:0 0 auto;width:32px;height:32px;border-radius:9px;
+  background:var(--amber-soft);color:var(--amber-ink);
+  display:flex;align-items:center;justify-content:center;
+}
+.transport-head-text{flex:1;min-width:0;}
+.transport-kicker{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);font-weight:700;}
+.transport-title{font-weight:700;font-size:.95rem;margin-top:1px;}
+.transport-tag{flex:0 0 auto;font-size:.7rem;font-weight:700;padding:4px 9px;border-radius:99px;}
+.tag-ok{background:var(--jade-soft);color:var(--jade);}
+.tag-tbd{background:var(--amber-soft);color:var(--amber-ink);}
+.transport-body{border-top:1px solid var(--border);}
+.chev{flex:0 0 auto;transition:transform .18s ease;color:var(--ink-soft);}
+details[open] > summary .chev{transform:rotate(180deg);}
+
+.flight-route{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 10px;}
+.route-city{text-align:left;}
+.route-code{font-family:Georgia,serif;font-size:1.3rem;font-weight:700;letter-spacing:.02em;}
+.route-name{font-size:.72rem;color:var(--ink-soft);margin-top:1px;}
+.route-mid{flex:1;display:flex;flex-direction:column;align-items:center;padding:0 8px;color:var(--amber);}
+.route-line{width:100%;height:1px;background:var(--border-strong);position:relative;margin:3px 0;}
+.route-line svg{position:absolute;right:-2px;top:-7px;}
+.route-dur{font-size:.68rem;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.flight-meta{border-top:1px dashed var(--border-strong);display:grid;grid-template-columns:repeat(2,1fr);}
+.flight-meta div{padding:8px 14px;border-bottom:1px solid var(--border);}
+.flight-meta div:nth-last-child(-n+2){border-bottom:none;}
+.flight-meta div:nth-child(odd){border-right:1px solid var(--border);}
+.meta-label{font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);}
+.meta-value{font-size:.86rem;margin-top:2px;font-variant-numeric:tabular-nums;}
+.flight-note{background:var(--indigo-soft);color:var(--ink);font-size:.82rem;padding:9px 14px;line-height:1.5;}
+.flight-warn{background:var(--amber-soft);color:var(--amber-ink);font-size:.82rem;padding:9px 14px;line-height:1.5;border-top:1px solid var(--amber-soft-border);}
+.transit-list{padding:8px 14px 2px;}
+.transit-row{padding:7px 0;border-bottom:1px solid var(--border);}
+.transit-row:last-child{border-bottom:none;}
+
+/* ---- day table, collapsible ---- */
+details.day{
+  background:var(--paper-raised);border:1px solid var(--border);border-radius:14px;
+  box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden;
+}
+details.day > summary{
+  list-style:none;cursor:pointer;padding:14px;display:flex;align-items:center;gap:12px;
+  background:var(--jade-soft);
+}
+details.day > summary::-webkit-details-marker{display:none;}
+.day-badge{
+  flex:0 0 auto;width:40px;height:40px;border-radius:10px;
+  background:var(--indigo);color:var(--indigo-ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;font-weight:700;font-size:1.1rem;
+}
+.day-head-text{flex:1;min-width:0;}
+.day-toprow{display:flex;align-items:baseline;justify-content:space-between;gap:8px;}
+.day-date{font-weight:700;font-size:1rem;}
+.day-label{color:var(--ink-soft);font-size:.82rem;margin-top:1px;}
+.day-progress{
+  flex:0 0 auto;font-size:.72rem;font-variant-numeric:tabular-nums;
+  color:var(--jade);background:var(--jade-soft);padding:3px 8px;border-radius:99px;font-weight:700;
+}
+.reserve-banner,.planb-banner,.info-banner{
+  margin:12px 14px 14px;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
+  color:var(--amber-ink);border-radius:10px;padding:10px 12px;font-size:.84rem;line-height:1.5;
+}
+.reserve-banner{margin:0 14px 12px;}
+.info-banner{margin:0 14px 12px;}
+.reserve-banner .banner-label,.planb-banner .banner-label,.info-banner .banner-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;}
+.cadangan-nearby{
+  margin:0 14px 14px;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
+  color:var(--amber-ink-light);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.5;
+}
+.cadangan-nearby .banner-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;color:var(--amber-ink-light);}
+
+/* Hotel / Perhatian boxes inside a transport card's body (collapse with it) */
+.hotel-banner{
+  margin:12px 14px;border:1px dashed var(--amber-soft-border);background:var(--amber-soft);
+  color:var(--amber-ink);border-radius:10px;padding:10px 12px;font-size:.84rem;line-height:1.5;
+}
+.warn-banner{
+  margin:0 14px 14px;border:1px dashed var(--amber-soft-light-border);background:var(--amber-soft-light);
+  color:var(--amber-ink-light);border-radius:10px;padding:9px 12px;font-size:.82rem;line-height:1.5;
+}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.table-scroll{overflow-x:auto;border-top:1px solid var(--border);-webkit-overflow-scrolling:touch;}
+table.itin{border-collapse:collapse;width:100%;min-width:680px;table-layout:fixed;}
+table.itin thead th{
+  position:sticky;top:0;background:var(--indigo);color:var(--indigo-ink);
+  font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;
+  text-align:left;padding:9px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+table.itin thead th.col-pilih{text-align:center;padding-left:6px;padding-right:6px;}
+table.itin thead th.col-num{text-align:right;}
+table.itin tbody td{
+  padding:11px 10px;font-size:.86rem;vertical-align:top;
+  border-bottom:1px solid var(--border);
+}
+table.itin tbody tr:last-child td{border-bottom:none;}
+table.itin tbody tr:nth-child(even){background:var(--row-alt);}
+table.itin tbody tr.done td{color:var(--ink-soft);}
+table.itin tbody tr.done .cell-dest{text-decoration:line-through;text-decoration-color:var(--border-strong);}
+table.itin tfoot td{
+  padding:10px 10px;font-size:.82rem;font-weight:700;border-top:2px solid var(--border-strong);
+  background:var(--jade-soft);color:var(--jade);
+}
+table.itin tfoot .cell-valas,table.itin tfoot .cell-rupiah{font-variant-numeric:tabular-nums;text-align:right;}
+.cell-pilih{text-align:center;padding-left:6px;padding-right:6px;}
+.cell-pilih input{width:18px;height:18px;accent-color:var(--jade);cursor:pointer;}
+.cell-jam{white-space:normal;overflow-wrap:break-word;word-break:break-word;padding-left:6px;padding-right:4px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink-soft);font-size:.76rem;line-height:1.3;}
+.cell-dest{overflow-wrap:break-word;word-break:break-word;}
+.cell-ket{color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.cell-valas{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right;overflow:hidden;text-overflow:ellipsis;}
+.cell-rupiah{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;text-align:right;overflow:hidden;text-overflow:ellipsis;}
+.dash{color:var(--border-strong);}
+
+/* budget summary, collapsible */
+details.budget-card{background:var(--paper-raised);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);margin:16px 0;overflow:hidden;}
+details.budget-card > summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+details.budget-card > summary::-webkit-details-marker{display:none;}
+details.budget-card > summary h3{font-size:1rem;margin:0;}
+.budget-card-body{padding:0 16px 16px;border-top:1px solid var(--border);}
+.budget-sub{color:var(--ink-soft);font-size:.8rem;margin:12px 0;line-height:1.5;}
+table.budget{border-collapse:collapse;width:100%;margin-bottom:14px;font-size:.87rem;}
+table.budget th{text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);padding:6px 4px;border-bottom:1px solid var(--border-strong);}
+table.budget td{padding:7px 4px;border-bottom:1px solid var(--border);}
+table.budget td:not(:first-child),table.budget th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums;}
+table.budget tr.grand td{font-weight:700;color:var(--jade);border-top:2px solid var(--border-strong);border-bottom:none;}
+.budget-note{font-size:.8rem;color:var(--ink-soft);line-height:1.55;margin-top:2px;}
+
+/* notes card, collapsible */
+details.notes-card{background:var(--indigo-soft);border-radius:12px;font-size:.87rem;line-height:1.6;margin:16px 0;overflow:hidden;}
+details.notes-card > summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:700;}
+details.notes-card > summary::-webkit-details-marker{display:none;}
+.notes-card-body{padding:0 16px 16px;}
+.notes-card ul{margin:0;padding-left:18px;}
+.notes-card li{margin-bottom:6px;}
+.notes-card li:last-child{margin-bottom:0;}
+
+/* Lampiran — every group (Sebelum Berangkat, Hari 1-4, Cadangan) is a
+   collapsible box; places inside it are always expanded (simpler). */
+.lampiran-group{background:var(--paper-raised);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden;}
+.lampiran-group > summary{
+  list-style:none;cursor:pointer;padding:14px 16px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.lampiran-group > summary::-webkit-details-marker{display:none;}
+.lampiran-group[data-key^="h"] > summary{background:var(--jade-soft);}
+.lampiran-group[data-key="cadangan"] > summary{background:var(--border);}
+.lampiran-group-title{font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;font-weight:700;font-size:1rem;}
+.lampiran-group-body{border-top:1px solid var(--border);}
+
+.lampiran-item{border-bottom:1px solid var(--border);padding:11px 16px 14px;}
+.lampiran-item:last-child{border-bottom:none;}
+.lampiran-item-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;cursor:pointer;}
+.lampiran-item.intro .lampiran-item-head{cursor:default;}
+.lampiran-item-head .place-tag{margin-bottom:0;flex:0 0 auto;}
+.lampiran-item-title{flex:1;font-weight:400;font-size:.92rem;font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Noto Serif",serif;}
+.item-toggle{
+  flex:0 0 auto;border:none;background:none;cursor:pointer;padding:4px;
+  display:flex;align-items:center;justify-content:center;color:var(--ink-soft);
+}
+.item-toggle:focus-visible{outline:2px solid var(--amber);outline-offset:2px;}
+.lampiran-item.open .item-toggle .chev{transform:rotate(180deg);}
+.copy-row{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px;}
+.copy-btn{
+  font-size:.72rem;font-weight:700;line-height:1;cursor:pointer;
+  border:1px solid var(--border-strong);border-radius:99px;background:var(--paper-raised);
+  color:var(--indigo);padding:5px 10px;display:inline-flex;align-items:center;gap:4px;
+  transition:background .15s,color .15s,border-color .15s;
+}
+.copy-btn:hover{background:var(--indigo-soft);}
+.copy-btn.copied{background:var(--jade);border-color:var(--jade);color:var(--indigo-ink);}
+.lampiran-item-body{padding:0;display:none;}
+.lampiran-item.open .lampiran-item-body{display:block;}
+.lampiran-item-body p{font-size:.89rem;color:var(--ink-soft);line-height:1.62;margin:0 0 10px;}
+
+.lampiran-item.intro{padding:9px 16px 12px;}
+.lampiran-item.intro .lampiran-item-head{margin-bottom:2px;}
+.lampiran-item.intro .lampiran-item-body{display:block;}
+.lampiran-item.intro .lampiran-item-title{
+  font-size:.88rem;font-weight:700;color:var(--violet);font-family:inherit;
+}
+.lampiran-item.intro .lampiran-item-body p{font-size:.85rem;line-height:1.55;}
+
+.place-tag{display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:99px;margin-bottom:8px;font-weight:700;}
+.tag-main{background:var(--jade-soft);color:var(--jade);}
+.tag-planb{background:var(--amber-soft);color:var(--amber-ink);}
+.tag-food{background:var(--indigo-soft);color:var(--indigo);}
+.tag-planc{background:var(--border);color:var(--ink-soft);}
+.tag-info{background:var(--violet-soft);color:var(--violet);}
+.card-context{
+  font-size:.83rem;font-style:italic;color:var(--amber-ink);
+  background:var(--amber-soft);border-radius:8px;padding:8px 10px;
+  margin-bottom:10px;line-height:1.5;
+}
+.reserve-info{
+  background:var(--indigo-soft);border-radius:8px;padding:9px 11px;
+  font-size:.83rem;line-height:1.55;color:var(--ink);margin:0 0 10px;
+}
+.reserve-info .banner-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;color:var(--indigo);}
+.nearby{font-size:.82rem;color:var(--ink-soft);line-height:1.6;margin:0 0 10px;padding-top:8px;border-top:1px solid var(--border);}
+.nearby b{color:var(--ink);font-weight:700;}
+.hotels{font-size:.82rem;color:var(--ink-soft);line-height:1.6;margin:0 0 10px;padding-top:8px;border-top:1px solid var(--border);}
+.hotels b{color:var(--ink);font-weight:700;}
+.hotels a{color:var(--indigo);text-decoration:none;font-weight:600;}
+.hotels a:hover{text-decoration:underline;}
+.place-links{display:flex;gap:8px;flex-wrap:wrap;}
+.place-links a{
+  font-size:.8rem;font-weight:700;text-decoration:none;
+  border:1px solid var(--border-strong);border-radius:99px;
+  padding:6px 13px;display:inline-flex;align-items:center;gap:5px;color:var(--ink);
+}
+.place-links a:hover{background:var(--indigo-soft);border-color:var(--indigo);}
+
+
+@media (prefers-reduced-motion: reduce){.chev{transition:none;}}
+</style>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="title-row">
+      <div class="page-title serif">Wisata Draft</div>
+      <div class="top-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang/gelap" type="button" style="display:none"></button>
+        <button class="icon-btn" id="collapse-all-btn" aria-label="Tutup semua" title="Tutup semua" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M4 10l4-4 4 4M4 6l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="icon-btn" id="expand-all-btn" aria-label="Buka semua" title="Buka semua" type="button" style="display:none"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="icon-btn" id="hide-reviewed-btn" aria-label="Sembunyikan yang sudah ditandai" title="Sembunyikan yang sudah ditandai (Itinerary + Lampiran)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M1.5 8s2.5-4.5 6.5-4.5S14.5 8 14.5 8s-2.5 4.5-6.5 4.5S1.5 8 1.5 8z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M2 2l12 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <button class="icon-btn" id="download-html-btn" aria-label="Simpan salinan HTML" title="Simpan salinan HTML (termasuk centang saat ini)" type="button"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5v8.5M8 10l-3-3M8 10l3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12v1.5A1.5 1.5 0 0 0 3.5 15h9A1.5 1.5 0 0 0 14 13.5V12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+    <div class="city-tabs" id="city-tabs"></div>
+    <div class="search-row">
+      <input type="search" id="dest-search" class="dest-search" placeholder="Cari destinasi..." aria-label="Cari destinasi">
+    </div>
+    <div class="subtabs" id="global-subtabs" role="tablist">
+      <button class="subtab-btn active" data-view="itinerary" role="tab" aria-selected="true">Itinerary</button>
+      <button class="subtab-btn" data-view="lampiran" role="tab" aria-selected="false">Lampiran</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="city-panels"></div>
+</div>
+
+<script>
+const SUN_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>';
+const MOON_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 14.5a8.5 8.5 0 1 1-9-11.9 7 7 0 0 0 9 11.9z"/></svg>';
+const THEME_KEY = 'wisata-theme';
+function systemTheme(){ return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('theme-toggle');
+  if(btn) btn.innerHTML = t === 'dark' ? MOON_ICON : SUN_ICON;
+}
+let currentTheme = 'light';
+applyTheme(currentTheme);
+document.getElementById('theme-toggle').addEventListener('click', ()=>{
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem(THEME_KEY, currentTheme);
+  applyTheme(currentTheme);
+});
+
+function syncHeaderOffset(){
+  const header = document.querySelector('header.top');
+  const wrap = document.querySelector('.wrap');
+  if(header && wrap) wrap.style.paddingTop = header.offsetHeight + 'px';
+}
+syncHeaderOffset();
+window.addEventListener('resize', syncHeaderOffset);
+new ResizeObserver(syncHeaderOffset).observe(document.querySelector('header.top'));
+
+function setAllDetails(open){
+  const activePanel = document.querySelector('.city-panel.active');
+  if(!activePanel) return;
+  const activeSubview = activePanel.querySelector('.subview.active');
+  if(!activeSubview) return;
+  activeSubview.querySelectorAll('details').forEach(d=>{ d.open = open; });
+}
+
+function searchDestinations(query){
+  document.querySelectorAll('.search-hit').forEach(el=>el.classList.remove('search-hit'));
+  const q = query.trim().toLowerCase();
+  if(!q) return;
+  const activePanel = document.querySelector('.city-panel.active');
+  if(!activePanel) return;
+  const activeSubview = activePanel.querySelector('.subview.active');
+  if(!activeSubview) return;
+  const candidates = [...activeSubview.querySelectorAll('.cell-dest, .lampiran-item-title')];
+  const matches = candidates.filter(el => el.textContent.toLowerCase().includes(q));
+  matches.forEach(el=>{
+    el.classList.add('search-hit');
+    const det = el.closest('details');
+    if(det) det.open = true;
+  });
+  if(matches.length) matches[0].scrollIntoView({behavior:'smooth', block:'center'});
+}
+document.getElementById('dest-search').addEventListener('input', (e)=> searchDestinations(e.target.value));
+document.getElementById('collapse-all-btn').addEventListener('click', ()=>{
+  setAllDetails(false);
+  window.scrollTo(0,0);
+});
+document.getElementById('expand-all-btn').addEventListener('click', ()=> setAllDetails(true));
+
+const HIDE_REVIEWED_KEY = 'wisata-hide-reviewed';
+let hideReviewed = localStorage.getItem(HIDE_REVIEWED_KEY) === '1';
+function applyHideReviewed(){
+  document.body.classList.toggle('hide-reviewed', hideReviewed);
+  const btn = document.getElementById('hide-reviewed-btn');
+  btn.classList.toggle('active', hideReviewed);
+  btn.setAttribute('aria-pressed', hideReviewed ? 'true' : 'false');
+}
+applyHideReviewed();
+document.getElementById('hide-reviewed-btn').addEventListener('click', ()=>{
+  hideReviewed = !hideReviewed;
+  localStorage.setItem(HIDE_REVIEWED_KEY, hideReviewed ? '1' : '0');
+  applyHideReviewed();
+});
+
+/* Downloads a static snapshot of the current page. The app rebuilds all
+   its DOM from `destinations` + localStorage on every load, so baking
+   `checked` attributes into cloned <input>s would just get discarded by
+   that rebuild — instead, inject a tiny seed script (before the main
+   script) that pre-populates localStorage with the CURRENT progress if
+   the browser opening the file doesn't already have its own (so it
+   carries over on a new device/browser, but won't clobber newer progress
+   if this same downloaded file is reopened later). */
+document.getElementById('download-html-btn').addEventListener('click', ()=>{
+  const clone = document.documentElement.cloneNode(true);
+  // Tab & panel kota dibangun ulang oleh script saat file dibuka — kosongkan
+  // di salinan supaya tidak dobel (dan file hasil download jadi jauh lebih kecil).
+  clone.querySelector('#city-tabs').innerHTML = '';
+  clone.querySelector('#city-panels').innerHTML = '';
+  const seed = document.createElement('script');
+  seed.textContent =
+    'try{' +
+    'if(!localStorage.getItem(' + JSON.stringify(STORE_KEY) + '))' +
+    ' localStorage.setItem(' + JSON.stringify(STORE_KEY) + ',' + JSON.stringify(JSON.stringify(store)) + ');' +
+    'if(!localStorage.getItem(' + JSON.stringify(LAMP_STORE_KEY) + '))' +
+    ' localStorage.setItem(' + JSON.stringify(LAMP_STORE_KEY) + ',' + JSON.stringify(JSON.stringify(lampStore)) + ');' +
+    '}catch(e){}';
+  const mainScript = clone.querySelector('script');
+  mainScript.parentNode.insertBefore(seed, mainScript);
+  const html = '<!doctype html>\n' + clone.outerHTML;
+  const blob = new Blob([html], {type:'text/html'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Wisata Draft.html';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+});
+
+const CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const PLANE_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>';
+const TRAIN_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13" rx="4"/><path d="M5 12h14M9 16l-2.5 4M15 16l2.5 4"/><circle cx="9" cy="8.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="8.5" r="0.8" fill="currentColor" stroke="none"/></svg>';
+const TRANSIT_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>';
+
+/* Copy-to-clipboard buttons for Lampiran place names (Amap/Google Maps).
+   Values live in copyMap (plain JS strings, never HTML-embedded) so
+   names with special characters can't break the markup — buttons only
+   carry a numeric index into it. */
+const copyMap = [];
+function copyBtnsHtml(nameEn, nameHanzi){
+  if(!nameEn) return '';
+  const enIdx = copyMap.push(nameEn) - 1;
+  let html = `<button type="button" class="copy-btn" data-copy-idx="${enIdx}" title="Salin nama Inggris untuk Google Maps">📋 EN</button>`;
+  if(nameHanzi){
+    const hzIdx = copyMap.push(nameHanzi) - 1;
+    html += `<button type="button" class="copy-btn" data-copy-idx="${hzIdx}" title="Salin nama Hanzi untuk Amap">📋 中文</button>`;
+  }
+  return `<div class="copy-row">${html}</div>`;
+}
+/* Salin SEMUA destinasi satu kota (Hari 1 s/d terakhir + Cadangan) jadi 1 daftar.
+   Entri yang sudah di-tick (tanda "sudah ditinjau") diberi awalan "X ". Dibaca
+   saat tombol ditekan, jadi selalu mengikuti tick terbaru. */
+function copyAllText(destId, lang){
+  const dest = destinations.find(d=>d.id===destId);
+  if(!dest) return '';
+  const seen = new Map();
+  dest.lampiran.forEach(p=>{
+    if(p.group === 'intro' || p.tag === 'food') return;
+    const name = lang === 'zh' ? p.nameHanzi : p.nameEn;
+    if(!name) return;
+    const ticked = !!lampStore[lampiranKey(destId, p.title)];
+    seen.set(name, (seen.get(name) || false) || ticked);
+  });
+  return [...seen].map(([n,t])=>(t ? 'X ' : '') + n).join('\n');
+}
+function copyAllBtnsHtml(destId){
+  return `<div class="copy-row">
+    <button type="button" class="copy-btn" data-copy-all="en" data-dest="${destId}" title="Salin semua destinasi (nama Inggris); yang sudah di-tick diberi awalan X">📋 EN</button>
+    <button type="button" class="copy-btn" data-copy-all="zh" data-dest="${destId}" title="Salin semua destinasi (nama Hanzi); yang sudah di-tick diberi awalan X">📋 中文</button>
+  </div>`;
+}
+function titleHtml(p){
+  const t = p.title || '';
+  if(p.nameEn){
+    const enEsc = p.nameEn.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    if(t.startsWith(enEsc)) return `<b>${enEsc}</b>${t.slice(enEsc.length)}`;
+  }
+  return `<b>${t}</b>`;
+}
+function legacyCopy(text){
+  // Fallback for contexts where navigator.clipboard is blocked (sandboxed
+  // iframe without a "clipboard-write" Permissions-Policy allowance,
+  // document not focused, older browsers, etc).
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  let ok = false;
+  try{ ok = document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+  return ok;
+}
+document.addEventListener('click', e=>{
+  const btn = e.target.closest('.copy-btn');
+  if(!btn) return;
+  const text = btn.dataset.copyAll
+    ? copyAllText(btn.dataset.dest, btn.dataset.copyAll)
+    : copyMap[+btn.dataset.copyIdx];
+  if(text == null || text === '') return;
+  const orig = btn.innerHTML;
+  const showResult = ok=>{
+    btn.textContent = ok ? 'Tersalin ✓' : 'Gagal, coba lagi';
+    if(ok) btn.classList.add('copied');
+    setTimeout(()=>{ btn.innerHTML = orig; btn.classList.remove('copied'); }, 1400);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(()=>showResult(true)).catch(()=>showResult(legacyCopy(text)));
+  } else {
+    showResult(legacyCopy(text));
+  }
+});
+function nearbyLine(items){
+  // Plain text, no Google Maps link — names are already written in
+  // Amap-searchable "English (Hanzi)" form in the source .md, meant for
+  // the reader to copy-paste manually into Amap/Google Maps themselves.
+  if(!items || !items.length) return '';
+  return items.join(', ');
+}
+function tripComLink(name, city){
+  return 'https://www.google.com/search?q=' + encodeURIComponent('site:trip.com ' + name + ' ' + city);
+}
+function hotelsLine(items, city){
+  if(!items || !items.length) return '';
+  return items.map(txt=>{
+    const name = txt.split(' — ')[0].split(' (')[0];
+    return `<a href="${tripComLink(name, city)}" target="_blank" rel="noopener">${txt}</a>`;
+  }).join(', ');
+}
+
+/* ---------------------------------------------------------
+   DATA — add another object to `destinations` for future
+   cities (Suzhou, etc.) and the whole page renders itself.
+   Each day item: [jam, destinasi, keterangan, catatan, valas, rupiah]
+   valas/rupiah = total biaya untuk ROMBONGAN, bukan per-orang.
+   Use "" for empty cells (rendered as a dash).
+
+   AUTO-GENERATED BLOCK — jangan edit manual di sini kalau memakai
+   generate_wisata.py. Edit master file .md di folder Itinerary/,
+   lalu jalankan: py generate_wisata.py
+--------------------------------------------------------- */
+/* === DESTINATIONS:START === */
+const destinations = [
+  {
+    id:`suzhou`,
+    name:`Suzhou`,
+    dates:`10 – 14 Oktober · 4 Malam · Direncanakan Independen (bukan sambungan kota lain)`,
+    currency:`CNY`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Jumat, 10 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+        [`Tanggal &amp; Jam Kedatangan`,`Jumat, 10 Oktober, <b>±15:00</b>, via HSR dari Wuxi`],
+        [`Titik kedatangan → Hotel`,`Taksi/Didi singkat ke hotel`],
+      ],
+      warn:`Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: <b>1 halte ke arah barat daya → Nanmen (南门)</b>, interchange ke <b>Line 4</b> — juga stasiun MRT untuk kawasan <b>Panmen Scenic Spots</b>, jadi kluster selatan kota tua praktis di depan hotel. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap, sebelumnya salah)</b>: ke kawasan <b>Hanshan Temple/Shantang Street</b> BUKAN via Laodonglu/Line 2 — rute sebenarnya <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Ke kawasan <b>Jinji Lake (Dongfangzhimen)</b> BUKAN transfer ke Line 1 — rute sebenarnya <b>Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen</b> (6 halte, ¥3, ±32 menit). <b>Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)</b> — terkonfirmasi Amap 2026-09-22: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.`,
+      hotel:`<b>Hotel:</b> Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: <b>Nanyuanbeilu Station (南园北路, Line 5)</b>, ±364m/±7 menit jalan kaki (terverifikasi Amap 2026-09-22, koreksi dari estimasi lama 140m) — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).`
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Jumat, 10 Oktober`, label:`Kedatangan Sore — Ringan`,
+        items:[
+          [`15:00`,`Tiba di Suzhou (titik kedatangan tergantung kondisi aktual), taksi/Didi ke hotel`,`Estimasi umum, moda transportasi masuk kota tidak dihitung terpisah`,``,`30`,`79.500`],
+          [`15:00–15:30`,`Check-in, taruh barang, istirahat`,``,``,``,``],
+          [`15:30–17:30`,`Waktu bebas/istirahat di hotel atau jalan santai sekitar Shiquan Street`,`Kedatangan lebih awal (15:00) memberi 2 jam tambahan sebelum makan malam`,``,``,``],
+          [`17:30–19:00`,`Makan malam santai di <b>Shiquan Street</b> (十全街 · Shíquán Jiē)`,`Persis di depan hotel — jalan kuliner &amp; bar klasik Suzhou. Makan ±CNY 25/org`,``,`50`,`132.500`],
+          [`19:00–20:00`,`Jalan santai sekitar Shiquan Street / area hotel`,`Opsional: <b>Master of Nets Garden (网师园 · Wǎngshī Yuán) versi Night Garden</b> kalau masih fit — CNY 100/org (±Rp265.000/org), TIDAK dihitung di total default hari ini. Beda dari kunjungan versi siang di Hari 5 pagi — murni bonus malam kalau berminat lihat suasana lampion, lihat entri Lampiran untuk detail`,``,``,``],
+        ],
+        total:{cny:`<b>80</b>`, idr:`<b>212.000</b>`},
+        planb:`kalau kedatangan lebih malam dari rencana — langsung istirahat penuh di hotel, makan malam di resto terdekat hotel saja (Shiquan Street tetap buka larut, banyak pilihan santai).`,
+      },
+      {
+        id:"h2", num:2, date:`Sabtu, 11 Oktober`, label:`Jinji Lake Penuh + Music Fountain Malam`,
+        advisory:`<b>Rute:</b> dari hotel ke kawasan Jinji Lake, Stasiun Dongfangzhimen — <b>Line 5 → transfer → Line 3</b> (terverifikasi Amap, 6 halte, ¥3, ±32 menit; koreksi dari klaim lama "transfer ke Line 1"). Sengaja ditaruh di hari Sabtu — Jinji Lake Music Fountain hanya tayang Jumat &amp; Sabtu, jadi hari ini pertunjukannya terjamin ada.`,
+        items:[
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:05`,`Metro ke area Jinji Lake (Dongfangzhimen) — Line 5 → transfer Line 3`,`32 menit, 6 halte, ¥3/org — terverifikasi Amap`,``,`6`,`15.900`],
+          [`09:15–11:45`,`<b>Jinji Lake Walking Tour</b> (versi penuh)`,`Gratis, jalur sangat datar. Sewa sepeda opsional ±CNY 17/jam/org, tidak dihitung`,``,``,``],
+          [`11:45–12:45`,`Makan siang di tepi danau`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`12:45–16:00`,`Santai lanjut promenade danau`,`Gratis`,``,``,``],
+          [`17:00–18:00`,`Makan malam ringan sekitar Jinji Lake`,`±CNY 40/org`,``,`80`,`212.000`],
+          [`18:00–18:45`,`<b>The Oriental Gate / Gate of the Orient</b>`,`Gratis, lihat dari luar — landmark ini lebih bagus dilihat sore/malam saat lampu gedung mulai menyala, dan searah jalan ke titik nonton Music Fountain`,``,``,``],
+          [`19:00–19:30`,`<b>Jinji Lake Music Fountain</b>`,`Gratis. Tayang tiap Sabtu 19:30 — terjamin di hari ini`,``,``,``],
+          [`20:00–20:32`,`Metro kembali ke hotel — Line 3 → transfer Line 5`,`32 menit, ¥3/org — terverifikasi Amap`,``,`6`,`15.900`],
+        ],
+        total:{cny:`<b>166</b>`, idr:`<b>439.900</b>`},
+        planb:`<b>Suzhou Centre Plaza (Mall)</b> — indoor, satu kawasan dengan Jinji Lake, kalau hujan deras.`,
+      },
+      {
+        id:"h3", num:3, date:`Minggu, 12 Oktober`, label:`Kota Tua Bagian Tengah`,
+        advisory:`<b>Rute:</b> dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke <b>Nanmen</b>, transfer <b>Line 4</b> menuju <b>Beisita</b> — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap)</b>: Beisita → Guanqian Street <b>BUKAN jalan kaki langsung</b> seperti klaim lama (jaraknya 2,5km/10 menit naik mobil) — solusinya lanjut <b>1 halte MRT Line 4 ke Chayuanchang</b>, baru jalan kaki 450m (sesuai info akses Guanqian Street yang sudah ada). Guanqian Street → Humble Administrator's Garden juga <b>bukan "searah/berdekatan"</b> seperti klaim lama — rute transit terverifikasi ±29 menit (koridor sama dengan Beisita↔Guanqian, ±2,5km), jadi dipakai <b>sewa sepeda</b> menggantikan transit panjang.`,
+        items:[
+          [`08:00`,`Sarapan di sekitar hotel`,`Bubur/baozi kukus, ±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–08:56`,`Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita`,`26 menit, 5 halte, ¥2/org — terverifikasi Amap`,``,`4`,`10.600`],
+          [`09:00–10:30`,`<b>Suzhou Museum</b>`,`Gratis (reservasi online/tunjukkan paspor)`,``,``,``],
+          [`10:45–11:45`,`Makan siang: Yangchun mian (mie kuah polos)`,`±CNY 20/org`,``,`40`,`106.000`],
+          [`11:45–11:55`,`Metro 1 halte: Beisita → <b>Chayuanchang</b> (Line 4), lanjut jalan kaki 450m`,`Amap: mobil 2,5km/10 menit — jadi jarak jalan kaki langsung DARI Beisita terlalu jauh (koreksi klaim lama), tapi 1 halte MRT + jalan kaki tetap praktis`,``,`4`,`10.600`],
+          [`11:55–13:00`,`<b>Guanqian Street</b> &amp; <b>Xuanmiao Temple</b>`,`Pedestrian street. Pelataran gratis, masuk aula utama Xuanmiao opsional ±CNY 20/org`,``,`40`,`106.000`],
+          [`13:00–13:15`,`Sewa sepeda ke <b>Humble Administrator's Garden</b>`,`Terverifikasi Amap: rute transit (jalan+MRT+jalan) ±29 menit lewat koridor yang sama dengan Beisita↔Guanqian St (2,5km) — sepeda lebih cepat &amp; praktis untuk jarak segini daripada bolak-balik MRT. Klaim lama "searah/berdekatan dengan Beisita" TIDAK akurat by MRT langsung, tapi cukup dekat untuk sepeda`,``,`12`,`31.800`],
+          [`13:20–15:30`,`<b>Humble Administrator's Garden</b>`,`Via Stasiun Zhuozhengyuan·Suzhou Museum (Line 6). Tiket ±CNY 80/org`,``,`160`,`424.000`],
+          [`15:45–16:15`,`Metro ke <b>Pingjiang Road</b> (transfer ke Line 1, Stasiun Xiangmen)`,``,``,`12`,`31.800`],
+          [`18:00–19:30`,`Makan malam + jalan malam <b>Pingjiang Road</b>`,`Kanal bersejarah, gratis. Makan ±CNY 25/org`,``,`50`,`132.500`],
+          [`20:00–20:26`,`Kembali ke hotel (metro, transfer di Nanmen)`,`26 menit, ¥2/org — terverifikasi Amap`,``,`4`,`10.600`],
+        ],
+        total:{cny:`<b>350</b>`, idr:`<b>927.500</b>`},
+        planb:`<b>Huqiu Wetland Park</b> — gratis, alternatif kalau ingin ganti salah satu spot berbayar dengan opsi gratis (searah, sekitar Beisita). <b>Baoen Temple / North Pagoda</b> juga bisa disisipkan kembali (persis 1 jalur dengan Museum) kalau masih ada waktu — lihat Cadangan.`,
+      },
+      {
+        id:"h4", num:4, date:`Senin, 13 Oktober`, label:`Panmen di Depan Hotel → Hanshan → Shantang`,
+        advisory:`<b>Rute:</b> Panmen persis 1 halte dari hotel — mulai pagi di sini dulu sebelum lanjut ke kluster barat. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap)</b>: ke Hanshan Temple/Shantang <b>BUKAN via Laodonglu/Line 2</b> seperti klaim lama — rute sebenarnya <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Hari kerja biasa, relatif lebih tenang dibanding akhir pekan.`,
+        items:[
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:15–08:30`,`Metro 1 halte: Nanyuanbeilu → Nanmen`,`Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi`,``,`8`,`21.200`],
+          [`08:45–10:00`,`<b>Wumen Bridge</b> (gratis) + <b>Panmen Scenic Spots</b>`,`Tiket Panmen ±CNY 40/org — persis di depan hotel`,``,`80`,`212.000`],
+          [`10:00–11:00`,`Makan siang sekitar Panmen`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`11:00–11:39`,`Metro: Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie`,`39 menit, 9 halte, ¥3/org — terverifikasi Amap (koreksi dari klaim lama Line 5/Laodonglu/Line 2)`,``,`6`,`15.900`],
+          [`11:45–13:45`,`<b>Hanshan Temple</b> (±CNY 20/org) + <b>Fengqiao Scenic Area</b> (gratis, jalan sekitar)`,`Situs kuil terkenal lewat puisi kuno, bersebelahan`,``,`40`,`106.000`],
+          [`14:00–16:00`,`<b>Shantang Street</b>`,`"Jalan Kuno No.1 Suzhou", kanal &amp; jembatan tua, gratis`,``,``,``],
+          [`16:00–17:30`,`Makan malam sekitar Shantang`,`±CNY 20/org`,``,`40`,`106.000`],
+          [`18:00–18:45`,`<b>Suzhou Ancient Canal Night Cruise</b>`,`Naik perahu dari Baijuyi Wharf di Shantang Street, versi malam "Oriental Venice". Tiket ±CNY 100/org`,``,`200`,`530.000`],
+          [`19:00–19:39`,`Kembali ke hotel — Line 6 → transfer di Sujin → Line 4 → Nanmen → Line 5`,`39 menit, ¥3/org — terverifikasi Amap`,``,`6`,`15.900`],
+        ],
+        total:{cny:`<b>454</b>`, idr:`<b>1.203.100</b>`},
+        planb:`<b>Xiyuan Temple (kelenteng kucing)</b> — ±CNY 10/org (±Rp53.000 untuk 2 orang), dekat Shantang Street, alternatif tenang kalau Hanshan Temple/Fengqiao terlalu ramai atau rute terasa memutar.`,
+      },
+      {
+        id:"h5", num:5, date:`Selasa, 14 Oktober`, label:`Master of Nets Garden Dekat Hotel, Checkout, HSR ke Ningbo`,
+        advisory:`<b>Kenapa ini hari ringan:</b> Master of Nets Garden persis di kawasan hotel/Shiquan Street — tidak perlu transportasi jauh sebelum checkout, pas untuk hari kepulangan. Taihu Lake Wetland Park (±40-45 menit sekali jalan) dipindah ke Cadangan karena terlalu jauh untuk hari kepulangan.`,
+        items:[
+          [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
+          [`08:30–09:00`,`Jalan kaki ke <b>Master of Nets Garden</b>`,`Persis di kawasan hotel/Shiquan Street, tidak perlu transportasi`,``,``,``],
+          [`09:00–10:30`,`<b>Master of Nets Garden</b> (versi siang)`,`Tiket ±CNY 40/org`,``,`80`,`212.000`],
+          [`10:30–11:00`,`Jalan kaki balik ke hotel`,``,``,``,``],
+          [`11:00–12:00`,`Checkout hotel, siap-siap`,``,``,``,``],
+          [`12:00–13:00`,`Makan siang dekat hotel`,`±CNY 27/org`,``,`54`,`143.100`],
+          [`13:00–14:00`,`Waktu buffer / santai`,``,``,``,``],
+          [`14:00–14:30`,`Taksi/Didi ke <b>Suzhou Railway Station</b>`,`±27 menit, dengan koper lebih praktis daripada MRT+transfer. Alternatif hemat: MRT 6 halte/¥4 per 2 org/±35 menit (lihat Lampiran)`,``,`40`,`106.000`],
+          [`15:00`,`HSR Suzhou → Ningbo`,`±2,5-3,5 jam, tiket ±CNY 147-218/org`,``,``,`(masuk budget Ningbo)`],
+        ],
+        total:{cny:`<b>198</b>`, idr:`<b>524.700</b>`},
+        planb:`kalau Master of Nets Garden tutup lebih awal dari perkiraan atau cuaca buruk — jalan santai saja di Shiquan Street (gratis, langsung depan hotel) sampai waktu checkout.`,
+      },
+    ],
+
+    budget:{
+      note:`Tiket HSR Suzhou→Ningbo TIDAK termasuk (masuk budget Ningbo, lihat "Informasi Transportasi Pulang"). Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kurs: Rp2.650/CNY.`,
+      byDay:[
+        [`Hari 1 (10 Okt)`,`80`,`212.000`],
+        [`Hari 2 (11 Okt)`,`166`,`439.900`],
+        [`Hari 3 (12 Okt)`,`350`,`927.500`],
+        [`Hari 4 (13 Okt)`,`454`,`1.203.100`],
+        [`Hari 5 (14 Okt)`,`198`,`524.700`],
+        [`Subtotal aktivitas harian`,`1.248`,`3.307.200`],
+      ],
+      byCategory:[
+        [`Tiket masuk (Xuanmiao Hall, Humble Administrator's Garden, Panmen, Hanshan Temple, Master of Nets Garden, Suzhou Ancient Canal Night Cruise)`,`600`,`1.590.000`],
+        [`Makan (semua hari)`,`510`,`1.351.500`],
+        [`Transport lokal (metro + sepeda sewa)`,`138`,`365.700`],
+        [`Tiket HSR kedatangan dari Wuxi (2 org)`,`100`,`265.000`],
+        [`Hotel (4 malam)`,`≈755`,`2.000.000`],
+        [`GRAND TOTAL`,`2.103`,`5.572.950`],
+      ],
+      grand:[`GRAND TOTAL`,``,``],
+      catTotal:[`GRAND TOTAL`,``,``],
+      caveat:`Guanqian Street (pelataran), Jinji Lake, Shantang Street, Fengqiao gratis (tidak dihitung). Sanqing Hall Xuanmiao Temple sudah dihitung di baris terkait. Music Fountain (Hari 2) terjamin tayang karena jatuh di hari Sabtu.`,
+    },
+
+    notes:[
+      `<b>Fisik/lutut:</b> hindari tempat dengan tangga curam tanpa lift. Semua jalur di itinerary ini (kanal, taman, promenade danau) datar dan aman untuk lutut.`,
+      `<b>Makanan:</b> semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — sesuai karakter masakan Suzhou yang cenderung manis-ringan.`,
+      `<b>Transportasi:</b> prioritas MRT/jalan kaki untuk jarak dekat; taksi hanya untuk bawa koper (Hari 1 &amp; Hari 5).`,
+      `<b>Tempat berbayar</b> ditandai jelas — sebagian bisa diganti Plan-B yang lebih murah/gratis untuk hemat biaya.`,
+    ],
+
+    transportPulang:{
+      mode:"transit", kicker:`Transport Pulang`,
+      title:`Rute belum ditentukan &middot; Selasa, 14 Oktober (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+        [`Stasiun keberangkatan`,`<b>Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)</b> — lebih dekat dari hotel dibanding Suzhou North (5,9km vs ±16km)`],
+        [`Tanggal &amp; jam berangkat (rencana)`,`Selasa, 14 Oktober, <b>±15:00</b> (belum jadwal terkunci — ±19 kereta G/D per hari 07:15–18:08, cek nomor kereta persis di 12306/Trip.com H-7)`],
+        [`Durasi HSR`,`±2 jam 27 menit – 3,5 jam (tergantung kereta)`],
+        [`Biaya HSR`,`Masuk budget Ningbo (kota tujuan), tidak dihitung di sini`],
+        [`Hotel → Stasiun`,`Taksi/Didi langsung, ±27 menit`],
+      ],
+      warn:``,
+      hotel:``
+    },
+
+    lampiran:[
+      // --- intro ---
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cerita Kota Suzhou`,
+       nameEn:`Cerita Kota Suzhou`,
+       text:`Suzhou didirikan tahun 514 SM oleh Raja Helü dari Kerajaan Wu sebagai ibu kota "Helü City" — jauh lebih tua dari Nanjing sebagai pusat kekuasaan di kawasan ini, dan menjadi cikal-bakal tata kota tua Suzhou yang masih terlihat sampai sekarang. Berkat jaringan kanalnya yang rumit dan taman-taman klasiknya, Suzhou dijuluki "Venice of the East" dan sering disebut bersama Hangzhou sebagai "surga di bumi" (上有天堂，下有苏州杭州).`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+China+history+canal+city`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cuaca, Iklim &amp; Suhu`,
+       nameEn:`Cuaca, Iklim & Suhu`,
+       text:`Oktober adalah salah satu bulan terbaik berkunjung — sejuk (siang ±23°C, malam ±14-16°C), kelembapan ±71%, hujan ringan ±9-10 hari sepanjang bulan. ⚠️ September-Oktober juga musim topan paling mungkin di kawasan pesisir timur China — angka di atas rata-rata historis, BUKAN forecast real-time, cek forecast H-7 sebelum berangkat.`,
+       wiki:`https://en.climate-data.org/asia/china/jiangsu/suzhou-2755/`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Transportasi Masuk Kota`,
+       nameEn:`Transportasi Masuk Kota`,
+       text:`Suzhou tidak punya bandara besar sendiri — pelancong umumnya masuk lewat Shanghai (Hongqiao/Pudong) lalu HSR ke Suzhou. Stasiun HSR utama: <b>Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)</b> di Gusu District, ±2,8km dari pusat kota — inilah yang dipakai untuk leg pulang ke Ningbo di itinerary ini. Ada juga <b>Suzhou North Railway Station (苏州北站 · Sūzhōu Běi Zhàn)</b> di Xiangcheng District, ±16km dari pusat kota — jauh lebih jauh, hanya relevan kalau transportasi datang/pergi dari stasiun itu.`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou_railway_station`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Area Menginap yang Disarankan`,
+       nameEn:`Area Menginap yang Disarankan`,
+       text:`Kawasan <b>Gusu District sisi selatan, sekitar Shiquan Street/Nanmen</b> — strategis karena 1 halte MRT (Line 5) dari kluster Panmen, dan dekat jalur transfer ke Line 2/4 menuju kota tua bagian utara. Alternatif lain: sekitar Guanqian Street/Xuanmiao Temple untuk yang mengutamakan pusat kota tua yang lebih ramai &amp; komersial.`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Destinasi Terkenal Lain di Suzhou`,
+       nameEn:`Destinasi Terkenal Lain di Suzhou`,
+       text:`Di luar itinerary utama: <b>Tiger Hill (虎丘 · Hǔqiū)</b> — bukit dengan pagoda miring ("Leaning Tower of China"), salah satu ikon Suzhou paling terkenal. <b>Zhouzhuang</b> dan <b>Tongli</b> — kota air kuno ±30-50 menit di luar Suzhou, populer sebagai day-trip terpisah tapi tidak masuk trip kali ini (terlalu jauh dari rute). <b>Suzhou Industrial Park</b> di sekitar Jinji Lake — wajah modern kota ini, kontras dengan kota tua.`,
+       yt:`https://www.youtube.com/results?search_query=top+attractions+Suzhou+China`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Makanan Wajib Dikunjungi &amp; Dicoba`,
+       nameEn:`Makanan Wajib Dikunjungi & Dicoba`,
+       text:`Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). <b>Songshu Guiyu (松鼠桂鱼 · Sōngshǔ Guìyú, "squirrel fish")</b> — hidangan ikon Suzhou, ikan mandarin digoreng berbentuk menyerupai tupai dengan saus asam-manis, cukup berminyak jadi perlu dibatasi. <b>Suzhou-style mooncake (苏式月饼 · Sū Shì Yuèbǐng)</b> — versi berlapis renyah, lebih ringan dari versi Kanton. <b>Zhagao (糖粥/赤豆糊 · Tángzhōu/Chìdòu Hú)</b> — bubur kacang merah manis, jajanan jalanan klasik. Masakan Suzhou umumnya masuk gaya "Jiangnan" yang cenderung manis-ringan dibanding daerah lain di China — relatif lebih ramah untuk lambung dibanding masakan pedas.`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+must+try+food`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Hal yang Sebaiknya Dihindari`,
+       nameEn:`Hal yang Sebaiknya Dihindari`,
+       text:`Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi internasional) atau MRT. Jangan andalkan Google Maps/Google service tanpa VPN — gunakan Amap untuk navigasi lokal. Taman-taman klasik (Humble Administrator's Garden, dll) cukup ramai di akhir pekan — datang lebih pagi kalau bisa. September-Oktober musim topan, cek forecast rutin.`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Yang Perlu Disiapkan (Khusus China)`,
+       nameEn:`Yang Perlu Disiapkan`,
+       text:`App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank &amp; adaptor tipe A/I. VPN aktif SEBELUM masuk China kalau butuh akses Google/WhatsApp/Instagram. Salinan paspor/visa (fisik &amp; digital).`},
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itin H1`, title:`Shiquan Street (十全街 · Shíquán Jiē)`,
+       nameEn:`Shiquan Street`,
+       nameHanzi:`十全街`,
+       text:`Jalan kuliner dan hiburan malam klasik Suzhou, membentang di sisi selatan kota tua persis di depan hotel — dikenal dengan restoran, bar, dan toko kerajinan tangan yang menyatu dengan suasana kanal &amp; arsitektur tradisional di sekitarnya. Nama hotel trip ini ("Shiquan Street·Wangshi Garden") merujuk langsung ke jalan ini. <b>Akses:</b> Langsung di depan/sangat dekat hotel — tidak perlu transportasi, cukup jalan kaki. <b>Jam Operasional:</b> jalan buka 24 jam; mayoritas resto/toko ±10:00–22:00 (beberapa bar buka lebih malam). <b>Tiket:</b> Gratis jalan di sepanjang jalan.`,
+       wiki:`https://www.google.com/search?q=Shiquan+Street+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Shiquan+Street+Suzhou`},
+      // --- h2 ---
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`The Oriental Gate / Gate of the Orient (东方之门 · Dōngfāng Zhī Mén)`,
+       nameEn:`The Oriental Gate / Gate of the Orient`,
+       nameHanzi:`东方之门`,
+       text:`Gedung pencakar langit berbentuk gerbang raksasa (dijuluki warga lokal "celana panjang" karena bentuknya) yang jadi landmark arsitektur kontroversial-tapi-ikonik Suzhou modern, selesai dibangun 2015 di tepi Jinji Lake sebagai simbol gerbang masuk ke distrik bisnis baru. Dijadwalkan dilihat sore/malam (bukan pagi) di itinerary ini — gedung kaca ini lebih menarik dilihat saat lampu mulai menyala, dan lokasinya persis searah jalan ke titik nonton Music Fountain. <b>Akses:</b> Stasiun Dongfangzhimen (东方之门) — gedung ini punya stasiun MRT sendiri, tersambung langsung. Sisi barat Jinji Lake. Dari hotel: <b>Line 5 → transfer → Line 3</b> (terverifikasi Amap, 6 halte, ¥3/org, ±32 menit — koreksi dari klaim lama "transfer ke Line 1"). <b>Jam Operasional:</b> area luar/lihat dari luar bisa kapan saja; bangunan sendiri fungsinya hotel/kantor/residensial (bukan objek wisata dengan jam buka publik). Paling bagus dilihat menjelang malam saat lampu gedung menyala. <b>Tiket:</b> Gratis, lihat dari luar saja.`,
+       wiki:`https://en.wikipedia.org/wiki/Gate_of_the_Orient`,
+       yt:`https://www.youtube.com/results?search_query=Gate+of+the+Orient+Suzhou`},
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`Jinji Lake (金鸡湖 · Jīnjī Hú)`,
+       nameEn:`Jinji Lake`,
+       nameHanzi:`金鸡湖`,
+       text:`Danau alami seluas ±8.9 km² yang jadi jantung Suzhou Industrial Park — kawasan kota baru modern hasil kerja sama China-Singapura sejak 1994. Promenadenya menampilkan taman modern, gedung pencakar langit, dan jembatan-jembatan kontemporer, representasi wajah Suzhou masa kini. Lakeside Avenue di sisi barat sepanjang ±2km jadi jalur jalan kaki utama. <b>Akses:</b> Stasiun Dongfangzhimen (sisi barat/West Gate, dari hotel via Line 5→transfer Line 3 — lihat entri Gate of the Orient) atau Stasiun Cultural Expo Center (sisi timur). <b>Jam Operasional:</b> promenade &amp; tepi danau buka 24 jam. <b>Tiket:</b> Gratis masuk &amp; jalan di tepi danau; wahana berbayar (Ferris wheel, cruise) terpisah dan tidak dihitung di itinerary ini.`,
+       wiki:`https://en.wikipedia.org/wiki/Jinji_Lake`,
+       yt:`https://www.youtube.com/results?search_query=Jinji+Lake+Suzhou+promenade`},
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`Jinji Lake Music Fountain (金鸡湖音乐喷泉 · Jīnjī Hú Yīnyuè Pēnquán)`,
+       nameEn:`Jinji Lake Music Fountain`,
+       nameHanzi:`金鸡湖音乐喷泉`,
+       text:`Salah satu air mancur musikal terbesar di Asia saat diresmikan, dengan pertunjukan cahaya &amp; air yang disinkronkan musik setiap malam — jadi daya tarik gratis paling populer di kawasan Jinji Lake untuk warga lokal maupun turis. <b>Akses:</b> Stasiun Dongfangzhimen — lokasi di persimpangan Suyalu Road &amp; Xingyang Street, kawasan Lakeside New World, dekat Gate of the Orient. <b>Jam Operasional:</b> ⚠️ jadwal bervariasi musiman &amp; sumbernya sedikit tidak konsisten — per sumber terbaru: Jumat &amp; Sabtu 19:30 (durasi ±30 menit), tambahan sesi saat libur nasional. Hari 2 itinerary ini sengaja jatuh di hari <b>Sabtu</b> supaya pertunjukan terjamin ada. Pertunjukan dibatalkan saat cuaca buruk. <b>Cek jadwal WeChat/website resmi Jinji Lake Scenic Area H-1</b> untuk konfirmasi terakhir. <b>Tiket:</b> Gratis.`,
+       wiki:`https://www.google.com/search?q=Jinji+Lake+Music+Fountain`,
+       yt:`https://www.youtube.com/results?search_query=Jinji+Lake+Music+Fountain+Suzhou`},
+      {group:`h2`, tag:`planb`, label:`Plan-B H2`, title:`Suzhou Centre Plaza / Suzhou Center (苏州中心 · Sūzhōu Zhōngxīn)`,
+       nameEn:`Suzhou Centre Plaza / Suzhou Center`,
+       nameHanzi:`苏州中心`,
+       context:`Kenapa jadi Plan-B: TIDAK termasuk destinasi wisata utama (prinsip itinerary ini menghindari sesi belanja), tapi lokasinya di tepi Jinji Lake — pilihan praktis untuk berteduh kalau hujan deras.`,
+       text:`Mal besar di tepi Jinji Lake dengan atap gelombang khas ("cloud roof") yang jadi salah satu ikon arsitektur baru Suzhou, plus taman atap (rooftop garden) dengan pemandangan langsung ke Gate of the Orient. <b>Akses:</b> Stasiun Dongfangzhimen, keluar Exit 3 — tersambung langsung ke mal, tidak perlu keluar ke jalan. <b>Jam Operasional:</b> 10:00–22:00 setiap hari. <b>Tiket:</b> Gratis masuk (mal), bukan sesi belanja di itinerary ini.`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou_Center`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Center+Mall+Jinji+Lake`},
+      // --- h3 ---
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Suzhou Museum (苏州博物馆 · Sūzhōu Bówùguǎn)`,
+       nameEn:`Suzhou Museum`,
+       nameHanzi:`苏州博物馆`,
+       text:`Dirancang oleh arsitek kelahiran Suzhou I.M. Pei (juga arsitek Piramida Kaca Louvre), dibuka 2006 sebagai proyek terakhir karir panjangnya. Bangunan ini memadukan estetika taman klasik Suzhou (dinding putih, atap abu-abu, kolam batu) dengan garis geometris modern — letaknya pun sengaja bersebelahan dengan Humble Administrator's Garden supaya menyatu dengan lanskap kota tua. <b>Akses:</b> Stasiun Beisita (北寺塔, Line 4), keluar Exit 4, jalan kaki ±700m ke timur. Dari hotel: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita, ±25-30 menit. Alternatif: Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6). <b>Jam Operasional:</b> Selasa–Minggu 09:00–17:00 (masuk terakhir 16:00), tutup setiap Senin kecuali libur nasional. <b>Tiket:</b> Gratis (sejak 18 Mei 2008); sebagian pameran khusus mungkin berbayar terpisah.`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou_Museum`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Museum+I.M.+Pei+tour`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Guanqian Street (观前街 · Guānqián Jiē)`,
+       nameEn:`Guanqian Street`,
+       nameHanzi:`观前街`,
+       text:`Guanqian Street ('jalan di depan kelenteng') berkembang sejak Dinasti Song sebagai pusat perdagangan di depan Xuanmiao Temple, dan sekarang jadi salah satu pedestrian street belanja &amp; jajanan tersibuk di Suzhou. <b>Akses:</b> Stasiun Chayuanchang (察院场, Line 4), keluar Exit 2, jalan kaki ±450m ke utara. ✅ Dari Beisita: <b>1 halte MRT Line 4 ke Chayuanchang</b> (koreksi 2026-09-20 — sebelumnya diklaim "jalan kaki singkat dari Beisita", padahal jaraknya 2,5km/10 menit naik mobil, terlalu jauh untuk jalan kaki). <b>Jam Operasional:</b> jalan pedestrian buka 24 jam (gratis); toko &amp; kios umumnya ±09:00–22:00. <b>Tiket:</b> Gratis jalan di pedestrian street.`,
+       wiki:`https://en.wikipedia.org/wiki/Xuanmiao_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Guanqian+Street+Suzhou`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Xuanmiao Temple (玄妙观 · Xuánmiào Guàn)`,
+       nameEn:`Xuanmiao Temple`,
+       nameHanzi:`玄妙观`,
+       text:`Salah satu kelenteng Tao tertua &amp; terbesar di China, pertama dibangun tahun 276 M, terletak persis di tengah Guanqian Street. Aula utamanya, Sanqing Hall, adalah bangunan kayu Dinasti Song asli yang masih berdiri. <b>Akses:</b> Sama dengan Guanqian Street (lihat entri sebelumnya) — kelenteng ini persis di tengah jalan tersebut, Stasiun Chayuanchang (Line 4) Exit 2, ±450m jalan kaki. <b>Jam Operasional:</b> Mei–September 07:30–17:00 (masuk terakhir 16:45); Oktober–April 07:30–16:30 (masuk terakhir 16:15). <b>Tiket:</b> Pelataran luar gratis; masuk aula utama (Sanqing Hall) CNY 20/org (±Rp53.000/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Xuanmiao_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Xuanmiao+Temple+Suzhou`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Humble Administrator's Garden (拙政园 · Zhuōzhèng Yuán)`,
+       nameEn:`Humble Administrator's Garden`,
+       nameHanzi:`拙政园`,
+       text:`Taman klasik terbesar di Suzhou (±5.2 hektar) dan situs UNESCO World Heritage, dibangun tahun 1509 oleh pejabat Dinasti Ming, Wang Xianchen, setelah pensiun kecewa dari birokrasi — namanya diambil dari puisi era Jin yang menyindir "mengurus kebun adalah politik orang bodoh". Desainnya berpusat pada kolam-kolam besar dengan paviliun, jembatan, dan koridor. <b>Akses:</b> Stasiun Zhuozhengyuan·Suzhou Museum (拙政园·苏州博物馆, Line 6), keluar Exit 1, jalan kaki ±450m — satu kompleks dengan Suzhou Museum. Dari Guanqian Street (rute Hari 3 ini): ✅ <b>terverifikasi Amap</b> — rute transit (jalan 247m→Chayuanchang→Line 4→Beisita→jalan ±19 menit) ±29 menit; <b>sewa sepeda</b> direkomendasikan sebagai alternatif lebih cepat untuk jarak ±2,5km ini. <b>Jam Operasional:</b> 1 Maret–15 November 07:30–17:30; 16 November–akhir Februari 07:30–17:00. <b>Tiket:</b> Musim ramai (April–Mei, Juli–Oktober) CNY 80/org (±Rp212.000/org) — cocok dengan yang dipakai di itinerary ini; musim sepi CNY 70/org (±Rp185.500/org). Pelajar/lansia setengah harga.`,
+       wiki:`https://en.wikipedia.org/wiki/Humble_Administrator%27s_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Humble+Administrator%27s+Garden+Suzhou`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Pingjiang Road (平江路 · Píngjiāng Lù)`,
+       nameEn:`Pingjiang Road`,
+       nameHanzi:`平江路`,
+       text:`Jalan kanal yang tata letaknya nyaris tidak berubah sejak peta kota era Dinasti Song (1229) — salah satu bukti tata kota kuno yang paling terjaga di China. Menyusuri kanal sepanjang ±1.6km dengan jembatan batu, rumah putih-abu tradisional, dan teahouse kecil. <b>Akses:</b> Stasiun Xiangmen (相门, Line 1), keluar Exit 3, jalan kaki ±350m. Dari kluster Beisita/Guanqian, transfer ke Line 1 dulu. <b>Jam Operasional:</b> jalan kanal buka 24 jam (gratis); mayoritas toko/teahouse tutup ±22:00. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Pingjiang_Road`,
+       yt:`https://www.youtube.com/results?search_query=Pingjiang+Road+Suzhou+night`},
+      {group:`h3`, tag:`planb`, label:`Plan-B H3`, title:`Huqiu Wetland Park (虎丘湿地公园 · Hǔqiū Shīdì Gōngyuán)`,
+       nameEn:`Huqiu Wetland Park`,
+       nameHanzi:`虎丘湿地公园`,
+       context:`Kenapa jadi Plan-B: gratis, alternatif praktis kalau ingin mengurangi satu spot berbayar hari itu.`,
+       text:`Taman lahan basah di sekitar kawasan Tiger Hill (Huqiu), dikembangkan sebagai ruang hijau publik gratis dengan jalur air &amp; vegetasi alami, luas ±12 km² — kontras dengan taman klasik berbayar di sekitarnya. Rumah bagi 200+ spesies burung. <b>Akses:</b> Stasiun Sunwu Memorial Museum (孙武纪念苑, Line 4), keluar Exit 2, jalan kaki ±15 menit — searah kluster Line 4 Hari 3 ini. <b>Jam Operasional:</b> ±06:00–20:00 setiap hari. <b>Tiket:</b> Gratis (beberapa aktivitas tambahan di dalam mungkin berbayar).`,
+       wiki:`https://www.google.com/search?q=Huqiu+Wetland+Park+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Huqiu+Wetland+Park+Suzhou`},
+      // --- h4 ---
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Wumen Bridge (吴门桥 · Wúmén Qiáo)`,
+       nameEn:`Wumen Bridge`,
+       nameHanzi:`吴门桥`,
+       text:`Jembatan batu tertinggi di Suzhou (dibangun awal abad ke-11), berdiri di dekat Panmen Gate — salah satu peninggalan arsitektur kanal kuno Suzhou yang menghubungkan area gerbang kota dengan permukiman sekitarnya, bebas dikunjungi sebagai bagian dari jalan santai kawasan Panmen. <b>Akses:</b> Satu kawasan dengan Panmen Scenic Spots (lihat entri berikutnya) — persis 1 halte MRT dari hotel via Nanmen (Line 5). <b>Jam Operasional:</b> area jembatan bisa dilihat/dilewati kapan saja sebagai bagian jalan umum; untuk masuk ke sisi dalam kompleks Panmen ikuti jam operasional Panmen. <b>Tiket:</b> Gratis (melihat/menyeberangi jembatan dari luar kompleks berbayar Panmen).`,
+       wiki:`https://www.google.com/search?q=Wumen+Bridge+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Wumen+Bridge+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Panmen Scenic Spots (盘门景区 · Pánmén Jǐngqū)`,
+       nameEn:`Panmen Scenic Spots`,
+       nameHanzi:`盘门景区`,
+       text:`Satu-satunya gerbang kota kuno di China yang menggabungkan gerbang air DAN gerbang darat dalam satu struktur — mencerminkan kota Suzhou yang sejak awal dibangun mengelilingi jaringan kanal. Sejarahnya bermula era Kerajaan Wu (abad ke-6 SM), dengan struktur yang berdiri sekarang direkonstruksi era Dinasti Yuan-Ming. Kompleksnya juga mencakup Ruiguang Pagoda dan Wumen Bridge. <b>Akses:</b> Stasiun Nanmen (南门, Line 4 &amp; Line 5) — persis <b>1 halte MRT dari hotel via Line 5</b> (koreksi dari draft lama yang mengasumsikan perjalanan lebih jauh), atau jalan kaki ±1,2km/17 menit. <b>Jam Operasional:</b> 07:30–17:30 setiap hari. <b>Tiket:</b> CNY 40/org (±Rp106.000/org) — cocok dengan yang dipakai di itinerary ini; beli online lebih murah beberapa yuan.`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou_city_wall`,
+       yt:`https://www.youtube.com/results?search_query=Panmen+Gate+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Hanshan Temple (寒山寺 · Hánshān Sì)`,
+       nameEn:`Hanshan Temple`,
+       nameHanzi:`寒山寺`,
+       text:`Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Maple Bridge" (枫桥夜泊 · Fēngqiáo Yèbó) karya Zhang Ji, yang menggambarkan suara lonceng kuil ini terdengar hingga ke perahu di kanal — puisi itu sendiri jadi salah satu karya sastra China paling dikenal. Kuil aslinya dibangun era Dinasti Liang (abad ke-6), sudah beberapa kali hancur &amp; dibangun ulang, terakhir era Qing. <b>Akses:</b> Stasiun Shantangjie (山塘街, Line 2), keluar Exit 3, jalan kaki ±15 menit. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap)</b>: dari hotel/Nanmen BUKAN via Laodonglu/Line 2 seperti klaim lama — rute sebenarnya <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3/org, ±39 menit). <b>Jam Operasional:</b> 07:30–17:30 (masuk terakhir 16:30); tanggal 1 &amp; 15 penanggalan lunar buka lebih awal jam 07:00. <b>Tiket:</b> Musim ramai (April–Oktober) CNY 20/org dewasa, CNY 10/org pelajar/lansia (±Rp53.000/26.500); musim sepi (November–Maret) CNY 15/CNY 8/org (±Rp39.750/21.200).`,
+       wiki:`https://en.wikipedia.org/wiki/Hanshan_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Hanshan+Temple+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Fengqiao Scenic Area (枫桥景区 · Fēngqiáo Jǐngqū)`,
+       nameEn:`Fengqiao Scenic Area`,
+       nameHanzi:`枫桥景区`,
+       text:`Kawasan Maple Bridge (Fengqiao) yang jadi latar puisi terkenal Zhang Ji di atas — bersebelahan langsung dengan Hanshan Temple. Area sekitar jembatan &amp; kanal bisa dinikmati gratis sambil membayangkan suasana yang diabadikan dalam puisi 1.200 tahun lalu. ⚠️ Catatan: meski sering dikira satu tempat dengan Hanshan Temple, keduanya scenic spot terpisah dengan tiket masing-masing. <b>Akses:</b> Persis bersebelahan dengan Hanshan Temple (lihat entri sebelumnya) — akses &amp; rute sama. <b>Jam Operasional:</b> Maret–Oktober 06:00–21:30; November–Februari 06:30–21:00. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Maple_Bridge`,
+       yt:`https://www.youtube.com/results?search_query=Fengqiao+Scenic+Area+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Shantang Street (七里山塘 · Qīlǐ Shāntáng)`,
+       nameEn:`Shantang Street`,
+       nameHanzi:`七里山塘`,
+       text:`Dijuluki "Jalan Kuno No.1 Suzhou", dibangun tahun 825 M atas perintah penyair sekaligus gubernur Bai Juyi untuk menghubungkan kota dengan Tiger Hill sepanjang ±7 li (±3.6km). Sepanjang kanal berjejer rumah tradisional, jembatan batu era Ming-Qing, dan toko-toko kecil. <b>Akses:</b> Stasiun Shantang Street (山塘街, Line 2), keluar Exit 3 — langsung di depan jalan, satu jalur dengan Hanshan Temple. <b>Jam Operasional:</b> jalan buka 24 jam (gratis); toko/atraksi umumnya ±09:00–22:00; boating 08:00–17:00 &amp; 18:00–20:00. <b>Tiket:</b> Gratis jalan di sepanjang jalan. Boat tour terpisah — lihat entri <b>Suzhou Ancient Canal Night Cruise</b> di bawah untuk versi malam yang dipakai di Hari 4.`,
+       wiki:`https://en.wikipedia.org/wiki/Shantang_Street`,
+       yt:`https://www.youtube.com/results?search_query=Shantang+Street+Suzhou`},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Suzhou Ancient Canal Night Cruise (苏州古运河夜游 · Sūzhōu Gǔ Yùnhé Yèyóu)`,
+       nameEn:`Suzhou Ancient Canal Night Cruise`,
+       nameHanzi:`苏州古运河夜游`,
+       text:`Perahu wisata menyusuri kanal kuno Suzhou di malam hari, berangkat dari dermaga di kawasan Shantang Street (Baijuyi Wharf) — versi malam dijuluki "Oriental Venice" karena suasana lampion &amp; bangunan tepi kanal yang menyala. Cara paling santai untuk melihat kota tua dari sisi air, pelengkap jalan kaki di Shantang Street. <b>Akses:</b> Naik dari dermaga di Shantang Street (山塘街, Line 2, Exit 3) — sama persis dengan akses Shantang Street, tidak perlu transportasi tambahan. <b>Jam Operasional:</b> boating 08:00–17:00 (siang) &amp; 18:00–20:00 (malam); durasi tiap sesi ±40 menit–1 jam. <b>Tiket:</b> Siang CNY 55/org (±Rp145.750/org), malam "Oriental Venice" CNY 100/org (±Rp265.000/org) — versi malam yang dipakai di Hari 4 itinerary ini.`,
+       wiki:`https://www.tripadvisor.com/AttractionProductReview-g297442-d20003384-Suzhou_Ancient_Grand_Canal_Cruise_Experience-Suzhou_Jiangsu.html`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Ancient+Canal+Night+Cruise+Shantang`},
+      {group:`h4`, tag:`planb`, label:`Plan-B H4`, title:`Xiyuan Temple (西园寺 · Xīyuán Sì, kelenteng kucing)`,
+       nameEn:`Xiyuan Temple`,
+       nameHanzi:`西园寺`,
+       context:`Kenapa jadi Plan-B: dekat Shantang Street, jalur datar, suasana tenang — alternatif kalau Hanshan Temple/Fengqiao terasa memutar dari rute utama.`,
+       text:`Awalnya bagian dari taman pribadi keluarga bangsawan era Ming, diubah jadi kelenteng Buddha tahun 1635. Terkenal dengan kolam kura-kura besar dan Aula 500 Arhat berisi ratusan patung Buddha berlapis emas. <b>Akses:</b> TIDAK ada stasiun MRT persis di depan — naik bus 6/10/11/17/40/Y1/Y3 turun halte Xiyuan (西园站), searah kawasan Shantang Street. <b>Jam Operasional:</b> 07:30–17:30 setiap hari (loket tutup 17:00). <b>Tiket:</b> CNY 5/org (±Rp13.250/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Xiyuan_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Xiyuan+Temple+Suzhou+turtle+pond`},
+      // --- h5 ---
+      {group:`h5`, tag:`main`, label:`Itin H5`, title:`Master of Nets Garden (网师园 · Wǎngshī Yuán)`,
+       nameEn:`Master of Nets Garden`,
+       nameHanzi:`网师园`,
+       text:`Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage. Nama hotel trip ini merujuk langsung ke taman ini, dan lokasinya memang persis di area yang sama. <b>Akses:</b> Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan. ✅ <b>Terverifikasi Amap (2026-09-20): 1,1km dari hotel</b> (±5 menit sepeda, ±15 menit jalan kaki) — cukup dekat untuk jalan kaki santai. Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010). <b>Jam Operasional:</b> 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00. Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00. <b>Tiket:</b> Siang CNY 40/org musim ramai, CNY 30/org musim sepi (±Rp106.000/79.500 per org). Night Garden CNY 100/org (±Rp265.000/org) — terpisah dari tiket siang, opsional di Hari 1 malam kalau masih berminat lihat versi lampion. Gratis untuk lansia 70+ (bawa identitas) &amp; anak di bawah 1,2m.`,
+       wiki:`https://en.wikipedia.org/wiki/Master_of_the_Nets_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Master+of+the+Nets+Garden+Suzhou+night`},
+      // --- cadangan ---
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Baoen Temple / North Pagoda (Beisi Ta) (北寺塔 · Běisì Tǎ)`,
+       nameEn:`Baoen Temple / North Pagoda`,
+       nameHanzi:`北寺塔`,
+       context:`Kenapa tidak dimasukkan: searah Suzhou Museum tapi Hari 3 sudah cukup padat (Museum, Guanqian, Xuanmiao, Humble Administrator's Garden, Pingjiang Road) — bisa disisipkan kalau ternyata ada waktu ekstra.`,
+       text:`Pagoda tertinggi di selatan Sungai Yangtze (±76m, 9 lantai kayu bersusun), berdiri di atas lahan kuil yang riwayatnya diperkirakan mundur hingga era Tiga Kerajaan (abad ke-3). Bangunan yang ada sekarang direkonstruksi era Dinasti Song (abad ke-12). Taman di sekelilingnya rindang dan tenang, cocok untuk jalan santai tanpa harus naik ke atas pagoda. <b>Akses:</b> Stasiun Beisita (北寺塔, Line 4) — pagoda punya stasiun MRT sendiri, langsung di depan gerbang. Persis sejalur dengan Suzhou Museum (Hari 3). <b>Jam Operasional:</b> ±08:00–18:00 setiap hari (loket tutup 17:30). Tidak ada hari libur rutin. <b>Tiket:</b> ⚠️ harga bervariasi antar sumber (CNY 25–40/org untuk naik ke atas pagoda, ±Rp66.250–106.000/org) — kalau dikunjungi, TIDAK naik ke atas (pertimbangan lutut), cukup nikmati taman &amp; pagoda dari luar yang <b>gratis</b>.`,
+       wiki:`https://en.wikipedia.org/wiki/Bao%27en_Temple,_Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=North+Temple+Pagoda+Suzhou+Beisi+Ta`,
+       relatedDays:[3]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Suzhou Taihu Lake Wetland Park (苏州太湖湿地公园 · Sūzhōu Tàihú Shīdì Gōngyuán)`,
+       nameEn:`Suzhou Taihu Lake Wetland Park`,
+       nameHanzi:`苏州太湖湿地公园`,
+       context:`Kenapa tidak dimasukkan: ±40-45 menit sekali jalan dari hotel — terlalu jauh untuk hari kepulangan (Hari 5), dan tidak ada hari lain yang tersisa untuk dedicated day khusus Taihu di trip 5-hari ini. Cocok jadi tambahan kalau durasi trip Suzhou diperpanjang di kesempatan lain.`,
+       text:`Taman lahan basah di tepi Danau Taihu — danau terbesar ketiga di China, terkenal dengan batu-batu taihu (batu kapur berlubang khas) yang dulu banyak diambil untuk menghias taman klasik Suzhou. Jalur promenadenya datar dan luas, kontras menyegarkan dari padatnya kota tua. <b>Akses:</b> <b>Stasiun Taihu Xiangshan (太湖香山, Line 5) — LANGSUNG dari hotel TANPA transfer</b>, 17 halte, ¥5/org, ±43 menit (terverifikasi Amap 2026-09-22). Dari stasiun, taksi/bus singkat ±10-15 menit ke pintu masuk taman. <b>Jam Operasional:</b> 08:30–17:00 (masuk terakhir 16:00). <b>Tiket:</b> ⚠️ harga bervariasi antar sumber — CNY 60/org (±Rp159.000/org) hingga versi gratis/CNY 20/org tergantung sumber &amp; mungkin tergantung area spesifik yang dimaksud. Cek harga pasti di loket/Trip.com sebelum berangkat.`,
+       wiki:`https://en.wikipedia.org/wiki/Lake_Tai`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Taihu+Lake+Wetland+Park`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Shoutao Lake Scenic Area (寿桃湖 · Shòutáo Hú)`,
+       nameEn:`Shoutao Lake Scenic Area`,
+       nameHanzi:`寿桃湖`,
+       context:`Kenapa tidak dimasukkan: satu kawasan dengan Taihu Lake Wetland Park (lihat entri di atas) yang sendiri sudah tidak masuk itinerary utama — hanya realistis kalau ada waktu ekstra dedicated ke kawasan Taihu.`,
+       text:`Danau kecil (±400 mu/26.7 hektar, kedalaman maksimum 70m) hasil genangan air tanah alami sejak penambangan batu dilarang tahun 1999 di kawasan Wuzhong. Batu-batu di tengah danau menyerupai buah persik umur panjang (asal namanya), juga dijuluki "Guilin Mini"-nya Suzhou. Jadi spot foto yang relatif belum ramai turis. <b>Akses:</b> Satu kawasan resor dengan Taihu Xiangshan (Line 5) — taksi/Didi singkat dari stasiun, lokasi di kawasan Wuzhong dekat persimpangan Lingtian Road &amp; Zhangjingbang Road. <b>Jam Operasional:</b> buka sepanjang tahun, tidak ada jam tutup khusus (area publik terbuka). <b>Tiket:</b> Gratis.`,
+       wiki:`https://www.google.com/search?q=Shoutao+Lake+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Shoutao+Lake+Suzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Suzhou Wuzhong Taihu Tourist Zone (吴中太湖旅游度假区 · Wúzhōng Tàihú Lǚyóu Dùjiàqū)`,
+       nameEn:`Suzhou Wuzhong Taihu Tourist Zone`,
+       nameHanzi:`吴中太湖旅游度假区`,
+       context:`Kenapa tidak dimasukkan: satu kawasan dengan Taihu Lake Wetland Park — sama-sama tidak masuk itinerary utama karena Hari 5 sekarang fokus destinasi dekat hotel.`,
+       text:`Kawasan wisata resmi 5A di tepi Danau Taihu, distrik Wuzhong, seluas ±250 km², mencakup beberapa taman &amp; area publik di sepanjang tepi danau (termasuk Taihu Park, Situ Temple, Lushan). <b>Akses:</b> Satu kawasan resor dengan Taihu Xiangshan (Line 5) — taksi/Didi singkat dari stasiun. <b>Jam Operasional:</b> area publik buka sepanjang hari; sub-atraksi berbayar (mis. Taihu Park, CNY 10/org) punya jam &amp; hari tutup sendiri (tutup Rabu April–Oktober, Selasa-Rabu November–Maret, kecuali libur nasional). <b>Tiket:</b> Gratis untuk area publik/promenade tepi danau.`,
+       wiki:`https://www.google.com/search?q=Wuzhong+Taihu+Tourist+Zone`,
+       yt:`https://www.youtube.com/results?search_query=Wuzhong+Taihu+Tourist+Zone`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Dayangshan National Forest Park (大阳山国家森林公园 · Dàyángshān Guójiā Sēnlín Gōngyuán)`,
+       nameEn:`Dayangshan National Forest Park`,
+       nameHanzi:`大阳山国家森林公园`,
+       context:`Kenapa tidak dimasukkan: redundant dengan Taihu Lake Wetland Park sebagai pilihan "alam", dan Taihu sendiri sudah tidak masuk itinerary utama karena keterbatasan hari.`,
+       text:`Taman hutan nasional di pinggiran barat kota tua Suzhou, terbagi 2 area utama: Wenshu Monastery (dibangun era Dinasti Jin Timur) dan Botanical Garden dengan koleksi tanaman langka (yew, huanghuali, podocarpus). Jalur trekking ringan &amp; udara segar. <b>Akses:</b> TIDAK ada MRT langsung — taksi/Didi dari kota. <b>Jam Operasional:</b> 09:00–16:30. <b>Tiket:</b> ⚠️ belum ditemukan sumber resmi harga tiket — cek Amap/Trip.com langsung sebelum berangkat.`,
+       wiki:`https://www.google.com/search?q=Dayangshan+National+Forest+Park+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Dayangshan+National+Forest+Park+Suzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Tianpingshan Scenic Spot (天平山 · Tiānpíng Shān)`,
+       nameEn:`Tianpingshan Scenic Spot`,
+       nameHanzi:`天平山`,
+       context:`Kenapa tidak dimasukkan: jalur hiking gunung cukup menanjak — untuk kondisi lutut, lebih aman hanya dicoba di area bawah/foothill saja, bukan pendakian penuh. Juga di luar musim daun maple terbaik (trip ini 10-14 Okt, puncak maple baru akhir Oktober).`,
+       text:`Gunung kecil terkenal dengan pohon maple (paling indah saat musim gugur, sekitar akhir Oktober-awal Desember) dan mata air alami yang sudah jadi tempat rekreasi sejak Dinasti Song. <b>Akses:</b> MRT Line 1 ke Stasiun Mudu (木渎), transfer bus rute 4, turun halte Tianpingshan (天平山站), ±3.5km dari stasiun Mudu. <b>Jam Operasional:</b> 08:00–17:00 (loket &amp; masuk terakhir 16:30). <b>Tiket:</b> CNY 30/org dewasa, CNY 15/org lansia/anak (±Rp79.500/39.750 per org).`,
+       wiki:`https://en.wikipedia.org/wiki/Tianping_Mountain`,
+       yt:`https://www.youtube.com/results?search_query=Tianpingshan+Suzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Suzhou Culture &amp; Arts Centre (苏州文化艺术中心 · Sūzhōu Wénhuà Yìshù Zhōngxīn)`,
+       nameEn:`Suzhou Culture & Arts Centre`,
+       nameHanzi:`苏州文化艺术中心`,
+       context:`Kenapa tidak dimasukkan: kontennya (galeri/teater indoor) kurang sesuai gaya jalan-jalan outdoor santai yang diprioritaskan trip ini — meski searah rute Hari 2, sengaja tidak ditambahkan supaya hari itu tidak terlalu padat.`,
+       text:`Pusat seni &amp; budaya modern Suzhou rancangan arsitek Prancis Paul Andreu, dibuka 2007, seluas ±150.000 m² di tepi timur Jinji Lake — berisi grand theater, concert hall, bioskop IMAX, sekolah seni, dan Suzhou Jinji Lake Art Museum di dalamnya. <b>Akses:</b> Stasiun Cultural Expo Center (文化博览中心, Line 1), keluar Exit 1 — tersambung langsung, searah kawasan Jinji Lake (Hari 2). <b>Jam Operasional:</b> area pameran umumnya 10:00–20:00, tutup setiap Senin. <b>Tiket:</b> Gratis masuk gedung; harga tiket pertunjukan/pameran tertentu bervariasi per acara ⚠️.`,
+       wiki:`https://www.google.com/search?q=Suzhou+Culture+%26+Arts+Centre`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Culture+and+Arts+Centre`,
+       relatedDays:[2]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Dongshahu Ecology Park (东沙湖生态园 · Dōngshāhú Shēngtài Yuán)`,
+       nameEn:`Dongshahu Ecology Park`,
+       nameHanzi:`东沙湖生态园`,
+       context:`Kenapa tidak dimasukkan: redundant dengan Jinji Lake &amp; Taihu Lake Wetland Park sebagai pilihan "taman/danau" trip ini — dipilih yang lebih ikonik.`,
+       text:`Taman ekologi terbuka terbesar di kawasan ini (±1,21 juta m², termasuk ±540.000 m² area air), tanpa pagar/tembok dengan banyak pintu masuk. Punya sistem 3 pulau (Cherry Blossom Island, Crabapple Island, Reed Island) memadukan bukit &amp; air. <b>Akses:</b> Stasiun Dongshahu (东沙湖, Line 1) — taman ini punya stasiun MRT sendiri, searah kawasan Jinji Lake (Hari 2). <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber jam buka-tutup pasti — sebagai taman terbuka tanpa pagar, kemungkinan bisa diakses kapan saja. <b>Tiket:</b> Gratis.`,
+       wiki:`https://www.google.com/search?q=Dongshahu+Ecology+Park+Suzhou`,
+       yt:`https://www.youtube.com/results?search_query=Dongshahu+Ecology+Park+Suzhou`,
+       relatedDays:[2]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán)`,
+       nameEn:`Suzhou Amusement Land`,
+       nameHanzi:`苏州乐园`,
+       context:`Kenapa tidak dimasukkan: berbayar mahal dan berorientasi turis/hiburan, tidak sejalan dengan prinsip trip ini yang mengutamakan tempat gratis/merakyat dan suasana lokal otentik.`,
+       text:`Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Children's World), wahana modern termasuk roller coaster gantung terbesar di China, serta beberapa instalasi bertema landmark dunia (mis. replika Coliseum Romawi, tanda mirip "HOLLYWOOD"). <b>Akses:</b> Stasiun Suzhou Amusement Park (苏州乐园, Line 1), jalan kaki ±5 menit. <b>Jam Operasional:</b> ⚠️ bervariasi per zona/musim, cek jadwal spesifik hari kunjungan di Trip.com/website resmi sebelum berangkat. <b>Tiket:</b> CNY 200–260/org dewasa, CNY 150–180/org anak/lansia (±Rp530.000–689.000 / Rp397.500–477.000 per org) tergantung zona &amp; musim; paket combo dewasa+anak mulai CNY 198.`,
+       wiki:`https://en.wikipedia.org/wiki/Suzhou_Amusement_Land`,
+       yt:`https://www.youtube.com/results?search_query=Suzhou+Amusement+Land`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Lion Grove Garden (狮子林 · Shīzi Lín)`,
+       nameEn:`Lion Grove Garden`,
+       nameHanzi:`狮子林`,
+       context:`Kenapa tidak dimasukkan: persis searah/dekat kluster Suzhou Museum &amp; Humble Administrator's Garden (Hari 3), tapi trip ini sudah cukup padat dengan Humble Administrator's Garden sebagai taman klasik utama hari itu — bisa disisipkan kalau ada waktu ekstra.`,
+       text:`Salah satu 4 taman klasik terkenal Suzhou, dibangun tahun 1342 oleh biksu Buddha Tianru untuk menghormati gurunya — dijuluki "Lion Grove" karena batu-batu taihu-nya yang berbentuk menyerupai singa, dianggap kompleks batu buatan (rockery) terbesar &amp; paling rumit di antara taman-taman klasik Suzhou. Kublai Khan's descendant dan pelukis terkenal Ni Zan pernah terlibat dalam desainnya. <b>Akses:</b> Stasiun Humble Administrator's Garden·Suzhou Museum (Line 6), Exit 2, jalan kaki beberapa menit. Alternatif: Stasiun Beisita (Line 4), jalan kaki ±1km ke timur. No. 23 Yuanlin Road, Gusu District. <b>Jam Operasional:</b> 1 Maret–31 Oktober 07:30–17:30; 1 November–akhir Februari 07:30–17:00. <b>Tiket:</b> Musim ramai (April, Mei, Juli–Oktober) CNY 40/org (±Rp106.000/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 30/org (±Rp79.500/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Lion_Grove_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Lion+Grove+Garden+Suzhou`,
+       relatedDays:[3]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`The Lingering Garden (留园 · Liú Yuán)`,
+       nameEn:`The Lingering Garden`,
+       nameHanzi:`留园`,
+       context:`Kenapa tidak dimasukkan: lokasinya di barat kota (dekat Shi Road), tidak searah dengan kluster manapun di itinerary ini — situs UNESCO yang bagus, tapi butuh perjalanan tersendiri. Bisa jadi alternatif kalau ingin ganti Humble Administrator's Garden di kesempatan lain.`,
+       text:`Salah satu 4 taman klasik terkenal China (bersama Humble Administrator's Garden, Summer Palace Beijing, dan Chengde Mountain Resort), pertama dibangun era Ming (1593) oleh pejabat Xu Taishi. Terkenal dengan koridor beratap sepanjang ±700m yang menghubungkan seluruh taman dan koleksi batu taihu raksasa termasuk "Cloud-Capped Peak" setinggi ±6,5m — situs UNESCO World Heritage. <b>Akses:</b> Stasiun Shi Road (石路, Line 2), Exit 1, jalan kaki ke utara ±300m via Guangji South Road. <b>Jam Operasional:</b> 1 Maret–31 Oktober 07:30–17:30 (loket tutup 17:00); 1 November–28 Februari 07:30–17:00 (loket tutup 16:30). <b>Tiket:</b> Musim ramai (April, Mei, Juli–Oktober) CNY 55/org (±Rp145.750/org); musim sepi (Januari–Maret, Juni, November–Desember) CNY 45/org (±Rp119.250/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Lingering_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Lingering+Garden+Suzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Yuanrong Times Square (圆融时代广场 · Yuánróng Shídài Guǎngchǎng)`,
+       nameEn:`Yuanrong Times Square`,
+       nameHanzi:`圆融时代广场`,
+       context:`Kenapa tidak dimasukkan: sesi belanja/mal bukan prioritas trip ini (sama alasan seperti Suzhou Centre Plaza) — meski searah kawasan Jinji Lake (Hari 2), sengaja tidak ditambahkan supaya hari itu tetap fokus outdoor.`,
+       text:`Mal besar di tepi timur Jinji Lake, kompleks komersial-hiburan seluas ±210.000 m². Terkenal dengan kanopi LED sepanjang ±500m (salah satu terpanjang di dunia) yang menampilkan pertunjukan cahaya "daun teratai &amp; ikan berenang" setiap malam — jadi daya tarik tersendiri di luar belanja. <b>Akses:</b> Stasiun Times Square (Line 1) — tersambung langsung ke mal. <b>Jam Operasional:</b> toko umumnya ±10:00–22:00; pertunjukan kanopi LED tayang rutin tiap malam (jadwal spesifik bervariasi, cek on-site). <b>Tiket:</b> Gratis masuk (mal).`,
+       wiki:`https://www.trip.com/travel-guide/shops/suzhou/yuanrong-times-square-10567883/`,
+       yt:`https://www.youtube.com/results?search_query=Yuanrong+Times+Square+Suzhou`,
+       relatedDays:[2]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Ruiguang Tower (瑞光塔 · Ruìguāng Tǎ)`,
+       nameEn:`Ruiguang Tower`,
+       nameHanzi:`瑞光塔`,
+       context:`Kenapa tidak dimasukkan: sudah termasuk dalam kunjungan Panmen Scenic Spots di Hari 4 (dilihat dari luar sebagai bagian kompleks) — TIDAK naik ke atas pagoda (pertimbangan lutut, tangga tanpa lift/eskalator).`,
+       text:`Pagoda 7 lantai berbentuk oktagonal setinggi ±53,6m, dibangun era Dinasti Song Utara — bagian dari kompleks Panmen Scenic Spots, berdiri berdekatan dengan Wumen Bridge dan gerbang kota kuno. <b>Akses:</b> Sama dengan Panmen Scenic Spots — Stasiun Nanmen (Line 4 &amp; Line 5), persis 1 halte MRT dari hotel. <b>Jam Operasional:</b> 08:30–16:00 sepanjang tahun. <b>Tiket:</b> Termasuk tiket masuk Panmen (CNY 40/org); tambahan CNY 6/org untuk naik ke atas pagoda.`,
+       wiki:`https://en.wikipedia.org/wiki/Ruiguang_Pagoda`,
+       yt:`https://www.youtube.com/results?search_query=Ruiguang+Pagoda+Suzhou`,
+       relatedDays:[4]},
+    ],
+    lampiranGroups:[
+      {key:`intro`, heading:`Suzhou (苏州 · Sūzhōu)`},
+      {key:`h1`, heading:`Hari 1 — Jumat, 10 Oktober`},
+      {key:`h2`, heading:`Hari 2 — Sabtu, 11 Oktober`},
+      {key:`h3`, heading:`Hari 3 — Minggu, 12 Oktober`},
+      {key:`h4`, heading:`Hari 4 — Senin, 13 Oktober`},
+      {key:`h5`, heading:`Hari 5 — Selasa, 14 Oktober`},
+      {key:`cadangan`, heading:`Cadangan`},
+    ],
+  },
+  {
+    id:`xiamen`,
+    name:`Xiamen`,
+    dates:`7 – 12 November · 5 Malam · Direncanakan Independen (bukan sambungan kota lain)`,
+    currency:`CNY`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Sabtu, 7 November (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+        [`Kedatangan`,`Sabtu, 7 November, <b>±17:00</b> — moda &amp; kota asal menyesuaikan rencana Anda (kota ini direncanakan independen)`],
+        [`Kepulangan`,`Kamis, 12 November, <b>±15:00</b>, lanjut ke kota berikutnya — moda &amp; tujuan belum ditentukan`],
+      ],
+      warn:`<b>⚠️ Keterbatasan alat:</b> riset destinasi &amp; titik transfer MRT memakai web_search (bukan Amap langsung) — titik transfer presisi antara Line 1 dan Line 3 belum terverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.`,
+      hotel:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Sabtu, 7 November`, label:`Kedatangan Sore — Zhongshan Road Malam`,
+        advisory:`Hari ringan kedatangan — check-in dulu, baru jalan santai malam di jalan pedestrian utama kota, sekalian coba jajanan legendaris.`,
+        items:[
+          [`17:00`,`Tiba di kawasan Zhenhai Road/Zhongshan Road, check-in`,``,``,``,``],
+          [`17:00–18:00`,`Istirahat sebentar`,``,``,``,``],
+          [`18:00–19:00`,`Makan malam sekitar Zhongshan Road`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`19:00–20:30`,`<b>Zhongshan Road</b> — jalan malam pedestrian utama, coba peanut soup Huangzehe`,`Jajan opsional ±CNY 10/org`,``,`20`,`53.000`],
+          [`20:30`,`Kembali ke penginapan`,`Jalan kaki (persis di kawasan yang sama)`,``,``,``],
+        ],
+        total:{cny:`<b>70</b>`, idr:`<b>185.500</b>`},
+        planb:`kalau kelelahan perjalanan — cukup istirahat penuh, tunda Zhongshan Road ke sela-sela hari lain (persis di kawasan penginapan, gampang disisipkan kapan saja).`,
+      },
+      {
+        id:"h2", num:2, date:`Minggu, 8 November`, label:`Gulangyu Island`,
+        advisory:`Pulau UNESCO World Heritage bebas kendaraan bermotor — arsitektur kolonial, museum piano, dan pantai kecil. Satu hari penuh karena kawasannya luas &amp; padat konten.`,
+        items:[
+          [`08:00–08:30`,`Sarapan sekitar penginapan`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`08:30–09:00`,`Jalan kaki ke Xiamen International Cruise Center (Xiagu Wharf)`,`±200m dari Zhenhai Road/Zhongshan Road`,``,``,``],
+          [`09:00–09:30`,`Antre &amp; naik feri ke Gulangyu`,`Tiket feri PP CNY 35/org (termasuk tiket balik, berlaku 20 hari)`,``,`70`,`185.500`],
+          [`09:30–12:00`,`<b>Sunlight Rock Scenic Area</b> — Sunlight Rock, Piano Museum, Shuzhuang Garden`,`Tiket kombinasi ±CNY 90/org (⚠️ estimasi, cek loket — beberapa paket termasuk cable car)`,``,`180`,`477.000`],
+          [`12:00–13:00`,`Makan siang di Gulangyu`,`±CNY 30/org (harga pulau sedikit lebih tinggi)`,``,`60`,`159.000`],
+          [`13:00–17:00`,`Jalan santai bebas — arsitektur kolonial, gang-gang kecil, pantai mini`,`Gratis jalan kawasan`,``,``,``],
+          [`17:00–17:30`,`Feri kembali ke Xiamen (tiket sudah termasuk)`,``,``,``,``],
+          [`18:00–19:00`,`Makan malam sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+        ],
+        total:{cny:`<b>390</b>`, idr:`<b>1.033.500</b>`},
+        planb:`kalau antrean feri terlalu panjang (musim ramai) — datang lebih pagi (buka ±08:00) atau geser ke hari kerja kalau jadwal masih fleksibel.`,
+      },
+      {
+        id:"h3", num:3, date:`Senin, 9 November`, label:`Nanputuo Temple → Xiamen University → Wanshi Botanical Garden`,
+        advisory:`Kluster budaya-alam di Line 3, Stasiun Xida Nanmen — kuil Buddha paling terkenal di Xiamen, kampus universitas ikonik, dan kebun raya di bukit belakangnya.`,
+        items:[
+          [`08:00–08:30`,`Sarapan sekitar penginapan`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`08:30–09:15`,`Line 1 → transfer Line 3, turun Stasiun Xida Nanmen`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
+          [`09:15–11:00`,`<b>Nanputuo Temple</b>`,`Gratis, wajib reservasi online (lihat Lampiran)`,``,``,``],
+          [`11:00–12:00`,`<b>Xiamen University</b> — jalan santai kampus (gerbang selatan)`,`Gratis, kadang perlu reservasi/ID untuk masuk area tertentu`,``,``,``],
+          [`12:00–13:00`,`Makan siang sekitar Xiamen University`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`13:00–16:00`,`<b>Wanshi Botanical Garden</b> — bukit di belakang Nanputuo Temple`,`Tiket CNY 30/org`,``,`60`,`159.000`],
+          [`16:00–16:45`,`Line 3 → transfer Line 1 kembali ke penginapan`,``,``,`24`,`63.600`],
+          [`18:00–19:00`,`Makan malam sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+        ],
+        total:{cny:`<b>238</b>`, idr:`<b>630.700</b>`},
+        planb:`kalau reservasi Nanputuo Temple penuh — cukup nikmati Xiamen University &amp; Wanshi Botanical Garden lebih lama, coba reservasi ulang untuk hari lain (persis di jalur yang sama, gampang disisipkan).`,
+      },
+      {
+        id:"h4", num:4, date:`Selasa, 10 November`, label:`Hulishan Fortress → Baicheng Beach → Island Ring Road`,
+        advisory:`Benteng pesisir bersejarah + pantai santai + jalur sepeda ikonik keliling pulau — semua di Stasiun Xida Baicheng, Line 3.`,
+        items:[
+          [`08:30–09:15`,`Line 1 → transfer Line 3, turun Stasiun Xida Baicheng`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
+          [`09:15–11:30`,`<b>Hulishan Fortress</b> — benteng pesisir, meriam kuno, museum Rongguang`,`Tiket CNY 25/org`,``,`50`,`132.500`],
+          [`11:30–12:30`,`Makan siang sekitar Baicheng`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`12:30–13:00`,`Sewa sepeda tandem di Baicheng`,`±CNY 30/2 jam (2 orang)`,``,`30`,`79.500`],
+          [`13:00–17:00`,`<b>Island Ring Road</b> — bersepeda santai menyusuri pesisir, mampir <b>Baicheng Beach</b>`,`Gratis jalan/pantai; sepeda sudah dihitung di atas`,``,``,``],
+          [`17:00–18:00`,`Line 3 → transfer Line 1 kembali ke penginapan`,``,``,`24`,`63.600`],
+          [`18:00–19:00`,`Makan malam sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+        ],
+        total:{cny:`<b>228</b>`, idr:`<b>604.200</b>`},
+        planb:`kalau hujan/terlalu panas untuk bersepeda — cukup jalan kaki santai di Baicheng Beach &amp; sekitar Hulishan Fortress, skip sesi sepeda.`,
+      },
+      {
+        id:"h5", num:5, date:`Rabu, 11 November`, label:`Shapowei → Zengcuoan Malam`,
+        advisory:`Pelabuhan tua yang berubah jadi distrik seni, lanjut ke desa nelayan yang kini jadi kawasan bohemian dengan mural &amp; pasar malam — dua-duanya berurutan di Line 3.`,
+        items:[
+          [`09:30–10:15`,`Line 1 → transfer Line 3, turun Stasiun Shapowei`,`⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
+          [`10:15–12:30`,`<b>Shapowei Art Zone</b> — pelabuhan tua, galeri seni, kafe`,`Gratis jalan kawasan`,``,``,``],
+          [`12:30–13:30`,`Makan siang sekitar Shapowei`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`13:30–14:00`,`Line 3, lanjut ke Stasiun Zengcuoan (1-2 halte)`,``,``,`16`,`42.400`],
+          [`14:00–17:30`,`<b>Zengcuoan</b> — jalan santai desa nelayan bohemian, mural &amp; toko kecil`,`Gratis jalan kawasan`,``,``,``],
+          [`17:30–19:00`,`Makan malam &amp; jajan di <b>pasar malam Zengcuoan</b> — satay noodles, oyster omelet (opsional, cukup berminyak)`,`±CNY 30/org`,``,`60`,`159.000`],
+          [`19:00–19:45`,`Line 3 → transfer Line 1 kembali ke penginapan`,``,``,`24`,`63.600`],
+        ],
+        total:{cny:`<b>174</b>`, idr:`<b>461.100</b>`},
+        planb:`kalau Zengcuoan terlalu ramai malam hari (akhir pekan) — nikmati siang hari saja, kembali lebih awal, atau geser ke hari kerja.`,
+      },
+      {
+        id:"h6", num:6, date:`Kamis, 12 November`, label:`Kepulangan`,
+        items:[
+          [`08:00–08:30`,`Sarapan terakhir sekitar penginapan`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`08:30–12:00`,`Packing, siap-siap, waktu buffer`,``,``,``,``],
+          [`12:00–13:00`,`Makan siang ringan sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`<b>15:00</b>`,`<b>Keberangkatan lanjut kota berikutnya</b>`,`Moda &amp; tujuan belum ditentukan`,``,``,``],
+        ],
+        total:{cny:`<b>80</b>`, idr:`<b>212.000</b>`},
+        planb:`tidak ada destinasi terjadwal, jadi tidak ada risiko — waktu buffer bisa dipakai kalau packing lebih lama dari perkiraan.`,
+      },
+    ],
+
+    budget:{
+      note:`⚠️ Angka aktivitas harian di bawah TIDAK termasuk biaya menginap (belum ada hotel fixed, lihat "Area Menginap yang Disarankan") dan tiket kedatangan/kepulangan (moda belum ditentukan).`,
+      byDay:[
+        [`Hari 1 (7 Nov)`,`70`,`185.500`],
+        [`Hari 2 (8 Nov)`,`390`,`1.033.500`],
+        [`Hari 3 (9 Nov)`,`238`,`630.700`],
+        [`Hari 4 (10 Nov)`,`228`,`604.200`],
+        [`Hari 5 (11 Nov)`,`174`,`461.100`],
+        [`Hari 6 (12 Nov)`,`80`,`212.000`],
+      ],
+      byCategory:[
+        [`Tiket masuk (Gulangyu, Hulishan Fortress, Wanshi Botanical Garden, sewa sepeda)`,`320`,`848.000`],
+        [`Makan (semua hari)`,`520`,`1.378.000`],
+        [`Transport lokal (MRT, feri)`,`340`,`901.000`],
+        [`GRAND TOTAL AKTIVITAS`,`1.180`,`3.127.000`],
+      ],
+      grand:[`GRAND TOTAL`,`1.180`,`3.127.000`],
+      catTotal:[`GRAND TOTAL`,`1.180`,`3.127.000`],
+      caveat:`Fujian Tulou, Wuyi Mountains, dan destinasi Cadangan lain semuanya TIDAK termasuk di total di atas. Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.`,
+    },
+
+    notes:[
+      `<b>Fisik/lutut:</b> hindari tangga curam — semua destinasi di itinerary ini jalur relatif datar (pulau pejalan kaki, kampus, taman, pantai).`,
+      `<b>Makanan:</b> semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — beberapa hidangan ikonik Xiamen (sha cha mian, oyster omelet) cukup berminyak, jadi opsional saja bukan wajib dicoba.`,
+      `<b>Transportasi:</b> prioritas MRT (5 jalur aktif); titik transfer Line 1 ↔ Line 3 BELUM terverifikasi presisi — cek Amap on-site atau pakai Didi sebagai fallback.`,
+      `<b>Gulangyu Island:</b> turis asing WAJIB naik feri dari Xiamen International Cruise Center (Xiagu Wharf), BUKAN dermaga umum Dongdu — datang pagi untuk menghindari antrean panjang, terutama akhir pekan.`,
+      `<b>Reservasi:</b> Nanputuo Temple perlu reservasi online gratis — booking H-1/H-2 via WeChat mini-program.`,
+    ],
+
+    lampiran:[
+      // --- intro ---
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cerita Kota Xiamen`,
+       nameEn:`Cerita Kota Xiamen`,
+       text:`Xiamen (dulu dikenal sebagai "Amoy" di dunia Barat) jadi salah satu dari lima pelabuhan yang dibuka untuk perdagangan internasional setelah Perjanjian Nanking 1842, memicu masuknya konsulat, gereja, dan vila bergaya Eropa terutama di Gulangyu Island. Tahun 1980an, Xiamen jadi salah satu kota pertama di China yang ditetapkan sebagai Zona Ekonomi Khusus dalam kebijakan Reformasi &amp; Keterbukaan Deng Xiaoping, dan kini jadi pelabuhan terbesar ke-8 di China sekaligus kota pesisir yang menghadap langsung ke Taiwan.`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen`,
+       yt:`https://www.youtube.com/results?search_query=Xiamen+China+city+guide`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cuaca, Iklim &amp; Suhu`,
+       nameEn:`Cuaca, Iklim & Suhu`,
+       text:`November adalah salah satu bulan terbaik untuk berkunjung — awal musim kering, sejuk, dan sudah lewat musim topan (Juni-Oktober). ⚠️ Angka di ringkasan cuaca awal dokumen ini adalah rata-rata historis, BUKAN forecast real-time — cek forecast H-7 sebelum berangkat.`,
+       wiki:`https://en.climate-data.org/asia/china/fujian/xiamen-2623/`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Transportasi Masuk Kota`,
+       nameEn:`Transportasi Masuk Kota`,
+       text:`Bandara utama: <b>Xiamen Gaoqi International Airport (厦门高崎国际机场 · Xiàmén Gāoqí Guójì Jīchǎng)</b>. Stasiun HSR utama: <b>Xiamen North Railway Station (厦门北站 · Xiàmén Běi Zhàn)</b> untuk koneksi jarak jauh, <b>Xiamen Railway Station (厦门站 · Xiàmén Zhàn)</b> lebih dekat pusat kota. Xiamen Metro punya 5 jalur aktif (1, 2, 3, 4, 6) plus BRT.`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Area Menginap yang Disarankan`,
+       nameEn:`Area Menginap yang Disarankan`,
+       text:`Kawasan <b>Zhenhai Road/Zhongshan Road</b>, Siming District — pusat kota lama, dekat dermaga feri Gulangyu, di jalur Line 1 yang tersambung ke Line 3 (kluster kampus/pantai) dan Jimei. Alternatif: sekitar <b>Zengcuoan</b> kalau lebih suka suasana pantai &amp; kafe santai, meski sedikit lebih jauh dari pusat kota.`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Destinasi Terkenal Lain di Xiamen`,
+       nameEn:`Destinasi Terkenal Lain di Xiamen`,
+       text:`Di luar itinerary utama: <b>Fujian Tulou (福建土楼 · Fújiàn Tǔlóu)</b> — rumah benteng tanah liat berbentuk bundar warisan UNESCO milik etnis Hakka, tapi 2,5-3 jam sekali jalan dari Xiamen (lihat Cadangan). <b>Wuyi Mountains (武夷山 · Wǔyí Shān)</b> — kawasan pegunungan &amp; ngarai terkenal, jauh di luar Xiamen, lebih cocok trip terpisah (lihat Cadangan).`,
+       yt:`https://www.youtube.com/results?search_query=top+attractions+Xiamen+China`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Makanan Wajib Dikunjungi &amp; Dicoba`,
+       nameEn:`Makanan Wajib Dikunjungi & Dicoba`,
+       text:`Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). <b>Sha Cha Mian/Mie Satai (沙茶面)</b> — hidangan paling ikonik Xiamen, kuah kompleks dari kaldu tulang babi &amp; udang plus pasta satai-kacang, dipercaya diciptakan perantau yang kembali dari Asia Tenggara. <b>Oyster Omelet (海蛎煎)</b> — telur dadar isi tiram kecil, digoreng dengan lemak babi — cukup berminyak. <b>Peanut Soup (花生汤)</b> — sup kacang tanah manis lembut, dessert tradisional paling terkenal di Zhongshan Road (Huangzehe Peanut Soup Shop).`,
+       yt:`https://www.youtube.com/results?search_query=Xiamen+must+try+food`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Hal yang Sebaiknya Dihindari`,
+       nameEn:`Hal yang Sebaiknya Dihindari`,
+       text:`Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi internasional) atau MRT. Jangan andalkan Google Maps/Google service tanpa VPN — gunakan Amap untuk navigasi lokal. Untuk Gulangyu, JANGAN naik feri dari dermaga umum Dongdu — turis asing wajib dari Xiamen International Cruise Center (Xiagu Wharf).`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Yang Perlu Disiapkan (Khusus China)`,
+       nameEn:`Yang Perlu Disiapkan`,
+       text:`App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank &amp; adaptor tipe A/I. VPN aktif SEBELUM masuk China kalau butuh akses Google/WhatsApp/Instagram.`},
+      // --- h1 ---
+      {group:`h1`, tag:`main`, label:`Itin H1`, title:`Zhongshan Road (中山路 · Zhōngshān Lù)`,
+       nameEn:`Zhongshan Road`,
+       nameHanzi:`中山路`,
+       text:`Jalan pedestrian utama kota lama Xiamen, dinamai untuk menghormati Sun Yat-sen seperti banyak jalan utama kota-kota China lainnya — dipenuhi arcade bergaya "qilou" (bangunan dengan lorong beratap di lantai dasar, perpaduan arsitektur Eropa &amp; Asia Tenggara) peninggalan era Xiamen jadi pelabuhan dagang internasional. Salah satu toko paling legendaris di sini, Huangzehe Peanut Soup Shop, sudah berjualan sup kacang manis sejak awal abad ke-20. <b>Akses:</b> dekat Stasiun Zhenhai Road (Line 1), ±200m jalan kaki. <b>Jam Operasional:</b> jalan pedestrian buka 24 jam (gratis), toko/kios umumnya ±09:00–22:00. <b>Tiket:</b> Gratis masuk kawasan, bayar jajanan/toko saja.`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen`,
+       yt:`https://www.youtube.com/results?search_query=Zhongshan+Road+Xiamen+night`},
+      // --- h2 ---
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`Gulangyu Island (鼓浪屿 · Gǔlàngyǔ)`,
+       nameEn:`Gulangyu Island`,
+       nameHanzi:`鼓浪屿`,
+       text:`Pulau kecil bebas kendaraan bermotor yang jadi permukiman internasional (Inggris, Amerika, Jepang, dan lainnya) setelah Xiamen dibuka jadi pelabuhan dagang 1842 — kini situs UNESCO World Heritage sejak 2017. Dijuluki "Pulau Musik" karena warisan budaya pianonya yang kaya (menyimpan Piano Museum terbesar di dunia), dengan lebih dari 1.000 vila kolonial bergaya beragam yang masih berdiri di jalan-jalannya yang berliku &amp; teduh. <b>Akses:</b> feri dari Xiamen International Cruise Center (Xiagu Wharf) — turis asing WAJIB dari dermaga ini, BUKAN dermaga umum Dongdu. Dekat Stasiun Zhenhai Road (Line 1). <b>Jam Operasional:</b> feri beroperasi ±07:00–17:30 (turis asing terakhir naik sebelum 17:30). Pulau sendiri bisa dijelajahi sepanjang hari. <b>Tiket:</b> feri PP CNY 35/org (termasuk tiket balik, berlaku 20 hari); Sunlight Rock Scenic Area kombinasi ±CNY 90/org (⚠️ estimasi, cek loket).`,
+       wiki:`https://en.wikipedia.org/wiki/Gulangyu`,
+       yt:`https://www.youtube.com/results?search_query=Gulangyu+Island+Xiamen`,
+       nearby:[`Sunlight Rock (日光岩 · Rìguāng Yán)`,`Piano Museum`,`Shuzhuang Garden`]},
+      // --- h3 ---
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Nanputuo Temple (南普陀寺 · Nán Pǔtuó Sì)`,
+       nameEn:`Nanputuo Temple`,
+       nameHanzi:`南普陀寺`,
+       text:`Salah satu kuil Buddha paling terkenal di China Selatan, awalnya dibangun era Dinasti Tang, direnovasi besar-besaran di era Kangxi (Dinasti Qing) oleh Jenderal Shi Lang. Namanya merujuk pada Mount Putuo (rumah spiritual Bodhisattva Guanyin) — kompleksnya dikelilingi kolam teratai &amp; berlatar Wuyao Mountain, jadi salah satu dari delapan pemandangan ikonik Xiamen. <b>Akses:</b> MRT Line 3, turun Stasiun Xida Nanmen. <b>Jam Operasional:</b> ±06:00–18:00 (bervariasi musim). <b>Tiket:</b> Gratis, wajib reservasi online (via WeChat mini-program resmi kuil).`,
+       reserveInfo:`WeChat mini-program resmi Nanputuo Temple, booking H-1/H-2, slot terbatas terutama akhir pekan.`,
+       wiki:`https://en.wikipedia.org/wiki/Nanputuo_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Nanputuo+Temple+Xiamen`,
+       nearby:[`Xiamen University (gerbang selatan persis sebelahan)`]},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Xiamen University (厦门大学 · Xiàmén Dàxué)`,
+       nameEn:`Xiamen University`,
+       nameHanzi:`厦门大学`,
+       text:`Didirikan tahun 1921 oleh filantropis Tan Kah Kee (Chen Jiageng) — universitas modern pertama di China yang didirikan oleh perantau Tionghoa (overseas Chinese) — kini secara konsisten masuk jajaran universitas top China. Kampusnya terkenal sebagai salah satu yang tercantik di China, memadukan arsitektur bergaya "jiageng" (kombinasi atap China tradisional dengan struktur bata-batu Barat) dengan latar Wuyao Mountain &amp; pantai. <b>Akses:</b> persis sebelahan Nanputuo Temple, Stasiun Xida Nanmen (Line 3). <b>Jam Operasional:</b> kampus terbuka untuk umum, jam kunjungan umumnya ±08:00–18:00. ⚠️ Beberapa periode perlu reservasi/ID untuk masuk gerbang tertentu, cek kebijakan terbaru sebelum berkunjung. <b>Tiket:</b> Gratis (area kampus umum).`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen_University`,
+       yt:`https://www.youtube.com/results?search_query=Xiamen+University+campus`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Wanshi Botanical Garden (万石植物园 · Wànshí Zhíwùyuán)`,
+       nameEn:`Wanshi Botanical Garden`,
+       nameHanzi:`万石植物园`,
+       text:`Juga dikenal sebagai Xiamen Botanical Garden, terletak di bukit Wanshi Mountain persis di belakang Nanputuo Temple — bagian dari kawasan cagar alam nasional Gulangyu-Wanshi Mountain. Koleksinya mencakup ribuan spesies tanaman tropis &amp; subtropis dari seluruh dunia, dengan area khusus kaktus, palem, dan hutan hujan yang jadi salah satu koleksi botani terlengkap di China Selatan. <b>Akses:</b> persis di belakang Nanputuo Temple, akses sama (Stasiun Xida Nanmen, Line 3). <b>Jam Operasional:</b> ±06:00–18:00. <b>Tiket:</b> CNY 30/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Xiamen_Botanical_Garden`,
+       yt:`https://www.youtube.com/results?search_query=Wanshi+Botanical+Garden+Xiamen`},
+      // --- h4 ---
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Hulishan Fortress (胡里山炮台 · Húlǐshān Pàotái)`,
+       nameEn:`Hulishan Fortress`,
+       nameHanzi:`胡里山炮台`,
+       text:`Benteng pesisir yang dibangun tahun 1891-1896 era akhir Dinasti Qing untuk pertahanan dari ancaman kolonial — menyimpan meriam Krupp buatan Jerman berkaliber 280mm yang pernah tercatat sebagai meriam pantai tertua &amp; terbesar di dunia yang masih berfungsi (Guinness World Records). Museum Rongguang di dalamnya memamerkan koleksi senjata &amp; artefak militer dari berbagai era. <b>Akses:</b> MRT Line 3, turun Stasiun Xida Baicheng. <b>Jam Operasional:</b> ±07:00–18:00 (musim panas sampai 18:30). <b>Tiket:</b> CNY 25/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Hulishan_Fortress`,
+       yt:`https://www.youtube.com/results?search_query=Hulishan+Fortress+Xiamen`,
+       nearby:[`Baicheng Beach (persis sebelahan)`]},
+      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Baicheng Beach &amp; Island Ring Road (白城沙滩·环岛路 · Báichéng Shātān · Huándǎo Lù)`,
+       nameEn:`Baicheng Beach & Island Ring Road`,
+       nameHanzi:`白城沙滩环岛路`,
+       text:`Baicheng Beach adalah pantai pasir putih santai persis di sebelah Hulishan Fortress, jadi titik awal populer untuk menyusuri Island Ring Road — jalan sepanjang ±30km yang melingkari pulau Xiamen, menghubungkan beberapa pantai terbaik &amp; pemandangan pesisir kota. Rental sepeda tandem tersedia di sepanjang jalur, jadi cara favorit warga &amp; wisatawan menikmati garis pantai dengan santai. <b>Akses:</b> persis sebelahan Hulishan Fortress, Stasiun Xida Baicheng (Line 3). <b>Jam Operasional:</b> area terbuka 24 jam, gratis. Rental sepeda umumnya ±08:00–18:00. <b>Tiket:</b> Gratis; sewa sepeda tandem ±CNY 15/jam/sepeda (opsional).`,
+       wiki:`https://chinaexplorertour.com/2026/blog/tips-biking-walking-xiamen-island-ring-road-2026-guide/`,
+       yt:`https://www.youtube.com/results?search_query=Xiamen+Island+Ring+Road+cycling`},
+      // --- h5 ---
+      {group:`h5`, tag:`main`, label:`Itin H5`, title:`Shapowei Art Zone (沙坡尾 · Shāpōwěi)`,
+       nameEn:`Shapowei Art Zone`,
+       nameHanzi:`沙坡尾`,
+       text:`Bekas pelabuhan nelayan tua dekat Xiamen University, salah satu kawasan pesisir tertua di kota yang masih mempertahankan suasana perkampungan nelayan otentik di tengah pesatnya modernisasi Xiamen. Bagian barat kawasannya diubah jadi Shapowei Art Zone — bekas pabrik yang direnovasi jadi galeri lukisan, pameran keramik, dan ruang seni komunitas. <b>Akses:</b> MRT Line 3, turun Stasiun Shapowei. <b>Jam Operasional:</b> kawasan jalan buka 24 jam (gratis), galeri/kafe umumnya ±10:00–20:00. <b>Tiket:</b> Gratis masuk kawasan.`,
+       wiki:`https://www.trip.com/moments/poi-shapowei-art-zone-31714490/`,
+       yt:`https://www.youtube.com/results?search_query=Shapowei+Xiamen`},
+      {group:`h5`, tag:`main`, label:`Itin H5`, title:`Zengcuoan (曾厝垵 · Zēngcuòān)`,
+       nameEn:`Zengcuoan`,
+       nameHanzi:`曾厝垵`,
+       text:`Dulunya kampung nelayan kecil, kini berubah jadi kawasan bohemian dengan gang-gang sempit penuh mural warna-warni, kafe unik, dan toko suvenir buatan tangan — beberapa mural menggambarkan kehidupan Hokkien tradisional, sebagian lagi karya seni modern kontemporer. Pasar malamnya jadi salah satu tempat terbaik mencicipi jajanan khas Xiamen (satay noodles, oyster omelet, jeli rebung) sambil menikmati suasana ramai wisatawan lokal. <b>Akses:</b> MRT Line 3, turun Stasiun Zengcuoan — 1-2 halte dari Shapowei, jalur sama. <b>Jam Operasional:</b> kawasan jalan buka 24 jam (gratis), pasar malam paling ramai ±17:00–22:00. <b>Tiket:</b> Gratis masuk kawasan, bayar jajanan/toko saja.`,
+       wiki:`https://chinaexplorertour.com/2026/blog/plan-xiamen-zengcuoan-coastal-art-village-trip-2026-guide/`,
+       yt:`https://www.youtube.com/results?search_query=Zengcuoan+Xiamen+night+market`},
+      // --- cadangan ---
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Jimei School Village (集美学村 · Jíměi Xuécūn)`,
+       nameEn:`Jimei School Village`,
+       nameHanzi:`集美学村`,
+       context:`Kenapa tidak dimasukkan: dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari (revisi 2026-09-17) — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.`,
+       text:`Kompleks pendidikan yang dibangun mulai 1913 oleh Tan Kah Kee (Chen Jiageng), filantropis perantau Tionghoa yang juga mendirikan Xiamen University — dari sini lahir gaya arsitektur "jiageng" khas yang memadukan atap tradisional China dengan struktur bata-batu Barat, jadi cetak biru banyak bangunan kampus di Xiamen. Kawasan ini mencakup beberapa sekolah &amp; universitas sekaligus, menjadikannya salah satu kompleks pendidikan tertua &amp; paling berpengaruh di China Selatan. <b>Akses:</b> MRT Line 1, turun Stasiun Jimei School Village — langsung, tanpa transfer dari kawasan pusat kota. <b>Jam Operasional:</b> kawasan kampus terbuka untuk umum, gratis, tidak ada jam tutup ketat. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Tan_Kah_Kee`,
+       yt:`https://www.youtube.com/results?search_query=Jimei+School+Village+Xiamen`,
+       nearby:[`Aoyuan`,`Dragon Boat Pond`,`Jiageng Park`]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Aoyuan (鳌园 · Áoyuán)`,
+       nameEn:`Aoyuan`,
+       nameHanzi:`鳌园`,
+       context:`Kenapa tidak dimasukkan: satu paket dengan Jimei School Village (lihat di atas) — ikut terpangkas saat trip dipersingkat dari 7 hari jadi 6 hari.`,
+       text:`Taman memorial seluas ±9.000 m² yang dibangun Chen Jiageng selama 10 tahun (selesai 1950) di bekas pulau kecil tepi laut Jimei — terdiri dari gerbang, Monumen Pembebasan Jimei, dan makam Chen Jiageng sendiri. Dindingnya dihiasi ratusan panel ukiran batu bergambar cerita rakyat, sejarah, dan sains, menjadikannya semacam "ensiklopedia batu" yang mencerminkan visi pendidikan Chen Jiageng. <b>Akses:</b> jalan kaki dari Jimei School Village, kawasan yang sama. <b>Jam Operasional:</b> ±08:00–17:30. <b>Tiket:</b> Gratis.`,
+       wiki:`https://baike.baidu.com/item/%E9%9B%86%E7%BE%8E%E9%B3%8C%E5%9B%AD/6683809`,
+       yt:`https://www.youtube.com/results?search_query=Aoyuan+Jimei+Xiamen`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Dragon Boat Pond &amp; Jiageng Park (龙舟池·嘉庚公园 · Lóngzhōu Chí · Jiāgēng Gōngyuán)`,
+       nameEn:`Dragon Boat Pond & Jiageng Park`,
+       nameHanzi:`龙舟池嘉庚公园`,
+       context:`Kenapa tidak dimasukkan: satu paket dengan Jimei School Village (lihat di atas) — ikut terpangkas saat trip dipersingkat dari 7 hari jadi 6 hari.`,
+       text:`Kolam besar di jantung Jimei School Village yang dipakai untuk lomba perahu naga tradisional saat Festival Peh Cun, dikelilingi jalur jalan santai &amp; taman terbuka bernama Jiageng Park sebagai penghormatan untuk Tan Kah Kee. Suasananya tenang &amp; lokal, jadi penutup yang pas untuk hari yang bertema warisan pendidikan &amp; filantropi Chen Jiageng. <b>Akses:</b> bagian dari kawasan Jimei School Village, jalan kaki dari Aoyuan. <b>Jam Operasional:</b> taman terbuka 24 jam, gratis. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Jimei_District`,
+       yt:`https://www.youtube.com/results?search_query=Dragon+Boat+Pond+Jimei+Xiamen`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Fujian Tulou — Yongding Hongkeng Cluster (福建土楼·永定洪坑土楼群 · Fújiàn Tǔlóu · Yǒngdìng Hóngkēng Tǔlóu Qún)`,
+       nameEn:`Fujian Tulou — Yongding Hongkeng Cluster`,
+       nameHanzi:`福建土楼永定洪坑土楼群`,
+       context:`Kenapa tidak dimasukkan: 2,5 jam sekali jalan (5 jam PP) terlalu jauh untuk disisipkan di trip 7 hari yang sudah padat — worth dipertimbangkan sebagai trip terpisah 2 hari/1 malam kalau berkunjung lagi ke Xiamen, supaya tidak terburu-buru.`,
+       text:`Rumah komunal berbentuk bundar dari tanah liat padat, dibangun etnis Hakka mulai abad ke-12 sebagai benteng pertahanan sekaligus rumah komunal beberapa generasi keluarga — situs UNESCO World Heritage sejak 2008, sering disebut mirip "piring terbang" dari udara. Kluster Hongkeng di Yongding County adalah salah satu yang paling terkenal &amp; terjaga baik. <b>Akses:</b> bus dari Hubinnan Long-Distance Bus Station, Xiamen, ±2,5 jam sekali jalan. <b>Jam Operasional:</b> ±08:00–18:00. <b>Tiket:</b> ±CNY 90-100/org untuk kluster utama (⚠️ estimasi, cek loket).`,
+       wiki:`https://en.wikipedia.org/wiki/Fujian_tulou`,
+       yt:`https://www.youtube.com/results?search_query=Fujian+Tulou+Yongding+Hongkeng`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Fujian Tulou — Nanjing Tianluokeng Cluster (福建土楼·南靖田螺坑土楼群 · Fújiàn Tǔlóu · Nánjìng Tiánluókēng Tǔlóu Qún)`,
+       nameEn:`Fujian Tulou — Nanjing Tianluokeng Cluster`,
+       nameHanzi:`福建土楼南靖田螺坑土楼群`,
+       context:`Kenapa tidak dimasukkan: sama seperti kluster Yongding — terlalu jauh untuk day trip di tengah 7 hari yang padat. Kalau harus pilih salah satu kluster tulou untuk trip susulan, formasi "4 Piring 1 Mangkuk" di sini biasanya dianggap paling fotogenik.`,
+       text:`Kluster tulou paling ikonik secara visual — dijuluki "Empat Piring dan Satu Mangkuk" (四菜一汤) karena formasi 5 bangunan (1 persegi dikelilingi 4 bundar) yang membentuk pola dari udara, sering muncul di materi promosi wisata Fujian. Berbeda kabupaten dengan kluster Yongding, tapi sama-sama bagian dari situs UNESCO Fujian Tulou. <b>Akses:</b> bus dari Xiamen Fanghu Bus Station/Wucun Bus Station ke Nanjing County, ±2,5-3 jam sekali jalan. <b>Jam Operasional:</b> ±08:00–18:00. <b>Tiket:</b> ±CNY 100/org (⚠️ estimasi, cek loket).`,
+       wiki:`https://en.wikipedia.org/wiki/Fujian_tulou`,
+       yt:`https://www.youtube.com/results?search_query=Tianluokeng+Tulou+Nanjing+Fujian`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Wuyi Mountains (武夷山 · Wǔyí Shān)`,
+       nameEn:`Wuyi Mountains`,
+       nameHanzi:`武夷山`,
+       context:`Kenapa tidak dimasukkan: terlalu jauh dari Xiamen untuk trip 7 hari ini — lebih cocok jadi trip Fujian terpisah (3-4 hari sendiri) di kesempatan lain, bukan disisipkan.`,
+       text:`Kawasan pegunungan &amp; ngarai UNESCO World Heritage (alam &amp; budaya ganda) di utara Fujian, terkenal dengan formasi batu unik, sungai Sembilan Kelokan (Nine-Bend River) untuk rafting bambu, dan sebagai tempat asal teh Da Hong Pao yang legendaris. <b>Akses:</b> ⚠️ jauh di luar Xiamen (utara Fujian, beda region) — perlu HSR ±4-5 jam atau penerbangan domestik terpisah, BUKAN day trip. <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat. <b>Tiket:</b> ⚠️ belum ditemukan sumber resmi — kawasan besar dengan berbagai zona tiket terpisah.`,
+       wiki:`https://en.wikipedia.org/wiki/Wuyi_Mountains`,
+       yt:`https://www.youtube.com/results?search_query=Wuyi+Mountains+Fujian`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Wuyuanwan Wetland Park &amp; Sailing Base (五缘湾湿地公园 · Wǔyuánwān Shīdì Gōngyuán)`,
+       nameEn:`Wuyuanwan Wetland Park & Sailing Base`,
+       nameHanzi:`五缘湾湿地公园`,
+       context:`Kenapa tidak dimasukkan: aktivitas air (berlayar) bukan fokus utama trip santai-jalan-kaki ini, dan lokasinya agak terpisah dari kluster-kluster utama itinerary — cocok kalau tertarik variasi aktivitas berbeda saat kunjungan berikutnya.`,
+       text:`Taman lahan basah &amp; pangkalan olahraga layar di teluk Wuyuan, sisi utara pulau Xiamen — dikenal sebagai titik keberangkatan aktivitas berlayar &amp; area konservasi burung migran, kontras dengan sisi selatan pulau yang lebih dikenal turis (Gulangyu, Zengcuoan). <b>Akses:</b> MRT Line 2, turun Stasiun Wuyuanwan. <b>Jam Operasional:</b> taman terbuka, gratis, jam mengikuti taman kota umum (±06:00–21:00, ⚠️ estimasi). <b>Tiket:</b> Gratis jalan taman; aktivitas berlayar/olahraga air berbayar terpisah.`,
+       wiki:`https://www.highspeed.mtr.com.hk/res/pdf/Attraction-Guide-Xiamen_en.pdf`,
+       yt:`https://www.youtube.com/results?search_query=Wuyuanwan+Wetland+Park+Xiamen`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Tianzhu Mountain (天竺山 · Tiānzhú Shān)`,
+       nameEn:`Tianzhu Mountain`,
+       nameHanzi:`天竺山`,
+       context:`Kenapa tidak dimasukkan: kurang prioritas dibanding kluster pesisir/budaya yang sudah mengisi 7 hari trip ini — opsi kalau ingin variasi hiking di Haicang District saat kunjungan berikutnya.`,
+       text:`Taman hutan pegunungan di Haicang District (seberang jembatan dari pulau utama), ujung barat jalur Line 2 — kawasan hijau dengan jalur hiking &amp; udara segar, kontras dari kluster wisata pesisir yang jadi fokus itinerary utama trip ini. <b>Akses:</b> MRT Line 2, turun Stasiun Tianzhushan (terminus barat jalur ini). <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat. <b>Tiket:</b> ⚠️ belum ditemukan sumber resmi — kemungkinan gratis/murah (taman hutan kota), cek langsung.`,
+       wiki:`https://www.google.com/search?q=Tianzhu+Mountain+Xiamen`,
+       yt:`https://www.youtube.com/results?search_query=Tianzhu+Mountain+Xiamen`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Zhongshan Park (中山公园 · Zhōngshān Gōngyuán)`,
+       nameEn:`Zhongshan Park`,
+       nameHanzi:`中山公园`,
+       context:`Kenapa tidak dimasukkan: taman kota umum yang lebih kecil dibanding Wanshi Botanical Garden yang sudah masuk itinerary utama — opsi tambahan kalau ada waktu senggang di sekitar Zhongshan Road (Hari 1/kepulangan).`,
+       text:`Taman kota tertua di Xiamen, dibangun 1927 dan dinamai untuk menghormati Sun Yat-sen — taman klasik dengan kolam, jembatan, dan area rekreasi warga lokal, persis di pusat kota dekat Zhongshan Road. <b>Akses:</b> dekat kawasan Zhongshan Road/Zhenhai Road, MRT Line 1/2. <b>Jam Operasional:</b> taman terbuka ±06:00–22:00, gratis. <b>Tiket:</b> Gratis.`,
+       wiki:`https://www.google.com/search?q=Zhongshan+Park+Xiamen`,
+       yt:`https://www.youtube.com/results?search_query=Zhongshan+Park+Xiamen`,
+       relatedDays:[1]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Xiamen Fantawild Theme Park (厦门方特旅游度假区 · Xiàmén Fāngtè Lǚyóu Dùjiàqū)`,
+       nameEn:`Xiamen Fantawild Theme Park`,
+       nameHanzi:`厦门方特旅游度假区`,
+       context:`Kenapa tidak dimasukkan: taman hiburan berorientasi wahana, tidak sejalan dengan prinsip trip ini yang mengutamakan wisata budaya/alam/jalan kaki santai.`,
+       text:`Taman hiburan tema skala besar dengan wahana modern &amp; pertunjukan berteknologi tinggi, salah satu cabang jaringan Fantawild yang populer di berbagai kota China. <b>Akses:</b> ⚠️ belum terverifikasi presisi — kemungkinan perlu Didi/bus khusus dari pusat kota. <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat. <b>Tiket:</b> ⚠️ belum ditemukan sumber resmi — taman hiburan berbayar, kemungkinan cukup mahal.`,
+       wiki:`https://www.google.com/search?q=Xiamen+Fantawild+Theme+Park`,
+       yt:`https://www.youtube.com/results?search_query=Xiamen+Fantawild+Theme+Park`},
+    ],
+    lampiranGroups:[
+      {key:`intro`, heading:`Xiamen (厦门 · Xiàmén)`},
+      {key:`h1`, heading:`Hari 1 — Sabtu, 7 November`},
+      {key:`h2`, heading:`Hari 2 — Minggu, 8 November`},
+      {key:`h3`, heading:`Hari 3 — Senin, 9 November`},
+      {key:`h4`, heading:`Hari 4 — Selasa, 10 November`},
+      {key:`h5`, heading:`Hari 5 — Rabu, 11 November`},
+      {key:`cadangan`, heading:`Cadangan`},
+    ],
+  },
+  {
+    id:`fuzhou`,
+    name:`Fuzhou`,
+    dates:`13 – 15 November · 2 Malam · Direncanakan Independen (bukan sambungan kota lain)`,
+    currency:`CNY`,
+
+    transportPergi:{
+      mode:"transit", kicker:`Transport ke Tujuan`,
+      title:`Rute belum ditentukan &middot; Jumat, 13 November (perkiraan)`,
+      tag:"tbd", openByDefault:true,
+      items:[
+        [`Kedatangan`,`Jumat, 13 November, <b>±17:00</b> — moda &amp; kota asal menyesuaikan rencana Anda (kota ini direncanakan independen)`],
+        [`Kepulangan`,`Minggu, 15 November, <b>±15:00</b>, lanjut ke kota berikutnya — moda &amp; tujuan belum ditentukan`],
+      ],
+      warn:`<b>⚠️ Keterbatasan alat:</b> riset destinasi &amp; titik transfer MRT memakai web_search (bukan Amap langsung) — beberapa titik transfer &amp; jarak jalan kaki presisi belum bisa diverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.`,
+      hotel:``
+    },
+
+    days:[
+      {
+        id:"h1", num:1, date:`Jumat, 13 November`, label:`Kedatangan Sore`,
+        advisory:`Hari ringan kedatangan — check-in dulu, baru jalan santai malam di sekitar kawasan penginapan.`,
+        items:[
+          [`17:00`,`Tiba di kawasan Nanmendou/Dongjiekou, check-in`,``,``,``,``],
+          [`17:00–18:00`,`Istirahat sebentar`,``,``,``,``],
+          [`18:00–19:00`,`Makan malam sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`19:00–20:30`,`Jalan santai malam kawasan Dongjiekou (pusat perbelanjaan &amp; kuliner)`,`Gratis`,``,``,``],
+          [`20:30`,`Kembali ke penginapan`,`Jalan kaki (persis di kawasan yang sama)`,``,``,``],
+        ],
+        total:{cny:`<b>50</b>`, idr:`<b>132.500</b>`},
+        planb:`kalau kelelahan perjalanan — cukup istirahat penuh, tunda jalan malam ke sela-sela hari lain.`,
+      },
+      {
+        id:"h2", num:2, date:`Sabtu, 14 November`, label:`Fujian Museum → West Lake Park → Yushan`,
+        advisory:`<b>Rute:</b> Pagi metro ke Ximen (Line 4) untuk Fujian Museum &amp; West Lake Park (satu kawasan), siang balik ke Dongjiekou untuk Yushan, sore kembali ke penginapan.`,
+        items:[
+          [`08:00–08:30`,`Sarapan sekitar penginapan`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`08:30–09:15`,`Metro ke West Lake Park (Stasiun Ximen)`,`Line 1 ke Dongjiekou, transfer Line 4 ke Ximen ⚠️ titik transfer belum terverifikasi`,``,`24`,`63.600`],
+          [`09:15–11:45`,`<b>Fujian Museum</b> — sejarah &amp; budaya Fujian, keramik, kaligrafi`,`Gratis, reservasi via WeChat mini-program (booking H-1); buka 09:00, masuk terakhir 16:00`,``,``,``],
+          [`11:45–12:45`,`Makan siang sekitar West Lake Park`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`12:45–14:30`,`<b>West Lake Park</b> — jalan santai taman &amp; danau, "paru-paru hijau" kota`,`Gratis, persis di sebelah Fujian Museum`,``,``,``],
+          [`14:30–15:00`,`Metro Line 4 ke Dongjiekou`,`⚠️ jarak jalan kaki ke Yushan belum terverifikasi presisi`,``,`16`,`42.400`],
+          [`15:00–17:00`,`<b>Yushan (Bukit Sembilan Dewa)</b> — bukit kecil pusat kota, situs sejarah &amp; religi`,`Gratis kawasan luar; beberapa titik dalam ±CNY 15/org (⚠️ estimasi)`,``,`30`,`79.500`],
+          [`17:00–17:30`,`Kembali ke penginapan`,`Line 1 (kawasan Nanmendou/Dongjiekou)`,``,`16`,`42.400`],
+          [`18:00–19:00`,`Makan malam sekitar penginapan`,`±CNY 25/org`,``,`50`,`132.500`],
+        ],
+        total:{cny:`<b>216</b>`, idr:`<b>572.400</b>`},
+        planb:`kalau Fujian Museum tutup/reservasi penuh — perpanjang waktu di West Lake Park (persis di kawasan yang sama), atau mampir <b>Fuzhou Panda World</b> (dekat West Lake Park, tiket terpisah, lihat Lampiran → Cadangan).`,
+      },
+      {
+        id:"h3", num:3, date:`Minggu, 15 November`, label:`Lin Zexu Memorial → Sanfang Qixiang, Kepulangan`,
+        advisory:`<b>Rute:</b> Pagi ke Nanmendou (Line 1) — Lin Zexu Memorial dan Sanfang Qixiang bersebelahan, lalu kembali ambil bagasi sebelum berangkat pukul 15:00.`,
+        items:[
+          [`07:30–08:00`,`Sarapan sekitar penginapan`,`±CNY 15/org`,``,`30`,`79.500`],
+          [`08:00–08:30`,`Checkout, titip bagasi di penginapan`,`⚠️ Pastikan hotel bisa titip bagasi sampai siang`,``,``,``],
+          [`08:30–09:00`,`Line 1, turun Stasiun Nanmendou`,`Langsung, tanpa transfer dari kawasan penginapan`,``,`16`,`42.400`],
+          [`09:00–10:30`,`<b>Lin Zexu Memorial</b> — arsitektur &amp; taman klasik Fuzhou`,`Tiket ±CNY 20/org (⚠️ estimasi, cek loket), buka 09:00, tutup Senin`,``,`40`,`106.000`],
+          [`10:30–12:30`,`<b>Sanfang Qixiang</b> — jalan santai kawasan bersejarah, 2-3 rumah bertiket`,`Gratis masuk kawasan; beli tiket rumah individual ±CNY 20/org (tidak perlu tiket kombinasi CNY 90/org)`,``,`40`,`106.000`],
+          [`12:30–13:15`,`Makan siang di Sanfang Qixiang`,`±CNY 25/org`,``,`50`,`132.500`],
+          [`13:15–13:45`,`Line 1 kembali ke penginapan, ambil bagasi`,``,``,`16`,`42.400`],
+          [`13:45–15:00`,`Menuju titik keberangkatan (stasiun/bandara), buffer`,`Moda &amp; tujuan belum ditentukan`,``,``,``],
+          [`<b>15:00</b>`,`<b>Keberangkatan lanjut kota berikutnya</b>`,``,``,``,``],
+        ],
+        total:{cny:`<b>192</b>`, idr:`<b>508.800</b>`},
+        planb:`kalau waktu sempit sebelum jam 15:00 — cukup Lin Zexu Memorial + jalan kaki kawasan Sanfang Qixiang (gratis), lewati rumah-rumah bertiket.`,
+      },
+    ],
+
+    budget:{
+      note:`⚠️ Angka aktivitas harian di bawah TIDAK termasuk biaya menginap (belum ada hotel fixed, lihat "Area Menginap yang Disarankan") dan tiket kedatangan/kepulangan (moda belum ditentukan).`,
+      byDay:[
+        [`Hari 1 (13 Nov)`,`50`,`132.500`],
+        [`Hari 2 (14 Nov)`,`216`,`572.400`],
+        [`Hari 3 (15 Nov)`,`192`,`508.800`],
+      ],
+      byCategory:[
+        [`Tiket masuk (Lin Zexu Memorial, rumah bertiket Sanfang Qixiang, titik dalam Yushan)`,`110`,`291.500`],
+        [`Makan (semua hari)`,`260`,`689.000`],
+        [`Transport lokal (MRT)`,`88`,`233.200`],
+        [`GRAND TOTAL AKTIVITAS`,`458`,`1.213.700`],
+      ],
+      grand:[`GRAND TOTAL`,`458`,`1.213.700`],
+      catTotal:[`GRAND TOTAL`,`458`,`1.213.700`],
+      caveat:`Gushan, Yongquan Temple, Hot Spring Park, Yuanmai Hot Spring Garden, Jinshan Temple, Xichan Temple, Pingtan Island, Fuzhou Panda World, dan destinasi Cadangan lain semuanya TIDAK termasuk di total di atas. Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.`,
+    },
+
+    notes:[
+      `<b>Fisik/lutut:</b> Yushan (Hari 2) adalah bukit kecil ±58m dengan tangga/tanjakan ringan — jalan pelan, pilih jalur yang landai. Hari 2 paling padat (±3 perpindahan metro). Gushan (jalur hiking) dipindah ke Cadangan.`,
+      `<b>Makanan:</b> semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — masakan Fuzhou (Min cuisine) umumnya ringan &amp; berbasis kaldu, relatif ramah kriteria ini.`,
+      `<b>Transportasi:</b> semua destinasi utama terjangkau MRT (Line 1 dan 4) — tidak perlu Didi. Jinshan Temple &amp; Xichan Temple (Cadangan) TIDAK dilewati MRT.`,
+      `<b>Reservasi:</b> Fujian Museum (Hari 2) perlu reservasi online gratis via WeChat mini-program — booking H-1/H-2.`,
+      `<b>Bagasi (Hari 3):</b> hotel harus bisa titip bagasi setelah checkout pagi — cek saat booking.`,
+    ],
+
+    lampiran:[
+      // --- intro ---
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cerita Kota Fuzhou`,
+       nameEn:`Cerita Kota Fuzhou`,
+       text:`Fuzhou, ibu kota Provinsi Fujian, punya sejarah lebih dari 2.200 tahun — didirikan tahun 202 SM sebagai ibu kota Kerajaan Minyue, dan mendapat nama "Fuzhou" (Kota Berkah) tahun 725 M era Dinasti Tang. Sejak Dinasti Song, kota ini jadi simpul penting Jalur Sutra Maritim, dan di abad ke-19 jadi salah satu pelabuhan teh utama China setelah dibuka untuk perdagangan internasional pasca Perang Candu Pertama.`,
+       wiki:`https://en.wikipedia.org/wiki/Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=Fuzhou+China+city+guide`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cuaca, Iklim &amp; Suhu`,
+       nameEn:`Cuaca, Iklim & Suhu`,
+       text:`November adalah salah satu bulan terbaik untuk berkunjung — awal musim kering, sejuk, dan suhu malam yang mulai dingin justru pas untuk menikmati budaya pemandian air panas kota ini. ⚠️ Angka di ringkasan cuaca awal dokumen ini adalah rata-rata historis, BUKAN forecast real-time — cek forecast H-7 sebelum berangkat.`,
+       wiki:`https://en.climate-data.org/asia/china/fujian/fuzhou-2286/`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Transportasi Masuk Kota`,
+       nameEn:`Transportasi Masuk Kota`,
+       text:`Bandara utama: <b>Fuzhou Changle International Airport (福州长乐国际机场 · Fúzhōu Chángle Guójì Jīchǎng)</b>. Stasiun HSR utama: <b>Fuzhou Railway Station (福州站 · Fúzhōu Zhàn)</b> dan <b>Fuzhou South Railway Station (福州南站 · Fúzhōu Nán Zhàn)</b>. Fuzhou Metro punya 6 jalur aktif (1, 2, 4, 5, 6, plus Binhai Express).`,
+       wiki:`https://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Area Menginap yang Disarankan`,
+       nameEn:`Area Menginap yang Disarankan`,
+       text:`Kawasan <b>Nanmendou/Dongjiekou</b>, Gulou District — jantung kota tua, persis di kluster Sanfang Qixiang, dekat jalur Line 1 yang tersambung ke Line 4 (West Lake Park).`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Destinasi Terkenal Lain di Fuzhou`,
+       nameEn:`Destinasi Terkenal Lain di Fuzhou`,
+       text:`Di luar itinerary utama: <b>Pingtan Island (平潭岛 · Píngtán Dǎo)</b> — pulau dengan pantai &amp; desa batu unik, terkenal fenomena "air mata biru" (blue tears) di musim panas, tapi ±85km dari Fuzhou (lihat Cadangan). <b>Changle District (长乐区 · Chángyuè Qū)</b> — kawasan bersejarah dekat bandara, terkait pelayaran Zheng He di era Ming.`,
+       yt:`https://www.youtube.com/results?search_query=top+attractions+Fuzhou+China`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Makanan Wajib Dikunjungi &amp; Dicoba`,
+       nameEn:`Makanan Wajib Dikunjungi & Dicoba`,
+       text:`Cerita/budaya kuliner khas kota — bukan berarti otomatis masuk itinerary, karena rekomendasi makan aktual tetap mengikuti kriteria ramah lambung (tidak pedas/asam/gorengan/berminyak). <b>Fuzhou Fish Balls (福州鱼丸 · Fúzhōu Yúwán)</b> — bakso ikan isi daging cincang, hidangan wajib di setiap perayaan Fuzhou sejak era Qing. <b>Buddha Jumps Over the Wall (佛跳墙 · Fó Tiào Qiáng)</b> — sup mewah lebih dari 20 bahan dimasak dalam guci tanah liat, konon aromanya membuat biksu vegetarian "melompati tembok" saking tergodanya — hidangan perayaan, bukan makanan harian. <b>Taro Paste (芋泥 · Yùní)</b> — dessert manis dari talas tumbuk, tekstur lembut khas penutup makan Fuzhou.`,
+       yt:`https://www.youtube.com/results?search_query=Fuzhou+must+try+food`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Hal yang Sebaiknya Dihindari`,
+       nameEn:`Hal yang Sebaiknya Dihindari`,
+       text:`Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi internasional) atau MRT. Jangan andalkan Google Maps/Google service tanpa VPN — gunakan Amap untuk navigasi lokal. Jinshan Temple &amp; Xichan Temple (Cadangan) tidak dilewati MRT — kalau dikunjungi, siapkan Didi, jangan andalkan jalan kaki jauh.`},
+      {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Yang Perlu Disiapkan (Khusus China)`,
+       nameEn:`Yang Perlu Disiapkan`,
+       text:`App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank &amp; adaptor tipe A/I. VPN aktif SEBELUM masuk China.`},
+      // --- h2 ---
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`Fujian Museum (福建博物院 · Fújiàn Bówùyuàn)`,
+       nameEn:`Fujian Museum`,
+       nameHanzi:`福建博物院`,
+       text:`Museum provinsi utama Fujian, terletak persis di tepi West Lake Park di kaki Gunung Dameng — memamerkan sejarah &amp; budaya Fujian dari era prasejarah hingga modern, termasuk koleksi keramik, kaligrafi, dan artefak dari situs-situs arkeologi provinsi ini. Jadi tempat terbaik memahami konteks budaya Min (Fujian) sebelum menjelajah destinasi lain di itinerary ini. <b>Akses:</b> persis di dalam/sebelah West Lake Park, akses sama (Stasiun Ximen, Line 4). <b>Jam Operasional:</b> Selasa–Minggu 09:00–17:00 (masuk terakhir 16:00). Tutup Senin, kecuali libur nasional. <b>Tiket:</b> Gratis, reservasi via WeChat mini-program resmi disarankan.`,
+       wiki:`https://en.wikipedia.org/wiki/Fujian_Museum`,
+       yt:`https://www.youtube.com/results?search_query=Fujian+Museum+Fuzhou`},
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`West Lake Park (西湖公园 · Xīhú Gōngyuán)`,
+       nameEn:`West Lake Park`,
+       nameHanzi:`西湖公园`,
+       text:`Dibangun era Dinasti Jin (abad ke-4), danau buatan ini jadi "paru-paru hijau" kota Fuzhou — dikelilingi paviliun, jembatan, dan pohon willow yang menjuntai ke air, mengingatkan pada West Lake Hangzhou dalam skala lebih kecil &amp; lebih tenang. Sejak dulu jadi tempat rekreasi favorit warga lokal untuk berperahu, jalan santai, dan menikmati suasana taman klasik China. <b>Akses:</b> MRT Line 4, turun Stasiun Ximen, jalan kaki ±10 menit; alternatif Line 1 turun Stasiun Pingshan. <b>Jam Operasional:</b> taman terbuka 24 jam, gratis. <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/West_Lake_Park,_Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=West+Lake+Park+Fuzhou`,
+       nearby:[`Fujian Museum (persis di dalam/sebelah taman)`]},
+      {group:`h2`, tag:`main`, label:`Itin H2`, title:`Yushan (于山风景区 · Yúshān Fēngjǐngqū)`,
+       nameEn:`Yushan`,
+       nameHanzi:`于山风景区`,
+       text:`Bukit kecil setinggi 58,6 meter di jantung kota Fuzhou, juga dijuluki "Bukit Sembilan Dewa" karena legenda sembilan dewa Tao yang konon pernah bermeditasi di sini. Kawasan seluas ±11,9 hektar ini dipenuhi situs religi &amp; sejarah — dari kuil, paviliun, hingga batu-batu berukir kaligrafi kuno peninggalan berbagai dinasti — jadi salah satu titik pandang gratis terbaik untuk melihat kota tua Fuzhou dari ketinggian. <b>Akses:</b> dekat kawasan Sanfang Qixiang, MRT Line 1/4 turun Stasiun Dongjiekou, lanjut jalan kaki (⚠️ jarak persis belum terverifikasi). <b>Jam Operasional:</b> kawasan luar buka 24 jam, gratis. Beberapa titik dalam ±08:00–17:00. <b>Tiket:</b> Gratis masuk kawasan; beberapa titik dalam ±CNY 15/org (⚠️ estimasi).`,
+       wiki:`https://en.wikipedia.org/wiki/Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=Yushan+Hill+Fuzhou`},
+      // --- h3 ---
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Lin Zexu Memorial (林则徐纪念馆 · Lín Zéxú Jìniànguǎn)`,
+       nameEn:`Lin Zexu Memorial`,
+       nameHanzi:`林则徐纪念馆`,
+       text:`Dibangun untuk mengenang Lin Zexu, pahlawan nasional China yang terkenal karena tegas memberantas perdagangan opium di Guangzhou tahun 1839 — tindakannya memicu Perang Candu Pertama dengan Inggris. Memorial ini menampilkan arsitektur &amp; taman klasik khas Fuzhou di lahan seluas 8.500 m², menyimpan koleksi dokumen &amp; artefak yang mengisahkan perjuangannya melawan kecanduan opium yang melanda China di era itu. <b>Akses:</b> MRT Line 1/2, turun Stasiun Nanmendou — Aomen Road, Gulou District. <b>Jam Operasional:</b> ±09:00–17:00 (masuk terakhir 16:30). Tutup Senin, kecuali libur nasional (⚠️ estimasi, cek jadwal terbaru). <b>Tiket:</b> ±CNY 20/org (⚠️ estimasi, cek loket).`,
+       wiki:`https://en.wikipedia.org/wiki/Lin_Zexu`,
+       yt:`https://www.youtube.com/results?search_query=Lin+Zexu+Memorial+Fuzhou`},
+      {group:`h3`, tag:`main`, label:`Itin H3`, title:`Sanfang Qixiang (三坊七巷 · Sānfāng Qīxiàng)`,
+       nameEn:`Sanfang Qixiang`,
+       nameHanzi:`三坊七巷`,
+       text:`Kawasan seluas ±40 hektar berisi 268 rumah kuno era Ming-Qing — salah satu kompleks arsitektur tradisional terbaik yang masih terjaga di China. Tiga lorong (Guanglu, Wenru, Yijin) dan tujuh gang (Jibi, Gongxiang, Taxiang, Huangxiang, Anmin, Langguan, Yangqiao) ini pernah jadi rumah bagi banyak tokoh penting sejarah modern China, sampai dijuluki "satu blok Sanfang Qixiang, setengah sejarah China modern". <b>Akses:</b> MRT Line 1/2, turun Stasiun Nanmendou, atau Line 1/4 turun Stasiun Dongjiekou. <b>Jam Operasional:</b> kawasan jalan buka 24 jam (gratis masuk); rumah-rumah bertiket ±08:30–17:00. <b>Tiket:</b> Gratis masuk kawasan; tiket kombinasi beberapa rumah bersejarah CNY 90/org (beberapa rumah individual CNY 5-20/org).`,
+       wiki:`https://en.wikipedia.org/wiki/Sanfang_Qixiang`,
+       yt:`https://www.youtube.com/results?search_query=Sanfang+Qixiang+Fuzhou`,
+       nearby:[`Lin Zexu Memorial (1 stasiun/jalan kaki)`]},
+      // --- cadangan ---
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Pingtan Island (平潭岛 · Píngtán Dǎo)`,
+       nameEn:`Pingtan Island`,
+       nameHanzi:`平潭岛`,
+       context:`Kenapa tidak dimasukkan: ±85km &amp; 1,5-2 jam sekali jalan terlalu jauh untuk disisipkan di trip 3 hari yang sudah padat, dan fenomena "air mata biru" andalannya pun musiman (biasanya musim panas, TIDAK relevan untuk kunjungan November ini) — lebih cocok jadi trip terpisah kalau berkunjung lagi di musim yang tepat.`,
+       text:`Pulau terbesar di Fujian, terkenal dengan desa-desa berbahan batu unik, pantai bersih, dan fenomena "air mata biru" (blue tears) — cahaya biru bioluminesensi plankton laut yang muncul di malam-malam tertentu, biasanya musim panas. <b>Akses:</b> ±85km dari Fuzhou, ±1,5-2 jam naik bus/mobil. <b>Jam Operasional:</b> area publik terbuka, gratis; beberapa spot berbayar. <b>Tiket:</b> ⚠️ bervariasi per lokasi spesifik di pulau, cek Amap/Trip.com sebelum berangkat.`,
+       wiki:`https://en.wikipedia.org/wiki/Pingtan_County`,
+       yt:`https://www.youtube.com/results?search_query=Pingtan+Island+Fujian+blue+tears`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Fuzhou Panda World (福州熊猫世界 · Fúzhōu Xióngmāo Shìjiè)`,
+       nameEn:`Fuzhou Panda World`,
+       nameHanzi:`福州熊猫世界`,
+       context:`Kenapa tidak dimasukkan: bukan prioritas trip ini yang fokus ke sejarah/budaya/alam jalan kaki — kebun binatang dengan tiket masuk terpisah kurang sejalan dengan gaya santai &amp; merakyat trip ini, meski lokasinya sangat dekat dengan Hari 2 kalau ingin mampir sekalian.`,
+       text:`Taman panda di dekat West Lake Park, ±10-15 menit jalan kaki dari Sanfang Qixiang — rumah bagi beberapa ekor panda raksasa yang dipinjamkan dari Chengdu/Wolong sebagai bagian program konservasi &amp; edukasi. <b>Akses:</b> dekat West Lake Park, akses sama (Stasiun Ximen, Line 4). <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat. <b>Tiket:</b> ⚠️ belum ditemukan sumber resmi — kemungkinan berbayar terpisah dari West Lake Park.`,
+       wiki:`https://www.google.com/search?q=Fuzhou+Panda+World`,
+       yt:`https://www.youtube.com/results?search_query=Fuzhou+Panda+World`,
+       relatedDays:[2]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Changle Old Town (长乐区 · Chángyuè Qū)`,
+       nameEn:`Changle Old Town`,
+       nameHanzi:`长乐区`,
+       context:`Kenapa tidak dimasukkan: jauh dari kluster utama itinerary (dekat bandara, bukan pusat kota), dan kontennya kurang terdokumentasi dengan baik dibanding destinasi lain — worth dieksplorasi kalau tertarik sejarah maritim Zheng He di kunjungan berikutnya.`,
+       text:`Distrik bersejarah dekat bandara Fuzhou, terkait erat dengan pelayaran legendaris Laksamana Zheng He era Dinasti Ming — konon jadi salah satu titik keberangkatan armadanya menuju Samudra Hindia. Kini jadi kawasan campuran modern-historis, kurang dieksplorasi turis dibanding kota tua Gulou District. <b>Akses:</b> ⚠️ belum terverifikasi presisi — kemungkinan perlu bus/Didi jauh dari pusat kota (dekat area bandara). <b>Jam Operasional:</b> ⚠️ belum ditemukan sumber resmi — kawasan distrik, bukan atraksi tunggal. <b>Tiket:</b> Gratis (kawasan kota, bukan objek wisata bertiket).`,
+       wiki:`https://en.wikipedia.org/wiki/Changle_District`,
+       yt:`https://www.youtube.com/results?search_query=Changle+Fuzhou+Zheng+He`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Gushan / Drum Mountain (鼓山 · Gǔshān)`,
+       nameEn:`Gushan / Drum Mountain`,
+       nameHanzi:`鼓山`,
+       context:`Kenapa tidak dimasukkan: butuh 1 hari penuh (hiking ±5-6 jam bersama Yongquan Temple) — tidak muat di trip 2 malam/3 hari, dan jalur hikingnya lebih berat untuk lutut. Cocok kalau trip Fuzhou diperpanjang.`,
+       text:`Gunung setinggi ±870m di timur Fuzhou, dinamai dari batu besar berbentuk drum di puncaknya yang konon mengeluarkan suara seperti genderang saat angin/badai bertiup kencang. Jalur hikingnya dipenuhi lebih dari 200 prasasti batu kaligrafi dari berbagai dinasti, menjadikannya salah satu koleksi kaligrafi batu terbesar di China Selatan, sekaligus destinasi hiking santai favorit warga lokal. <b>Akses:</b> MRT Line 2, turun Stasiun Gushan. <b>Jam Operasional:</b> kawasan gunung buka 24 jam, gratis. Yongquan Temple ±07:00–17:00. <b>Tiket:</b> Gratis naik gunung; Yongquan Temple CNY 40/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Gushan_(Fuzhou)`,
+       yt:`https://www.youtube.com/results?search_query=Gushan+Drum+Mountain+Fuzhou`,
+       nearby:[`Yongquan Temple (di area puncak)`]},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Yongquan Temple (涌泉寺 · Yǒngquán Sì)`,
+       nameEn:`Yongquan Temple`,
+       nameHanzi:`涌泉寺`,
+       context:`Kenapa tidak dimasukkan: satu kawasan dengan Gushan (lihat entri di atas) — ikut tidak masuk karena hari penuh untuk Gushan tidak tersedia.`,
+       text:`Kuil Buddha yang dibangun tahun 908 M era Dinasti Tang, terletak di lereng Gushan — namanya ("Kuil Mata Air Memancar") diambil dari legenda dua mata air yang muncul saat pembangunan kuil untuk mengatasi kekeringan. Kompleksnya menyimpan koleksi lebih dari 20.000 lempeng kayu ukiran kitab suci Buddha, salah satu koleksi terlengkap jenisnya di China. <b>Akses:</b> di area puncak Gushan, jalan kaki dari jalur hiking utama (Stasiun Gushan, Line 2). <b>Jam Operasional:</b> ±07:00–17:00. <b>Tiket:</b> CNY 40/org.`,
+       wiki:`https://en.wikipedia.org/wiki/Yongquan_Temple`,
+       yt:`https://www.youtube.com/results?search_query=Yongquan+Temple+Gushan+Fuzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Hot Spring Park (温泉公园 · Wēnquán Gōngyuán)`,
+       nameEn:`Hot Spring Park`,
+       nameHanzi:`温泉公园`,
+       context:`Kenapa tidak dimasukkan: hari relaksasi penuh (taman + sesi berendam) tidak muat di trip 2 malam/3 hari, dan arah Line 1 ke Stasiun Shudou berbeda dari kluster kota tua yang jadi fokus.`,
+       text:`Taman umum bergaya Eropa yang dibangun 1997, bertema air panas untuk menghormati julukan Fuzhou sebagai "Ibu Kota Air Panas China" — kawasan ini duduk persis di atas jalur sumber air panas alami kota. Berpusat di sekitar piramida kaca, taman ini punya area utara &amp; selatan dengan kolam, tanaman langka, dan zona pengalaman air panas terbatas. <b>Akses:</b> MRT Line 1, turun Stasiun Shudou. <b>Jam Operasional:</b> taman terbuka, gratis, mengikuti jam taman kota umum (⚠️ estimasi ±06:00–22:00). <b>Tiket:</b> Gratis.`,
+       wiki:`https://en.wikipedia.org/wiki/Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=Hot+Spring+Park+Fuzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Yuanmai Hot Spring Garden (源脉温泉园 · Yuánmài Wēnquán Yuán)`,
+       nameEn:`Yuanmai Hot Spring Garden`,
+       nameHanzi:`源脉温泉园`,
+       context:`Kenapa tidak dimasukkan: berbayar (mulai CNY 68/org) dan butuh Didi + ±3,5 jam sesi — dengan 2 malam saja, prioritas diberikan ke tempat gratis di kluster kota tua yang searah MRT.`,
+       text:`Salah satu venue air panas tertua &amp; paling dikenal di Fuzhou, dengan 31 kolam air panas terbuka bergaya arsitektur klasik Fujian (paviliun &amp; gazebo bertingkat) — kawasan seluas ±1,9 hektar ini juga punya SPA indoor, kolam renang suhu ruangan, dan berbagai fasilitas relaksasi lain, jadi pengalaman lengkap menikmati tradisi pemandian air panas kota ini. <b>Akses:</b> TIDAK ada MRT langsung — Didi/bus dari pusat kota, ±10-15 menit. Alamat: Fufei South Road No. 146, Gulou District. <b>Jam Operasional:</b> setiap hari 10:00–24:00. <b>Tiket:</b> mulai CNY 68/org (anak di bawah 1,2m gratis).`,
+       wiki:`https://gs.ctrip.com/html5/you/sight/fuzhou164/118594.html`,
+       yt:`https://www.youtube.com/results?search_query=Yuanmai+Hot+Spring+Garden+Fuzhou`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Jinshan Temple (金山寺 · Jīnshān Sì)`,
+       nameEn:`Jinshan Temple`,
+       nameHanzi:`金山寺`,
+       context:`Kenapa tidak dimasukkan: TIDAK dilewati MRT — butuh Didi + perahu, jauh dari kluster kota tua, dan tidak muat di trip 2 malam/3 hari.`,
+       text:`Satu-satunya "kuil mengapung" di Fuzhou — dibangun era Dinasti Song di atas bongkahan batu kecil di tengah Sungai Wulong, hanya bisa dicapai dengan perahu kecil dari tepi sungai. Ukurannya mungil dibanding kuil-kuil besar lain di Fuzhou, tapi lokasinya yang unik di tengah air membuatnya jadi salah satu spot foto paling khas kota ini. <b>Akses:</b> TIDAK ada MRT langsung — Didi/bus (39, 55, 168) ke area Hongtang, lanjut naik perahu kecil menyeberang ke pulau kuil. <b>Jam Operasional:</b> ±08:00–17:00 (⚠️ estimasi, tergantung jadwal perahu). <b>Tiket:</b> perahu + masuk ±CNY 10/org (⚠️ estimasi, cek di lokasi).`,
+       wiki:`https://www.google.com/search?q=Jinshan+Temple+Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=Jinshan+Temple+Fuzhou+floating`},
+      {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Xichan Temple (西禅寺 · Xīchán Sì)`,
+       nameEn:`Xichan Temple`,
+       nameHanzi:`西禅寺`,
+       context:`Kenapa tidak dimasukkan: TIDAK dilewati MRT dan di sisi barat kota (bersama Jinshan Temple butuh 1 hari Didi) — tidak muat di trip 2 malam/3 hari.`,
+       text:`Kuil Buddha yang awalnya dibangun era Dinasti Tang, dekat kawasan Fuzhou University di sisi barat kota — salah satu kuil terkenal di Fujian dengan halaman luas &amp; tenang, dihiasi patung Guanyin besar yang jadi pusat perhatian pengunjung. Suasananya lebih lapang &amp; megah dibanding kuil-kuil kota lain yang lebih padat pengunjung. <b>Akses:</b> TIDAK ada MRT langsung — bus (14, 27, 64, 91, dll) atau Didi ke Stasiun bus Xichan Temple, Jalan Gongye No. 455. <b>Jam Operasional:</b> ±06:00–17:30 (⚠️ estimasi, cek jadwal terbaru). <b>Tiket:</b> ±CNY 10/org (⚠️ estimasi, cek loket).`,
+       wiki:`https://www.google.com/search?q=Xichan+Temple+Fuzhou`,
+       yt:`https://www.youtube.com/results?search_query=Xichan+Temple+Fuzhou`},
+    ],
+    lampiranGroups:[
+      {key:`intro`, heading:`Fuzhou (福州 · Fúzhōu)`},
+      {key:`h2`, heading:`Hari 2 — Sabtu, 14 November`},
+      {key:`h3`, heading:`Hari 3 — Minggu, 15 November`},
+      {key:`cadangan`, heading:`Cadangan`},
+    ],
+  },
+];
+/* === DESTINATIONS:END === */
+
+/* ---------------------------------------------------------
+   RENDER
+--------------------------------------------------------- */
+const STORE_KEY = "wisata-china-checks-v3";
+const store = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
+
+/* Independent "sudah ditinjau" checklist for Lampiran entries — not
+   linked to the Itinerary tab's checkboxes (different meaning: for
+   Cadangan it means "reviewed and confirmed not visiting", not "done"). */
+const LAMP_STORE_KEY = "wisata-china-lampiran-reviewed-v1";
+const lampStore = JSON.parse(localStorage.getItem(LAMP_STORE_KEY) || "{}");
+function saveLamp(){ localStorage.setItem(LAMP_STORE_KEY, JSON.stringify(lampStore)); }
+function lampiranKey(destId, title){ return destId + "::" + title; }
+
+function cell(v, cls){
+  return v ? `<td class="${cls}">${v}</td>` : `<td class="${cls} dash">&ndash;</td>`;
+}
+
+function formatJam(jam){
+  // "14:25–15:15" -> "14:25–" / "15:15" on two lines so the column can stay narrow
+  const i = jam.indexOf('–');
+  if(i !== -1) return jam.slice(0,i+1) + '<br>' + jam.slice(i+1);
+  // non-range labels like "Sore/malam" have no natural break point for the
+  // narrow column — break after "/" too, otherwise it can overflow into
+  // the next cell instead of wrapping.
+  const j = jam.indexOf('/');
+  if(j !== -1) return jam.slice(0,j+1) + '<br>' + jam.slice(j+1);
+  return jam;
+}
+
+function updateProgress(dayEl){
+  const boxes = dayEl.querySelectorAll('input[type=checkbox]');
+  const done = [...boxes].filter(b=>b.checked).length;
+  dayEl.querySelector('.day-progress').textContent = done+"/"+boxes.length;
+}
+
+function renderTransport(t){
+  const isFlight = t.mode === "flight";
+  const isTrain = t.mode === "train";
+  const icon = isFlight ? PLANE_ICON : isTrain ? TRAIN_ICON : TRANSIT_ICON;
+  const tagClass = t.tag === "ok" ? "tag-ok" : "tag-tbd";
+  const tagText = t.tag === "ok" ? "Confirmed" : "Belum pasti";
+
+  let body = "";
+  if(isFlight || isTrain){
+    body = `
+      <div class="flight-route">
+        <div class="route-city"><div class="route-code">${t.from.code}</div><div class="route-name">${t.from.name}</div></div>
+        <div class="route-mid">
+          <div class="route-dur">${t.duration}</div>
+          <div class="route-line"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M0 0 L10 5 L0 10 Z" fill="currentColor"/></svg></div>
+          <div class="route-dur">${t.code}</div>
+        </div>
+        <div class="route-city" style="text-align:right"><div class="route-code">${t.to.code}</div><div class="route-name">${t.to.name}</div></div>
+      </div>
+      <div class="flight-meta">${t.meta.map(([l,v])=>`<div><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
+      ${t.note ? `<div class="flight-note">${t.note}</div>` : ``}
+      ${t.hotel ? `<div class="hotel-banner">${t.hotel}</div>` : ``}
+      ${t.warn ? `<div class="warn-banner">${t.warn}</div>` : ``}
+    `;
+  } else {
+    body = `
+      <div class="transit-list">${t.items.map(([l,v])=>`<div class="transit-row"><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
+      ${t.hotel ? `<div class="hotel-banner">${t.hotel}</div>` : ``}
+      ${t.warn ? `<div class="warn-banner">${t.warn}</div>` : ``}
+    `;
+  }
+
+  const det = document.createElement('details');
+  det.className = 'transport';
+  det.innerHTML = `
+    <summary>
+      <div class="transport-icon">${icon}</div>
+      <div class="transport-head-text">
+        <div class="transport-kicker">${t.kicker}</div>
+        <div class="transport-title">${t.title}</div>
+      </div>
+      <div class="transport-tag ${tagClass}">${tagText}</div>
+      ${CHEV}
+    </summary>
+    <div class="transport-body">${body}</div>
+  `;
+  return det;
+}
+
+function renderDay(d, dest){
+  const destId = dest.id;
+  const det = document.createElement('details');
+  det.className = 'day';
+
+  const rows = d.items.map((it,ii)=>{
+    const [jam,destName,ket,catatan,valas,rupiah] = it;
+    const key = destId+"-"+d.id+"-"+ii;
+    const checked = store[key] ? 'checked' : '';
+    const doneClass = store[key] ? 'done' : '';
+    return `<tr class="${doneClass}" data-key="${key}">
+      <td class="cell-pilih"><input type="checkbox" ${checked} aria-label="Tandai selesai: ${destName}"></td>
+      <td class="cell-jam">${formatJam(jam)}</td>
+      <td class="cell-dest">${destName}</td>
+      ${cell(ket,'cell-ket')}
+      ${cell(valas,'cell-valas')}
+      ${cell(rupiah,'cell-rupiah')}
+    </tr>`;
+  }).join('');
+
+  const footRow = d.total ? `<tfoot><tr>
+      <td></td><td></td><td>TOTAL HARI ${d.num}</td><td></td>
+      <td class="cell-valas">${d.total.cny}</td><td class="cell-rupiah">${d.total.idr}</td>
+    </tr></tfoot>` : '';
+
+  const cadanganNearby = (dest.lampiran || []).filter(p =>
+    p.tag === 'planc' && p.relatedDays && p.relatedDays.includes(d.num));
+  const cadanganNearbyHtml = cadanganNearby.length ? `
+    <div class="cadangan-nearby">
+      <span class="banner-label">Tempat sekitar lain (lihat Lampiran → Cadangan)</span>
+      ${cadanganNearby.map(p => p.title).join(', ')}
+    </div>` : '';
+
+  det.innerHTML = `
+    <summary>
+      <div class="day-badge">${d.num}</div>
+      <div class="day-head-text">
+        <div class="day-toprow">
+          <div class="day-date">${d.date}</div>
+          <div class="day-progress">0/${d.items.length}</div>
+        </div>
+        <div class="day-label">${d.label}</div>
+      </div>
+      ${CHEV}
+    </summary>
+    ${d.reserve ? `<div class="reserve-banner"><span class="banner-label">Reservasi wajib</span>${d.reserve}</div>` : ``}
+    ${d.advisory ? `<div class="info-banner"><span class="banner-label">Perhatian</span>${d.advisory}</div>` : ``}
+    <div class="table-scroll">
+      <table class="itin">
+        <colgroup>
+          <col style="width:28px"><col style="width:72px"><col style="width:215px"><col style="width:215px"><col style="width:52px"><col style="width:98px">
+        </colgroup>
+        <thead><tr>
+          <th class="col-pilih"><span class="sr-only">Pilih</span></th><th>Jam</th><th>Destinasi</th><th>Keterangan</th><th class="col-num">${dest.currency || 'CNY'}</th><th class="col-num">IDR</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+        ${footRow}
+      </table>
+    </div>
+    ${d.planb ? `<div class="planb-banner"><span class="banner-label">Plan-B hari ini</span>${d.planb}</div>` : ``}
+    ${cadanganNearbyHtml}
+  `;
+
+  det.querySelectorAll('input[type=checkbox]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const row = cb.closest('tr');
+      const key = row.dataset.key;
+      store[key] = cb.checked;
+      row.classList.toggle('done', cb.checked);
+      save();
+      updateProgress(det);
+    });
+  });
+
+  return det;
+}
+
+function renderBudget(b, currency){
+  const el = document.createElement('details');
+  el.className = 'budget-card';
+  const dayRows = b.byDay.map(([l,c,i])=>`<tr><td>${l}</td><td>${c}</td><td>${i}</td></tr>`).join('');
+  const catRows = b.byCategory.map(([l,c,i])=>`<tr><td>${l}</td><td>${c}</td><td>${i}</td></tr>`).join('');
+  el.innerHTML = `
+    <summary><h3 class="serif">Ringkasan Budget Total</h3>${CHEV}</summary>
+    <div class="budget-card-body">
+      <div class="budget-sub">${b.note}</div>
+      <table class="budget">
+        <thead><tr><th>Hari</th><th>${currency}</th><th>IDR</th></tr></thead>
+        <tbody>${dayRows}<tr class="grand"><td>${b.grand[0]}</td><td>${b.grand[1]}</td><td>${b.grand[2]}</td></tr></tbody>
+      </table>
+      <table class="budget">
+        <thead><tr><th>Kategori</th><th>${currency}</th><th>IDR</th></tr></thead>
+        <tbody>${catRows}<tr class="grand"><td>TOTAL</td><td>${b.catTotal[1]}</td><td>${b.catTotal[2]}</td></tr></tbody>
+      </table>
+      <div class="budget-note">${b.caveat}</div>
+    </div>
+  `;
+  return el;
+}
+
+function renderCity(dest){
+  const panel = document.createElement('div');
+  panel.className = 'city-panel';
+  panel.id = 'panel-'+dest.id;
+
+  panel.innerHTML = `
+    <div class="subview itinerary active"></div>
+    <div class="subview lampiran"></div>
+  `;
+
+  const itinView = panel.querySelector('.subview.itinerary');
+  itinView.appendChild(renderTransport(dest.transportPergi));
+
+  dest.days.forEach(d=>{
+    const dayEl = renderDay(d, dest);
+    itinView.appendChild(dayEl);
+    updateProgress(dayEl);
+  });
+
+  if(dest.budget) itinView.appendChild(renderBudget(dest.budget, dest.currency || 'CNY'));
+
+  const notesCard = document.createElement('details');
+  notesCard.className = 'notes-card';
+  notesCard.innerHTML = `<summary>Catatan Penting Lainnya${CHEV}</summary><div class="notes-card-body"><ul>${dest.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
+  itinView.appendChild(notesCard);
+
+  if(dest.transportPulang) itinView.appendChild(renderTransport(dest.transportPulang));
+
+  const lampiranView = panel.querySelector('.subview.lampiran');
+  lampiranView.innerHTML = '';
+
+  const tagClass = {main:'tag-main',planb:'tag-planb',food:'tag-food',planc:'tag-planc',info:'tag-info'};
+  const groupDefs = dest.lampiranGroups && dest.lampiranGroups.length
+    ? dest.lampiranGroups
+    : dest.days.map(d=>({key:d.id, heading:d.date+' — '+d.label})).concat([{key:'cadangan', heading:'Cadangan'}]);
+
+  function placeLinks(p){
+    return (p.wiki || p.yt) ? `<div class="place-links">
+        ${p.wiki ? `<a href="${p.wiki}" target="_blank" rel="noopener">Foto &amp; info →</a>` : ``}
+        ${p.yt ? `<a href="${p.yt}" target="_blank" rel="noopener">Video referensi →</a>` : ``}
+      </div>` : ``;
+  }
+
+  groupDefs.forEach((g,gi)=>{
+    const entries = dest.lampiran.filter(p=>p.group===g.key);
+    if(!entries.length) return;
+    const isIntro = g.key === 'intro';
+
+    const groupEl = document.createElement('details');
+    groupEl.className = 'lampiran-group';
+    groupEl.dataset.key = g.key;
+
+    const itemsHtml = entries.map(p=>{
+      const noBody = !p.text && !p.wiki && !p.yt && !p.reserveInfo && (!p.nearby || !p.nearby.length) && (!p.hotels || !p.hotels.length);
+      const lampKey = lampiranKey(dest.id, p.title);
+      const isDestList = isIntro && /^Destinasi Terkenal Lain/.test(p.title || '');
+      const lampChecked = lampStore[lampKey] ? 'checked' : '';
+      const lampDoneClass = !isIntro && lampStore[lampKey] ? ' reviewed' : '';
+      return `
+        <div class="lampiran-item${isIntro?' intro':''}${lampDoneClass}"${!isIntro?` data-lamp-key="${lampKey}"`:``}>
+          <div class="lampiran-item-head">
+            ${!isIntro ? `<input type="checkbox" class="lampiran-check" ${lampChecked} aria-label="Tandai sudah ditinjau: ${p.title}">` : ``}
+            ${!isIntro ? `<span class="place-tag ${tagClass[p.tag]}">${p.label}</span>` : ``}
+            <span class="lampiran-item-title">${isDestList ? '<b>Destinasi</b>' : titleHtml(p)}</span>
+            ${!isIntro ? `<button type="button" class="item-toggle" aria-label="Buka/tutup detail">${CHEV}</button>` : ``}
+          </div>
+          <div class="lampiran-item-body">
+            ${isDestList ? copyAllBtnsHtml(dest.id) : ``}
+            ${!isIntro && p.tag !== 'food' ? copyBtnsHtml(p.nameEn, p.nameHanzi) : ``}
+            ${p.context ? `<div class="card-context"${noBody?' style="margin-bottom:0;"':''}>${p.context}</div>` : ``}
+            ${p.text ? `<p>${p.text}</p>` : ``}
+            ${p.reserveInfo ? `<div class="reserve-info"><span class="banner-label">Cara reservasi</span>${p.reserveInfo}</div>` : ``}
+            ${p.nearby && p.nearby.length ? `<div class="nearby"><b>Rekomendasi tempat sekitar:</b> ${nearbyLine(p.nearby)}</div>` : ``}
+            ${p.hotels && p.hotels.length ? `<div class="hotels"><b>Rekomendasi Hotel (Trip.com):</b> ${hotelsLine(p.hotels, dest.name)}</div>` : ``}
+            ${placeLinks(p)}
+          </div>
+        </div>`;
+    }).join('');
+
+    groupEl.innerHTML = `
+      <summary><span class="lampiran-group-title">${g.heading}</span>${CHEV}</summary>
+      <div class="lampiran-group-body">${itemsHtml}</div>
+    `;
+    lampiranView.appendChild(groupEl);
+  });
+
+  lampiranView.querySelectorAll('.lampiran-check').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      const item = cb.closest('.lampiran-item');
+      const key = item.dataset.lampKey;
+      lampStore[key] = cb.checked;
+      item.classList.toggle('reviewed', cb.checked);
+      saveLamp();
+    });
+  });
+
+  lampiranView.querySelectorAll('.lampiran-item-head').forEach(head=>{
+    const item = head.closest('.lampiran-item');
+    if(item.classList.contains('intro')) return;
+    head.addEventListener('click', (e)=>{
+      if(e.target.closest('.lampiran-check')) return;
+      item.classList.toggle('open');
+    });
+  });
+
+  return panel;
+}
+
+const cityTabsWrap = document.getElementById('city-tabs');
+const cityPanelsWrap = document.getElementById('city-panels');
+
+const AIRPORT_CODES = {nanjing:'NKG', wuxi:'WUX', hongkong:'HKG', xiamen:'XIA'};
+// Pengaman: kosongkan wadah dulu supaya tab/panel tidak dobel kalau HTML
+// yang dibuka adalah salinan DOM yang sudah terender.
+cityTabsWrap.innerHTML = '';
+cityPanelsWrap.innerHTML = '';
+destinations.forEach((dest,i)=>{
+  const tabBtn = document.createElement('button');
+  tabBtn.className = 'city-tab' + (i===0 ? ' active' : '');
+  tabBtn.textContent = AIRPORT_CODES[dest.id] || dest.name.replace(/\s+/g,'').slice(0,3).toUpperCase();
+  tabBtn.title = dest.name;
+  tabBtn.setAttribute('aria-label', dest.name);
+  tabBtn.dataset.city = dest.id;
+  tabBtn.addEventListener('click', ()=>{
+    document.querySelectorAll('.city-tab').forEach(b=>b.classList.remove('active'));
+    tabBtn.classList.add('active');
+    document.querySelectorAll('.city-panel').forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+dest.id).classList.add('active');
+    setGlobalSubview('itinerary');
+  });
+  cityTabsWrap.appendChild(tabBtn);
+
+  const panel = renderCity(dest);
+  if(i===0) panel.classList.add('active');
+  cityPanelsWrap.appendChild(panel);
+});
+
+/* Itinerary/Lampiran toggle lives once in the sticky header and controls
+   whichever city panel is currently active — stays visible while scrolling. */
+function setGlobalSubview(view){
+  document.querySelectorAll('#global-subtabs .subtab-btn').forEach(b=>{
+    const active = b.dataset.view === view;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  const activePanel = document.querySelector('.city-panel.active');
+  if(!activePanel) return;
+  activePanel.querySelectorAll('.subview').forEach(v=>v.classList.remove('active'));
+  activePanel.querySelector('.subview.'+view).classList.add('active');
+  document.getElementById('dest-search').value = '';
+  document.querySelectorAll('.search-hit').forEach(el=>el.classList.remove('search-hit'));
+}
+document.querySelectorAll('#global-subtabs .subtab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=> setGlobalSubview(btn.dataset.view));
+});
+</script>

@@ -1,7 +1,7 @@
 # Itinerary Perjalanan Shenzhen
 3 – 6 November · 3 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
-← [[5 Hong Kong]] | [[China Trip Overview]] | [[7 Xiamen]] →
+← [[5 Hong Kong]] | [[China Trip Overview]] | [[9 Guangzhou]] →
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Shenzhen Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
@@ -10,15 +10,18 @@
 > (9) **2026-09-23 — REVISI BESAR: ganti hotel, perpanjang jadi 3 malam, tulis ulang semua rute dari anchor baru.** Berdasarkan riset perbandingan hotel dan verifikasi Amap menyeluruh (wiki `shenzhen-hotel-comparison.md` & `shenzhen-transport.md`), pengguna memutuskan: **hotel ganti dari Qiyu Hotel (Shixia) ke Tourism Trend Hotel (Huaqiang Beiyannan), kamar Superior Queen Room berjendela** — alasan: lift terkonfirmasi eksplisit di fasilitas resmi (Qiyu cuma "tidak ada keluhan", bukan konfirmasi), ranjang & kamar lebih luas, ada jendela (hindari pengap/lembap), harga jauh lebih murah dari Qiyu. **Durasi diperpanjang dari 2 malam (3–5 Nov) jadi 3 malam (3–6 Nov)** untuk menampung destinasi tambahan yang diminta pengguna dari daftar kandidat 16 tempat: **Shenzhen Bay Park, Shenzhen Bay Cultural Plaza, MixC Shenzhen Bay, Sea World, K11 ECOAST, dan Huaqiangbei** dipromosikan dari Cadangan/Plan-B ke itinerary utama (Window of the World, Splendid China Folk Culture Village, dan Dafen Oil Painting Village TIDAK dipilih pengguna — tetap di Cadangan). **Dua rute utama raw versi lama TERBUKTI SALAH** (bukan cuma belum diverifikasi) setelah dicek Amap dari hotel baru: rute ke Civic Center dan Qiaocheng East/OCT-LOFT yang dipakai sejak revisi (4) ternyata memakai jalur yang keliru. Semua tabel harian, Lampiran Akses, dan budget ditulis ulang dari nol memakai 12 rute yang sudah terverifikasi Amap dari Tourism Trend Hotel. **Harga hotel 3 malam masih ESTIMASI** (≈Rp1.473.429, dihitung dari harga per-malam kutipan 2-malam — belum ada screenshot Trip.com untuk tanggal 3-malam yang benar) — update begitu ada angka pasti.
 >
 > (10) **2026-09-23 — revisi kedua: pisah hari jalan jauh, keluarkan He Xiangning/OCT-LOFT, tambah Xinghe COCO Park, kunci jam kepulangan.** Setelah diskusi lanjutan, pengguna memutuskan: **He Xiangning Art Museum & OCT-LOFT dikeluarkan dari itinerary utama** (pindah ke Cadangan) — kluster Qiaocheng East ini tidak searah manapun dan menambah kompleksitas rute; mengeluarkannya memberi ruang untuk memecah klaster Shenzhen Bay/Shekou (sebelumnya 1 "hari jalan jauh" ±3 jam PP) jadi **2 hari terpisah yang lebih ringan**: **Hari 2** sekarang Shenzhen Bay Park → Shenzhen Bay Cultural Plaza → MixC Shenzhen Bay → **Shuiwei Night Market malam** (dipindah dari Hari 2 versi sebelumnya), dan **Hari 3** jadi Sea World + K11 ECOAST saja (jauh lebih santai, sore bebas tanpa agenda). **Xinghe COCO Park ditambahkan ke Hari 4**, disisipkan setelah Dongmen karena satu jalur Line 1 yang sama (lanjut dari Laojie melewati Science Museum tanpa turun, ke arah Shopping Park) — rute segmen Dongmen↔Xinghe COCO Park masih **⚠️ ESTIMASI** (belum di-Amap-kan spesifik, verifikasi lanjutan disarankan sebelum hari-H, begitu juga segmen MixC/Talent Park→Shuiwei di Hari 2). **Jam kepulangan HSR ke Xiamen dikunci 13:00** dari Futian Station (dikonfirmasi pengguna) — jadwal tiba & stasiun keberangkatan pasti tetap estimasi sampai tiket dibeli. GRAND TOTAL berubah jadi **≈1.361 CNY / Rp3.606.529** (turun dari revisi sebelumnya karena distribusi makan/transport berubah, bukan karena destinasi berkurang — jumlah destinasi utama tetap sama minus He Xiangning/OCT-LOFT plus Xinghe COCO Park).
+>
+> (11) **2026-09-24 — urutan kota baru: Shenzhen dilanjutkan ke Guangzhou (bukan Xiamen).** Kedatangan dari Hong Kong: HSR berangkat **14:00** (semula 13:30), tiba ±14:30 — Hari 1 digeser 30 menit (Shenzhen Museum jadi 17:05–17:55, tutup 18:00; Civic Center Plaza & Library tetap buka sampai 21:00). Kepulangan: HSR ke **Guangzhou 14:00** (semula 13:00 ke Xiamen) — Hari 4 digeser 1 jam, buffer di stasiun tetap ±47 menit. Budget tidak berubah. Nav & Informasi Transportasi Pulang diperbarui.
+
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
 | Rute | Hong Kong West Kowloon → Shenzhen Futian (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
-| Tanggal & Jam Kedatangan | Selasa, 3 November, **±14:00** (HSR berangkat 13:30 dari West Kowloon, tempuh ±14 menit) |
+| Tanggal & Jam Kedatangan | Selasa, 3 November, **±14:30** (HSR berangkat 14:00 dari West Kowloon, tempuh ±30 menit — jam tiba estimasi) |
 | Durasi | ±14 menit — salah satu rute HSR lintas-batas tercepat di dunia, ±47 keberangkatan/hari 07:11–22:01 |
-| Tanggal & Jam Kepulangan | Jumat, 6 November, **13:00** (dikonfirmasi user 2026-09-23), lihat Informasi Transportasi Pulang |
+| Tanggal & Jam Kepulangan | Jumat, 6 November, **14:00** (dikonfirmasi pengguna 2026-09-24), lihat Informasi Transportasi Pulang |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -46,15 +49,15 @@
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 13:30 | HSR West Kowloon → Futian | Berangkat dari Hong Kong, ±14 menit; imigrasi Tiongkok sudah selesai di West Kowloon (biaya masuk budget kedatangan) | — | — |
-| 14:00 | Turun di Futian Station | Sudah di wilayah Shenzhen — langsung keluar tanpa pemeriksaan tambahan | — | — |
-| 14:00–14:23 | Metro ke Yannan, jalan ke hotel | Line 2(8) arah Xichong, 4 halte, ±16 menit + jalan 328m/7 menit — rute terverifikasi Amap | 4 | Rp10.600 |
-| 14:23–15:00 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
-| 15:00–15:23 | Metro ke Huaqiangbei | Jalan ke Yannan Exit C (328m/7 menit) → Line 2(8) arah Chiwan, 1 halte → **Huaqiang North Exit D1** — dekat & murah, rute terverifikasi Amap | 4 | Rp10.600 |
-| 15:23–16:15 | **Huaqiangbei** — jalan santai kawasan elektronik | Lihat-lihat gadget/komponen, tidak perlu belanja | — | — |
-| 16:15–16:35 | Lanjut metro ke Civic Center | Line 2(8) arah Chiwan, 2 halte lagi (Gangxia North) → **Civic Center Exit C** — searah, tanpa balik ke hotel | 4 | Rp10.600 |
-| 16:35–17:45 | **Shenzhen Museum** (History & Folk Culture) | Gratis, tanpa reservasi, tutup Senin — aman karena kunjungan Selasa; tutup 18:00 | — | — |
-| 17:45–18:15 | **Civic Center Cultural Plaza** & **Shenzhen Library** | Sekompleks dengan Museum, jalan kaki, gratis; perpustakaan buka s/d 21:00 | — | — |
+| 14:00 | HSR West Kowloon → Futian | Berangkat dari Hong Kong, ±14 menit; imigrasi Tiongkok sudah selesai di West Kowloon (biaya masuk budget kedatangan) | — | — |
+| 14:30 | Turun di Futian Station | Sudah di wilayah Shenzhen — langsung keluar tanpa pemeriksaan tambahan | — | — |
+| 14:30–14:53 | Metro ke Yannan, jalan ke hotel | Line 2(8) arah Xichong, 4 halte, ±16 menit + jalan 328m/7 menit — rute terverifikasi Amap | 4 | Rp10.600 |
+| 14:53–15:30 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
+| 15:30–15:53 | Metro ke Huaqiangbei | Jalan ke Yannan Exit C (328m/7 menit) → Line 2(8) arah Chiwan, 1 halte → **Huaqiang North Exit D1** — dekat & murah, rute terverifikasi Amap | 4 | Rp10.600 |
+| 15:53–16:45 | **Huaqiangbei** — jalan santai kawasan elektronik | Lihat-lihat gadget/komponen, tidak perlu belanja | — | — |
+| 16:45–17:05 | Lanjut metro ke Civic Center | Line 2(8) arah Chiwan, 2 halte lagi (Gangxia North) → **Civic Center Exit C** — searah, tanpa balik ke hotel | 4 | Rp10.600 |
+| 17:05–17:55 | **Shenzhen Museum** (History & Folk Culture) | Gratis, tanpa reservasi, tutup Senin — aman karena kunjungan Selasa; tutup 18:00 | — | — |
+| 17:55–18:15 | **Civic Center Cultural Plaza** & **Shenzhen Library** | Sekompleks dengan Museum, jalan kaki, gratis; perpustakaan buka s/d 21:00 | — | — |
 | 18:15–19:15 | Makan malam sekitar Civic Center | ±CNY 35/org | 70 | Rp185.500 |
 | 19:15–19:30 | Metro ke Children's Palace | Line 4 arah Futian Checkpoint, 1 halte, ±3 menit | 4 | Rp10.600 |
 | 19:30–21:00 | **Lianhua Mountain Park** (city view malam) | Children's Palace Exit F ⚠️ (cek papan petunjuk), ±5 menit jalan kaki ke gerbang barat, gratis, buka s/d 23:00 | — | — |
@@ -104,23 +107,23 @@
 
 ---
 
-## Hari 4 — Jumat, 6 November (Dongmen Pagi → Xinghe COCO Park, Checkout, Berangkat HSR 13:00)
+## Hari 4 — Jumat, 6 November (Dongmen Pagi → Xinghe COCO Park, Checkout, Berangkat HSR 14:00)
 
 > **Rute:** Pagi ke Dongmen, lanjut kereta yang sama (Line 1, tanpa turun di hotel) ke Xinghe COCO Park, baru balik ke hotel untuk ambil bagasi lalu ke Futian Station. ⚠️ Segmen Dongmen↔Xinghe COCO Park masih estimasi.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 06:45 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
-| 07:10–07:30 | Checkout, titip bagasi di hotel | ⚠️ Konfirmasi ke resepsionis sehari sebelumnya bahwa bagasi bisa dititip sampai siang | — | — |
-| 07:30–07:54 | Metro ke Dongmen | Jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte → **Laojie Exit D**. Total ±24 menit, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
-| 07:54–08:03 | Jalan ke **Dongmen Pedestrian Street** | ±9 menit dari Exit D | — | — |
-| 08:03–09:30 | **Dongmen Pedestrian Street** | Pagi lebih lengang, toko mulai buka ±10:00, jalur datar | — | — |
-| 09:30–~10:00 | Lanjut metro ke **Xinghe COCO Park** (tanpa turun di hotel) | ⚠️ **Estimasi ±30 menit, ¥3/org** — dari Laojie, Line 1 arah sebaliknya (Airport East) terus lewat Science Museum tanpa turun, lanjut ke Shopping Park; segmen ini belum di-Amap-kan spesifik, diturunkan dari data rute hotel↔Qiaocheng East | 6 | Rp15.900 |
-| 10:00–11:00 | **Xinghe COCO Park** — makan siang & jalan santai | ±CNY 35/org | 70 | Rp185.500 |
-| 11:00–~11:30 | Metro kembali ke hotel | ⚠️ Estimasi ±30 menit, ¥3/org — arah sebaliknya dari segmen di atas | 6 | Rp15.900 |
-| 11:30–11:50 | Ambil bagasi di front desk | — | — | — |
-| 11:50–12:13 | Metro ke Futian Station | Jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 4 halte → **Futian**. Total ±23 menit, ¥2/org — rute terverifikasi Amap, lebih baik dari alternatif via Shixia | 4 | Rp10.600 |
-| 12:13–13:00 | Check-in HSR, tunggu boarding | Buffer ±47 menit sebelum keberangkatan | — | — |
+| 07:45 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
+| 08:10–08:30 | Checkout, titip bagasi di hotel | ⚠️ Konfirmasi ke resepsionis sehari sebelumnya bahwa bagasi bisa dititip sampai siang | — | — |
+| 08:30–08:54 | Metro ke Dongmen | Jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte → **Laojie Exit D**. Total ±24 menit, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
+| 08:54–09:03 | Jalan ke **Dongmen Pedestrian Street** | ±9 menit dari Exit D | — | — |
+| 09:03–10:30 | **Dongmen Pedestrian Street** | Pagi lebih lengang, toko mulai buka ±10:00, jalur datar | — | — |
+| 10:30–~11:00 | Lanjut metro ke **Xinghe COCO Park** (tanpa turun di hotel) | ⚠️ **Estimasi ±30 menit, ¥3/org** — dari Laojie, Line 1 arah sebaliknya (Airport East) terus lewat Science Museum tanpa turun, lanjut ke Shopping Park; segmen ini belum di-Amap-kan spesifik, diturunkan dari data rute hotel↔Qiaocheng East | 6 | Rp15.900 |
+| 11:00–12:00 | **Xinghe COCO Park** — makan siang & jalan santai | ±CNY 35/org | 70 | Rp185.500 |
+| 12:00–~12:30 | Metro kembali ke hotel | ⚠️ Estimasi ±30 menit, ¥3/org — arah sebaliknya dari segmen di atas | 6 | Rp15.900 |
+| 12:30–12:50 | Ambil bagasi di front desk | — | — | — |
+| 12:50–13:13 | Metro ke Futian Station | Jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 4 halte → **Futian**. Total ±23 menit, ¥2/org — rute terverifikasi Amap, lebih baik dari alternatif via Shixia | 4 | Rp10.600 |
+| 13:13–14:00 | Check-in HSR, tunggu boarding | Buffer ±47 menit sebelum keberangkatan | — | — |
 | | **TOTAL HARI 4** | | **160** | **Rp424.000** |
 
 **Plan-B hari ini:** kalau Dongmen atau Xinghe COCO Park terasa cukup lebih cepat, atau kurang sesuai selera — jalan santai gratis di sekitar hotel (Huaqiangbei) sebagai pengganti, tanpa perlu naik metro tambahan.
@@ -131,13 +134,12 @@
 
 | | |
 |---|---|
-| Kota berikutnya | Xiamen |
-| Rute | HSR dari **Futian Station** → Xiamen — ⚠️ stasiun keberangkatan pasti (Futian vs Shenzhen North) belum dikonfirmasi tiket |
-| Jadwal | Berangkat 13:00 → Tiba 17:30 (estimasi, durasi ±4-5 jam, belum ada tiket pasti) |
-| Tag | Jam berangkat 13:00 dikonfirmasi user (2026-09-23); durasi & stasiun masih estimasi |
+| Kota berikutnya | Guangzhou |
+| Rute | HSR dari **Futian Station** → Guangzhou South |
+| Jadwal | Berangkat 14:00 → Tiba 14:45 (estimasi, durasi ±30–45 menit, nomor kereta belum dipilih) |
+| Tag | Jam berangkat 14:00 dari pengguna (2026-09-24); tiket belum dibeli |
 
-**Catatan:** karena tiket HSR keberangkatan belum dibeli, biayanya TIDAK dihitung di Ringkasan Budget Total Shenzhen — akan masuk budget Xiamen begitu tiket final. Xiamen tercatat mulai 7 November — jeda 1 hari dari kepulangan Shenzhen 6 November, wajar untuk HSR siang hari (tiba sore/malam, mulai itinerary keesokan harinya).
-
+**Catatan:** biaya HSR keberangkatan ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.
 ---
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Shenzhen)

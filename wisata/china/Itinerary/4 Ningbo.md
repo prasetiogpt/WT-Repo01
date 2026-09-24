@@ -1,22 +1,28 @@
 # Itinerary Perjalanan Ningbo
-14 – 30 Oktober · 16 Malam · Direncanakan Independen (bukan sambungan kota lain)
+10 Oktober – 1 November · 22 Malam · Direncanakan Independen (bukan sambungan kota lain)
 
-← [[3 Suzhou Itinerary]] | [[China Trip Overview]] | [[5 Hong Kong]] →
+← [[2 Wuxi Itinerary]] | [[China Trip Overview]] | [[5 Hong Kong]] →
 
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
 > ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-08** — itinerary 17 hari/16 malam disusun dari nol sesuai skill terbaru (kota independen, tempat tinggal = properti pribadi di Zhonghai Yongcheng Shijia, Yinzhou District, jadi TANPA biaya hotel — pengguna konfirmasi belum pernah ke Ningbo, minta itinerary penuh tiap hari bukan hari bebas). Kedatangan & kepulangan pakai default skill (17:00/15:00, moda & kota asal belum ditentukan). Kurs dipakai: **1 CNY = Rp2.650** (kurs tetap trip China ini, lihat [[exchange-rates]]). ⚠️ **Keterbatasan alat:** riset destinasi memakai web_search (bukan Amap langsung) — beberapa detail akses/transfer stasiun ditandai ⚠️ karena belum terverifikasi presisi di lapangan, terutama titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur-jalur lain. (2) **2026-09-10 — tanggal digeser -1 hari, TETAP independen (tidak disambungkan ke Suzhou)**: sempat dicoba menyambungkan kedatangan ke jadwal riil HSR Suzhou→Ningbo (kedatangan jadi ±17:30–18:30 via HSR, jam relatif di Hari 1) supaya tanggal Ningbo pas dengan hari keberangkatan dari Suzhou (Selasa 14 Okt) — **dibatalkan atas permintaan pengguna**: kedua kota sengaja dijaga independen (bukan cuma soal moda transportasi) supaya revisi di satu file (mis. Suzhou) tidak otomatis memaksa revisi di file lain — kalau nanti jadwal Suzhou berubah, Ningbo tidak perlu ikut berubah, begitu juga sebaliknya. **Tanggal tetap digeser** dari 15–31 Oktober jadi **14–30 Oktober** (16 malam/17 hari, tidak berubah) supaya konsisten dengan preferensi tanggal terbaru, tapi kedatangan kembali ke **default independen ±17:00** (bukan hasil hitungan HSR) dan tabel Hari 1 kembali ke jam mutlak seperti semula — kebetulan saja tanggalnya berdekatan dengan kepergian Suzhou, tanpa referensi eksplisit ke file Suzhou. (3) **2026-09-10 — koreksi lokasi tempat tinggal berdasarkan screenshot Amap pengguna**: anchor MRT dikoreksi dari **Yinzhou Higher Education Park Station** jadi **Southern Business District Station** (satu halte lebih ke arah pusat kota di Line 8) — unit ternyata di kawasan Taikang Road, lebih dekat Ningbo Museum/Southern Business District, BUKAN di ujung tenggara dekat Dongqian Lake seperti anggapan draft awal. Dampak: paragraf Tempat Tinggal & baris Hari 1 diperbarui ke nama stasiun baru; framing "Dongqian Lake dekat rumah" (Hari 2, Hari 14, Lampiran) dilunakkan jadi "perlu transfer Line 8→Line 4, jarak persis belum terverifikasi" — estimasi Didi/MRT ke Dongqian Lake dinaikkan dari CNY 20 ke CNY 25/leg (Hari 2, Total naik 230→240 CNY). Rute umum "Line 8 → transfer Line X" di hari-hari lain TIDAK diubah — sudah tidak menyebut nama stasiun spesifik & sudah ditandai ⚠️ belum terverifikasi sejak draft awal, jadi tetap valid terlepas dari anchor mana yang dipakai. ⚠️ amap.com terblokir di environment sesi ini sehingga jarak jalan kaki persis unit↔stasiun & titik transfer Line 8→Line 4 tetap belum bisa diverifikasi — cek Amap on-site sebelum berangkat. (4) **2026-09-22 — verifikasi Amap untuk 4 rute utama + 1 rute payung** (screenshot pengguna, sesi ingest wiki): **Dongqian Lake (Hari 2)** ternyata butuh **2 kali transfer** (Line 8→Miaoyan→Line 5→South Higher Education Park→Line 4→Dongqian Lake Exit A), 10 halte, ¥4/org, ±55 menit — bukan 1 transfer seperti asumsi, tapi tarif malah turun karena base fare kecil (CNY 25→8/leg). **Tianyi Pavilion (Hari 4)**: transfer di Stasiun **Zemin** (dalam-stasiun 466m/±7 menit) ke Line 1, 11 halte, ¥5/org, ±49 menit (CNY 24→10/leg). **Old Bund (Hari 5)**: 12 halte via Liyuan South Rd, ¥4/org, ±40 menit, turun **Waitan Bridge** (bukan "Waitan Daqiao" — nama lama kemungkinan tidak presisi) (CNY 24→8/leg). **Ningbo South Bus Station** (dipakai Hari 6/8/9/10/13 untuk Nantang/Xikou/Qiantong/Hemudu/Shipu): 9 halte via Liyuan South Rd + Ningbo Railway Station Exit C, ¥4/org, ±31 menit — menutup verifikasi 5 hari sekaligus (CNY 24→8/leg tiap kali). **Hari 14** (sisi lain Dongqian Lake/Xiaoputuo) sebagian diperbaiki: MRT sampai Dongqian Lake Exit A memakai rute terverifikasi yang sama seperti Hari 2, lanjut Didi/jalan kaki pendek ke sisi Xiaoputuo (exit spesifik masih belum diverifikasi). **Total dampak biaya:** Hari 2 240→**206**, Hari 4 258→**230**, Hari 5 174→**142**, Hari 6 198→**166**, Hari 8 528→**496**, Hari 9 468→**436**, Hari 10 288→**256**, Hari 13 378→**346**, Hari 14 240→**228**. Sekaligus ditemukan **kesalahan hitung lama di kategori "Transport lokal & antar-kota"**: tertulis 1.140 CNY, padahal jumlah 17 hari (4.436) dikurangi Tiket (1.076) dan Makan (1.220) seharusnya 2.140 — selisih 1.000 CNY/Rp2.650.000 yang tidak match total per-hari, diperbaiki jadi 2.140 sebelum dikurangi koreksi rute di atas. **GRAND TOTAL turun dari 4.436 CNY/Rp11.755.400 jadi 4.170 CNY/Rp11.050.500** (koreksi rute) — kategori Transport lokal jadi **1.874 CNY** (2.140 dikurangi 266 dari koreksi rute), bukan 1.140. **Dua kejelasan tambahan (bukan koreksi rute)**: (a) Hari 12 (Zhaobao) — kalimat Lampiran yang membingungkan ("Hari 12 kebetulan jatuh Senin") diperbaiki karena Hari 12 di itinerary ini sebenarnya **Minggu 25 Oktober**, jadi aman terlepas dari aturan tutup Senin; (b) Xikou (Hari 8) — dua angka tiket (CNY 120 vs 200) diperjelas sebagai dua opsi paket berbeda, bukan kontradiksi, tabel tetap memakai CNY 120/org.
+>
+> (2) **2026-09-24 — dirombak: 10 Oktober – 1 November (22 malam) atas keputusan pengguna.** Urutan kota baru: Wuxi → Ningbo (HSR 14:00 dari Wuxi, ¥400/2 org, tiba ±17:15) → Hong Kong (pesawat UO227 08:50, tiket sudah ada). Kedatangan 10 Oktober (bukan 14 Oktober) dan kepulangan 1 November (bukan 30 Oktober) — jadi ada **6 hari tambahan** yang diisi dari **6 destinasi Cadangan** atas persetujuan pengguna: Cixi Bay Wetland Park (Hari 2), Youngor Zoo (Hari 3), Mount Putuo (Hari 4, hari panjang), Xiangshan Global Studios (Hari 5), Yushan Islands (Hari 21, hari panjang), Beilun Port Viewing Deck (Hari 22, hari ringan). Hari 1 lama (14 Okt, Yinzhou Park) dipindah jadi malam kedatangan 10 Okt; Hari 2–16 lama otomatis jadi Hari 6–20 (tanggal 15–29 Okt tetap, hari-minggu tidak berubah); Hari 17 lama (kepulangan 30 Okt) diganti hari Yushan Islands; Hari 22 (31 Okt) hari ringan; Hari 23 (1 Nov) berangkat ke Hong Kong. Cadangan lama semuanya masuk itinerary — belum ada Cadangan baru. **Peringatan:** detail jam/tiket/rute 6 destinasi baru dari web_search (Amap tidak bisa dipakai), ditandai ⚠️; Yushan Islands & Beilun Port Viewing Deck paling rapuh (Yushan realistisnya butuh menginap; dek pandang Beilun belum terverifikasi keberadaannya). Tempat tinggal tetap properti pribadi (tanpa biaya hotel). GRAND TOTAL ≈ 4.170 CNY (Rp11.050.500, 16 malam) → **8.168 CNY / Rp21.645.200** (termasuk tiket HSR ¥400 dari Wuxi).
+
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
-| Kedatangan | Rabu, 14 Oktober, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Kepulangan | Jumat, 30 Oktober, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
+| Rute | Wuxi Railway Station (HSR) → Ningbo Railway Station (HSR) |
+| Tanggal | Sabtu, 10 Oktober |
+| Kereta | G-train (nomor kereta belum dipilih) |
+| Jadwal | Berangkat 14:00 → Tiba 17:15 (langsung, ±3 jam, ⚠️ jam tiba estimasi) |
+| Kepulangan | Minggu, 1 November, **08:50** — pesawat Hong Kong Express UO227 NGB → HKG (lihat Informasi Penerbangan Pulang) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: **Southern Business District Station (南部商务区站, Line 8)** — dikoreksi dari Yinzhou Higher Education Park Station (satu halte lebih jauh ke arah tenggara) berdasarkan screenshot Amap pengguna. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum & Southern Business District), BUKAN persis di ujung tenggara dekat Dongqian Lake seperti versi sebelumnya — Dongqian Lake (Hari 2) tetap dijangkau via Line 8 lalu transfer, tapi jaraknya sedikit lebih jauh dari anggapan awal.
+**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: **Southern Business District Station (南部商务区站, Line 8)** — dikoreksi dari Yinzhou Higher Education Park Station (satu halte lebih jauh ke arah tenggara) berdasarkan screenshot Amap pengguna. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum & Southern Business District), BUKAN persis di ujung tenggara dekat Dongqian Lake seperti versi sebelumnya — Dongqian Lake (Hari 6) tetap dijangkau via Line 8 lalu transfer, tapi jaraknya sedikit lebih jauh dari anggapan awal.
 
 **Transportasi lokal:** Ningbo Rail Transit sudah punya 8 jalur aktif per pertengahan 2026 (Line 8 dibuka Juni 2025, Line 7 Agustus 2025) — jaringan cukup luas untuk kota sekelas Ningbo. Bayar via **WeChat Pay/Alipay QR code** di gerbang MRT (tidak perlu kartu fisik). Untuk destinasi di luar kota (Xikou, Qiantong, Hemudu) naik bus antar-kota dari **Ningbo South Bus Station (宁波汽车南站)** — persis di sebelah Stasiun Ningbo (Line 2/Line 1 Ximenkou). Prioritas: MRT > jalan kaki > bus antar-kota (untuk day-trip jauh) > Didi (fleksibel kalau MRT tidak menjangkau/titip koper).
 
@@ -34,25 +40,111 @@
 
 ---
 
-## Hari 1 — Rabu, 14 Oktober (Kedatangan Santai — Ningbo Museum & Yinzhou Park)
+## Hari 1 — Sabtu, 10 Oktober (Kedatangan Sore — Yinzhou Park Malam)
 
-Hari ringan kedatangan — dua destinasi ini persis sebelahan (searah), dekat rumah, jadi tidak perlu buru-buru menyesuaikan jetlag/perjalanan.
+Hari ringan kedatangan — tiba sore dari Wuxi, langsung ke tempat tinggal, lalu jalan santai malam di taman dekat rumah.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 17:00 | Tiba di tempat tinggal, unpacking, istirahat | — | — | — |
-| 17:00–17:30 | Didi/jalan kaki ke Stasiun Southern Business District (Line 8) | ⚠️ jarak persis belum terverifikasi | 20 | Rp53.000 |
-| 17:30–18:00 | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
-| 18:00–19:00 | **Yinzhou Park** — jalan santai sore, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
-| 19:00–20:00 | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
-| 20:00 | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
-| | **TOTAL HARI 1** | | **116** | **Rp307.400** |
+| 14:00 | HSR Wuxi → Ningbo | Berangkat dari Wuxi Railway Station (biaya di budget kedatangan) | — | — |
+| 17:15 | Tiba di Ningbo Railway Station | ⚠️ jam tiba estimasi (±3 jam tempuh dari Wuxi) | — | — |
+| 17:15–18:15 | Didi ke tempat tinggal (Yinzhou), bawa koper | ⚠️ ±CNY 50, jarak persis belum terverifikasi | 50 | Rp132.500 |
+| 18:15–19:00 | Tiba di tempat tinggal, unpacking, istirahat | — | — | — |
+| 19:00–19:30 | Line 8 menuju kluster **Ningbo Museum & Yinzhou Park** | ⚠️ titik transfer belum terverifikasi — cek Amap on-site atau Didi langsung sebagai alternatif | 16 | Rp42.400 |
+| 19:30–20:15 | **Yinzhou Park** — jalan santai malam, taman kota "Central Park" Ningbo | Gratis, jalur datar | — | — |
+| 20:15–21:15 | Makan malam sekitar Yinzhou Park | ±CNY 30/org | 60 | Rp159.000 |
+| 21:15 | Kembali ke tempat tinggal | Didi/MRT | 20 | Rp53.000 |
+| | **TOTAL HARI 1** | | **146** | **Rp386.900** |
 
 **Plan-B hari ini:** kalau kelelahan perjalanan — cukup istirahat penuh, tunda Yinzhou Park ke sela-sela hari lain (persis di dekat rumah, gampang disisipkan kapan saja).
 
 ---
 
-## Hari 2 — Kamis, 15 Oktober (Dongqian Lake — Danau Terbesar Zhejiang)
+## Hari 2 — Minggu, 11 Oktober (Cixi Bay Wetland Park)
+
+Day trip ke pesisir utara Cixi — taman lahan basah luas, datar, cocok untuk jalan santai sehari.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 07:30–08:00 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
+| 08:00–09:00 | MRT ke Ningbo Railway Station (sebelahan Ningbo South Bus Station): Line 8 → transfer Line 2 | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
+| 09:15–10:45 | Bus wisata khusus 298 dari Ningbo South Bus Station ke Wetland Park | ⚠️ ±1–1,5 jam, ±CNY 20/org (estimasi); alternatif bus Cixi 299 / Hangzhouwan 107, turun di halte Wetland Park | 40 | Rp106.000 |
+| 10:45–14:15 | **Cixi Bay Wetland Park** — lahan basah pesisir, burung migran, pemandangan Jembatan Teluk Hangzhou | Tiket ±CNY 60/org (⚠️ sumber ¥54–75), buka 08:30–17:00 (April–Oktober) | 120 | Rp318.000 |
+| 14:15–15:00 | Makan siang sekitar taman | ±CNY 25/org | 50 | Rp132.500 |
+| 15:00–16:30 | Bus kembali ke Ningbo South Bus Station | ⚠️ ±CNY 20/org (estimasi) | 40 | Rp106.000 |
+| 16:30–17:30 | Line 2 → transfer Line 8 kembali ke rumah | 9 halte, ¥4/org | 8 | Rp21.200 |
+| 18:00–19:00 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 2** | | **366** | **Rp969.900** |
+
+**Plan-B hari ini:** kalau hujan atau angin kencang (area pesisir terbuka) — batalkan, ganti hari santai di rumah atau Yinzhou Park.
+
+---
+
+## Hari 3 — Senin, 12 Oktober (Youngor Zoo)
+
+Kebun binatang safari — hari santai berbasis bus, tanpa tangga curam.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 07:30–08:00 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
+| 08:00–08:45 | MRT ke Ningbo Railway Station: Line 8 → transfer Line 2 | 9 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
+| 08:45–09:45 | Bus 106 dari Ningbo Railway Station ke Youngor Zoo (Gerbang Utara) | ⚠️ ±1 jam, ±CNY 4/org (estimasi); alternatif Line 1 lalu becak listrik ±CNY 30 | 8 | Rp21.200 |
+| 09:45–14:30 | **Youngor Zoo** — kebun binatang safari terbesar Zhejiang, bus safari & jalan santai | Tiket ±CNY 130/org (⚠️ sumber lain ¥170), buka 08:00–16:00 (Mei–Oktober), masuk terakhir 15:30 | 260 | Rp689.000 |
+| 14:30–15:15 | Makan siang sekitar kebun binatang | ±CNY 25/org | 50 | Rp132.500 |
+| 15:15–16:15 | Bus 106 kembali ke Ningbo Railway Station | ⚠️ ±CNY 4/org (estimasi) | 8 | Rp21.200 |
+| 16:15–17:15 | Line 2 → transfer Line 8 kembali ke rumah | 9 halte, ¥4/org | 8 | Rp21.200 |
+| 18:00–19:00 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 3** | | **442** | **Rp1.171.300** |
+
+**Plan-B hari ini:** kalau hujan deras atau kebun binatang tutup — hari santai di rumah/Yinzhou Park (Ningbo Museum tutup Senin).
+
+---
+
+## Hari 4 — Selasa, 13 Oktober (Mount Putuo — Hari Panjang)
+
+> ⚠️ **Hari panjang** (±14 jam, bus 2,5 jam + feri, dua kali) — hanya kalau cuaca cerah dan feri normal. Banyak tangga di kompleks kuil: pilih jalur datar, hindari tangga curam.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 05:45–06:15 | Sarapan sekitar rumah (berangkat pagi sekali) | ±CNY 15/org | 30 | Rp79.500 |
+| 06:15–07:00 | MRT ke Ningbo Railway Station: Line 8 → transfer Line 2 | ⚠️ kereta pertama Line 8 ±06:00 — cek jadwal; 9 halte, ¥4/org | 8 | Rp21.200 |
+| 07:15–09:45 | Bus Ningbo South Bus Station → Zhujiajian Wugongzhi Wharf | ±2,5 jam, ¥44–47/org (⚠️ harga sebelum 2026, cek loket); bus berangkat 06:30–19:30 | 94 | Rp249.100 |
+| 09:45–10:15 | Feri cepat Zhujiajian → Mount Putuo | ±10 menit, ¥30–100/org tergantung kelas (dipakai ±¥40/org ⚠️); speedboat terakhir pulang ±16:40 | 80 | Rp212.000 |
+| 10:15–15:30 | **Mount Putuo** — pulau suci Buddha: Puji Temple, Purple Bamboo Grove, patung Guanyin Nanhai | Tiket masuk pulau ±CNY 160/org (⚠️ estimasi). Banyak tangga — pilih rute datar sekitar Puji Temple/Nanhai Guanyin, pakai bus pulau kalau lelah | 320 | Rp848.000 |
+| 12:30–13:30 | Makan siang vegetarian di kuil/warung pulau | ±CNY 30/org | 60 | Rp159.000 |
+| 15:30–16:00 | Feri kembali Mount Putuo → Zhujiajian | Pastikan naik sebelum speedboat terakhir ±16:40 | 80 | Rp212.000 |
+| 16:00–18:30 | Bus Zhujiajian → Ningbo South Bus Station | ±2,5 jam, ¥44–47/org | 94 | Rp249.100 |
+| 18:45–19:30 | Line 2 → transfer Line 8 kembali ke rumah | 9 halte, ¥4/org | 8 | Rp21.200 |
+| 19:30–20:30 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 4** | | **844** | **Rp2.236.600** |
+
+**Plan-B hari ini:** kalau feri ditunda cuaca/kabut atau tenaga kurang — batalkan, ganti hari santai di rumah.
+
+---
+
+## Hari 5 — Rabu, 14 Oktober (Xiangshan Global Studios)
+
+Lokasi syuting drama sejarah China di Xiangshan — day trip bus ±2 jam sekali jalan.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 06:00–06:30 | Sarapan sekitar rumah (berangkat pagi) | ±CNY 15/org | 30 | Rp79.500 |
+| 06:30–07:15 | MRT ke Ningbo Railway Station: Line 8 → transfer Line 2 | ⚠️ kereta pertama Line 8 ±06:00; 9 halte, ¥4/org | 8 | Rp21.200 |
+| 07:20–09:20 | Bus Ningbo South Bus Station → Xiangshan (Dancheng) | ±2 jam, ¥38/org; bus 06:50–17:50 tiap ±20 menit (⚠️ jadwal cek loket) | 76 | Rp201.400 |
+| 09:30–10:00 | Shuttle/Didi Dancheng → Xiangshan Global Studios | ⚠️ shuttle di sumber web hanya 08:10, 09:10, 13:00, 14:00 — kalau lewat, pakai Didi (±CNY 10/org) | 20 | Rp53.000 |
+| 10:00–15:00 | **Xiangshan Global Studios** — lokasi syuting drama sejarah, set istana & kota kuno | Tiket ±CNY 150/org (⚠️ cek Trip.com), buka 08:00–17:00 | 300 | Rp795.000 |
+| 12:30–13:30 | Makan siang di dalam kawasan | ±CNY 30/org | 60 | Rp159.000 |
+| 15:00–15:30 | Shuttle/Didi kembali ke Dancheng | ⚠️ estimasi | 20 | Rp53.000 |
+| 15:45–17:45 | Bus Xiangshan → Ningbo South Bus Station | ±2 jam, ¥38/org | 76 | Rp201.400 |
+| 17:45–18:30 | Line 2 → transfer Line 8 kembali ke rumah | 9 halte, ¥4/org | 8 | Rp21.200 |
+| 19:00–20:00 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 5** | | **668** | **Rp1.770.200** |
+
+**Plan-B hari ini:** kalau shuttle Dancheng tidak cocok jadwalnya atau terlalu capek — batalkan, ganti hari santai di rumah.
+
+---
+
+## Hari 6 — Kamis, 15 Oktober (Dongqian Lake — Danau Terbesar Zhejiang)
 
 Dongqian Lake (東錢湖) di ujung timur Line 4 — danau air tawar terbesar di Zhejiang, 3× lebih luas dari West Lake Hangzhou. Satu hari penuh untuk bersepeda/jalan santai keliling tepi danau.
 
@@ -67,11 +159,11 @@ Dongqian Lake (東錢湖) di ujung timur Line 4 — danau air tawar terbesar di 
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
 | | **TOTAL HARI 2** | | **206** | **Rp545.900** |
 
-**Plan-B hari ini:** kalau cuaca hujan — kunjungan diperpendek, fokus area yang ada atap/kafe tepi danau saja, atau tunda ke Hari 16 (hari santai) kalau perlu diulang.
+**Plan-B hari ini:** kalau cuaca hujan — kunjungan diperpendek, fokus area yang ada atap/kafe tepi danau saja, atau tunda ke Hari 20 (hari santai) kalau perlu diulang.
 
 ---
 
-## Hari 3 — Jumat, 16 Oktober (Ashoka Temple → Tiantong Temple)
+## Hari 7 — Jumat, 16 Oktober (Ashoka Temple → Tiantong Temple)
 
 Dua kuil Buddha kuno paling terkenal di Ningbo, sama-sama di kaki Gunung Taibai, ±10km terpisah (terhubung bus) — dijadikan 1 hari dedicated karena jauh dari pusat kota.
 
@@ -92,7 +184,7 @@ Dua kuil Buddha kuno paling terkenal di Ningbo, sama-sama di kaki Gunung Taibai,
 
 ---
 
-## Hari 4 — Sabtu, 17 Oktober (Tianyi Pavilion & Yuehu Lake — Kota Tua)
+## Hari 8 — Sabtu, 17 Oktober (Tianyi Pavilion & Yuehu Lake — Kota Tua)
 
 Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpustakaan pribadi tertua di Asia + danau bersejarah 1.400 tahun.
 
@@ -110,7 +202,7 @@ Kawasan 5A (rating tertinggi wisata China) di jantung kota lama Ningbo — perpu
 
 ---
 
-## Hari 5 — Minggu, 18 Oktober (Old Bund → Sanjiangkou → Tianyi Square Malam)
+## Hari 9 — Minggu, 18 Oktober (Old Bund → Sanjiangkou → Tianyi Square Malam)
 
 Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemuan tiga sungai, ditutup jalan santai malam di alun-alun pusat kota.
 
@@ -131,7 +223,7 @@ Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemu
 
 ---
 
-## Hari 6 — Senin, 19 Oktober (Nantang Old Street)
+## Hari 10 — Senin, 19 Oktober (Nantang Old Street)
 
 Jalan pedestrian 500m+ dengan arsitektur kuno & jajanan khas — satu hari santai penuh untuk menjelajah tiap sudut & mencicipi kuliner lokal.
 
@@ -146,11 +238,11 @@ Jalan pedestrian 500m+ dengan arsitektur kuno & jajanan khas — satu hari santa
 | 18:00–18:25 | Line 2 → transfer Line 8 kembali ke rumah (rute sama, arah sebaliknya) | 9 halte, ¥4/org | 8 | Rp21.200 |
 | | **TOTAL HARI 6** | | **166** | **Rp439.900** |
 
-**Plan-B hari ini:** kalau Nantang terlalu padat (akhir pekan) — geser ke hari kerja, atau perpendek waktu & lanjut ke Tianfeng Pagoda (Hari 15) yang searah.
+**Plan-B hari ini:** kalau Nantang terlalu padat (akhir pekan) — geser ke hari kerja, atau perpendek waktu & lanjut ke Tianfeng Pagoda (Hari 19) yang searah.
 
 ---
 
-## Hari 7 — Selasa, 20 Oktober (Baoguo Temple)
+## Hari 11 — Selasa, 20 Oktober (Baoguo Temple)
 
 Kuil kayu tertua & paling terjaga di China (1.000+ tahun, dibangun TANPA paku) — agak jauh dari pusat kota, jadi hari santai dengan waktu longgar untuk eksplorasi detail arsitektur.
 
@@ -169,7 +261,7 @@ Kuil kayu tertua & paling terjaga di China (1.000+ tahun, dibangun TANPA paku) �
 
 ---
 
-## Hari 8 — Rabu, 21 Oktober (Xikou Ancient Town → Xuedou Temple, Fenghua)
+## Hari 12 — Rabu, 21 Oktober (Xikou Ancient Town → Xuedou Temple, Fenghua)
 
 Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, plus salah satu dari 5 gunung Zen paling terkenal di China. Day trip dedicated karena butuh bus antar-kota.
 
@@ -190,7 +282,7 @@ Kampung halaman Chiang Kai-shek — kota kuno dengan rumah bekas kediamannya, pl
 
 ---
 
-## Hari 9 — Kamis, 22 Oktober (Qiantong Ancient Town)
+## Hari 13 — Kamis, 22 Oktober (Qiantong Ancient Town)
 
 Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat hidup". Day trip dedicated via bus antar-kota ke Ninghai County.
 
@@ -211,7 +303,7 @@ Desa kuno seperti labirin dengan rumah era Ming-Qing — dijuluki "museum rakyat
 
 ---
 
-## Hari 10 — Jumat, 23 Oktober (Hemudu Site Museum, Yuyao)
+## Hari 14 — Jumat, 23 Oktober (Hemudu Site Museum, Yuyao)
 
 Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi tertua di China selatan. Day trip dedicated.
 
@@ -233,7 +325,7 @@ Situs Neolitikum berusia 7.000 tahun dekat Yuyao — salah satu bukti arkeologi 
 
 ---
 
-## Hari 11 — Sabtu, 24 Oktober (Cicheng Ancient Town)
+## Hari 15 — Sabtu, 24 Oktober (Cicheng Ancient Town)
 
 Kota kuno Cicheng (慈城), ujung barat Line 4 — jauh lebih dekat & mudah dijangkau dibanding day-trip lain minggu ini, cocok jadi hari lebih santai setelah beberapa hari perjalanan jauh.
 
@@ -251,7 +343,7 @@ Kota kuno Cicheng (慈城), ujung barat Line 4 — jauh lebih dekat & mudah dija
 
 ---
 
-## Hari 12 — Minggu, 25 Oktober (Zhaobao Mountain & Coastal Defense History, Zhenhai)
+## Hari 16 — Minggu, 25 Oktober (Zhaobao Mountain & Coastal Defense History, Zhenhai)
 
 Zhaobao Mountain di Zhenhai — sejarah pertahanan pesisir Ningbo sejak Dinasti Han, akses MRT langsung (Line 2), tidak perlu Didi/bus jauh.
 
@@ -269,7 +361,7 @@ Zhaobao Mountain di Zhenhai — sejarah pertahanan pesisir Ningbo sejak Dinasti 
 
 ---
 
-## Hari 13 — Senin, 26 Oktober (Xiangshan — Shipu Ancient Fishing Port)
+## Hari 17 — Senin, 26 Oktober (Xiangshan — Shipu Ancient Fishing Port)
 
 Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 jam), dijadikan 1 hari penuh dedicated untuk suasana laut & seafood otentik.
 
@@ -290,14 +382,14 @@ Salah satu pelabuhan nelayan tertua & terbesar di China — day trip jauh (±2 j
 
 ---
 
-## Hari 14 — Selasa, 27 Oktober (Xiaoputuo & Fuquan Mountain — Dongqian Lake Sisi Lain)
+## Hari 18 — Selasa, 27 Oktober (Xiaoputuo & Fuquan Mountain — Dongqian Lake Sisi Lain)
 
-Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil & bukit pemandangan, tetap area yang sama seperti Hari 2.
+Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil & bukit pemandangan, tetap area yang sama seperti Hari 6.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–09:25 | MRT ke Dongqian Lake Exit A (rute sama seperti Hari 2, terverifikasi Amap), lanjut jalan kaki/Didi singkat ke sisi Xiaoputuo | 10 halte ¥4/org (8 CNY) + Didi pendek ±CNY 10/2org ke sisi Xiaoputuo (exit spesifik belum diverifikasi) | 18 | Rp47.700 |
+| 08:30–09:25 | MRT ke Dongqian Lake Exit A (rute sama seperti Hari 6, terverifikasi Amap), lanjut jalan kaki/Didi singkat ke sisi Xiaoputuo | 10 halte ¥4/org (8 CNY) + Didi pendek ±CNY 10/2org ke sisi Xiaoputuo (exit spesifik belum diverifikasi) | 18 | Rp47.700 |
 | 09:00–12:00 | **Xiaoputuo** — causeway pulau kecil, replika kuil Guanyin mini | Gratis jalan kawasan | — | — |
 | 12:00–13:00 | Makan siang sekitar Dongqian Lake | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–16:00 | **Fuquan Mountain** — bukit pemandangan danau, jalur landai | Gratis; tiket area tertentu ±CNY 20/org (⚠️ estimasi) | 40 | Rp106.000 |
@@ -305,11 +397,11 @@ Melanjutkan eksplorasi Dongqian Lake dari sisi berbeda — causeway pulau kecil 
 | 18:00–19:00 | Makan malam sekitar rumah | ±CNY 30/org | 60 | Rp159.000 |
 | | **TOTAL HARI 14** | | **228** | **Rp604.200** |
 
-**Plan-B hari ini:** kalau sudah cukup puas dengan Dongqian Lake dari Hari 2 — hari ini bisa diganti hari santai/istirahat penuh di rumah.
+**Plan-B hari ini:** kalau sudah cukup puas dengan Dongqian Lake dari Hari 6 — hari ini bisa diganti hari santai/istirahat penuh di rumah.
 
 ---
 
-## Hari 15 — Rabu, 28 Oktober (Tianfeng Pagoda Siang → Sanjiangkou Night Cruise)
+## Hari 19 — Rabu, 28 Oktober (Tianfeng Pagoda Siang → Sanjiangkou Night Cruise)
 
 Pagoda ikonik pusat kota di siang hari, ditutup dengan pengalaman unik: kapal malam menyusuri pertemuan tiga sungai dengan lampu kota menyala.
 
@@ -328,7 +420,7 @@ Pagoda ikonik pusat kota di siang hari, ditutup dengan pengalaman unik: kapal ma
 
 ---
 
-## Hari 16 — Kamis, 29 Oktober (Ningbo City God Temple & Zhongshan Road — Hari Santai Penutup)
+## Hari 20 — Kamis, 29 Oktober (Ningbo City God Temple & Zhongshan Road — Hari Santai Penutup)
 
 Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup santai sebelum kepulangan, tanpa destinasi jauh/melelahkan.
 
@@ -347,55 +439,117 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 
 ---
 
-## Hari 17 — Jumat, 30 Oktober (Kepulangan)
+## Hari 21 — Jumat, 30 Oktober (Yushan Islands — Hari Panjang)
+
+> ⚠️ **Hari panjang & bergantung cuaca/laut** (±14 jam, bus + speedboat dua kali). Booking speedboat H-7 dan pastikan jadwal kapal pulang. Hari berikutnya hari ringan (packing) sebelum penerbangan pagi.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:00–08:30 | Sarapan terakhir sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 08:30–12:00 | Packing, siap-siap, waktu buffer | — | — | — |
-| 12:00–13:00 | Makan siang ringan sekitar rumah | ±CNY 25/org | 50 | Rp132.500 |
-| **15:00** | **Keberangkatan lanjut kota berikutnya** | Moda & tujuan belum ditentukan | — | — |
-| | **TOTAL HARI 17** | | **80** | **Rp212.000** |
+| 05:30–06:00 | Sarapan sekitar rumah (berangkat sangat pagi) | ±CNY 15/org | 30 | Rp79.500 |
+| 06:15–07:00 | MRT ke Ningbo Railway Station: Line 8 → transfer Line 2 | ⚠️ kereta pertama Line 8 ±06:00; 9 halte, ¥4/org | 8 | Rp21.200 |
+| 07:30–10:00 | Bus Ningbo South Bus Station → Shipu (Xiangshan) | ±2–2,5 jam, ±CNY 40/org (⚠️ jadwal cek loket) | 80 | Rp212.000 |
+| 10:00–11:30 | Speedboat Shipu → Yushan Islands | Cepat ±1,5 jam, ±¥160/org sekali jalan (⚠️ sumber ¥160–220); booking H-7 lewat WeChat "Xiangshan Shipu Port" | 320 | Rp848.000 |
+| 11:30–14:00 | **Yushan Islands** — pulau karang, mercusuar tua, formasi batu; makan siang seafood di rumah nelayan | Jalan santai; makan ±CNY 50/org (pilih kukus/rebus) | 100 | Rp265.000 |
+| 14:00–15:30 | Speedboat kembali Yushan → Shipu | ⚠️ cek jadwal kapal pulang terakhir sebelum berangkat | 320 | Rp848.000 |
+| 15:30–17:30 | Bus Shipu → Ningbo South Bus Station | ±2–2,5 jam, ±CNY 40/org | 80 | Rp212.000 |
+| 17:30–18:15 | Line 2 → transfer Line 8 kembali ke rumah | 9 halte, ¥4/org | 8 | Rp21.200 |
+| 19:00–20:00 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 21** | | **1.016** | **Rp2.692.400** |
 
-**Plan-B hari ini:** tidak ada destinasi terjadwal, jadi tidak ada risiko — waktu buffer bisa dipakai kalau packing lebih lama dari perkiraan.
+**Plan-B hari ini:** kalau speedboat dibatalkan/penuh — stay di Shipu Ancient Fishing Port (sudah dikunjungi di Hari 17) atau hari santai di rumah.
 
 ---
 
-## Ringkasan Budget Total (2 Orang, 16 Malam di Ningbo)
+## Hari 22 — Sabtu, 31 Oktober (Beilun Port Viewing Deck — Hari Ringan)
 
-⚠️ Angka aktivitas harian di bawah TIDAK termasuk biaya menginap (tempat tinggal pribadi, tidak dihitung) dan tiket kedatangan/kepulangan (moda belum ditentukan, lihat catatan di "Informasi Transportasi").
+Hari terakhir di Ningbo dibuat ringan karena penerbangan pagi besok.
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 08:00–08:30 | Sarapan sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
+| 08:30–09:30 | MRT Line 1 menuju kawasan Beilun | ⚠️ stasiun & transfer belum terverifikasi — cek Amap | 16 | Rp42.400 |
+| 09:30–10:00 | Didi ke area pandang pelabuhan | ⚠️ ±CNY 30, lokasi persis belum terverifikasi | 30 | Rp79.500 |
+| 10:00–12:00 | **Beilun Port Viewing Deck** — melihat kontainer & kapal Ningbo-Zhoushan Port | ⚠️ belum ada dek resmi terverifikasi — kemungkinan area publik informal, gratis | — | — |
+| 12:00–13:00 | Makan siang sekitar Beilun | ±CNY 25/org | 50 | Rp132.500 |
+| 13:00–13:30 | Didi kembali ke stasiun MRT | ⚠️ ±CNY 30 | 30 | Rp79.500 |
+| 13:30–14:30 | MRT Line 1 kembali ke rumah | ⚠️ estimasi | 16 | Rp42.400 |
+| 14:30–17:30 | Packing santai untuk penerbangan besok 08:50 | — | — | — |
+| 18:00–19:00 | Makan malam sekitar rumah | ±CNY 35/org | 70 | Rp185.500 |
+| | **TOTAL HARI 22** | | **242** | **Rp641.300** |
+
+**Plan-B hari ini:** kalau tidak ada spot pandang publik yang layak atau akses ditolak — ganti dengan jalan santai di Yinzhou Park dekat rumah.
+
+---
+
+## Hari 23 — Minggu, 1 November (Kepulangan ke Hong Kong — Pesawat 08:50)
+
+| Jam | Kegiatan | Catatan | CNY | IDR |
+|---|---|---|---|---|
+| 04:45–05:15 | Bangun, cek bagasi & paspor terakhir | — | — | — |
+| 05:15–06:00 | Didi ke Ningbo Lishe International Airport (T2) | ⚠️ ±CNY 70 dari Yinzhou; MRT belum beroperasi jam ini | 70 | Rp185.500 |
+| 06:00–08:20 | Check-in bagasi Hong Kong Express, imigrasi keberangkatan | Tiba ≥2 jam 50 menit sebelum berangkat (rute internasional/HK) | — | — |
+| 08:50 | **Penerbangan UO227** NGB → HKG | Berangkat 08:50 → tiba 11:20; biaya masuk budget Hong Kong | — | — |
+| | **TOTAL HARI 23** | | **70** | **Rp185.500** |
+
+**Plan-B hari ini:** tidak ada destinasi — siapkan Didi ke bandara malam sebelumnya (jarak jauh, jam sangat pagi).
+
+---
+
+## Informasi Penerbangan Pulang
+
+| | |
+|---|---|
+| Rute | NGB Ningbo Lishe (T2) → HKG Hong Kong (T1) |
+| Tanggal | Minggu, 1 November |
+| Maskapai | Hong Kong Express UO227 · Fare Lite (Class W) |
+| Jadwal | Berangkat 08:50 → Tiba 11:20 (nonstop, ±2j30m) |
+
+**Catatan:** tiket sudah didapat pengguna; biaya masuk budget Hong Kong (kota tujuan). Ke bandara pakai Didi (MRT belum beroperasi jam 05:15); ⚠️ estimasi ±CNY 70 dari Yinzhou.
+
+---
+
+## Ringkasan Budget Total (2 Orang, 22 Malam di Ningbo)
+
+⚠️ Angka aktivitas harian di bawah TIDAK termasuk biaya menginap (tempat tinggal pribadi, tidak dihitung). Tiket HSR kedatangan dari Wuxi masuk GRAND TOTAL; tiket pesawat pulang ke Hong Kong masuk budget Hong Kong.
 
 | Hari | CNY | IDR |
 |---|---|---|
-| Hari 1 (14 Okt) | 116 | Rp307.400 |
-| Hari 2 (15 Okt) | 206 | Rp545.900 |
-| Hari 3 (16 Okt) | 238 | Rp630.700 |
-| Hari 4 (17 Okt) | 230 | Rp609.500 |
-| Hari 5 (18 Okt) | 142 | Rp376.300 |
-| Hari 6 (19 Okt) | 166 | Rp439.900 |
-| Hari 7 (20 Okt) | 290 | Rp768.500 |
-| Hari 8 (21 Okt) | 496 | Rp1.314.400 |
-| Hari 9 (22 Okt) | 436 | Rp1.155.400 |
-| Hari 10 (23 Okt) | 256 | Rp678.400 |
-| Hari 11 (24 Okt) | 214 | Rp567.100 |
-| Hari 12 (25 Okt) | 174 | Rp461.100 |
-| Hari 13 (26 Okt) | 346 | Rp916.900 |
-| Hari 14 (27 Okt) | 228 | Rp604.200 |
-| Hari 15 (28 Okt) | 364 | Rp964.600 |
-| Hari 16 (29 Okt) | 188 | Rp498.200 |
-| Hari 17 (30 Okt) | 80 | Rp212.000 |
-| **GRAND TOTAL** | **4.170** | **Rp11.050.500** |
+| Hari 1 (10 Okt) | 146 | Rp386.900 |
+| Hari 2 (11 Okt) | 366 | Rp969.900 |
+| Hari 3 (12 Okt) | 442 | Rp1.171.300 |
+| Hari 4 (13 Okt) | 844 | Rp2.236.600 |
+| Hari 5 (14 Okt) | 668 | Rp1.770.200 |
+| Hari 6 (15 Okt) | 206 | Rp545.900 |
+| Hari 7 (16 Okt) | 238 | Rp630.700 |
+| Hari 8 (17 Okt) | 230 | Rp609.500 |
+| Hari 9 (18 Okt) | 142 | Rp376.300 |
+| Hari 10 (19 Okt) | 166 | Rp439.900 |
+| Hari 11 (20 Okt) | 290 | Rp768.500 |
+| Hari 12 (21 Okt) | 496 | Rp1.314.400 |
+| Hari 13 (22 Okt) | 436 | Rp1.155.400 |
+| Hari 14 (23 Okt) | 256 | Rp678.400 |
+| Hari 15 (24 Okt) | 214 | Rp567.100 |
+| Hari 16 (25 Okt) | 174 | Rp461.100 |
+| Hari 17 (26 Okt) | 346 | Rp916.900 |
+| Hari 18 (27 Okt) | 228 | Rp604.200 |
+| Hari 19 (28 Okt) | 364 | Rp964.600 |
+| Hari 20 (29 Okt) | 188 | Rp498.200 |
+| Hari 21 (30 Okt) | 1.016 | Rp2.692.400 |
+| Hari 22 (31 Okt) | 242 | Rp641.300 |
+| Hari 23 (1 Nov) | 70 | Rp185.500 |
+| **Subtotal aktivitas harian** | **7.768** | **Rp20.585.200** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Tianyi Pavilion, Xikou, Qiantong, Tianfeng Pagoda, Sanjiangkou Cruise, dll) | 1.076 | Rp2.851.400 |
-| Makan (semua hari) | 1.220 | Rp3.233.000 |
-| Transport lokal & antar-kota (MRT, Didi, bus) | 1.874 | Rp4.966.100 |
-| **GRAND TOTAL AKTIVITAS** | **4.170** | **Rp11.050.500** |
+| Tiket masuk (Tianyi Pavilion, Xikou, Qiantong, Tianfeng Pagoda, Sanjiangkou Cruise, Wetland Park, Youngor Zoo, Mount Putuo, Xiangshan Global Studios, dll) | 2.076 | Rp5.501.400 |
+| Makan (semua hari) | 2.110 | Rp5.591.500 |
+| Transport lokal & antar-kota (MRT, Didi, bus, feri/speedboat) | 3.582 | Rp9.492.300 |
+| Tiket HSR kedatangan dari Wuxi (2 org) | 400 | Rp1.060.000 |
+| **GRAND TOTAL** | **8.168** | **Rp21.645.200** |
 
-**Catatan:** Yushan Islands, Mount Putuo/Zhoushan, Xiangshan Global Studios, Youngor Zoo semuanya di Cadangan, jadi TIDAK termasuk di total di atas. Biaya menginap tidak dihitung (properti pribadi). Beberapa harga tiket ditandai ⚠️ estimasi — cek harga aktual di loket/aplikasi resmi sebelum berangkat.
+**Catatan:** Biaya menginap tidak dihitung (properti pribadi). Banyak harga tiket/transport destinasi baru (Cixi Bay, Youngor Zoo, Mount Putuo, Xiangshan, Yushan) ditandai ⚠️ estimasi dari web — cek loket/aplikasi resmi sebelum berangkat.
 
 ---
 
@@ -405,7 +559,7 @@ Hari paling ringan di trip ini — kembali ke kawasan kota lama untuk penutup sa
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — masakan Ningbo relatif ramah kriteria ini (banyak kukus/rebus).
 - **Transportasi:** prioritas MRT (8 jalur aktif); beberapa titik transfer dari Line 8 (stasiun terdekat rumah) ke jalur lain BELUM terverifikasi presisi — cek Amap on-site atau pakai Didi sebagai fallback fleksibel kalau ribet.
 - **Day trip jauh** (Xikou, Qiantong, Hemudu, Xiangshan) semuanya lewat Ningbo South Bus Station — cek jadwal bus aktual di loket H-1 karena beberapa rute belum terverifikasi presisi dari web_search.
-- **17 hari penuh** — kalau di tengah jalan merasa terlalu padat, gunakan Hari 16 (hari santai) atau Plan-B harian sebagai buffer, jangan paksakan semua kalau lelah.
+- **23 hari (22 malam)** — kalau di tengah jalan merasa terlalu padat, gunakan Hari 20 (hari santai) atau Plan-B harian sebagai buffer. Hari panjang: Hari 4 (Mount Putuo) dan Hari 21 (Yushan Islands) sangat bergantung cuaca — boleh dibatalkan jadi hari santai.
 
 ---
 
@@ -435,7 +589,7 @@ Bandara utama: **Ningbo Lishe International Airport (宁波栎社国际机场 ·
 Untuk kunjungan singkat, kawasan **Tianyi Square/Ximenkou** (pusat kota lama, Line 1) atau **Old Bund/Sanjiangkou** (Line 2) paling strategis — dekat mayoritas destinasi utama & jalur MRT. Untuk trip ini, tempat tinggal sudah fixed di **Yinzhou District** (area Taikang Road, anchor Line 8), sedikit lebih jauh dari pusat kota tapi tetap terhubung via transfer Line 8 ke destinasi timur (Dongqian Lake, Ashoka Temple, Tiantong Temple).
 
 ### Destinasi Terkenal Lain di Ningbo
-Di luar itinerary utama: **Mount Putuo (普陀山 · Pǔtuóshān)** — salah satu 4 gunung suci Buddha di China, tapi berada di Zhoushan (kepulauan terpisah, butuh feri, lebih cocok trip tersendiri (lihat Cadangan). **Yushan Islands (渔山列岛 · Yúshān Lièdǎo)** — "No.1 Fishing Site di Asia", remote, butuh feri (lihat Cadangan).
+Di luar itinerary: **Zhaobao Mountain** dan destinasi day-trip lain sudah masuk itinerary. **Mount Putuo (普陀山 · Pǔtuóshān)** (Hari 4) dan **Yushan Islands (渔山列岛 · Yúshān Lièdǎo)** (Hari 21) adalah hari panjang berbasis feri — bisa dibatalkan bila cuaca buruk.
 
 - Video referensi: https://www.youtube.com/results?search_query=top+attractions+Ningbo+China
 
@@ -450,7 +604,7 @@ Hindari taksi jalanan biasa karena kendala bahasa — gunakan Didi (versi intern
 ### Yang Perlu Disiapkan (Khusus China)
 App WeChat Pay/Alipay (tautkan kartu asing) — banyak tempat cashless total. Terjemahan offline (unduh paket bahasa Mandarin di Google Translate). Power bank & adaptor tipe A/I. VPN aktif SEBELUM masuk China kalau butuh akses Google/WhatsApp/Instagram.
 
-## Hari 1 — Rabu, 14 Oktober
+## Hari 1 — Sabtu, 10 Oktober
 
 ### Ningbo Museum (宁波博物馆 · Níngbō Bówùguǎn) ⚠️
 Dirancang oleh arsitek pemenang Pritzker Prize Wang Shu (Amateur Architecture Studio), museum ini terkenal dengan fasad "wa pian qiang" (瓦爿墙) — dinding yang dibangun dari bata & genteng bekas bangunan-bangunan tua yang dibongkar di sekitar Ningbo, sebagai bentuk pelestarian memori kota. Bentuk bangunannya terinspirasi dari lanskap gunung & pola desa tradisional Zhejiang, memenangkan berbagai penghargaan arsitektur internasional sejak dibuka 2008.
@@ -481,7 +635,71 @@ Dijuluki "Central Park"-nya Ningbo — taman kota luas dengan pepohonan rindang,
 - Foto/info: https://en.wikipedia.org/wiki/Yinzhou_District
 - Video referensi: https://www.youtube.com/results?search_query=Yinzhou+Park+Ningbo
 
-## Hari 2 — Kamis, 15 Oktober
+## Hari 2 — Minggu, 11 Oktober
+
+### Cixi Bay Wetland Park (慈溪杭州湾湿地公园 · Cíxī Hángzhōu Wān Shīdì Gōngyuán) ⚠️
+Taman lahan basah luas di pesisir utara Cixi (satu wilayah prefektur Ningbo), terkenal dengan burung migran dan pemandangan Jembatan Teluk Hangzhou — salah satu jembatan lintas laut terpanjang di dunia — dari kejauhan. Resmi bernama Hangzhou Bay National Wetland Park.
+
+⚠️ Nama Hanzi belum diverifikasi Amap.
+
+**Akses:** bus wisata khusus 298 dari Ningbo South Bus Station, atau bus Cixi 299 / Hangzhouwan 107 turun di halte Wetland Park (⚠️ ±1–1,5 jam, belum diverifikasi Amap).
+
+**Jam Operasional:** 08:30–17:00 (April–Oktober), 08:30–16:30 (November–Maret); sebagian sumber 08:00–17:00 dengan masuk terakhir 16:00.
+
+**Tiket:** ±CNY 54–75/org (⚠️ sumber bervariasi).
+
+- Foto/info: https://en.wikipedia.org/wiki/Cixi,_Zhejiang
+- Video referensi: https://www.youtube.com/results?search_query=Cixi+Hangzhou+Bay+Wetland+Park
+
+## Hari 3 — Senin, 12 Oktober
+
+### Youngor Zoo (雅戈尔动物园 · Yǎgēěr Dòngwùyuán) ⚠️
+Kebun binatang safari terbesar di Zhejiang, dikelola grup fashion Youngor — pengunjung bisa naik bus safari melewati area singa, harimau, dan satwa liar lainnya di kawasan luas.
+
+⚠️ Nama Hanzi belum diverifikasi Amap.
+
+**Akses:** bus 106 dari Ningbo Railway Station ke Gerbang Utara; bus 963 dari East Bus Station ke Gerbang Selatan. Alternatif Line 1 ke stasiun terdekat lalu becak listrik ±CNY 30. Belum ada MRT langsung.
+
+**Jam Operasional:** Mei–Oktober 08:00–16:00 (masuk terakhir ±15:30); November–April 08:30–16:30.
+
+**Tiket:** ±CNY 130/org (⚠️ sebagian sumber menyebut ¥170).
+
+- Foto/info: https://govt.chinadaily.com.cn/s/201712/15/WS5cdb651b498e079e68020e4c/ningbo-youngor-zoo.html
+- Video referensi: https://www.youtube.com/results?search_query=Youngor+Zoo+Ningbo
+
+## Hari 4 — Selasa, 13 Oktober
+
+### Mount Putuo (普陀山 · Pǔtuóshān) ✅
+Salah satu dari empat gunung suci Buddha di China (bersama Wutai, Emei, Jiuhua), didedikasikan untuk Bodhisattva Guanyin — pulau ini dipenuhi kuil megah (Puji Temple, Purple Bamboo Grove) dan patung Guanyin Nanhai, tujuan ziarah penting Asia Timur.
+
+✅ Nama Hanzi terverifikasi dari sumber yang konsisten.
+
+**Akses:** dari Ningbo South Bus Station naik bus ke Zhujiajian Wugongzhi Wharf (±2,5 jam, ¥44–47/org, bus 06:30–19:30), lanjut feri ±10 menit ke pulau (¥30–100/org). Speedboat terakhir pulang ±16:40. ⚠️ harga/jadwal dari sumber sebelum 2026.
+
+**Jam Operasional:** ±06:00–17:00 (bervariasi musim).
+
+**Tiket:** ±CNY 160/org masuk pulau + feri terpisah (⚠️ estimasi, cek sumber resmi).
+
+- Foto/info: https://en.wikipedia.org/wiki/Mount_Putuo
+- Video referensi: https://www.youtube.com/results?search_query=Mount+Putuo+Zhoushan
+
+## Hari 5 — Rabu, 14 Oktober
+
+### Xiangshan Global Studios (象山影视城 · Xiàngshān Yǐngshì Chéng) ⚠️
+Taman lokasi syuting yang merekonstruksi arsitektur kuno berbagai dinasti China — set istana, kota kuno, dan kapal perang replika, dipakai untuk syuting ratusan drama & film sejarah; populer bagi penggemar drama China.
+
+⚠️ Nama Hanzi belum diverifikasi Amap.
+
+**Akses:** bus dari Ningbo South Bus Station ke Xiangshan (Dancheng), ±2 jam, ¥38/org, bus 06:50–17:50 tiap ±20 menit; lanjut shuttle Dancheng → Film City (⚠️ jadwal web 08:10, 09:10, 13:00, 14:00) atau Didi.
+
+**Jam Operasional:** 08:00–17:00.
+
+**Tiket:** ±CNY 150/org (⚠️ cek Trip.com).
+
+- Foto/info: https://govt.chinadaily.com.cn/s/201712/15/WS5b78547f498e855160e8d83d/xiangshan-film-and-television-city.html
+- Video referensi: https://www.youtube.com/results?search_query=Xiangshan+Global+Studios+Ningbo
+
+## Hari 6 — Kamis, 15 Oktober
 
 ### Dongqian Lake (东钱湖 · Dōngqián Hú) ✅
 Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di kaki perbukitan timur Ningbo. Selama berabad-abad jadi tempat inspirasi sastrawan & pejabat era Song-Ming, dengan berbagai pulau kecil, causeway, dan kuil kuno tersebar di sekitarnya — sering dijuluki "West Lake versi liar" karena suasananya yang lebih tenang & kurang komersial dibanding Hangzhou.
@@ -496,9 +714,9 @@ Danau air tawar terbesar di Zhejiang, ±3× luas West Lake Hangzhou, terletak di
 
 - Foto/info: https://en.wikipedia.org/wiki/Dongqian_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Dongqian+Lake+Ningbo
-- Rekomendasi tempat sekitar: Xiaoputuo causeway; Fuquan Mountain (lihat Hari 14)
+- Rekomendasi tempat sekitar: Xiaoputuo causeway; Fuquan Mountain (lihat Hari 18)
 
-## Hari 3 — Jumat, 16 Oktober
+## Hari 7 — Jumat, 16 Oktober
 
 ### Ashoka Temple (阿育王寺 · Āyùwáng Sì) ✅
 Kuil berusia lebih dari 1.700 tahun yang menyimpan relik Buddha paling berharga di China — fragmen tulang tengkorak Sakyamuni (pendiri agama Buddha), diklaim dibawa dari India oleh biksu di era Dinasti Jin (280 M). Namanya diambil dari Kaisar Ashoka, penguasa Buddha terkenal dari Kekaisaran Maurya India, dan arsitekturnya memadukan gaya Tang dengan lanskap perbukitan Taibai Mountain di sekelilingnya.
@@ -529,7 +747,7 @@ Salah satu dari sepuluh kuil paling suci sekte Chan (Zen) di China, dibangun tah
 - Foto/info: https://en.wikipedia.org/wiki/Tiantong_Temple
 - Video referensi: https://www.youtube.com/results?search_query=Tiantong+Temple+Ningbo
 
-## Hari 4 — Sabtu, 17 Oktober
+## Hari 8 — Sabtu, 17 Oktober
 
 ### Tianyi Pavilion (天一阁 · Tiānyī Gé) ✅
 Dibangun tahun 1561 oleh Fan Qin, Wakil Menteri Perang Dinasti Ming, sebagai perpustakaan pribadi tertua yang masih berdiri di China — salah satu dari tiga perpustakaan keluarga tertua di dunia. Menyimpan lebih dari 300.000 volume buku kuno (80.000 di antaranya edisi langka), dengan desain arsitektur unik anti-api, anti-lembap, dan anti-serangga yang jadi contoh terbaik arsitektur perpustakaan kuno China.
@@ -560,7 +778,7 @@ Digali sejak era Tang Zhenguan (±1.400 tahun lalu), danau ini jadi pusat akadem
 - Foto/info: https://www.loongwander.com/en-US/article/tianyi-pavilion-and-yuehu-lake-scenic-area
 - Video referensi: https://www.youtube.com/results?search_query=Yuehu+Lake+Ningbo
 
-## Hari 5 — Minggu, 18 Oktober
+## Hari 9 — Minggu, 18 Oktober
 
 ### Old Bund / Laowaitan (老外滩 · Lǎo Wàitān) ✅
 Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertama China yang dibuka untuk perdagangan asing setelah Perang Candu Pertama — lebih tua dari The Bund Shanghai yang lebih terkenal. Arsitektur bergaya Inggris, Jerman, Belanda, dan Prancis masih berdiri, termasuk Gereja Katolik Jiangbei bergaya Gothic, kini jadi kawasan bar & resto trendi tepi sungai.
@@ -586,7 +804,7 @@ Titik pertemuan tiga sungai — Yong, Yao, dan Fenghua — yang secara historis 
 
 **Jam Operasional:** area terbuka 24 jam, gratis.
 
-**Tiket:** Gratis. (Untuk versi malam dengan kapal, lihat Sanjiangkou Night Cruise di Hari 15.)
+**Tiket:** Gratis. (Untuk versi malam dengan kapal, lihat Sanjiangkou Night Cruise di Hari 19.)
 
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo
 - Video referensi: https://www.youtube.com/results?search_query=Sanjiangkou+Ningbo
@@ -605,7 +823,7 @@ Alun-alun pusat kota modern Ningbo, dinamai dari Tianyi Pavilion yang lokasinya 
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo
 - Video referensi: https://www.youtube.com/results?search_query=Tianyi+Square+Ningbo+night
 
-## Hari 6 — Senin, 19 Oktober
+## Hari 10 — Senin, 19 Oktober
 
 ### Nantang Old Street (南塘老街 · Nántáng Lǎojiē) ✅
 Jalan pedestrian sepanjang 500+ meter yang direstorasi dengan mempertahankan arsitektur kuno khas Zhejiang Timur, kini jadi pusat jajanan & suvenir lokal paling populer di Ningbo. Terkenal dengan berbagai jajanan legendaris seperti hairy tofu goreng dan kue beras Ningbo, jalan ini jadi representasi terbaik suasana kota lama yang hidup, bukan sekadar museum terbuka.
@@ -621,7 +839,7 @@ Jalan pedestrian sepanjang 500+ meter yang direstorasi dengan mempertahankan ars
 - Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
 - Video referensi: https://www.youtube.com/results?search_query=Nantang+Old+Street+Ningbo
 
-## Hari 7 — Selasa, 20 Oktober
+## Hari 11 — Selasa, 20 Oktober
 
 ### Baoguo Temple (保国寺 · Bǎoguó Sì) ✅
 Salah satu struktur kayu tertua & paling terjaga di China, berusia lebih dari 1.000 tahun, dibangun TANPA menggunakan satu paku pun — sambungan kayunya murni memakai teknik dougong (bracket) tradisional. Aula utamanya (dibangun 1013, era Song Utara) jadi contoh langka arsitektur kayu era awal yang selamat dari kebakaran & perang selama satu milenium.
@@ -637,7 +855,7 @@ Salah satu struktur kayu tertua & paling terjaga di China, berusia lebih dari 1.
 - Foto/info: https://en.wikipedia.org/wiki/Baoguo_Temple_(Ningbo)
 - Video referensi: https://www.youtube.com/results?search_query=Baoguo+Temple+Ningbo
 
-## Hari 8 — Rabu, 21 Oktober
+## Hari 12 — Rabu, 21 Oktober
 
 ### Xikou Ancient Town (溪口古镇 · Xīkǒu Gǔzhèn) ✅
 Kampung halaman Chiang Kai-shek dan putranya Chiang Ching-kuo — dua tokoh penting Republik China yang kelak memimpin Taiwan. Kota kuno ini menyimpan kediaman keluarga Chiang yang terpelihara baik, termasuk Wenchang Pavilion (perpustakaan pribadi Chiang & istrinya Soong Mei-ling dari era Qing), jadi tujuan ziarah sejarah populer dari seluruh dunia berbahasa Mandarin.
@@ -648,7 +866,7 @@ Kampung halaman Chiang Kai-shek dan putranya Chiang Ching-kuo — dua tokoh pent
 
 **Jam Operasional:** ±08:00–17:00. Tidak ada hari libur rutin.
 
-**Tiket:** ±CNY 120/org untuk tiket kombinasi beberapa titik dalam kawasan (dipakai di tabel Hari 8, ⚠️ estimasi, cek loket) — ATAU paket tur ±CNY 200/org dari beberapa sumber yang sudah termasuk transport; dua opsi berbeda, bukan kontradiksi.
+**Tiket:** ±CNY 120/org untuk tiket kombinasi beberapa titik dalam kawasan (dipakai di tabel Hari 12, ⚠️ estimasi, cek loket) — ATAU paket tur ±CNY 200/org dari beberapa sumber yang sudah termasuk transport; dua opsi berbeda, bukan kontradiksi.
 
 - Foto/info: https://www.topchinatravel.com/china-attractions/xikou-town.htm
 - Video referensi: https://www.youtube.com/results?search_query=Xikou+Ancient+Town+Ningbo
@@ -668,7 +886,7 @@ Terletak di jantung Xuedou Mountain, kuil ini merupakan salah satu dari lima gun
 - Foto/info: https://en.wikipedia.org/wiki/Xuedou_Mountain
 - Video referensi: https://www.youtube.com/results?search_query=Xuedou+Temple+Ningbo
 
-## Hari 9 — Kamis, 22 Oktober
+## Hari 13 — Kamis, 22 Oktober
 
 ### Qiantong Ancient Town (前童古镇 · Qiántóng Gǔzhèn) ✅
 Desa kuno seperti labirin di Ninghai County, dengan tata letak rumah-rumah era Ming-Qing yang saling terhubung lewat gang sempit & kanal air kecil — dijuluki "museum rakyat hidup" karena penduduk lokal masih benar-benar tinggal & beraktivitas sehari-hari di dalamnya, bukan sekadar situs wisata kosong. Terkenal dengan kerajinan tradisional yang masih dipraktikkan warganya, dari pembuatan tahu hingga anyaman bambu.
@@ -684,7 +902,7 @@ Desa kuno seperti labirin di Ninghai County, dengan tata letak rumah-rumah era M
 - Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
 - Video referensi: https://www.youtube.com/results?search_query=Qiantong+Ancient+Town+Ningbo
 
-## Hari 10 — Jumat, 23 Oktober
+## Hari 14 — Jumat, 23 Oktober
 
 ### Hemudu Site Museum (河姆渡遗址博物馆 · Hémǔdù Yízhǐ Bówùguǎn) ✅
 Situs arkeologi Neolitikum berusia 7.000-5.000 tahun dekat Yuyao — salah satu bukti tertua peradaban pertanian padi basah di dunia. Penggalian di sini menemukan tembikar, perkakas tulang, dan struktur rumah panggung kayu yang direkonstruksi skala penuh di museum, memberi gambaran nyata kehidupan manusia prasejarah China Selatan ribuan tahun sebelum Dinasti pertama berdiri.
@@ -700,7 +918,7 @@ Situs arkeologi Neolitikum berusia 7.000-5.000 tahun dekat Yuyao — salah satu 
 - Foto/info: https://en.wikipedia.org/wiki/Hemudu_culture
 - Video referensi: https://www.youtube.com/results?search_query=Hemudu+Site+Museum+Ningbo
 
-## Hari 11 — Sabtu, 24 Oktober
+## Hari 15 — Sabtu, 24 Oktober
 
 ### Cicheng Ancient Town (慈城古镇 · Cíchéng Gǔzhèn) ✅
 Kota kuno terjaga baik di ujung barat Ningbo, pernah jadi pusat administratif county Cixi kuno selama lebih dari 1.000 tahun sebelum pusat pemerintahan dipindah. Arsitektur Ming-Qing-nya termasuk yang paling utuh di Zhejiang Timur, dengan tata kota grid tradisional yang masih terlihat jelas — jadi lokasi syuting populer untuk drama sejarah China.
@@ -716,7 +934,7 @@ Kota kuno terjaga baik di ujung barat Ningbo, pernah jadi pusat administratif co
 - Foto/info: https://en.wikipedia.org/wiki/Ningbo
 - Video referensi: https://www.youtube.com/results?search_query=Cicheng+Ancient+Town+Ningbo
 
-## Hari 12 — Minggu, 25 Oktober
+## Hari 16 — Minggu, 25 Oktober
 
 ### Zhaobao Mountain & Zhenhai Coastal Defense History Memorial Hall (招宝山·镇海口海防历史纪念馆 · Zhāobǎo Shān · Zhènhǎi Kǒu Hǎifáng Lìshǐ Jìniànguǎn) ✅
 Pertahanan pesisir Ningbo bermula sejak tahun 132 M (era Dinasti Han Barat) di kawasan Zhenhaikou ini, menjadikannya salah satu titik strategis militer tertua di China. Memorial hall yang dibangun 1997 ini memaparkan sejarah panjang pertahanan pesisir dari era kuno hingga Perang Candu, sementara Zhaobao Mountain di atasnya menawarkan pemandangan muara sungai & laut yang jadi alasan lokasi ini strategis secara militer.
@@ -725,14 +943,14 @@ Pertahanan pesisir Ningbo bermula sejak tahun 132 M (era Dinasti Han Barat) di k
 
 **Akses:** MRT Line 2, turun Stasiun Zhaobaoshan — akses langsung tanpa transfer jauh.
 
-**Jam Operasional:** ±08:30–16:30. Tutup Senin, kecuali libur nasional — Hari 12 di itinerary ini adalah **Minggu 25 Oktober**, jadi aman.
+**Jam Operasional:** ±08:30–16:30. Tutup Senin, kecuali libur nasional — Hari 16 di itinerary ini adalah **Minggu 25 Oktober**, jadi aman.
 
 **Tiket:** Gratis (museum negeri); naik Zhaobao Mountain gratis.
 
 - Foto/info: https://zh.wikipedia.org/zh-hans/%E9%95%87%E6%B5%B7%E5%8F%A3%E6%B5%B7%E9%98%B2%E9%81%97%E5%9D%80
 - Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Ningbo+coastal+defense
 
-## Hari 13 — Senin, 26 Oktober
+## Hari 17 — Senin, 26 Oktober
 
 ### Shipu Ancient Fishing Port (石浦渔港古城 · Shípǔ Yúgǎng Gǔchéng) ✅
 Salah satu pelabuhan nelayan tertua & terbesar di China, di Xiangshan County — kawasan pesisir ini masih jadi pusat kehidupan nelayan otentik dengan dermaga tua, kuil-kuil nelayan lokal, dan seafood segar langsung dari kapal. Berbeda dari destinasi kota Ningbo lainnya yang lebih historis-formal, Shipu menawarkan suasana laut & budaya maritim yang lebih hidup & sehari-hari.
@@ -748,7 +966,7 @@ Salah satu pelabuhan nelayan tertua & terbesar di China, di Xiangshan County —
 - Foto/info: https://en.wikipedia.org/wiki/Xiangshan_County
 - Video referensi: https://www.youtube.com/results?search_query=Shipu+Ancient+Fishing+Port+Xiangshan
 
-## Hari 14 — Selasa, 27 Oktober
+## Hari 18 — Selasa, 27 Oktober
 
 ### Xiaoputuo (小普陀 · Xiǎo Pǔtuó) ⚠️
 Causeway kecil di Dongqian Lake yang menghubungkan tepi danau dengan pulau mini berisi replika kuil Guanyin — namanya ("Putuo Kecil") merujuk pada Mount Putuo, gunung suci Buddha sesungguhnya yang jauh lebih besar di kepulauan Zhoushan. Jadi spot foto & jalan santai populer bagi warga lokal yang ingin merasakan suasana spiritual tanpa perlu menyeberang ke pulau sungguhan.
@@ -778,7 +996,7 @@ Bukit pemandangan di tepi Dongqian Lake yang menawarkan panorama danau dari keti
 - Foto/info: https://en.wikipedia.org/wiki/Dongqian_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Fuquan+Mountain+Ningbo
 
-## Hari 15 — Rabu, 28 Oktober
+## Hari 19 — Rabu, 28 Oktober
 
 ### Tianfeng Pagoda (天封塔 · Tiānfēng Tǎ) ✅
 Pagoda ikonik di jantung Distrik Haishu, pusat kota lama Ningbo — namanya diambil dari era pembangunannya (Tianfeng, Dinasti Tang, akhir abad ke-7). Meski sudah direnovasi berkali-kali sepanjang sejarah, pagoda ini tetap jadi salah satu landmark paling dikenali kota, terutama saat malam hari ketika lampu-lampunya menyala.
@@ -808,7 +1026,7 @@ Kapal wisata malam yang menyusuri pertemuan tiga sungai (Yong, Yao, Fenghua) dar
 - Foto/info: https://www.dahepiao.com/lvyounews1/20220822292069.html
 - Video referensi: https://www.youtube.com/results?search_query=Sanjiangkou+Night+Cruise+Ningbo
 
-## Hari 16 — Kamis, 29 Oktober
+## Hari 20 — Kamis, 29 Oktober
 
 ### Ningbo City God Temple (府城隍庙 · Fǔ Chénghuáng Miào) ⚠️
 Kuil rakyat bersejarah di pusat kota lama Ningbo, didedikasikan untuk dewa pelindung kota dalam kepercayaan rakyat Tionghoa — arsitekturnya memadukan elemen kuil Tao tradisional dengan ukiran kayu halus khas Zhejiang Timur. Kuil semacam ini biasanya jadi pusat kehidupan komunitas lokal sejak era kekaisaran, tempat warga berdoa untuk keselamatan & kemakmuran kota.
@@ -838,102 +1056,35 @@ Jalan utama pusat kota lama Ningbo, dinamai untuk menghormati Sun Yat-sen (Zhong
 - Foto/info: https://airial.travel/attractions/china/ning-bo-shi/zhongshan-road-ningbo-AOxvots6
 - Video referensi: https://www.youtube.com/results?search_query=Zhongshan+Road+Ningbo
 
-## Cadangan
-
-Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau Anda ingin pertimbangkan sendiri atau untuk kunjungan berikutnya.
-
-### Mount Putuo (普陀山 · Pǔtuóshān) ✅
-Salah satu dari empat gunung suci Buddha di China (bersama Wutai, Emei, Jiuhua), didedikasikan untuk Bodhisattva Guanyin — pulau ini dipenuhi kuil-kuil megah & jadi salah satu tujuan ziarah Buddha paling penting di Asia Timur, menarik jutaan peziarah tiap tahun.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** dari Ningbo, perlu feri/kapal ke Kepulauan Zhoushan (±2-3 jam perjalanan total termasuk transfer), BUKAN day trip yang realistis untuk gaya santai trip ini.
-
-**Jam Operasional:** ±06:00–17:00 (bervariasi per musim).
-
-**Tiket:** ±CNY 160/org (masuk pulau) + biaya kapal terpisah (⚠️ estimasi, cek sumber resmi).
-
-**Kenapa tidak dimasukkan:** perjalanan pulang-pergi + feri makan waktu terlalu banyak untuk day trip — kalau tetap ingin ke sini, sebaiknya dijadikan trip terpisah 2-3 hari (menginap di Zhoushan), bukan disisipkan di itinerary Ningbo ini.
-
-- Foto/info: https://en.wikipedia.org/wiki/Mount_Putuo
-- Video referensi: https://www.youtube.com/results?search_query=Mount+Putuo+Zhoushan
+## Hari 21 — Jumat, 30 Oktober
 
 ### Yushan Islands (渔山列岛 · Yúshān Lièdǎo) ⚠️
-Kepulauan terpencil di tenggara Ningbo, dijuluki "No.1 Fishing Site di Asia" — terkenal dengan mercusuar tua, formasi batu alami, dan fenomena bioluminesensi laut yang kadang muncul di malam tertentu. Kondisinya masih sangat alami & belum terlalu komersial dibanding destinasi pesisir lain.
+Kepulauan karang terpencil di tenggara Ningbo, dijuluki "No.1 Fishing Site di Asia" — terkenal dengan mercusuar tua, formasi batu alami, dan seafood segar di rumah nelayan; masih sangat alami dan belum terlalu komersial. Waktu terbaik: Oktober (musim ikan dibuka September).
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+⚠️ Nama Hanzi belum diverifikasi Amap.
 
-**Akses:** perlu kapal feri dari pelabuhan Shipu/Xiangshan (⚠️ jadwal & durasi belum terverifikasi, kemungkinan ±1-2 jam kapal).
+**Akses:** bus ke Shipu (Xiangshan) ±2–2,5 jam, lalu speedboat dari pelabuhan Shipu ±1,5 jam (kapal lambat ±2,5 jam). Booking H-7 lewat WeChat "Xiangshan Shipu Port" di musim ramai.
 
-**Jam Operasional:** ⚠️ belum ditemukan sumber resmi — kemungkinan tergantung jadwal kapal, bukan jam buka-tutup tetap.
+**Jam Operasional:** mengikuti jadwal kapal, bukan jam buka-tutup tetap (⚠️ cek jadwal pulang terakhir).
 
-**Tiket:** ⚠️ belum ditemukan sumber resmi — kemungkinan termasuk paket tur kapal, cek langsung sebelum berangkat.
+**Tiket:** kapal ±¥160–220/org sekali jalan (⚠️ sumber bervariasi); tiket pulau ⚠️ belum ditemukan.
 
-**Kenapa tidak dimasukkan:** terlalu remote untuk day trip dari Ningbo kota — butuh perjalanan darat ke Xiangshan DULU (sudah jadi 1 hari sendiri di Hari 13) baru lanjut kapal, realistis hanya kalau menginap di Xiangshan/Shipu.
-
-- Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
+- Foto/info: https://www.trip.com/travel-guide/attraction/xiangshan/yushan-island-87960/
 - Video referensi: https://www.youtube.com/results?search_query=Yushan+Islands+Ningbo
 
-### Xiangshan Global Studios (象山影视城 · Xiàngshān Yǐngshì Chéng) ⚠️
-Taman lokasi syuting yang merekonstruksi arsitektur kuno dari berbagai era dinasti China, dipakai untuk syuting ratusan drama & film sejarah China — termasuk set istana, kota kuno, dan kapal perang replika. Populer di kalangan penggemar drama China yang ingin melihat langsung lokasi syuting favoritnya.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** area Xiangshan County, ⚠️ akses spesifik dari Ningbo belum terverifikasi — kemungkinan bus/Didi dari Ningbo South Bus Station.
-
-**Jam Operasional:** ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat.
-
-**Tiket:** ⚠️ belum ditemukan sumber resmi — taman wisata berbayar, kemungkinan cukup mahal untuk skala trip ini.
-
-**Kenapa tidak dimasukkan:** ini murni set/replika buatan untuk syuting, bukan situs bersejarah otentik — Shipu Ancient Fishing Port (Hari 13, satu county yang sama) dinilai lebih otentik & sesuai gaya trip ini yang menghindari atraksi turis buatan.
-
-- Foto/info: https://www.travelchinaguide.com/cityguides/zhejiang/ningbo/things-to-do.htm
-- Video referensi: https://www.youtube.com/results?search_query=Xiangshan+Global+Studios+Ningbo
-
-### Youngor Zoo (雅戈尔动物园 · Yǎgēěr Dòngwùyuán) ⚠️
-Kebun binatang safari terbesar di Zhejiang, dikelola grup fashion Youngor — pengunjung bisa naik bus safari melewati area singa, harimau, dan berbagai satwa liar lainnya dalam kawasan luas.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** ⚠️ belum terverifikasi presisi — kemungkinan Didi dari pusat kota, tidak ada MRT langsung.
-
-**Jam Operasional:** ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat.
-
-**Tiket:** ⚠️ belum ditemukan sumber resmi — kebun binatang berbayar, cek harga terbaru langsung.
-
-**Kenapa tidak dimasukkan:** bukan prioritas trip ini yang fokus ke sejarah/budaya/alam jalan kaki — kebun binatang dengan tiket masuk terpisah kurang sejalan dengan gaya santai & merakyat trip ini.
-
-- Foto/info: https://www.google.com/search?q=Youngor+Zoo+Ningbo
-- Video referensi: https://www.youtube.com/results?search_query=Youngor+Zoo+Ningbo
+## Hari 22 — Sabtu, 31 Oktober
 
 ### Beilun Port Viewing Deck (北仑港观景台 · Běilún Gǎng Guānjǐngtái) ⚠️
-Dek pandang untuk melihat aktivitas salah satu pelabuhan kontainer tersibuk di dunia (Ningbo-Zhoushan Port) — menarik bagi yang penasaran dengan skala industri maritim modern Ningbo, kontras dengan sisi historis kota yang jadi fokus itinerary ini.
+Area pandang untuk melihat aktivitas Ningbo-Zhoushan Port, salah satu pelabuhan kontainer tersibuk di dunia — kontras dengan sisi historis kota. Kemungkinan area publik informal, bukan atraksi wisata formal.
 
-⚠️ Nama Hanzi & keberadaan dek pandang resmi belum diverifikasi langsung — kemungkinan berupa area publik informal, bukan atraksi wisata formal.
+⚠️ Nama Hanzi & keberadaan dek pandang resmi belum diverifikasi. Pandangan pelabuhan formal yang terdokumentasi adalah Zhaobao Mountain (sudah masuk itinerary di Hari 16).
 
-**Akses:** ⚠️ belum terverifikasi presisi — area industri Beilun District, kemungkinan perlu Didi.
+**Akses:** ⚠️ belum terverifikasi — area industri Beilun District, MRT Line 1 lalu Didi.
 
 **Jam Operasional:** ⚠️ belum ditemukan sumber resmi.
 
-**Tiket:** ⚠️ belum ditemukan sumber resmi — kemungkinan gratis (area publik), tapi belum terverifikasi.
-
-**Kenapa tidak dimasukkan:** area industri pelabuhan, bukan kawasan wisata jalan kaki yang nyaman — kurang sesuai gaya santai trip ini, dan aksesnya sendiri belum jelas apakah ada spot pandang publik yang genuinely worth dikunjungi.
+**Tiket:** ⚠️ kemungkinan gratis (area publik), belum terverifikasi.
 
 - Foto/info: https://en.wikipedia.org/wiki/Port_of_Ningbo-Zhoushan
 - Video referensi: https://www.youtube.com/results?search_query=Ningbo+Zhoushan+Port
 
-### Cixi Bay Wetland Park (慈溪杭州湾湿地公园 · Cíxī Hángzhōu Wān Shīdì Gōngyuán) ⚠️
-Taman lahan basah luas di pesisir utara Cixi (kota administratif terpisah dari Ningbo, meski masih satu wilayah prefektur), terkenal dengan populasi burung migran & pemandangan Jembatan Teluk Hangzhou (salah satu jembatan lintas laut terpanjang di dunia saat dibangun) dari kejauhan.
-
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
-
-**Akses:** ⚠️ belum terverifikasi presisi — Cixi adalah kota administratif terpisah dari Ningbo, kemungkinan perlu bus antar-kota ±1-1,5 jam.
-
-**Jam Operasional:** ⚠️ belum ditemukan sumber resmi — cek Amap/Trip.com sebelum berangkat.
-
-**Tiket:** ⚠️ belum ditemukan sumber resmi.
-
-**Kenapa tidak dimasukkan:** Cixi adalah kota administratif terpisah dengan jarak & waktu tempuh signifikan dari Ningbo — dengan 17 hari yang sudah cukup padat dengan day-trip lain (Xikou, Qiantong, Hemudu, Xiangshan), area ini kurang prioritas untuk trip kali ini.
-
-- Foto/info: https://en.wikipedia.org/wiki/Cixi,_Zhejiang
-- Video referensi: https://www.youtube.com/results?search_query=Cixi+Hangzhou+Bay+Wetland+Park

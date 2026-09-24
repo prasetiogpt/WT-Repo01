@@ -8,19 +8,21 @@
 > ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — itinerary 6 hari/5 malam disusun dari nol sebagai **kandidat kota setelah Shenzhen** (belum dikonfirmasi pengguna; urutan kota belum final, file ini sengaja diberi nomor terakhir). Kedatangan mengikuti jadwal aktual pengguna dari Shenzhen (HSR berangkat **13:00** dari Futian, tiba Guangzhou South ±13:45 — jam tiba estimasi), kepulangan default skill **15:00**. Hotel belum ditentukan (hanya direkomendasikan kawasan); harga hotel & tiket HSR kedatangan **ESTIMASI** dan masuk GRAND TOTAL. Kurs: **1 CNY = Rp2.650** (lihat [[exchange-rates]]). Semua rute & jarak antar-titik dari web_search (Amap tidak bisa dipakai di sesi ini), ditandai ⚠️.
 >
 > (2) **2026-09-24 — dipersingkat jadi 3 malam/4 hari (6–9 November) atas keputusan pengguna.** Pengguna menetapkan daftar **Primary** (Beijing Road, Shangxiajiu, Guangzhou Library, Yongqing Fang, Shamian Island, Sun Yat-sen Memorial Hall, Yuexiu Park, Huacheng Square, plus Canton Tower Observation Deck & Pearl River Night Cruise), **Secondary** (Liurong Temple, Haixinsha Island, Sacred Heart Cathedral, Zhenhai Tower, Baiyun Mountain, Dafo Temple), dan **Skip** (Chen Clan Ancestral Hall, Nanyue King Museum, Guangdong Museum, Nanyue King Museum — Palace Site, Foshan Ancestral Temple). **Keputusan tukar:** Canton Tower Observation Deck (berbayar ±CNY 135–228/org) diganti **Haixinsha Island** (gratis, pemandangan menara dari luar) sesuai prinsip "prioritaskan tempat gratis"; **Pearl River Night Cruise dicoret** — cukup jalan-jalan di sekitar Canton Tower. **Dafo Temple** dimasukkan karena berada di dalam kawasan Beijing Road tanpa biaya/transport tambahan. Hari 4 jatuh **Senin**, sehingga diisi Sun Yat-sen Memorial Hall & Yuexiu Park (buka Senin); Sacred Heart Cathedral & Zhenhai Tower tutup Senin. Guangzhou Library ditaruh hari Minggu karena sumber jamnya bertentangan (tutup Senin vs tutup Rabu). Destinasi Skip, Canton Tower Observation Deck, Pearl River Night Cruise, dan sisa Secondary dipindah ke **Cadangan**. GRAND TOTAL ≈1.442 CNY / Rp3.821.300 (dari ≈2.356 CNY / Rp6.243.400 pada draft 5 malam).
+>
+> (3) **2026-09-24 — data pasti dari pengguna:** hotel **Home Inn** (cabang & harga belum diberikan, harga tetap estimasi ¥250/malam); HSR dari Shenzhen berangkat **14:00** (harga ±Rp400.000/2 org, belum dibeli); kepulangan **pesawat CAN → Ningbo 17:00** (tiket ±Rp3.000.000/2 org). Hari 1 digeser 1 jam. Hari 4 diperpanjang: **Liurong Temple dipindah dari Cadangan ke itinerary utama** (ada jeda sebelum bandara), metro ke Bandara Baiyun (⚠️ estimasi ±75 menit) menggantikan metro ke Guangzhou South. GRAND TOTAL ≈1.442 CNY/Rp3.821.300 → **≈1.489 CNY / Rp3.945.700** (Rupiah otoritatif untuk tiket HSR). Kunjungan kedua ke Ningbo setelah Guangzhou belum disusun, jadi tiket pesawatnya belum masuk budget.
 
 ## Informasi Transportasi
 
 | | |
 |---|---|
 | Rute | Shenzhen Futian → Guangzhou South (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
-| Tanggal & Jam Kedatangan | Jumat, 6 November, **±13:45** (HSR berangkat 13:00 dari Futian — jam tiba estimasi, rata-rata tempuh ±30–45 menit) |
+| Tanggal & Jam Kedatangan | Jumat, 6 November, **±14:45** (HSR berangkat 14:00 dari Futian — jam tiba estimasi, rata-rata tempuh ±30–45 menit) |
 | Durasi | ±30–45 menit (⚠️ bergantung nomor kereta yang dibeli) |
-| Tanggal & Jam Kepulangan | Senin, 9 November, **±15:00** (default skill, belum jadwal terkunci), lihat Informasi Transportasi Pulang |
+| Tanggal & Jam Kepulangan | Senin, 9 November, **17:00** — pesawat Guangzhou Baiyun (CAN) → Ningbo (NGB), lihat Informasi Penerbangan Pulang |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** ⚠️ belum ditentukan — pilih & booking sendiri di kawasan **Gongyuanqian / Beijing Road (公园前 / 北京路), Yuexiu District**: pusat kota lama Guangzhou, jalan kaki ke Beijing Road Pedestrian Street & Dafo Temple, dilayani **Line 1 & Line 2 (Gongyuanqian)** dan **Line 6 (Beijing Road)**. Tersambung langsung ke Guangzhou South (Line 2) tanpa transfer dan ke semua kluster itinerary (Xiguan, Yuexiu Park, Zhujiang New Town) dengan 1–2 kali naik. Kabari nama hotel setelah dipilih untuk update rute per-hari (jarak jalan kaki presisi). Pastikan hotel bisa titip bagasi setelah check-out (dibutuhkan Hari 4).
+**Hotel:** **Home Inn (如家 · Rújiā)** — pilihan pengguna (2026-09-24); ⚠️ cabang & alamat belum diberikan, disarankan cabang di kawasan **Gongyuanqian / Beijing Road (公园前 / 北京路), Yuexiu District**: pusat kota lama Guangzhou, jalan kaki ke Beijing Road Pedestrian Street & Dafo Temple, dilayani **Line 1 & Line 2 (Gongyuanqian)** dan **Line 6 (Beijing Road)**. Tersambung langsung ke Guangzhou South (Line 2) tanpa transfer dan ke semua kluster itinerary (Xiguan, Yuexiu Park, Zhujiang New Town) dengan 1–2 kali naik. Kabari cabang Home Inn yang dipilih untuk update rute per-hari (jarak jalan kaki presisi). Pastikan hotel bisa titip bagasi setelah check-out (dibutuhkan Hari 4).
 
 **Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, ±12 halte → Gongyuanqian** (⚠️ jumlah halte & waktu ±30–35 menit dari web_search, belum diverifikasi Amap). Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
 
@@ -45,16 +47,16 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 13:00 | HSR Futian → Guangzhou South | Berangkat dari Shenzhen (biaya di budget kedatangan) | — | — |
-| 13:45–14:30 | Metro ke Gongyuanqian | Guangzhou South → Line 2 arah utara, ±12 halte → Gongyuanqian ⚠️ estimasi ±35 menit, ¥5/org | 10 | Rp26.500 |
-| 14:30–15:30 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
-| 15:45–17:15 | **Beijing Road Pedestrian Street** — jalan santai + reruntuhan jalan kuno 1.000 tahun di bawah kaca | Gratis, jalur datar; jalan kaki dari kawasan hotel ⚠️ | — | — |
-| 17:15–18:00 | **Dafo Temple** | Gratis, di tengah Beijing Road | — | — |
-| 18:00–19:00 | Makan malam sekitar Beijing Road | Cantonese ringan (congee/ikan kukus), ±CNY 30/org | 60 | Rp159.000 |
-| 19:00–20:30 | Jalan santai malam Beijing Road | Gratis, kawasan paling hidup malam hari | — | — |
+| 14:00 | HSR Futian → Guangzhou South | Berangkat dari Shenzhen (biaya di budget kedatangan) | — | — |
+| 14:45–15:30 | Metro ke Gongyuanqian | Guangzhou South → Line 2 arah utara, ±12 halte → Gongyuanqian ⚠️ estimasi ±35 menit, ¥5/org | 10 | Rp26.500 |
+| 15:30–16:30 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
+| 16:45–18:00 | **Beijing Road Pedestrian Street** — jalan santai + reruntuhan jalan kuno 1.000 tahun di bawah kaca | Gratis, jalur datar; jalan kaki dari kawasan hotel ⚠️ | — | — |
+| 18:00–18:30 | **Dafo Temple** | Gratis, di tengah Beijing Road | — | — |
+| 18:30–19:30 | Makan malam sekitar Beijing Road | Cantonese ringan (congee/ikan kukus), ±CNY 30/org | 60 | Rp159.000 |
+| 19:30–20:30 | Jalan santai malam Beijing Road | Gratis, kawasan paling hidup malam hari | — | — |
 | | **TOTAL HARI 1** | | **70** | **Rp185.500** |
 
-**Plan-B hari ini:** kalau masih bertenaga dan ingin tambahan — **Sacred Heart Cathedral** (2 halte Line 6 dari Beijing Road, Jumat buka sore 14:30–17:30, lihat Lampiran → Cadangan).
+**Plan-B hari ini:** kalau kelelahan perjalanan — cukup istirahat di hotel, Beijing Road persis di kawasan penginapan dan gampang disisipkan kapan saja.
 
 ---
 
@@ -100,9 +102,9 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ---
 
-## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park, Checkout, Berangkat)
+## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple, Checkout, Pesawat 17:00)
 
-> **Rute:** Senin — semua tempat pagi ini buka (Memorial Hall & Yuexiu Park). Check-out pagi, titip bagasi, lalu ke Guangzhou South. ⚠️ jumlah halte dari web_search.
+> **Rute:** Senin — semua tempat hari ini buka (Memorial Hall, Yuexiu Park, Liurong Temple). Check-out pagi, titip bagasi, lalu ke Bandara Baiyun (CAN) untuk pesawat 17:00. ⚠️ jumlah halte & waktu ke bandara dari web_search.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -110,60 +112,58 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 08:00–08:30 | Metro ke Sun Yat-sen Memorial Hall | Line 2 dari Gongyuanqian arah utara, ±1 halte → Memorial Hall Exit C, ¥2/org ⚠️ | 4 | Rp10.600 |
 | 08:30–10:00 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
 | 10:00–10:15 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
-| 10:15–11:45 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
-| 11:45–12:15 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 12:15–13:00 | Makan siang, ambil bagasi | ±CNY 30/org | 60 | Rp159.000 |
-| 13:00–13:45 | Metro ke Guangzhou South | Line 2 arah selatan, ±12 halte ⚠️ estimasi ±35 menit, ¥5/org | 10 | Rp26.500 |
-| 13:45–15:00 | Buffer check-in stasiun | Tiba stasiun ≥1 jam sebelum berangkat | — | — |
-| 15:00 | HSR Guangzhou South → kota berikutnya | Tujuan & moda belum ditentukan, lihat Informasi Transportasi Pulang | — | — |
-| | **TOTAL HARI 4** | | **138** | **Rp365.700** |
+| 10:15–11:30 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
+| 11:30–12:00 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
+| 12:00–13:00 | **Liurong Temple** — pagoda bunga & pohon banyan | Jalan ±600–700 m dari Gongyuanqian Exit B ⚠️; tiket ±CNY 15/org (kuil ±¥5 + pagoda ±¥10 ⚠️), buka 08:00–17:00 | 30 | Rp79.500 |
+| 13:00–13:45 | Makan siang, ambil bagasi | ±CNY 30/org | 60 | Rp159.000 |
+| 13:45–15:00 | Metro ke Guangzhou Baiyun International Airport (CAN) | Gongyuanqian → Line 1 ke Tiyu Xilu → Line 3 utara ke Airport South (T1) ⚠️ estimasi ±75 menit, ¥8/org — belum diverifikasi Amap | 16 | Rp42.400 |
+| 15:00–17:00 | Check-in bagasi & tunggu boarding | Tiba bandara ≥2 jam sebelum berangkat | — | — |
+| 17:00 | Pesawat CAN → Ningbo (NGB) | Tiket sudah didapat pengguna, biaya di luar budget Guangzhou (lihat Informasi Penerbangan Pulang) | — | — |
+| | **TOTAL HARI 4** | | **174** | **Rp461.100** |
 
-**Plan-B hari ini:** kalau Memorial Hall/Yuexiu Park terasa cukup lebih cepat — tambah **Liurong Temple & Flower Pagoda** (jalan ±600–700 m dari Gongyuanqian, lihat Lampiran → Cadangan).
-
+**Plan-B hari ini:** kalau tenaga kurang atau waktu ke bandara mepet — lewati Liurong Temple, santai makan siang di dekat hotel lalu berangkat ke bandara lebih awal.
 ---
 
-## Informasi Transportasi Pulang
+## Informasi Penerbangan Pulang
 
 | | |
 |---|---|
-| Kota berikutnya | Belum ditentukan |
-| Opsi 1 | HSR dari **Guangzhou South (Guangzhounan)** ±15:00, tujuan & durasi menyesuaikan kota berikutnya. Jadwal & harga belum ditentukan. |
-| Tag | Belum pasti |
+| Rute | CAN Guangzhou Baiyun → NGB Ningbo Lishe |
+| Tanggal | Senin, 9 November |
+| Jadwal | Berangkat 17:00 → Tiba 19:00 (estimasi ±2 jam, ⚠️ jam tiba belum dari tiket) |
 
-**Catatan:** karena kota berikutnya belum final, biaya HSR keberangkatan ini TIDAK dihitung di Ringkasan Budget Total Guangzhou — akan masuk budget kota berikutnya begitu rute final.
-
+**Catatan:** tiket sudah diberikan pengguna; biaya belum masuk budget kota manapun karena kunjungan kedua ke Ningbo belum disusun (lihat catatan di Ringkasan Budget Total).
 ---
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Guangzhou)
 
-Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall (±CNY 10/org).
+Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall dan Liurong Temple (±CNY 10–15/org).
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
 | Hari 2 | 168 | Rp445.200 |
 | Hari 3 | 176 | Rp466.400 |
-| Hari 4 | 138 | Rp365.700 |
-| **Subtotal aktivitas harian** | **552** | **Rp1.462.800** |
+| Hari 4 | 174 | Rp461.100 |
+| **Subtotal aktivitas harian** | **588** | **Rp1.558.200** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Sun Yat-sen Memorial Hall) | 20 | Rp53.000 |
+| Tiket masuk (Sun Yat-sen Memorial Hall, Liurong Temple) | 50 | Rp132.500 |
 | Makan (semua hari, 10x makan) | 480 | Rp1.272.000 |
-| Transport lokal (metro) | 52 | Rp137.800 |
-| Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈140 | Rp371.000 |
-| Hotel (3 malam, kawasan Gongyuanqian/Beijing Road) ⚠️ Estimasi | ≈750 | Rp1.987.500 |
-| **GRAND TOTAL** | **≈1.442** | **Rp3.821.300** |
+| Transport lokal (metro) | 58 | Rp153.700 |
+| Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈151 | Rp400.000 |
+| Hotel (3 malam, Home Inn) ⚠️ Estimasi | ≈750 | Rp1.987.500 |
+| **GRAND TOTAL** | **≈1.489** | **Rp3.945.700** |
 
-**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam kawasan Yuexiu, belum ada booking) dan tiket HSR (asumsi ±CNY 70/org, kisaran ¥54–83) masih estimasi — GRAND TOTAL akan berubah begitu ada angka pasti. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
-
+**Catatan:** Beijing Road, Dafo Temple, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel (asumsi ±CNY 250/malam untuk Home Inn kawasan Yuexiu, belum ada booking/harga cabang) masih estimasi. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli, banyak pilihan kereta). **Tiket pesawat CAN → Ningbo (±Rp3.000.000/2 org, dari pengguna) belum masuk budget kota manapun** — Ningbo kunjungan kedua belum disusun. Semua waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya
 
 - **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Zhenhai Tower dan Baiyun Mountain (Cadangan) yang menanjak sengaja tidak masuk itinerary utama. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — pilih congee, dim sum kukus, sup, ikan/ayam kukus, bubur; hindari roast goose berminyak, claypot pedas, dan gorengan.
-- **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu — jangan geser Hari 4 ke destinasi yang tutup Senin.
+- **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu. Pesawat 17:00 dari Baiyun (jauh dari kota, ±75 menit): berangkat dari hotel paling lambat 13:45.
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.
 - **VPN:** diperlukan untuk akses Google/WhatsApp/Instagram.
 
@@ -356,6 +356,20 @@ Taman kota terbesar di pusat Guangzhou (±86 hektare) di lereng Bukit Yuexiu —
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/yuexiu.htm
 - Video referensi: https://www.youtube.com/results?search_query=Yuexiu+Park+Guangzhou
 
+### Liurong Temple (六榕寺 · Liùróng Sì) ✅
+Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sisi — namanya dari enam pohon banyan yang dulu tumbuh di halaman; salah satu situs Buddha tertua Guangzhou.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Gongyuanqian (Line 1/2), Exit B, jalan ±600–700 m ke No. 87 Liurong Road ⚠️.
+
+**Jam Operasional:** 08:00–17:00 (⚠️ sebagian sumber menyebut 17:30).
+
+**Tiket:** ±CNY 15/org ⚠️ (kuil ±¥5 + pagoda ±¥10, bervariasi per pintu masuk).
+
+- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
+- Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
+
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary utama — alasannya ditulis di masing-masing uraian.
@@ -371,9 +385,7 @@ Katedral Katolik bergaya Gothic yang seluruhnya dibangun dari granit (1863–188
 
 **Tiket:** Gratis.
 
-**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — tidak searah kluster manapun, dan Hari 4 (Senin) tutup. Cocok jadi Plan-B kalau masih bertenaga di Hari 1 sore (Jumat buka 14:30–17:30).
-
-**Terkait:** Hari 1
+**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — tidak searah kluster manapun, Hari 4 (Senin) tutup, dan Hari 1 tiba sore (Jumat buka 14:30–17:30, sisa waktu terlalu sempit).
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/sacred-heart-cathedral.htm
 - Video referensi: https://www.youtube.com/results?search_query=Sacred+Heart+Cathedral+Guangzhou
@@ -395,24 +407,6 @@ Pelayaran malam di Sungai Mutiara melewati skyline Zhujiang New Town, Canton Tow
 
 - Foto/info: https://www.trip.com/travel-guide/attraction/guangzhou/pearl-river-night-cruise-tianzi-pier-10758762/
 - Video referensi: https://www.youtube.com/results?search_query=Pearl+River+Night+Cruise+Guangzhou
-
-### Liurong Temple (六榕寺 · Liùróng Sì) ✅
-Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sisi — namanya dari enam pohon banyan yang dulu tumbuh di halaman; salah satu situs Buddha tertua Guangzhou.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Gongyuanqian (Line 1/2), Exit B, jalan ±600–700 m ke No. 87 Liurong Road ⚠️.
-
-**Jam Operasional:** 08:00–17:00 (⚠️ sebagian sumber menyebut 17:30).
-
-**Tiket:** ±CNY 15/org ⚠️ (kuil ±¥5 + pagoda ±¥10, bervariasi per pintu masuk).
-
-**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — Hari 4 sudah berisi Memorial Hall & Yuexiu Park sebelum berangkat 15:00, jadi cocok hanya sebagai tambahan kalau waktu longgar.
-
-**Terkait:** Hari 4
-
-- Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
-- Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
 
 ### Zhenhai Tower (镇海楼 · Zhènhǎi Lóu) ✅
 Menara lima lantai era Ming (1380) di puncak Yuexiu Hill, kini Guangzhou Museum — memajang sejarah kota dan pemandangan kota dari atas, ikon Yuexiu Park.
