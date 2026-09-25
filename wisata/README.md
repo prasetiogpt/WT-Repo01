@@ -13,7 +13,6 @@ wisata/
   china/
     Itinerary/*.md
     Wisata.html          <- output generator, khusus punya negara ini
-    sync-from-git-to-drive.bat
     README.md
   <negara-lain>/
     Itinerary/*.md
@@ -48,8 +47,8 @@ catatan itinerary — sekarang bisa diakses siapa saja, bukan cuma private.
 
 ## Kalau Google Drive tidak bisa diakses (environment remote/cloud)
 
-`sync-from-git-to-drive.bat` cuma jalan di laptop (butuh mount Drive lokal) — di environment
-remote/cloud (mis. Claude Code on the web) Drive-nya memang tidak ter-mount, jadi skrip itu tidak
+Sync ke Drive hanya bisa dari laptop (butuh mount Drive lokal) dan dikerjakan lewat Claude di sesi — di environment
+remote/cloud (mis. Claude Code on the web) Drive-nya memang tidak ter-mount, jadi tidak
 bisa dijalankan. **Wajib** di kondisi ini, setelah commit+push seperti biasa: kirim file
 `Wisata.html` yang baru di-regenerate langsung ke pengguna via tool pengiriman file (mis.
 `SendUserFile`), supaya pengguna tetap bisa lihat/pakai hasilnya tanpa perlu buka Drive dulu.

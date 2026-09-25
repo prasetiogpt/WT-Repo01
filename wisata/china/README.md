@@ -25,14 +25,7 @@ di branch terpisah, WAJIB tambahan langkah merge/fast-forward branch itu ke `mai
   jalankan `py ../HTML-Wisata/generate_wisata.py china` (dari folder ini) untuk regenerate
   `Wisata.html`, lalu commit+push ke GitHub — **pastikan sampai di `main`** (lihat paragraf di
   atas). **Jangan edit langsung di Drive** — supaya tidak ada dua versi yang beda.
-- Di laptop (kalau perlu edit manual atau pakai `../HTML-Wisata/Update Wisata.bat`): jalankan
-  `git pull` dulu di folder repo (bukan di Drive — generate selalu dari clone repo, Drive cuma
-  tujuan sync satu arah), edit/generate dari situ, lalu commit+push. Setelah itu jalankan
-  `sync-from-git-to-drive.bat` untuk menyalin versi terbaru dari Git ke folder Drive supaya Drive
-  ikut ter-update (buat dibuka/dilihat saja, bukan buat diedit).
-- `sync-from-git-to-drive.bat` otomatis `git pull` lalu copy `Itinerary/*.md` dan `Wisata.html`
-  terbaru dari repo ke folder Drive — jalankan ini di laptop kapan pun sebelum mau lihat versi
-  terbaru di Drive.
+- Sync ke Drive: dikerjakan lewat Claude di sesi (salin `Itinerary/*.md`, `Itinerary/Draft Kota/*.md`, `Wisata.html`, `Wisata Draft.html` ke Drive lalu cek sama dengan git). Tidak ada skrip `.bat` untuk ini. Drive hanya mirror view-only — jangan edit di Drive.
 
 **Struktur:**
 ```
@@ -47,8 +40,7 @@ wisata/china/
     7 Xiamen.md
     8 Fuzhou.md
   Wisata.html            <- output generator (generator-nya sendiri ada di ../HTML-Wisata/, shared)
-  sync-from-git-to-drive.bat
-  Update Semua (Generate + Push + Sync ke Drive).bat
+  Wisata Draft.html      <- kota cadangan (Itinerary/Draft Kota/), generator: py generate_wisata.py china draft
   README.md   (file ini)
 ```
 
