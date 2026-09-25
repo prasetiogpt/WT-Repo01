@@ -20,6 +20,8 @@
 > (8) **2026-09-25 — Canton Tower & Pearl River dimasukkan sebagai destinasi (tanpa naik):** sesuai keputusan pengguna, **Canton Tower Observation Deck** dan **Pearl River Night Cruise** masuk itinerary Hari 3 hanya untuk **menikmati pemandangan dari sekitar** (tidak naik dek, tidak naik kapal) — dipindah dari Cadangan ke Lampiran Hari 3. Tambah 1 leg APM/Line 3 Haixinsha → Canton Tower (¥2/org ⚠️). Hari 3 136→140 CNY, GRAND TOTAL ≈1.627 → **≈1.631 CNY / Rp4.322.188**.
 >
 > (9) **2026-09-25 — Hari 4 diisi penuh sampai malam (sesuai aturan skill, hari penuh ±08:00–20:00):** sebelumnya Hari 4 selesai jam 15:30 (terlalu cepat). **Baiyun Mountain** (opsi dari pengguna) dipindah dari Cadangan ke Hari 4 sore — naik kereta gantung ke Summit Square (datar, tanpa mendaki), 16:15–17:45, pulang & makan malam 19:30. Hari 4 178→302 CNY (tiket masuk+kereta gantung 100, transport 24). GRAND TOTAL ≈1.631 → **≈1.755 CNY / Rp4.650.788**. ⚠️ Rute ke Baiyun belum di-Amap-kan.
+>
+> (10) **2026-09-25 — Hari 4 sore diganti (pilihan pengguna):** Baiyun Mountain (tiket masuk + kereta gantung ±¥50/org, mahal, jauh) dikembalikan ke Cadangan; diganti **Chen Clan Ancestral Hall** (dari Cadangan, ¥10/org, Line 1 searah Xiguan, buka Senin) + **Liwan Lake Park** (destinasi baru, gratis, dari web ⚠️ belum Amap). Sore tetap penuh sampai 20:30. Hari 4 302→220 CNY. GRAND TOTAL ≈1.755 → **≈1.673 CNY / Rp4.433.488**.
 
 ## Informasi Transportasi
 
@@ -116,9 +118,9 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ---
 
-## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple → Baiyun Mountain)
+## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple → Chen Clan → Liwan Lake Park)
 
-> **Rute:** Senin — semua tempat hari ini buka; Sacred Heart Cathedral dan Zhenhai Tower tutup Senin. Sore ke Baiyun Mountain naik kereta gantung (bukan mendaki), pulang malam. ⚠️ rute ke Baiyun dari web_search, belum Amap.
+> **Rute:** Senin — semua tempat hari ini buka; Sacred Heart Cathedral dan Zhenhai Tower tutup Senin. Sore ke arah Xiguan lewat Line 1 (Chen Clan), lanjut Liwan Lake Park, makan malam di Xiguan. ⚠️ jarak antar-titik sore dari web_search.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -130,13 +132,15 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 12:15–12:45 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
 | 12:45–13:45 | Makan siang sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
 | 14:00–15:00 | **Liurong Temple** — pagoda bunga & pohon banyan | Jalan ±600–700 m dari Gongyuanqian Exit B ⚠️; tiket ±CNY 15/org (kuil ±¥5 + pagoda ±¥10 ⚠️), buka 08:00–17:00 | 30 | Rp79.500 |
-| 15:00–16:15 | Metro + bus ke Baiyun Mountain | Line 2 ke Baiyun Culture Square Exit B, lanjut bus Guang 424 ke West Gate (jalan ±150 m) ⚠️ estimasi ±75 menit, ±¥6/org — belum diverifikasi Amap | 12 | Rp31.800 |
-| 16:15–17:45 | **Baiyun Mountain** — kereta gantung ke Summit Square, menikmati pemandangan kota & sunset | Tiket masuk ±CNY 5/org + kereta gantung ±¥25 naik / ¥20 turun per orang ⚠️. Kereta gantung 09:00–18:00 — turun paling lambat ±17:45. Plaza puncak datar; **tidak mendaki Moxing Peak** (tangga) | 100 | Rp265.000 |
-| 17:45–19:15 | Bus + metro kembali ke Gongyuanqian, jalan ke hotel | ⚠️ estimasi ±75 menit, ±¥6/org; lalu jalan 270m/±5 menit ke hotel | 12 | Rp31.800 |
-| 19:30–20:30 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 4** | | **302** | **Rp800.300** |
+| 15:00–15:30 | Metro Line 1 ke Chen Clan Academy | Dari Gongyuanqian arah barat, ±2 halte → Chen Clan Academy Exit D (langsung di pintu masuk), ¥2/org ⚠️ | 4 | Rp10.600 |
+| 15:30–17:00 | **Chen Clan Ancestral Hall** — arsitektur Lingnan, ukiran kayu/batu/keramik | Tiket ±CNY 10/org, buka 08:30–17:30 (masuk terakhir 17:00) ⚠️ konfirmasi buka Senin | 20 | Rp53.000 |
+| 17:00–17:30 | Sepeda bike-share/jalan ke Liwan Lake Park | ⚠️ ±1,5–2 km, jalur datar; jarak persis belum diverifikasi (alternatif Didi singkat) | 10 | Rp26.500 |
+| 17:30–18:45 | **Liwan Lake Park** — taman air gaya Xiguan, sore hari | Gratis, buka 06:00–22:30; Line 5 Zhongshanba (Exit A ±300 m) atau Line 6 Ruyifang ⚠️ | — | — |
+| 18:45–19:45 | Makan malam sekitar Xiguan (Pantang/Yongqing Fang) | ±CNY 30/org | 60 | Rp159.000 |
+| 19:45–20:30 | Metro kembali ke Gongyuanqian, jalan ke hotel | ⚠️ estimasi ±40–45 menit, ¥4/org; lalu jalan 270m/±5 menit ke hotel | 8 | Rp21.200 |
+| | **TOTAL HARI 4** | | **220** | **Rp583.000** |
 
-**Plan-B hari ini:** kalau tenaga kurang, berkabut/hujan, atau kereta gantung tutup karena angin — lewati Baiyun Mountain, santai di hotel atau jalan ringan di Beijing Road.
+**Plan-B hari ini:** kalau tenaga kurang — lewati Liwan Lake Park, pulang setelah Chen Clan dan makan malam dekat hotel.
 ---
 
 ## Hari 5 — Selasa, 10 November (Check-out, Pesawat 12:15)
@@ -168,32 +172,32 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ## Ringkasan Budget Total (2 Orang, 4 Malam / 5 Hari di Guangzhou)
 
-Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall, Liurong Temple, dan Baiyun Mountain (masuk + kereta gantung).
+Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall, Liurong Temple, dan Chen Clan Ancestral Hall (±CNY 10–15/org).
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
 | Hari 2 | 128 | Rp339.200 |
 | Hari 3 | 140 | Rp371.000 |
-| Hari 4 | 302 | Rp800.300 |
+| Hari 4 | 220 | Rp583.000 |
 | Hari 5 | 100 | Rp265.000 |
-| **Subtotal aktivitas harian** | **740** | **Rp1.961.000** |
+| **Subtotal aktivitas harian** | **658** | **Rp1.743.700** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Memorial Hall, Liurong Temple, Baiyun Mountain + kereta gantung) | 150 | Rp397.500 |
+| Tiket masuk (Memorial Hall, Liurong Temple, Chen Clan Ancestral Hall) | 70 | Rp185.500 |
 | Makan (7x makan; sarapan sudah termasuk kamar) | 420 | Rp1.113.000 |
-| Transport lokal (metro, bus, APM, Didi ke bandara) | 170 | Rp450.500 |
+| Transport lokal (metro, APM, sepeda, Didi ke bandara) | 168 | Rp445.200 |
 | Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈151 | Rp400.000 |
 | Hotel (4 malam, Homeinn · neo, sarapan termasuk) ⚠️ Harga kutipan Trip.com | ≈864 | Rp2.289.788 |
-| **GRAND TOTAL** | **≈1.755** | **Rp4.650.788** |
+| **GRAND TOTAL** | **≈1.673** | **Rp4.433.488** |
 
 **Catatan:** Beijing Road, Dafo Temple, Sacred Heart Cathedral, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel = kutipan Trip.com 4 malam (6–10 Nov, sarapan termasuk, gratis pembatalan) Rp2.289.788 — harga bisa berubah sebelum booking. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Baiyun Mountain hanya naik kereta gantung ke Summit Square (datar), tanpa mendaki Moxing Peak; Zhenhai Tower (Cadangan) yang menanjak sengaja tidak masuk. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
+- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Baiyun Mountain dan Zhenhai Tower (Cadangan) yang menanjak/mahal sengaja tidak masuk itinerary utama. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — pilih congee, dim sum kukus, sup, ikan/ayam kukus, bubur; hindari roast goose berminyak, claypot pedas, dan gorengan.
 - **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu (Sacred Heart di Sabtu). **Hari 5 (Selasa):** pesawat 12:15 dari Bandara Baiyun — berangkat dari hotel ±09:00 dengan Didi (±29 menit), tiba bandara ≥2 jam sebelum berangkat.
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.
@@ -444,19 +448,33 @@ Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sis
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
 - Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
 
-### Baiyun Mountain (白云山 · Báiyún Shān) ✅
-Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru kota" dengan jalur pendakian, taman, dan kereta gantung; populer untuk pemandangan kota dari atas.
+### Chen Clan Ancestral Hall (陈家祠 · Chénjiā Cí) ✅
+Kompleks aula leluhur marga Chen yang dibangun 1888–1894 — mahakarya arsitektur Lingnan dengan ukiran kayu, batu, keramik, dan plester berwarna, kini juga jadi Guangdong Folk Art Museum.
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** MTR Line 2 ke Baiyun Culture Square Exit B lalu bus Guang 424 ke West Gate (jalan ±150 m), atau Line 2/3 ke Yuntai Garden — ⚠️ belum diverifikasi Amap. Dari Summit Square (kereta gantung) plaza datar; jangan mendaki Moxing Peak (tangga).
+**Akses:** MTR Chen Clan Academy (陈家祠站), Line 1 Exit D atau Line 8 Exit E, langsung di depan pintu masuk.
 
-**Jam Operasional:** taman 06:00–21:00; kereta gantung 09:00–18:00.
+**Jam Operasional:** 08:30–17:30 (masuk terakhir 17:00).
 
-**Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
+**Tiket:** ±CNY 10/org.
 
-- Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
-- Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou
+- Foto/info: https://en.wikipedia.org/wiki/Chen_Clan_Ancestral_Hall
+- Video referensi: https://www.youtube.com/results?search_query=Chen+Clan+Ancestral+Hall+Guangzhou
+
+### Liwan Lake Park (荔湾湖公园 · Lìwān Hú Gōngyuán) ✅
+Taman air di jantung Xiguan (Distrik Liwan) — danau, jembatan batu, paviliun, dan rumah-rumah gaya Lingnan di tepi air, sering disebut "kota air Lingnan"; salah satu ruang santai warga Xiguan dan pas untuk jalan sore.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** No. 155 Longjin West Road, Liwan District. MTR Line 5 Zhongshanba (Exit A, ±300 m) atau Line 6 Ruyifang ⚠️ belum diverifikasi Amap. Dari Chen Clan Academy ±1,5–2 km (⚠️ sepeda/jalan datar atau Didi singkat).
+
+**Jam Operasional:** 06:00–22:30 setiap hari.
+
+**Tiket:** Gratis (perahu/wahana tertentu di dalam berbayar terpisah, tidak dipakai).
+
+- Foto/info: https://us.trip.com/travel-guide/attraction/guangzhou/liwan-lake-park-83765/
+- Video referensi: https://www.youtube.com/results?search_query=Liwan+Lake+Park+Guangzhou
 
 ## Cadangan
 
@@ -477,22 +495,6 @@ Menara lima lantai era Ming (1380) di puncak Yuexiu Hill, kini Guangzhou Museum 
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/museum.htm
 - Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Tower+Guangzhou
-
-### Chen Clan Ancestral Hall (陈家祠 · Chénjiā Cí) ✅
-Kompleks aula leluhur marga Chen yang dibangun 1888–1894 — mahakarya arsitektur Lingnan dengan ukiran kayu, batu, keramik, dan plester berwarna, kini juga jadi Guangdong Folk Art Museum.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Chen Clan Academy (陈家祠站), Line 1 Exit D atau Line 8 Exit E, langsung di depan pintu masuk.
-
-**Jam Operasional:** 08:30–17:30 (masuk terakhir 17:00).
-
-**Tiket:** ±CNY 10/org.
-
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; sebenarnya searah Line 1 menuju Huangsha di Hari 2 kalau kelak berubah pikiran.
-
-- Foto/info: https://en.wikipedia.org/wiki/Chen_Clan_Ancestral_Hall
-- Video referensi: https://www.youtube.com/results?search_query=Chen+Clan+Ancestral+Hall+Guangzhou
 
 ### Nanyue King Museum (西汉南越王博物馆 · Xīhàn Nányuèwáng Bówùguǎn) ✅
 Museum di atas makam Raja Wen dari Kerajaan Nanyue (±122 SM), ditemukan 1983 — koleksi jubah giok berbenang sutra, cap emas, dan lebih dari 1.000 artefak; museum nasional kelas satu.
@@ -557,6 +559,22 @@ Kuil Taois dari abad ke-11 di kota tetangga Foshan — kompleks kuil dengan ukir
 
 - Foto/info: https://www.topchinatravel.com/china-attractions/foshan-ancestral-temple.htm
 - Video referensi: https://www.youtube.com/results?search_query=Foshan+Ancestral+Temple
+
+### Baiyun Mountain (白云山 · Báiyún Shān) ✅
+Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru kota" dengan jalur pendakian, taman, dan kereta gantung; populer untuk pemandangan kota dari atas.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Line 2 ke Baiyun Culture Square Exit B lalu bus Guang 424 ke West Gate (jalan ±150 m), atau Line 2/3 ke Yuntai Garden — ⚠️ belum diverifikasi Amap. Dari Summit Square (kereta gantung) plaza datar; jangan mendaki Moxing Peak (tangga).
+
+**Jam Operasional:** taman 06:00–21:00; kereta gantung 09:00–18:00.
+
+**Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
+
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-25)** — tiket masuk + kereta gantung ±CNY 50/org (±Rp265.000/2 org) tergolong mahal, ±75 menit sekali jalan, dan Chen Clan + Liwan Lake Park (gratis/murah, searah Xiguan) lebih sesuai prioritas tempat gratis; medan menanjak kurang cocok untuk lutut.
+
+- Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
+- Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou
 
 ---
 
