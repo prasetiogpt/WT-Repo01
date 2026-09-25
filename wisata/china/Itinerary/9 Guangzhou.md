@@ -24,6 +24,8 @@
 > (10) **2026-09-25 — Hari 4 sore diganti (pilihan pengguna):** Baiyun Mountain (tiket masuk + kereta gantung ±¥50/org, mahal, jauh) dikembalikan ke Cadangan; diganti **Chen Clan Ancestral Hall** (dari Cadangan, ¥10/org, Line 1 searah Xiguan, buka Senin) + **Liwan Lake Park** (destinasi baru, gratis, dari web ⚠️ belum Amap). Sore tetap penuh sampai 20:30. Hari 4 302→220 CNY. GRAND TOTAL ≈1.755 → **≈1.673 CNY / Rp4.433.488**.
 >
 > (11) **2026-09-25 — Hari 3 ditambah 3 destinasi & dipadatkan (permintaan pengguna):** **Haixin Bridge** (jembatan pejalan kaki lintas Sungai Mutiara ke Canton Tower), **Tianhe Shopping Area**, dan **Parc Central** (mal — hanya lihat-lihat & makan malam, bukan sesi belanja; permintaan eksplisit pengguna meski skill umumnya menghindari mal). Urutan: Library → Huacheng Square → Haixinsha → Haixin Bridge → Canton Tower (siang) → Line 3 ke Tiyu Xilu → Tianhe → Parc Central + makan malam → kembali ke Canton Tower untuk Sungai Mutiara berlampu → pulang ±20:50. Leg APM Haixinsha→Canton Tower diganti jalan kaki via Haixin Bridge; tambah 2 leg Line 3 (Canton Tower↔Tiyu Xilu, ¥2/org ⚠️). Hari 3 140→144 CNY. GRAND TOTAL ≈1.673 → **≈1.677 CNY / Rp4.444.088**.
+>
+> (12) **2026-09-25 — Hari 3 dibuat fleksibel (permintaan pengguna, hanya Hari 3):** jadwal padat belum tentu terjalani, jadi jam dijadikan patokan; tiap titik diberi rentang waktu dan tanda "boleh dipersingkat, lanjut ke titik terdekat berikutnya"; ditambah urutan lompatan dan daftar titik yang boleh dilewati (Haixinsha, Tianhe/Parc Central, Sungai Mutiara malam). Isi destinasi & budget tidak berubah (Hari 3 144 CNY, GRAND TOTAL ≈1.677 CNY / Rp4.444.088).
 
 ## Informasi Transportasi
 
@@ -99,28 +101,28 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ## Hari 3 — Minggu, 8 November (Zhujiang New Town & Tianhe: Library → Huacheng Square → Haixinsha → Haixin Bridge → Canton Tower → Tianhe → Parc Central → Sungai Mutiara Malam)
 
-> **Rute:** siang di Zhujiang New Town (jalan kaki gratis), sore ke kawasan mal Tianhe lewat Line 3 (lihat-lihat, bukan belanja), malam kembali ke Canton Tower menikmati Sungai Mutiara berlampu tanpa naik dek/kapal. Hari padat — ⚠️ total waktu & transfer belum diverifikasi Amap.
+> **Rute (fleksibel):** jam di bawah hanya patokan, bukan kewajiban — tiap titik boleh dipersingkat, lalu lanjut ke titik terdekat berikutnya. **Urutan lompatan:** Library → Huacheng Square → Haixinsha → Haixin Bridge → Canton Tower → (Line 3) Tianhe → Parc Central → Sungai Mutiara malam. **Boleh dilewati kalau lelah:** Haixinsha, Tianhe/Parc Central, Sungai Mutiara malam. Mal hanya untuk lihat-lihat dan makan malam, bukan belanja. ⚠️ total waktu & transfer belum diverifikasi Amap.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan buffet di hotel | Sudah termasuk harga kamar | — | — |
 | 08:20–09:15 | Jalan ke Gongyuanqian, metro ke Zhujiang New Town | Jalan 270m/±5 menit ke Exit I2, lalu 1 transfer ke Line 3 atau Line 5 ⚠️ estimasi ±45 menit, ¥4/org | 8 | Rp21.200 |
-| 09:15–10:15 | **Guangzhou Library** — perpustakaan modern 11,8 juta koleksi | Gratis, No. 4 Zhujiang East Road, buka Selasa–Minggu 09:00–21:00 ⚠️ (sumber bertentangan soal hari tutup, Minggu aman) | — | — |
-| 10:15–10:45 | **Huacheng Square** — plaza kota terbesar Guangzhou | Gratis, jalur datar, sekompleks Library | — | — |
-| 10:45–11:45 | **Haixinsha Island** — jalan santai, pemandangan Canton Tower | Gratis; APM ke Opera House lalu jalan ±450 m, atau jembatan pejalan kaki dari Huacheng Square ⚠️ | — | — |
-| 11:45–12:15 | **Haixin Bridge** — jembatan pejalan kaki lintas Sungai Mutiara menuju Canton Tower | Gratis, 488 m, lebar 15 m, jalur datar ⚠️ posisi ujung jembatan dari Haixinsha/Huacheng Square belum diverifikasi Amap | — | — |
-| 12:15–13:00 | **Canton Tower Observation Deck** — menikmati menara dari bawah/sekitarnya | Gratis di area luar; **tidak naik dek** (tiket dek ±CNY 135–228/org tidak dipakai) | — | — |
+| 09:15–10:15 | **Guangzhou Library** — perpustakaan modern 11,8 juta koleksi | Boleh 45–60 menit, lalu lanjut Huacheng Square (sekompleks). Gratis, No. 4 Zhujiang East Road, buka Selasa–Minggu 09:00–21:00 ⚠️ (sumber bertentangan soal hari tutup, Minggu aman) | — | — |
+| 10:15–10:45 | **Huacheng Square** — plaza kota terbesar Guangzhou | Boleh 20–30 menit → lanjut Haixinsha, atau langsung ke Haixin Bridge kalau ingin lebih cepat. Gratis, jalur datar | — | — |
+| 10:45–11:45 | **Haixinsha Island** — jalan santai, pemandangan Canton Tower | **Boleh dipersingkat/dilewati** kalau capek → langsung ke Haixin Bridge. Gratis; APM ke Opera House lalu jalan ±450 m, atau jembatan pejalan kaki dari Huacheng Square ⚠️ | — | — |
+| 11:45–12:15 | **Haixin Bridge** — jembatan pejalan kaki lintas Sungai Mutiara menuju Canton Tower | Boleh 20–30 menit → lanjut Canton Tower. Gratis, 488 m, lebar 15 m, jalur datar ⚠️ posisi ujung jembatan belum diverifikasi Amap | — | — |
+| 12:15–13:00 | **Canton Tower Observation Deck** — menikmati menara dari bawah/sekitarnya | Boleh 30–45 menit → lanjut makan siang. Gratis di area luar; **tidak naik dek** (tiket dek ±CNY 135–228/org tidak dipakai) | — | — |
 | 13:00–14:00 | Makan siang sekitar Canton Tower/Zhujiang New Town | ±CNY 30/org | 60 | Rp159.000 |
-| 14:00–14:30 | Metro Line 3 ke Tiyu Xilu (Tianhe) | ⚠️ ±3–4 halte, ±20 menit, ¥2/org (estimasi, belum diverifikasi Amap) | 4 | Rp10.600 |
-| 14:30–16:00 | **Tianhe Shopping Area** — jalan/lihat-lihat kawasan mal Tianhe Road | Gratis; Tiyu Xilu Exit B/C/D, mal-mal tersambung lorong bawah tanah. Sekadar lihat-lihat, bukan sesi belanja | — | — |
-| 16:00–17:15 | **Parc Central** — lihat-lihat mal & suasana | Gratis; tersambung langsung ke Tiyu Xilu (Exit D), buka 10:00–22:00 | — | — |
+| 14:00–14:30 | Metro Line 3 ke Tiyu Xilu (Tianhe) | Kalau sudah lelah, lewati Tianhe & Parc Central dan pulang langsung dari Canton Tower. ⚠️ ±3–4 halte, ±20 menit, ¥2/org (estimasi, belum diverifikasi Amap) | 4 | Rp10.600 |
+| 14:30–16:00 | **Tianhe Shopping Area** — jalan/lihat-lihat kawasan mal Tianhe Road | **Boleh dipersingkat/dilewati** → lanjut Parc Central (satu kawasan, jalan kaki). Gratis; Tiyu Xilu Exit B/C/D, mal-mal tersambung lorong bawah tanah. Sekadar lihat-lihat, bukan sesi belanja | — | — |
+| 16:00–17:15 | **Parc Central** — lihat-lihat mal modern & suasana | Boleh 45–60 menit; kalau capek pulang dari Tiyu Xilu (Line 1 langsung ke Gongyuanqian ±15 menit). Gratis; tersambung langsung ke Tiyu Xilu (Exit D), buka 10:00–22:00 | — | — |
 | 17:15–18:15 | Makan malam di Parc Central/kawasan Tianhe | ±CNY 30/org | 60 | Rp159.000 |
-| 18:15–18:45 | Metro Line 3 kembali ke Canton Tower | ⚠️ ±20 menit, ¥2/org (estimasi) | 4 | Rp10.600 |
-| 18:45–20:00 | **Pearl River Night Cruise** — menikmati Sungai Mutiara & Canton Tower berlampu dari tepi sungai/dermaga | Gratis, **tidak naik kapal** (tiket cruise ±CNY 90–300/org tidak dipakai) ⚠️ jam lampu menyala belum diverifikasi | — | — |
+| 18:15–18:45 | Metro Line 3 kembali ke Canton Tower | **Opsional** — kalau tenaga habis, langsung pulang dari Tiyu Xilu (Line 1) dan lewati Sungai Mutiara malam. ⚠️ ±20 menit, ¥2/org (estimasi) | 4 | Rp10.600 |
+| 18:45–20:00 | **Pearl River Night Cruise** — menikmati Sungai Mutiara & Canton Tower berlampu dari tepi sungai/dermaga | Penutup opsional, bukan target jam. Gratis, **tidak naik kapal** (tiket cruise ±CNY 90–300/org tidak dipakai) ⚠️ jam lampu menyala belum diverifikasi | — | — |
 | 20:00–20:50 | Metro kembali ke Gongyuanqian, jalan ke hotel | ⚠️ estimasi ±45 menit, ¥4/org; lalu jalan 270m/±5 menit ke hotel | 8 | Rp21.200 |
 | | **TOTAL HARI 3** | | **144** | **Rp381.600** |
 
-**Plan-B hari ini:** kalau capek atau hujan — lewati Haixinsha/Haixin Bridge dan langsung ke kawasan Tianhe (indoor, mal & lorong bawah tanah), atau potong malam di Sungai Mutiara dan pulang lebih awal dari Tiyu Xilu (Line 1 langsung ke Gongyuanqian).
+**Plan-B hari ini:** ikuti urutan lompatan di atas — di titik mana pun yang sudah cukup atau melelahkan, langsung lanjut ke titik terdekat berikutnya; kalau hujan, geser ke Tianhe (indoor, mal & lorong bawah tanah); kalau sangat lelah, pulang dari Tiyu Xilu (Line 1 langsung ke Gongyuanqian) atau dari Canton Tower.
 ---
 
 ## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple → Chen Clan → Liwan Lake Park)
