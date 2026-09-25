@@ -12,6 +12,8 @@
 > (10) **2026-09-23 — revisi kedua: pisah hari jalan jauh, keluarkan He Xiangning/OCT-LOFT, tambah Xinghe COCO Park, kunci jam kepulangan.** Setelah diskusi lanjutan, pengguna memutuskan: **He Xiangning Art Museum & OCT-LOFT dikeluarkan dari itinerary utama** (pindah ke Cadangan) — kluster Qiaocheng East ini tidak searah manapun dan menambah kompleksitas rute; mengeluarkannya memberi ruang untuk memecah klaster Shenzhen Bay/Shekou (sebelumnya 1 "hari jalan jauh" ±3 jam PP) jadi **2 hari terpisah yang lebih ringan**: **Hari 2** sekarang Shenzhen Bay Park → Shenzhen Bay Cultural Plaza → MixC Shenzhen Bay → **Shuiwei Night Market malam** (dipindah dari Hari 2 versi sebelumnya), dan **Hari 3** jadi Sea World + K11 ECOAST saja (jauh lebih santai, sore bebas tanpa agenda). **Xinghe COCO Park ditambahkan ke Hari 4**, disisipkan setelah Dongmen karena satu jalur Line 1 yang sama (lanjut dari Laojie melewati Science Museum tanpa turun, ke arah Shopping Park) — rute segmen Dongmen↔Xinghe COCO Park masih **⚠️ ESTIMASI** (belum di-Amap-kan spesifik, verifikasi lanjutan disarankan sebelum hari-H, begitu juga segmen MixC/Talent Park→Shuiwei di Hari 2). **Jam kepulangan HSR ke Xiamen dikunci 13:00** dari Futian Station (dikonfirmasi pengguna) — jadwal tiba & stasiun keberangkatan pasti tetap estimasi sampai tiket dibeli. GRAND TOTAL berubah jadi **≈1.361 CNY / Rp3.606.529** (turun dari revisi sebelumnya karena distribusi makan/transport berubah, bukan karena destinasi berkurang — jumlah destinasi utama tetap sama minus He Xiangning/OCT-LOFT plus Xinghe COCO Park).
 >
 > (11) **2026-09-24 — urutan kota baru: Shenzhen dilanjutkan ke Guangzhou (bukan Xiamen).** Kedatangan dari Hong Kong: HSR berangkat **14:00** (semula 13:30), tiba ±14:30 — Hari 1 digeser 30 menit (Shenzhen Museum jadi 17:05–17:55, tutup 18:00; Civic Center Plaza & Library tetap buka sampai 21:00). Kepulangan: HSR ke **Guangzhou 14:00** (semula 13:00 ke Xiamen) — Hari 4 digeser 1 jam, buffer di stasiun tetap ±47 menit. Budget tidak berubah. Nav & Informasi Transportasi Pulang diperbarui.
+>
+> (12) **2026-09-25 — revisi destinasi atas permintaan pengguna:** Hari 2 = Shenzhen Bay Park + Cultural Plaza + MixC + Sea World + K11 ECOAST (klaster Nanshan digabung lagi dalam 1 hari, ±3 jam transit — sudah diperingatkan); Hari 3 = **Shenzhen Science and Technology Museum** (dipindah dari Cadangan; Guangming, ±90 menit sekali jalan ⚠️ estimasi, tiket ¥50/org wajib reservasi WeChat) + Shuiwei Night Market malam; Hari 1 & Hari 4 tidak berubah. Shuiwei kini dijangkau langsung dari hotel (rute Amap terverifikasi ±36 menit) bukan dari Talent Park. Budget: Hari 2 240 CNY (sama dengan versi lama), Hari 3 350 CNY (tiket museum 100 + transit), GRAND TOTAL ≈1.361 CNY/Rp3.606.529 → **≈1.547 CNY / Rp4.099.429**. ⚠️ Rute hotel → Guangming belum di-Amap-kan; catatan wiki ±27 menit ke stasiun 'Science Museum' Futian adalah gedung LAMA, bukan museum baru.
 
 
 ## Informasi Transportasi
@@ -68,42 +70,45 @@
 
 ---
 
-## Hari 2 — Rabu, 4 November (Shenzhen Bay Park → Cultural Plaza → MixC → Shuiwei Malam)
+## Hari 2 — Rabu, 4 November (Shenzhen Bay & Shekou — Hari Jalan Jauh)
 
-> **Rute:** Pagi ke Shenzhen Bay Park (klaster Nanshan terjauh), lanjut ke MixC/Cultural Plaza yang bersebelahan, sore lanjut ke Shuiwei Night Market. ⚠️ Segmen MixC→Shuiwei belum di-Amap-kan spesifik, masih estimasi.
+> ⚠️ **Hari ini paling banyak transportasi** — klaster Shenzhen Bay/Shekou ada di Nanshan, berlawanan arah dari kluster Futian. Total waktu tempuh MRT+jalan sepanjang hari ±3 jam. Semua destinasi gratis untuk dijalani/dilihat, jadi tetap realistis asal tidak terburu-buru dan siap dengan Plan-B.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
 | 08:15–09:06 | Metro ke Shenzhen Bay Park | Jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 6 halte → transfer **Jingtian** (26m/4 menit) → Line 9 arah Qianwan, 4 halte → **Shenzhen Bay Park Exit A**. Total ±51 menit, ¥4/org — rute terverifikasi Amap | 8 | Rp21.200 |
 | 09:10–11:00 | **Shenzhen Bay Park** — jalur pesisir, mangrove boardwalk | Gratis, jalur datar, sepeda sewa opsional ±CNY 30/jam | — | — |
-| 11:00–11:39 | Metro ke MixC/Cultural Plaza | Jalan 1,6km/28 menit (atau sepeda ±8 menit) ke Houhai Exit M → Line 13 arah Shenzhen Bay Checkpoint, 1 halte → **Talent Park Exit B1**. Total ±39 menit, ¥2/org — rute terverifikasi Amap; sepeda disarankan untuk memangkas jalan kaki 1,6km | 4 | Rp10.600 |
-| 11:39–13:30 | **Shenzhen Bay Cultural Plaza** & **MixC Shenzhen Bay**, makan siang | Cultural Plaza gratis (area plaza & sebagian pameran; pameran khusus kemungkinan berbayar). MixC sekadar lihat-lihat, bukan sesi belanja. Makan siang ±CNY 35/org | 70 | Rp185.500 |
-| 13:30–~14:30 | Metro ke Shuiwei Night Market | ⚠️ **Estimasi ±1 jam, ¥6/org** — segmen Talent Park→Shuiwei belum di-Amap-kan spesifik (perkiraan lewat transfer Line 13→Line 9/2→Line 7), verifikasi lanjutan disarankan sebelum hari-H | 12 | Rp31.800 |
-| 14:30–17:00 | Jalan santai / istirahat sekitar Futian Port sambil tunggu Shuiwei buka penuh | Gratis, bisa mampir kafe area situ | — | — |
-| 17:00–19:00 | **Shuiwei Night Market** — jalan santai + makan malam | Exit B2, buka penuh dari 17:00. Pilih yang berkuah/kukus (sup bakso sapi, bubur), hindari gorengan & saus pedas. ±CNY 35/org | 70 | Rp185.500 |
-| 19:00–19:36 | Metro kembali ke hotel | Jalan ke Huanggangcun Exit B2 → Line 7 arah SZU Lihu Campus, 5 halte → **Huaqiang North Exit E2** → jalan 810m/14 menit ke hotel. Total ±36 menit, ¥3/org — rute terverifikasi Amap | 6 | Rp15.900 |
+| 11:00–11:39 | Metro ke MixC/Cultural Plaza | Jalan 1,6km/28 menit (atau sepeda ±8 menit) ke Houhai Exit M → Line 13 arah Shenzhen Bay Checkpoint, 1 halte → **Talent Park Exit B1**. Total ±39 menit, ¥2/org — sepeda disarankan untuk jarak jalan kakinya | 4 | Rp10.600 |
+| 11:39–13:00 | **Shenzhen Bay Cultural Plaza** & **MixC Shenzhen Bay**, makan siang | Cultural Plaza gratis (area plaza & sebagian pameran; pameran khusus kemungkinan berbayar). MixC sekadar lihat-lihat, bukan sesi belanja. Makan siang ±CNY 35/org | 70 | Rp185.500 |
+| 13:00–13:40 | Metro ke Sea World (Shekou) | ⚠️ Estimasi ±40 menit, ¥3/org — segmen ini belum di-Amap-kan spesifik dari Talent Park, diturunkan dari rute Bay Park→Sea World (±62 menit) | 6 | Rp15.900 |
+| 13:40–15:30 | **Sea World** & **K11 ECOAST** | Satu kawasan waterfront Shekou, jalan kaki antar keduanya. Gratis jalan-jalan | — | — |
+| 15:30–16:30 | Makan malam/snack di Sea World | ±CNY 35/org — makan lebih awal karena perjalanan pulang panjang | 70 | Rp185.500 |
+| 16:30–17:40 | Metro kembali ke hotel | Jalan 689m/14 menit ke Sea World Exit A → Line 2(8) arah Xichong, 22 halte → **Yannan Exit C**. Total ±1 jam 10 menit, ¥6/org — rute terverifikasi Amap | 12 | Rp31.800 |
 | | **TOTAL HARI 2** | | **240** | **Rp636.000** |
 
-**Plan-B hari ini:** kalau Shenzhen Bay Park/MixC terasa cukup atau perjalanan ke Shuiwei kurang sesuai selera setelah dicek lagi — jalan santai gratis di sekitar hotel (Huaqiangbei) sebagai pengganti malam, tanpa perlu naik metro tambahan.
+**Plan-B hari ini:** kalau sudah kesorean setelah MixC/Cultural Plaza — **lewati Sea World & K11 ECOAST**, langsung kembali ke hotel dari Talent Park (rute belum diverifikasi persis, perkirakan ±40-50 menit). Ini memangkas ±2 jam perjalanan PP kalau waktu tidak cukup.
 
 ---
 
-## Hari 3 — Kamis, 5 November (Sea World & K11 ECOAST — Hari Santai)
+## Hari 3 — Kamis, 5 November (Shenzhen Science and Technology Museum → Shuiwei Malam)
 
-> **Rute:** Dipisah dari klaster Shenzhen Bay (Hari 2) supaya tidak jadi 1 hari jalan-jauh ekstrem — hari ini hanya 1 klaster (Shekou), sore bebas tanpa agenda wajib.
+> ⚠️ **Museum baru di Guangming, jauh dari Futian** (±90 menit sekali jalan, ⚠️ estimasi). Reservasi tiket WAJIB dan sering habis cepat — booking beberapa hari sebelum berangkat.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00 | Sarapan dekat hotel | ±CNY 35/org | 70 | Rp185.500 |
-| 08:15–09:25 | Metro ke Sea World (Shekou) | Jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 22 halte (lewat Civic Center, Futian, Qiaocheng North, Window of the World, Houhai, Shuiwan) → **Sea World Exit A**. Total ±1 jam 10 menit, ¥6/org — rute terverifikasi Amap (simetris dengan rute pulang Sea World→hotel) | 12 | Rp31.800 |
-| 09:25–12:00 | **Sea World** & **K11 ECOAST** — jalan santai waterfront Shekou | Satu kawasan, jalan kaki antar keduanya. Gratis jalan-jalan | — | — |
-| 12:00–13:00 | Makan siang di Sea World | ±CNY 35/org | 70 | Rp185.500 |
-| 13:00–14:10 | Metro kembali ke hotel | Jalan 689m/14 menit ke Sea World Exit A → Line 2(8) arah Xichong, 22 halte → **Yannan Exit C**. Total ±1 jam 10 menit, ¥6/org — rute terverifikasi Amap | 12 | Rp31.800 |
-| 14:10 dst. | Istirahat / waktu bebas dekat hotel | Hari lebih ringan sejak dipisah dari klaster Bay Park — tidak ada agenda wajib sore/malam ini | — | — |
-| | **TOTAL HARI 3** | | **164** | **Rp434.600** |
+| 08:15–09:45 | Metro ke Guangming (Shenzhen Science and Technology Museum) | ⚠️ Estimasi ±90 menit, ¥7/org — jalan 833m/14 menit ke Science Museum Exit B (stasiun interchange Line 1/6) → Line 6 ±18 halte ke Guangming Exit C/D; total belum diverifikasi Amap. Jangan tertukar dengan gedung Science Museum LAMA di Futian | 14 | Rp37.100 |
+| 10:00–13:00 | **Shenzhen Science and Technology Museum** — museum sains-teknologi baru, rancangan Zaha Hadid (dibuka Mei 2025) | Tiket ¥50/org (¥32 pelajar/lansia); **wajib reservasi** WeChat mini-program 深圳科学技术馆 (real-name, sering habis ±10 menit setelah rilis — booking beberapa hari sebelumnya). Buka Selasa–Jumat 10:00–17:00 (tiket hari-H berhenti 16:00), Kamis aman, tutup Senin | 100 | Rp265.000 |
+| 13:00–14:00 | Makan siang di sekitar museum | ±CNY 35/org | 70 | Rp185.500 |
+| 14:00–15:30 | Metro kembali ke hotel | ⚠️ Estimasi ±90 menit, ¥7/org (arah sebaliknya) | 14 | Rp37.100 |
+| 15:30–17:00 | Istirahat di hotel | — | — | — |
+| 17:00–17:36 | Metro ke Shuiwei Night Market | Jalan 810m/14 menit ke Huaqiang North Exit E2 → Line 7 arah SZU Lihu Campus, 5 halte → **Huanggangcun Exit B2**. Total ±36 menit, ¥3/org — rute terverifikasi Amap | 6 | Rp15.900 |
+| 17:36–19:30 | **Shuiwei Night Market** — jalan santai + makan malam | Exit B2, buka penuh dari 17:00. Pilih yang berkuah/kukus (sup bakso sapi, bubur), hindari gorengan & saus pedas. ±CNY 35/org | 70 | Rp185.500 |
+| 19:30–20:06 | Metro kembali ke hotel | Line 7 arah SZU Lihu Campus (arah sebaliknya), 5 halte → Huaqiang North Exit E2 → jalan 810m/14 menit ke hotel. Total ±36 menit, ¥3/org — terverifikasi Amap | 6 | Rp15.900 |
+| | **TOTAL HARI 3** | | **350** | **Rp927.500** |
 
-**Plan-B hari ini:** kalau ingin lebih ringan lagi — cukup Sea World saja (lewati K11 ECOAST), atau ganti jadi jalan santai gratis di sekitar hotel.
+**Plan-B hari ini:** kalau reservasi museum gagal/habis — ganti hari santai di kawasan hotel (Huaqiangbei, jalan kaki gratis), tetap lanjut ke Shuiwei Night Market malam hari. Gedung Science Museum LAMA di Futian tidak disarankan.
 
 ---
 
@@ -144,35 +149,34 @@
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Shenzhen)
 
-Semua destinasi di itinerary utama gratis — biaya hanya makan dan metro, plus hotel dan tiket HSR kedatangan.
+Semua destinasi di itinerary utama gratis kecuali Shenzhen Science and Technology Museum (¥50/org) — biaya lain hanya makan dan metro, plus hotel dan tiket HSR kedatangan.
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 90 | Rp238.500 |
 | Hari 2 | 240 | Rp636.000 |
-| Hari 3 | 164 | Rp434.600 |
+| Hari 3 | 350 | Rp927.500 |
 | Hari 4 | 160 | Rp424.000 |
-| **Subtotal aktivitas harian** | **654** | **Rp1.733.100** |
+| **Subtotal aktivitas harian** | **840** | **Rp2.226.000** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk | — | — |
-| Makan (semua hari, 8x makan) | 560 | Rp1.484.000 |
-| Transport lokal (metro) | 94 | Rp249.100 |
+| Tiket masuk (Shenzhen Science and Technology Museum) | 100 | Rp265.000 |
+| Makan (semua hari, 9x makan) | 630 | Rp1.669.500 |
+| Transport lokal (metro) | 110 | Rp291.500 |
 | Tiket HSR kedatangan dari Hong Kong (2 org) | ≈151 | Rp400.000 |
 | Hotel (3 malam, Tourism Trend Hotel) ⚠️ Estimasi | ≈556 | Rp1.473.429 |
-| **GRAND TOTAL** | **≈1.361** | **Rp3.606.529** |
+| **GRAND TOTAL** | **≈1.547** | **Rp4.099.429** |
 
-**Catatan:** Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, Huaqiangbei, Shenzhen Bay Park, Shenzhen Bay Cultural Plaza, MixC Shenzhen Bay, Shuiwei Night Market, Sea World, K11 ECOAST, Dongmen Pedestrian Street, Xinghe COCO Park semuanya gratis masuk (tidak dihitung, hanya biaya makan/transport terkait yang masuk tabel). Harga hotel masih estimasi (lihat catatan di Informasi Transportasi) — GRAND TOTAL akan berubah begitu ada harga pasti. Dua segmen transportasi (MixC→Shuiwei di Hari 2, Dongmen↔Xinghe COCO Park di Hari 4) masih estimasi kasar, belum di-Amap-kan spesifik.
-
+**Catatan:** Huaqiangbei, Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, Shenzhen Bay Park, Shenzhen Bay Cultural Plaza, MixC Shenzhen Bay, Sea World, K11 ECOAST, Shuiwei Night Market, Dongmen Pedestrian Street, dan Xinghe COCO Park gratis masuk (tidak dihitung). Harga hotel masih estimasi (lihat catatan di Informasi Transportasi) — GRAND TOTAL akan berubah begitu ada harga pasti. Tiket museum ¥50/org dari sumber resmi (⚠️ cek harga saat reservasi).
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur di itinerary ini (taman, plaza, area belanja, pesisir) datar dan aman untuk lutut. Lianhua Mountain hanya ±100m ketinggian dengan jalur landai/tangga rendah. **Hari 2 & 3 paling banyak transportasi** (klaster Shenzhen Bay/Shekou, sekarang dipecah jadi 2 hari terpisah supaya tidak terlalu padat dalam 1 hari) — bukan soal jalan kaki jauh, tapi banyak duduk/berdiri di kereta, sela dengan istirahat di setiap titik.
+- **Fisik/lutut:** semua jalur (taman, plaza, area belanja, pesisir, museum) datar dan aman untuk lutut. Lianhua Mountain hanya ±100m ketinggian dengan jalur landai/tangga rendah. **Hari 2 (klaster Shenzhen Bay/Shekou, ±3 jam transit) dan Hari 3 (museum di Guangming, ±90 menit sekali jalan) paling banyak transportasi** — bukan soal jalan kaki jauh, tapi banyak duduk/berdiri di kereta, sela dengan istirahat di setiap titik.
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — hindari makanan Sichuan/Hunan pedas yang umum di food court Shenzhen, prioritaskan masakan Cantonese ringan (kukus/sup).
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima luas dibanding kartu kredit asing — siapkan salah satunya sebelum berangkat (tautkan kartu asing atau top-up tunai di bandara/stasiun).
-- **Tempat berbayar:** tidak ada di itinerary utama — semua destinasi gratis masuk (MixC & Sea World/K11 murni dilihat-lihat, bukan sesi belanja).
+- **Tempat berbayar:** hanya Shenzhen Science and Technology Museum (¥50/org, wajib reservasi WeChat — jangan lupa booking beberapa hari sebelumnya). Destinasi lain gratis masuk (MixC & Sea World/K11 murni dilihat-lihat, bukan sesi belanja).
 - **VPN:** diperlukan di Shenzhen (Tiongkok daratan) untuk akses Google/WhatsApp/Instagram — beda dari Hong Kong yang tidak perlu VPN.
 - **Izin tamu asing hotel:** konfirmasi ke Tourism Trend Hotel soal 涉外资质 (izin menerima & mendaftarkan tamu paspor asing) sebelum booking final.
 
@@ -333,22 +337,6 @@ Cabang MixC di kawasan Shenzhen Bay, Nanshan — bersebelahan dengan Shenzhen Ba
 - Foto/info: https://en.wikipedia.org/wiki/MixC_World_(Shenzhen)
 - Video referensi: https://www.youtube.com/results?search_query=MixC+Shenzhen+Bay
 
-### Shuiwei Night Market (水围夜市 · Shuǐwéi Yèshì) ✅
-Kawasan jajanan malam & food street di Shuiwei Village, Futian — bagian dari "Shuiwei 1368 Cultural District", dengan lebih dari 30 kios kuliner khas Chaoshan (Teochew) plus kafe & bar kreatif, salah satu night market paling dianjurkan di Shenzhen dan persis dekat area Futian Port.
-
-✅ Nama & info terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Huanggangcun Station (Line 7), Exit B2. Dari MixC/Cultural Plaza (Talent Park): ⚠️ **estimasi ±1 jam, ¥6/org** — segmen ini belum di-Amap-kan spesifik, perkiraan lewat transfer Line 13→Line 9/2→Line 7, verifikasi lanjutan disarankan sebelum hari-H. Dari hotel langsung: jalan 810m/14 menit ke Huaqiang North Exit E2 → Line 7 arah SZU Lihu Campus, 5 halte → Huanggangcun Exit B2, ±36 menit, ¥3/org — rute terverifikasi Amap.
-
-**Jam Operasional:** mulai buka/setup dari 16:00, ramai penuh 17:00 hingga tengah malam.
-
-**Tiket:** Gratis masuk, jajan sesuai selera.
-
-- Foto/info: https://www.eastchinatrip.com/shuiwei-night-market-travel-guide/
-- Video referensi: https://www.youtube.com/results?search_query=Shuiwei+Night+Market+Shenzhen
-
-## Hari 3 — Kamis, 5 November
-
 ### Sea World (海上世界 · Hǎishàng Shìjiè) ✅
 Kawasan hiburan & kuliner waterfront di Shekou, Nanshan — namanya diambil dari kapal pesiar tua "Minghua" yang jadi hotel/landmark permanen di tepi laut, sekarang jadi salah satu titik nongkrong ekspatriat paling populer di Shenzhen.
 
@@ -376,6 +364,38 @@ Kompleks ritel & budaya waterfront baru di Shekou (dibuka April 2025) — bagian
 
 - Foto/info: https://en.wikipedia.org/wiki/K11_ECOAST
 - Video referensi: https://www.youtube.com/results?search_query=K11+ECOAST+Shenzhen
+
+## Hari 3 — Kamis, 5 November
+
+### Shenzhen Science and Technology Museum (深圳科技馆/深圳科学技术馆 · Shēnzhèn Kēxué Jìshùguǎn) ⚠️
+Museum sains-teknologi baru Shenzhen, dibuka **1 Mei 2025** di jantung Guangming Science City, Distrik Guangming — dirancang Zaha Hadid Architects dengan bentuk menyerupai pesawat antariksa raksasa, luas bangunan ±128.300-130.000 m² (6 lantai + 2 lantai basement). Tema "Digital Civilization · Innovation · Future" dengan tujuh zona: pameran teknologi, bioskop sains, praktik inovasi, pertukaran teknologi, layanan publik, manajemen bisnis, dan taman sains luar ruangan.
+
+⚠️ **Jangan tertukar dengan Stasiun MTR "Science Museum" di Futian (Line 1/6)** — itu gedung LAMA (深圳科学馆) yang menurut sumber resmi Distrik Guangming **sudah tidak disarankan dikunjungi** sejak museum baru ini dibuka. Nama Hanzi & Pinyin dari sumber berita resmi, belum diverifikasi Amap.
+
+**Akses:** MTR Line 6, Stasiun Guangming, Exit C/D, tersambung langsung lewat koridor lantai 2 ke gerbang selatan/utara museum (atau bus feeder M151/M574/D53). Dari hotel: jalan 833m/14 menit ke Science Museum Exit B (interchange Line 1/6) → Line 6 ±18 halte ke Guangming — ⚠️ total ±90 menit sekali jalan, belum diverifikasi Amap (mohon screenshot Amap hotel → Guangming). Rute ±27 menit ke stasiun "Science Museum" di Futian adalah untuk gedung LAMA, bukan museum baru ini.
+
+**Jam Operasional:** Selasa–Jumat 10:00–17:00 (penjualan tiket hari-H berhenti 16:00); akhir pekan/libur 09:30–18:00 (Nov–Apr) atau 09:30–18:30 (Mei–Okt); tutup Senin.
+
+**Tiket:** wajib reservasi online (mini-program WeChat resmi "深圳科学技术馆", real-name, tiket sempat habis dalam ±10 menit saat hari pertama buka — booking beberapa hari sebelumnya). Pameran tetap CNY 50/org reguler, CNY 32/org kategori khusus (pelajar/lansia); bioskop sains & pameran sementara dibeli/direservasi terpisah.
+
+**Cara reservasi:** mini-program WeChat resmi "深圳科学技术馆" (real-name, pakai paspor), buka beberapa hari sebelumnya; tiket sering habis ±10 menit setelah rilis.
+
+- Foto/info: https://www.zha.com/projects/architecture/shenzhen-science-technology-museum
+- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Science+and+Technology+Museum+Guangming
+
+### Shuiwei Night Market (水围夜市 · Shuǐwéi Yèshì) ✅
+Kawasan jajanan malam & food street di Shuiwei Village, Futian — bagian dari "Shuiwei 1368 Cultural District", dengan lebih dari 30 kios kuliner khas Chaoshan (Teochew) plus kafe & bar kreatif, salah satu night market paling dianjurkan di Shenzhen dan persis dekat area Futian Port.
+
+✅ Nama & info terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Huanggangcun Station (Line 7), Exit B2. Dari hotel: jalan 810m/14 menit ke Huaqiang North Exit E2 → Line 7 arah SZU Lihu Campus, 5 halte → Huanggangcun Exit B2, ±36 menit, ¥3/org — rute terverifikasi Amap.
+
+**Jam Operasional:** mulai buka/setup dari 16:00, ramai penuh 17:00 hingga tengah malam.
+
+**Tiket:** Gratis masuk, jajan sesuai selera.
+
+- Foto/info: https://www.eastchinatrip.com/shuiwei-night-market-travel-guide/
+- Video referensi: https://www.youtube.com/results?search_query=Shuiwei+Night+Market+Shenzhen
 
 ## Hari 4 — Jumat, 6 November
 
@@ -496,7 +516,7 @@ Taman tematik yang dibuka 1994, menampilkan ±130 replika miniatur landmark duni
 
 ✅ Nama & info terverifikasi dari sumber resmi.
 
-**Akses:** Metro Line 1, Stasiun Window of the World — keluar stasiun langsung di pintu masuk utama. Juga terlewati di rute Sea World→Hotel Hari 3 (Line 2/8), tapi tidak singgah.
+**Akses:** Metro Line 1, Stasiun Window of the World — keluar stasiun langsung di pintu masuk utama. Juga terlewati di rute Sea World→Hotel Hari 2 (Line 2/8), tapi tidak singgah.
 
 **Jam Operasional:** 09:30–21:30 setiap hari; sesi malam mulai 18:00 dengan tiket lebih murah.
 
@@ -619,21 +639,6 @@ Museum sejarah alam terbesar di China Selatan, baru dibuka **28 Juli 2026** di k
 - Foto/info: https://www.scmp.com/lifestyle/chinese-culture/article/3361967/what-see-shenzhen-natural-history-museum-dinosaur-fossils-meteorites
 - Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Natural+History+Museum
 
-### Shenzhen Science and Technology Museum (深圳科技馆/深圳科学技术馆 · Shēnzhèn Kēxué Jìshùguǎn) ⚠️
-Museum sains-teknologi baru Shenzhen, dibuka **1 Mei 2025** di jantung Guangming Science City, Distrik Guangming — dirancang Zaha Hadid Architects dengan bentuk menyerupai pesawat antariksa raksasa, luas bangunan ±128.300-130.000 m² (6 lantai + 2 lantai basement). Tema "Digital Civilization · Innovation · Future" dengan tujuh zona: pameran teknologi, bioskop sains, praktik inovasi, pertukaran teknologi, layanan publik, manajemen bisnis, dan taman sains luar ruangan.
-
-⚠️ **Jangan tertukar dengan Stasiun MTR "Science Museum" di Futian (Line 1/6)** — itu gedung LAMA (深圳科学馆) yang menurut sumber resmi Distrik Guangming **sudah tidak disarankan dikunjungi** sejak museum baru ini dibuka. Nama Hanzi & Pinyin dari sumber berita resmi, belum diverifikasi Amap.
-
-**Akses:** MTR Line 6, Stasiun Guangming, Exit C/D, tersambung langsung lewat koridor lantai 2 ke gerbang selatan/utara museum (atau bus feeder M151/M574/D53). Dari kluster Futian: perlu ke Stasiun Kexueguan (interchange Line 1/6) dulu, lalu Line 6 ±18 halte ke Guangming — ⚠️ rute persis dari hotel ke Kexueguan dan total waktu belum diverifikasi Amap, estimasi kasar ±70-90 menit sekali jalan (mirip jauhnya dengan Museum Sejarah Alam di Pingshan, arah berlawanan).
-
-**Jam Operasional:** Selasa–Jumat 10:00–17:00 (penjualan tiket hari-H berhenti 16:00); akhir pekan/libur 09:30–18:00 (Nov–Apr) atau 09:30–18:30 (Mei–Okt); tutup Senin.
-
-**Tiket:** wajib reservasi online (mini-program WeChat resmi "深圳科学技术馆", real-name, tiket sempat habis dalam ±10 menit saat hari pertama buka — booking beberapa hari sebelumnya). Pameran tetap CNY 50/org reguler, CNY 32/org kategori khusus (pelajar/lansia); bioskop sains & pameran sementara dibeli/direservasi terpisah.
-
-**Kenapa tidak dimasukkan:** Distrik Guangming ada di barat laut Shenzhen, berlawanan arah dari kluster Futian/Nanshan/Luohu yang jadi fokus trip ini — day-trip sejauh ini butuh 1 hari dedicated dan tidak bisa digabung dengan Museum Sejarah Alam (arah berlawanan, sama-sama ±1,5 jam sekali jalan). Trip Shenzhen 4 hari sekarang sudah padat — bisa dipertimbangkan lagi kalau trip diperpanjang lebih jauh.
-
-- Foto/info: https://www.zha.com/projects/architecture/shenzhen-science-technology-museum
-- Video referensi: https://www.youtube.com/results?search_query=Shenzhen+Science+and+Technology+Museum+Guangming
 
 ---
 
