@@ -18,6 +18,8 @@
 > (7) **2026-09-25 — 4 malam (6–10 Nov), tiket pesawat sudah dibeli:** China Eastern MU5238 CAN T3 → NGB T2 **Selasa 10 Nov 12:15 → 14:05** (tiket Rp1.414.100/orang, masuk budget Ningbo 2). Jadi 4 malam / 5 hari: Hari 5 = check-out & Didi ke bandara. Hotel: kutipan Trip.com **4 malam persis** Rp2.289.788 (bukan prorata lagi). Destinasi dipilih pengguna dari 16 opsi: Hari 2 Sacred Heart Cathedral (Sabtu buka; Line 6 searah Huangsha) + Yongqing Fang + Shamian + Shangxiajiu; Hari 3 Library + Huacheng Square + Haixinsha + menikmati Canton Tower/Sungai Mutiara dari luar (tanpa naik dek/cruise); Hari 4 Sun Yat-sen Memorial Hall + Yuexiu Park + Liurong Temple. Zhenhai Tower (tutup Senin, tanjakan) & Baiyun Mountain (setengah hari, menanjak) tetap Cadangan. GRAND TOTAL ≈1.267 CNY/Rp3.357.541 → **≈1.627 CNY / Rp4.311.588**.
 >
 > (8) **2026-09-25 — Canton Tower & Pearl River dimasukkan sebagai destinasi (tanpa naik):** sesuai keputusan pengguna, **Canton Tower Observation Deck** dan **Pearl River Night Cruise** masuk itinerary Hari 3 hanya untuk **menikmati pemandangan dari sekitar** (tidak naik dek, tidak naik kapal) — dipindah dari Cadangan ke Lampiran Hari 3. Tambah 1 leg APM/Line 3 Haixinsha → Canton Tower (¥2/org ⚠️). Hari 3 136→140 CNY, GRAND TOTAL ≈1.627 → **≈1.631 CNY / Rp4.322.188**.
+>
+> (9) **2026-09-25 — Hari 4 diisi penuh sampai malam (sesuai aturan skill, hari penuh ±08:00–20:00):** sebelumnya Hari 4 selesai jam 15:30 (terlalu cepat). **Baiyun Mountain** (opsi dari pengguna) dipindah dari Cadangan ke Hari 4 sore — naik kereta gantung ke Summit Square (datar, tanpa mendaki), 16:15–17:45, pulang & makan malam 19:30. Hari 4 178→302 CNY (tiket masuk+kereta gantung 100, transport 24). GRAND TOTAL ≈1.631 → **≈1.755 CNY / Rp4.650.788**. ⚠️ Rute ke Baiyun belum di-Amap-kan.
 
 ## Informasi Transportasi
 
@@ -44,7 +46,7 @@
 
 - Suhu siang **±26–27°C**, malam **±17–19°C** di awal November — musim kering, kelembapan ±66%, salah satu bulan terbaik berkunjung. ⚠️ Angka rata-rata historis, bukan forecast real-time — cek forecast H-7.
 - Curah hujan rendah (±35 mm, ±6 hari hujan sepanjang bulan, umumnya gerimis singkat) — bawa payung lipat untuk jaga-jaga.
-- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan nyaman (Hari 2 & 3 paling banyak berjalan), sunblock.
+- Rekomendasi bawaan: baju ringan menyerap keringat untuk siang, jaket tipis untuk malam, sepatu jalan nyaman (Hari 2, 3, dan 4 paling banyak berjalan), sunblock.
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan — masakan Cantonese umumnya ringan (kukus, sup, congee), sangat cocok dengan kriteria ini.
 
 ---
@@ -114,9 +116,9 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ---
 
-## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple)
+## Hari 4 — Senin, 9 November (Sun Yat-sen Memorial Hall → Yuexiu Park → Liurong Temple → Baiyun Mountain)
 
-> **Rute:** Senin — semua tempat hari ini buka (Memorial Hall, Yuexiu Park, Liurong Temple); Sacred Heart Cathedral dan Zhenhai Tower tutup Senin. Sore bebas sebelum berangkat pagi besok.
+> **Rute:** Senin — semua tempat hari ini buka; Sacred Heart Cathedral dan Zhenhai Tower tutup Senin. Sore ke Baiyun Mountain naik kereta gantung (bukan mendaki), pulang malam. ⚠️ rute ke Baiyun dari web_search, belum Amap.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -124,16 +126,17 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 08:30–09:00 | Jalan ke Gongyuanqian, metro ke Sun Yat-sen Memorial Hall | Jalan 270m/±5 menit ke Exit I2, Line 2 arah utara, ±1 halte → Memorial Hall Exit C, ¥2/org ⚠️ | 4 | Rp10.600 |
 | 09:00–10:30 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
 | 10:30–10:45 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
-| 10:45–12:30 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
-| 12:30–13:00 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
-| 13:00–14:00 | Makan siang sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| 14:00–15:30 | **Liurong Temple** — pagoda bunga & pohon banyan | Jalan ±600–700 m dari Gongyuanqian Exit B ⚠️; tiket ±CNY 15/org (kuil ±¥5 + pagoda ±¥10 ⚠️), buka 08:00–17:00 | 30 | Rp79.500 |
-| 15:30–18:00 | Istirahat di hotel / jalan santai Beijing Road | Waktu bebas, tidak ada agenda wajib | — | — |
-| 18:00–19:00 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
-| | **TOTAL HARI 4** | | **178** | **Rp471.700** |
+| 10:45–12:15 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
+| 12:15–12:45 | Metro kembali ke Gongyuanqian | Line 2 arah selatan, ±2 halte, ¥2/org ⚠️ | 4 | Rp10.600 |
+| 12:45–13:45 | Makan siang sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
+| 14:00–15:00 | **Liurong Temple** — pagoda bunga & pohon banyan | Jalan ±600–700 m dari Gongyuanqian Exit B ⚠️; tiket ±CNY 15/org (kuil ±¥5 + pagoda ±¥10 ⚠️), buka 08:00–17:00 | 30 | Rp79.500 |
+| 15:00–16:15 | Metro + bus ke Baiyun Mountain | Line 2 ke Baiyun Culture Square Exit B, lanjut bus Guang 424 ke West Gate (jalan ±150 m) ⚠️ estimasi ±75 menit, ±¥6/org — belum diverifikasi Amap | 12 | Rp31.800 |
+| 16:15–17:45 | **Baiyun Mountain** — kereta gantung ke Summit Square, menikmati pemandangan kota & sunset | Tiket masuk ±CNY 5/org + kereta gantung ±¥25 naik / ¥20 turun per orang ⚠️. Kereta gantung 09:00–18:00 — turun paling lambat ±17:45. Plaza puncak datar; **tidak mendaki Moxing Peak** (tangga) | 100 | Rp265.000 |
+| 17:45–19:15 | Bus + metro kembali ke Gongyuanqian, jalan ke hotel | ⚠️ estimasi ±75 menit, ±¥6/org; lalu jalan 270m/±5 menit ke hotel | 12 | Rp31.800 |
+| 19:30–20:30 | Makan malam sekitar hotel | ±CNY 30/org | 60 | Rp159.000 |
+| | **TOTAL HARI 4** | | **302** | **Rp800.300** |
 
-**Plan-B hari ini:** kalau tenaga kurang — lewati Liurong Temple, santai di hotel atau jalan ringan di Beijing Road.
-
+**Plan-B hari ini:** kalau tenaga kurang, berkabut/hujan, atau kereta gantung tutup karena angin — lewati Baiyun Mountain, santai di hotel atau jalan ringan di Beijing Road.
 ---
 
 ## Hari 5 — Selasa, 10 November (Check-out, Pesawat 12:15)
@@ -165,32 +168,32 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 
 ## Ringkasan Budget Total (2 Orang, 4 Malam / 5 Hari di Guangzhou)
 
-Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall dan Liurong Temple (±CNY 10–15/org).
+Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memorial Hall, Liurong Temple, dan Baiyun Mountain (masuk + kereta gantung).
 
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
 | Hari 2 | 128 | Rp339.200 |
 | Hari 3 | 140 | Rp371.000 |
-| Hari 4 | 178 | Rp471.700 |
+| Hari 4 | 302 | Rp800.300 |
 | Hari 5 | 100 | Rp265.000 |
-| **Subtotal aktivitas harian** | **616** | **Rp1.632.400** |
+| **Subtotal aktivitas harian** | **740** | **Rp1.961.000** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
-| Tiket masuk (Sun Yat-sen Memorial Hall, Liurong Temple) | 50 | Rp132.500 |
+| Tiket masuk (Memorial Hall, Liurong Temple, Baiyun Mountain + kereta gantung) | 150 | Rp397.500 |
 | Makan (7x makan; sarapan sudah termasuk kamar) | 420 | Rp1.113.000 |
-| Transport lokal (metro, APM, Didi ke bandara) | 146 | Rp386.900 |
+| Transport lokal (metro, bus, APM, Didi ke bandara) | 170 | Rp450.500 |
 | Tiket HSR kedatangan dari Shenzhen (2 org) ⚠️ Estimasi | ≈151 | Rp400.000 |
 | Hotel (4 malam, Homeinn · neo, sarapan termasuk) ⚠️ Harga kutipan Trip.com | ≈864 | Rp2.289.788 |
-| **GRAND TOTAL** | **≈1.631** | **Rp4.322.188** |
+| **GRAND TOTAL** | **≈1.755** | **Rp4.650.788** |
 
 **Catatan:** Beijing Road, Dafo Temple, Sacred Heart Cathedral, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel = kutipan Trip.com 4 malam (6–10 Nov, sarapan termasuk, gratis pembatalan) Rp2.289.788 — harga bisa berubah sebelum booking. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya
 
-- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Zhenhai Tower dan Baiyun Mountain (Cadangan) yang menanjak sengaja tidak masuk itinerary utama. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
+- **Fisik/lutut:** semua jalur (kota lama, taman, plaza, pulau) datar dan aman untuk lutut; Yuexiu Park punya bukit kecil dengan jalur landai. Baiyun Mountain hanya naik kereta gantung ke Summit Square (datar), tanpa mendaki Moxing Peak; Zhenhai Tower (Cadangan) yang menanjak sengaja tidak masuk. Hari 2 & 3 paling banyak jalan kaki (bawa topi/sunblock).
 - **Makanan:** rekomendasi disesuaikan agar tidak pedas/asam/berminyak — pilih congee, dim sum kukus, sup, ikan/ayam kukus, bubur; hindari roast goose berminyak, claypot pedas, dan gorengan.
 - **Hari Senin (Hari 4):** Sacred Heart Cathedral dan Zhenhai Tower tutup Senin; itinerary sudah menghindari itu (Sacred Heart di Sabtu). **Hari 5 (Selasa):** pesawat 12:15 dari Bandara Baiyun — berangkat dari hotel ±09:00 dengan Didi (±29 menit), tiba bandara ≥2 jam sebelum berangkat.
 - **Pembayaran:** WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.
@@ -441,6 +444,20 @@ Kuil dari tahun 537 M dengan Pagoda Bunga (Huātǎ, 57,6 m) berlapis delapan sis
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/six_tree.htm
 - Video referensi: https://www.youtube.com/results?search_query=Liurong+Temple+Guangzhou
 
+### Baiyun Mountain (白云山 · Báiyún Shān) ✅
+Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru kota" dengan jalur pendakian, taman, dan kereta gantung; populer untuk pemandangan kota dari atas.
+
+✅ Nama terverifikasi dari sumber yang konsisten.
+
+**Akses:** MTR Line 2 ke Baiyun Culture Square Exit B lalu bus Guang 424 ke West Gate (jalan ±150 m), atau Line 2/3 ke Yuntai Garden — ⚠️ belum diverifikasi Amap. Dari Summit Square (kereta gantung) plaza datar; jangan mendaki Moxing Peak (tangga).
+
+**Jam Operasional:** taman 06:00–21:00; kereta gantung 09:00–18:00.
+
+**Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
+
+- Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
+- Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou
+
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary utama — alasannya ditulis di masing-masing uraian.
@@ -460,22 +477,6 @@ Menara lima lantai era Ming (1380) di puncak Yuexiu Hill, kini Guangzhou Museum 
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/museum.htm
 - Video referensi: https://www.youtube.com/results?search_query=Zhenhai+Tower+Guangzhou
-
-### Baiyun Mountain (白云山 · Báiyún Shān) ✅
-Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru kota" dengan jalur pendakian, taman, dan kereta gantung; populer untuk pemandangan kota dari atas.
-
-✅ Nama terverifikasi dari sumber yang konsisten.
-
-**Akses:** MTR Line 2 ke Baiyun Culture Square lalu bus Guang 424, atau Line 2/3 ke Yuntai Garden — ±150 m ke West Gate ⚠️.
-
-**Jam Operasional:** taman 06:00–21:00; kereta gantung 09:00–18:00.
-
-**Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
-
-**Kenapa tidak dimasukkan:** kategori Secondary pilihan pengguna — butuh setengah hari (±2 jam dengan kereta gantung, ±5 jam jalan kaki penuh) dan medan menanjak kurang cocok untuk lutut; hari-hari 4 malam sudah terisi.
-
-- Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
-- Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou
 
 ### Chen Clan Ancestral Hall (陈家祠 · Chénjiā Cí) ✅
 Kompleks aula leluhur marga Chen yang dibangun 1888–1894 — mahakarya arsitektur Lingnan dengan ukiran kayu, batu, keramik, dan plester berwarna, kini juga jadi Guangdong Folk Art Museum.
