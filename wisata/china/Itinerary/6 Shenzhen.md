@@ -16,6 +16,8 @@
 > (12) **2026-09-25 — revisi destinasi atas permintaan pengguna:** Hari 2 = Shenzhen Bay Park + Cultural Plaza + MixC + Sea World + K11 ECOAST (klaster Nanshan digabung lagi dalam 1 hari, ±3 jam transit — sudah diperingatkan); Hari 3 = **Shenzhen Science and Technology Museum** (dipindah dari Cadangan; Guangming, ±90 menit sekali jalan ⚠️ estimasi, tiket ¥50/org wajib reservasi WeChat) + Shuiwei Night Market malam; Hari 1 & Hari 4 tidak berubah. Shuiwei kini dijangkau langsung dari hotel (rute Amap terverifikasi ±36 menit) bukan dari Talent Park. Budget: Hari 2 240 CNY (sama dengan versi lama), Hari 3 350 CNY (tiket museum 100 + transit), GRAND TOTAL ≈1.361 CNY/Rp3.606.529 → **≈1.547 CNY / Rp4.099.429**. ⚠️ Rute hotel → Guangming belum di-Amap-kan; catatan wiki ±27 menit ke stasiun 'Science Museum' Futian adalah gedung LAMA, bukan museum baru.
 >
 > (baru) **2026-09-26 — harga hotel dibooking dari pengguna:** ¥618/3 malam (≈Rp1.637.700), menggantikan estimasi Rp1.473.429; tanda estimasi dihapus. GRAND TOTAL ≈1.547 CNY/Rp4.099.429 → **≈1.609 CNY/Rp4.263.700**.
+>
+> (baru) **2026-09-26 — harga dikonfirmasi pengguna:** HSR Hong Kong→Shenzhen Rp400.000/2 org dipakai sebagai harga final (belum bisa dibeli). Budget tidak berubah.
 
 
 ## Informasi Transportasi
