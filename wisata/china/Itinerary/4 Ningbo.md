@@ -14,15 +14,14 @@
 
 | | |
 |---|---|
-| Rute | Wuxi Railway Station (HSR) → Ningbo Railway Station (HSR) |
+| Rute | WUX Wuxi (Railway Station) → NGB Ningbo (Railway Station) |
 | Tanggal | Sabtu, 10 Oktober |
-| Kereta | G-train (nomor kereta belum dipilih) |
-| Jadwal | Berangkat 14:00 → Tiba 17:15 (langsung, ±3 jam, ⚠️ jam tiba estimasi) |
-| Kepulangan | Minggu, 1 November, **08:50** — pesawat Hong Kong Express UO227 NGB → HKG (lihat Informasi Penerbangan Pulang) |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: **Southern Business District Station (南部商务区站, Line 8)** — dikoreksi dari Yinzhou Higher Education Park Station (satu halte lebih jauh ke arah tenggara) berdasarkan screenshot Amap pengguna. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum & Southern Business District), BUKAN persis di ujung tenggara dekat Dongqian Lake seperti versi sebelumnya — Dongqian Lake (Hari 6) tetap dijangkau via Line 8 lalu transfer, tapi jaraknya sedikit lebih jauh dari anggapan awal.
+**Tempat Tinggal:** Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: **Southern Business District Station (南部商务区站, Line 8)**. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum & Southern Business District); Dongqian Lake (Hari 6) dijangkau via Line 8 lalu transfer.
 
 **Transportasi lokal:** Ningbo Rail Transit sudah punya 8 jalur aktif per pertengahan 2026 (Line 8 dibuka Juni 2025, Line 7 Agustus 2025) — jaringan cukup luas untuk kota sekelas Ningbo. Bayar via **WeChat Pay/Alipay QR code** di gerbang MRT (tidak perlu kartu fisik). Untuk destinasi di luar kota (Xikou, Qiantong, Hemudu) naik bus antar-kota dari **Ningbo South Bus Station (宁波汽车南站)** — persis di sebelah Stasiun Ningbo (Line 2/Line 1 Ximenkou). Prioritas: MRT > jalan kaki > bus antar-kota (untuk day-trip jauh) > Didi (fleksibel kalau MRT tidak menjangkau/titip koper).
 
@@ -208,7 +207,7 @@ Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemu
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 08:30–09:10 | MRT ke **Waitan Bridge**: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) | 12 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao") | 8 | Rp21.200 |
+| 08:30–09:10 | MRT ke **Waitan Bridge**: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) | 12 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 | 8 | Rp21.200 |
 | 09:15–12:00 | **Old Bund (Laowaitan)** — arsitektur Eropa 1844, Jiangbei Catholic Church | Gratis jalan kawasan | — | — |
 | 12:00–13:00 | Makan siang sekitar Old Bund | ±CNY 25/org | 50 | Rp132.500 |
 | 13:00–15:00 | **Sanjiangkou** — pertemuan Sungai Yong, Yao, Fenghua | Gratis, jalur datar tepi sungai | — | — |
@@ -785,7 +784,7 @@ Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertam
 
 ✅ Nama Hanzi terverifikasi dari berbagai sumber.
 
-**Akses:** dari rumah: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) — total 12 halte, ¥4/org, ±40 menit, rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao" jadi **Waitan Bridge**).
+**Akses:** dari rumah: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) — total 12 halte, ¥4/org, ±40 menit, rute terverifikasi Amap 2026-09-22.
 
 **Jam Operasional:** kawasan jalan terbuka 24 jam, gratis. Bar/resto umumnya buka sore-malam.
 

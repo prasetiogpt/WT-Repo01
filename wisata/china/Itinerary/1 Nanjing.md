@@ -15,16 +15,16 @@
 | Tanggal | Sabtu, 3 Oktober |
 | Maskapai | Xiamen Airlines MF8694 · Boeing 737-800 · Economy |
 | Jadwal | Berangkat 06:50 → Tiba 14:25 (nonstop, 6j35m) |
-| Bagasi | Carry-on 1×8kg · Checked baggage 1×23kg |
-| Persiapan | Tiba di bandara CGK sekitar 04:30-05:00 pagi |
 
-**Nonstop tanpa transit** — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.
+**Bagasi & persiapan:** carry-on 1×8kg · checked baggage 1×23kg; tiba di bandara CGK sekitar 04:30–05:00 pagi.
+
+**Nonstop tanpa transit** — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan). Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.
 
 **⚠️ Perhatian: China Golden Week (1-7 Oktober)** — Trip ini bertepatan dengan libur Hari Nasional China, periode liburan domestik terbesar. Hotel, tiket HSR, dan tempat wisata jauh lebih ramai & mahal dari kondisi normal. Booking secepatnya dan siapkan buffer waktu ekstra di setiap aktivitas. **Nanjing Massacre Memorial Hall (Hari 2) & Nanjing Museum (Hari 4) WAJIB direservasi online H-7** — kuota terbatas dan periode Golden Week bikin slot lebih cepat habis, booking begitu slot H-7 dibuka (lihat cara reservasi di Lampiran).
 
 **Catatan biaya:** semua angka CNY/IDR di bawah adalah perkiraan biaya untuk **3 orang** (rombongan), sudah dijumlah per baris kegiatan. Kurs dipakai: **Rp2.650/CNY** (kurs tetap). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.3/10 (2.485 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 230m/±4 menit jalan kaki (data peta Trip.com 2026-09-15, koreksi dari estimasi sebelumnya ±170m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
+**Hotel:** Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.3/10 (2.485 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: **Fuqiao Metro Station (Line 3)** — 230m/±4 menit jalan kaki (data peta Trip.com 2026-09-15); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.
 
 **Transportasi:** semua "taksi" di itinerary ini maksudnya **Didi Rider** (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).
 
@@ -160,11 +160,16 @@ Massacre Memorial Hall & Nanjing Museum sama-sama gratis (reservasi online), jad
 
 | | |
 |---|---|
-| Opsi 1 (1 orang) | HSR ke Ningbo — **berangkat ±17:00**, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal) |
-| Opsi 2 (2 orang) | HSR lanjut ke Wuxi — **berangkat 18:00** dari Nanjing South (tiket sudah didapat), menyambung ke itinerary Wuxi (tiba Wuxi ±18:45). HSR Nanjing→Wuxi ±44 menit (G-train tercepat) — biaya masuk budget Wuxi (kota tujuan), bukan Nanjing |
+| Rute | NKG Nanjing (South Railway Station) → WUX Wuxi (Railway Station) |
 | Tanggal | Selasa, 6 Oktober |
-| Stasiun | Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat |
-| Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit) |
+
+**Stasiun berangkat:** Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat. Tiket sudah didapat untuk 2 orang; biaya masuk budget Wuxi (kota tujuan).
+
+**Opsi 1 orang:** HSR ke Ningbo, berangkat ±17:00 dari stasiun yang sama, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal).
+
+**Beli tiket:** app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah.
 
 **⚠️ Booking tiket HSR sesegera mungkin** — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama dengan selisih ±1 jam (17:00 vs 18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.
 
@@ -474,7 +479,7 @@ Jalan sepanjang 600m menuju makam Zhu Yuanzhang, pendiri sekaligus kaisar pertam
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-⚠️ **Koreksi dari versi dokumen sebelumnya:** sebelumnya tertulis "persis satu area dengan Jiming Temple" — ini SALAH. Akses sebenarnya via Stasiun Muxuyuan (Line 2), satu kawasan dengan Sun Yat-sen Mausoleum (lihat entri di bawah), BUKAN dengan Jiming Temple/Xuanwu Lake yang berbeda area.
+Akses via Stasiun Muxuyuan (Line 2), satu kawasan dengan Sun Yat-sen Mausoleum (lihat entri di bawah), bukan dengan Jiming Temple/Xuanwu Lake (beda area).
 
 **Akses:** MRT Line 2, turun Stasiun Muxuyuan, keluar Exit 1, lanjut jalan kaki ±1,6km atau naik shuttle wisata (CNY 10/org) — satu kawasan dengan Sun Yat-sen Mausoleum.
 
@@ -581,7 +586,7 @@ Pembangunan dimulai 2005, selesai 2010, dengan tinggi 450m & 66 lantai — gedun
 - Rekomendasi tempat sekitar: Zifeng Tower (紫峰大厦 · Zǐfēng Dàshà) mall/food court di lantai bawah — kalau tetap mau mampir tanpa naik observation deck
 
 ### Dragon Roaming Amusement Park (南京龙出没乐园) ⚠️
-Taman bermain anak seluas ±280 mu (±18,7 hektar) di Desa Sheh (佘村) — dijuluki "Desa Bergaya Kuno Jinling Pertama" karena kompleks bangunan kunonya dari akhir Ming/awal Qing. Bertema "elemen naga", berisi >20 wahana non-motor: kereta mini, gokart anak-orangtua, taman bintang mini, trampolin, seluncuran warna-warni, dan perahu wisata danau. Cocok untuk keluarga dengan anak kecil, dikelilingi pemandangan gunung & danau (Danau Shuanglong). **Java Forest Valley Cafe (entri di bawah) ada persis di dalam kompleks taman ini** — dikonfirmasi via pencarian lanjutan (sebelumnya cuma dugaan/belum terverifikasi di entri Java Forest Valley Cafe).
+Taman bermain anak seluas ±280 mu (±18,7 hektar) di Desa Sheh (佘村) — dijuluki "Desa Bergaya Kuno Jinling Pertama" karena kompleks bangunan kunonya dari akhir Ming/awal Qing. Bertema "elemen naga", berisi >20 wahana non-motor: kereta mini, gokart anak-orangtua, taman bintang mini, trampolin, seluncuran warna-warni, dan perahu wisata danau. Cocok untuk keluarga dengan anak kecil, dikelilingi pemandangan gunung & danau (Danau Shuanglong). **Java Forest Valley Cafe (entri di bawah) ada persis di dalam kompleks taman ini** — dikonfirmasi via pencarian lanjutan.
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 

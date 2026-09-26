@@ -20,10 +20,12 @@
 
 | | |
 |---|---|
-| Rute | Hong Kong West Kowloon → Shenzhen Futian (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
-| Tanggal & Jam Kedatangan | Selasa, 3 November, **±14:30** (HSR berangkat 14:00 dari West Kowloon, tempuh ±30 menit — jam tiba estimasi) |
-| Durasi | ±14 menit — salah satu rute HSR lintas-batas tercepat di dunia, ±47 keberangkatan/hari 07:11–22:01 |
-| Tanggal & Jam Kepulangan | Jumat, 6 November, **14:00** (dikonfirmasi pengguna 2026-09-24), lihat Informasi Transportasi Pulang |
+| Rute | HKG Hong Kong (West Kowloon Station) → SZX Shenzhen (Futian Station) |
+| Tanggal | Selasa, 3 November |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit) |
+
+**Stasiun tiba:** Futian Station (Line 2/8/11 di stasiun yang sama), keluar stasiun ±14:30. Jam berangkat 14:00 dari West Kowloon (default, tiket belum dibeli); imigrasi Tiongkok sudah selesai di West Kowloon.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -139,12 +141,12 @@
 
 | | |
 |---|---|
-| Kota berikutnya | Guangzhou |
-| Rute | HSR dari **Futian Station** → Guangzhou South |
-| Jadwal | Berangkat 14:00 → Tiba 14:45 (estimasi, durasi ±30–45 menit, nomor kereta belum dipilih) |
-| Tag | Jam berangkat 14:00 dari pengguna (2026-09-24); tiket belum dibeli |
+| Rute | SZX Shenzhen (Futian Station) → CAN Guangzhou (Guangzhou South Station) |
+| Tanggal | Jumat, 6 November |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit) |
 
-**Catatan:** biaya HSR keberangkatan ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.
+**Catatan:** jam berangkat 14:00 dari pengguna (2026-09-24); nomor kereta belum dipilih dan tiket belum dibeli (±30–45 menit tempuh). Biaya HSR ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.
 ---
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Shenzhen)
@@ -242,7 +244,7 @@ Museum utama kota yang memaparkan sejarah Shenzhen dari desa nelayan kecil hingg
 
 ✅ Nama & info terverifikasi dari sumber resmi.
 
-**Akses:** Civic Center Station (Line 2/4), Exit C, jalan kaki ke kompleks Civic Center — satu kawasan dengan Cultural Plaza & Library. Dari hotel: Line 2(8) langsung, 3 halte (via Huaqiang North, Gangxia North), ±15 menit + tunggu, ¥2/org — rute terverifikasi Amap (koreksi dari raw lama yang salah lewat Children's Palace/Line 4).
+**Akses:** Civic Center Station (Line 2/4), Exit C, jalan kaki ke kompleks Civic Center — satu kawasan dengan Cultural Plaza & Library. Dari hotel: Line 2(8) langsung, 3 halte (via Huaqiang North, Gangxia North), ±15 menit + tunggu, ¥2/org — rute terverifikasi Amap.
 
 **Jam Operasional:** Selasa–Minggu 10:00–18:00, tutup Senin. Tidak perlu reservasi sejak Juli 2024.
 
@@ -404,7 +406,7 @@ Kawasan pasar pejalan kaki tertua & terbesar Shenzhen di Distrik Luohu — pusat
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** MTR Laojie Station (Line 1/3), Exit D, langsung di pintu masuk kawasan. Dari hotel: jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte (Grand Theater) → Laojie Exit D. Total 2 stasiun, ¥2/org, ±24 menit — rute terverifikasi Amap (koreksi dari raw lama yang salah lewat Shixia/8 halte).
+**Akses:** MTR Laojie Station (Line 1/3), Exit D, langsung di pintu masuk kawasan. Dari hotel: jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte (Grand Theater) → Laojie Exit D. Total 2 stasiun, ¥2/org, ±24 menit — rute terverifikasi Amap.
 
 **Jam Operasional:** area terbuka sepanjang hari; toko/jajanan umumnya ±10:00–22:00, paling ramai sore-malam.
 

@@ -17,25 +17,29 @@
 
 | | |
 |---|---|
-| Tanggal & Jam Kedatangan | Jumat, 10 Oktober, **±15:00**, via HSR dari Wuxi |
-| Titik kedatangan → Hotel | Taksi/Didi singkat ke hotel |
+| Rute | WUX Wuxi (Railway Station) → SZV Suzhou (Railway Station) |
+| Tanggal | Jumat, 10 Oktober |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:30 → Tiba 15:00 (estimasi, ±30 menit) |
+
+**Stasiun tiba:** Suzhou Railway Station, lanjut taksi/Didi singkat ke hotel. Jam berangkat default, nomor kereta belum dipilih.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
-**Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: **Nanyuanbeilu Station (南园北路, Line 5)**, ±364m/±7 menit jalan kaki (terverifikasi Amap 2026-09-22, koreksi dari estimasi lama 140m) — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).
+**Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: **Nanyuanbeilu Station (南园北路, Line 5)**, ±364m/±7 menit jalan kaki (terverifikasi Amap 2026-09-22) — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).
 
-Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel. ⚠️ **Koreksi 2026-09-20 (terverifikasi Amap, sebelumnya salah)**: ke kawasan **Hanshan Temple/Shantang Street** BUKAN via Laodonglu/Line 2 — rute sebenarnya **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Ke kawasan **Jinji Lake (Dongfangzhimen)** BUKAN transfer ke Line 1 — rute sebenarnya **Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen** (6 halte, ¥3, ±32 menit). **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)** — terkonfirmasi Amap 2026-09-22: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.
+Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel. Rute terverifikasi Amap: ke kawasan **Hanshan Temple/Shantang Street** via **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Ke kawasan **Jinji Lake (Dongfangzhimen)** via **Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen** (6 halte, ¥3, ±32 menit). **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)** — terkonfirmasi Amap 2026-09-22: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.
 
 ## Informasi Transportasi Pulang
 
 | | |
 |---|---|
-| Rute | Suzhou → Ningbo via HSR (kereta cepat) |
-| Stasiun keberangkatan | **Suzhou Railway Station (苏州站 · Sūzhōu Zhàn)** — lebih dekat dari hotel dibanding Suzhou North (5,9km vs ±16km) |
-| Tanggal & jam berangkat (rencana) | Selasa, 14 Oktober, **±15:00** (belum jadwal terkunci — ±19 kereta G/D per hari 07:15–18:08, cek nomor kereta persis di 12306/Trip.com H-7) |
-| Durasi HSR | ±2 jam 27 menit – 3,5 jam (tergantung kereta) |
-| Biaya HSR | Masuk budget Ningbo (kota tujuan), tidak dihitung di sini |
-| Hotel → Stasiun | Taksi/Didi langsung, ±27 menit |
+| Rute | SZV Suzhou (Railway Station) → NGB Ningbo (Railway Station) |
+| Tanggal | Selasa, 14 Oktober |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 15:00 → Tiba 17:30 (estimasi, ±2j30m) |
+
+**Stasiun berangkat:** Suzhou Railway Station (bukan Suzhou North) — lebih dekat dari hotel (5,9km vs ±16km), taksi/Didi ±27 menit. Jam 15:00 default (±19 kereta G/D per hari 07:15–18:08); nomor kereta persis cek di 12306/Trip.com H-7. Biaya HSR masuk budget Ningbo (kota tujuan).
 
 ---
 
@@ -93,9 +97,9 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 | 08:30–08:56 | Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita | 26 menit, 5 halte, ¥2/org — terverifikasi Amap | 4 | Rp10.600 |
 | 09:00–10:30 | **Suzhou Museum** | Gratis (reservasi online/tunjukkan paspor) | — | — |
 | 10:45–11:45 | Makan siang: Yangchun mian (mie kuah polos) | ±CNY 20/org | 40 | Rp106.000 |
-| 11:45–11:55 | Metro 1 halte: Beisita → **Chayuanchang** (Line 4), lanjut jalan kaki 450m | Amap: mobil 2,5km/10 menit — jadi jarak jalan kaki langsung DARI Beisita terlalu jauh (koreksi klaim lama), tapi 1 halte MRT + jalan kaki tetap praktis | 4 | Rp10.600 |
+| 11:45–11:55 | Metro 1 halte: Beisita → **Chayuanchang** (Line 4), lanjut jalan kaki 450m | Amap: mobil 2,5km/10 menit — jadi jalan kaki langsung dari Beisita terlalu jauh, tapi 1 halte MRT + jalan kaki tetap praktis | 4 | Rp10.600 |
 | 11:55–13:00 | **Guanqian Street** & **Xuanmiao Temple** | Pedestrian street. Pelataran gratis, masuk aula utama Xuanmiao opsional ±CNY 20/org | 40 | Rp106.000 |
-| 13:00–13:15 | Sewa sepeda ke **Humble Administrator's Garden** | Terverifikasi Amap: rute transit (jalan+MRT+jalan) ±29 menit lewat koridor yang sama dengan Beisita↔Guanqian St (2,5km) — sepeda lebih cepat & praktis untuk jarak segini daripada bolak-balik MRT. Klaim lama "searah/berdekatan dengan Beisita" TIDAK akurat by MRT langsung, tapi cukup dekat untuk sepeda | 12 | Rp31.800 |
+| 13:00–13:15 | Sewa sepeda ke **Humble Administrator's Garden** | Terverifikasi Amap: rute transit (jalan+MRT+jalan) ±29 menit lewat koridor yang sama dengan Beisita↔Guanqian St (2,5km) — sepeda lebih cepat & praktis untuk jarak segini daripada bolak-balik MRT. Tidak searah MRT langsung dengan Beisita, tapi cukup dekat untuk sepeda | 12 | Rp31.800 |
 | 13:20–15:30 | **Humble Administrator's Garden** | Via Stasiun Zhuozhengyuan·Suzhou Museum (Line 6). Tiket ±CNY 80/org | 160 | Rp424.000 |
 | 15:45–16:15 | Metro ke **Pingjiang Road** (transfer ke Line 1, Stasiun Xiangmen) | — | 12 | Rp31.800 |
 | 18:00–19:30 | Makan malam + jalan malam **Pingjiang Road** | Kanal bersejarah, gratis. Makan ±CNY 25/org | 50 | Rp132.500 |
@@ -116,7 +120,7 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 | 08:15–08:30 | Metro 1 halte: Nanyuanbeilu → Nanmen | Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi | 8 | Rp21.200 |
 | 08:45–10:00 | **Wumen Bridge** (gratis) + **Panmen Scenic Spots** | Tiket Panmen ±CNY 40/org — persis di depan hotel | 80 | Rp212.000 |
 | 10:00–11:00 | Makan siang sekitar Panmen | ±CNY 25/org | 50 | Rp132.500 |
-| 11:00–11:39 | Metro: Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie | 39 menit, 9 halte, ¥3/org — terverifikasi Amap (koreksi dari klaim lama Line 5/Laodonglu/Line 2) | 6 | Rp15.900 |
+| 11:00–11:39 | Metro: Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie | 39 menit, 9 halte, ¥3/org — terverifikasi Amap | 6 | Rp15.900 |
 | 11:45–13:45 | **Hanshan Temple** (±CNY 20/org) + **Fengqiao Scenic Area** (gratis, jalan sekitar) | Situs kuil terkenal lewat puisi kuno, bersebelahan | 40 | Rp106.000 |
 | 14:00–16:00 | **Shantang Street** | "Jalan Kuno No.1 Suzhou", kanal & jembatan tua, gratis | — | — |
 | 16:00–17:30 | Makan malam sekitar Shantang | ±CNY 20/org | 40 | Rp106.000 |
@@ -146,6 +150,8 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 | | **TOTAL HARI 5** | | **198** | **Rp524.700** |
 
 **Plan-B hari ini:** kalau Master of Nets Garden tutup lebih awal dari perkiraan atau cuaca buruk — jalan santai saja di Shiquan Street (gratis, langsung depan hotel) sampai waktu checkout.
+
+**Stasiun berangkat:** Suzhou Railway Station (bukan Suzhou North) — lebih dekat dari hotel (5,9km vs ±16km), taksi/Didi ±27 menit. Jam 15:00 default (±19 kereta G/D per hari 07:15–18:08); nomor kereta persis cek di 12306/Trip.com H-7. Biaya HSR masuk budget Ningbo (kota tujuan).
 
 ---
 
@@ -248,7 +254,7 @@ Gedung pencakar langit berbentuk gerbang raksasa (dijuluki warga lokal "celana p
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Dongfangzhimen (东方之门) — gedung ini punya stasiun MRT sendiri, tersambung langsung. Sisi barat Jinji Lake. Dari hotel: **Line 5 → transfer → Line 3** (terverifikasi Amap, 6 halte, ¥3/org, ±32 menit — koreksi dari klaim lama "transfer ke Line 1").
+**Akses:** Stasiun Dongfangzhimen (东方之门) — gedung ini punya stasiun MRT sendiri, tersambung langsung. Sisi barat Jinji Lake. Dari hotel: **Line 5 → transfer → Line 3** (terverifikasi Amap, 6 halte, ¥3/org, ±32 menit).
 
 **Jam Operasional:** area luar/lihat dari luar bisa kapan saja; bangunan sendiri fungsinya hotel/kantor/residensial (bukan objek wisata dengan jam buka publik). Paling bagus dilihat menjelang malam saat lampu gedung menyala.
 
@@ -322,7 +328,7 @@ Guanqian Street ('jalan di depan kelenteng') berkembang sejak Dinasti Song sebag
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Chayuanchang (察院场, Line 4), keluar Exit 2, jalan kaki ±450m ke utara. ✅ Dari Beisita: **1 halte MRT Line 4 ke Chayuanchang** (koreksi 2026-09-20 — sebelumnya diklaim "jalan kaki singkat dari Beisita", padahal jaraknya 2,5km/10 menit naik mobil, terlalu jauh untuk jalan kaki).
+**Akses:** Stasiun Chayuanchang (察院场, Line 4), keluar Exit 2, jalan kaki ±450m ke utara. ✅ Dari Beisita: **1 halte MRT Line 4 ke Chayuanchang** (jarak 2,5km/10 menit naik mobil, terlalu jauh untuk jalan kaki).
 
 **Jam Operasional:** jalan pedestrian buka 24 jam (gratis); toko & kios umumnya ±09:00–22:00.
 
@@ -410,7 +416,7 @@ Satu-satunya gerbang kota kuno di China yang menggabungkan gerbang air DAN gerba
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** Stasiun Nanmen (南门, Line 4 & Line 5) — persis **1 halte MRT dari hotel via Line 5** (koreksi dari draft lama yang mengasumsikan perjalanan lebih jauh), atau jalan kaki ±1,2km/17 menit.
+**Akses:** Stasiun Nanmen (南门, Line 4 & Line 5) — persis **1 halte MRT dari hotel via Line 5**, atau jalan kaki ±1,2km/17 menit.
 
 **Jam Operasional:** 07:30–17:30 setiap hari.
 
@@ -424,7 +430,7 @@ Kuil Buddha yang jadi terkenal berkat puisi Dinasti Tang "Malam Berlabuh di Mapl
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Stasiun Shantangjie (山塘街, Line 2), keluar Exit 3, jalan kaki ±15 menit. ⚠️ **Koreksi 2026-09-20 (terverifikasi Amap)**: dari hotel/Nanmen BUKAN via Laodonglu/Line 2 seperti klaim lama — rute sebenarnya **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3/org, ±39 menit).
+**Akses:** Stasiun Shantangjie (山塘街, Line 2), keluar Exit 3, jalan kaki ±15 menit. Dari hotel/Nanmen (terverifikasi Amap): **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3/org, ±39 menit).
 
 **Jam Operasional:** 07:30–17:30 (masuk terakhir 16:30); tanggal 1 & 15 penanggalan lunar buka lebih awal jam 07:00.
 
@@ -648,7 +654,7 @@ Taman ekologi terbuka terbesar di kawasan ini (±1,21 juta m², termasuk ±540.0
 ### Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán) ⚠️
 Taman hiburan skala besar dengan 3 zona utama (Water World, Forest World, Children's World), wahana modern termasuk roller coaster gantung terbesar di China, serta beberapa instalasi bertema landmark dunia (mis. replika Coliseum Romawi, tanda mirip "HOLLYWOOD").
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. **⚠️ Koreksi dari draft sebelumnya:** nama "Window of the World" yang sebelumnya disandingkan dengan tempat ini sebenarnya taman berbeda yang berlokasi di **Shenzhen**, BUKAN bagian dari Suzhou Amusement Land — kemungkinan tercampur karena konsep temanya mirip (replika landmark dunia). Entri ini murni tentang Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán).
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap. Entri ini murni tentang Suzhou Amusement Land (苏州乐园 · Sūzhōu Lèyuán).
 
 **Akses:** Stasiun Suzhou Amusement Park (苏州乐园, Line 1), jalan kaki ±5 menit.
 

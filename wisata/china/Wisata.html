@@ -659,12 +659,10 @@ const destinations = [
       meta:[
         [`Maskapai`,`Xiamen Airlines MF8694 · Boeing 737-800 · Economy`],
         [`Jadwal`,`Berangkat 06:50 → Tiba 14:25 (nonstop, 6j35m)`],
-        [`Bagasi`,`Carry-on 1×8kg · Checked baggage 1×23kg`],
-        [`Persiapan`,`Tiba di bandara CGK sekitar 04:30-05:00 pagi`],
       ],
-      note:`<b>Nonstop tanpa transit</b> — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan) yang sebelumnya jadi pertimbangan di rute alternatif via Xiamen. Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.<br><br><b>Transportasi:</b> semua "taksi" di itinerary ini maksudnya <b>Didi Rider</b> (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).`,
+      note:`<b>Bagasi &amp; persiapan:</b> carry-on 1×8kg · checked baggage 1×23kg; tiba di bandara CGK sekitar 04:30–05:00 pagi.<br><br><b>Nonstop tanpa transit</b> — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan). Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.<br><br><b>Transportasi:</b> semua "taksi" di itinerary ini maksudnya <b>Didi Rider</b> (app ride-hailing versi internasional, bisa pakai paspor + kartu kredit asing, interface Inggris) — taksi jalanan biasa tidak disarankan karena kendala bahasa. Untuk bandara↔hotel, MRT juga memungkinkan (S1 → transfer Nanjing South → Line 3 ke Fuqiao, ±70-80 menit, ±CNY 11/org) tapi Didi lebih disarankan untuk Hari 1 (bawa koper banyak + Golden Week padat).`,
       warn:`<b>⚠️ Perhatian: China Golden Week (1-7 Oktober)</b> — Trip ini bertepatan dengan libur Hari Nasional China, periode liburan domestik terbesar. Hotel, tiket HSR, dan tempat wisata jauh lebih ramai &amp; mahal dari kondisi normal. Booking secepatnya dan siapkan buffer waktu ekstra di setiap aktivitas. <b>Nanjing Massacre Memorial Hall (Hari 2) &amp; Nanjing Museum (Hari 4) WAJIB direservasi online H-7</b> — kuota terbatas dan periode Golden Week bikin slot lebih cepat habis, booking begitu slot H-7 dibuka (lihat cara reservasi di Lampiran).`,
-      hotel:`<b>Hotel:</b> Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.3/10 (2.485 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: <b>Fuqiao Metro Station (Line 3)</b> — 230m/±4 menit jalan kaki (data peta Trip.com 2026-09-15, koreksi dari estimasi sebelumnya ±170m); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.`
+      hotel:`<b>Hotel:</b> Chengxian Hotel (Nanjing Presidential Palace Southeast University Branch) — 城贤大酒店, rating 9.3/10 (2.485 ulasan). No. 57 Chengxian Street, Xuanwu District, Nanjing. ±1,5km (garis lurus) dari pusat kota. Metro terdekat: <b>Fuqiao Metro Station (Line 3)</b> — 230m/±4 menit jalan kaki (data peta Trip.com 2026-09-15); alternatif Jimingsi Metro Station — 730m/±11 menit jalan kaki. Lokasi ini strategis: hampir semua destinasi itinerary bisa dicapai via Line 3 langsung tanpa transfer. Stasiun kereta: Nanjing Railway Station — 6,9km/±18 menit naik mobil; Nanjingnan (South) Railway Station — 10,5km/±40 menit naik mobil. Bandara: Nanjing Lukou International Airport — 40,7km/±1j24m naik mobil.`
     },
 
     days:[
@@ -772,16 +770,17 @@ const destinations = [
     ],
 
     transportPulang:{
-      mode:"transit", kicker:`Transport Pulang`,
-      title:`Rute belum ditentukan &middot; Selasa, 6 Oktober (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Opsi 1 (1 orang)`,`HSR ke Ningbo — <b>berangkat ±17:00</b>, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat &amp; mahal)`],
-        [`Opsi 2 (2 orang)`,`HSR lanjut ke Wuxi — <b>berangkat 18:00</b> dari Nanjing South (tiket sudah didapat), menyambung ke itinerary Wuxi (tiba Wuxi ±18:45). HSR Nanjing→Wuxi ±44 menit (G-train tercepat) — biaya masuk budget Wuxi (kota tujuan), bukan Nanjing`],
-        [`Tanggal`,`Selasa, 6 Oktober`],
-        [`Stasiun`,`Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat`],
-        [`Beli tiket`,`App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah`],
+      mode:`train`, kicker:`Transport Pulang`,
+      title:`NKG &rarr; WUX &middot; Selasa, 6 Oktober &middot; 18:00&ndash;18:45`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`NKG`, name:`Nanjing &middot; South Railway Station`},
+      to:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
+      duration:`±44 menit &middot; langsung`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit)`],
       ],
+      note:`<b>Stasiun berangkat:</b> Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat. Tiket sudah didapat untuk 2 orang; biaya masuk budget Wuxi (kota tujuan).<br><br><b>Opsi 1 orang:</b> HSR ke Ningbo, berangkat ±17:00 dari stasiun yang sama, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat &amp; mahal).<br><br><b>Beli tiket:</b> app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah.`,
       warn:`<b>⚠️ Booking tiket HSR sesegera mungkin</b> — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama dengan selisih ±1 jam (17:00 vs 18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.`,
       hotel:``
     },
@@ -943,7 +942,7 @@ const destinations = [
        nameEn:`Ming Xiaoling Sacred Way`,
        nameHanzi:`明孝陵神道`,
        context:`Kenapa tidak dimasukkan: tidak searah dengan rute Line 3 (Hari 3) atau Line 2 (Hari 2/4) yang dipakai itinerary ini — kawasan Purple Mountain/Muxuyuan butuh perjalanan tersendiri, mirip kasus Sun Yat-sen Mausoleum.`,
-       text:`Jalan sepanjang 600m menuju makam Zhu Yuanzhang, pendiri sekaligus kaisar pertama Dinasti Ming, dan permaisurinya Ma (makam dinamai "Xiaoling" atau "Makam Berbakti" untuk menghormatinya). Di sepanjang jalan berjejer patung batu singa, unta, gajah, dan kuda yang dipercaya mengusir roh jahat sekaligus menjaga makam. Situs ini bagian dari UNESCO World Heritage. <b>Akses:</b> MRT Line 2, turun Stasiun Muxuyuan, keluar Exit 1, lanjut jalan kaki ±1,6km atau naik shuttle wisata (CNY 10/org) — satu kawasan dengan Sun Yat-sen Mausoleum. <b>Jam Operasional:</b> ±06:30–18:30 (Feb–Nov) / 07:00–17:30 (Des–Jan), bagian dari kompleks Ming Xiaoling Mausoleum. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi. <b>Tiket:</b> CNY 70/org (tiket Ming Xiaoling Mausoleum, termasuk Sacred Way). Ada tiket kombinasi 2 hari CNY 100/org yang juga mencakup Linggu Temple, Meiling Palace, dan Music Stage.`,
+       text:`Jalan sepanjang 600m menuju makam Zhu Yuanzhang, pendiri sekaligus kaisar pertama Dinasti Ming, dan permaisurinya Ma (makam dinamai "Xiaoling" atau "Makam Berbakti" untuk menghormatinya). Di sepanjang jalan berjejer patung batu singa, unta, gajah, dan kuda yang dipercaya mengusir roh jahat sekaligus menjaga makam. Situs ini bagian dari UNESCO World Heritage. Akses via Stasiun Muxuyuan (Line 2), satu kawasan dengan Sun Yat-sen Mausoleum (lihat entri di bawah), bukan dengan Jiming Temple/Xuanwu Lake (beda area). <b>Akses:</b> MRT Line 2, turun Stasiun Muxuyuan, keluar Exit 1, lanjut jalan kaki ±1,6km atau naik shuttle wisata (CNY 10/org) — satu kawasan dengan Sun Yat-sen Mausoleum. <b>Jam Operasional:</b> ±06:30–18:30 (Feb–Nov) / 07:00–17:30 (Des–Jan), bagian dari kompleks Ming Xiaoling Mausoleum. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi. <b>Tiket:</b> CNY 70/org (tiket Ming Xiaoling Mausoleum, termasuk Sacred Way). Ada tiket kombinasi 2 hari CNY 100/org yang juga mencakup Linggu Temple, Meiling Palace, dan Music Stage.`,
        wiki:`https://en.wikipedia.org/wiki/Ming_Xiaoling_Mausoleum`,
        yt:`https://www.youtube.com/results?search_query=Ming+Xiaoling+Sacred+Way+Nanjing`},
       {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Zhonghua Gate (中华门 · Zhōnghuá Mén)`,
@@ -994,7 +993,7 @@ const destinations = [
        nameEn:`Dragon Roaming Amusement Park`,
        nameHanzi:`南京龙出没乐园`,
        context:`Kenapa tidak dimasukkan: taman bermain anak generik, kurang senada dengan fokus budaya/alam itinerary utama; lokasinya juga di Kecamatan Dongshan — beda arah dari klaster Niushoushan maupun klaster pusat kota (Laomendong/Deji Plaza/Mochou Lake Park/dst), butuh Didi/trip khusus tersendiri kalau ingin dikunjungi.`,
-       text:`Taman bermain anak seluas ±280 mu (±18,7 hektar) di Desa Sheh (佘村) — dijuluki "Desa Bergaya Kuno Jinling Pertama" karena kompleks bangunan kunonya dari akhir Ming/awal Qing. Bertema "elemen naga", berisi &gt;20 wahana non-motor: kereta mini, gokart anak-orangtua, taman bintang mini, trampolin, seluncuran warna-warni, dan perahu wisata danau. Cocok untuk keluarga dengan anak kecil, dikelilingi pemandangan gunung &amp; danau (Danau Shuanglong). <b>Java Forest Valley Cafe (entri di bawah) ada persis di dalam kompleks taman ini</b> — dikonfirmasi via pencarian lanjutan (sebelumnya cuma dugaan/belum terverifikasi di entri Java Forest Valley Cafe). <b>Akses:</b> Alamat: 100m selatan persimpangan Jl. Shangsheh &amp; Jl. Lijia, Desa Sheh, Kecamatan Dongshan, Distrik Jiangning. TIDAK ada MRT langsung — perlu Didi/bus, dan Desa Sheh sendiri ±13km dari pusat kota kecamatan Dongshan. <b>Jam Operasional:</b> Senin–Jumat 09:00–17:00 (masuk terakhir 16:00); Sabtu–Minggu 08:30–17:00 (masuk terakhir 16:00). <b>Tiket:</b> ±CNY 59,9/dewasa (±Rp158.750), ±CNY 49,9/anak (±Rp132.250), gratis untuk anak ≤120cm. ⚠️ Harga bisa berubah, cek ulang sebelum berangkat.`,
+       text:`Taman bermain anak seluas ±280 mu (±18,7 hektar) di Desa Sheh (佘村) — dijuluki "Desa Bergaya Kuno Jinling Pertama" karena kompleks bangunan kunonya dari akhir Ming/awal Qing. Bertema "elemen naga", berisi &gt;20 wahana non-motor: kereta mini, gokart anak-orangtua, taman bintang mini, trampolin, seluncuran warna-warni, dan perahu wisata danau. Cocok untuk keluarga dengan anak kecil, dikelilingi pemandangan gunung &amp; danau (Danau Shuanglong). <b>Java Forest Valley Cafe (entri di bawah) ada persis di dalam kompleks taman ini</b> — dikonfirmasi via pencarian lanjutan. <b>Akses:</b> Alamat: 100m selatan persimpangan Jl. Shangsheh &amp; Jl. Lijia, Desa Sheh, Kecamatan Dongshan, Distrik Jiangning. TIDAK ada MRT langsung — perlu Didi/bus, dan Desa Sheh sendiri ±13km dari pusat kota kecamatan Dongshan. <b>Jam Operasional:</b> Senin–Jumat 09:00–17:00 (masuk terakhir 16:00); Sabtu–Minggu 08:30–17:00 (masuk terakhir 16:00). <b>Tiket:</b> ±CNY 59,9/dewasa (±Rp158.750), ±CNY 49,9/anak (±Rp132.250), gratis untuk anak ≤120cm. ⚠️ Harga bisa berubah, cek ulang sebelum berangkat.`,
        wiki:`https://gs.ctrip.com/html5/you/sight/nanjing9/5713162.html`,
        yt:`https://www.youtube.com/results?search_query=南京龙出没乐园`,
        nearby:[`Java Forest Valley Cafe (爪哇森谷咖啡) — kafe tema hutan Jawa di dalam taman, lihat entri di bawah`]},
@@ -1045,17 +1044,15 @@ const destinations = [
     transportPergi:{
       mode:`train`, kicker:`Transport Pergi`,
       title:`NKG &rarr; WUX &middot; Selasa, 6 Oktober &middot; 18:00&ndash;18:45`,
-      tag:"ok", openByDefault:true, code:`G-train tercepat`,
-      from:{code:`NKG`, name:`Nanjing South &middot; HSR`},
-      to:{code:`WUX`, name:`Wuxi &middot; HSR`},
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`NKG`, name:`Nanjing &middot; South Railway Station`},
+      to:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
       duration:`±44 menit &middot; langsung`,
       meta:[
-        [`Kereta`,`G-train tercepat`],
+        [`Kereta`,`HSR G-train`],
         [`Jadwal`,`Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit)`],
-        [`Kepulangan (lanjut ke Ningbo)`,`Sabtu, 10 Oktober, <b>14:00</b>, via HSR`],
-        [`Stasiun acuan`,`<b>Wuxi Railway Station</b> (pusat kota) — <b>BUKAN Wuxi East</b>, sesuai catatan Anda karena East di luar pusat kota`],
       ],
-      note:`Hotel berada persis di <b>Stasiun Taihu Square</b>, kawasan Old Canal, Liangxi District — bukan satu kompleks dengan Tanduqiao seperti tercatat sebelumnya, melainkan 1 halte terpisah (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): <b>Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan</b> (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke <b>Huishan (Hari 3)</b>: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: Line 1 ke Sanyang Plaza (3 halte) + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.`,
+      note:`<b>Stasiun tujuan:</b> Wuxi Railway Station (pusat kota) — bukan Wuxi East, karena East di luar pusat kota.<br><br>Hotel berada persis di <b>Stasiun Taihu Square</b>, kawasan Old Canal, Liangxi District, terpisah 1 halte dari Tanduqiao (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): <b>Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan</b> (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke <b>Huishan (Hari 3)</b>: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke <b>klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)</b>: Line 1 ke Sanyang Plaza (3 halte) + transfer <b>Line 2</b> ke Stasiun <b>Heliekou</b> (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke <b>klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)</b>: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.`,
       warn:`<b>⚠️ Catatan:</b> jam berangkat 18:00 sesuai tiket yang sudah didapat pengguna; jam tiba ±18:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.`,
       hotel:`<b>Hotel:</b> Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station) · 美啡酒店, alias James Joyce Coffetel/喆啡酒店. Tower D, Meilin Center, No. 169 Caozhang New Village, Yongle Road, Liangxi District, Wuxi 214000. Rating 9,4/10 (693 ulasan). Anchor MRT: <b>Taihu Square Metro Station, Exit 1</b> — 350m/±6 menit jalan kaki (terverifikasi Amap). Stasiun lain: Tanduqiao (1km/±16 menit jalan kaki, 1 halte Line 1). Wuxi Railway Station: 4,8km/±24 menit naik mobil, atau 5 halte MRT langsung tanpa transfer (¥2/org, ±10 menit). Check-in setelah 14:00, check-out sebelum 12:00. Titip koper (Hari 5): tercantum di fasilitas resmi hotel (luggage storage).`
     },
@@ -1187,16 +1184,18 @@ const destinations = [
     ],
 
     transportPulang:{
-      mode:"transit", kicker:`Transport Pulang`,
-      title:`Rute belum ditentukan &middot; Sabtu, 10 Oktober (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal &amp; Jam`,`Sabtu, 10 Oktober, <b>14:00</b>`],
-        [`Durasi HSR`,`±3 jam (⚠️ estimasi, tergantung nomor kereta; banyak pilihan jadwal G/D-train)`],
-        [`Tiket`,`Biaya masuk budget Ningbo (kota tujuan), bukan Wuxi`],
-        [`Beli tiket`,`App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun`],
+      mode:`train`, kicker:`Transport Pulang`,
+      title:`WUX &rarr; NGB &middot; Sabtu, 10 Oktober &middot; 14:00&ndash;17:15`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
+      to:{code:`NGB`, name:`Ningbo &middot; Railway Station`},
+      duration:`±3j15m &middot; estimasi`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m)`],
       ],
-      warn:`<b>Catatan:</b> biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 &amp; catatan di Ringkasan Budget Total di atas). Tiba di Ningbo diperkirakan ±17:00–17:30 (⚠️ estimasi), cukup waktu untuk sampai ke tempat tinggal &amp; makan malam.`,
+      note:`<b>Beli tiket:</b> app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun; banyak pilihan jadwal G/D-train.<br><br><b>Catatan:</b> biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 &amp; catatan di Ringkasan Budget Total di atas). Jam tiba di Ningbo estimasi (⚠️ tergantung nomor kereta), cukup waktu untuk sampai ke tempat tinggal &amp; makan malam.`,
+      warn:``,
       hotel:``
     },
 
@@ -1312,7 +1311,7 @@ const destinations = [
       {group:`h4`, tag:`main`, label:`Itin H4`, title:`Taihu Yuantouzhu Scenic Area (太湖鼋头渚 · Tàihú Yuántóuzhǔ)`,
        nameEn:`Taihu Yuantouzhu Scenic Area`,
        nameHanzi:`太湖鼋头渚`,
-       text:`Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga &amp; area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya. Jalur promenade tepi danau <b>sudah termasuk di dalam kawasan berbayar ini</b> — bukan destinasi terpisah (koreksi 2026-09-20: entri lama "Taihu Lake Promenade" di dokumen ini kemungkinan besar merujuk ke jalur yang sama, dihapus sebagai stop terpisah karena tidak ditemukan sebagai POI berdiri sendiri di Amap). <b>Akses:</b> Didi langsung dari hotel, ±9-10km/±30-40 menit — tidak ada MRT langsung. <b>Jam Operasional:</b> ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan &amp; musim bunga. <b>Tiket:</b> CNY 90/org (tiket reguler). Taihu Xiandao (dulu termasuk tiket terusan CNY 105) dipindah ke Cadangan — lihat entri terpisah.`,
+       text:`Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga &amp; area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya. Jalur promenade tepi danau <b>sudah termasuk di dalam kawasan berbayar ini</b> — bukan destinasi terpisah. <b>Akses:</b> Didi langsung dari hotel, ±9-10km/±30-40 menit — tidak ada MRT langsung. <b>Jam Operasional:</b> ±07:00–17:30. Tidak ada hari libur rutin. Jam puncak: akhir pekan &amp; musim bunga. <b>Tiket:</b> CNY 90/org (tiket reguler). Taihu Xiandao (dulu termasuk tiket terusan CNY 105) dipindah ke Cadangan — lihat entri terpisah.`,
        wiki:`https://en.wikipedia.org/wiki/Yuantouzhu`,
        yt:`https://www.youtube.com/results?search_query=Taihu+Yuantouzhu+Scenic+Area+Wuxi`},
       {group:`h4`, tag:`main`, label:`Itin H4`, title:`Lihu National Wetland Park (蠡湖国家湿地公园 · Líhú Guójiā Shīdì Gōngyuán)`,
@@ -1324,12 +1323,9 @@ const destinations = [
       {group:`h4`, tag:`main`, label:`Itin H4`, title:`Bogong Island Ecology Park (渤公岛生态公园 · Bógōng Dǎo Shēngtài Gōngyuán)`,
        nameEn:`Bogong Island Ecology Park`,
        nameHanzi:`渤公岛生态公园`,
-       text:`Berada ±2,1km dari Yuantouzhu (bukan bersebelahan — lihat Akses), dibangun lewat proyek "mengembalikan lahan ke danau" di sisi timur bendungan Dushan lama — panjang ±1.700m, luas ±37 hektar. Dinamai untuk mengenang Zhang Bo, tokoh legendaris pengendali banjir. Bagian dari jalur wisata 38km lingkar Lihu, gabungan tema rekayasa air + alam + budaya. <b>Akses:</b> ⚠️ <b>Koreksi</b>: BUKAN jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island <b>2,1km</b> (rute muter lewat jalan sekitar danau). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. <b>Sewa sepeda</b> (lanjutan dari Lihu Wetland Park) — jarak segini nyaman untuk sepeda, jalur relatif datar. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87. <b>Jam Operasional:</b> ⚠️ belum ditemukan jam operasional resmi spesifik — kemungkinan taman terbuka tanpa jam tutup ketat (umum untuk taman kota gratis), cek Amap on-site. <b>Tiket:</b> Gratis.`,
+       text:`Berada ±2,1km dari Yuantouzhu (bukan bersebelahan — lihat Akses), dibangun lewat proyek "mengembalikan lahan ke danau" di sisi timur bendungan Dushan lama — panjang ±1.700m, luas ±37 hektar. Dinamai untuk mengenang Zhang Bo, tokoh legendaris pengendali banjir. Bagian dari jalur wisata 38km lingkar Lihu, gabungan tema rekayasa air + alam + budaya. <b>Akses:</b> Bukan jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island <b>2,1km</b> (rute muter lewat jalan sekitar danau). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. <b>Sewa sepeda</b> (lanjutan dari Lihu Wetland Park) — jarak segini nyaman untuk sepeda, jalur relatif datar. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87. <b>Jam Operasional:</b> ⚠️ belum ditemukan jam operasional resmi spesifik — kemungkinan taman terbuka tanpa jam tutup ketat (umum untuk taman kota gratis), cek Amap on-site. <b>Tiket:</b> Gratis.`,
        wiki:`https://www.google.com/search?q=Bogong+Island+Ecology+Park+Wuxi`,
        yt:`https://www.youtube.com/results?search_query=Bogong+Island+Ecology+Park+Wuxi`},
-      {group:`h4`, tag:`main`, label:`Itin H4`, title:`Taihu Lake Promenade — DIHAPUS dari itinerary (2026-09-20)`,
-       nameEn:`Taihu Lake Promenade — DIHAPUS dari itinerary`,
-       text:`Sebelumnya dijadwalkan sebagai stop gratis terpisah di akhir Hari 4. <b>Dihapus</b> karena: (1) pengguna cek langsung di Amap dan nama ini <b>tidak ditemukan</b> sebagai POI berdiri sendiri; (2) riset lanjutan menunjukkan "Taihu Lake Promenade" kemungkinan besar merujuk ke jalur promenade <b>di dalam kawasan tiket Taihu Yuantouzhu Scenic Area sendiri</b> (lihat entri Yuantouzhu di atas), bukan tempat gratis terpisah di luar. Waktu yang tadinya dialokasikan untuk sesi ini sekarang dipakai memperpanjang kunjungan Bogong Island Ecology Park, dan Hari 4 selesai lebih awal (±18:40, bukan 21:40).`},
       // --- h5 ---
       {group:`h5`, tag:`main`, label:`Itin H5`, title:`Nanchan Temple (南禅寺 · Nán Chán Sì)`,
        nameEn:`Nanchan Temple`,
@@ -1438,15 +1434,17 @@ const destinations = [
     currency:`CNY`,
 
     transportPergi:{
-      mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Sabtu, 10 Oktober (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal`,`Sabtu, 10 Oktober`],
-        [`Kereta`,`G-train (nomor kereta belum dipilih)`],
-        [`Jadwal`,`Berangkat 14:00 → Tiba 17:15 (langsung, ±3 jam, ⚠️ jam tiba estimasi)`],
-        [`Kepulangan`,`Minggu, 1 November, <b>08:50</b> — pesawat Hong Kong Express UO227 NGB → HKG (lihat Informasi Penerbangan Pulang)`],
+      mode:`train`, kicker:`Transport Pergi`,
+      title:`WUX &rarr; NGB &middot; Sabtu, 10 Oktober &middot; 14:00&ndash;17:15`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
+      to:{code:`NGB`, name:`Ningbo &middot; Railway Station`},
+      duration:`±3j15m &middot; estimasi`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m)`],
       ],
+      note:`<b>Tempat Tinggal:</b> Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: <b>Southern Business District Station (南部商务区站, Line 8)</b>. ⚠️ Jarak jalan kaki persis dari unit ke stasiun belum terverifikasi Amap (amap.com terblokir di environment sesi ini), kemungkinan perlu Didi/bus pendek dulu. Lokasi ini lebih ke arah tengah Yinzhou (dekat Ningbo Museum &amp; Southern Business District); Dongqian Lake (Hari 6) dijangkau via Line 8 lalu transfer.<br><br><b>Transportasi lokal:</b> Ningbo Rail Transit sudah punya 8 jalur aktif per pertengahan 2026 (Line 8 dibuka Juni 2025, Line 7 Agustus 2025) — jaringan cukup luas untuk kota sekelas Ningbo. Bayar via <b>WeChat Pay/Alipay QR code</b> di gerbang MRT (tidak perlu kartu fisik). Untuk destinasi di luar kota (Xikou, Qiantong, Hemudu) naik bus antar-kota dari <b>Ningbo South Bus Station (宁波汽车南站)</b> — persis di sebelah Stasiun Ningbo (Line 2/Line 1 Ximenkou). Prioritas: MRT &gt; jalan kaki &gt; bus antar-kota (untuk day-trip jauh) &gt; Didi (fleksibel kalau MRT tidak menjangkau/titip koper).`,
       warn:`<b>⚠️ Keterbatasan alat:</b> akses langsung ke amap.com terbatas di environment sesi ini — riset destinasi &amp; transfer MRT memakai web_search (Wikipedia Ningbo Rail Transit, blog lokal, situs resmi). Beberapa titik transfer &amp; jarak jalan kaki presisi belum bisa diverifikasi visual — ditandai ⚠️ di teks terkait, cek Amap on-site sebelum berangkat kalau memungkinkan.`,
       hotel:``
     },
@@ -1586,7 +1584,7 @@ const destinations = [
         id:"h9", num:9, date:`Minggu, 18 Oktober`, label:`Old Bund → Sanjiangkou → Tianyi Square Malam`,
         advisory:`Kawasan tepi sungai bersejarah era 1844 (arsitektur Eropa) menyambung ke pertemuan tiga sungai, ditutup jalan santai malam di alun-alun pusat kota.`,
         items:[
-          [`08:30–09:10`,`MRT ke <b>Waitan Bridge</b>: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C)`,`12 halte, ¥4/org — rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao")`,``,`8`,`21.200`],
+          [`08:30–09:10`,`MRT ke <b>Waitan Bridge</b>: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C)`,`12 halte, ¥4/org — rute terverifikasi Amap 2026-09-22`,``,`8`,`21.200`],
           [`09:15–12:00`,`<b>Old Bund (Laowaitan)</b> — arsitektur Eropa 1844, Jiangbei Catholic Church`,`Gratis jalan kawasan`,``,``,``],
           [`12:00–13:00`,`Makan siang sekitar Old Bund`,`±CNY 25/org`,``,`50`,`132.500`],
           [`13:00–15:00`,`<b>Sanjiangkou</b> — pertemuan Sungai Yong, Yao, Fenghua`,`Gratis, jalur datar tepi sungai`,``,``,``],
@@ -1996,7 +1994,7 @@ const destinations = [
       {group:`h9`, tag:`main`, label:`Itin H9`, title:`Old Bund / Laowaitan (老外滩 · Lǎo Wàitān)`,
        nameEn:`Old Bund / Laowaitan`,
        nameHanzi:`老外滩`,
-       text:`Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertama China yang dibuka untuk perdagangan asing setelah Perang Candu Pertama — lebih tua dari The Bund Shanghai yang lebih terkenal. Arsitektur bergaya Inggris, Jerman, Belanda, dan Prancis masih berdiri, termasuk Gereja Katolik Jiangbei bergaya Gothic, kini jadi kawasan bar &amp; resto trendi tepi sungai. <b>Akses:</b> dari rumah: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) — total 12 halte, ¥4/org, ±40 menit, rute terverifikasi Amap 2026-09-22 (nama stasiun dikoreksi dari "Waitan Daqiao" jadi <b>Waitan Bridge</b>). <b>Jam Operasional:</b> kawasan jalan terbuka 24 jam, gratis. Bar/resto umumnya buka sore-malam. <b>Tiket:</b> Gratis masuk kawasan.`,
+       text:`Kawasan tepi sungai bersejarah sejak 1844, salah satu dari lima pelabuhan pertama China yang dibuka untuk perdagangan asing setelah Perang Candu Pertama — lebih tua dari The Bund Shanghai yang lebih terkenal. Arsitektur bergaya Inggris, Jerman, Belanda, dan Prancis masih berdiri, termasuk Gereja Katolik Jiangbei bergaya Gothic, kini jadi kawasan bar &amp; resto trendi tepi sungai. <b>Akses:</b> dari rumah: Line 8 (7 halte ke Liyuan South Rd) → transfer Line 2 (5 halte, Exit C) — total 12 halte, ¥4/org, ±40 menit, rute terverifikasi Amap 2026-09-22. <b>Jam Operasional:</b> kawasan jalan terbuka 24 jam, gratis. Bar/resto umumnya buka sore-malam. <b>Tiket:</b> Gratis masuk kawasan.`,
        wiki:`https://en.wikipedia.org/wiki/Ningbo`,
        yt:`https://www.youtube.com/results?search_query=Old+Bund+Ningbo+Laowaitan`,
        nearby:[`Sanjiangkou (jalan kaki dari sini)`]},
@@ -2225,7 +2223,7 @@ const destinations = [
           [`10:30–11:30`,`Checkout hotel, siap-siap`,``,``,``,``],
           [`11:30–12:30`,`Makan siang dekat hotel`,`±HKD 35/org`,``,`70`,`161.000`],
           [`12:30–13:30`,`Taksi/jalan kaki ke <b>Hong Kong West Kowloon Station</b>`,`±1,3km dari hotel — taksi ±10 menit lebih praktis dengan koper (jalan kaki ±20 menit)`,``,`40`,`92.000`],
-          [`14:00`,`HSR West Kowloon → Futian (Shenzhen)`,`±15-20 menit, ±19 kereta/hari 07:11-22:01. Biaya masuk budget Shenzhen`,``,``,``],
+          [`14:00`,`HSR West Kowloon → Futian (Shenzhen)`,`±15 menit, ±19 kereta/hari 07:11-22:01. Biaya masuk budget Shenzhen`,``,``,``],
         ],
         total:{cny:`<b>154</b>`, idr:`<b>354.200</b>`},
         planb:`kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).`,
@@ -2255,6 +2253,22 @@ const destinations = [
       `<b>Tempat berbayar:</b> tidak ada di itinerary utama — semua destinasi gratis masuk.`,
       `<b>Jam tutup penting:</b> Wong Tai Sin Temple 16:30, Chi Lin Nunnery 16:30, aviary Hong Kong Park 17:00 — jadwalkan lebih awal dari jam itu.`,
     ],
+
+    transportPulang:{
+      mode:`train`, kicker:`Transport Pulang`,
+      title:`HKG &rarr; SZX &middot; Selasa, 3 November &middot; 14:00&ndash;14:15`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`HKG`, name:`Hong Kong &middot; West Kowloon Station`},
+      to:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
+      duration:`±15 menit &middot; langsung`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit)`],
+      ],
+      note:`<b>Stasiun berangkat:</b> Hong Kong West Kowloon Station — dari hotel ±1,3 km (taksi ±10 menit dengan koper, atau jalan kaki ±20 menit). Imigrasi Tiongkok diproses di stasiun ini, jadi tiba di stasiun paling lambat ±13:15. Jam 14:00 adalah default; nomor kereta &amp; tiket belum dibeli (±47 keberangkatan/hari 07:11–22:01), biaya masuk budget Shenzhen (kota tujuan).<br><br><b>Beli tiket:</b> app 12306 atau Trip.com, atau loket/mesin tiket di West Kowloon.`,
+      warn:``,
+      hotel:``
+    },
 
     lampiran:[
       // --- intro ---
@@ -2452,15 +2466,18 @@ const destinations = [
     currency:`CNY`,
 
     transportPergi:{
-      mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Selasa, 3 November (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal &amp; Jam Kedatangan`,`Selasa, 3 November, <b>±14:30</b> (HSR berangkat 14:00 dari West Kowloon, tempuh ±30 menit — jam tiba estimasi)`],
-        [`Durasi`,`±14 menit — salah satu rute HSR lintas-batas tercepat di dunia, ±47 keberangkatan/hari 07:11–22:01`],
-        [`Tanggal &amp; Jam Kepulangan`,`Jumat, 6 November, <b>14:00</b> (dikonfirmasi pengguna 2026-09-24), lihat Informasi Transportasi Pulang`],
+      mode:`train`, kicker:`Transport Pergi`,
+      title:`HKG &rarr; SZX &middot; Selasa, 3 November &middot; 14:00&ndash;14:15`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`HKG`, name:`Hong Kong &middot; West Kowloon Station`},
+      to:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
+      duration:`±15 menit &middot; langsung`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit)`],
       ],
-      warn:`<b>Harga:</b> ⚠️ <b>Estimasi Rp1.473.429 untuk 3 malam</b> (≈556 CNY) — dihitung dari harga per-malam kutipan 2-malam (Rp491.143/malam × 3), BUKAN harga terverifikasi untuk tanggal 3–6 November. Screenshot harga 3-malam yang sebenarnya masih perlu diambil sebelum booking.<br><br><b>Kedatangan → Hotel:</b> Imigrasi Tiongkok sudah diselesaikan di <b>West Kowloon (co-location, sebelum naik kereta)</b> — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: Line 2(Line 8) arah Xichong, 4 halte → <b>Yannan</b>, lanjut jalan kaki 328m/±7 menit ke hotel. Total ±23 menit, ¥2/org — rute terverifikasi Amap 2026-09-22 (lebih baik dari alternatif lewat Shixia/Line 3 yang dipakai raw versi lama).<br><br><b>Transportasi lokal:</b> Shenzhen Metro (bayar via <b>WeChat Pay/Alipay QR code</b> — cara paling praktis untuk turis, tidak perlu beli kartu Shenzhen Tong fisik) untuk semua perjalanan antar-kluster. Prioritas: jalan kaki (kluster Futian CBD walkable) &gt; MTR &gt; sepeda (untuk jarak 1-2km tanpa MRT langsung) &gt; taksi (hanya kalau perlu). Semua rute harian di bawah sudah terverifikasi Amap 2026-09-22/23 dari hotel ini, kecuali yang ditandai ⚠️.`,
+      note:`<b>Stasiun tiba:</b> Futian Station (Line 2/8/11 di stasiun yang sama), keluar stasiun ±14:30. Jam berangkat 14:00 dari West Kowloon (default, tiket belum dibeli); imigrasi Tiongkok sudah selesai di West Kowloon.<br><br><b>Harga:</b> ⚠️ <b>Estimasi Rp1.473.429 untuk 3 malam</b> (≈556 CNY) — dihitung dari harga per-malam kutipan 2-malam (Rp491.143/malam × 3), BUKAN harga terverifikasi untuk tanggal 3–6 November. Screenshot harga 3-malam yang sebenarnya masih perlu diambil sebelum booking.<br><br><b>Kedatangan → Hotel:</b> Imigrasi Tiongkok sudah diselesaikan di <b>West Kowloon (co-location, sebelum naik kereta)</b> — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: Line 2(Line 8) arah Xichong, 4 halte → <b>Yannan</b>, lanjut jalan kaki 328m/±7 menit ke hotel. Total ±23 menit, ¥2/org — rute terverifikasi Amap 2026-09-22 (lebih baik dari alternatif lewat Shixia/Line 3 yang dipakai raw versi lama).<br><br><b>Transportasi lokal:</b> Shenzhen Metro (bayar via <b>WeChat Pay/Alipay QR code</b> — cara paling praktis untuk turis, tidak perlu beli kartu Shenzhen Tong fisik) untuk semua perjalanan antar-kluster. Prioritas: jalan kaki (kluster Futian CBD walkable) &gt; MTR &gt; sepeda (untuk jarak 1-2km tanpa MRT langsung) &gt; taksi (hanya kalau perlu). Semua rute harian di bawah sudah terverifikasi Amap 2026-09-22/23 dari hotel ini, kecuali yang ditandai ⚠️.`,
+      warn:``,
       hotel:`<b>Hotel:</b> <b>Tourism Trend Hotel (Shenzhen Huaqiang Beiyannan Subway Station Branch)</b> — kamar <b>Superior Queen Room (large Windows + Sunshine)</b>, 22–23 m², lantai 5, 1 queen bed, ber-AC (cooling only), non-smoking. No. 16 Languang Road, Huaqiangbei, Futian District. Rating 9,0/10 (4.014 ulasan) — kelas resmi 2-star/budget, tapi lift terkonfirmasi eksplisit di daftar fasilitas resmi, luggage storage gratis, guest laundry + clothes steamer, keamanan lengkap (CCTV, access control, fire alarm, petugas). Hotel persis di antara 2 stasiun: <b>Yannan</b> (Line 2/8, Exit C, 328m/±7 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah) dan <b>Huaqiang North</b> (Line 2/8, 1 halte dari Yannan). ⚠️ Konfirmasi izin tamu asing (涉外资质) ke hotel sebelum booking — aturan China 2024 melarang penolakan tamu asing hanya karena tidak punya izin, tapi penerapannya belum merata. Check-in/check-out ⚠️ belum dikonfirmasi eksplisit dari Trip.com, asumsikan standar ±14:00/±12:00.`
     },
 
@@ -2573,15 +2590,18 @@ const destinations = [
     ],
 
     transportPulang:{
-      mode:"transit", kicker:`Transport Pulang`,
-      title:`Rute belum ditentukan &middot; Jumat, 6 November (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Kota berikutnya`,`Guangzhou`],
-        [`Jadwal`,`Berangkat 14:00 → Tiba 14:45 (estimasi, durasi ±30–45 menit, nomor kereta belum dipilih)`],
-        [`Tag`,`Jam berangkat 14:00 dari pengguna (2026-09-24); tiket belum dibeli`],
+      mode:`train`, kicker:`Transport Pulang`,
+      title:`SZX &rarr; CAN &middot; Jumat, 6 November &middot; 14:00&ndash;14:45`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
+      to:{code:`CAN`, name:`Guangzhou &middot; Guangzhou South Station`},
+      duration:`±45 menit &middot; estimasi`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit)`],
       ],
-      warn:`<b>Catatan:</b> biaya HSR keberangkatan ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.`,
+      note:`<b>Catatan:</b> jam berangkat 14:00 dari pengguna (2026-09-24); nomor kereta belum dipilih dan tiket belum dibeli (±30–45 menit tempuh). Biaya HSR ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.`,
+      warn:``,
       hotel:``
     },
 
@@ -2627,7 +2647,7 @@ const destinations = [
       {group:`h1`, tag:`main`, label:`Itin H1`, title:`Shenzhen Museum (深圳博物馆 · Shēnzhèn Bówùguǎn)`,
        nameEn:`Shenzhen Museum`,
        nameHanzi:`深圳博物馆`,
-       text:`Museum utama kota yang memaparkan sejarah Shenzhen dari desa nelayan kecil hingga jadi kota metropolitan raksasa dalam kurun kurang dari 50 tahun — koleksi mencakup sejarah, seni, dan budaya rakyat (folk culture) Guangdong. <b>Akses:</b> Civic Center Station (Line 2/4), Exit C, jalan kaki ke kompleks Civic Center — satu kawasan dengan Cultural Plaza &amp; Library. Dari hotel: Line 2(8) langsung, 3 halte (via Huaqiang North, Gangxia North), ±15 menit + tunggu, ¥2/org — rute terverifikasi Amap (koreksi dari raw lama yang salah lewat Children's Palace/Line 4). <b>Jam Operasional:</b> Selasa–Minggu 10:00–18:00, tutup Senin. Tidak perlu reservasi sejak Juli 2024. <b>Tiket:</b> Gratis.`,
+       text:`Museum utama kota yang memaparkan sejarah Shenzhen dari desa nelayan kecil hingga jadi kota metropolitan raksasa dalam kurun kurang dari 50 tahun — koleksi mencakup sejarah, seni, dan budaya rakyat (folk culture) Guangdong. <b>Akses:</b> Civic Center Station (Line 2/4), Exit C, jalan kaki ke kompleks Civic Center — satu kawasan dengan Cultural Plaza &amp; Library. Dari hotel: Line 2(8) langsung, 3 halte (via Huaqiang North, Gangxia North), ±15 menit + tunggu, ¥2/org — rute terverifikasi Amap. <b>Jam Operasional:</b> Selasa–Minggu 10:00–18:00, tutup Senin. Tidak perlu reservasi sejak Juli 2024. <b>Tiket:</b> Gratis.`,
        wiki:`https://shenzhenmuseum.com/museum/html/aboutus/visit-service.html`,
        yt:`https://www.youtube.com/results?search_query=Shenzhen+Museum`},
       {group:`h1`, tag:`main`, label:`Itin H1`, title:`Civic Center Cultural Plaza (市民中心文化广场 · Shìmín Zhōngxīn Wénhuà Guǎngchǎng)`,
@@ -2697,7 +2717,7 @@ const destinations = [
       {group:`h4`, tag:`main`, label:`Itin H4`, title:`Dongmen Pedestrian Street (东门步行街 · Dōngmén Bùxíng Jiē)`,
        nameEn:`Dongmen Pedestrian Street`,
        nameHanzi:`东门步行街`,
-       text:`Kawasan pasar pejalan kaki tertua &amp; terbesar Shenzhen di Distrik Luohu — pusat perbelanjaan murah, jajanan kaki lima, dan suasana lokal otentik sejak sebelum era reformasi ekonomi Shenzhen. <b>Akses:</b> MTR Laojie Station (Line 1/3), Exit D, langsung di pintu masuk kawasan. Dari hotel: jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte (Grand Theater) → Laojie Exit D. Total 2 stasiun, ¥2/org, ±24 menit — rute terverifikasi Amap (koreksi dari raw lama yang salah lewat Shixia/8 halte). <b>Jam Operasional:</b> area terbuka sepanjang hari; toko/jajanan umumnya ±10:00–22:00, paling ramai sore-malam. <b>Tiket:</b> Gratis jalan-jalan, jajan sesuai selera.`,
+       text:`Kawasan pasar pejalan kaki tertua &amp; terbesar Shenzhen di Distrik Luohu — pusat perbelanjaan murah, jajanan kaki lima, dan suasana lokal otentik sejak sebelum era reformasi ekonomi Shenzhen. <b>Akses:</b> MTR Laojie Station (Line 1/3), Exit D, langsung di pintu masuk kawasan. Dari hotel: jalan 833m/14 menit ke Science Museum Exit B → Line 1 arah Luohu, 2 halte (Grand Theater) → Laojie Exit D. Total 2 stasiun, ¥2/org, ±24 menit — rute terverifikasi Amap. <b>Jam Operasional:</b> area terbuka sepanjang hari; toko/jajanan umumnya ±10:00–22:00, paling ramai sore-malam. <b>Tiket:</b> Gratis jalan-jalan, jajan sesuai selera.`,
        wiki:`https://en.wikipedia.org/wiki/Dongmen,_Shenzhen`,
        yt:`https://www.youtube.com/results?search_query=Dongmen+Pedestrian+Street+Shenzhen`},
       {group:`h4`, tag:`main`, label:`Itin H4`, title:`Xinghe COCO Park (星河COCO Park · Xīnghé COCO Park)`,
@@ -2815,14 +2835,17 @@ const destinations = [
     currency:`CNY`,
 
     transportPergi:{
-      mode:"transit", kicker:`Transport ke Tujuan`,
-      title:`Rute belum ditentukan &middot; Jumat, 6 November (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal &amp; Jam Kedatangan`,`Jumat, 6 November, <b>±14:45</b> (HSR berangkat 14:00 dari Futian — jam tiba estimasi, rata-rata tempuh ±30–45 menit)`],
-        [`Durasi`,`±30–45 menit (⚠️ bergantung nomor kereta yang dibeli)`],
-        [`Tanggal &amp; Jam Kepulangan`,`Selasa, 10 November, <b>12:15</b> — pesawat Guangzhou Baiyun (CAN) T3 → Ningbo (NGB) T2, China Eastern MU5238, lihat Informasi Penerbangan Pulang`],
+      mode:`train`, kicker:`Transport Pergi`,
+      title:`SZX &rarr; CAN &middot; Jumat, 6 November &middot; 14:00&ndash;14:45`,
+      tag:"ok", openByDefault:true, code:`HSR G-train`,
+      from:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
+      to:{code:`CAN`, name:`Guangzhou &middot; Guangzhou South Station`},
+      duration:`±45 menit &middot; estimasi`,
+      meta:[
+        [`Kereta`,`HSR G-train`],
+        [`Jadwal`,`Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit)`],
       ],
+      note:`<b>Kedatangan → Hotel:</b> dari Guangzhou South Railway Station naik <b>Line 2 arah utara, ±12 halte → Gongyuanqian, keluar Exit I2, lalu jalan 270m/±5 menit ke hotel</b> (⚠️ jumlah halte &amp; waktu ±30–35 menit dari web_search, belum diverifikasi Amap). Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.<br><br><b>Transportasi lokal:</b> Guangzhou Metro (bayar via <b>WeChat Pay/Alipay QR code</b> di gerbang — tidak perlu beli kartu fisik). Prioritas: MRT &gt; jalan kaki (kluster kota lama sangat walkable) &gt; sepeda bike-share untuk jarak 2–3 km datar &gt; Didi (hanya kalau perlu). Tarif metro Guangzhou ±¥2–¥7 per perjalanan tergantung jarak (⚠️ estimasi, dipakai ¥2–¥5/org di tabel).`,
       warn:`<b>⚠️ Keterbatasan alat:</b> riset destinasi &amp; titik transfer MRT memakai web_search (bukan Amap langsung) — semua waktu tempuh antar-titik adalah estimasi, ditandai ⚠️ di teks terkait. Cek Amap on-site.`,
       hotel:`<b>Hotel:</b> <b>Homeinn · neo (Guangzhou Beijing Road Pedestrian Street Gongyuanqian Subway Station)</b> — rating 9,0/10 (1.749 ulasan). 4th–5th Floors, Caixing Building (Wenxingge), No. 410 Jiefang Middle Road, Yuexiu District, Guangzhou 510030. Anchor MRT: <b>Gongyuanqian Station, Exit I2</b> (Line 1/2) — 270m/±5 menit jalan kaki (data Trip.com); stasiun lain: Ximenkou Exit B (810m/±14 menit jalan kaki). Beijing Road Pedestrian Street 590m, Sacred Heart Cathedral 1,3 km. Sarapan buffet termasuk, laundry room, kamar berjendela tersedia. Ulasan negatif: sebagian kamar sempit &amp; kedap suara kurang. Bandara Baiyun 31,8 km/±29 menit naik mobil; Guangzhou Railway Station 3,5 km/±11 menit naik mobil. Check-out Hari 5 pagi langsung ke bandara (tidak perlu titip bagasi).`
     },
@@ -3187,7 +3210,6 @@ const destinations = [
       meta:[
         [`Maskapai`,`China Eastern Airlines MU5238 · Airbus A320 · Economy`],
         [`Jadwal`,`Berangkat 12:15 → Tiba 14:05 (nonstop, ±1j50m)`],
-        [`Kepulangan`,`Rabu, 2 Desember, <b>12:00</b> — pesawat Ningbo → Jakarta (lihat Informasi Penerbangan Pulang)`],
       ],
       note:`<b>Tempat Tinggal:</b> sama dengan Ningbo pertama — Zhonghai Yongcheng Shijia (中海雍城世家 · Zhōnghǎi Yōngchéng Shìjiā), unit di kawasan Taikang Road (泰康路), Yinzhou District, Ningbo. Anchor MRT: <b>Southern Business District Station (南部商务区站, Line 8)</b>. Properti pribadi, jadi tanpa biaya hotel. ⚠️ Jarak jalan kaki persis ke stasiun belum terverifikasi Amap.<br><br><b>Transportasi lokal:</b> Ningbo Rail Transit (bayar via WeChat Pay/Alipay QR code). Dari bandara ke rumah: Didi (⚠️ ±CNY 70). Angka transport harian di tabel = perkiraan standar ±CNY 40/hari sampai destinasi ditentukan.`,
       warn:``,
@@ -3524,14 +3546,18 @@ const destinations = [
     ],
 
     transportPulang:{
-      mode:"transit", kicker:`Transport Pulang`,
-      title:`Rute belum ditentukan &middot; Rabu, 2 Desember (perkiraan)`,
-      tag:"tbd", openByDefault:true,
-      items:[
-        [`Tanggal`,`Rabu, 2 Desember`],
-        [`Jadwal`,`Berangkat 12:00 → Tiba (belum diketahui, ⚠️ kemungkinan transit)`],
+      mode:`flight`, kicker:`Transport Pulang`,
+      title:`NGB &rarr; CGK &middot; Rabu, 2 Desember &middot; 12:00&ndash;16:15`,
+      tag:"ok", openByDefault:true, code:``,
+      from:{code:`NGB`, name:`Ningbo Lishe &middot; T2`},
+      to:{code:`CGK`, name:`Jakarta Soekarno-Hatta &middot; terminal menyusul`},
+      duration:`±5j15m jika nonstop &middot; estimasi`,
+      meta:[
+        [`Maskapai`,`⚠️ Belum diketahui (menyusul)`],
+        [`Jadwal`,`Berangkat 12:00 → Tiba 16:15 (estimasi, ±5j15m jika nonstop)`],
       ],
-      warn:`<b>Catatan:</b> tiket dari pengguna; biaya masuk budget kota ini. Maskapai &amp; jam tiba menyusul.`,
+      note:`<b>Catatan:</b> jam berangkat 12:00 dari pengguna; maskapai, terminal, dan jam tiba menyusul (jam tiba di atas hanya estimasi nonstop, kemungkinan transit). Tiket dari pengguna, biaya masuk budget kota ini. Ke bandara pakai Didi (⚠️ ±CNY 70).`,
+      warn:``,
       hotel:``
     },
 

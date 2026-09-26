@@ -33,10 +33,10 @@
 
 | | |
 |---|---|
-| Rute | Shenzhen Futian → Guangzhou South (Guangzhou–Shenzhen–Hong Kong Express Rail Link) |
-| Tanggal & Jam Kedatangan | Jumat, 6 November, **±14:45** (HSR berangkat 14:00 dari Futian — jam tiba estimasi, rata-rata tempuh ±30–45 menit) |
-| Durasi | ±30–45 menit (⚠️ bergantung nomor kereta yang dibeli) |
-| Tanggal & Jam Kepulangan | Selasa, 10 November, **12:15** — pesawat Guangzhou Baiyun (CAN) T3 → Ningbo (NGB) T2, China Eastern MU5238, lihat Informasi Penerbangan Pulang |
+| Rute | SZX Shenzhen (Futian Station) → CAN Guangzhou (Guangzhou South Station) |
+| Tanggal | Jumat, 6 November |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 

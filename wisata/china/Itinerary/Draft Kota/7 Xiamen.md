@@ -11,8 +11,9 @@
 
 | | |
 |---|---|
-| Kedatangan | Sabtu, 7 November, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Kepulangan | Kamis, 12 November, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
+| Kedatangan | Sabtu, 7 November, **±17:00** |
+| Moda | HSR G-train (default; kota asal belum ditentukan) |
+| Stasiun kedatangan | **Xiamen Railway Station** |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -139,6 +140,16 @@ Pelabuhan tua yang berubah jadi distrik seni, lanjut ke desa nelayan yang kini j
 | | **TOTAL HARI 6** | | **80** | **Rp212.000** |
 
 **Plan-B hari ini:** tidak ada destinasi terjadwal, jadi tidak ada risiko — waktu buffer bisa dipakai kalau packing lebih lama dari perkiraan.
+
+## Informasi Transportasi Pulang
+
+| | |
+|---|---|
+| Keberangkatan | Kamis, 12 November, **±15:00** |
+| Moda | HSR G-train (default; kota tujuan belum ditentukan) |
+| Stasiun keberangkatan | **Xiamen Railway Station** |
+
+Jam default; nomor kereta & tiket belum dipilih. Biaya HSR masuk budget kota tujuan.
 
 ---
 

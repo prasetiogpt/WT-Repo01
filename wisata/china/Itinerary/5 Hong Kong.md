@@ -93,10 +93,23 @@
 | 10:30–11:30 | Checkout hotel, siap-siap | — | — | — |
 | 11:30–12:30 | Makan siang dekat hotel | ±HKD 35/org | 70 | Rp161.000 |
 | 12:30–13:30 | Taksi/jalan kaki ke **Hong Kong West Kowloon Station** | ±1,3km dari hotel — taksi ±10 menit lebih praktis dengan koper (jalan kaki ±20 menit) | 40 | Rp92.000 |
-| 14:00 | HSR West Kowloon → Futian (Shenzhen) | ±15-20 menit, ±19 kereta/hari 07:11-22:01. Biaya masuk budget Shenzhen | — | — |
+| 14:00 | HSR West Kowloon → Futian (Shenzhen) | ±15 menit, ±19 kereta/hari 07:11-22:01. Biaya masuk budget Shenzhen | — | — |
 | | **TOTAL HARI 3** | | **154** | **Rp354.200** |
 
 **Plan-B hari ini:** kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).
+
+## Informasi Transportasi Pulang
+
+| | |
+|---|---|
+| Rute | HKG Hong Kong (West Kowloon Station) → SZX Shenzhen (Futian Station) |
+| Tanggal | Selasa, 3 November |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit) |
+
+**Stasiun berangkat:** Hong Kong West Kowloon Station — dari hotel ±1,3 km (taksi ±10 menit dengan koper, atau jalan kaki ±20 menit). Imigrasi Tiongkok diproses di stasiun ini, jadi tiba di stasiun paling lambat ±13:15. Jam 14:00 adalah default; nomor kereta & tiket belum dibeli (±47 keberangkatan/hari 07:11–22:01), biaya masuk budget Shenzhen (kota tujuan).
+
+**Beli tiket:** app 12306 atau Trip.com, atau loket/mesin tiket di West Kowloon.
 
 ---
 

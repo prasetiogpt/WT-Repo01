@@ -12,10 +12,9 @@
 | | |
 |---|---|
 | Rute | CAN Guangzhou Baiyun (T3) → NGB Ningbo Lishe (T2) |
-| Maskapai | China Eastern Airlines MU5238 · Airbus A320 · Economy |
 | Tanggal | Selasa, 10 November |
+| Maskapai | China Eastern Airlines MU5238 · Airbus A320 · Economy |
 | Jadwal | Berangkat 12:15 → Tiba 14:05 (nonstop, ±1j50m) |
-| Kepulangan | Rabu, 2 Desember, **12:00** — pesawat Ningbo → Jakarta (lihat Informasi Penerbangan Pulang) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -385,11 +384,12 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 
 | | |
 |---|---|
-| Rute | NGB Ningbo Lishe → CGK Jakarta Soekarno-Hatta |
+| Rute | NGB Ningbo Lishe (T2) → CGK Jakarta Soekarno-Hatta (terminal menyusul) |
 | Tanggal | Rabu, 2 Desember |
-| Jadwal | Berangkat 12:00 → Tiba (belum diketahui, ⚠️ kemungkinan transit) |
+| Maskapai | ⚠️ Belum diketahui (menyusul) |
+| Jadwal | Berangkat 12:00 → Tiba 16:15 (estimasi, ±5j15m jika nonstop) |
 
-**Catatan:** tiket dari pengguna; biaya masuk budget kota ini. Maskapai & jam tiba menyusul.
+**Catatan:** jam berangkat 12:00 dari pengguna; maskapai, terminal, dan jam tiba menyusul (jam tiba di atas hanya estimasi nonstop, kemungkinan transit). Tiket dari pengguna, biaya masuk budget kota ini. Ke bandara pakai Didi (⚠️ ±CNY 70).
 
 ---
 

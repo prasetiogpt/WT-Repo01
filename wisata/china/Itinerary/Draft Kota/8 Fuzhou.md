@@ -11,8 +11,9 @@
 
 | | |
 |---|---|
-| Kedatangan | Jumat, 13 November, **±17:00** — moda & kota asal menyesuaikan rencana Anda (kota ini direncanakan independen) |
-| Kepulangan | Minggu, 15 November, **±15:00**, lanjut ke kota berikutnya — moda & tujuan belum ditentukan |
+| Kedatangan | Jumat, 13 November, **±17:00** |
+| Moda | HSR G-train (default; kota asal belum ditentukan) |
+| Stasiun kedatangan | **Fuzhou South Railway Station** |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -90,6 +91,16 @@ Hari ringan kedatangan — check-in dulu, baru jalan santai malam di sekitar kaw
 | | **TOTAL HARI 3** | | **192** | **Rp508.800** |
 
 **Plan-B hari ini:** kalau waktu sempit sebelum jam 15:00 — cukup Lin Zexu Memorial + jalan kaki kawasan Sanfang Qixiang (gratis), lewati rumah-rumah bertiket.
+
+## Informasi Transportasi Pulang
+
+| | |
+|---|---|
+| Keberangkatan | Minggu, 15 November, **±15:00** |
+| Moda | HSR G-train (default; kota tujuan belum ditentukan) |
+| Stasiun keberangkatan | **Fuzhou South Railway Station** |
+
+Jam default; nomor kereta & tiket belum dipilih. Biaya HSR masuk budget kota tujuan.
 
 ---
 

@@ -37,18 +37,18 @@
 
 | | |
 |---|---|
-| Rute | NKG Nanjing South (HSR) → WUX Wuxi (HSR) |
+| Rute | NKG Nanjing (South Railway Station) → WUX Wuxi (Railway Station) |
 | Tanggal | Selasa, 6 Oktober |
-| Kereta | G-train tercepat |
+| Kereta | HSR G-train |
 | Jadwal | Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit) |
-| Kepulangan (lanjut ke Ningbo) | Sabtu, 10 Oktober, **14:00**, via HSR |
-| Stasiun acuan | **Wuxi Railway Station** (pusat kota) — **BUKAN Wuxi East**, sesuai catatan Anda karena East di luar pusat kota |
+
+**Stasiun tujuan:** Wuxi Railway Station (pusat kota) — bukan Wuxi East, karena East di luar pusat kota.
 
 **⚠️ Catatan:** jam berangkat 18:00 sesuai tiket yang sudah didapat pengguna; jam tiba ±18:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
 
 **Hotel:** Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station) · 美啡酒店, alias James Joyce Coffetel/喆啡酒店. Tower D, Meilin Center, No. 169 Caozhang New Village, Yongle Road, Liangxi District, Wuxi 214000. Rating 9,4/10 (693 ulasan). Anchor MRT: **Taihu Square Metro Station, Exit 1** — 350m/±6 menit jalan kaki (terverifikasi Amap). Stasiun lain: Tanduqiao (1km/±16 menit jalan kaki, 1 halte Line 1). Wuxi Railway Station: 4,8km/±24 menit naik mobil, atau 5 halte MRT langsung tanpa transfer (¥2/org, ±10 menit). Check-in setelah 14:00, check-out sebelum 12:00. Titip koper (Hari 5): tercantum di fasilitas resmi hotel (luggage storage).
 
-Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi District — bukan satu kompleks dengan Tanduqiao seperti tercatat sebelumnya, melainkan 1 halte terpisah (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): **Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan** (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke **Huishan (Hari 3)**: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** ke Stasiun **Heliekou** (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
+Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi District, terpisah 1 halte dari Tanduqiao (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): **Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan** (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke **Huishan (Hari 3)**: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** ke Stasiun **Heliekou** (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -225,13 +225,14 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 
 | | |
 |---|---|
-| Rute | Wuxi Railway Station → Ningbo via HSR |
-| Tanggal & Jam | Sabtu, 10 Oktober, **14:00** |
-| Durasi HSR | ±3 jam (⚠️ estimasi, tergantung nomor kereta; banyak pilihan jadwal G/D-train) |
-| Tiket | Biaya masuk budget Ningbo (kota tujuan), bukan Wuxi |
-| Beli tiket | App resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun |
+| Rute | WUX Wuxi (Railway Station) → NGB Ningbo (Railway Station) |
+| Tanggal | Sabtu, 10 Oktober |
+| Kereta | HSR G-train |
+| Jadwal | Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m) |
 
-**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Tiba di Ningbo diperkirakan ±17:00–17:30 (⚠️ estimasi), cukup waktu untuk sampai ke tempat tinggal & makan malam.
+**Beli tiket:** app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun; banyak pilihan jadwal G/D-train.
+
+**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Jam tiba di Ningbo estimasi (⚠️ tergantung nomor kereta), cukup waktu untuk sampai ke tempat tinggal & makan malam.
 
 ---
 
@@ -455,7 +456,7 @@ Jembatan batu lengkung tertua & terbesar yang masih bertahan di kawasan urban Wu
 ## Hari 4 — Jumat, 9 Oktober
 
 ### Taihu Yuantouzhu Scenic Area (太湖鼋头渚 · Tàihú Yuántóuzhǔ) ✅
-Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga & area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya. Jalur promenade tepi danau **sudah termasuk di dalam kawasan berbayar ini** — bukan destinasi terpisah (koreksi 2026-09-20: entri lama "Taihu Lake Promenade" di dokumen ini kemungkinan besar merujuk ke jalur yang sama, dihapus sebagai stop terpisah karena tidak ditemukan sebagai POI berdiri sendiri di Amap).
+Salah satu spot paling ikonik untuk memandang Danau Taihu, semenanjung dengan taman bunga & area foto populer. Nama "Yuantouzhu" berarti "pulau kepala kura-kura" karena bentuk semenanjungnya. Jalur promenade tepi danau **sudah termasuk di dalam kawasan berbayar ini** — bukan destinasi terpisah.
 
 ✅ Nama Hanzi konsisten di banyak sumber travel guide dan penamaan resmi scenic area (bukan dari halaman Amap langsung).
 
@@ -487,7 +488,7 @@ Berada ±2,1km dari Yuantouzhu (bukan bersebelahan — lihat Akses), dibangun le
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** ⚠️ **Koreksi**: BUKAN jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island **2,1km** (rute muter lewat jalan sekitar danau). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. **Sewa sepeda** (lanjutan dari Lihu Wetland Park) — jarak segini nyaman untuk sepeda, jalur relatif datar. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
+**Akses:** Bukan jalan kaki bersebelahan langsung dengan Yuantouzhu — terverifikasi Amap, Yuantouzhu→Bogong Island **2,1km** (rute muter lewat jalan sekitar danau). Jarak persis dari Lihu National Wetland Park (rute Hari 4 saat ini) belum di-Amap-kan. **Sewa sepeda** (lanjutan dari Lihu Wetland Park) — jarak segini nyaman untuk sepeda, jalur relatif datar. Alternatif: bus 36/53/72/87/106 ke Halte Bogong Island, atau MRT Line 2 ke Rongxiang (Exit 4) lalu transfer bus 87.
 
 **Jam Operasional:** ⚠️ belum ditemukan jam operasional resmi spesifik — kemungkinan taman terbuka tanpa jam tutup ketat (umum untuk taman kota gratis), cek Amap on-site.
 
@@ -495,9 +496,6 @@ Berada ±2,1km dari Yuantouzhu (bukan bersebelahan — lihat Akses), dibangun le
 
 - Foto/info: https://www.google.com/search?q=Bogong+Island+Ecology+Park+Wuxi
 - Video referensi: https://www.youtube.com/results?search_query=Bogong+Island+Ecology+Park+Wuxi
-
-### 🗑️ Taihu Lake Promenade — DIHAPUS dari itinerary (2026-09-20)
-Sebelumnya dijadwalkan sebagai stop gratis terpisah di akhir Hari 4. **Dihapus** karena: (1) pengguna cek langsung di Amap dan nama ini **tidak ditemukan** sebagai POI berdiri sendiri; (2) riset lanjutan menunjukkan "Taihu Lake Promenade" kemungkinan besar merujuk ke jalur promenade **di dalam kawasan tiket Taihu Yuantouzhu Scenic Area sendiri** (lihat entri Yuantouzhu di atas), bukan tempat gratis terpisah di luar. Waktu yang tadinya dialokasikan untuk sesi ini sekarang dipakai memperpanjang kunjungan Bogong Island Ecology Park, dan Hari 4 selesai lebih awal (±18:40, bukan 21:40).
 
 ## Hari 5 — Sabtu, 10 Oktober
 
@@ -634,7 +632,7 @@ Kompleks Buddha raksasa dengan patung Buddha berdiri setinggi 88m, salah satu ik
 ### Nianhuawan Chanyi Town (拈花湾禅意小镇 · Niānhuā Wān Chányì Xiǎozhèn) ⚠️
 Kawasan budaya Zen buatan di dekat Lingshan (拈花湾, Nianhua Bay), dengan arsitektur bergaya kuil, area seni, dan plaza instalasi "wajah tersenyum" raksasa.
 
-⚠️ Nama Hanzi umum dipakai di sumber travel guide, belum diverifikasi Amap. Sebelumnya tercatat sebagai 2 entri ("Smile Plaza" dan "Chanyi Town") — digabung karena keduanya kemungkinan besar satu kawasan (拈花湾).
+⚠️ Nama Hanzi umum dipakai di sumber travel guide, belum diverifikasi Amap. Smile Plaza dan Chanyi Town kemungkinan besar satu kawasan (拈花湾).
 
 **Akses:** satu kawasan dengan Lingshan Buddhist Scenic Spot (lihat entri sebelumnya) — bus wisata/Didi dari pusat kota, ±1 jam.
 
