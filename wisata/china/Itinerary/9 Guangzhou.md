@@ -34,6 +34,8 @@
 > (baru) **2026-09-26 — harga dikonfirmasi pengguna:** HSR Shenzhen→Guangzhou Rp400.000/2 org dan hotel Homeinn · neo Rp2.289.788 dipakai sebagai harga final; tanda estimasi dihapus. Budget tidak berubah.
 >
 > (baru) **2026-09-26 — hotel diganti dari Homeinn · neo ke Wotels · Selected Hotel (Haizhu Square)** atas permintaan pengguna (data wiki Info Hotel/Guangzhou): 市二宫 Line 2 Exit B 823m (sepeda 704m), tanpa sarapan (sarapan Hari 2–5 ¥20/org × 2 = +¥160), harga 4 malam **estimasi** Rp1.814.657 (kutipan 3 malam Rp1.360.993 ÷ 3 × 4; kutipan 4 malam belum ada). Semua leg dari/ke hotel disesuaikan (Line 2 ↔ Gongyuanqian, transfer Line 1) dan ditandai ⚠️ estimasi karena belum ada Amap dari Wotels; Didi bandara ±33 menit. Subtotal aktivitas 656→816, GRAND TOTAL ≈1.671 CNY/Rp4.428.188 → **≈1.652 CNY/Rp4.377.057**.
+>
+> (baru) **2026-09-26 — Amap dari Wotels (wiki, 5 screenshot):** Guangzhou South→hotel 44 menit ¥5 (jalan 927m dari 市二宫); Tiyu Xilu 26 menit ¥3 (sepeda 704m + Line 2 + Line 1); Sacred Heart 30–34 menit ¥2 (leg Line 2/Tourism Bus ¥2/org ditambahkan, +¥4 di Hari 2); Memorial Hall 22 menit ¥2 (sepeda 950m + Line 2). Estimasi lama (±50/45/40 menit) diganti angka Amap. Hari 2 168→172 CNY, subtotal 816→820, GRAND TOTAL ≈1.652 CNY/Rp4.377.057 → **≈1.656 CNY/Rp4.387.657**. Belum Amap dari Wotels: Yongqing Fang, Canton Tower→hotel, Didi ke Baiyun T3.
 
 ## Informasi Transportasi
 
@@ -48,7 +50,7 @@
 
 **Hotel:** **Wotels · Selected Hotel (Guangzhou Beijing Road Pedestrian Street Haizhu Square Branch)** — 万澳致选酒店(广州北京路步行街市二宫地铁站店), rating 9,3/10 (4.332 ulasan), dibuka 2024. No. 667 Nanhua East Road, Haizhu District (selatan Sungai Mutiara, seberang kawasan Beijing Road). Anchor MRT: **The 2nd Workers' Cultural Palace (市二宫), Line 2, Exit B** — 823m/±14 menit jalan kaki (Amap), atau sepeda bike-share 704m/±4 menit; alternatif Haizhu Square Exit A (870m/±13 menit). Beijing Road Pedestrian Street 970m, Pearl River Night Cruise (Tianzi Pier) 1,3 km. **Tanpa sarapan**; check-in 14:00, check-out 12:00, front desk 24 jam, laundry room, kopi gratis di lobi; bayar di hotel hanya tunai. Sepeda kuning (Meituan) terlihat terparkir di depan hotel. Ulasan negatif: jalan ke stasiun sedang ada konstruksi (repot dengan koper), kamar tidak besar. ⚠️ Lift belum tertulis di sumber; wajib konfirmasi ke hotel bahwa paspor asing bisa didaftarkan. Bandara Baiyun 33,9 km/±33 menit naik mobil; Guangzhou Railway Station 5 km/±19 menit naik mobil. Check-out Hari 5 langsung ke bandara.
 
-**Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara → turun di 市二宫 (The 2nd Workers' Cultural Palace, 2 stasiun sebelum Gongyuanqian), keluar Exit B, lalu jalan 823m/±14 menit ke hotel** (⚠️ ±10 halte, ±30 menit, estimasi belum Amap; jalan ada konstruksi, dengan koper boleh Didi singkat dari stasiun). Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
+**Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, 10 stasiun → 市二宫 (The 2nd Workers' Cultural Palace), lalu jalan 927m/±14 menit ke hotel** — Amap 2026-09-26: 44 menit total, ¥5/org (jalan 3 menit + Line 2 + jalan 14 menit); tanpa koper bisa sepeda 704m, total 36 menit. Dengan koper: jalan ada konstruksi, boleh Didi singkat dari stasiun. Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
 
 **Transportasi lokal:** Guangzhou Metro (bayar via **WeChat Pay/Alipay QR code** di gerbang — tidak perlu beli kartu fisik). Prioritas: MRT > jalan kaki (kluster kota lama sangat walkable) > sepeda bike-share untuk jarak 2–3 km datar > Didi (hanya kalau perlu). Tarif metro Guangzhou ±¥2–¥7 per perjalanan tergantung jarak (⚠️ estimasi, dipakai ¥2–¥5/org di tabel).
 
@@ -72,7 +74,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 14:00 | HSR Futian → Guangzhou South | Berangkat dari Shenzhen (biaya di budget kedatangan) | — | — |
-| 14:45–15:40 | Metro ke 市二宫, jalan ke hotel | Guangzhou South → Line 2 arah utara, ±10 halte → 市二宫 Exit B ⚠️ estimasi ±30 menit, ¥5/org; lanjut jalan 823m/±14 menit ke hotel (ada konstruksi, boleh Didi singkat dengan koper) | 10 | Rp26.500 |
+| 14:45–15:40 | Metro ke 市二宫, jalan ke hotel | Guangzhou South → Line 2 arah utara, 10 stasiun → 市二宫; Amap 2026-09-26: 44 menit total, ¥5/org, jalan 927m/±14 menit ke hotel (ada konstruksi, boleh Didi singkat dengan koper) | 10 | Rp26.500 |
 | 15:40–16:30 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
 | 16:45–18:00 | **Beijing Road Pedestrian Street** — jalan santai + reruntuhan jalan kuno 1.000 tahun di bawah kaca | Gratis, jalur datar; jalan kaki ±970 m/±15 menit dari hotel (data Trip.com) | — | — |
 | 18:00–18:30 | **Dafo Temple** | Gratis, di tengah Beijing Road | — | — |
@@ -91,7 +93,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan) | 40 | Rp106.000 |
-| 08:15–09:00 | Sepeda ke 市二宫, Line 2 ke Gongyuanqian, lanjut ke **Sacred Heart Cathedral** | ⚠️ estimasi ±45 menit (sepeda 704 m/±4 menit, Line 2 ±2 halte, lalu bus/jalan ke katedral), belum Amap dari Wotels; biaya sepeda/bus tidak dihitung | — | — |
+| 08:20–09:00 | Perjalanan ke **Sacred Heart Cathedral** | Amap 2026-09-26: 30–34 menit, ¥2/org — jalan 1,2 km (14 menit) + Tourism Bus 2 (4 halte) + jalan 9 menit; atau jalan 14 menit + Line 2 1 stasiun + jalan 14 menit (Line 2 ¥2/org) | 4 | Rp10.600 |
 | 09:00–10:15 | **Sacred Heart Cathedral** — katedral granit gaya Gothic | Gratis, Sabtu buka 08:30–17:30; Yide Road Exit B ±5 menit jalan | — | — |
 | 10:15–10:50 | Metro Line 6 ke Huangsha | Jalan ke Yide Road Exit B, Line 6 arah Huangsha ±3 halte ⚠️, ¥2/org | 4 | Rp10.600 |
 | 11:00–12:30 | **Yongqing Fang** — gang tua Xiguan, kafe, museum opera Kanton | Keluar Huangsha Exit B; gratis, buka 24 jam (toko 10:00–22:30) | — | — |
@@ -101,7 +103,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | 16:30–17:00 | Jalan/sepeda ke Shangxiajiu | ⚠️ jarak & rute belum diverifikasi (satu kawasan Xiguan) | — | — |
 | 17:00–19:00 | **Shangxiajiu Pedestrian Street** — arkade Lingnan + makan malam | Gratis jalan-jalan; makan malam ±CNY 30/org | 60 | Rp159.000 |
 | 19:00–19:50 | Metro kembali ke 市二宫, jalan ke hotel | Line 1 arah timur, ±4 halte, ¥2/org ⚠️ (stasiun terdekat dari Shangxiajiu belum diverifikasi); transfer Line 2 arah selatan 2 halte ke 市二宫, lalu sepeda/jalan ke hotel ⚠️ estimasi belum Amap | 4 | Rp10.600 |
-| | **TOTAL HARI 2** | | **168** | **Rp445.200** |
+| | **TOTAL HARI 2** | | **172** | **Rp455.800** |
 
 **Plan-B hari ini:** kalau Sabtu terlalu ramai — persingkat Yongqing Fang dan Shamian, atau lewati Shangxiajiu dan makan malam di Xiguan sebelum pulang.
 
@@ -114,7 +116,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–09:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan); sengaja santai karena mal baru buka 10:00 | 40 | Rp106.000 |
-| 09:10–10:00 | Sepeda ke 市二宫, Line 2 ke Gongyuanqian, transfer Line 1 ke Tiyu Xilu (Tianhe Sports Center) | ⚠️ estimasi ±50 menit (Line 1 Gongyuanqian→Tiyu Xilu 6 stasiun ±33 menit, ¥3/org Amap dari Gongyuanqian, ditambah Line 2 ±2 halte & transfer), belum Amap dari Wotels; keluar Exit D ke Parc Central | 6 | Rp15.900 |
+| 09:20–09:50 | Sepeda ke 市二宫, Line 2 lalu transfer Line 1 ke Tiyu Xilu (Tianhe Sports Center) | Amap 2026-09-26: 26 menit, ¥3/org — jalan 177 m + sepeda 704 m + Line 2 + Line 1 (7 stasiun total); tanpa sepeda 34 menit (jalan 884 m/14 menit); keluar Exit D ke Parc Central | 6 | Rp15.900 |
 | 10:00–11:00 | **Tianhe Shopping Area** — lihat-lihat kawasan mal Tianhe Road & lorong bawah tanah | Mal buka 10:00–22:00. **Boleh dipersingkat/dilewati** → lanjut Parc Central (satu kawasan, jalan kaki). Gratis; indoor menjelang jam panas. Sekadar lihat-lihat, bukan sesi belanja | — | — |
 | 11:00–12:00 | **Parc Central** — lihat-lihat mal modern & suasana | Boleh dipersingkat → lanjut makan siang. Gratis; tersambung langsung ke Tiyu Xilu (Exit D). Kalau belum buka saat tiba, jalan sebentar di sekitar Tiyu Xilu/Tianhe Road dulu | — | — |
 | 12:00–13:00 | Makan siang di Parc Central/kawasan Tianhe | ±CNY 30/org | 60 | Rp159.000 |
@@ -139,7 +141,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan) | 40 | Rp106.000 |
-| 08:10–09:00 | Sepeda ke 市二宫, Line 2 ke Sun Yat-sen Memorial Hall | Line 2 arah utara, ±3 halte → Memorial Hall Exit C, ¥2/org ⚠️ estimasi ±40 menit total, belum Amap dari Wotels | 4 | Rp10.600 |
+| 08:20–08:50 | Sepeda ke 市二宫, Line 2 ke Sun Yat-sen Memorial Hall | Amap 2026-09-26: 22 menit, ¥2/org — jalan 646 m + sepeda 950 m + Line 2 (2 stasiun) + jalan 8 menit; tanpa sepeda 30 menit (jalan 1,3 km + Line 2 3 stasiun + jalan 8 menit) | 4 | Rp10.600 |
 | 09:00–10:30 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
 | 10:30–10:45 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
 | 10:45–12:15 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
@@ -191,20 +193,20 @@ Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memor
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 | 70 | Rp185.500 |
-| Hari 2 | 168 | Rp445.200 |
+| Hari 2 | 172 | Rp455.800 |
 | Hari 3 | 178 | Rp471.700 |
 | Hari 4 | 260 | Rp689.000 |
 | Hari 5 | 140 | Rp371.000 |
-| **Subtotal aktivitas harian** | **816** | **Rp2.162.400** |
+| **Subtotal aktivitas harian** | **820** | **Rp2.173.000** |
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk (Memorial Hall, Liurong Temple, Chen Clan Ancestral Hall) | 70 | Rp185.500 |
 | Makan (11x makan; sarapan di luar ¥20/org karena hotel tanpa sarapan) | 580 | Rp1.537.000 |
-| Transport lokal (metro, sepeda, Didi ke bandara) | 166 | Rp439.900 |
+| Transport lokal (metro, sepeda, Didi ke bandara) | 170 | Rp450.500 |
 | Tiket HSR kedatangan dari Shenzhen (2 org) | ≈151 | Rp400.000 |
 | Hotel (4 malam, Wotels · Selected Hotel, tanpa sarapan) ⚠️ Estimasi | ≈685 | Rp1.814.657 |
-| **GRAND TOTAL** | **≈1.652** | **Rp4.377.057** |
+| **GRAND TOTAL** | **≈1.656** | **Rp4.387.657** |
 
 **Catatan:** Beijing Road, Dafo Temple, Sacred Heart Cathedral, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, Haixin Bridge, Tianhe Shopping Area, Parc Central, Liwan Lake Park, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel Wotels = ⚠️ estimasi Rp1.814.657 untuk 4 malam (kutipan Trip.com 3 malam 6–9 Nov Rp1.360.993 ÷ 3 × 4, gratis batal sebelum 18:00 6 Nov); kutipan 4 malam asli belum ada. Hotel tanpa sarapan, jadi sarapan Hari 2–5 dihitung di luar (¥20/org). Tiket HSR Rp400.000/2 org dari pengguna (belum bisa dibeli, harga dipakai apa adanya). Tiket pesawat CAN → Ningbo (Rp2.800.000/2 org, dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
@@ -354,7 +356,7 @@ Kawasan komersial terbesar di Guangzhou di sepanjang Tianhe Road — Grandview M
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** MTR Tiyu Xilu (体育西路, Line 1 & 3), Exit B/C/D, langsung tersambung ke mal dan lorong bawah tanah. Dari hotel: Line 2 ke Gongyuanqian lalu Line 1 arah Guangzhou East 6 stasiun (Gongyuanqian→Tiyu Xilu ±33 menit, ¥3/org, Amap), total ±50 menit ⚠️.
+**Akses:** MTR Tiyu Xilu (体育西路, Line 1 & 3), Exit B/C/D, langsung tersambung ke mal dan lorong bawah tanah. Dari hotel: sepeda 704 m ke 市二宫, Line 2 lalu Line 1 (7 stasiun total), 26 menit, ¥3/org (Amap 2026-09-26).
 
 **Jam Operasional:** mal umumnya 10:00–22:00 setiap hari; lorong bawah tanah mengikuti jam toko.
 
