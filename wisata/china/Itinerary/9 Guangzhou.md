@@ -28,6 +28,8 @@
 > (12) **2026-09-25 — Hari 3 dibuat fleksibel (permintaan pengguna, hanya Hari 3):** jadwal padat belum tentu terjalani, jadi jam dijadikan patokan; tiap titik diberi rentang waktu dan tanda "boleh dipersingkat, lanjut ke titik terdekat berikutnya"; ditambah urutan lompatan dan daftar titik yang boleh dilewati (Haixinsha, Tianhe/Parc Central, Sungai Mutiara malam). Isi destinasi & budget tidak berubah (Hari 3 144 CNY, GRAND TOTAL ≈1.677 CNY / Rp4.444.088).
 >
 > (13) **2026-09-25 — Hari 3 mengikuti urutan usulan wiki (disetujui pengguna) + rute Amap:** urutan lama menyeberang sungai dua kali (Library → … → Canton Tower → Line 3 ke Tianhe → kembali ke Canton Tower malam, transit ±130 menit); urutan baru **satu arah utara→selatan**: Tianhe/Parc Central (indoor 10:00–13:00, hotel→Tiyu Xilu Line 1 langsung ±33 menit ¥3/org, Amap) → Line 3 ke Library → Huacheng → Haixinsha → Haixin Bridge → Canton Tower menjelang sunset → Sungai Mutiara → pulang langsung; transit ±90 menit, hemat 2 leg Line 3 (±40 menit) dan CNY 6. Hari 3 144→138 CNY, subtotal 662→656, transport 172→166, GRAND TOTAL ≈1.677 → **≈1.671 CNY / Rp4.428.188**. Catatan Amap Hari 2 (Sacred Heart bus 527 18 menit; hotel→Yongqing Fang langsung ±25 menit) dan Hari 4 (Memorial Hall ±20 menit; Chen Clan dekat East Gate Liwan Lake Park, kemungkinan jalan kaki) ditambahkan sebagai keterangan tanpa mengubah budget.
+>
+> (baru) **2026-09-26 — update harga tiket dari pengguna:** pesawat CAN→Ningbo jadi Rp2.800.000/2 org (di budget Ningbo 2). Budget Guangzhou tidak berubah.
 
 ## Informasi Transportasi
 
@@ -200,7 +202,7 @@ Destinasi utama hampir seluruhnya gratis — biaya tiket hanya Sun Yat-sen Memor
 | Hotel (4 malam, Homeinn · neo, sarapan termasuk) ⚠️ Harga kutipan Trip.com | ≈864 | Rp2.289.788 |
 | **GRAND TOTAL** | **≈1.671** | **Rp4.428.188** |
 
-**Catatan:** Beijing Road, Dafo Temple, Sacred Heart Cathedral, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, Haixin Bridge, Tianhe Shopping Area, Parc Central, Liwan Lake Park, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel = kutipan Trip.com 4 malam (6–10 Nov, sarapan termasuk, gratis pembatalan) Rp2.289.788 — harga bisa berubah sebelum booking. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli). Tiket pesawat CAN → Ningbo (dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Waktu/tarif metro antar-titik estimasi web_search, belum Amap.
+**Catatan:** Beijing Road, Dafo Temple, Sacred Heart Cathedral, Yongqing Fang, Shamian Island, Shangxiajiu, Guangzhou Library, Huacheng Square, Haixinsha Island, Haixin Bridge, Tianhe Shopping Area, Parc Central, Liwan Lake Park, dan Yuexiu Park gratis masuk (tidak dihitung). Harga hotel = kutipan Trip.com 4 malam (6–10 Nov, sarapan termasuk, gratis pembatalan) Rp2.289.788 — harga bisa berubah sebelum booking. Tiket HSR ±Rp400.000/2 org dari pengguna (belum dibeli). Tiket pesawat CAN → Ningbo (Rp2.800.000/2 org, dari pengguna) masuk budget [[10 Ningbo 2]], bukan Guangzhou. Waktu/tarif metro antar-titik estimasi web_search, belum Amap.
 ---
 
 ## Catatan Penting Lainnya

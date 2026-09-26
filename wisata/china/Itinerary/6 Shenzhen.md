@@ -14,6 +14,8 @@
 > (11) **2026-09-24 — urutan kota baru: Shenzhen dilanjutkan ke Guangzhou (bukan Xiamen).** Kedatangan dari Hong Kong: HSR berangkat **14:00** (semula 13:30), tiba ±14:30 — Hari 1 digeser 30 menit (Shenzhen Museum jadi 17:05–17:55, tutup 18:00; Civic Center Plaza & Library tetap buka sampai 21:00). Kepulangan: HSR ke **Guangzhou 14:00** (semula 13:00 ke Xiamen) — Hari 4 digeser 1 jam, buffer di stasiun tetap ±47 menit. Budget tidak berubah. Nav & Informasi Transportasi Pulang diperbarui.
 >
 > (12) **2026-09-25 — revisi destinasi atas permintaan pengguna:** Hari 2 = Shenzhen Bay Park + Cultural Plaza + MixC + Sea World + K11 ECOAST (klaster Nanshan digabung lagi dalam 1 hari, ±3 jam transit — sudah diperingatkan); Hari 3 = **Shenzhen Science and Technology Museum** (dipindah dari Cadangan; Guangming, ±90 menit sekali jalan ⚠️ estimasi, tiket ¥50/org wajib reservasi WeChat) + Shuiwei Night Market malam; Hari 1 & Hari 4 tidak berubah. Shuiwei kini dijangkau langsung dari hotel (rute Amap terverifikasi ±36 menit) bukan dari Talent Park. Budget: Hari 2 240 CNY (sama dengan versi lama), Hari 3 350 CNY (tiket museum 100 + transit), GRAND TOTAL ≈1.361 CNY/Rp3.606.529 → **≈1.547 CNY / Rp4.099.429**. ⚠️ Rute hotel → Guangming belum di-Amap-kan; catatan wiki ±27 menit ke stasiun 'Science Museum' Futian adalah gedung LAMA, bukan museum baru.
+>
+> (baru) **2026-09-26 — harga hotel dibooking dari pengguna:** ¥618/3 malam (≈Rp1.637.700), menggantikan estimasi Rp1.473.429; tanda estimasi dihapus. GRAND TOTAL ≈1.547 CNY/Rp4.099.429 → **≈1.609 CNY/Rp4.263.700**.
 
 
 ## Informasi Transportasi
@@ -31,7 +33,7 @@
 
 **Hotel:** **Tourism Trend Hotel (Shenzhen Huaqiang Beiyannan Subway Station Branch)** — kamar **Superior Queen Room (large Windows + Sunshine)**, 22–23 m², lantai 5, 1 queen bed, ber-AC (cooling only), non-smoking. No. 16 Languang Road, Huaqiangbei, Futian District. Rating 9,0/10 (4.014 ulasan) — kelas resmi 2-star/budget, tapi lift terkonfirmasi eksplisit di daftar fasilitas resmi, luggage storage gratis, guest laundry + clothes steamer, keamanan lengkap (CCTV, access control, fire alarm, petugas). Hotel persis di antara 2 stasiun: **Yannan** (Line 2/8, Exit C, 328m/±7 menit jalan kaki — dipakai sebagai basis SEMUA rute harian di bawah) dan **Huaqiang North** (Line 2/8, 1 halte dari Yannan). ⚠️ Konfirmasi izin tamu asing (涉外资质) ke hotel sebelum booking — aturan China 2024 melarang penolakan tamu asing hanya karena tidak punya izin, tapi penerapannya belum merata. Check-in/check-out ⚠️ belum dikonfirmasi eksplisit dari Trip.com, asumsikan standar ±14:00/±12:00.
 
-**Harga:** ⚠️ **Estimasi Rp1.473.429 untuk 3 malam** (≈556 CNY) — dihitung dari harga per-malam kutipan 2-malam (Rp491.143/malam × 3), BUKAN harga terverifikasi untuk tanggal 3–6 November. Screenshot harga 3-malam yang sebenarnya masih perlu diambil sebelum booking.
+**Harga:** ¥618 untuk 3 malam (≈Rp1.637.700), sudah dibooking pengguna.
 
 **Kedatangan → Hotel:** Imigrasi Tiongkok sudah diselesaikan di **West Kowloon (co-location, sebelum naik kereta)** — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: Line 2(Line 8) arah Xichong, 4 halte → **Yannan**, lanjut jalan kaki 328m/±7 menit ke hotel. Total ±23 menit, ¥2/org — rute terverifikasi Amap 2026-09-22 (lebih baik dari alternatif lewat Shixia/Line 3 yang dipakai raw versi lama).
 
@@ -167,10 +169,10 @@ Semua destinasi di itinerary utama gratis kecuali Shenzhen Science and Technolog
 | Makan (semua hari, 9x makan) | 630 | Rp1.669.500 |
 | Transport lokal (metro) | 110 | Rp291.500 |
 | Tiket HSR kedatangan dari Hong Kong (2 org) | ≈151 | Rp400.000 |
-| Hotel (3 malam, Tourism Trend Hotel) ⚠️ Estimasi | ≈556 | Rp1.473.429 |
-| **GRAND TOTAL** | **≈1.547** | **Rp4.099.429** |
+| Hotel (3 malam, Tourism Trend Hotel) | 618 | Rp1.637.700 |
+| **GRAND TOTAL** | **≈1.609** | **Rp4.263.700** |
 
-**Catatan:** Huaqiangbei, Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, Shenzhen Bay Park, Shenzhen Bay Cultural Plaza, MixC Shenzhen Bay, Sea World, K11 ECOAST, Shuiwei Night Market, Dongmen Pedestrian Street, dan Xinghe COCO Park gratis masuk (tidak dihitung). Harga hotel masih estimasi (lihat catatan di Informasi Transportasi) — GRAND TOTAL akan berubah begitu ada harga pasti. Tiket museum ¥50/org dari sumber resmi (⚠️ cek harga saat reservasi).
+**Catatan:** Huaqiangbei, Shenzhen Museum, Civic Center Cultural Plaza & Shenzhen Library, Lianhua Mountain Park, Shenzhen Bay Park, Shenzhen Bay Cultural Plaza, MixC Shenzhen Bay, Sea World, K11 ECOAST, Shuiwei Night Market, Dongmen Pedestrian Street, dan Xinghe COCO Park gratis masuk (tidak dihitung). Tiket museum ¥50/org dari sumber resmi (⚠️ cek harga saat reservasi).
 ---
 
 ## Catatan Penting Lainnya

@@ -6,6 +6,8 @@
 > **Master file** — edit di sini dulu untuk revisi cepat. PDF (`Ningbo 2 Itinerary.pdf`) di-generate ulang dari file ini hanya saat diminta.
 >
 > ⚠️ Riwayat revisi: (1) **Draft awal 2026-09-24** — kunjungan **kedua** ke Ningbo setelah Guangzhou (kunjungan pertama: [[4 Ningbo]], 10 Okt – 1 Nov). Disusun atas permintaan pengguna: **destinasi sengaja dikosongkan dulu**, budget tetap dibuat dengan perkiraan makan & transport standar (makan ±CNY 150/hari untuk 2 orang = sarapan 15 + siang 25 + malam 35 per orang; transport lokal ±CNY 40/hari). Tempat tinggal = properti pribadi yang sama (tanpa biaya hotel). Kedatangan pesawat China Eastern MU5238 CAN → NGB **Selasa 10 Nov, 12:15 → 14:05** (tiket sudah dibeli, Rp1.414.100/orang = Rp2.828.200/2 org, masuk GRAND TOTAL kota ini); kepulangan 2 Desember jam **12:00** pesawat Ningbo → Jakarta (tiket ±Rp6.000.000/2 org dari pengguna, masuk GRAND TOTAL kota ini). Kurs dipakai: **1 CNY = Rp2.650** (lihat [[exchange-rates]]).
+>
+> (baru) **2026-09-26 — update harga tiket dari pengguna:** pesawat Guangzhou→Ningbo Rp2.828.200 → **Rp2.800.000/2 org**; pesawat Ningbo→Jakarta Rp6.000.000 → **Rp5.800.000/2 org**. GRAND TOTAL ≈7.561 CNY/Rp20.037.700 → **≈7.475 CNY/Rp19.809.500**.
 
 ## Informasi Penerbangan
 
@@ -431,9 +433,9 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 | Tiket masuk | — | — |
 | Makan (semua hari, perkiraan standar) | 3.250 | Rp8.612.500 |
 | Transport lokal (perkiraan standar) | 980 | Rp2.597.000 |
-| Tiket pesawat kedatangan dari Guangzhou (2 org) | ≈1.067 | Rp2.828.200 |
-| Tiket pesawat pulang Ningbo → Jakarta (2 org) | ≈2.264 | Rp6.000.000 |
-| **GRAND TOTAL** | **≈7.561** | **Rp20.037.700** |
+| Tiket pesawat kedatangan dari Guangzhou (2 org) | ≈1.057 | Rp2.800.000 |
+| Tiket pesawat pulang Ningbo → Jakarta (2 org) | ≈2.189 | Rp5.800.000 |
+| **GRAND TOTAL** | **≈7.475** | **Rp19.809.500** |
 
 **Catatan:** tiket masuk destinasi belum dihitung karena destinasi belum ditentukan — akan menambah total begitu diisi. Biaya menginap tidak dihitung (properti pribadi).
 
