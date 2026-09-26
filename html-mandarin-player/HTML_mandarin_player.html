@@ -2536,6 +2536,11 @@ function applyReferenceBankFilter(panel){
         : orTokens.tokens.some(w => txt.includes(w) || refPinyinMatchWord(r,w));
     } else if(searchMode==='exclude'){
       matchBox1 = !txt.includes(qText); // literal saja, sama seperti sheet biasa
+    } else if(searchMode==='exact'){
+      // '==' (2026-09-26): isi SATU sel harus persis sama dengan yang diketik (bukan sekadar
+      // mengandung); pinyin dibandingkan tanpa nada/dengan nomor nada seperti mode Normal.
+      matchBox1 = searchIdxs.some(i => (r._txtByCol[i]||'').trim()===qText)
+        || pinIdxs.some(i => (qHasDigit ? r._pinToneNum[i] : r._pinToneless[i])===qPinKey);
     } else if(txt.includes(qText)){
       matchBox1 = true;
     } else if(pinIdxs.length){
@@ -2556,6 +2561,8 @@ function applyReferenceBankFilter(panel){
           : orTokens2.tokens.some(w => txt2.includes(w));
       } else if(searchMode2==='exclude'){
         matchBox2 = !txt2.includes(qText2);
+      } else if(searchMode2==='exact'){
+        matchBox2 = scope2Idxs.some(i => (r._txtByCol[i]||'').trim()===qText2);
       } else {
         matchBox2 = txt2.includes(qText2);
       }
@@ -2649,11 +2656,11 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
-    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token - karakter Han atau kata pinyin) / Exclude (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select></div>
+    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select></div>
     <div class="sr">
       <input type="text" data-ref-filter2 placeholder="Filter tambahan di Ref./Note2 (mis. kode sheet)...">
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
-      <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / Exclude"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exclude">Excl.</option></select>
+      <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
