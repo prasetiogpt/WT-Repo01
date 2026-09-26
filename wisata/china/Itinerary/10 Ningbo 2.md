@@ -10,6 +10,8 @@
 > (baru) **2026-09-26 — update harga tiket dari pengguna:** pesawat Guangzhou→Ningbo Rp2.828.200 → **Rp2.800.000/2 org**; pesawat Ningbo→Jakarta Rp6.000.000 → **Rp5.800.000/2 org**. GRAND TOTAL ≈7.561 CNY/Rp20.037.700 → **≈7.475 CNY/Rp19.809.500**.
 >
 > (baru) **2026-09-26 — tiket pulang sudah dibeli untuk 1 Desember (bukan 2 Desember):** Ningbo 2 jadi 10 Nov – 1 Des (21 malam, 22 hari); Hari 22 (Selasa 1 Des) jadi hari kepulangan (pesawat 12:00), hari standar 1 Des dan Hari 23 lama dihapus. Subtotal aktivitas 4.230 → 4.040 CNY; GRAND TOTAL ≈7.476 CNY/Rp19.809.500 → **≈7.286 CNY/Rp19.306.000**.
+>
+> (baru) **2026-09-26 — info pesawat pulang dari pengguna:** 1 Des Cathay Pacific CX949 NGB T2 14:45 → HKG T1 17:15, transit 1j45m, CX797 HKG T1 19:00 → CGK T3 23:15 (bukan 12:00). Hari 22 disusun ulang (berangkat ke bandara ±10:30, makan siang di bandara +¥50); Hari 22 100→150 CNY, subtotal 4.040→4.090. GRAND TOTAL Rp19.306.000 → **≈7.336 CNY/Rp19.438.500**.
 
 ## Informasi Penerbangan
 
@@ -355,17 +357,22 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 
 ---
 
-## Hari 22 — Selasa, 1 Desember (Kepulangan ke Jakarta — Pesawat 12:00)
+## Hari 22 — Selasa, 1 Desember (Kepulangan ke Jakarta — Pesawat 14:45 via Hong Kong)
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
-| 07:00–07:30 | Sarapan terakhir sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
-| 07:30–08:30 | Didi ke Ningbo Lishe International Airport | ⚠️ ±CNY 70 dari Yinzhou; MRT belum tentu beroperasi pagi ini | 70 | Rp185.500 |
-| 08:30–12:00 | Check-in bagasi, imigrasi keberangkatan, tunggu boarding | Tiba di bandara ≥3 jam sebelum berangkat (penerbangan internasional ke Jakarta) | — | — |
-| 12:00 | Pesawat Ningbo (NGB) → Jakarta (CGK) | Tiket masuk budget kota ini; jam tiba & transit belum diketahui | — | — |
-| | **TOTAL HARI 22** | | **100** | **Rp265.000** |
+| 08:00–08:30 | Sarapan terakhir sekitar rumah | ±CNY 15/org | 30 | Rp79.500 |
+| 08:30–10:30 | Packing & waktu bebas | Belum ada destinasi | — | — |
+| 10:30–11:30 | Didi ke Ningbo Lishe International Airport (T2) | ⚠️ ±CNY 70 dari Yinzhou, bawa koper jadi Didi lebih praktis | 70 | Rp185.500 |
+| 11:30–12:15 | Check-in bagasi, imigrasi keberangkatan | Tiba di bandara ±3 jam sebelum berangkat (penerbangan internasional) | — | — |
+| 12:15–13:45 | Makan siang di bandara | ±CNY 25/org | 50 | Rp132.500 |
+| 13:45–14:45 | Tunggu boarding | — | — | — |
+| 14:45 | Pesawat Cathay Pacific CX949 Ningbo (NGB) T2 → Hong Kong (HKG) T1, tiba 17:15 | Tiket masuk budget kota ini | — | — |
+| 17:15–19:00 | Transit di Hong Kong T1 (1j45m) | Tetap di area transit, tidak keluar imigrasi | — | — |
+| 19:00 | Pesawat Cathay Pacific CX797 HKG T1 → Jakarta (CGK) T3, tiba 23:15 | Terbang ±5j15m | — | — |
+| | **TOTAL HARI 22** | | **150** | **Rp397.500** |
 
-**Plan-B hari ini:** tidak ada destinasi terjadwal — siapkan packing & Didi ke bandara sejak malam sebelumnya (berangkat pagi).
+**Plan-B hari ini:** tidak ada destinasi terjadwal — siapkan packing malam sebelumnya; kalau Didi sulit, berangkat ke bandara lebih awal.
 
 ---
 
@@ -373,12 +380,12 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 
 | | |
 |---|---|
-| Rute | NGB Ningbo Lishe (T2) → CGK Jakarta Soekarno-Hatta (terminal menyusul) |
+| Rute | NGB Ningbo Lishe (T2) → CGK Jakarta Soekarno-Hatta (T3) |
 | Tanggal | Selasa, 1 Desember |
-| Maskapai | ⚠️ Belum diketahui (menyusul) |
-| Jadwal | Berangkat 12:00 → Tiba 16:15 (estimasi, ±5j15m jika nonstop) |
+| Maskapai | Cathay Pacific CX949 (NGB→HKG) + CX797 (HKG→CGK) · transit Hong Kong 1j45m |
+| Jadwal | Berangkat 14:45 → Tiba 23:15 (1 transit Hong Kong, ±9j30m) |
 
-**Catatan:** jam berangkat 12:00 dari pengguna; maskapai, terminal, dan jam tiba menyusul (jam tiba di atas hanya estimasi nonstop, kemungkinan transit). Tiket dari pengguna, biaya masuk budget kota ini. Ke bandara pakai Didi (⚠️ ±CNY 70).
+**Catatan:** NGB T2 14:45 → HKG T1 17:15 (CX949, 2j30m); transit di Hong Kong T1 1j45m; HKG T1 19:00 → CGK T3 23:15 (CX797, 5j15m). Tiket dari pengguna, biaya masuk budget kota ini. Ke bandara pakai Didi (⚠️ ±CNY 70).
 
 ---
 
@@ -409,19 +416,19 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 | Hari 19 (28 Nov) | 190 | Rp503.500 |
 | Hari 20 (29 Nov) | 190 | Rp503.500 |
 | Hari 21 (30 Nov) | 190 | Rp503.500 |
-| Hari 22 (1 Des) | 100 | Rp265.000 |
-| **Subtotal aktivitas harian** | **4.040** | **Rp10.706.000** |
+| Hari 22 (1 Des) | 150 | Rp397.500 |
+| **Subtotal aktivitas harian** | **4.090** | **Rp10.838.500** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk | — | — |
-| Makan (semua hari, perkiraan standar) | 3.100 | Rp8.215.000 |
+| Makan (semua hari, perkiraan standar) | 3.150 | Rp8.347.500 |
 | Transport lokal (perkiraan standar) | 940 | Rp2.491.000 |
 | Tiket pesawat kedatangan dari Guangzhou (2 org) | ≈1.057 | Rp2.800.000 |
 | Tiket pesawat pulang Ningbo → Jakarta (2 org) | ≈2.189 | Rp5.800.000 |
-| **GRAND TOTAL** | **≈7.286** | **Rp19.306.000** |
+| **GRAND TOTAL** | **≈7.336** | **Rp19.438.500** |
 
 **Catatan:** tiket masuk destinasi belum dihitung karena destinasi belum ditentukan — akan menambah total begitu diisi. Biaya menginap tidak dihitung (properti pribadi).
 
@@ -433,7 +440,7 @@ Hari kedatangan — tiba siang dari Guangzhou, langsung ke tempat tinggal dan is
 - **Cuaca dingin:** jaket hangat wajib, terutama akhir November–Desember.
 - **Makanan:** tidak pedas/asam/berminyak — pilih sup, kukus, hidangan hangat.
 - **Kunjungan kedua:** destinasi yang sudah dikunjungi di Ningbo pertama (10 Okt – 1 Nov) tidak perlu diulang — lihat [[4 Ningbo]].
-- **Kepulangan 1 Desember:** pesawat Ningbo → Jakarta jam 12:00 — berangkat ke bandara pagi sekali (Didi).
+- **Kepulangan 1 Desember:** pesawat Ningbo → Jakarta 14:45 via Hong Kong (tiba Jakarta 23:15) — berangkat ke bandara ±10:30 (Didi).
 
 ---
 
