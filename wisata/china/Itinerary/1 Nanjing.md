@@ -10,6 +10,8 @@
 > (baru) **2026-09-26 — update harga booking dari pengguna:** tiket HSR Nanjing→Wuxi jadi **¥192/2 org** (semula ¥210, biaya di budget Wuxi). Hotel Nanjing Rp3.800.000/3 malam tetap. Budget Nanjing tidak berubah.
 >
 > (baru) **2026-09-27 — Restrukturisasi Hari 1-4 atas permintaan pengguna:** Massacre Memorial Hall dan Nanjing Museum GAGAL RESERVASI (tiket habis) — keduanya dipindah ke Cadangan. **Hari 1:** tambah Zhonghua Gate opsional malam (sesi 17:00-22:00, dekat Laomendong), tidak menambah budget default. **Hari 2:** Massacre Memorial Hall diganti **Presidential Palace & Xi Garden** (1 stasiun dari hotel via Daxinggong, tiket ¥40/org), rute Line 2 disederhanakan (Daxinggong→Xinjiekou→Mochouhu→Daxinggong, searah tanpa bolak-balik); Deji Plaza, Mochou Lake Park, dan Nanjing 1912 Block tetap. Hari 2 276→393 CNY. **Hari 3:** ditambah **Nanjing City Wall seksi Taicheng** (opsional, dilihat dari bawah saja, gratis) dan **Bailuzhou Park** (opsional, ⚠️ gratis estimasi) — jadwal dibuat FLEKSIBEL, keduanya boleh dilewati; budget tidak berubah (195 CNY, keduanya gratis). **Hari 4:** Nanjing Museum diganti **Pipahu Park** (Zhongshan Scenic Area, rute Amap tercepat via Line 3 + bus G25, ±42 menit ¥4/org, menggantikan opsi Line 4 yang ±56-57 menit); Kexiang Food Street tetap. Hari 4 179→188 CNY. Subtotal aktivitas 918→1.044 CNY. GRAND TOTAL 5.560 CNY/Rp14.732.700 → **5.686 CNY/Rp15.066.600**.
+>
+> (baru) **2026-09-28 — Hari 2 disusun ulang atas diskusi lanjutan:** Nanjing 1912 Block dipindah ke Cadangan (kurang cocok dibanding food street baru) — diganti **Yueyahu Park** (danau bulan sabit, Minggugong Exit 6, gratis, tutup 17:00 jadi dikunjungi pagi/siang sesudah Presidential Palace) dan **Shiziqiao Pedestrian Street** (food street ke-2 terpopuler Nanjing setelah Xinjiekou, via Line 1 dari Deji Plaza, pulang naik bus 95 — rute keduanya terverifikasi Amap). Hari 2 393→402 CNY. Subtotal aktivitas 1.044→1.053 CNY, Transport lokal 279→288 CNY. GRAND TOTAL 5.686 CNY/Rp15.066.600 → **5.695 CNY/Rp15.090.450**.
 
 ## Informasi Penerbangan
 
@@ -56,26 +58,29 @@ Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap kar
 
 ---
 
-## Hari 2 — Minggu, 4 Oktober (Presidential Palace & Xi Garden → Deji Plaza → Mochou Lake Park → Nanjing 1912 Block malam)
+## Hari 2 — Minggu, 4 Oktober (Presidential Palace & Xi Garden → Yueyahu Park → Deji Plaza → Mochou Lake Park → Shiziqiao Pedestrian Street malam)
 
-Rute Line 2 satu arah (Daxinggong → Xinjiekou → Mochouhu → Daxinggong), tanpa bolak-balik. Malamnya mampir Nanjing 1912 Block (persis di Daxinggong) — kawasan bar & resto gaya Republik yang ramai setelah gelap.
+Rute Line 2 memanjang timur-barat (Daxinggong → Minggugong di timur untuk Yueyahu, balik ke Xinjiekou → Mochouhu di barat), lalu Line 1 ke utara (Gulou) untuk makan malam di Shiziqiao, pulang naik bus. Yueyahu Park tutup 17:00 — sengaja dikunjungi pagi/siang sebelum Deji Plaza, bukan di akhir hari.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan di hotel/sekitar | CNY 15/org | 45 | Rp119.250 |
 | 08:00–08:20 | Fuqiao → Daxinggong (Line 3, 1 stasiun, langsung) | ⚠️ estimasi ¥2/org, belum Amap | 6 | Rp15.900 |
 | 08:20–10:20 | **Presidential Palace & Xi Garden** | Masuk lewat pintu sisi barat gerbang (gatehouse utama ditutup permanen). Xi Garden (煦园) di dalam kompleks, bagian terindah — otomatis termasuk tiket. Tiket CNY 40/org | 120 | Rp318.000 |
-| 10:20–10:25 | Daxinggong → Xinjiekou (Line 2, 1 stasiun ke barat) | Terverifikasi Amap: 5 menit, ¥2/org | 6 | Rp15.900 |
-| 10:25–11:30 | Makan siang dekat Xinjiekou | CNY 20/org | 60 | Rp159.000 |
-| 11:30–13:15 | **Deji Plaza** — jalan santai indoor, pas jam paling panas | Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1 (⚠️ Amap menghitung ±706 m/13 menit dari titik Deji Plaza ke Exit 7 — cek di lokasi). Bukan sesi belanja. Snack/minum CNY 15/org | 45 | Rp119.250 |
-| 13:15–13:40 | Xinjiekou → Line 2 arah Yuzui (barat) ke Mochouhu, 3 stasiun (Shanghailu, Hanzhongmen, Mochouhu) | Terverifikasi Amap: ±24 menit total (jalan 706 m/13 menit ke Exit 7 + kereta ±4 menit + jalan 180 m/4 menit dari Exit 1), ¥2/org | 6 | Rp15.900 |
-| 13:40–15:25 | **Mochou Lake Park** | Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar, lebih sejuk sore hari | — | — |
-| 15:25–15:45 | Line 2 dari Mochouhu ke Daxinggong (arah Jingtianlu/timur, 4 stasiun, lewat Xinjiekou tanpa keluar) | Terverifikasi Amap: ±18 menit total (jalan 4 menit + kereta ±8 menit + jalan 4 menit dari Daxinggong Exit 2), ¥2/org | 6 | Rp15.900 |
-| 15:45–18:00 | **Nanjing 1912 Block** — jalan sore/malam kawasan bar/resto gaya Republik, sekalian makan malam | Persis di Stasiun Daxinggong. Makan CNY 30/org | 90 | Rp238.500 |
-| 18:00–18:20 | Line 3 Daxinggong → Fuqiao/hotel | — | 9 | Rp23.850 |
-| **TOTAL HARI 2** | | | **393** | **Rp1.041.450** |
+| 10:20–10:50 | Daxinggong → Minggugong (Line 2 ke timur), jalan ke **Yueyahu Park** | ⚠️ estimasi ±14 menit kereta (belum Amap persis untuk leg ini), keluar Exit 6, jalan 16 menit ke taman (North Gate) | 6 | Rp15.900 |
+| 10:50–12:20 | **Yueyahu Park** — jalan santai tepi danau bulan sabit | Gratis, jalur datar. Tutup 17:00 — banyak buffer waktu | — | — |
+| 12:20–12:50 | Minggugong → Xinjiekou (Line 2 balik ke barat) | ⚠️ estimasi ±20 menit, belum Amap persis | 6 | Rp15.900 |
+| 12:50–13:40 | Makan siang dekat Xinjiekou | CNY 20/org | 60 | Rp159.000 |
+| 13:40–15:25 | **Deji Plaza** — jalan santai indoor, pas jam paling panas | Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1 (⚠️ Amap menghitung ±706 m/13 menit dari titik Deji Plaza ke Exit 7 — cek di lokasi). Bukan sesi belanja. Snack/minum CNY 15/org | 45 | Rp119.250 |
+| 15:25–15:50 | Xinjiekou → Line 2 arah Yuzui (barat) ke Mochouhu, 3 stasiun (Shanghailu, Hanzhongmen, Mochouhu) | Terverifikasi Amap: ±24 menit total (jalan 706 m/13 menit ke Exit 7 + kereta ±4 menit + jalan 180 m/4 menit dari Exit 1), ¥2/org | 6 | Rp15.900 |
+| 15:50–17:35 | **Mochou Lake Park** | Keluar Exit 1 Stasiun Mochouhu — langsung di depan loket taman. Gratis, jalur datar, lebih sejuk sore hari | — | — |
+| 17:35–18:00 | Mochouhu → Xinjiekou (Line 2 balik ke timur, arah sebaliknya) | ±24 menit, ¥2/org | 6 | Rp15.900 |
+| 18:00–18:25 | Xinjiekou → **Line 1** ke Gulou (arah Baguazhoudaqiao) | Terverifikasi Amap: 25 menit total, ¥2/org (3 menit kereta ke stasiun + jalan 15 menit ke jalan Shiziqiao) | 6 | Rp15.900 |
+| 18:25–20:00 | **Shiziqiao Pedestrian Street** — food street ke-2 paling populer di Nanjing (setelah Xinjiekou), jalan-jalan + makan malam | Duck blood soup, jiaozi, salted duck. Makan malam CNY 30/org | 90 | Rp238.500 |
+| 20:00–20:25 | Bus 95 (arah ZongTongFu) kembali ke hotel | Terverifikasi Amap: 25 menit total, ¥2/org (naik dari Hubei Lu, turun dekat Presidential Palace/hotel) | 6 | Rp15.900 |
+| **TOTAL HARI 2** | | | **402** | **Rp1.065.300** |
 
-**Plan-B hari ini:** Presidential Palace tutup tiap Senin (Hari 2 = Minggu, aman). Kalau Xu Garden/kompleks terasa terlalu padat, waktu bisa dipakai perpanjang Deji Plaza/Mochou Lake Park lebih awal — semua tetap searah Line 2/3 yang sama.
+**Plan-B hari ini:** Presidential Palace tutup tiap Senin (Hari 2 = Minggu, aman). Kalau waktu kurang, Yueyahu Park boleh dipersingkat (bukan Deji Plaza/Mochou Lake yang sudah terverifikasi lebih matang rute & jamnya).
 
 ---
 
@@ -132,21 +137,21 @@ Presidential Palace & Xi Garden (Hari 2) berbayar; sisanya hampir semua gratis.
 | Hari | CNY | IDR |
 |---|---|---|
 | Hari 1 (3 Okt) | 268 | Rp710.200 |
-| Hari 2 (4 Okt) | 393 | Rp1.041.450 |
+| Hari 2 (4 Okt) | 402 | Rp1.065.300 |
 | Hari 3 (5 Okt) | 195 | Rp516.750 |
 | Hari 4 (6 Okt) | 188 | Rp498.200 |
-| **Subtotal aktivitas harian** | **1.044** | **Rp2.766.600** |
+| **Subtotal aktivitas harian** | **1.053** | **Rp2.790.450** |
 
 ### Breakdown per kategori
 
 | Kategori | CNY | IDR |
 |---|---|---|
 | Tiket masuk (Jiming Temple, Presidential Palace & Xi Garden) | 150 | Rp397.500 |
-| Makan (semua hari + jajan Laomendong + Kexiang + Nanjing 1912 Block) | 615 | Rp1.629.750 |
-| Transport lokal (Didi + MRT + bus) | 279 | Rp739.350 |
+| Makan (semua hari + jajan Laomendong + Kexiang + Shiziqiao) | 615 | Rp1.629.750 |
+| Transport lokal (Didi + MRT + bus) | 288 | Rp763.200 |
 | Tiket pesawat kedatangan + visa (3 org) | ≈3.208 | Rp8.500.000 |
 | Hotel (3 malam) | ≈1.434 | Rp3.800.000 |
-| **GRAND TOTAL** | **5.686** | **Rp15.066.600** |
+| **GRAND TOTAL** | **5.695** | **Rp15.090.450** |
 
 **Catatan:** Ming Xiaoling Sacred Way, Zhonghua Gate (opsional, Hari 1), Jinling Xiaocheng, Niushoushan, Massacre Memorial Hall, dan Nanjing Museum ada di Cadangan — TIDAK termasuk di total di atas kecuali Zhonghua Gate diambil (+CNY 150/Rp397.500, lihat Hari 1). Baris tiket pesawat+visa dan hotel diberikan langsung dalam Rupiah — nilai CNY ditandai `≈` sebagai konversi kurs, Rupiah tetap angka otoritatif.
 
@@ -260,7 +265,7 @@ Kompleks ini menyimpan sejarah 6 abad China dalam satu tempat. Berawal sebagai k
 
 - Foto/info: https://en.wikipedia.org/wiki/Presidential_Palace_(Nanjing)
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Presidential+Palace+Zongtongfu
-- Rekomendasi tempat sekitar: Nanjing 1912 Block (南京1912街区 · Nánjīng 1912 Jiēqū) — persis sebelahan (juga bagian Hari 2)
+- Rekomendasi tempat sekitar: Nanjing 1912 Block (南京1912街区 · Nánjīng 1912 Jiēqū) — persis sebelahan, sekarang di Cadangan
 
 ### Deji Plaza (德基广场 · Déjī Guǎngchǎng) ✅
 Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total luas 313.000 m². Tahun 2024 tercatat sebagai mal dengan penjualan tertinggi di China (24,5 miliar yuan) — mengalahkan SKP Beijing. Ada bioskop IMAX & ice rink di dalamnya. Bukan sesi belanja — cukup jalan-jalan santai untuk berteduh dari panas siang, nyambung langsung dari Massacre Memorial Hall via Line 2.
@@ -291,21 +296,34 @@ Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (
 - Foto/info: https://en.wikipedia.org/wiki/Mochou_Lake
 - Video referensi: https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing
 - Rekomendasi tempat sekitar: Shengqi Building/rock garden di dalam taman
+### Yueyahu Park (月牙湖公园 · Yuèyáhú Gōngyuán) ✅
+Waduk buatan berbentuk bulan sabit di sisi timur kota lama, membentang dari Zhongshan Gate (selatan) sampai Guanghua Gate (utara). Peringkat #3 taman favorit warga Qinhuai District di daftar lokal, rating 4,6/5 — taman santai untuk jalan kaki di tepi danau, bukan situs sejarah besar.
 
-### Nanjing 1912 Block (南京1912街区 · Nánjīng 1912 Jiēqū) ✅
-Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden sementara Republik China di Nanjing. Dulunya kawasan elite era Republik, sekarang berubah jadi kawasan bar & restoran ramai dengan 21 bangunan dan 4 plaza bata abu-abu bergaya Republik (1912-1949; sumber lama menyebut 19 bangunan) yang tetap dipertahankan, mengingatkan pada suasana Shanghai/Beijing lama. Resmi dibuka Desember 2004, sekarang punya lebih dari 30 bar, kafe, dan resto — kawasan ini justru paling hidup setelah gelap, jadi penutup malam Hari 2 yang pas.
+✅ Nama Hanzi terverifikasi dari halaman POI Amap.
 
-✅ Nama Hanzi 南京1912街区 terverifikasi via web (bukan Amap); alamat 长江后街8号, Distrik Xuanwu.
+**Akses:** dari hotel — jalan 8 menit ke Fuqiao, **Line 3** 1 stasiun ke Daxinggong, transfer **Line 2** ke **Minggugong (Exit 6)** — satu stasiun dengan Nanjing Museum/Ming Palace Ruins Park (lihat Cadangan) — lalu jalan 16 menit ke North Gate taman. Total ±40 menit, ¥2/org (terverifikasi Amap). Alternatif ±35 menit, ¥4/org, kalau mau jalan akhir lebih pendek (pakai bus singkat, ±4 menit jalan saja).
 
-**Akses:** persis di Stasiun Daxinggong (Line 2/3) — dari Mochou Lake Park, naik Line 2 dari Mochouhu langsung ke Daxinggong, lanjut Line 3 satu stasiun ke Fuqiao/hotel sesudahnya.
+**Jam Operasional:** **08:00–17:00** (data langsung dari halaman POI Amap — beda dari sumber web umum yang menyebut 07:00–22:00 weekday, dipakai yang dari Amap karena lebih baru/spesifik). Alamat: Houbiaoying Road, Qinhuai District (sisi selatan Zijin Mountain Scenic Area).
 
-**Jam Operasional:** kawasan buka 24 jam (⚠️ satu agregator web menulis 10:00–21:00 — cek di lokasi), tapi mayoritas bar baru buka ±17:00–18:00, beberapa sampai dini hari (02:00–06:30). Tidak ada hari libur. Jam puncak: malam Jumat–Sabtu mulai ±21:00.
+**Tiket:** Gratis.
 
-**Tiket:** Gratis masuk kawasan; bar/resto di dalamnya bayar sendiri sesuai menu.
+- Foto/info: https://en.wikipedia.org/wiki/Yueya_Lake_(Nanjing)
+- Video referensi: https://www.youtube.com/results?search_query=Yueya+Lake+Park+Nanjing
 
-- Foto/info: https://en.wikipedia.org/wiki/Nanjing_1912
-- Video referensi: https://www.youtube.com/results?search_query=Nanjing+1912+Block+bar+street
-- Rekomendasi tempat sekitar: Deretan café & resto gaya Republik di sepanjang jalan utama
+### Shiziqiao Pedestrian Street (狮子桥美食街 · Shīzǐqiáo Měishíjiē) ✅
+Bagian tengah kawasan komersial Hunan Road — jalan makanan sepanjang ±330m, dulunya pasar tradisional, direnovasi jadi food street tahun 2000. **Food street ke-2 paling populer di Nanjing setelah Xinjiekou** (lalu lintas harian ±200.000 orang, naik jadi 400.000+ saat libur panjang), tapi kurang dikenal turis internasional dibanding Confucius Temple. Jajanan khas: duck blood vermicelli soup, chicken soup dumplings, salted duck, tofu campur, bubur gula lotus.
+
+✅ Nama Hanzi terverifikasi via web (bukan Amap).
+
+**Akses:** dari Deji Plaza (Xinjiekou) naik **Line 1** arah Baguazhoudaqiao, 3 stasiun, turun dekat Gulou, jalan ±15 menit ke jalan Shiziqiao — total ±25 menit, ¥2/org (terverifikasi Amap). Pulang ke hotel: **bus 95** arah ZongTongFu (Presidential Palace) dari halte Hubei Lu, ±25 menit total, ¥2/org (terverifikasi Amap) — turun dekat hotel/Presidential Palace.
+
+**Jam Operasional:** jalan buka 24 jam (gratis), toko/warung umumnya tutup sekitar 21:00. Jam puncak: makan malam ±18:00–20:00.
+
+**Tiket:** Gratis masuk kawasan, bayar jajanan/makanan saja.
+
+- Foto/info: https://en.wikipedia.org/wiki/Hunan_Road_Commercial_Street
+- Video referensi: https://www.youtube.com/watch?v=XRNLGEX4yM0
+
 
 ## Hari 3 — Senin, 5 Oktober
 
@@ -415,6 +433,25 @@ Nama "Kexiang" berasal dari "Kejuzhixiang" (科举之巷 · Kējǔ Zhī Xiàng),
 ## Cadangan
 
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau rombongan ingin pertimbangkan sendiri atau untuk kunjungan berikutnya.
+
+### Nanjing 1912 Block (南京1912街区 · Nánjīng 1912 Jiēqū) ✅
+Namanya diambil dari 1 Januari 1912 — hari Sun Yat-sen dilantik jadi presiden sementara Republik China di Nanjing. Dulunya kawasan elite era Republik, sekarang berubah jadi kawasan bar & restoran ramai dengan 21 bangunan dan 4 plaza bata abu-abu bergaya Republik (1912-1949; sumber lama menyebut 19 bangunan) yang tetap dipertahankan, mengingatkan pada suasana Shanghai/Beijing lama. Resmi dibuka Desember 2004, sekarang punya lebih dari 30 bar, kafe, dan resto — kawasan ini justru paling hidup setelah gelap.
+
+✅ Nama Hanzi 南京1912街区 terverifikasi via web (bukan Amap); alamat 长江后街8号, Distrik Xuanwu.
+
+**Akses:** persis di Stasiun Daxinggong (Line 2/3) — dari Mochou Lake Park, naik Line 2 dari Mochouhu langsung ke Daxinggong, lanjut Line 3 satu stasiun ke Fuqiao/hotel sesudahnya.
+
+**Jam Operasional:** kawasan buka 24 jam (⚠️ satu agregator web menulis 10:00–21:00 — cek di lokasi), tapi mayoritas bar baru buka ±17:00–18:00, beberapa sampai dini hari (02:00–06:30). Tidak ada hari libur. Jam puncak: malam Jumat–Sabtu mulai ±21:00.
+
+**Tiket:** Gratis masuk kawasan; bar/resto di dalamnya bayar sendiri sesuai menu.
+
+- Foto/info: https://en.wikipedia.org/wiki/Nanjing_1912
+- Video referensi: https://www.youtube.com/results?search_query=Nanjing+1912+Block+bar+street
+- Rekomendasi tempat sekitar: Deretan café & resto gaya Republik di sepanjang jalan utama
+
+**Kenapa tidak dimasukkan:** kurang cocok dibanding Shiziqiao Pedestrian Street yang dipilih sebagai penutup malam Hari 2 — kalau ingin suasana bar/resto gaya Republik dibanding food street tradisional, tempat ini tetap mudah disisipkan (persis di Stasiun Daxinggong, jalur pulang hotel).
+
+**Terkait:** Hari 2 (persis di Stasiun Daxinggong)
 
 ### Nanjing Massacre Memorial Hall (侵华日军南京大屠杀遇难同胞纪念馆 · Qīnhuá Rìjūn Nánjīng Dàtúshā Yùnàn Tóngbāo Jìniànguǎn) ✅
 Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan massal yang digali awal tahun 1980an. Memorial ini dibangun untuk mengenang lebih dari 300.000 warga sipil China yang terbunuh selama enam minggu kekejaman tentara Jepang di Nanjing (1937-1938). Di dalamnya, kerangka korban masih dibiarkan setengah terkubur di tanah dengan papan keterangan — dirancang bukan sekadar memaparkan fakta, tapi membuat pengunjung benar-benar merasakan beratnya sejarah ini. Tempat reflektif, bukan wisata santai — sebaiknya disiapkan mental sebelum masuk. **Status: tidak jadi dikunjungi** — reservasi online gagal, tiket sudah habis terjual saat slot H-7 dibuka.
