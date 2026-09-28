@@ -79,7 +79,7 @@ Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap kar
 
 ---
 
-## Hari 3 — Senin, 5 Oktober (Jiming Temple → Xuanwu Lake → City Wall Taicheng (opsional) → Bailuzhou Park (opsional) → Confucius Temple & Qinhuai River)
+## Hari 3 — Senin, 5 Oktober (Jiming Temple → Xuanwu Lake → City Wall Taicheng opsional → Bailuzhou Park opsional → Confucius Temple & Qinhuai River)
 
 > **Jadwal fleksibel:** jam di bawah hanya patokan — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), tanpa transfer. **City Wall Taicheng** dan **Bailuzhou Park** boleh dipersingkat/dilewati kalau waktu atau tenaga kurang; tidak menambah biaya karena keduanya gratis. Jiming Temple persis di Exit 5 Stasiun Jimingsi, area yang sama dengan Xuanwu Lake Park dan City Wall Taicheng — tinggal mampir sebelum masuk taman.
 
@@ -163,24 +163,6 @@ Massacre Memorial Hall & Nanjing Museum gagal reservasi (tiket habis) — digant
 
 ---
 
-## Informasi Transportasi Pulang
-
-| | |
-|---|---|
-| Rute | NKG Nanjing (South Railway Station) → WUX Wuxi (Railway Station) |
-| Tanggal | Selasa, 6 Oktober |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit) |
-
-**Stasiun berangkat:** Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat. Tiket sudah didapat untuk 2 orang; biaya masuk budget Wuxi (kota tujuan).
-
-**Opsi 1 orang:** HSR ke Ningbo, berangkat ±17:00 dari stasiun yang sama, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat & mahal).
-
-**Beli tiket:** app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah.
-
-**⚠️ Booking tiket HSR sesegera mungkin** — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama dengan selisih ±1 jam (17:00 vs 18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.
-
----
 
 # Lampiran — Cerita & Sejarah Tempat
 

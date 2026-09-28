@@ -223,20 +223,6 @@ Angka di bawah biaya aktivitas harian (tiket masuk, makan, transport lokal). Kur
 
 ---
 
-## Informasi Transportasi Pulang
-
-| | |
-|---|---|
-| Rute | WUX Wuxi (Railway Station) → NGB Ningbo (Railway Station) |
-| Tanggal | Sabtu, 10 Oktober |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m) |
-
-**Beli tiket:** app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun; banyak pilihan jadwal G/D-train.
-
-**Catatan:** biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 & catatan di Ringkasan Budget Total di atas). Jam tiba di Ningbo estimasi (⚠️ tergantung nomor kereta), cukup waktu untuk sampai ke tempat tinggal & makan malam.
-
----
 
 # Lampiran — Cerita & Sejarah Tempat
 

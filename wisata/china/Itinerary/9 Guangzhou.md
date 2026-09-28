@@ -174,17 +174,6 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 **Plan-B hari ini:** tidak ada destinasi terjadwal — kalau macet menuju bandara, berangkat lebih awal (Didi ±33 menit).
 ---
 
-## Informasi Penerbangan Pulang
-
-| | |
-|---|---|
-| Rute | CAN Guangzhou Baiyun (T3) → NGB Ningbo Lishe (T2) |
-| Tanggal | Selasa, 10 November |
-| Maskapai | China Eastern Airlines MU5238 · Airbus A320 · Economy |
-| Jadwal | Berangkat 12:15 → Tiba 14:05 (nonstop, ±1j50m) |
-
-**Catatan:** tiket sudah dibeli pengguna (bagasi kabin 1×8 kg, bagasi 20 kg, bisa dibatalkan/ubah tanpa biaya awal); biaya masuk budget kota tujuan ([[10 Ningbo 2]]).
----
 
 ## Ringkasan Budget Total (2 Orang, 4 Malam / 5 Hari di Guangzhou)
 

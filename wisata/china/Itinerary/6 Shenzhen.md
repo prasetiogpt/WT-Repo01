@@ -141,17 +141,6 @@
 
 ---
 
-## Informasi Transportasi Pulang
-
-| | |
-|---|---|
-| Rute | SZX Shenzhen (Futian Station) → CAN Guangzhou (Guangzhou South Station) |
-| Tanggal | Jumat, 6 November |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit) |
-
-**Catatan:** jam berangkat 14:00 dari pengguna (2026-09-24); nomor kereta belum dipilih dan tiket belum dibeli (±30–45 menit tempuh). Biaya HSR ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.
----
 
 ## Ringkasan Budget Total (2 Orang, 3 Malam / 4 Hari di Shenzhen)
 

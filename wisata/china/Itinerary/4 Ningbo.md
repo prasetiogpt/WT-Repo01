@@ -496,18 +496,6 @@ Hari terakhir di Ningbo dibuat ringan karena penerbangan pagi besok.
 
 ---
 
-## Informasi Penerbangan Pulang
-
-| | |
-|---|---|
-| Rute | NGB Ningbo Lishe (T2) → HKG Hong Kong (T1) |
-| Tanggal | Minggu, 1 November |
-| Maskapai | Hong Kong Express UO227 · Fare Lite (Class W) |
-| Jadwal | Berangkat 08:50 → Tiba 11:20 (nonstop, ±2j30m) |
-
-**Catatan:** tiket sudah didapat pengguna; biaya masuk budget Hong Kong (kota tujuan). Ke bandara pakai Didi (MRT belum beroperasi jam 05:15); ⚠️ estimasi ±CNY 70 dari Yinzhou.
-
----
 
 ## Ringkasan Budget Total (2 Orang, 22 Malam di Ningbo)
 

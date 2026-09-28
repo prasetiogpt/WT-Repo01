@@ -100,20 +100,6 @@
 
 **Plan-B hari ini:** kalau Kowloon Park sedang ada perawatan/event tertutup — jalan santai Nathan Road/promenade Tsim Sha Tsui saja (gratis, langsung depan hotel).
 
-## Informasi Transportasi Pulang
-
-| | |
-|---|---|
-| Rute | HKG Hong Kong (West Kowloon Station) → SZX Shenzhen (Futian Station) |
-| Tanggal | Selasa, 3 November |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit) |
-
-**Stasiun berangkat:** Hong Kong West Kowloon Station — dari hotel ±1,3 km (taksi ±10 menit dengan koper, atau jalan kaki ±20 menit). Imigrasi Tiongkok diproses di stasiun ini, jadi tiba di stasiun paling lambat ±13:15. Jam 14:00 adalah default; nomor kereta & tiket belum dibeli (±47 keberangkatan/hari 07:11–22:01), biaya masuk budget Shenzhen (kota tujuan).
-
-**Beli tiket:** app 12306 atau Trip.com, atau loket/mesin tiket di West Kowloon.
-
----
 
 ## Ringkasan Budget Total (2 Orang, 2 Malam / 3 Hari di Hong Kong)
 

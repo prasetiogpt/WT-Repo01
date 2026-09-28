@@ -704,6 +704,23 @@ const destinations = [
         planb:`Presidential Palace tutup tiap Senin (Hari 2 = Minggu, aman). Kalau Xu Garden/kompleks terasa terlalu padat, waktu bisa dipakai perpanjang Deji Plaza/Mochou Lake Park lebih awal — semua tetap searah Line 2/3 yang sama.`,
       },
       {
+        id:"h3", num:3, date:`Senin, 5 Oktober`, label:`Jiming Temple → Xuanwu Lake → City Wall Taicheng opsional → Bailuzhou Park opsional → Confucius Temple &amp; Qinhuai River`,
+        advisory:`<b>Jadwal fleksibel:</b> jam di bawah hanya patokan — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), tanpa transfer. <b>City Wall Taicheng</b> dan <b>Bailuzhou Park</b> boleh dipersingkat/dilewati kalau waktu atau tenaga kurang; tidak menambah biaya karena keduanya gratis. Jiming Temple persis di Exit 5 Stasiun Jimingsi, area yang sama dengan Xuanwu Lake Park dan City Wall Taicheng — tinggal mampir sebelum masuk taman.`,
+        items:[
+          [`08:00–08:20`,`Line 3 dari Fuqiao ke Jimingsi (1 stasiun ke utara, langsung)`,`Keluar Exit 5`,``,`6`,`15.900`],
+          [`08:20–09:00`,`<b>Jiming Temple</b> — kuil Buddha tertua di Nanjing, pagoda ikonik`,`Persis di Exit 5, sebelum lanjut ke taman. Tiket CNY 10/org`,``,`30`,`79.500`],
+          [`09:00–11:00`,`<b>Xuanwu Lake Park</b>`,`Dari Exit 5 Jimingsi, jalan kaki ±500m ke Jiefang Gate (salah satu pintu masuk taman). Gratis, jalur datar. Trolley listrik CNY 30/org kalau capek jalan (opsional, tidak dihitung)`,``,``,``],
+          [`11:00–11:30`,`<b>Nanjing City Wall — seksi Taicheng</b> (opsional, dilihat dari bawah saja)`,`Dekat Xuanwu Lake/Jimingsi, akses lebih landai dari seksi lain. <b>Tidak naik ke atas tembok</b> — cukup lihat/foto dari bawah, gratis`,``,``,``],
+          [`11:30–12:15`,`Makan siang + Line 3 dari Jimingsi ke Fuzimiao (langsung, tanpa transfer)`,`Turun Stasiun Fuzimiao, Exit 2 — jalan ±300m ke arah barat daya ke Confucius Temple. Makan CNY 20/org + MRT`,``,`69`,`182.850`],
+          [`12:15–12:45`,`<b>Bailuzhou Park</b> (opsional)`,`⚠️ Jarak jalan kaki dari Fuzimiao belum diverifikasi Amap — searah Confucius Temple/Qinhuai. Taman klasik era Ming, jalur datar. Gratis (⚠️ estimasi, belum sumber resmi)`,``,``,``],
+          [`12:45–16:30`,`<b>Confucius Temple Pedestrian Street &amp; Qinhuai River</b> — jalan santai kanal`,`Gratis jalan di pedestrian street; kalau mau masuk kompleks kuil, beli tiket di loket dekat gerbang utama (CNY 30/org, tidak dihitung)`,``,``,``],
+          [`16:30–18:30`,`Night view <b>Qinhuai River</b>`,`Gratis — ikon Nanjing, lampion malam`,``,``,``],
+          [`18:30`,`Makan malam, Line 3 langsung kembali ke Fuqiao/hotel`,`CNY 30/org`,``,`90`,`238.500`],
+        ],
+        total:{cny:`<b>195</b>`, idr:`<b>516.750</b>`},
+        planb:`kalau waktu/tenaga kurang — lewati City Wall Taicheng dan/atau Bailuzhou Park, langsung lanjut ke Confucius Temple (keduanya opsional, tidak mengubah budget). Kalau Qinhuai River sore-malam terlalu padat, cukup nikmati dari sisi yang lebih sepi atau ganti dengan area 1912 Block (bar/resto, sebagian tertutup).`,
+      },
+      {
         id:"h4", num:4, date:`Selasa, 6 Oktober`, label:`Pipahu Park → Kexiang Food Street → Keberangkatan, HSR 18:00`,
         advisory:`<b>2026-09-27 — Nanjing Museum gagal reservasi (tiket habis), diganti Pipahu Park</b> (Zhongshan Scenic Area/Purple Mountain, via bus G25). Rute tercepat dari Amap: jalan 8 menit ke Fuqiao → Line 3 → transfer bus G25, turun "Zhongshan 5" → jalan 7 menit ke taman (±42 menit, ¥4/org) — lebih cepat dari opsi Line 4 (±56–57 menit). <b>Checkout pagi, titip bagasi di hotel</b> (concierge/locker), ambil lagi siang sebelum ke stasiun.`,
         items:[
@@ -754,22 +771,6 @@ const destinations = [
       `<b>Reservasi gagal (2026-09-27):</b> Nanjing Massacre Memorial Hall dan Nanjing Museum tiketnya habis sebelum sempat dipesan — keduanya dipindah ke Cadangan, digantikan Presidential Palace &amp; Xi Garden (Hari 2) dan Pipahu Park (Hari 4) yang tidak perlu reservasi online.`,
       `<b>Kereta Hari 4:</b> HSR ke Wuxi berangkat 18:00 (opsi Ningbo ±17:00) dari Nanjing South — buffer sebelum kereta di Hari 4 ±30 menit, jangan tunda checkout kalau ada delay.`,
     ],
-
-    transportPulang:{
-      mode:`train`, kicker:`Transport Pulang`,
-      title:`NKG &rarr; WUX &middot; Selasa, 6 Oktober &middot; 18:00&ndash;18:45`,
-      tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`NKG`, name:`Nanjing &middot; South Railway Station`},
-      to:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
-      duration:`±44 menit &middot; langsung`,
-      meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit)`],
-      ],
-      note:`<b>Stasiun berangkat:</b> Nanjing South Railway Station — Line 3 langsung dari Fuqiao tanpa transfer, atau Didi kalau bawa koper banyak/kondisi padat. Tiket sudah didapat untuk 2 orang; biaya masuk budget Wuxi (kota tujuan).<br><br><b>Opsi 1 orang:</b> HSR ke Ningbo, berangkat ±17:00 dari stasiun yang sama, pilih G-train tercepat (±2j11m), hindari kereta yang detour (lebih lambat &amp; mahal).<br><br><b>Beli tiket:</b> app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun kalau app bermasalah.`,
-      warn:`<b>⚠️ Booking tiket HSR sesegera mungkin</b> — masih periode Golden Week (1–7 Oktober), tiket cepat habis terutama menjelang akhir periode liburan. Rombongan berpisah di stasiun yang sama dengan selisih ±1 jam (17:00 vs 18:00), jadi bisa jalan bareng sampai ke stasiun sebelum pisah ke platform/kereta masing-masing.`,
-      hotel:``
-    },
 
     lampiran:[
       // --- intro ---
@@ -1186,22 +1187,6 @@ const destinations = [
       `<b>Jadwal:</b> tiba ±18:45 (6 Okt), pulang 14:00 (10 Okt) via HSR ke Ningbo. Qingming Bridge/Nanchang Street versi malam di Hari 3.`,
       `<b>Itinerary kota ini independen</b> — tidak menyambung otomatis ke jadwal Nanjing/Ningbo; penyambungan antar kota diatur terpisah oleh Anda.`,
     ],
-
-    transportPulang:{
-      mode:`train`, kicker:`Transport Pulang`,
-      title:`WUX &rarr; NGB &middot; Sabtu, 10 Oktober &middot; 14:00&ndash;17:15`,
-      tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
-      to:{code:`NGB`, name:`Ningbo &middot; Railway Station`},
-      duration:`±3j15m &middot; estimasi`,
-      meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m)`],
-      ],
-      note:`<b>Beli tiket:</b> app resmi 12306 (China Railway) atau Trip.com, bisa juga di loket/mesin tiket stasiun; banyak pilihan jadwal G/D-train.<br><br><b>Catatan:</b> biaya HSR leg ini di luar budget Wuxi (lihat baris Hari 5 &amp; catatan di Ringkasan Budget Total di atas). Jam tiba di Ningbo estimasi (⚠️ tergantung nomor kereta), cukup waktu untuk sampai ke tempat tinggal &amp; makan malam.`,
-      warn:``,
-      hotel:``
-    },
 
     lampiran:[
       // --- intro ---
@@ -1868,22 +1853,6 @@ const destinations = [
       `<b>23 hari (22 malam)</b> — kalau di tengah jalan merasa terlalu padat, gunakan Hari 20 (hari santai) atau Plan-B harian sebagai buffer. Hari panjang: Hari 4 (Mount Putuo) dan Hari 21 (Yushan Islands) sangat bergantung cuaca — boleh dibatalkan jadi hari santai.`,
     ],
 
-    transportPulang:{
-      mode:`flight`, kicker:`Transport Pulang`,
-      title:`NGB &rarr; HKG &middot; Minggu, 1 November &middot; 08:50&ndash;11:20`,
-      tag:"ok", openByDefault:true, code:`UO227`,
-      from:{code:`NGB`, name:`Ningbo Lishe &middot; T2`},
-      to:{code:`HKG`, name:`Hong Kong &middot; T1`},
-      duration:`±2j30m &middot; nonstop`,
-      meta:[
-        [`Maskapai`,`Hong Kong Express UO227 · Fare Lite (Class W)`],
-        [`Jadwal`,`Berangkat 08:50 → Tiba 11:20 (nonstop, ±2j30m)`],
-      ],
-      note:`<b>Catatan:</b> tiket sudah didapat pengguna; biaya masuk budget Hong Kong (kota tujuan). Ke bandara pakai Didi (MRT belum beroperasi jam 05:15); ⚠️ estimasi ±CNY 70 dari Yinzhou.`,
-      warn:``,
-      hotel:``
-    },
-
     lampiran:[
       // --- intro ---
       {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cerita Kota Ningbo`,
@@ -2258,22 +2227,6 @@ const destinations = [
       `<b>Jam tutup penting:</b> Wong Tai Sin Temple 16:30, Chi Lin Nunnery 16:30, aviary Hong Kong Park 17:00 — jadwalkan lebih awal dari jam itu.`,
     ],
 
-    transportPulang:{
-      mode:`train`, kicker:`Transport Pulang`,
-      title:`HKG &rarr; SZX &middot; Selasa, 3 November &middot; 14:00&ndash;14:15`,
-      tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`HKG`, name:`Hong Kong &middot; West Kowloon Station`},
-      to:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
-      duration:`±15 menit &middot; langsung`,
-      meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 14:00 → Tiba 14:15 (langsung, ±15 menit)`],
-      ],
-      note:`<b>Stasiun berangkat:</b> Hong Kong West Kowloon Station — dari hotel ±1,3 km (taksi ±10 menit dengan koper, atau jalan kaki ±20 menit). Imigrasi Tiongkok diproses di stasiun ini, jadi tiba di stasiun paling lambat ±13:15. Jam 14:00 adalah default; nomor kereta &amp; tiket belum dibeli (±47 keberangkatan/hari 07:11–22:01), biaya masuk budget Shenzhen (kota tujuan).<br><br><b>Beli tiket:</b> app 12306 atau Trip.com, atau loket/mesin tiket di West Kowloon.`,
-      warn:``,
-      hotel:``
-    },
-
     lampiran:[
       // --- intro ---
       {group:`intro`, tag:`info`, label:`Sebelum Berangkat`, title:`Cerita Kota`,
@@ -2592,22 +2545,6 @@ const destinations = [
       `<b>VPN:</b> diperlukan di Shenzhen (Tiongkok daratan) untuk akses Google/WhatsApp/Instagram — beda dari Hong Kong yang tidak perlu VPN.`,
       `<b>Izin tamu asing hotel:</b> konfirmasi ke Tourism Trend Hotel soal 涉外资质 (izin menerima &amp; mendaftarkan tamu paspor asing) sebelum booking final.`,
     ],
-
-    transportPulang:{
-      mode:`train`, kicker:`Transport Pulang`,
-      title:`SZX &rarr; CAN &middot; Jumat, 6 November &middot; 14:00&ndash;14:45`,
-      tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`SZX`, name:`Shenzhen &middot; Futian Station`},
-      to:{code:`CAN`, name:`Guangzhou &middot; Guangzhou South Station`},
-      duration:`±45 menit &middot; estimasi`,
-      meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 14:00 → Tiba 14:45 (estimasi, ±45 menit)`],
-      ],
-      note:`<b>Catatan:</b> jam berangkat 14:00 dari pengguna (2026-09-24); nomor kereta belum dipilih dan tiket belum dibeli (±30–45 menit tempuh). Biaya HSR ini masuk budget Guangzhou (kota tujuan), bukan Shenzhen.`,
-      warn:``,
-      hotel:``
-    },
 
     lampiran:[
       // --- intro ---
@@ -2978,22 +2915,6 @@ const destinations = [
       `<b>Pembayaran:</b> WeChat Pay/Alipay jauh lebih diterima dibanding kartu kredit asing — siapkan sebelum berangkat.`,
       `<b>VPN:</b> diperlukan untuk akses Google/WhatsApp/Instagram.`,
     ],
-
-    transportPulang:{
-      mode:`flight`, kicker:`Transport Pulang`,
-      title:`CAN &rarr; NGB &middot; Selasa, 10 November &middot; 12:15&ndash;14:05`,
-      tag:"ok", openByDefault:true, code:`MU5238`,
-      from:{code:`CAN`, name:`Guangzhou Baiyun &middot; T3`},
-      to:{code:`NGB`, name:`Ningbo Lishe &middot; T2`},
-      duration:`±1j50m &middot; nonstop`,
-      meta:[
-        [`Maskapai`,`China Eastern Airlines MU5238 · Airbus A320 · Economy`],
-        [`Jadwal`,`Berangkat 12:15 → Tiba 14:05 (nonstop, ±1j50m)`],
-      ],
-      note:`<b>Catatan:</b> tiket sudah dibeli pengguna (bagasi kabin 1×8 kg, bagasi 20 kg, bisa dibatalkan/ubah tanpa biaya awal); biaya masuk budget kota tujuan ([[10 Ningbo 2]]).`,
-      warn:``,
-      hotel:``
-    },
 
     lampiran:[
       // --- intro ---
