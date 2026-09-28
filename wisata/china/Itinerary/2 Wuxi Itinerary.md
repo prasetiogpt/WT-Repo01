@@ -46,11 +46,9 @@
 
 **Stasiun tujuan:** Wuxi Railway Station (pusat kota) — bukan Wuxi East, karena East di luar pusat kota.
 
-**⚠️ Catatan:** jam berangkat 18:00 sesuai tiket yang sudah didapat pengguna; jam tiba ±18:45 dihitung dari durasi tempuh ±44 menit — bukan jadwal resmi dari tiket, jadi anggap sebagai perkiraan dekat, bukan presisi menit.
-
 **Hotel:** Beauty Coffetel (Wuxi Nanchang Street Taihu Square Metro Station) · 美啡酒店, alias James Joyce Coffetel/喆啡酒店. Tower D, Meilin Center, No. 169 Caozhang New Village, Yongle Road, Liangxi District, Wuxi 214000. Rating 9,4/10 (693 ulasan). Anchor MRT: **Taihu Square Metro Station, Exit 1** — 350m/±6 menit jalan kaki (terverifikasi Amap). Stasiun lain: Tanduqiao (1km/±16 menit jalan kaki, 1 halte Line 1). Wuxi Railway Station: 4,8km/±24 menit naik mobil, atau 5 halte MRT langsung tanpa transfer (¥2/org, ±10 menit). Check-in setelah 14:00, check-out sebelum 12:00. Titip koper (Hari 5): tercantum di fasilitas resmi hotel (luggage storage).
 
-Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi District, terpisah 1 halte dari Tanduqiao (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): **Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan** (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap 2026-09-22. Ke **Huishan (Hari 3)**: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** ke Stasiun **Heliekou** (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
+Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi District, terpisah 1 halte dari Tanduqiao (¥2, ±7 menit). Urutan stasiun Line 1 (selatan→utara): **Qingmingqiao → Taihu Square (hotel) → Tanduqiao → Nanchan Temple → Sanyang Plaza → Shenglimen → Wuxi Railway Station → ... → Liutan** (transfer Line 4), semua searah tanpa backtrack — rute penuh terverifikasi Amap. Ke **Huishan (Hari 3)**: Line 1 ke Liutan (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4, total 12 halte, ¥3/org (terverifikasi). Ke **klaster Lihu Timur (Hari 2 — Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay Wetland Park)**: Line 1 ke Sanyang Plaza (3 halte) + transfer **Line 2** ke Stasiun **Heliekou** (4 halte lagi, total 7 halte), lanjut Didi/jalan kaki antar taman, Didi khusus ke Gonghu Bay di sore hari, pulang via Didi langsung dari Gonghu Bay. Ke **klaster Lihu Barat (Hari 4 — Taihu Yuantouzhu, Lihu National Wetland Park, Bogong Island)**: Didi langsung dari hotel ke Yuantouzhu (±9-10km, tidak ada MRT langsung — ada alternatif MRT+sepeda ±1j5m/¥4 kalau ingin hemat, lihat Lampiran), lanjut sewa sepeda antar-lokasi (Yuantouzhu→Lihu Wetland Park 3,7km, lalu ke Bogong Island), pulang via Didi langsung dari Bogong Island.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 
@@ -113,7 +111,7 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 
 ## Hari 3 — Kamis, 8 Oktober (Klaster Huishan — Golden Week sudah usai, jalur pedestrian sempit jauh lebih nyaman)
 
-**Rute:** Pagi-siang di klaster Huishan — Metro Line 1 dari hotel (Taihu Square) ke **Liutan** (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4 lewat Guangshi Road, Huangxiang, Sheng'an ke **Huishan Ancient Town, Exit 6** — total 12 halte, ¥3/org, rute terverifikasi Amap 2026-09-22. Sore, balik Line 4 → Line 1, tapi TERUSKAN 1 halte lewat Taihu Square sampai **Qingmingqiao** (bukan turun di Nanchan Temple) — Qingming Bridge & Nanchang Street ternyata langsung punya stasiun sendiri, cuma 1 halte dari hotel. Setelahnya tinggal 1 halte balik ke hotel.
+**Rute:** Pagi-siang di klaster Huishan — Metro Line 1 dari hotel (Taihu Square) ke **Liutan** (transfer dalam-stasiun 219m/±4 menit) lanjut Line 4 lewat Guangshi Road, Huangxiang, Sheng'an ke **Huishan Ancient Town, Exit 6** — total 12 halte, ¥3/org, rute terverifikasi Amap. Sore, balik Line 4 → Line 1, tapi TERUSKAN 1 halte lewat Taihu Square sampai **Qingmingqiao** (bukan turun di Nanchan Temple) — Qingming Bridge & Nanchang Street ternyata langsung punya stasiun sendiri, cuma 1 halte dari hotel. Setelahnya tinggal 1 halte balik ke hotel.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -314,7 +312,7 @@ Kawasan lindung ekologi tepi utara Danau Taihu di persimpangan Gonghu Avenue & H
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** dari **Liyuan Garden** (rute Hari 2 saat ini) via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min, alternatif 13km/22min). Tarif Didi tetap estimasi ±CNY 35/2 org (belum ada angka fare langsung dari Amap). ✅ **Konfirmasi penempatan hari (2026-09-20):** dari Bogong Island (klaster Hari 4) jaraknya **18-19km/27-28 menit — lebih jauh lagi** — jadi tetap lebih dekat & tepat dikunjungi bersama klaster Hari 2 (Lixi Park/Central Lihu Park/Liyuan Garden) daripada dipindah ke klaster Hari 4.
+**Akses:** dari **Liyuan Garden** (rute Hari 2 saat ini) via Didi, **±13-14km/±19-22 menit — terverifikasi Amap** (rute populer 14km/19min, alternatif 13km/22min). Tarif Didi tetap estimasi ±CNY 35/2 org (belum ada angka fare langsung dari Amap). ✅ **Konfirmasi penempatan hari:** dari Bogong Island (klaster Hari 4) jaraknya **18-19km/27-28 menit — lebih jauh lagi** — jadi tetap lebih dekat & tepat dikunjungi bersama klaster Hari 2 (Lixi Park/Central Lihu Park/Liyuan Garden) daripada dipindah ke klaster Hari 4.
 
 **Jam Operasional:** taman terbuka ±06:00–20:00, gratis, tidak ada hari libur rutin.
 
@@ -346,7 +344,7 @@ Jalan pedestrian tua di kaki Gunung Hui, pintu masuk ke kawasan Huishan Ancient 
 
 ⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 1 dari hotel (Taihu Square) → transfer dalam-stasiun ke Line 4 di **Liutan** (219m/±4 menit) → Guangshi Road → Huangxiang → Sheng'an → Huishan Ancient Town, Exit 6 — total 12 halte, ¥3/org, rute terverifikasi Amap 2026-09-22; ±5 menit jalan kaki dari Exit 6, langsung di tourist center kawasan.
+**Akses:** MRT Line 1 dari hotel (Taihu Square) → transfer dalam-stasiun ke Line 4 di **Liutan** (219m/±4 menit) → Guangshi Road → Huangxiang → Sheng'an → Huishan Ancient Town, Exit 6 — total 12 halte, ¥3/org, rute terverifikasi Amap; ±5 menit jalan kaki dari Exit 6, langsung di tourist center kawasan.
 
 **Jam Operasional:** kios & jalan buka ±07:00–18:00 (paling ramai jajanan pagi 07:00–10:00), gratis masuk. Tidak ada hari libur rutin.
 

@@ -21,8 +21,6 @@
 
 **Transportasi lokal:** Xiamen Metro (5 jalur aktif: 1, 2, 3, 4, 6) + BRT (jalur bus cepat terpisah). Bayar via **WeChat Pay/Alipay QR code** di gerbang. Feri ke Gulangyu Island TIDAK bisa naik sembarangan — turis asing wajib naik dari **Xiamen International Cruise Center (Xiagu Wharf)**, bukan dermaga umum Dongdu. Prioritas: MRT > jalan kaki > Didi (fleksibel kalau MRT tidak menjangkau).
 
-**⚠️ Keterbatasan alat:** riset destinasi & titik transfer MRT memakai web_search (bukan Amap langsung) — titik transfer presisi antara Line 1 dan Line 3 belum terverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.
-
 ---
 
 ## Ringkasan Cuaca & Persiapan (November di Xiamen)
@@ -387,7 +385,7 @@ Kompleks pendidikan yang dibangun mulai 1913 oleh Tan Kah Kee (Chen Jiageng), fi
 
 **Tiket:** Gratis.
 
-**Kenapa tidak dimasukkan:** dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari (revisi 2026-09-17) — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.
+**Kenapa tidak dimasukkan:** dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.
 
 - Foto/info: https://en.wikipedia.org/wiki/Tan_Kah_Kee
 - Video referensi: https://www.youtube.com/results?search_query=Jimei+School+Village+Xiamen

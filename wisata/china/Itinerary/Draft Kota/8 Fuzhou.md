@@ -21,8 +21,6 @@
 
 **Transportasi lokal:** Fuzhou Metro punya 6 jalur aktif (1, 2, 4, 5, 6, plus Binhai Express) — jaringan cukup luas untuk kota sekelas Fuzhou. Bayar via **WeChat Pay/Alipay QR code** di gerbang. Prioritas: MRT > jalan kaki (kluster kota tua sangat walkable) > Didi (hanya kalau perlu).
 
-**⚠️ Keterbatasan alat:** riset destinasi & titik transfer MRT memakai web_search (bukan Amap langsung) — beberapa titik transfer & jarak jalan kaki presisi belum bisa diverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.
-
 ---
 
 ## Ringkasan Cuaca & Persiapan (November di Fuzhou)

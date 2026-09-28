@@ -50,11 +50,9 @@
 
 **Hotel:** **Wotels · Selected Hotel (Guangzhou Beijing Road Pedestrian Street Haizhu Square Branch)** — 万澳致选酒店(广州北京路步行街市二宫地铁站店), rating 9,3/10 (4.332 ulasan), dibuka 2024. No. 667 Nanhua East Road, Haizhu District (selatan Sungai Mutiara, seberang kawasan Beijing Road). Anchor MRT: **The 2nd Workers' Cultural Palace (市二宫), Line 2, Exit B** — 823m/±14 menit jalan kaki (Amap), atau sepeda bike-share 704m/±4 menit; alternatif Haizhu Square Exit A (870m/±13 menit). Beijing Road Pedestrian Street 970m, Pearl River Night Cruise (Tianzi Pier) 1,3 km. **Tanpa sarapan**; check-in 14:00, check-out 12:00, front desk 24 jam, laundry room, kopi gratis di lobi; bayar di hotel hanya tunai. Sepeda kuning (Meituan) terlihat terparkir di depan hotel. Ulasan negatif: jalan ke stasiun sedang ada konstruksi (repot dengan koper), kamar tidak besar. ⚠️ Lift belum tertulis di sumber; wajib konfirmasi ke hotel bahwa paspor asing bisa didaftarkan. Bandara Baiyun 33,9 km/±33 menit naik mobil; Guangzhou Railway Station 5 km/±19 menit naik mobil. Check-out Hari 5 langsung ke bandara.
 
-**Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, 10 stasiun → 市二宫 (The 2nd Workers' Cultural Palace), lalu jalan 927m/±14 menit ke hotel** — Amap 2026-09-26: 44 menit total, ¥5/org (jalan 3 menit + Line 2 + jalan 14 menit); tanpa koper bisa sepeda 704m, total 36 menit. Dengan koper: jalan ada konstruksi, boleh Didi singkat dari stasiun. Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
+**Kedatangan → Hotel:** dari Guangzhou South Railway Station naik **Line 2 arah utara, 10 stasiun → 市二宫 (The 2nd Workers' Cultural Palace), lalu jalan 927m/±14 menit ke hotel** — Amap: 44 menit total, ¥5/org (jalan 3 menit + Line 2 + jalan 14 menit); tanpa koper bisa sepeda 704m, total 36 menit. Dengan koper: jalan ada konstruksi, boleh Didi singkat dari stasiun. Line 7 juga tersedia di stasiun yang sama tapi ke arah lain — pastikan naik Line 2.
 
 **Transportasi lokal:** Guangzhou Metro (bayar via **WeChat Pay/Alipay QR code** di gerbang — tidak perlu beli kartu fisik). Prioritas: MRT > jalan kaki (kluster kota lama sangat walkable) > sepeda bike-share untuk jarak 2–3 km datar > Didi (hanya kalau perlu). Tarif metro Guangzhou ±¥2–¥7 per perjalanan tergantung jarak (⚠️ estimasi, dipakai ¥2–¥5/org di tabel).
-
-**⚠️ Keterbatasan alat:** riset destinasi & titik transfer MRT memakai web_search (bukan Amap langsung) — semua waktu tempuh antar-titik adalah estimasi, ditandai ⚠️ di teks terkait. Cek Amap on-site.
 
 ---
 
@@ -74,7 +72,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 14:00 | HSR Futian → Guangzhou South | Berangkat dari Shenzhen (biaya di budget kedatangan) | — | — |
-| 14:45–15:40 | Metro ke 市二宫, jalan ke hotel | Guangzhou South → Line 2 arah utara, 10 stasiun → 市二宫; Amap 2026-09-26: 44 menit total, ¥5/org, jalan 927m/±14 menit ke hotel (ada konstruksi, boleh Didi singkat dengan koper) | 10 | Rp26.500 |
+| 14:45–15:40 | Metro ke 市二宫, jalan ke hotel | Guangzhou South → Line 2 arah utara, 10 stasiun → 市二宫; Amap: 44 menit total, ¥5/org, jalan 927m/±14 menit ke hotel (ada konstruksi, boleh Didi singkat dengan koper) | 10 | Rp26.500 |
 | 15:40–16:30 | Check-in hotel, taruh barang | Kalau belum bisa check-in, titip bagasi dulu | — | — |
 | 16:45–18:00 | **Beijing Road Pedestrian Street** — jalan santai + reruntuhan jalan kuno 1.000 tahun di bawah kaca | Gratis, jalur datar; jalan kaki ±970 m/±15 menit dari hotel (data Trip.com) | — | — |
 | 18:00–18:30 | **Dafo Temple** | Gratis, di tengah Beijing Road | — | — |
@@ -93,7 +91,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan) | 40 | Rp106.000 |
-| 08:20–09:00 | Perjalanan ke **Sacred Heart Cathedral** | Amap 2026-09-26: 30–34 menit, ¥2/org — jalan 1,2 km (14 menit) + Tourism Bus 2 (4 halte) + jalan 9 menit; atau jalan 14 menit + Line 2 1 stasiun + jalan 14 menit (Line 2 ¥2/org) | 4 | Rp10.600 |
+| 08:20–09:00 | Perjalanan ke **Sacred Heart Cathedral** | Amap: 30–34 menit, ¥2/org — jalan 1,2 km (14 menit) + Tourism Bus 2 (4 halte) + jalan 9 menit; atau jalan 14 menit + Line 2 1 stasiun + jalan 14 menit (Line 2 ¥2/org) | 4 | Rp10.600 |
 | 09:00–10:15 | **Sacred Heart Cathedral** — katedral granit gaya Gothic | Gratis, Sabtu buka 08:30–17:30; Yide Road Exit B ±5 menit jalan | — | — |
 | 10:15–10:50 | Metro Line 6 ke Huangsha | Jalan ke Yide Road Exit B, Line 6 arah Huangsha ±3 halte ⚠️, ¥2/org | 4 | Rp10.600 |
 | 11:00–12:30 | **Yongqing Fang** — gang tua Xiguan, kafe, museum opera Kanton | Keluar Huangsha Exit B; gratis, buka 24 jam (toko 10:00–22:30) | — | — |
@@ -116,7 +114,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–09:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan); sengaja santai karena mal baru buka 10:00 | 40 | Rp106.000 |
-| 09:20–09:50 | Sepeda ke 市二宫, Line 2 lalu transfer Line 1 ke Tiyu Xilu (Tianhe Sports Center) | Amap 2026-09-26: 26 menit, ¥3/org — jalan 177 m + sepeda 704 m + Line 2 + Line 1 (7 stasiun total); tanpa sepeda 34 menit (jalan 884 m/14 menit); keluar Exit D ke Parc Central | 6 | Rp15.900 |
+| 09:20–09:50 | Sepeda ke 市二宫, Line 2 lalu transfer Line 1 ke Tiyu Xilu (Tianhe Sports Center) | Amap: 26 menit, ¥3/org — jalan 177 m + sepeda 704 m + Line 2 + Line 1 (7 stasiun total); tanpa sepeda 34 menit (jalan 884 m/14 menit); keluar Exit D ke Parc Central | 6 | Rp15.900 |
 | 10:00–11:00 | **Tianhe Shopping Area** — lihat-lihat kawasan mal Tianhe Road & lorong bawah tanah | Mal buka 10:00–22:00. **Boleh dipersingkat/dilewati** → lanjut Parc Central (satu kawasan, jalan kaki). Gratis; indoor menjelang jam panas. Sekadar lihat-lihat, bukan sesi belanja | — | — |
 | 11:00–12:00 | **Parc Central** — lihat-lihat mal modern & suasana | Boleh dipersingkat → lanjut makan siang. Gratis; tersambung langsung ke Tiyu Xilu (Exit D). Kalau belum buka saat tiba, jalan sebentar di sekitar Tiyu Xilu/Tianhe Road dulu | — | — |
 | 12:00–13:00 | Makan siang di Parc Central/kawasan Tianhe | ±CNY 30/org | 60 | Rp159.000 |
@@ -141,7 +139,7 @@ Hari ringan kedatangan — check-in dulu, lalu jalan santai di kawasan penginapa
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan sekitar hotel | ±CNY 20/org (hotel tanpa sarapan) | 40 | Rp106.000 |
-| 08:20–08:50 | Sepeda ke 市二宫, Line 2 ke Sun Yat-sen Memorial Hall | Amap 2026-09-26: 22 menit, ¥2/org — jalan 646 m + sepeda 950 m + Line 2 (2 stasiun) + jalan 8 menit; tanpa sepeda 30 menit (jalan 1,3 km + Line 2 3 stasiun + jalan 8 menit) | 4 | Rp10.600 |
+| 08:20–08:50 | Sepeda ke 市二宫, Line 2 ke Sun Yat-sen Memorial Hall | Amap: 22 menit, ¥2/org — jalan 646 m + sepeda 950 m + Line 2 (2 stasiun) + jalan 8 menit; tanpa sepeda 30 menit (jalan 1,3 km + Line 2 3 stasiun + jalan 8 menit) | 4 | Rp10.600 |
 | 09:00–10:30 | **Sun Yat-sen Memorial Hall** — aula memorial bergaya istana | Tiket ±CNY 10/org, buka 08:00–18:00 | 20 | Rp53.000 |
 | 10:30–10:45 | Jalan ke Yuexiu Park | ±10 menit jalan kaki (per sumber web) ⚠️ | — | — |
 | 10:45–12:15 | **Yuexiu Park** — taman kota terbesar, Patung Lima Kambing | Gratis, buka 06:00–22:00; Exit A dekat Five Rams | — | — |
@@ -433,7 +431,7 @@ Menara TV setinggi 604 m (antena) di tepi Sungai Mutiara, dibuka 2010 — dek ob
 
 **Jam Operasional:** ⚠️ umumnya siang–malam; sunset sekitar 16:30–17:00 di awal November, tiba sebelum pukul 15:30.
 
-**Tiket:** gratis menikmati menara dari area luar/sekitar; dek observasi berbayar ±CNY 135–228/org — **tidak dipakai** (keputusan pengguna 2026-09-25, cukup menikmati pemandangan dari sekitar).
+**Tiket:** gratis menikmati menara dari area luar/sekitar; dek observasi berbayar ±CNY 135–228/org — **tidak dipakai** (keputusan pengguna, cukup menikmati pemandangan dari sekitar).
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/canton-tower.htm
 - Video referensi: https://www.youtube.com/results?search_query=Canton+Tower+Guangzhou
@@ -447,7 +445,7 @@ Pelayaran malam di Sungai Mutiara melewati skyline Zhujiang New Town, Canton Tow
 
 **Jam Operasional:** malam hari, beberapa keberangkatan (durasi 70–90 menit) ⚠️ cek jadwal.
 
-**Tiket:** gratis menikmati dari tepi sungai/dermaga; tiket kapal ±CNY 90–300/org — **tidak dipakai** (keputusan pengguna 2026-09-25, tidak naik cruise).
+**Tiket:** gratis menikmati dari tepi sungai/dermaga; tiket kapal ±CNY 90–300/org — **tidak dipakai** (keputusan pengguna, tidak naik cruise).
 
 - Foto/info: https://www.trip.com/travel-guide/attraction/guangzhou/pearl-river-night-cruise-tianzi-pier-10758762/
 - Video referensi: https://www.youtube.com/results?search_query=Pearl+River+Night+Cruise+Guangzhou
@@ -555,7 +553,7 @@ Museum di atas makam Raja Wen dari Kerajaan Nanyue (±122 SM), ditemukan 1983 �
 
 **Tiket:** ±CNY 10/org ⚠️; wajib reservasi online & bawa paspor asli.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; juga tutup Senin, satu-satunya hari di Yuexiu Park.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — masuk daftar Skip; juga tutup Senin, satu-satunya hari di Yuexiu Park.
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
 - Video referensi: https://www.youtube.com/results?search_query=Nanyue+King+Museum+Guangzhou
@@ -571,7 +569,7 @@ Situs istana taman kerajaan Nanyue di No. 374 Beijing Road — bagian kedua Nany
 
 **Tiket:** ⚠️ gratis dengan reservasi atau ±CNY 10 (belum jelas).
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — masuk daftar Skip.
 
 - Foto/info: https://www.travelchinaguide.com/attraction/guangdong/guangzhou/nanyue_king.htm
 - Video referensi: https://www.youtube.com/results?search_query=Nanyue+Palace+Site+Beijing+Road+Guangzhou
@@ -587,7 +585,7 @@ Museum provinsi Guangdong berbentuk kotak harta karun di Zhujiang New Town — k
 
 **Tiket:** Gratis, **wajib reservasi** WeChat mini-program resmi (bahasa Inggris tersedia).
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; satu kompleks dengan Guangzhou Library (Hari 3), mudah ditambahkan kalau kelak berminat.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — masuk daftar Skip; satu kompleks dengan Guangzhou Library (Hari 3), mudah ditambahkan kalau kelak berminat.
 
 - Foto/info: https://www.eastchinatrip.com/guangdong-museum-travel-guide/
 - Video referensi: https://www.youtube.com/results?search_query=Guangdong+Museum+Guangzhou
@@ -603,7 +601,7 @@ Kuil Taois dari abad ke-11 di kota tetangga Foshan — kompleks kuil dengan ukir
 
 **Tiket:** ±CNY 20/org.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-24)** — masuk daftar Skip; butuh 1 hari dedicated ke kota lain (Foshan).
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — masuk daftar Skip; butuh 1 hari dedicated ke kota lain (Foshan).
 
 - Foto/info: https://www.topchinatravel.com/china-attractions/foshan-ancestral-temple.htm
 - Video referensi: https://www.youtube.com/results?search_query=Foshan+Ancestral+Temple
@@ -619,7 +617,7 @@ Pegunungan hijau di utara Guangzhou (puncak Moxing Ling ±382 m) — "paru-paru 
 
 **Tiket:** ±CNY 5/org masuk taman; kereta gantung ±CNY 25 naik / 20 turun per orang.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (2026-09-25)** — tiket masuk + kereta gantung ±CNY 50/org (±Rp265.000/2 org) tergolong mahal, ±75 menit sekali jalan, dan Chen Clan + Liwan Lake Park (gratis/murah, searah Xiguan) lebih sesuai prioritas tempat gratis; medan menanjak kurang cocok untuk lutut.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — tiket masuk + kereta gantung ±CNY 50/org (±Rp265.000/2 org) tergolong mahal, ±75 menit sekali jalan, dan Chen Clan + Liwan Lake Park (gratis/murah, searah Xiguan) lebih sesuai prioritas tempat gratis; medan menanjak kurang cocok untuk lutut.
 
 - Foto/info: https://www.chinahighlights.com/guangzhou/attraction/white-clouds-mountain.htm
 - Video referensi: https://www.youtube.com/results?search_query=Baiyun+Mountain+Guangzhou

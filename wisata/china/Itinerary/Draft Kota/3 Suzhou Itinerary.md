@@ -28,7 +28,7 @@
 
 **Hotel:** Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: **Nanyuanbeilu Station (南园北路, Line 5)**, ±364m/±7 menit jalan kaki (terverifikasi Amap 2026-09-22) — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).
 
-Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel. Rute terverifikasi Amap: ke kawasan **Hanshan Temple/Shantang Street** via **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Ke kawasan **Jinji Lake (Dongfangzhimen)** via **Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen** (6 halte, ¥3, ±32 menit). **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)** — terkonfirmasi Amap 2026-09-22: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.
+Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: **1 halte ke arah barat daya → Nanmen (南门)**, interchange ke **Line 4** — juga stasiun MRT untuk kawasan **Panmen Scenic Spots**, jadi kluster selatan kota tua praktis di depan hotel. Rute terverifikasi Amap: ke kawasan **Hanshan Temple/Shantang Street** via **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Ke kawasan **Jinji Lake (Dongfangzhimen)** via **Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen** (6 halte, ¥3, ±32 menit). **Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)** — terkonfirmasi Amap: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.
 
 ## Informasi Transportasi Pulang
 
@@ -89,7 +89,7 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 
 ## Hari 3 — Minggu, 12 Oktober (Kota Tua Bagian Tengah)
 
-> **Rute:** dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke **Nanmen**, transfer **Line 4** menuju **Beisita** — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road. ⚠️ **Koreksi 2026-09-20 (terverifikasi Amap)**: Beisita → Guanqian Street **BUKAN jalan kaki langsung** seperti klaim lama (jaraknya 2,5km/10 menit naik mobil) — solusinya lanjut **1 halte MRT Line 4 ke Chayuanchang**, baru jalan kaki 450m (sesuai info akses Guanqian Street yang sudah ada). Guanqian Street → Humble Administrator's Garden juga **bukan "searah/berdekatan"** seperti klaim lama — rute transit terverifikasi ±29 menit (koridor sama dengan Beisita↔Guanqian, ±2,5km), jadi dipakai **sewa sepeda** menggantikan transit panjang.
+> **Rute:** dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke **Nanmen**, transfer **Line 4** menuju **Beisita** — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road. ⚠️ **Koreksi (terverifikasi Amap)**: Beisita → Guanqian Street **BUKAN jalan kaki langsung** seperti klaim lama (jaraknya 2,5km/10 menit naik mobil) — solusinya lanjut **1 halte MRT Line 4 ke Chayuanchang**, baru jalan kaki 450m (sesuai info akses Guanqian Street yang sudah ada). Guanqian Street → Humble Administrator's Garden juga **bukan "searah/berdekatan"** seperti klaim lama — rute transit terverifikasi ±29 menit (koridor sama dengan Beisita↔Guanqian, ±2,5km), jadi dipakai **sewa sepeda** menggantikan transit panjang.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -112,7 +112,7 @@ Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan str
 
 ## Hari 4 — Senin, 13 Oktober (Panmen di Depan Hotel → Hanshan → Shantang)
 
-> **Rute:** Panmen persis 1 halte dari hotel — mulai pagi di sini dulu sebelum lanjut ke kluster barat. ⚠️ **Koreksi 2026-09-20 (terverifikasi Amap)**: ke Hanshan Temple/Shantang **BUKAN via Laodonglu/Line 2** seperti klaim lama — rute sebenarnya **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Hari kerja biasa, relatif lebih tenang dibanding akhir pekan.
+> **Rute:** Panmen persis 1 halte dari hotel — mulai pagi di sini dulu sebelum lanjut ke kluster barat. ⚠️ **Koreksi (terverifikasi Amap)**: ke Hanshan Temple/Shantang **BUKAN via Laodonglu/Line 2** seperti klaim lama — rute sebenarnya **Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie** (9 halte, ¥3, ±39 menit). Hari kerja biasa, relatif lebih tenang dibanding akhir pekan.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
@@ -504,7 +504,7 @@ Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
-**Akses:** Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan. ✅ **Terverifikasi Amap (2026-09-20): 1,1km dari hotel** (±5 menit sepeda, ±15 menit jalan kaki) — cukup dekat untuk jalan kaki santai. Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010).
+**Akses:** Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan. ✅ **Terverifikasi Amap: 1,1km dari hotel** (±5 menit sepeda, ±15 menit jalan kaki) — cukup dekat untuk jalan kaki santai. Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010).
 
 **Jam Operasional:** 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00. Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00.
 

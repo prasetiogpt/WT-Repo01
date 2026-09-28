@@ -37,9 +37,9 @@
 
 **Harga:** ¥618 untuk 3 malam (≈Rp1.637.700), sudah dibooking pengguna.
 
-**Kedatangan → Hotel:** Imigrasi Tiongkok sudah diselesaikan di **West Kowloon (co-location, sebelum naik kereta)** — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: Line 2(Line 8) arah Xichong, 4 halte → **Yannan**, lanjut jalan kaki 328m/±7 menit ke hotel. Total ±23 menit, ¥2/org — rute terverifikasi Amap 2026-09-22 (lebih baik dari alternatif lewat Shixia/Line 3 yang dipakai raw versi lama).
+**Kedatangan → Hotel:** Imigrasi Tiongkok sudah diselesaikan di **West Kowloon (co-location, sebelum naik kereta)** — begitu turun di Futian Station sudah otomatis berada di wilayah Shenzhen, tidak ada pemeriksaan tambahan. Dari Futian Station: Line 2(Line 8) arah Xichong, 4 halte → **Yannan**, lanjut jalan kaki 328m/±7 menit ke hotel. Total ±23 menit, ¥2/org — rute terverifikasi Amap (lebih baik dari alternatif lewat Shixia/Line 3 yang dipakai raw versi lama).
 
-**Transportasi lokal:** Shenzhen Metro (bayar via **WeChat Pay/Alipay QR code** — cara paling praktis untuk turis, tidak perlu beli kartu Shenzhen Tong fisik) untuk semua perjalanan antar-kluster. Prioritas: jalan kaki (kluster Futian CBD walkable) > MTR > sepeda (untuk jarak 1-2km tanpa MRT langsung) > taksi (hanya kalau perlu). Semua rute harian di bawah sudah terverifikasi Amap 2026-09-22/23 dari hotel ini, kecuali yang ditandai ⚠️.
+**Transportasi lokal:** Shenzhen Metro (bayar via **WeChat Pay/Alipay QR code** — cara paling praktis untuk turis, tidak perlu beli kartu Shenzhen Tong fisik) untuk semua perjalanan antar-kluster. Prioritas: jalan kaki (kluster Futian CBD walkable) > MTR > sepeda (untuk jarak 1-2km tanpa MRT langsung) > taksi (hanya kalau perlu). Semua rute harian di bawah sudah terverifikasi Amap/23 dari hotel ini, kecuali yang ditandai ⚠️.
 
 ---
 
@@ -223,7 +223,7 @@ Kawasan pusat elektronik terbesar Asia — deretan mal khusus komponen elektroni
 
 ✅ Nama terverifikasi dari sumber yang konsisten.
 
-**Akses:** dari hotel, jalan 328m/7 menit ke Yannan Exit C → Line 2(Line 8) arah Chiwan, 1 halte → **Huaqiang North Exit D1** — sangat dekat, tanpa transfer, rute terverifikasi Amap 2026-09-23. Searah menuju Civic Center (2 halte lagi di jalur yang sama).
+**Akses:** dari hotel, jalan 328m/7 menit ke Yannan Exit C → Line 2(Line 8) arah Chiwan, 1 halte → **Huaqiang North Exit D1** — sangat dekat, tanpa transfer, rute terverifikasi Amap. Searah menuju Civic Center (2 halte lagi di jalur yang sama).
 
 **Jam Operasional:** toko umumnya 10:00–20:00 setiap hari.
 
@@ -295,7 +295,7 @@ Taman pesisir sepanjang ±13km di sisi barat Shenzhen, dengan jalur mangrove boa
 
 ✅ Nama & info terverifikasi dari sumber yang konsisten.
 
-**Akses:** Dari hotel: jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 6 halte → transfer Jingtian (26m/4 menit) → Line 9 arah Qianwan, 4 halte → Shenzhen Bay Park Exit A. Total ±51 menit, ¥4/org, 1x transfer — rute terverifikasi Amap 2026-09-23. Ini klaster terjauh dari hotel di itinerary ini.
+**Akses:** Dari hotel: jalan 328m/7 menit ke Yannan Exit C → Line 2(8) arah Chiwan, 6 halte → transfer Jingtian (26m/4 menit) → Line 9 arah Qianwan, 4 halte → Shenzhen Bay Park Exit A. Total ±51 menit, ¥4/org, 1x transfer — rute terverifikasi Amap. Ini klaster terjauh dari hotel di itinerary ini.
 
 **Jam Operasional:** taman buka 24 jam, gratis. Sepeda sewaan ±CNY 30/jam (dilarang naik weekend/libur 09:00-18:00 kecuali sepeda pribadi).
 
@@ -431,13 +431,13 @@ Museum seni yang didedikasikan untuk pelukis & aktivis politik He Xiangning (sal
 
 ⚠️ Jam operasional dari sumber sekunder, belum diverifikasi dari situs resmi.
 
-**Akses:** Metro Line 1 Qiaocheng East (Exit A). Dari hotel: jalan 833m/14 menit (atau sepeda ±5 menit) ke Science Museum Exit B → Line 1 arah Airport East, 8 halte → Qiaocheng East Exit A. Total ±51 menit, ¥4/org — rute terverifikasi Amap 2026-09-22.
+**Akses:** Metro Line 1 Qiaocheng East (Exit A). Dari hotel: jalan 833m/14 menit (atau sepeda ±5 menit) ke Science Museum Exit B → Line 1 arah Airport East, 8 halte → Qiaocheng East Exit A. Total ±51 menit, ¥4/org — rute terverifikasi Amap.
 
 **Jam Operasional:** umumnya Selasa–Minggu 10:00–17:30, tutup Senin.
 
 **Tiket:** Gratis.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (revisi 2026-09-23)** — kluster Qiaocheng East tidak searah dengan klaster lain manapun di itinerary ini, dan mengeluarkannya memberi ruang untuk memecah klaster Shenzhen Bay/Shekou (yang berat transportasinya) jadi 2 hari terpisah lebih santai tanpa menambah malam lagi.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — kluster Qiaocheng East tidak searah dengan klaster lain manapun di itinerary ini, dan mengeluarkannya memberi ruang untuk memecah klaster Shenzhen Bay/Shekou (yang berat transportasinya) jadi 2 hari terpisah lebih santai tanpa menambah malam lagi.
 
 - Foto/info: https://en.wikipedia.org/wiki/He_Xiangning_Art_Museum
 - Video referensi: https://www.youtube.com/results?search_query=He+Xiangning+Art+Museum+Shenzhen
@@ -453,7 +453,7 @@ Bekas kawasan pabrik era 1980-an yang direvitalisasi jadi distrik kreatif — ga
 
 **Tiket:** Gratis masuk area.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna (revisi 2026-09-23)** — sama seperti He Xiangning di atas, kluster Qiaocheng East dikeluarkan supaya klaster Shenzhen Bay/Shekou bisa dipecah jadi 2 hari lebih santai tanpa menambah malam lagi.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** — sama seperti He Xiangning di atas, kluster Qiaocheng East dikeluarkan supaya klaster Shenzhen Bay/Shekou bisa dipecah jadi 2 hari lebih santai tanpa menambah malam lagi.
 
 - Foto/info: https://www.eastchinatrip.com/shenzhen-oct-loft-creative-culture-park-guide/
 - Video referensi: https://www.youtube.com/results?search_query=OCT-LOFT+Shenzhen
@@ -517,7 +517,7 @@ Taman tematik yang dibuka 1994, menampilkan ±130 replika miniatur landmark duni
 
 **Tiket:** Tiket harian ±CNY 220/org (±Rp583.000/org); tiket sesi malam saja ±CNY 120/org.
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat (2026-09-23) — tiket CNY 220/org tergolong mahal untuk konsep trip merakyat, dan redundan dengan Splendid China (sama-sama taman miniatur). Bisa disisipkan kalau budget & waktu longgar di kunjungan berikutnya.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat — tiket CNY 220/org tergolong mahal untuk konsep trip merakyat, dan redundan dengan Splendid China (sama-sama taman miniatur). Bisa disisipkan kalau budget & waktu longgar di kunjungan berikutnya.
 
 - Foto/info: https://thingstodoinshenzhen.com/landmark/window-of-the-world/
 - Video referensi: https://www.youtube.com/results?search_query=Window+of+the+World+Shenzhen
@@ -549,7 +549,7 @@ Taman tematik ganda: "Splendid China" (miniatur 82 landmark terkenal China dalam
 
 **Tiket:** ±CNY 169/org (±Rp447.850/org).
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat (2026-09-23) — satu kawasan dengan Window of the World (juga di Cadangan), mirip konsep (miniatur landmark) dan berbayar, tidak sejalan prioritas tempat gratis trip ini.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat — satu kawasan dengan Window of the World (juga di Cadangan), mirip konsep (miniatur landmark) dan berbayar, tidak sejalan prioritas tempat gratis trip ini.
 
 - Foto/info: https://www.chinadiscovery.com/guangdong/shenzhen/splendid-china-folk-village.html
 - Video referensi: https://www.youtube.com/results?search_query=Splendid+China+Shenzhen
@@ -565,7 +565,7 @@ Desa yang berkembang sejak 1989 jadi pusat produksi lukisan minyak reproduksi te
 
 **Tiket:** Gratis masuk desa & museum (kecuali pameran khusus).
 
-**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat (2026-09-23) — di Distrik Longgang, terisolasi dari kluster Futian/Nanshan/Luohu manapun di itinerary ini, butuh perjalanan tersendiri ±45-60 menit dari hotel. Genuinely bagus (desa seni otentik, jalan kaki, sesuai kriteria skill), layak dipertimbangkan lagi kalau ada waktu ekstra atau kunjungan berikutnya.
+**Kenapa tidak dimasukkan:** **tidak dipilih pengguna** dari daftar kandidat — di Distrik Longgang, terisolasi dari kluster Futian/Nanshan/Luohu manapun di itinerary ini, butuh perjalanan tersendiri ±45-60 menit dari hotel. Genuinely bagus (desa seni otentik, jalan kaki, sesuai kriteria skill), layak dipertimbangkan lagi kalau ada waktu ekstra atau kunjungan berikutnya.
 
 - Foto/info: https://www.eastchinatrip.com/shenzhen-dafen-oil-painting-village-guide/
 - Video referensi: https://www.youtube.com/results?search_query=Dafen+Oil+Painting+Village
@@ -623,7 +623,7 @@ Museum sejarah alam terbesar di China Selatan, baru dibuka **28 Juli 2026** di k
 
 ⚠️ Nama Hanzi & Pinyin dari sumber berita resmi (situs Pemerintah Distrik Pingshan/Shenzhen), belum diverifikasi Amap.
 
-**Akses:** MRT Line 16, Stasiun Shabo (沙壆站) Exit D, jalan kaki ±14 menit (atau sepeda ±7 menit). Dari hotel: jalan 934m/15 menit ke Huaxin Exit B → Line 7 arah Tai'an, 1 halte → transfer Huangmugang (58m/2 menit) → Line 14 arah Shatian, 12 halte → transfer Pingshanwei (75m/5 menit) → Line 16 arah Tianxin, 3 halte → Shabo Exit D. Total 16 stasiun, ¥8/org, **±1 jam 40 menit** — rute terverifikasi Amap 2026-09-22, jauh di Pingshan District (ujung timur Shenzhen, berlawanan arah dari klaster Shenzhen Bay/Shekou Hari 2 & 3).
+**Akses:** MRT Line 16, Stasiun Shabo (沙壆站) Exit D, jalan kaki ±14 menit (atau sepeda ±7 menit). Dari hotel: jalan 934m/15 menit ke Huaxin Exit B → Line 7 arah Tai'an, 1 halte → transfer Huangmugang (58m/2 menit) → Line 14 arah Shatian, 12 halte → transfer Pingshanwei (75m/5 menit) → Line 16 arah Tianxin, 3 halte → Shabo Exit D. Total 16 stasiun, ¥8/org, **±1 jam 40 menit** — rute terverifikasi Amap, jauh di Pingshan District (ujung timur Shenzhen, berlawanan arah dari klaster Shenzhen Bay/Shekou Hari 2 & 3).
 
 **Jam Operasional:** Selasa–Minggu 09:30–18:00 (masuk terakhir 17:30), tutup Senin kecuali libur nasional/liburan sekolah.
 

@@ -651,16 +651,15 @@ const destinations = [
 
     transportPergi:{
       mode:`train`, kicker:`Transport Pergi`,
-      title:`WUX &rarr; SZV &middot; Jumat, 10 Oktober &middot; 14:30&ndash;15:00`,
+      title:`WUX &rarr; SZV &middot; Jumat, 10 Oktober`,
       tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`WUX`, name:`Wuxi &middot; Railway Station`},
-      to:{code:`SZV`, name:`Suzhou &middot; Railway Station`},
+      from:{code:`WUX`, name:`Railway Station &middot; 14:30`},
+      to:{code:`SZV`, name:`Railway Station &middot; 15:00`},
       duration:`±30 menit &middot; estimasi`,
       meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 14:30 → Tiba 15:00 (estimasi, ±30 menit)`],
+
       ],
-      note:`<b>Stasiun tiba:</b> Suzhou Railway Station, lanjut taksi/Didi singkat ke hotel. Jam berangkat default, nomor kereta belum dipilih.<br><br>Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: <b>1 halte ke arah barat daya → Nanmen (南门)</b>, interchange ke <b>Line 4</b> — juga stasiun MRT untuk kawasan <b>Panmen Scenic Spots</b>, jadi kluster selatan kota tua praktis di depan hotel. Rute terverifikasi Amap: ke kawasan <b>Hanshan Temple/Shantang Street</b> via <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Ke kawasan <b>Jinji Lake (Dongfangzhimen)</b> via <b>Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen</b> (6 halte, ¥3, ±32 menit). <b>Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)</b> — terkonfirmasi Amap 2026-09-22: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.`,
+      note:`<b>Stasiun tiba:</b> Suzhou Railway Station, lanjut taksi/Didi singkat ke hotel. Jam berangkat default, nomor kereta belum dipilih.<br><br>Line 5 membentang barat daya–timur laut melewati 34 stasiun, dan kebetulan strategis untuk hotel ini karena: <b>1 halte ke arah barat daya → Nanmen (南门)</b>, interchange ke <b>Line 4</b> — juga stasiun MRT untuk kawasan <b>Panmen Scenic Spots</b>, jadi kluster selatan kota tua praktis di depan hotel. Rute terverifikasi Amap: ke kawasan <b>Hanshan Temple/Shantang Street</b> via <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Ke kawasan <b>Jinji Lake (Dongfangzhimen)</b> via <b>Nanyuanbeilu → Line 5 → transfer → Line 3 → Dongfangzhimen</b> (6 halte, ¥3, ±32 menit). <b>Line 5 langsung TANPA transfer ke Taihu Xiangshan (太湖香山)</b> — terkonfirmasi Amap: 17 halte, ¥5/org, ±43 menit, terminus barat daya, persis di kawasan resor Danau Taihu — jadi Taihu tidak perlu taksi PP penuh, cukup naik Line 5 lurus lalu taksi/bus pendek dari stasiun ke titik wisatanya. Transportasi ke Suzhou Railway Station (Hari 5): rencana utama taksi/Didi langsung, tapi ada alternatif hemat terverifikasi Amap — jalan ke Nanyuanbeilu → Line 5 1 halte ke Nanmen → transfer → Line 4 5 halte → Exit 1B, total 6 halte, ¥4/2org, ±35 menit.`,
       warn:``,
       hotel:`<b>Hotel:</b> Suzhou City Holiday Hotel (Shiquan Street·Wangshi Garden) — 苏州城市假日酒店(十全街网师园店), ⭐⭐⭐⭐ rating 9.4/10 (17.650 ulasan). No. 77 North Nanyuan Road (北南园路77号), Canglang Subdistrict, Gusu District, Suzhou. ±4,8km (garis lurus) dari pusat kota. Anchor MRT: <b>Nanyuanbeilu Station (南园北路, Line 5)</b>, ±364m/±7 menit jalan kaki (terverifikasi Amap 2026-09-22) — dipakai sebagai basis SEMUA rute harian di bawah. Stasiun/terminal lain di sekitar hotel: Nanmen Metro Station (1,2km/±17 menit jalan kaki), Suzhou South Gate Passenger Transport Terminal (bus, 1,4km/±20 menit jalan kaki), Suzhou Railway Station (苏州站, stasiun HSR utama — 5,9km/±27 menit naik mobil, TIDAK dekat/jalan kaki), Suzhou Industrial Park Railway Station (苏州工业园区站, 11,4km/±30 menit naik mobil, relevan hanya untuk leg dari arah timur/Jinji Lake).`
     },
@@ -697,7 +696,7 @@ const destinations = [
       },
       {
         id:"h3", num:3, date:`Minggu, 12 Oktober`, label:`Kota Tua Bagian Tengah`,
-        advisory:`<b>Rute:</b> dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke <b>Nanmen</b>, transfer <b>Line 4</b> menuju <b>Beisita</b> — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap)</b>: Beisita → Guanqian Street <b>BUKAN jalan kaki langsung</b> seperti klaim lama (jaraknya 2,5km/10 menit naik mobil) — solusinya lanjut <b>1 halte MRT Line 4 ke Chayuanchang</b>, baru jalan kaki 450m (sesuai info akses Guanqian Street yang sudah ada). Guanqian Street → Humble Administrator's Garden juga <b>bukan "searah/berdekatan"</b> seperti klaim lama — rute transit terverifikasi ±29 menit (koridor sama dengan Beisita↔Guanqian, ±2,5km), jadi dipakai <b>sewa sepeda</b> menggantikan transit panjang.`,
+        advisory:`<b>Rute:</b> dari hotel naik Line 5 (Nanyuanbeilu) 1 halte ke <b>Nanmen</b>, transfer <b>Line 4</b> menuju <b>Beisita</b> — kluster museum/taman/kelenteng di utara kota tua, ditutup jalan malam di Pingjiang Road. ⚠️ <b>Koreksi (terverifikasi Amap)</b>: Beisita → Guanqian Street <b>BUKAN jalan kaki langsung</b> seperti klaim lama (jaraknya 2,5km/10 menit naik mobil) — solusinya lanjut <b>1 halte MRT Line 4 ke Chayuanchang</b>, baru jalan kaki 450m (sesuai info akses Guanqian Street yang sudah ada). Guanqian Street → Humble Administrator's Garden juga <b>bukan "searah/berdekatan"</b> seperti klaim lama — rute transit terverifikasi ±29 menit (koridor sama dengan Beisita↔Guanqian, ±2,5km), jadi dipakai <b>sewa sepeda</b> menggantikan transit panjang.`,
         items:[
           [`08:00`,`Sarapan di sekitar hotel`,`Bubur/baozi kukus, ±CNY 12/org`,``,`24`,`63.600`],
           [`08:30–08:56`,`Metro: Nanyuanbeilu (Line 5) → Nanmen → transfer Line 4 → Beisita`,`26 menit, 5 halte, ¥2/org — terverifikasi Amap`,``,`4`,`10.600`],
@@ -716,7 +715,7 @@ const destinations = [
       },
       {
         id:"h4", num:4, date:`Senin, 13 Oktober`, label:`Panmen di Depan Hotel → Hanshan → Shantang`,
-        advisory:`<b>Rute:</b> Panmen persis 1 halte dari hotel — mulai pagi di sini dulu sebelum lanjut ke kluster barat. ⚠️ <b>Koreksi 2026-09-20 (terverifikasi Amap)</b>: ke Hanshan Temple/Shantang <b>BUKAN via Laodonglu/Line 2</b> seperti klaim lama — rute sebenarnya <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Hari kerja biasa, relatif lebih tenang dibanding akhir pekan.`,
+        advisory:`<b>Rute:</b> Panmen persis 1 halte dari hotel — mulai pagi di sini dulu sebelum lanjut ke kluster barat. ⚠️ <b>Koreksi (terverifikasi Amap)</b>: ke Hanshan Temple/Shantang <b>BUKAN via Laodonglu/Line 2</b> seperti klaim lama — rute sebenarnya <b>Nanmen → Line 4 → transfer di Sujin → Line 6 → Shantangjie</b> (9 halte, ¥3, ±39 menit). Hari kerja biasa, relatif lebih tenang dibanding akhir pekan.`,
         items:[
           [`08:00`,`Sarapan`,`±CNY 12/org`,``,`24`,`63.600`],
           [`08:15–08:30`,`Metro 1 halte: Nanyuanbeilu → Nanmen`,`Bisa juga jalan kaki ±1,2km/17 menit kalau ingin pemanasan pagi`,``,`8`,`21.200`],
@@ -783,14 +782,13 @@ const destinations = [
 
     transportPulang:{
       mode:`train`, kicker:`Transport Pulang`,
-      title:`SZV &rarr; NGB &middot; Selasa, 14 Oktober &middot; 15:00&ndash;17:30`,
+      title:`SZV &rarr; NGB &middot; Selasa, 14 Oktober`,
       tag:"ok", openByDefault:true, code:`HSR G-train`,
-      from:{code:`SZV`, name:`Suzhou &middot; Railway Station`},
-      to:{code:`NGB`, name:`Ningbo &middot; Railway Station`},
+      from:{code:`SZV`, name:`Railway Station &middot; 15:00`},
+      to:{code:`NGB`, name:`Railway Station &middot; 17:30`},
       duration:`±2j30m &middot; estimasi`,
       meta:[
-        [`Kereta`,`HSR G-train`],
-        [`Jadwal`,`Berangkat 15:00 → Tiba 17:30 (estimasi, ±2j30m)`],
+
       ],
       note:`<b>Stasiun berangkat:</b> Suzhou Railway Station (bukan Suzhou North) — lebih dekat dari hotel (5,9km vs ±16km), taksi/Didi ±27 menit. Jam 15:00 default (±19 kereta G/D per hari 07:15–18:08); nomor kereta persis cek di 12306/Trip.com H-7. Biaya HSR masuk budget Ningbo (kota tujuan).`,
       warn:``,
@@ -948,7 +946,7 @@ const destinations = [
       {group:`h5`, tag:`main`, label:`Itin H5`, title:`Master of Nets Garden (网师园 · Wǎngshī Yuán)`,
        nameEn:`Master of Nets Garden`,
        nameHanzi:`网师园`,
-       text:`Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage. Nama hotel trip ini merujuk langsung ke taman ini, dan lokasinya memang persis di area yang sama. <b>Akses:</b> Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan. ✅ <b>Terverifikasi Amap (2026-09-20): 1,1km dari hotel</b> (±5 menit sepeda, ±15 menit jalan kaki) — cukup dekat untuk jalan kaki santai. Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010). <b>Jam Operasional:</b> 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00. Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00. <b>Tiket:</b> Siang CNY 40/org musim ramai, CNY 30/org musim sepi (±Rp106.000/79.500 per org). Night Garden CNY 100/org (±Rp265.000/org) — terpisah dari tiket siang, opsional di Hari 1 malam kalau masih berminat lihat versi lampion. Gratis untuk lansia 70+ (bawa identitas) &amp; anak di bawah 1,2m.`,
+       text:`Salah satu taman klasik terkecil tapi paling dipuji desainnya di Suzhou, pertama dibangun era Song (abad ke-12) oleh seorang pejabat yang pensiun dan menamainya "Wangshi Yuan" (taman tukang jaring ikan) sebagai sindiran rendah hati terhadap karir birokrasinya. Terkenal dengan pertunjukan "Night Garden" di musim panas-gugur yang menampilkan opera Kunqu di antara paviliun bercahaya lampion — situs UNESCO World Heritage. Nama hotel trip ini merujuk langsung ke taman ini, dan lokasinya memang persis di area yang sama. <b>Akses:</b> Persis di kawasan hotel/Shiquan Street — TIDAK ada stasiun MRT persis di depan. ✅ <b>Terverifikasi Amap: 1,1km dari hotel</b> (±5 menit sepeda, ±15 menit jalan kaki) — cukup dekat untuk jalan kaki santai. Alternatif: halte bus "Master of Nets Garden West" (bus 529/9003/9010). <b>Jam Operasional:</b> 21 April–20 Oktober 07:30–17:30 (loket tutup 17:00); 21 Oktober–20 April 07:30–17:00. Night Garden: pertengahan Maret–pertengahan November, setiap malam 19:30–22:00. <b>Tiket:</b> Siang CNY 40/org musim ramai, CNY 30/org musim sepi (±Rp106.000/79.500 per org). Night Garden CNY 100/org (±Rp265.000/org) — terpisah dari tiket siang, opsional di Hari 1 malam kalau masih berminat lihat versi lampion. Gratis untuk lansia 70+ (bawa identitas) &amp; anak di bawah 1,2m.`,
        wiki:`https://en.wikipedia.org/wiki/Master_of_the_Nets_Garden`,
        yt:`https://www.youtube.com/results?search_query=Master+of+the+Nets+Garden+Suzhou+night`},
       // --- cadangan ---
@@ -1075,7 +1073,7 @@ const destinations = [
         [`Moda`,`HSR G-train (default; kota asal belum ditentukan)`],
         [`Stasiun kedatangan`,`<b>Xiamen Railway Station</b>`],
       ],
-      warn:`<b>⚠️ Keterbatasan alat:</b> riset destinasi &amp; titik transfer MRT memakai web_search (bukan Amap langsung) — titik transfer presisi antara Line 1 dan Line 3 belum terverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.`,
+      warn:`<b>Area Menginap yang Disarankan:</b> kawasan <b>Zhenhai Road/Zhongshan Road (镇海路/中山路)</b>, Siming District — pusat kota lama, ±200m dari dermaga feri Gulangyu, di jalur <b>Line 1</b> yang tersambung ke Line 3 (kluster Nanputuo/Xiamen University/Hulishan Fortress/Zengcuoan) dan ke Jimei. Lokasi ini strategis untuk hampir semua destinasi itinerary tanpa perlu banyak Didi. ⚠️ Nama hotel spesifik belum ditentukan — pilih &amp; booking sendiri di kawasan ini, lalu kabari untuk update rute per-hari kalau perlu penyesuaian jarak jalan kaki presisi.<br><br><b>Transportasi lokal:</b> Xiamen Metro (5 jalur aktif: 1, 2, 3, 4, 6) + BRT (jalur bus cepat terpisah). Bayar via <b>WeChat Pay/Alipay QR code</b> di gerbang. Feri ke Gulangyu Island TIDAK bisa naik sembarangan — turis asing wajib naik dari <b>Xiamen International Cruise Center (Xiagu Wharf)</b>, bukan dermaga umum Dongdu. Prioritas: MRT &gt; jalan kaki &gt; Didi (fleksibel kalau MRT tidak menjangkau).`,
       hotel:``
     },
 
@@ -1309,7 +1307,7 @@ const destinations = [
       {group:`cadangan`, tag:`planc`, label:`Plan C`, title:`Jimei School Village (集美学村 · Jíměi Xuécūn)`,
        nameEn:`Jimei School Village`,
        nameHanzi:`集美学村`,
-       context:`Kenapa tidak dimasukkan: dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari (revisi 2026-09-17) — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.`,
+       context:`Kenapa tidak dimasukkan: dihapus dari itinerary utama saat trip dipersingkat dari 7 hari jadi 6 hari — satu-satunya kluster yang berdiri sendiri di Line 1 tanpa transfer, tidak searah dengan kluster Line 3 (Nanputuo/Hulishan/Shapowei) yang mengisi Hari 3-5, jadi paling masuk akal dikorbankan tanpa mengganggu hari lain. Worth dikunjungi kalau ada waktu ekstra atau kunjungan berikutnya.`,
        text:`Kompleks pendidikan yang dibangun mulai 1913 oleh Tan Kah Kee (Chen Jiageng), filantropis perantau Tionghoa yang juga mendirikan Xiamen University — dari sini lahir gaya arsitektur "jiageng" khas yang memadukan atap tradisional China dengan struktur bata-batu Barat, jadi cetak biru banyak bangunan kampus di Xiamen. Kawasan ini mencakup beberapa sekolah &amp; universitas sekaligus, menjadikannya salah satu kompleks pendidikan tertua &amp; paling berpengaruh di China Selatan. <b>Akses:</b> MRT Line 1, turun Stasiun Jimei School Village — langsung, tanpa transfer dari kawasan pusat kota. <b>Jam Operasional:</b> kawasan kampus terbuka untuk umum, gratis, tidak ada jam tutup ketat. <b>Tiket:</b> Gratis.`,
        wiki:`https://en.wikipedia.org/wiki/Tan_Kah_Kee`,
        yt:`https://www.youtube.com/results?search_query=Jimei+School+Village+Xiamen`,
@@ -1404,7 +1402,7 @@ const destinations = [
         [`Moda`,`HSR G-train (default; kota asal belum ditentukan)`],
         [`Stasiun kedatangan`,`<b>Fuzhou South Railway Station</b>`],
       ],
-      warn:`<b>⚠️ Keterbatasan alat:</b> riset destinasi &amp; titik transfer MRT memakai web_search (bukan Amap langsung) — beberapa titik transfer &amp; jarak jalan kaki presisi belum bisa diverifikasi visual, ditandai ⚠️ di teks terkait. Cek Amap on-site kalau memungkinkan.`,
+      warn:`<b>Area Menginap yang Disarankan:</b> kawasan <b>Nanmendou/Dongjiekou (南门兜/东街口)</b>, Gulou District — jantung kota tua Fuzhou, persis di kluster Sanfang Qixiang &amp; Lin Zexu Memorial, di jalur <b>Line 1</b> yang tersambung ke Line 4 (West Lake Park). Lokasi ini strategis untuk semua destinasi itinerary. ⚠️ Nama hotel spesifik belum ditentukan — pilih &amp; booking sendiri di kawasan ini, lalu kabari untuk update rute per-hari kalau perlu penyesuaian jarak jalan kaki presisi. Pastikan hotel bisa titip bagasi setelah checkout (dibutuhkan Hari 3).<br><br><b>Transportasi lokal:</b> Fuzhou Metro punya 6 jalur aktif (1, 2, 4, 5, 6, plus Binhai Express) — jaringan cukup luas untuk kota sekelas Fuzhou. Bayar via <b>WeChat Pay/Alipay QR code</b> di gerbang. Prioritas: MRT &gt; jalan kaki (kluster kota tua sangat walkable) &gt; Didi (hanya kalau perlu).`,
       hotel:``
     },
 
@@ -1696,7 +1694,7 @@ function renderTransport(t){
         </div>
         <div class="route-city" style="text-align:right"><div class="route-code">${t.to.code}</div><div class="route-name">${t.to.name}</div></div>
       </div>
-      <div class="flight-meta">${t.meta.map(([l,v])=>`<div><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>
+      ${t.meta && t.meta.length ? `<div class="flight-meta">${t.meta.map(([l,v])=>`<div><div class="meta-label">${l}</div><div class="meta-value">${v}</div></div>`).join('')}</div>` : ``}
       ${t.note ? `<div class="flight-note">${t.note}</div>` : ``}
       ${t.hotel ? `<div class="hotel-banner">${t.hotel}</div>` : ``}
       ${t.warn ? `<div class="warn-banner">${t.warn}</div>` : ``}

@@ -24,7 +24,7 @@
 
 **Nonstop tanpa transit** — pilihan ini menghindari semua risiko transit (imigrasi, lounge, koneksi penerbangan). Terminal T2 di Nanjing Lukou juga lebih dekat ke stasiun MRT S1 (150m) dibanding T1.
 
-**⚠️ Perhatian: China Golden Week (1-7 Oktober)** — Trip ini bertepatan dengan libur Hari Nasional China, periode liburan domestik terbesar. Hotel, tiket HSR, dan tempat wisata jauh lebih ramai & mahal dari kondisi normal. Booking secepatnya dan siapkan buffer waktu ekstra di setiap aktivitas. **2026-09-27 — Nanjing Massacre Memorial Hall & Nanjing Museum gagal direservasi (tiket habis, keduanya dipindah ke Cadangan)** — diganti Presidential Palace & Xi Garden (Hari 2) dan Pipahu Park (Hari 4), keduanya tidak perlu reservasi online.
+**⚠️ Golden Week (1–7 Okt):** booking hotel/HSR/tiket wisata lebih awal — lebih ramai & mahal dari biasa.
 
 **Catatan biaya:** semua angka CNY/IDR di bawah adalah perkiraan biaya untuk **3 orang** (rombongan), sudah dijumlah per baris kegiatan. Kurs dipakai: **Rp2.650/CNY** (kurs tetap). Tanda — berarti gratis/tidak ada biaya.
 
@@ -58,14 +58,14 @@ Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap kar
 
 ## Hari 2 — Minggu, 4 Oktober (Presidential Palace & Xi Garden → Deji Plaza → Mochou Lake Park → Nanjing 1912 Block malam)
 
-**2026-09-27 — Massacre Memorial Hall gagal reservasi (tiket habis), diganti Presidential Palace & Xi Garden** (1 stasiun dari hotel, Daxinggong). Rute Line 2 (urutan stasiun barat→timur: Mochouhu – Hanzhongmen – Shanghailu – Xinjiekou – Daxinggong): dari Daxinggong 1 stasiun ke barat ke Xinjiekou (Deji Plaza), lalu 3 stasiun lagi ke barat ke Mochouhu, lalu balik 4 stasiun ke timur ke Daxinggong — searah, tanpa bolak-balik. Malamnya mampir Nanjing 1912 Block (persis di Daxinggong, jalur pulang) — kawasan bar & resto gaya Republik yang justru ramai & hidup setelah gelap.
+Rute Line 2 satu arah (Daxinggong → Xinjiekou → Mochouhu → Daxinggong), tanpa bolak-balik. Malamnya mampir Nanjing 1912 Block (persis di Daxinggong) — kawasan bar & resto gaya Republik yang ramai setelah gelap.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:30–08:00 | Sarapan di hotel/sekitar | CNY 15/org | 45 | Rp119.250 |
 | 08:00–08:20 | Fuqiao → Daxinggong (Line 3, 1 stasiun, langsung) | ⚠️ estimasi ¥2/org, belum Amap | 6 | Rp15.900 |
 | 08:20–10:20 | **Presidential Palace & Xi Garden** | Masuk lewat pintu sisi barat gerbang (gatehouse utama ditutup permanen). Xi Garden (煦园) di dalam kompleks, bagian terindah — otomatis termasuk tiket. Tiket CNY 40/org | 120 | Rp318.000 |
-| 10:20–10:25 | Daxinggong → Xinjiekou (Line 2, 1 stasiun ke barat) | Terverifikasi Amap 2026-09-27: 5 menit, ¥2/org | 6 | Rp15.900 |
+| 10:20–10:25 | Daxinggong → Xinjiekou (Line 2, 1 stasiun ke barat) | Terverifikasi Amap: 5 menit, ¥2/org | 6 | Rp15.900 |
 | 10:25–11:30 | Makan siang dekat Xinjiekou | CNY 20/org | 60 | Rp159.000 |
 | 11:30–13:15 | **Deji Plaza** — jalan santai indoor, pas jam paling panas | Keluar/masuk Exit 7 Xinjiekou tersambung langsung ke lantai -1 (⚠️ Amap menghitung ±706 m/13 menit dari titik Deji Plaza ke Exit 7 — cek di lokasi). Bukan sesi belanja. Snack/minum CNY 15/org | 45 | Rp119.250 |
 | 13:15–13:40 | Xinjiekou → Line 2 arah Yuzui (barat) ke Mochouhu, 3 stasiun (Shanghailu, Hanzhongmen, Mochouhu) | Terverifikasi Amap: ±24 menit total (jalan 706 m/13 menit ke Exit 7 + kereta ±4 menit + jalan 180 m/4 menit dari Exit 1), ¥2/org | 6 | Rp15.900 |
@@ -102,15 +102,15 @@ Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap kar
 
 ## Hari 4 — Selasa, 6 Oktober (Pipahu Park → Kexiang Food Street → Keberangkatan, HSR 18:00)
 
-**2026-09-27 — Nanjing Museum gagal reservasi (tiket habis), diganti Pipahu Park** (Zhongshan Scenic Area/Purple Mountain, via bus G25). Rute tercepat dari Amap: jalan 8 menit ke Fuqiao → Line 3 → transfer bus G25, turun "Zhongshan 5" → jalan 7 menit ke taman (±42 menit, ¥4/org) — lebih cepat dari opsi Line 4 (±56–57 menit). **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
+Rute tercepat ke Pipahu Park (Zhongshan Scenic Area): jalan 8 menit ke Fuqiao → Line 3 → bus G25 turun "Zhongshan 5" → jalan 7 menit (±42 menit, ¥4/org). **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 07:00–07:30 | Sarapan | CNY 15/org | 45 | Rp119.250 |
 | 07:30–08:00 | Checkout hotel, titip bagasi (concierge/locker) | — | — | — |
-| 08:00–08:50 | Jalan ke Fuqiao (8 menit) → Line 3 → bus G25, turun Zhongshan 5, jalan 7 menit ke **Pipahu Park** | Amap 2026-09-27: ±42 menit total, ¥4/org | 12 | Rp31.800 |
+| 08:00–08:50 | Jalan ke Fuqiao (8 menit) → Line 3 → bus G25, turun Zhongshan 5, jalan 7 menit ke **Pipahu Park** | Amap: ±42 menit total, ¥4/org | 12 | Rp31.800 |
 | 08:50–10:20 | **Pipahu Park** — jalan santai tepi danau | Bagian Zhongshan Scenic Area (Purple Mountain), jalur datar. ⚠️ Gratis (estimasi, belum sumber resmi); jam operasional belum diverifikasi | — | — |
-| 10:20–10:57 | Perjalanan kembali ke Daxinggong | Amap 2026-09-27: 37 menit, ¥4/org (jalan 7 menit + bus 20 "Tourism Short" + Line 2); alternatif 46 menit ¥2 (jalan lebih jauh, via Minggugong) | 12 | Rp31.800 |
+| 10:20–10:57 | Perjalanan kembali ke Daxinggong | Amap: 37 menit, ¥4/org (jalan 7 menit + bus 20 "Tourism Short" + Line 2); alternatif 46 menit ¥2 (jalan lebih jauh, via Minggugong) | 12 | Rp31.800 |
 | 10:57–12:00 | **Kexiang Food Street** — makan siang & jajan santai | Persis di Stasiun Daxinggong, pasar tradisional yang direnovasi | 60 | Rp159.000 |
 | 12:00–12:20 | Line 3 Daxinggong → Fuqiao, ambil bagasi di hotel | — | 9 | Rp23.850 |
 | 12:20–16:30 | Istirahat santai & siap-siap di hotel | Waktu longgar sebelum berangkat | — | — |
@@ -127,7 +127,7 @@ Laomendong paling pas dikunjungi MALAM — kawasan ini "hidup" setelah gelap kar
 
 ## Ringkasan Budget Total (3 Orang, 3 Malam di Nanjing)
 
-Massacre Memorial Hall & Nanjing Museum gagal reservasi (tiket habis) — diganti Presidential Palace & Xi Garden (Hari 2, berbayar) dan Pipahu Park (Hari 4, gratis).
+Presidential Palace & Xi Garden (Hari 2) berbayar; sisanya hampir semua gratis.
 
 | Hari | CNY | IDR |
 |---|---|---|
@@ -148,7 +148,7 @@ Massacre Memorial Hall & Nanjing Museum gagal reservasi (tiket habis) — digant
 | Hotel (3 malam) | ≈1.434 | Rp3.800.000 |
 | **GRAND TOTAL** | **5.686** | **Rp15.066.600** |
 
-**Catatan:** Massacre Memorial Hall dan Nanjing Museum dipindah ke Cadangan (gagal reservasi, tiket habis) — diganti Presidential Palace & Xi Garden (Hari 2) dan Pipahu Park (Hari 4). Ming Xiaoling Sacred Way, Zhonghua Gate (opsional, Hari 1), Jinling Xiaocheng, dan Niushoushan tetap di Cadangan/opsional, jadi TIDAK termasuk di total di atas kecuali Zhonghua Gate diambil (+CNY 150/Rp397.500, lihat Hari 1). Beberapa item opsional lain (trolley Xuanwu Lake, masuk kompleks Confucius Temple, City Wall Taicheng, Bailuzhou Park) juga belum/tidak dihitung karena gratis atau opsional. Baris tiket pesawat+visa dan hotel diberikan langsung dalam Rupiah (biaya gabungan rombongan, bukan per-org) — nilai CNY ditandai `≈` sebagai konversi kurs, Rupiah tetap angka otoritatif.
+**Catatan:** Ming Xiaoling Sacred Way, Zhonghua Gate (opsional, Hari 1), Jinling Xiaocheng, Niushoushan, Massacre Memorial Hall, dan Nanjing Museum ada di Cadangan — TIDAK termasuk di total di atas kecuali Zhonghua Gate diambil (+CNY 150/Rp397.500, lihat Hari 1). Baris tiket pesawat+visa dan hotel diberikan langsung dalam Rupiah — nilai CNY ditandai `≈` sebagai konversi kurs, Rupiah tetap angka otoritatif.
 
 ---
 
@@ -158,7 +158,6 @@ Massacre Memorial Hall & Nanjing Museum gagal reservasi (tiket habis) — digant
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan.
 - **Transportasi:** prioritas MRT/jalan kaki untuk jarak dekat; Didi (bukan taksi jalanan, kendala bahasa) untuk bawa koper atau saat kondisi terlalu padat (Golden Week).
 - **Tempat berbayar** ditandai jelas dan sebagian besar opsional — bisa diskip untuk hemat biaya.
-- **Reservasi gagal (2026-09-27):** Nanjing Massacre Memorial Hall dan Nanjing Museum tiketnya habis sebelum sempat dipesan — keduanya dipindah ke Cadangan, digantikan Presidential Palace & Xi Garden (Hari 2) dan Pipahu Park (Hari 4) yang tidak perlu reservasi online.
 - **Kereta Hari 4:** HSR ke Wuxi berangkat 18:00 (opsi Ningbo ±17:00) dari Nanjing South — buffer sebelum kereta di Hari 4 ±30 menit, jangan tunda checkout kalau ada delay.
 
 ---
@@ -233,7 +232,7 @@ Gerbang berbenteng terbesar di China, dibangun era Kaisar Hongwu (Zhu Yuanzhang)
 
 **Tiket:** tiket kombinasi resmi (Dongshuiguan–Jiqing Gate, termasuk Zhonghua Gate) CNY 50/org. Bagian atas tembok, kalau dipilih, tiket bervariasi per seksi ±CNY 30-50/org tambahan.
 
-**Status (2026-09-27): opsional di Hari 1**, disisipkan antara Laomendong dan makan malam kalau masih ada tenaga (sesi malam 17:00–22:00) — boleh dilewati kalau lelah. Bagian atas tembok (kalau tertarik) berupa tangga curam tanpa lift, tidak disarankan untuk kondisi lutut — cukup bagian bawah/ekshibisi saja.
+**Status: opsional di Hari 1**, disisipkan antara Laomendong dan makan malam kalau masih ada tenaga (sesi malam 17:00–22:00) — boleh dilewati kalau lelah. Bagian atas tembok (kalau tertarik) berupa tangga curam tanpa lift, tidak disarankan untuk kondisi lutut — cukup bagian bawah/ekshibisi saja.
 
 - Foto/info: https://en.wikipedia.org/wiki/Zhonghua_Gate,_Nanjing
 - Video referensi: https://www.youtube.com/results?search_query=Zhonghua+Gate+Nanjing+inside+exhibition
@@ -283,7 +282,7 @@ Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "公园").
 
-**Akses:** MRT Line 2/7, turun Stasiun Mochouhu, keluar Exit 1 — langsung di depan loket taman. Dari Deji Plaza (Xinjiekou), naik Line 2 balik arah barat 3 stasiun (Shanghailu–Hanzhongmen–Mochouhu), tanpa transfer — terverifikasi Amap 2026-09-24: ±24 menit total, ¥2/org (jalan 706 m ke Xinjiekou Exit 7, kereta ±4 menit, jalan 180 m dari Mochouhu Exit 1). Ke Daxinggong: ±18 menit total, ¥2/org (kereta 4 stasiun ±8 menit, keluar Daxinggong Exit 2).
+**Akses:** MRT Line 2/7, turun Stasiun Mochouhu, keluar Exit 1 — langsung di depan loket taman. Dari Deji Plaza (Xinjiekou), naik Line 2 balik arah barat 3 stasiun (Shanghailu–Hanzhongmen–Mochouhu), tanpa transfer — terverifikasi Amap: ±24 menit total, ¥2/org (jalan 706 m ke Xinjiekou Exit 7, kereta ±4 menit, jalan 180 m dari Mochouhu Exit 1). Ke Daxinggong: ±18 menit total, ¥2/org (kereta 4 stasiun ±8 menit, keluar Daxinggong Exit 2).
 
 **Jam Operasional:** Juni–Agustus 06:30–21:30; September–Mei 07:00–21:00. Gratis, tidak perlu reservasi, tidak ada hari libur rutin (aula pameran di dalamnya 08:30–17:00). Jam puncak: pagi & sore akhir pekan.
 
@@ -418,7 +417,7 @@ Nama "Kexiang" berasal dari "Kejuzhixiang" (科举之巷 · Kējǔ Zhī Xiàng),
 Tempat-tempat ini layak dikunjungi, tapi sengaja TIDAK dimasukkan ke itinerary kali ini — alasannya ditulis di masing-masing uraian, kalau-kalau rombongan ingin pertimbangkan sendiri atau untuk kunjungan berikutnya.
 
 ### Nanjing Massacre Memorial Hall (侵华日军南京大屠杀遇难同胞纪念馆 · Qīnhuá Rìjūn Nánjīng Dàtúshā Yùnàn Tóngbāo Jìniànguǎn) ✅
-Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan massal yang digali awal tahun 1980an. Memorial ini dibangun untuk mengenang lebih dari 300.000 warga sipil China yang terbunuh selama enam minggu kekejaman tentara Jepang di Nanjing (1937-1938). Di dalamnya, kerangka korban masih dibiarkan setengah terkubur di tanah dengan papan keterangan — dirancang bukan sekadar memaparkan fakta, tapi membuat pengunjung benar-benar merasakan beratnya sejarah ini. Tempat reflektif, bukan wisata santai — sebaiknya disiapkan mental sebelum masuk. **Status (2026-09-27): tidak jadi dikunjungi** — reservasi online gagal, tiket sudah habis terjual saat slot H-7 dibuka.
+Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan massal yang digali awal tahun 1980an. Memorial ini dibangun untuk mengenang lebih dari 300.000 warga sipil China yang terbunuh selama enam minggu kekejaman tentara Jepang di Nanjing (1937-1938). Di dalamnya, kerangka korban masih dibiarkan setengah terkubur di tanah dengan papan keterangan — dirancang bukan sekadar memaparkan fakta, tapi membuat pengunjung benar-benar merasakan beratnya sejarah ini. Tempat reflektif, bukan wisata santai — sebaiknya disiapkan mental sebelum masuk. **Status: tidak jadi dikunjungi** — reservasi online gagal, tiket sudah habis terjual saat slot H-7 dibuka.
 
 ✅ Nama Hanzi dikonfirmasi dari situs resmi memorial (19371213.com.cn), bukan dari Amap.
 
@@ -434,12 +433,12 @@ Dibuka pertama kali 15 Agustus 1985, dibangun langsung di atas lokasi kuburan ma
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Massacre+Memorial+Hall+documentary
 - Rekomendasi tempat sekitar: Peace Park (和平公园 · Hépíng Gōngyuán) — di dalam kompleks, area lebih tenang; Yunnan Road area — kafe tenang untuk istirahat sesudahnya
 
-**Kenapa tidak dimasukkan:** reservasi online gagal (2026-09-27) — kuota H-7 sudah habis sebelum sempat dipesan. Diganti Presidential Palace & Xi Garden di Hari 2 (tidak perlu reservasi). Kalau dapat slot di kunjungan berikutnya, tempat ini tetap sangat direkomendasikan.
+**Kenapa tidak dimasukkan:** reservasi online gagal — kuota H-7 sudah habis sebelum sempat dipesan. Diganti Presidential Palace & Xi Garden di Hari 2 (tidak perlu reservasi). Kalau dapat slot di kunjungan berikutnya, tempat ini tetap sangat direkomendasikan.
 
 **Terkait:** Hari 2 (searah rute Line 2 yang dipakai untuk Deji Plaza/Mochou Lake Park)
 
 ### Nanjing Museum (南京博物院 · Nánjīng Bówùyuàn) ✅
-Salah satu museum tertua & terbesar di China, menyimpan koleksi ribuan tahun sejarah — mulai dari keramik kuno, kaligrafi, lukisan, sampai relik kekaisaran. Koleksi paling terkenal: Han Dynasty Gold Jade Burial Suit, jubah pemakaman dari ribuan lempeng giok yang dijahit dengan benang emas. Di basement ada replika skala penuh jalanan Nanjing era Republik. Banyak pengunjung menghabiskan 3-6 jam di sini karena kontennya sangat kaya, **Status (2026-09-27): tidak jadi dikunjungi** — reservasi gagal, tiket sudah habis terjual sebelum sempat dipesan. **Catatan:** Senin hanya buka pagi (lihat Jam Operasional).
+Salah satu museum tertua & terbesar di China, menyimpan koleksi ribuan tahun sejarah — mulai dari keramik kuno, kaligrafi, lukisan, sampai relik kekaisaran. Koleksi paling terkenal: Han Dynasty Gold Jade Burial Suit, jubah pemakaman dari ribuan lempeng giok yang dijahit dengan benang emas. Di basement ada replika skala penuh jalanan Nanjing era Republik. Banyak pengunjung menghabiskan 3-6 jam di sini karena kontennya sangat kaya, **Status: tidak jadi dikunjungi** — reservasi gagal, tiket sudah habis terjual sebelum sempat dipesan. **Catatan:** Senin hanya buka pagi (lihat Jam Operasional).
 
 ✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap.
 
@@ -455,7 +454,7 @@ Salah satu museum tertua & terbesar di China, menyimpan koleksi ribuan tahun sej
 - Video referensi: https://www.youtube.com/results?search_query=Nanjing+Museum+tour
 - Rekomendasi tempat sekitar: Republic Street replika (basement, wajib lihat); Special Exhibition Hall & Art Gallery; Museum café di area lobby
 
-**Kenapa tidak dimasukkan:** reservasi online gagal (2026-09-27) — tiket habis H-7. Diganti Pipahu Park di Hari 4 (tidak perlu reservasi). Persis sebelahan dengan Ming Palace Ruins Park (lihat entri lain di Cadangan) kalau ingin dijadikan 1 trip khusus di kunjungan berikutnya.
+**Kenapa tidak dimasukkan:** reservasi online gagal — tiket habis H-7. Diganti Pipahu Park di Hari 4 (tidak perlu reservasi). Persis sebelahan dengan Ming Palace Ruins Park (lihat entri lain di Cadangan) kalau ingin dijadikan 1 trip khusus di kunjungan berikutnya.
 
 **Terkait:** Hari 4 (Stasiun Minggugong, jalur Line 2 yang tadinya dipakai)
 

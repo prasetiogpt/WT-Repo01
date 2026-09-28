@@ -347,16 +347,19 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
         else:
             duration, time_range = "", ""
 
+        # Maskapai/Kereta/Jadwal are already folded into code/duration/from/to
+        # below, so they're dropped from the extra meta grid — any OTHER
+        # custom row in the table (rare) still shows up there.
         meta = []
         for k, v in info_rows_dict.items():
-            if k.lower() in ("rute", "tanggal"):
+            if k.lower() in ("rute", "tanggal", "maskapai", "kereta", "jadwal"):
                 continue
             meta.append(f'        [{jsval(k)},{jsval(v)}],')
         meta_js = "\n".join(meta)
 
-        title = f"{code1} &rarr; {code2} &middot; {htmlify(weekday_date_str)} &middot; {time_range}"
-        from_name = f"{htmlify(city1)} &middot; {htmlify(term1)}"
-        to_name = f"{htmlify(city2)} &middot; {htmlify(term2)}"
+        title = f"{code1} &rarr; {code2} &middot; {htmlify(weekday_date_str)}"
+        from_name = f"{htmlify(term1)} &middot; {dep}" if jm else htmlify(term1)
+        to_name = f"{htmlify(term2)} &middot; {arr}" if jm else htmlify(term2)
         return f"""    {field_key}:{{
       mode:{jsval(mode)}, kicker:{jsval(kicker_flight)},
       title:{jswrap(title)},
