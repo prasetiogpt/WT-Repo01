@@ -357,9 +357,14 @@ def parse_info_section(info_rows_dict, prose_lines, weekday_date_str,
             meta.append(f'        [{jsval(k)},{jsval(v)}],')
         meta_js = "\n".join(meta)
 
+        # Trains: `term` (e.g. "Futian Station") already names the station
+        # in full, city is redundant. Flights: `city` holds the airport/city
+        # name and `term` is just the terminal (e.g. "T3") — both are needed.
+        place1 = htmlify(term1) if is_train else f"{htmlify(city1)} {htmlify(term1)}".strip()
+        place2 = htmlify(term2) if is_train else f"{htmlify(city2)} {htmlify(term2)}".strip()
         title = f"{code1} &rarr; {code2} &middot; {htmlify(weekday_date_str)}"
-        from_name = f"{htmlify(term1)} &middot; {dep}" if jm else htmlify(term1)
-        to_name = f"{htmlify(term2)} &middot; {arr}" if jm else htmlify(term2)
+        from_name = f"{place1} &middot; {dep}" if jm else place1
+        to_name = f"{place2} &middot; {arr}" if jm else place2
         return f"""    {field_key}:{{
       mode:{jsval(mode)}, kicker:{jsval(kicker_flight)},
       title:{jswrap(title)},
