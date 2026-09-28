@@ -14,6 +14,8 @@
 > (baru) **2026-09-28 — Hari 2 disusun ulang atas diskusi lanjutan:** Nanjing 1912 Block dipindah ke Cadangan (kurang cocok dibanding food street baru) — diganti **Yueyahu Park** (danau bulan sabit, Minggugong Exit 6, gratis, tutup 17:00 jadi dikunjungi pagi/siang sesudah Presidential Palace) dan **Shiziqiao Pedestrian Street** (food street ke-2 terpopuler Nanjing setelah Xinjiekou, via Line 1 dari Deji Plaza, pulang naik bus 95 — rute keduanya terverifikasi Amap). Hari 2 393→402 CNY. Subtotal aktivitas 1.044→1.053 CNY, Transport lokal 279→288 CNY. GRAND TOTAL 5.686 CNY/Rp15.066.600 → **5.695 CNY/Rp15.090.450**.
 >
 > (baru) **2026-09-28 — Hari 2 direvisi LAGI atas permintaan pengguna:** Shiziqiao Pedestrian Street dipindah ke Cadangan (tidak ditemukan di YouTube maupun foto POI Amap — dianggap kurang meyakinkan); Presidential Palace & Xi Garden juga dipindah ke Cadangan. Hari 2 sekarang HANYA **Mochou Lake Park → Deji Plaza → Yueyahu Park → Longhu Zijin Night Market** (pasar malam terpopuler dekat Zijin Mountain, dulunya bernama Pasar Malam Xiamafang, buka 17:00, Stasiun Xiaolingwei Exit 3). Rute Line 2 sekarang searah murni barat→timur tanpa bolak-balik. Hari 2 402→282 CNY (tiket Presidential Palace CNY 120 hilang). Subtotal aktivitas 1.053→933 CNY, Tiket masuk 150→30 CNY (hanya Jiming Temple). Transport lokal & Makan tidak berubah nilainya (288 & 615 CNY). GRAND TOTAL 5.695 CNY/Rp15.090.450 → **5.575 CNY/Rp14.772.450**.
+>
+> (baru) **2026-09-28 — Urutan Lampiran & Hari 3 dirapikan atas permintaan pengguna:** urutan entri Lampiran Hari 2 dikoreksi supaya sesuai urutan itinerary (Mochou Lake Park sebelum Deji Plaza, sebelumnya terbalik). Hari 3 disusun ulang jadi rute jalan kaki searah: **City Wall Taicheng (dilihat dari bawah) → jalan ke Xuanwu Lake Park → jalan mengitari danau ke Jiming Temple → MRT ke Bailuzhou Park → Confucius Temple & Qinhuai River** (sebelumnya Jiming Temple dikunjungi duluan, baru Xuanwu Lake lalu Taicheng). Budget Hari 2 & Hari 3 tidak berubah — murni penataan ulang urutan kunjungan/Lampiran, bukan penambahan/pengurangan destinasi.
 
 ## Informasi Penerbangan
 
@@ -84,19 +86,20 @@ Rute Line 2 searah murni barat→timur, tanpa bolak-balik: Mochouhu (barat) → 
 
 ---
 
-## Hari 3 — Senin, 5 Oktober (Jiming Temple → Xuanwu Lake → City Wall Taicheng opsional → Bailuzhou Park opsional → Confucius Temple & Qinhuai River)
+## Hari 3 — Senin, 5 Oktober (City Wall Taicheng opsional → Xuanwu Lake → Jiming Temple → Bailuzhou Park opsional → Confucius Temple & Qinhuai River)
 
-> **Jadwal fleksibel:** jam di bawah hanya patokan — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), tanpa transfer. **City Wall Taicheng** dan **Bailuzhou Park** boleh dipersingkat/dilewati kalau waktu atau tenaga kurang; tidak menambah biaya karena keduanya gratis. Jiming Temple persis di Exit 5 Stasiun Jimingsi, area yang sama dengan Xuanwu Lake Park dan City Wall Taicheng — tinggal mampir sebelum masuk taman.
+> **Jadwal fleksibel:** jam di bawah hanya patokan — semua tempat ada di jalur Line 3 yang sama dari hotel (Fuqiao), tanpa transfer. City Wall Taicheng, Xuanwu Lake Park, dan Jiming Temple semua satu area di sekitar Exit 5 Stasiun Jimingsi — dikunjungi berurutan sambil jalan kaki (Taicheng → masuk Xuanwu Lake → mengitari danau sampai sisi Jiming Temple), baru naik MRT lagi ke Fuzimiao untuk Bailuzhou Park & Confucius Temple. **City Wall Taicheng** dan **Bailuzhou Park** boleh dipersingkat/dilewati kalau waktu atau tenaga kurang; tidak menambah biaya karena keduanya gratis.
 
 | Jam | Kegiatan | Catatan | CNY | IDR |
 |---|---|---|---|---|
 | 08:00–08:20 | Line 3 dari Fuqiao ke Jimingsi (1 stasiun ke utara, langsung) | Keluar Exit 5 | 6 | Rp15.900 |
-| 08:20–09:00 | **Jiming Temple** — kuil Buddha tertua di Nanjing, pagoda ikonik | Persis di Exit 5, sebelum lanjut ke taman. Tiket CNY 10/org | 30 | Rp79.500 |
-| 09:00–11:00 | **Xuanwu Lake Park** | Dari Exit 5 Jimingsi, jalan kaki ±500m ke Jiefang Gate (salah satu pintu masuk taman). Gratis, jalur datar. Trolley listrik CNY 30/org kalau capek jalan (opsional, tidak dihitung) | — | — |
-| 11:00–11:30 | **Nanjing City Wall — seksi Taicheng** *(opsional, dilihat dari bawah saja)* | Dekat Xuanwu Lake/Jimingsi, akses lebih landai dari seksi lain. **Tidak naik ke atas tembok** — cukup lihat/foto dari bawah, gratis | — | — |
-| 11:30–12:15 | Makan siang + Line 3 dari Jimingsi ke Fuzimiao (langsung, tanpa transfer) | Turun Stasiun Fuzimiao, Exit 2 — jalan ±300m ke arah barat daya ke Confucius Temple. Makan CNY 20/org + MRT | 69 | Rp182.850 |
-| 12:15–12:45 | **Bailuzhou Park** *(opsional)* | ⚠️ Jarak jalan kaki dari Fuzimiao belum diverifikasi Amap — searah Confucius Temple/Qinhuai. Taman klasik era Ming, jalur datar. Gratis (⚠️ estimasi, belum sumber resmi) | — | — |
-| 12:45–16:30 | **Confucius Temple Pedestrian Street & Qinhuai River** — jalan santai kanal | Gratis jalan di pedestrian street; kalau mau masuk kompleks kuil, beli tiket di loket dekat gerbang utama (CNY 30/org, tidak dihitung) | — | — |
+| 08:20–08:50 | Jalan ke **Nanjing City Wall — seksi Taicheng** *(opsional, dilihat dari bawah saja)* | Dekat Exit 5 Jimingsi, akses lebih landai dari seksi lain. **Tidak naik ke atas tembok** — cukup lihat/foto dari bawah, gratis | — | — |
+| 08:50–09:10 | Jalan ke **Xuanwu Lake Park** (Jiefang Gate) | Satu area dengan Taicheng/Jimingsi, salah satu pintu masuk taman | — | — |
+| 09:10–10:40 | **Xuanwu Lake Park** — jalan santai mengitari danau menuju sisi Jiming Temple | Gratis, jalur datar. Trolley listrik CNY 30/org kalau capek jalan (opsional, tidak dihitung) | — | — |
+| 10:40–11:20 | **Jiming Temple** — kuil Buddha tertua di Nanjing, pagoda ikonik | Persis di area Exit 5 Jimingsi. Tiket CNY 10/org | 30 | Rp79.500 |
+| 11:20–12:05 | Makan siang + Line 3 dari Jimingsi ke Fuzimiao (langsung, tanpa transfer) | Turun Stasiun Fuzimiao, Exit 2 — jalan ±300m ke arah barat daya ke Confucius Temple. Makan CNY 20/org + MRT | 69 | Rp182.850 |
+| 12:05–12:35 | **Bailuzhou Park** *(opsional)* | ⚠️ Jarak jalan kaki dari Fuzimiao belum diverifikasi Amap — searah Confucius Temple/Qinhuai. Taman klasik era Ming, jalur datar. Gratis (⚠️ estimasi, belum sumber resmi) | — | — |
+| 12:35–16:30 | **Confucius Temple Pedestrian Street & Qinhuai River** — jalan santai kanal | Gratis jalan di pedestrian street; kalau mau masuk kompleks kuil, beli tiket di loket dekat gerbang utama (CNY 30/org, tidak dihitung) | — | — |
 | 16:30–18:30 | Night view **Qinhuai River** | Gratis — ikon Nanjing, lampion malam | — | — |
 | 18:30 | Makan malam, Line 3 langsung kembali ke Fuqiao/hotel | CNY 30/org | 90 | Rp238.500 |
 | **TOTAL HARI 3** | | | **195** | **Rp516.750** |
@@ -252,6 +255,21 @@ Hidangan paling ikonik dari Provinsi Jiangsu ini punya sejarah lebih dari 2.500 
 
 ## Hari 2 — Minggu, 4 Oktober
 
+### Mochou Lake Park (莫愁湖公园 · Mòchóu Hú Gōngyuán) ✅
+Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (386-589 M). Versi paling populer: ia menikah dan hidup bahagia, sampai suaminya direkrut jadi tentara dan tak pernah kembali. Saking rindunya, konon ia "berubah menjadi danau" dengan harapan airnya mengalir sampai ke tempat suaminya berada — makanya danau ini dinamai untuk mengenang kesetiaannya. Dulunya bagian dari Sungai Yangtze sebelum aliran sungai bergeser, taman ini resmi dibuka tahun 1929.
+
+✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "公园").
+
+**Akses:** MRT Line 2/7, turun Stasiun Mochouhu, keluar Exit 1 — langsung di depan loket taman. Dari hotel: Fuqiao → Daxinggong (Line 3, 1 stasiun) → transfer Line 2 ke barat 4 stasiun ke Mochouhu — terverifikasi Amap arah sebaliknya (Mochouhu→Daxinggong ±18 menit, ¥2/org). Lanjut ke Deji Plaza (Xinjiekou): naik Line 2 ke timur 3 stasiun (Hanzhongmen–Shanghailu–Xinjiekou) — terverifikasi Amap: ±24 menit total, ¥2/org.
+
+**Jam Operasional:** Juni–Agustus 06:30–21:30; September–Mei 07:00–21:00. Gratis, tidak perlu reservasi, tidak ada hari libur rutin (aula pameran di dalamnya 08:30–17:00). Jam puncak: pagi & sore akhir pekan.
+
+**Tiket:** Gratis.
+
+- Foto/info: https://en.wikipedia.org/wiki/Mochou_Lake
+- Video referensi: https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing
+- Rekomendasi tempat sekitar: Shengqi Building/rock garden di dalam taman
+
 ### Deji Plaza (德基广场 · Déjī Guǎngchǎng) ✅
 Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total luas 313.000 m². Tahun 2024 tercatat sebagai mal dengan penjualan tertinggi di China (24,5 miliar yuan) — mengalahkan SKP Beijing. Ada bioskop IMAX & ice rink di dalamnya. Bukan sesi belanja — cukup jalan-jalan santai untuk berteduh dari panas siang, nyambung langsung dari Massacre Memorial Hall via Line 2.
 
@@ -267,20 +285,6 @@ Mal mewah di kawasan Xinjiekou. Fase 1 dibuka 2006, Fase 2 menyusul 2012, total 
 - Video referensi: https://www.youtube.com/results?search_query=Deji+Plaza+Nanjing
 - Rekomendasi tempat sekitar: Food court lantai bawah (banyak pilihan cepat)
 
-### Mochou Lake Park (莫愁湖公园 · Mòchóu Hú Gōngyuán) ✅
-Namanya berasal dari legenda gadis bernama Mochou di era Dinasti Selatan-Utara (386-589 M). Versi paling populer: ia menikah dan hidup bahagia, sampai suaminya direkrut jadi tentara dan tak pernah kembali. Saking rindunya, konon ia "berubah menjadi danau" dengan harapan airnya mengalir sampai ke tempat suaminya berada — makanya danau ini dinamai untuk mengenang kesetiaannya. Dulunya bagian dari Sungai Yangtze sebelum aliran sungai bergeser, taman ini resmi dibuka tahun 1929.
-
-✅ Nama Hanzi terverifikasi langsung dari halaman ranking Amap (nama resmi termasuk "公园").
-
-**Akses:** MRT Line 2/7, turun Stasiun Mochouhu, keluar Exit 1 — langsung di depan loket taman. Dari hotel: Fuqiao → Daxinggong (Line 3, 1 stasiun) → transfer Line 2 ke barat 4 stasiun ke Mochouhu — terverifikasi Amap arah sebaliknya (Mochouhu→Daxinggong ±18 menit, ¥2/org). Lanjut ke Deji Plaza (Xinjiekou): naik Line 2 ke timur 3 stasiun (Hanzhongmen–Shanghailu–Xinjiekou) — terverifikasi Amap: ±24 menit total, ¥2/org.
-
-**Jam Operasional:** Juni–Agustus 06:30–21:30; September–Mei 07:00–21:00. Gratis, tidak perlu reservasi, tidak ada hari libur rutin (aula pameran di dalamnya 08:30–17:00). Jam puncak: pagi & sore akhir pekan.
-
-**Tiket:** Gratis.
-
-- Foto/info: https://en.wikipedia.org/wiki/Mochou_Lake
-- Video referensi: https://www.youtube.com/results?search_query=Mochou+Lake+Park+Nanjing
-- Rekomendasi tempat sekitar: Shengqi Building/rock garden di dalam taman
 ### Yueyahu Park (月牙湖公园 · Yuèyáhú Gōngyuán) ✅
 Waduk buatan berbentuk bulan sabit di sisi timur kota lama, membentang dari Zhongshan Gate (selatan) sampai Guanghua Gate (utara). Peringkat #3 taman favorit warga Qinhuai District di daftar lokal, rating 4,6/5 — taman santai untuk jalan kaki di tepi danau, bukan situs sejarah besar.
 
@@ -307,24 +311,23 @@ Pasar malam kuliner di kaki Zijin Mountain (Purple Mountain), dulunya bernama Pa
 **Tiket:** Gratis masuk kawasan, bayar jajanan saja.
 
 - Foto/info: http://cgj.nanjing.gov.cn/bmdt/202408/t20240802_4730583.html
-- Video referensi: https://www.youtube.com/results?search_query=南京龙湖紫金天街夜市
+- Video referensi: https://www.youtube.com/results?search_query=Longhu+Zijin+Night+Market+Nanjing
 
 ## Hari 3 — Senin, 5 Oktober
 
-### Jiming Temple (古鸡鸣寺 · Gǔ Jīmíng Sì) ✅
-Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalnya kuil Tao dibangun tahun 300 M, baru berkembang jadi tempat ibadah Buddha penting tahun 527 M. Sempat hancur saat Pemberontakan Taiping (1851-1860) lalu dibangun ulang. Landmark-nya, Pagoda Bhaisajyaguru setinggi 44.8m, baru selesai dibangun tahun 1991.
+### Nanjing City Wall — Seksi Taicheng, Dilihat dari Bawah (台城 · Tái Chéng) ⚠️
+Bagian dari tembok kota Nanjing sepanjang 33,6km (dibangun 1366–1393, era Kaisar Hongwu) yang terdekat dengan Xuanwu Lake — aksesnya lebih landai dibanding seksi lain seperti Zhonghua Gate. **Opsional di itinerary ini: hanya dilihat/difoto dari bawah/luar, TIDAK naik ke atas tembok** (tangga curam tanpa lift, lihat detail lengkap di entri Cadangan "Nanjing City Wall — Bagian Atas Tembok").
 
-✅ Nama Hanzi terverifikasi dari halaman ranking Amap.
+⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
 
-**Akses:** MRT Line 3/4, turun Stasiun Jimingsi, keluar Exit 5, jalan kaki ±500m ke Jiefang Gate — persis di area yang sama dengan Xuanwu Lake Park. Tiket masuk kuil dibeli di loket depan gerbang kuil.
+**Akses:** MRT Line 3/4, turun Stasiun Jimingsi — satu area dengan Jiming Temple dan Xuanwu Lake Park, tidak perlu perjalanan tambahan.
 
-**Jam Operasional:** ±07:30–17:00. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi.
+**Jam Operasional:** ±08:30–17:30, sebagian sesi malam sampai 21:00-22:00 (⚠️ belum spesifik untuk seksi Taicheng). Tidak ada hari libur rutin.
 
-**Tiket:** CNY 10/org (gratis untuk anak di bawah 1,4m dan lansia 70+).
+**Tiket:** Gratis kalau hanya dilihat dari bawah/luar (tidak naik ke atas tembok). Naik ke atas tembok (opsional, TIDAK disarankan untuk kondisi lutut) ±CNY 30-50/org.
 
-- Foto/info: https://en.wikipedia.org/wiki/Jiming_Temple
-- Video referensi: https://www.youtube.com/results?search_query=Jiming+Temple+Nanjing
-- Rekomendasi tempat sekitar: Baiweizhai Vegetarian Noodle Restaurant — mi vegetarian terkenal di dalam kompleks
+- Foto/info: https://en.wikipedia.org/wiki/Zhonghua_Gate,_Nanjing
+- Video referensi: https://www.youtube.com/results?search_query=Taicheng+Nanjing+City+Wall+Xuanwu+Lake
 
 ### Xuanwu Lake Park (玄武湖景区 · Xuánwǔ Hú Jǐngqū) ✅
 Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad ke-3. Namanya "Xuanwu" berasal dari mitos naga hitam (perpaduan kura-kura & ular) yang konon pernah terlihat di sini, dipercaya sebagai dewa air oleh penganut Tao. Selama berabad-abad danau ini punya fungsi berubah-ubah: tempat latihan berburu keluarga kaisar, arena latihan perang laut di masa Dinasti Song, sampai gudang catatan sensus & pajak negara ('Gudang Registrasi Kuning') di masa Dinasti Ming. Baru pada 1911 diubah jadi taman publik seperti sekarang.
@@ -341,19 +344,20 @@ Menurut legenda, danau ini sengaja dibuat atas perintah Kaisar Sun Quan di abad 
 - Video referensi: https://www.youtube.com/results?search_query=Xuanwu+Lake+Nanjing
 - Rekomendasi tempat sekitar: Cuizhou Islet (翠洲 · Cuìzhōu) — pulau paling populer; Trolley listrik keliling 5 pulau (CNY 30)
 
-### Nanjing City Wall — Seksi Taicheng, Dilihat dari Bawah (台城 · Tái Chéng) ⚠️
-Bagian dari tembok kota Nanjing sepanjang 33,6km (dibangun 1366–1393, era Kaisar Hongwu) yang terdekat dengan Xuanwu Lake — aksesnya lebih landai dibanding seksi lain seperti Zhonghua Gate. **Opsional di itinerary ini: hanya dilihat/difoto dari bawah/luar, TIDAK naik ke atas tembok** (tangga curam tanpa lift, lihat detail lengkap di entri Cadangan "Nanjing City Wall — Bagian Atas Tembok").
+### Jiming Temple (古鸡鸣寺 · Gǔ Jīmíng Sì) ✅
+Salah satu kuil Buddha tertua di Nanjing, berusia lebih dari 1.700 tahun. Awalnya kuil Tao dibangun tahun 300 M, baru berkembang jadi tempat ibadah Buddha penting tahun 527 M. Sempat hancur saat Pemberontakan Taiping (1851-1860) lalu dibangun ulang. Landmark-nya, Pagoda Bhaisajyaguru setinggi 44.8m, baru selesai dibangun tahun 1991.
 
-⚠️ Nama Hanzi belum diverifikasi langsung dari halaman Amap.
+✅ Nama Hanzi terverifikasi dari halaman ranking Amap.
 
-**Akses:** MRT Line 3/4, turun Stasiun Jimingsi — satu area dengan Jiming Temple dan Xuanwu Lake Park, tidak perlu perjalanan tambahan.
+**Akses:** MRT Line 3/4, turun Stasiun Jimingsi, keluar Exit 5, jalan kaki ±500m ke Jiefang Gate — persis di area yang sama dengan Xuanwu Lake Park. Tiket masuk kuil dibeli di loket depan gerbang kuil.
 
-**Jam Operasional:** ±08:30–17:30, sebagian sesi malam sampai 21:00-22:00 (⚠️ belum spesifik untuk seksi Taicheng). Tidak ada hari libur rutin.
+**Jam Operasional:** ±07:30–17:00. Tidak ada hari libur rutin. Jam puncak: akhir pekan pagi.
 
-**Tiket:** Gratis kalau hanya dilihat dari bawah/luar (tidak naik ke atas tembok). Naik ke atas tembok (opsional, TIDAK disarankan untuk kondisi lutut) ±CNY 30-50/org.
+**Tiket:** CNY 10/org (gratis untuk anak di bawah 1,4m dan lansia 70+).
 
-- Foto/info: https://en.wikipedia.org/wiki/Zhonghua_Gate,_Nanjing
-- Video referensi: https://www.youtube.com/results?search_query=Taicheng+Nanjing+City+Wall+Xuanwu+Lake
+- Foto/info: https://en.wikipedia.org/wiki/Jiming_Temple
+- Video referensi: https://www.youtube.com/results?search_query=Jiming+Temple+Nanjing
+- Rekomendasi tempat sekitar: Baiweizhai Vegetarian Noodle Restaurant — mi vegetarian terkenal di dalam kompleks
 
 ### Bailuzhou Park (白鹭洲公园 · Báilùzhōu Gōngyuán) ⚠️
 Salah satu taman tertua di Nanjing, dibangun era Ming, di kawasan Qinhuai District tenggara kota lama — dekat Confucius Temple/Sungai Qinhuai. Namanya diambil dari puisi Li Bai *"Deng Jinling Fenghuang Tai"* — baris "二水中分白鹭洲" (dua sungai membelah Pulau Bangau Putih). Taman berbasis danau cukup luas (±48 hektar, salah satu danau terbesar di kota lama), dengan jembatan, paviliun gaya klasik, dan jalur jalan kaki mengelilingi air — lebih ke taman santai warga lokal daripada situs sejarah besar.
