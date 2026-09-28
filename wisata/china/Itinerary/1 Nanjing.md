@@ -100,7 +100,7 @@ Rute Line 2 satu arah (Daxinggong → Xinjiekou → Mochouhu → Daxinggong), ta
 
 ---
 
-## Hari 4 — Selasa, 6 Oktober (Pipahu Park → Kexiang Food Street → Keberangkatan, HSR 18:00)
+## Hari 4 — Selasa, 6 Oktober (Pipahu Park → Kexiang Food Street → Keberangkatan, HSR 18:09)
 
 Rute tercepat ke Pipahu Park (Zhongshan Scenic Area): jalan 8 menit ke Fuqiao → Line 3 → bus G25 turun "Zhongshan 5" → jalan 7 menit (±42 menit, ¥4/org). **Checkout pagi, titip bagasi di hotel** (concierge/locker), ambil lagi siang sebelum ke stasiun.
 
@@ -116,12 +116,12 @@ Rute tercepat ke Pipahu Park (Zhongshan Scenic Area): jalan 8 menit ke Fuqiao �
 | 12:20–16:30 | Istirahat santai & siap-siap di hotel | Waktu longgar sebelum berangkat | — | — |
 | 16:30–17:15 | Didi ke Nanjing South Railway Station *(atau Line 3 langsung, tanpa transfer, kalau tidak bawa koper berat)* | Bawa koper, hindari MRT saat Golden Week. Alternatif Line 3 terverifikasi Amap: 9 stasiun, ±26 menit total, ¥4/org (arah Fuqiao→Nanjing South belum difoto) | 50 | Rp132.500 |
 | 17:15–17:45 | Tiba stasiun, antre keamanan/boarding (Golden Week) | Buffer ±30 menit sebelum jadwal kereta — lebih ketat dari hari lain | — | — |
-| **18:00** | **HSR berangkat dari Nanjing South (ke Wuxi)** | Tiket sudah didapat, ¥192/2 org (masuk budget Wuxi). Opsi 1 (Ningbo, 1 orang) tetap ±17:00 — lihat Informasi Transportasi Pulang | — | — |
+| **18:09** | **HSR G7065 berangkat dari Nanjing South (ke Wuxi)** | Tiket sudah didapat, ¥192/2 org (masuk budget Wuxi). Opsi 1 (Ningbo, 1 orang) tetap ±17:00 | — | — |
 | **TOTAL HARI 4** | | | **188** | **Rp498.200** |
 
-**Plan-B hari ini:** kalau perjalanan ke/dari Pipahu molor dari estimasi — waktu Kexiang Food Street yang dipersingkat duluan, bukan jadwal HSR (masih ada buffer istirahat 12:20–16:30). Kalau berjalan telat sampai mepet — skip Kexiang Food Street sepenuhnya (bisa cari makan di sekitar stasiun), prioritas jangan sampai ketinggalan kereta jam 18:00.
+**Plan-B hari ini:** kalau perjalanan ke/dari Pipahu molor dari estimasi — waktu Kexiang Food Street yang dipersingkat duluan, bukan jadwal HSR (masih ada buffer istirahat 12:20–16:30). Kalau berjalan telat sampai mepet — skip Kexiang Food Street sepenuhnya (bisa cari makan di sekitar stasiun), prioritas jangan sampai ketinggalan kereta G7065 jam 18:09.
 
-**Update penting:** Nanjing South Railway Station ternyata ADA di jalur Line 3 yang sama, langsung dari Fuqiao tanpa transfer (beberapa stasiun ke selatan dari Fuzimiao). Didi tetap disarankan kalau bawa koper banyak & kondisi Golden Week padat, tapi Line 3 jadi opsi cadangan yang valid kalau Didi susah didapat. **HSR ke Wuxi berangkat 18:00 (tiket sudah didapat); opsi ke Ningbo (1 orang) tetap ±17:00** — rombongan bisa ke stasiun bareng sebelum berpisah platform. Untuk kereta ke Ningbo, pilih G-train tercepat (±2j11m) dan hindari kereta yang detour (lebih lambat & lebih mahal).
+**Update penting:** Nanjing South Railway Station ternyata ADA di jalur Line 3 yang sama, langsung dari Fuqiao tanpa transfer (beberapa stasiun ke selatan dari Fuzimiao). Didi tetap disarankan kalau bawa koper banyak & kondisi Golden Week padat, tapi Line 3 jadi opsi cadangan yang valid kalau Didi susah didapat. **HSR G7065 ke Wuxi berangkat 18:09 (tiket sudah didapat); opsi ke Ningbo (1 orang) tetap ±17:00** — rombongan bisa ke stasiun bareng sebelum berpisah platform. Untuk kereta ke Ningbo, pilih G-train tercepat (±2j11m) dan hindari kereta yang detour (lebih lambat & lebih mahal).
 
 ---
 
@@ -158,7 +158,7 @@ Presidential Palace & Xi Garden (Hari 2) berbayar; sisanya hampir semua gratis.
 - **Makanan:** semua rekomendasi disesuaikan agar tidak pedas, tidak asam, tidak berminyak/gorengan.
 - **Transportasi:** prioritas MRT/jalan kaki untuk jarak dekat; Didi (bukan taksi jalanan, kendala bahasa) untuk bawa koper atau saat kondisi terlalu padat (Golden Week).
 - **Tempat berbayar** ditandai jelas dan sebagian besar opsional — bisa diskip untuk hemat biaya.
-- **Kereta Hari 4:** HSR ke Wuxi berangkat 18:00 (opsi Ningbo ±17:00) dari Nanjing South — buffer sebelum kereta di Hari 4 ±30 menit, jangan tunda checkout kalau ada delay.
+- **Kereta Hari 4:** HSR G7065 ke Wuxi berangkat 18:09 (opsi Ningbo ±17:00) dari Nanjing South — buffer sebelum kereta di Hari 4 ±30 menit, jangan tunda checkout kalau ada delay.
 
 ---
 

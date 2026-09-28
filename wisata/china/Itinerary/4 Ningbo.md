@@ -18,8 +18,8 @@
 |---|---|
 | Rute | WUX Wuxi (Railway Station) → NGB Ningbo (Railway Station) |
 | Tanggal | Sabtu, 10 Oktober |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 14:00 → Tiba 17:15 (estimasi, ±3j15m) |
+| Kereta | HSR G7571 |
+| Jadwal | Berangkat 15:14 → Tiba 18:14 (langsung, ±3j) |
 
 **Catatan biaya:** semua angka CNY/IDR di bawah untuk **2 orang (dewasa)**. Kurs dipakai: **Rp2.650/CNY** (kurs tetap trip China ini, lihat [[exchange-rates]]). Tanda — berarti gratis/tidak ada biaya.
 

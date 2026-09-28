@@ -9,7 +9,7 @@
 
 > **Golden Week (1–7 Okt):** Huishan (kawasan pedestrian sempit, paling rawan macet) ditaruh 8 Okt setelah liburan usai. Klaster Lihu Timur (Lixi Park, Central Lihu Park, Liyuan Garden, Gonghu Bay) tetap di 7 Okt — area luas & taman gratis, relatif lebih tahan ramai. Klaster Lihu Barat termasuk **Yuantouzhu** (destinasi populer) ditaruh 9 Okt — sudah lewat Golden Week, jadi lebih tenang.
 
-> **Kedatangan:** ±18:45 (HSR Nanjing South berangkat 18:00), Selasa 6 Oktober. **Kepulangan (HSR ke Ningbo):** 14:00, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
+> **Kedatangan:** HSR G7065, tiba 19:17 (berangkat Nanjing South 18:09), Selasa 6 Oktober. **Kepulangan (HSR G7571 ke Ningbo):** berangkat 15:14, Sabtu 10 Oktober. Qingming Bridge/Nanchang Street versi malam ada di Hari 3 (bukan Hari 5).
 
 > ⚠️ **Keterbatasan alat:** akses langsung ke amap.com/baike.baidu.com/zh.wikipedia.org diblokir di environment sesi ini — riset jarak/rute memakai web_search tidak langsung, dicek-silang dengan screenshot Amap dari pengguna. Beberapa titik masih ⚠️ (ditandai di teks) karena tidak bisa diverifikasi lebih jauh dengan alat yang ada.
 >
@@ -41,8 +41,8 @@
 |---|---|
 | Rute | NKG Nanjing (South Railway Station) → WUX Wuxi (Railway Station) |
 | Tanggal | Selasa, 6 Oktober |
-| Kereta | HSR G-train |
-| Jadwal | Berangkat 18:00 → Tiba 18:45 (langsung, ±44 menit) |
+| Kereta | HSR G7065 |
+| Jadwal | Berangkat 18:09 → Tiba 19:17 (langsung, ±1j8m) |
 
 **Stasiun tujuan:** Wuxi Railway Station (pusat kota) — bukan Wuxi East, karena East di luar pusat kota.
 
@@ -159,7 +159,7 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 
 ---
 
-## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Ningbo 14:00)
+## Hari 5 — Sabtu, 10 Oktober (Nanchan Temple, Checkout, HSR ke Ningbo 15:14)
 
 **Rute:** Nanchan Temple saja (Qingming Bridge/Nanchang Street sudah di Hari 3). Checkout pagi, **koper dititip di hotel**, diambil lagi siang sebelum ke stasiun.
 
@@ -173,8 +173,8 @@ Hotel berada persis di **Stasiun Taihu Square**, kawasan Old Canal, Liangxi Dist
 | 11:00–12:00 | Makan siang sekitar kanal | ±CNY 25/org | 50 | Rp132.500 |
 | 12:00–12:30 | Metro Line 1 balik ke hotel, **ambil koper di front desk** | 2 halte, ¥2/org | 4 | Rp10.600 |
 | 12:30–13:00 | Metro Line 1 langsung ke Wuxi Railway Station, bawa koper | 5 halte tanpa transfer, ¥2/org — rute terverifikasi Amap | 4 | Rp10.600 |
-| 13:00–14:00 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±1 jam — waktu terbatas, tidak cukup lagi untuk Wuxi Museum (bisa dipertimbangkan kalau ada revisi jadwal susulan) | — | — |
-| 14:00 | HSR Wuxi → Ningbo | *Di luar budget Wuxi (biaya masuk budget Ningbo). Makan malam disarankan setibanya di Ningbo* | — | — |
+| 13:00–15:14 | Santai di sekitar stasiun sambil menunggu boarding | Buffer ±2j14m — cukup untuk Wuxi Museum kalau tertarik (opsional, tidak dihitung) | — | — |
+| 15:14 | HSR G7571 Wuxi → Ningbo | *Di luar budget Wuxi (biaya masuk budget Ningbo). Makan malam disarankan setibanya di Ningbo* | — | — |
 | **TOTAL HARI 5** | | | **116** | **Rp307.400** |
 
 **Plan-B hari ini:** hujan deras → ganti aktivitas pagi dengan jalan santai singkat di area kanal beratap terdekat, atau pertahankan Nanchan Temple saja (indoor-friendly di bagian aula utama).
