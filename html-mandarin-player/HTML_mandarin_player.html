@@ -2500,6 +2500,7 @@ function applyReferenceBankFilter(panel){
   // tidak akan pernah sempat dicek. Sekarang baru berhenti kalau KEDUANYA kosong.
   if(!qText && !qText2){
     panel._refPool=rows; // kartu Random: kotak cari kosong = seluruh bank
+    panel._refPoolRaw=rows;
     tbody.innerHTML='';
     if(sb) sb.textContent=`Ketik kata kunci untuk mencari di antara ${rows.length} baris.`;
     return;
@@ -2577,6 +2578,7 @@ function applyReferenceBankFilter(panel){
   // metadata, bukan konten Vocab/Sentence utama (lihat DATA_COL_INDICES). Tanpa ini, baris yang
   // cuma punya Ref./Note2 terisi tetap muncul di Bank Referensi walau kolom KW/Kal-nya kosong -
   // beda dari sheet biasa.
+  panel._refPoolRaw=matches; // kartu Test: hasil cocok sebelum disaring visibilitas kolom
   const headers=table.querySelectorAll('thead th');
   const visibleDataCols=DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
   if(visibleDataCols.length){
@@ -2664,7 +2666,7 @@ document.addEventListener('click',e=>{
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r6';
+const REF_RAND_VER='r7';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2691,30 +2693,51 @@ function refRandLessonNum(r){ const m=/^\s*(\d{3})/.exec(String(r.note2||'')); r
 function refRandPool(panel){
   const table=panel.querySelector('table');
   const isKw=r=>String(r.englishKeyword||'').trim()||String(r.hanziKeyword||'').trim();
-  REF_RAND.extra='';
-  if(panel.dataset.tabType==='reference'){
+  REF_RAND.extra=''; REF_RAND.diag='';
+  let all, base, isRef=panel.dataset.tabType==='reference';
+  if(isRef){
     applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
-    REF_RAND.all=(table && REFERENCE_DATA.get(table.id))||[];
-    let rows=panel._refPool||[];
+    all=(table && REFERENCE_DATA.get(table.id))||[];
+    base=panel._refPoolRaw||panel._refPool||[];
     const fromV=parseInt((panel.querySelector('[data-ref-lfrom]')||{}).value,10);
     const toV=parseInt((panel.querySelector('[data-ref-lto]')||{}).value,10);
     if(!isNaN(fromV)||!isNaN(toV)){
       REF_RAND.extra=fromV+'-'+toV;
-      rows=rows.filter(r=>{ const n=refRandLessonNum(r); if(n===null) return false; return (isNaN(fromV)||n>=fromV)&&(isNaN(toV)||n<=toV); });
+      base=base.filter(r=>{ const n=refRandLessonNum(r); if(n===null) return false; return (isNaN(fromV)||n>=fromV)&&(isNaN(toV)||n<=toV); });
     }
-    // Hanya baris keyword (baris kalimat murni tidak jadi soal)
-    return rows.filter(isKw);
+  } else {
+    // Sheet biasa: pool = baris yang sedang tampil (ikut kotak cari / filter ☑), kalimat dicari di
+    // SEMUA baris sheet itu. Satu sheet = satu pelajaran, jadi kelompok cukup dari angka No.
+    all=Array.from(table.querySelectorAll('tbody tr')).map(tr=>{
+      const td=tr.querySelectorAll('td'); const g=i=>td[i]?String(td[i].textContent||'').trim():'';
+      const r={no:g(0),keyword:g(2),arti:g(3),hanziKeyword:g(4),englishKeyword:g(5),pinyin:g(6),indo:g(7),mandarin:g(8),english:g(9),note2:g(11)};
+      const np=refNoParts(r.no); r._gk=np?np.n:null; r._vis=!tr.classList.contains('hidden');
+      return r;
+    });
+    base=all.filter(r=>r._vis);
   }
-  // Sheet biasa: pool = baris yang sedang tampil (ikut kotak cari / filter ☑), kalimat dicari di
-  // SEMUA baris sheet itu. Satu sheet = satu pelajaran, jadi kelompok cukup dari angka No.
-  const all=Array.from(table.querySelectorAll('tbody tr')).map(tr=>{
-    const td=tr.querySelectorAll('td'); const g=i=>td[i]?String(td[i].textContent||'').trim():'';
-    const r={no:g(0),keyword:g(2),arti:g(3),hanziKeyword:g(4),englishKeyword:g(5),pinyin:g(6),indo:g(7),mandarin:g(8),english:g(9),note2:g(11)};
-    const np=refNoParts(r.no); r._gk=np?np.n:null; r._vis=!tr.classList.contains('hidden');
-    return r;
-  });
   REF_RAND.all=all;
-  return all.filter(r=>r._vis && isKw(r));
+  // Baris keyword yang cocok dipakai langsung; baris kalimat murni yang cocok diperluas ke
+  // keyword-keyword di kelompoknya (mis. cari kata di kalimat -> soal = keyword dalam kalimat itu).
+  let kwByGroup=null;
+  const out=[], seen=new Set();
+  base.forEach(r=>{
+    if(isKw(r)){ if(!seen.has(r)){ seen.add(r); out.push(r); } return; }
+    const k=refGroupKey(r); if(!k) return;
+    if(!kwByGroup){
+      kwByGroup=new Map();
+      all.forEach(x=>{ if(!isKw(x)) return; const kk=refGroupKey(x); if(!kk) return; if(!kwByGroup.has(kk)) kwByGroup.set(kk,[]); kwByGroup.get(kk).push(x); });
+    }
+    (kwByGroup.get(k)||[]).forEach(x=>{ if(!seen.has(x)){ seen.add(x); out.push(x); } });
+  });
+  if(!out.length){
+    REF_RAND.diag = isRef
+      ? `Tidak ada soal: ${base.length} baris cocok pencarian/rentang Lesson saat ini, tapi tidak ada keyword di dalamnya. Ubah kotak cari atau rentang Lesson (pencarian kotak utama hanya menjangkau kolom yang sedang tampil).`
+      : (base.length
+          ? `Tidak ada soal: ${base.length} baris tampil, tapi tidak ada keyword di dalamnya.`
+          : `Tidak ada soal: tidak ada baris yang tampil di sheet ini (${all.length} baris). Cek filter ☑/☐/All dan kotak cari.`);
+  }
+  return out;
 }
 function refRandShuffle(n){
   const a=Array.from({length:n},(_,i)=>i);
@@ -2810,7 +2833,7 @@ function openRefRandomCard(panel){
   document.removeEventListener('keydown',refRandKey,true);
   document.addEventListener('keydown',refRandKey,true);
   if(!pool.length){
-    refRandQ('.rr-body').innerHTML='<div class="rr-line">Tidak ada keyword yang cocok dengan pencarian saat ini.</div>';
+    refRandQ('.rr-body').innerHTML='<div class="rr-line">'+escapeHTML(REF_RAND.diag||'Tidak ada keyword yang cocok dengan pencarian saat ini.')+'</div>';
     refRandQ('.rr-info').textContent='0 / 0 · '+REF_RAND_VER;
     return;
   }
