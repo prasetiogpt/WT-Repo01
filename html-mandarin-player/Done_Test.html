@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Done</title>
+<style>
+:root{--red:#c0392b;--blue:#2471a3;--ink:#1c1c1c;--paper:#f5f2ed;--border:#e0d8d0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',Arial,sans-serif;background:var(--paper);color:var(--ink);padding:12px;font-size:15px}
+h1{font-size:1.05rem;color:var(--red);margin-bottom:8px}
+.bar{background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px;margin-bottom:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.bar input[type=text]{flex:1 1 130px;min-width:0;padding:8px 10px;border:1.5px solid var(--border);border-radius:16px;font-size:.9rem;font-family:inherit}
+.bar label{font-size:.78rem;color:#555}
+button{font-family:inherit;border:0;border-radius:22px;font-weight:600;cursor:pointer}
+.b-file{background:#7f8c8d;color:#fff;padding:9px 14px;font-size:.8rem;display:inline-block}
+.b-go{background:#16a085;color:#fff;padding:9px 18px;font-size:.9rem}
+#status{font-size:.76rem;color:#27ae60;width:100%}
+#card{display:none;background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 10px;text-align:center}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:#888;margin-bottom:6px}
+.x{background:#7f8c8d;color:#fff;padding:8px 14px;font-size:.8rem}
+#body{min-height:170px}
+.q{font-size:1.8rem;font-weight:700;line-height:1.3;margin:30px 0 14px}
+.kw{font-size:2.4rem;font-weight:700;color:var(--red);line-height:1.25;margin:6px 0}
+.line{font-size:.98rem;line-height:1.5;margin:2px 0}
+.py{color:var(--blue)}.en{color:#666}
+.sent{font-size:1.5rem;line-height:1.5;margin-top:4px}
+.sep{border-top:1px dashed var(--border);margin:12px 0}
+.nav{display:flex;gap:10px;margin-top:14px}
+.nav button{flex:1;padding:18px 8px;font-size:1.05rem;color:#fff}
+#prev{background:#7f8c8d}#next{background:#16a085}
+button:disabled{opacity:.45}
+</style>
+</head>
+<body>
+<h1>Test Done <small style="font-weight:400;color:#999">t1</small></h1>
+<div class="bar">
+  <label class="b-file">📂 Muat Done.csv<input id="file" type="file" accept=".csv,.txt,text/*,*/*" style="display:none"></label>
+  <input id="f1" type="text" placeholder="Filter Note2/Sheet (mis. 021_ ; spasi = atau)">
+  <input id="f2" type="text" placeholder="Cari kata (opsional)">
+  <button id="go" class="b-go" type="button">Test</button>
+  <div id="status">Belum ada data. Muat Done.csv dulu.</div>
+</div>
+<div id="card">
+  <div class="top"><span id="info"></span><button id="close" class="x" type="button">✕ Tutup</button></div>
+  <div id="body"></div>
+  <div class="nav"><button id="prev" type="button">◀ Previous</button><button id="next" type="button">Next ▶</button></div>
+</div>
+<script>
+(function(){
+  var LS_KEY='doneTest.csv.v1';
+  var ROWS=[], IDX=null;
+  var S={pool:[],queue:[],hist:[],cur:null,stage:0,round:0,shown:0,sig:''};
+  var $=function(id){return document.getElementById(id);};
+  function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function has(v){return String(v==null?'':v).trim()!=='';}
+
+  // ---- CSV (';' , kutip ganda didukung) ----
+  function parseCSV(text){
+    text=text.replace(/^﻿+/,'');
+    var rows=[],row=[],cur='',q=false,i=0,c;
+    for(;i<text.length;i++){
+      c=text[i];
+      if(q){
+        if(c==='"'){ if(text[i+1]==='"'){cur+='"';i++;} else q=false; }
+        else cur+=c;
+      } else if(c==='"' && cur===''){ q=true; }
+      else if(c===';'){ row.push(cur);cur=''; }
+      else if(c==='\n'){ row.push(cur.replace(/\r$/,''));rows.push(row);row=[];cur=''; }
+      else cur+=c;
+    }
+    if(cur!==''||row.length){ row.push(cur.replace(/\r$/,'')); rows.push(row); }
+    return rows;
+  }
+  // Layout Done.csv: No;Pilih;PinYinKW;IndoKW;MandKW;EngKW;PinYin;Indonesia;Mandarin;English;Reff;Note2;Sheet
+  function load(text){
+    var all=parseCSV(text), start=-1, k;
+    for(k=0;k<all.length;k++){ if(/^x?no\.?$/i.test((all[k][0]||'').trim())){start=k+1;break;} }
+    if(start<0) start=0;
+    var out=[];
+    for(k=start;k<all.length;k++){
+      var c=all[k]; if(!has(c[0])) continue;
+      out.push({no:String(c[0]).trim(),kwPy:c[2]||'',kwId:c[3]||'',kwHan:c[4]||'',kwEn:c[5]||'',
+        py:c[6]||'',id:c[7]||'',han:c[8]||'',en:c[9]||'',note2:c[11]||'',sheet:c[12]||''});
+    }
+    ROWS=out; IDX=null;
+    $('status').textContent='✓ '+ROWS.length+' baris dimuat.';
+  }
+  // ---- kunci kelompok: 3 digit pertama Note2 + angka pada No ----
+  function noParts(no){var m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||''));return m?{n:m[1],l:m[2].toLowerCase()}:null;}
+  function gkey(r){var p=noParts(r.no); if(!p) return null; var m=/^\s*(\d{3})/.exec(r.note2||''); return (m?m[1]:'')+'|'+p.n;}
+  function gt(a,b){return a.length!==b.length?a.length>b.length:a>b;}
+  function sentIndex(){
+    if(IDX) return IDX;
+    IDX={};
+    ROWS.forEach(function(r){
+      if(!has(r.han)) return;
+      var k=gkey(r); if(!k) return;
+      var l=noParts(r.no).l, cur=IDX[k];
+      if(!cur||gt(l,cur.l)) IDX[k]={l:l,row:r};
+    });
+    return IDX;
+  }
+  // ---- pool ----
+  function buildPool(){
+    var f1=$('f1').value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    var f2=$('f2').value.trim().toLowerCase();
+    return ROWS.filter(function(r){
+      if(!(has(r.kwEn)||has(r.kwHan))) return false;
+      if(f1.length){
+        var t=(r.note2+' '+r.sheet).toLowerCase();
+        if(!f1.some(function(x){return t.indexOf(x)>=0;})) return false;
+      }
+      if(f2){
+        var s=[r.kwPy,r.kwId,r.kwHan,r.kwEn].join(' ').toLowerCase();
+        if(s.indexOf(f2)<0) return false;
+      }
+      return true;
+    });
+  }
+  function shuffle(n){var a=[],i,j,t;for(i=0;i<n;i++)a.push(i);for(i=n-1;i>0;i--){j=Math.floor(Math.random()*(i+1));t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  function advance(){
+    if(!S.pool.length) return;
+    if(!S.queue.length){S.queue=shuffle(S.pool.length);S.round++;S.shown=0;}
+    if(S.cur!==null) S.hist.push(S.cur);
+    S.cur=S.queue.pop();S.shown++;S.stage=0;render();
+  }
+  function next(){ if(S.cur===null){advance();return;} if(S.stage===0){S.stage=1;render();} else advance(); }
+  function prev(){
+    if(S.stage===1){S.stage=0;render();}
+    else if(S.hist.length){S.cur=S.hist.pop();S.shown=Math.max(1,S.shown-1);S.stage=1;render();}
+  }
+  function render(){
+    var r=S.pool[S.cur], h='';
+    var q=has(r.kwEn)?r.kwEn:(has(r.kwId)?r.kwId:r.kwHan);
+    h+='<div class="q">'+esc(q)+'</div>';
+    if(S.stage>=1){
+      h+='<div class="sep"></div>';
+      if(has(r.kwHan)) h+='<div class="kw">'+esc(r.kwHan)+'</div>';
+      if(has(r.kwPy)) h+='<div class="line py">'+esc(r.kwPy)+'</div>';
+      if(has(r.kwId)) h+='<div class="line">'+esc(r.kwId)+'</div>';
+      var k=gkey(r), hit=k&&sentIndex()[k], sr=hit?hit.row:(has(r.han)?r:null);
+      h+='<div class="sep"></div>';
+      if(sr){
+        h+='<div class="sent">'+esc(sr.han)+'</div>';
+        if(has(sr.py)) h+='<div class="line py">'+esc(sr.py)+'</div>';
+        if(has(sr.id)) h+='<div class="line">'+esc(sr.id)+'</div>';
+        if(has(sr.en)) h+='<div class="line en">'+esc(sr.en)+'</div>';
+      } else h+='<div class="line en">(kalimat contoh tidak ditemukan)</div>';
+    }
+    $('body').innerHTML=h;
+    $('info').textContent=S.shown+' / '+S.pool.length+(S.round>1?' · putaran '+S.round:'')+(has(r.note2)?' · '+r.note2:'');
+    $('prev').disabled=!(S.stage===1||S.hist.length);
+  }
+  function start(){
+    if(!ROWS.length){$('status').textContent='Muat Done.csv dulu.';return;}
+    var pool=buildPool();
+    var sig=pool.length+'|'+(pool[0]&&pool[0].no)+'|'+(pool[pool.length-1]&&pool[pool.length-1].no)+'|'+$('f1').value+'|'+$('f2').value;
+    if(sig!==S.sig){S.sig=sig;S.queue=[];S.hist=[];S.cur=null;S.round=0;}
+    S.pool=pool;
+    $('card').style.display='block';
+    if(!pool.length){$('body').innerHTML='<div class="line">Tidak ada keyword yang cocok.</div>';$('info').textContent='0 / 0';return;}
+    if(S.cur===null) advance(); else render();
+  }
+  function closeCard(){$('card').style.display='none';}
+
+  $('go').addEventListener('click',start);
+  $('next').addEventListener('click',next);
+  $('prev').addEventListener('click',prev);
+  $('close').addEventListener('click',closeCard);
+  $('file').addEventListener('change',function(){
+    var f=this.files&&this.files[0]; if(!f) return;
+    var rd=new FileReader();
+    rd.onload=function(){
+      load(String(rd.result));
+      try{localStorage.setItem(LS_KEY,String(rd.result));}catch(e){$('status').textContent+=' (tidak tersimpan di browser)';}
+    };
+    rd.readAsText(f,'utf-8');
+  });
+  document.addEventListener('keydown',function(ev){
+    if($('card').style.display!=='block') return;
+    var t=ev.target&&ev.target.tagName; if(t==='INPUT') return;
+    if(ev.key===' '||ev.key==='Enter'||ev.key==='ArrowRight'){ev.preventDefault();next();}
+    else if(ev.key==='ArrowLeft'){ev.preventDefault();prev();}
+    else if(ev.key==='Escape'){closeCard();}
+  });
+  window.addEventListener('error',function(e){$('status').textContent='Error: '+e.message;});
+  try{var saved=localStorage.getItem(LS_KEY); if(saved) load(saved);}catch(e){}
+})();
+</script>
+</body>
+</html>
