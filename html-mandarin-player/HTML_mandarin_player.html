@@ -2666,7 +2666,7 @@ document.addEventListener('click',e=>{
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r8';
+const REF_RAND_VER='r9';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2854,13 +2854,12 @@ function addOrReplaceReferenceTab(title, rows){
   panel.dataset.sheetTitle=title; panel.dataset.youtubeUrl='';
   REFERENCE_DATA.set(tid, precomputeReferenceSearchFields(rows));
   panel.innerHTML=`<div class="ph">
-    <div class="sr"><span class="sr-search-wrap"><input type="text" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select></div>
+    <div class="sr" style="gap:4px"><span class="sr-search-wrap"><input type="text" style="width:100px" placeholder="Cari kata/kalimat yang pernah dipelajari..."><select class="col-scope-select" title="Cari di kolom tertentu saja">${colScopeOptionsHTML()}</select></span><button class="sr-clear-btn" type="button" title="Kosongkan pencarian">✕</button><select class="search-mode-select" data-search-mode title="Mode pencarian: Normal / Or (salah satu token) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select><select class="sr-history-select" title="Riwayat pencarian"><option value="">🔍</option></select><span style="font-size:.72rem;color:#666;display:inline-flex;align-items:center;gap:2px">fr <input type="number" min="0" inputmode="numeric" data-ref-lfrom placeholder="all" title="Lesson dari (kosong/0 = semua)" style="width:36px;padding:4px 2px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"> to <input type="number" min="0" inputmode="numeric" data-ref-lto placeholder="all" title="Lesson sampai (kosong/0 = semua)" style="width:36px;padding:4px 2px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"></span></div>
     <div class="sr">
       <input type="text" data-ref-filter2 placeholder="Filter tambahan di Ref./Note2 (mis. kode sheet)...">
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
       <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select>
       <button class="btn btn-en" type="button" data-ref-random title="Test: kartu soal acak dari hasil pencarian saat ini (kosong = seluruh bank)" style="font-size:.74rem;padding:4px 10px">Test</button>
-      <span style="font-size:.72rem;color:#666;display:inline-flex;align-items:center;gap:4px">Lesson <input type="number" min="0" inputmode="numeric" data-ref-lfrom placeholder="all" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"> s/d <input type="number" min="0" inputmode="numeric" data-ref-lto placeholder="all" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"></span>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
