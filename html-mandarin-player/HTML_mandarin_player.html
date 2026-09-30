@@ -48,7 +48,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .btn-icon{padding:5px 10px;min-width:36px;font-size:.95rem;line-height:1}
 #adminPanel{position:fixed;right:12px;top:12px;z-index:99999;background:white;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:10px;max-width:320px;font-size:.78rem;color:var(--ink);display:none}#adminPanel.active{display:block}.lock-title{font-weight:700;color:var(--red);margin-bottom:6px}.lock-row{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px}.admin-delay{margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.admin-delay-title{font-weight:700;color:var(--blue);margin-bottom:6px}.delay-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.delay-row label{display:flex;align-items:center;gap:4px;white-space:nowrap}.delay-row input{width:72px;border:1px solid var(--border);border-radius:8px;padding:4px 6px;font-family:inherit;font-size:.76rem}
 #uploadFilterOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#uploadFilterOverlay.active{display:flex}#uploadFilterModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#uploadFilterModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#uploadFilterModal .ufm-files{font-size:.74rem;color:#777;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:6px 8px;margin-bottom:14px;max-height:72px;overflow-y:auto;word-break:break-all}#uploadFilterModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#uploadFilterModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-#refRandOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199997;align-items:center;justify-content:center}#refRandOverlay.active{display:flex}#refRandCard{background:white;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.25);padding:16px 18px;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}#refRandBody{min-height:150px;text-align:center}.rr-kw{font-size:2.6rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:.95rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-btns .btn:disabled{opacity:.45;cursor:default}
+#refRandOverlay{touch-action:manipulation;overscroll-behavior:contain;display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199997;align-items:center;justify-content:center}#refRandOverlay.active{display:flex}#refRandCard{background:white;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.25);padding:16px 18px;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}#refRandBody{min-height:150px;text-align:center}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:2.4rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:.95rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-btns .btn{touch-action:manipulation;padding:10px 14px}.rr-btns .btn:disabled{opacity:.45;cursor:default}
 #csvFillOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#csvFillOverlay.active{display:flex}#csvFillModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#csvFillModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#csvFillModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#csvFillModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sr input[data-filter-from], .sr input[data-filter-to] {
   width:52px; padding:4px 4px; border:1px solid var(--border); border-radius:4px;
@@ -2657,7 +2657,7 @@ const REF_RAND={panel:null,sig:'',pool:[],queue:[],hist:[],cur:null,stage:0,roun
 function refRandPool(panel){
   applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
   const rows=panel._refPool||[];
-  return rows.filter(r=>String(r.hanziKeyword||'').trim()||String(r.mandarin||'').trim());
+  return rows.filter(r=>String(r.englishKeyword||'').trim()||String(r.hanziKeyword||'').trim());
 }
 function refRandShuffle(n){
   const a=Array.from({length:n},(_,i)=>i);
@@ -2678,29 +2678,29 @@ function refRandRender(){
   const R=REF_RAND, box=document.getElementById('refRandBody'); if(!box) return;
   const r=R.pool[R.cur]; const e=escapeHTML; const st=R.stage;
   const has=v=>String(v||'').trim()!=='';
-  const kw=has(r.hanziKeyword)?r.hanziKeyword:r.mandarin;
-  let h=`<div class="rr-kw">${e(kw)}</div>`;
-  if(st>=1 && has(r.hanziKeyword)){
-    h+=`<div class="rr-line rr-py">${e(r.keyword||'')}</div>`;
+  // Pertanyaan = English KW saja (fallback Indo KW / Hanzi KW kalau kosong)
+  const q=has(r.englishKeyword)?r.englishKeyword:(has(r.arti)?r.arti:r.hanziKeyword);
+  let h=`<div class="rr-q">${e(q)}</div>`;
+  if(st>=1){
+    h+=`<div class="rr-sep"></div>`;
+    if(has(r.hanziKeyword)) h+=`<div class="rr-kw">${e(r.hanziKeyword)}</div>`;
+    if(has(r.keyword)) h+=`<div class="rr-line rr-py">${e(r.keyword)}</div>`;
     if(has(r.arti)) h+=`<div class="rr-line">${e(r.arti)}</div>`;
-    if(has(r.englishKeyword)) h+=`<div class="rr-line rr-en">${e(r.englishKeyword)}</div>`;
-  }
-  if(st>=2 && has(r.mandarin)) h+=`<div class="rr-sep"></div><div class="rr-sent">${e(r.mandarin)}</div>`;
-  if(st>=3){
-    if(has(r.pinyin)) h+=`<div class="rr-line rr-py">${e(r.pinyin)}</div>`;
-    if(has(r.indo)) h+=`<div class="rr-line">${e(r.indo)}</div>`;
-    if(has(r.english)) h+=`<div class="rr-line rr-en">${e(r.english)}</div>`;
+    if(has(r.mandarin)){
+      h+=`<div class="rr-sep"></div><div class="rr-sent">${e(r.mandarin)}</div>`;
+      if(has(r.pinyin)) h+=`<div class="rr-line rr-py">${e(r.pinyin)}</div>`;
+      if(has(r.indo)) h+=`<div class="rr-line">${e(r.indo)}</div>`;
+      if(has(r.english)) h+=`<div class="rr-line rr-en">${e(r.english)}</div>`;
+    }
   }
   box.innerHTML=h;
   document.getElementById('refRandInfo').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'');
-  const more=document.getElementById('refRandMore');
-  more.textContent = st>=3 ? '✓ Semua tampil' : 'Tampilkan ▸';
-  more.disabled = st>=3;
+  document.getElementById('refRandMore').disabled = st>=1;
   document.getElementById('refRandPrev').disabled = !R.hist.length;
 }
-function refRandReveal(all){
+function refRandReveal(){
   const R=REF_RAND; if(R.cur===null) return;
-  R.stage = all ? 3 : Math.min(3,R.stage+1); refRandRender();
+  R.stage=1; refRandRender();
 }
 function refRandClose(){
   const ov=document.getElementById('refRandOverlay'); if(ov) ov.classList.remove('active');
@@ -2708,7 +2708,7 @@ function refRandClose(){
 }
 function refRandKey(ev){
   if(ev.key==='Escape'){ ev.preventDefault(); refRandClose(); }
-  else if(ev.key===' '||ev.key==='Enter'){ ev.preventDefault(); refRandReveal(false); }
+  else if(ev.key===' '||ev.key==='Enter'){ ev.preventDefault(); if(REF_RAND.stage>=1) refRandNext(); else refRandReveal(); }
   else if(ev.key==='ArrowRight'||ev.key==='n'||ev.key==='N'){ ev.preventDefault(); refRandNext(); }
   else if(ev.key==='ArrowLeft'){ ev.preventDefault(); refRandPrev(); }
 }
@@ -2717,13 +2717,12 @@ function openRefRandomCard(panel){
   let ov=document.getElementById('refRandOverlay');
   if(!ov){
     ov=document.createElement('div'); ov.id='refRandOverlay';
-    ov.innerHTML=`<div id="refRandCard"><div class="rr-top"><span id="refRandInfo"></span><button type="button" id="refRandX" class="sr-clear-btn">✕</button></div><div id="refRandBody"></div><div class="rr-btns"><button type="button" class="btn btn-check" id="refRandPrev">◀</button><button type="button" class="btn btn-exp" id="refRandMore">Tampilkan ▸</button><button type="button" class="btn btn-check" id="refRandAll" title="Tampilkan semua">⏩</button><button type="button" class="btn btn-en" id="refRandNextBtn">🎲 Berikutnya</button></div></div>`;
+    ov.innerHTML=`<div id="refRandCard"><div class="rr-top"><span id="refRandInfo"></span><button type="button" id="refRandX" class="sr-clear-btn">✕</button></div><div id="refRandBody"></div><div class="rr-btns"><button type="button" class="btn btn-check" id="refRandPrev">◀ Sebelum</button><button type="button" class="btn btn-exp" id="refRandMore">Jawaban</button><button type="button" class="btn btn-en" id="refRandNextBtn">Berikut ▶</button></div></div>`;
     document.body.appendChild(ov);
     ov.addEventListener('click',ev=>{ if(ev.target===ov) refRandClose(); });
     ov.querySelector('#refRandX').onclick=refRandClose;
     ov.querySelector('#refRandPrev').onclick=refRandPrev;
-    ov.querySelector('#refRandMore').onclick=()=>refRandReveal(false);
-    ov.querySelector('#refRandAll').onclick=()=>refRandReveal(true);
+    ov.querySelector('#refRandMore').onclick=()=>refRandReveal();
     ov.querySelector('#refRandNextBtn').onclick=refRandNext;
   }
   const R=REF_RAND;
@@ -4086,6 +4085,9 @@ document.addEventListener('touchstart', (e) => {
   lastScrollTop = window.scrollY;
 }, true);
 document.addEventListener('touchmove', (e) => {
+  // Kartu Random (fixed overlay) dikecualikan: gerak jari sedikit ke bawah saat menekan tombol
+  // tadinya di-preventDefault sehingga klik tombol batal dan kartu "macet" di HP.
+  if (e.target && e.target.closest && e.target.closest('#refRandOverlay')) return;
   const scrollTop = window.scrollY;
   const touchY = e.touches[0].clientY;
   if (lastScrollTop <= 0 && scrollTop <= 0 && e.touches.length === 1 && touchY > touchStartY) {
