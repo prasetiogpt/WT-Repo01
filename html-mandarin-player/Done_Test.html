@@ -33,7 +33,7 @@ button:disabled{opacity:.45}
 </style>
 </head>
 <body>
-<h1>Test Done <small style="font-weight:400;color:#999">t1</small></h1>
+<h1>Test Done <small style="font-weight:400;color:#999">t2</small></h1>
 <div class="bar">
   <label class="b-file">📂 Muat Done.csv<input id="file" type="file" accept=".csv,.txt,text/*,*/*" style="display:none"></label>
   <input id="f1" type="text" placeholder="Filter Note2/Sheet (mis. 021_ ; spasi = atau)">
@@ -45,6 +45,7 @@ button:disabled{opacity:.45}
   <div class="top"><span id="info"></span><button id="close" class="x" type="button">✕ Tutup</button></div>
   <div id="body"></div>
   <div class="nav"><button id="prev" type="button">◀ Previous</button><button id="next" type="button">Next ▶</button></div>
+  <div id="dbg" style="font-size:.72rem;color:#c0392b;margin-top:10px;min-height:1.2em;word-break:break-word"></div>
 </div>
 <script>
 (function(){
@@ -164,10 +165,16 @@ button:disabled{opacity:.45}
   }
   function closeCard(){$('card').style.display='none';}
 
-  $('go').addEventListener('click',start);
-  $('next').addEventListener('click',next);
-  $('prev').addEventListener('click',prev);
-  $('close').addEventListener('click',closeCard);
+  var cnt=0;
+  function bind(id,name,fn){
+    var b=$(id);
+    b.addEventListener('touchstart',function(){$('dbg').textContent='touchstart '+name+' #'+(++cnt);},{passive:true});
+    b.addEventListener('click',function(){
+      try{fn();$('dbg').textContent='click '+name+' OK #'+(++cnt)+' stage='+S.stage;}
+      catch(e){$('dbg').textContent='ERR '+name+': '+(e&&e.message);}
+    });
+  }
+  bind('go','Test',start); bind('next','Next',next); bind('prev','Previous',prev); bind('close','Tutup',closeCard);
   $('file').addEventListener('change',function(){
     var f=this.files&&this.files[0]; if(!f) return;
     var rd=new FileReader();

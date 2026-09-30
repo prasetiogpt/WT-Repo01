@@ -2660,7 +2660,7 @@ function attachReferenceEvents(panel){
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r4';
+const REF_RAND_VER='r5';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2757,11 +2757,21 @@ function openRefRandomCard(panel){
   let card=panel.querySelector('.rr-inline');
   if(!card){
     card=document.createElement('div'); card.className='rr-inline';
-    card.innerHTML=`<div class="rr-top"><span class="rr-info"></span><button type="button" class="btn btn-check rr-x">✕ Tutup</button></div><div class="rr-body"></div><div class="rr-btns"><button type="button" class="btn btn-check rr-prev">◀ Previous</button><button type="button" class="btn btn-en rr-next">Next ▶</button></div>`;
+    card.innerHTML=`<div class="rr-top"><span class="rr-info"></span><button type="button" class="btn btn-check rr-x">✕ Tutup</button></div><div class="rr-body"></div><div class="rr-btns"><button type="button" class="btn btn-check rr-prev">◀ Previous</button><button type="button" class="btn btn-en rr-next">Next ▶</button></div><div class="rr-dbg" style="font-size:.72rem;color:#c0392b;margin-top:10px;min-height:1.2em;word-break:break-word"></div>`;
     const tw=panel.querySelector('.tw'); tw.parentNode.insertBefore(card,tw);
-    card.querySelector('.rr-x').onclick=refRandClose;
-    card.querySelector('.rr-prev').onclick=refRandPrev;
-    card.querySelector('.rr-next').onclick=refRandNext;
+    // Baris diagnosis (sementara): membedakan "sentuhan tidak sampai" vs "klik diterima" vs "error".
+    const dbgEl=card.querySelector('.rr-dbg'); let cnt=0;
+    const bind=(sel,name,fn)=>{
+      const b=card.querySelector(sel);
+      b.addEventListener('touchstart',()=>{ dbgEl.textContent='touchstart '+name+' #'+(++cnt); },{passive:true});
+      b.addEventListener('click',()=>{
+        try{ fn(); dbgEl.textContent='click '+name+' OK #'+(++cnt)+' stage='+REF_RAND.stage; }
+        catch(e){ dbgEl.textContent='ERR '+name+': '+(e&&e.message); }
+      });
+    };
+    bind('.rr-x','Tutup',refRandClose);
+    bind('.rr-prev','Previous',refRandPrev);
+    bind('.rr-next','Next',refRandNext);
   }
   const R=REF_RAND;
   // Antrean dibuat ulang bila pool berubah (isi kotak cari/tab beda); kalau sama, lanjutkan.
