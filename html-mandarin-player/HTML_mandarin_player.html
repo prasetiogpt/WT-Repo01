@@ -48,7 +48,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .btn-icon{padding:5px 10px;min-width:36px;font-size:.95rem;line-height:1}
 #adminPanel{position:fixed;right:12px;top:12px;z-index:99999;background:white;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:10px;max-width:320px;font-size:.78rem;color:var(--ink);display:none}#adminPanel.active{display:block}.lock-title{font-weight:700;color:var(--red);margin-bottom:6px}.lock-row{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px}.admin-delay{margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.admin-delay-title{font-weight:700;color:var(--blue);margin-bottom:6px}.delay-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.delay-row label{display:flex;align-items:center;gap:4px;white-space:nowrap}.delay-row input{width:72px;border:1px solid var(--border);border-radius:8px;padding:4px 6px;font-family:inherit;font-size:.76rem}
 #uploadFilterOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#uploadFilterOverlay.active{display:flex}#uploadFilterModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#uploadFilterModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#uploadFilterModal .ufm-files{font-size:.74rem;color:#777;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:6px 8px;margin-bottom:14px;max-height:72px;overflow-y:auto;word-break:break-all}#uploadFilterModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#uploadFilterModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:1.5rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:1.12rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-inline{display:none;background:white;border:1px solid var(--border);border-radius:8px;padding:12px 10px;margin-top:6px;text-align:center}.rr-body{min-height:150px}.rr-btns .btn{touch-action:manipulation;padding:8px 18px;font-size:.85rem;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
+.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:4px;padding:0 4px}.rr-q{font-size:1.5rem;font-weight:700;color:var(--ink);line-height:1.25;word-break:break-word}.rr-kw{font-size:1.5rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:1.12rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-inline{display:none;background:white;border:1px solid var(--border);border-radius:8px;padding:6px 4px;margin-top:6px;text-align:center}.rr-row{display:flex;align-items:center;gap:4px}.rr-qbox{flex:1;min-width:0;height:84px;display:flex;align-items:center;justify-content:center;overflow:hidden}.rr-nav{flex:0 0 auto;width:50px;height:50px;padding:0;justify-content:center;font-size:1.05rem;border-radius:25px;touch-action:manipulation}.rr-ans{height:min(52vh,340px);overflow-y:auto;border-top:1px dashed var(--border);margin-top:4px;padding-top:6px}.rr-x{padding:3px 12px;font-size:.8rem}.rr-btns .btn{touch-action:manipulation;padding:8px 18px;font-size:.85rem;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
 #csvFillOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#csvFillOverlay.active{display:flex}#csvFillModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#csvFillModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#csvFillModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#csvFillModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sr input[data-filter-from], .sr input[data-filter-to] {
   width:52px; padding:4px 4px; border:1px solid var(--border); border-radius:4px;
@@ -2666,7 +2666,7 @@ document.addEventListener('click',e=>{
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r7';
+const REF_RAND_VER='r8';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2699,8 +2699,9 @@ function refRandPool(panel){
     applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
     all=(table && REFERENCE_DATA.get(table.id))||[];
     base=panel._refPoolRaw||panel._refPool||[];
-    const fromV=parseInt((panel.querySelector('[data-ref-lfrom]')||{}).value,10);
-    const toV=parseInt((panel.querySelector('[data-ref-lto]')||{}).value,10);
+    // Kosong / 0 / bukan angka = tidak dibatasi (semua lesson)
+    const lnum=sel=>{ const el=panel.querySelector(sel); const t=el?String(el.value==null?'':el.value).trim():''; const v=/^\d+$/.test(t)?parseInt(t,10):NaN; return v>0?v:NaN; };
+    const fromV=lnum('[data-ref-lfrom]'), toV=lnum('[data-ref-lto]');
     if(!isNaN(fromV)||!isNaN(toV)){
       REF_RAND.extra=fromV+'-'+toV;
       base=base.filter(r=>{ const n=refRandLessonNum(r); if(n===null) return false; return (isNaN(fromV)||n>=fromV)&&(isNaN(toV)||n<=toV); });
@@ -2760,14 +2761,14 @@ function refRandPrev(){
   else if(R.hist.length){ R.cur=R.hist.pop(); R.shown=Math.max(1,R.shown-1); R.stage=1; refRandRender(); }
 }
 function refRandRender(){
-  const R=REF_RAND, box=refRandQ('.rr-body'); if(!box) return;
+  const R=REF_RAND; if(!R.panel) return;
   const r=R.pool[R.cur]; const e=escapeHTML; const st=R.stage;
   const has=v=>String(v||'').trim()!=='';
   // Soal = English KW saja (fallback Indo KW / Hanzi KW kalau kosong)
   const q=has(r.englishKeyword)?r.englishKeyword:(has(r.arti)?r.arti:r.hanziKeyword);
-  let h=`<div class="rr-q">${e(q)}</div>`;
+  refRandQ('.rr-qbox').innerHTML=`<div class="rr-q">${e(q)}</div>`;
+  let h='';
   if(st>=1){
-    h+=`<div class="rr-sep"></div>`;
     if(has(r.hanziKeyword)) h+=`<div class="rr-kw">${e(r.hanziKeyword)}</div>`;
     if(has(r.keyword)) h+=`<div class="rr-line rr-py">${e(r.keyword)}</div>`;
     if(has(r.arti)) h+=`<div class="rr-line">${e(r.arti)}</div>`;
@@ -2782,7 +2783,8 @@ function refRandRender(){
       h+=`<div class="rr-sep"></div><div class="rr-line rr-en">(kalimat contoh tidak ditemukan)</div>`;
     }
   }
-  box.innerHTML=h;
+  refRandQ('.rr-ans').innerHTML=h;
+  refRandQ('.rr-ans').scrollTop=0;
   refRandQ('.rr-info').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'')+` · ${REF_RAND_VER}`;
   refRandQ('.rr-prev').disabled = !(st===1 || R.hist.length);
 }
@@ -2806,7 +2808,7 @@ function openRefRandomCard(panel){
   let card=panel.querySelector('.rr-inline');
   if(!card){
     card=document.createElement('div'); card.className='rr-inline';
-    card.innerHTML=`<div class="rr-top"><span class="rr-info"></span><button type="button" class="btn btn-check rr-x">✕ Tutup</button></div><div class="rr-body"></div><div class="rr-btns"><button type="button" class="btn btn-check rr-prev">◀ Previous</button><button type="button" class="btn btn-en rr-next">Next ▶</button></div><div class="rr-dbg" style="font-size:.72rem;color:#c0392b;margin-top:10px;min-height:1.2em;word-break:break-word"></div>`;
+    card.innerHTML=`<div class="rr-top"><span class="rr-info"></span><button type="button" class="btn btn-check rr-x" title="Tutup">✕</button></div><div class="rr-row"><button type="button" class="btn btn-check rr-nav rr-prev" title="Sebelumnya">&lt;&lt;</button><div class="rr-qbox"></div><button type="button" class="btn btn-en rr-nav rr-next" title="Jawaban / berikutnya">&gt;&gt;</button></div><div class="rr-ans"></div><div class="rr-dbg" style="font-size:.72rem;color:#c0392b;margin-top:6px;min-height:1.2em;word-break:break-word"></div>`;
     const tw=panel.querySelector('.tw'); tw.parentNode.insertBefore(card,tw);
     // Baris diagnosis (sementara): membedakan "sentuhan tidak sampai" vs "klik diterima" vs "error".
     const dbgEl=card.querySelector('.rr-dbg'); let cnt=0;
@@ -2828,12 +2830,13 @@ function openRefRandomCard(panel){
   if(R.panel!==panel || R.sig!==sig){ R.panel=panel; R.sig=sig; R.queue=[]; R.hist=[]; R.cur=null; R.round=0; }
   R.panel=panel; R.pool=pool;
   card.style.display='block';
+  try{ card.scrollIntoView({block:'start'}); }catch(e){}
   const tw2=panel.querySelector('.tw'); if(tw2) tw2.style.display='none';
   const sb2=panel.querySelector('.sb'); if(sb2) sb2.style.display='none';
   document.removeEventListener('keydown',refRandKey,true);
   document.addEventListener('keydown',refRandKey,true);
   if(!pool.length){
-    refRandQ('.rr-body').innerHTML='<div class="rr-line">'+escapeHTML(REF_RAND.diag||'Tidak ada keyword yang cocok dengan pencarian saat ini.')+'</div>';
+    refRandQ('.rr-qbox').innerHTML=''; refRandQ('.rr-ans').innerHTML='<div class="rr-line">'+escapeHTML(REF_RAND.diag||'Tidak ada keyword yang cocok dengan pencarian saat ini.')+'</div>';
     refRandQ('.rr-info').textContent='0 / 0 · '+REF_RAND_VER;
     return;
   }
@@ -2857,7 +2860,7 @@ function addOrReplaceReferenceTab(title, rows){
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
       <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select>
       <button class="btn btn-en" type="button" data-ref-random title="Test: kartu soal acak dari hasil pencarian saat ini (kosong = seluruh bank)" style="font-size:.74rem;padding:4px 10px">Test</button>
-      <span style="font-size:.72rem;color:#666;display:inline-flex;align-items:center;gap:4px">Lesson <input type="number" min="0" inputmode="numeric" data-ref-lfrom placeholder="dari" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"> s/d <input type="number" min="0" inputmode="numeric" data-ref-lto placeholder="sampai" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"></span>
+      <span style="font-size:.72rem;color:#666;display:inline-flex;align-items:center;gap:4px">Lesson <input type="number" min="0" inputmode="numeric" data-ref-lfrom placeholder="all" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"> s/d <input type="number" min="0" inputmode="numeric" data-ref-lto placeholder="all" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"></span>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
