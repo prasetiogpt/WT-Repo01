@@ -48,7 +48,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .btn-icon{padding:5px 10px;min-width:36px;font-size:.95rem;line-height:1}
 #adminPanel{position:fixed;right:12px;top:12px;z-index:99999;background:white;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:10px;max-width:320px;font-size:.78rem;color:var(--ink);display:none}#adminPanel.active{display:block}.lock-title{font-weight:700;color:var(--red);margin-bottom:6px}.lock-row{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px}.admin-delay{margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.admin-delay-title{font-weight:700;color:var(--blue);margin-bottom:6px}.delay-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.delay-row label{display:flex;align-items:center;gap:4px;white-space:nowrap}.delay-row input{width:72px;border:1px solid var(--border);border-radius:8px;padding:4px 6px;font-family:inherit;font-size:.76rem}
 #uploadFilterOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#uploadFilterOverlay.active{display:flex}#uploadFilterModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#uploadFilterModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#uploadFilterModal .ufm-files{font-size:.74rem;color:#777;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:6px 8px;margin-bottom:14px;max-height:72px;overflow-y:auto;word-break:break-all}#uploadFilterModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#uploadFilterModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-#refRandOverlay{touch-action:manipulation;overscroll-behavior:contain;display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199997;align-items:center;justify-content:center}#refRandOverlay.active{display:flex}#refRandCard{background:white;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.25);padding:16px 18px;width:92%;max-width:460px;max-height:90vh;overflow-y:auto;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}#refRandBody{min-height:150px;text-align:center}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:2.4rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:.95rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-x{border:0;background:#eee;color:#555;border-radius:50%;width:38px;height:38px;font-size:1rem;cursor:pointer;touch-action:manipulation}.rr-btns .btn{touch-action:manipulation;padding:14px 22px;font-size:.95rem;min-width:130px;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
+.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:2.4rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:.95rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-inline{display:none;background:white;border:1px solid var(--border);border-radius:8px;padding:12px 10px;margin-top:6px;text-align:center}.rr-body{min-height:150px}.rr-btns .btn{touch-action:manipulation;padding:14px 22px;font-size:.95rem;min-width:130px;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
 #csvFillOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#csvFillOverlay.active{display:flex}#csvFillModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#csvFillModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#csvFillModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#csvFillModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sr input[data-filter-from], .sr input[data-filter-to] {
   width:52px; padding:4px 4px; border:1px solid var(--border); border-radius:4px;
@@ -2660,7 +2660,7 @@ function attachReferenceEvents(panel){
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r3';
+const REF_RAND_VER='r4';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2711,7 +2711,7 @@ function refRandPrev(){
   else if(R.hist.length){ R.cur=R.hist.pop(); R.shown=Math.max(1,R.shown-1); R.stage=1; refRandRender(); }
 }
 function refRandRender(){
-  const R=REF_RAND, box=document.getElementById('refRandBody'); if(!box) return;
+  const R=REF_RAND, box=refRandQ('.rr-body'); if(!box) return;
   const r=R.pool[R.cur]; const e=escapeHTML; const st=R.stage;
   const has=v=>String(v||'').trim()!=='';
   // Soal = English KW saja (fallback Indo KW / Hanzi KW kalau kosong)
@@ -2734,11 +2734,15 @@ function refRandRender(){
     }
   }
   box.innerHTML=h;
-  document.getElementById('refRandInfo').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'')+` · ${REF_RAND_VER}`;
-  document.getElementById('refRandPrev').disabled = !(st===1 || R.hist.length);
+  refRandQ('.rr-info').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'')+` · ${REF_RAND_VER}`;
+  refRandQ('.rr-prev').disabled = !(st===1 || R.hist.length);
 }
+function refRandQ(sel){ return REF_RAND.panel.querySelector(sel); }
 function refRandClose(){
-  const ov=document.getElementById('refRandOverlay'); if(ov) ov.classList.remove('active');
+  const P=REF_RAND.panel; if(!P) return;
+  const card=P.querySelector('.rr-inline'); if(card) card.style.display='none';
+  const tw=P.querySelector('.tw'); if(tw) tw.style.display='';
+  const sb=P.querySelector('.sb'); if(sb) sb.style.display='';
   document.removeEventListener('keydown',refRandKey,true);
 }
 function refRandKey(ev){
@@ -2746,40 +2750,32 @@ function refRandKey(ev){
   else if(ev.key===' '||ev.key==='Enter'||ev.key==='ArrowRight'||ev.key==='n'||ev.key==='N'){ ev.preventDefault(); refRandNext(); }
   else if(ev.key==='ArrowLeft'||ev.key==='p'||ev.key==='P'){ ev.preventDefault(); refRandPrev(); }
 }
-// Tap handler tahan banting untuk HP: aksi dijalankan di touchend (tidak bergantung pada event
-// click yang bisa dibatalkan bila jari bergeser sedikit / ada preventDefault di touchmove global),
-// click biasa tetap jalan untuk mouse. Gerak jari >12px dianggap scroll, bukan tap.
-function refRandBindTap(el, fn){
-  let sx=0, sy=0, moved=false, lastTouch=0;
-  el.addEventListener('touchstart',ev=>{ const t=ev.touches[0]; sx=t.clientX; sy=t.clientY; moved=false; },{passive:true});
-  el.addEventListener('touchmove',ev=>{ const t=ev.touches[0]; if(Math.abs(t.clientX-sx)>12||Math.abs(t.clientY-sy)>12) moved=true; },{passive:true});
-  el.addEventListener('touchend',ev=>{ if(moved) return; ev.preventDefault(); lastTouch=Date.now(); fn(); },{passive:false});
-  el.addEventListener('click',ev=>{ if(Date.now()-lastTouch<700) return; fn(); });
-}
+// Kartu ditampilkan INLINE di dalam panel (menggantikan tabel), bukan overlay position:fixed -
+// overlay melayang terbukti tidak merespons sentuhan di HP (Vivo/Redmi, 2026-09-30).
 function openRefRandomCard(panel){
   const pool=refRandPool(panel);
-  let ov=document.getElementById('refRandOverlay');
-  if(!ov){
-    ov=document.createElement('div'); ov.id='refRandOverlay';
-    ov.innerHTML=`<div id="refRandCard"><div class="rr-top"><span id="refRandInfo"></span><button type="button" id="refRandX" class="rr-x">✕</button></div><div id="refRandBody"></div><div class="rr-btns"><button type="button" class="btn btn-check" id="refRandPrev">◀ Previous</button><button type="button" class="btn btn-en" id="refRandNextBtn">Next ▶</button></div></div>`;
-    document.body.appendChild(ov);
-    refRandBindTap(ov.querySelector('#refRandX'),refRandClose);
-    refRandBindTap(ov.querySelector('#refRandPrev'),refRandPrev);
-    refRandBindTap(ov.querySelector('#refRandNextBtn'),refRandNext);
-    // Tap di area gelap di luar kartu = tutup
-    ov.addEventListener('click',ev=>{ if(ev.target===ov) refRandClose(); });
+  let card=panel.querySelector('.rr-inline');
+  if(!card){
+    card=document.createElement('div'); card.className='rr-inline';
+    card.innerHTML=`<div class="rr-top"><span class="rr-info"></span><button type="button" class="btn btn-check rr-x">✕ Tutup</button></div><div class="rr-body"></div><div class="rr-btns"><button type="button" class="btn btn-check rr-prev">◀ Previous</button><button type="button" class="btn btn-en rr-next">Next ▶</button></div>`;
+    const tw=panel.querySelector('.tw'); tw.parentNode.insertBefore(card,tw);
+    card.querySelector('.rr-x').onclick=refRandClose;
+    card.querySelector('.rr-prev').onclick=refRandPrev;
+    card.querySelector('.rr-next').onclick=refRandNext;
   }
   const R=REF_RAND;
   // Antrean dibuat ulang bila pool berubah (isi kotak cari/tab beda); kalau sama, lanjutkan.
   const sig=pool.length+'|'+(pool[0]&&pool[0].no)+'|'+(pool[pool.length-1]&&pool[pool.length-1].no);
   if(R.panel!==panel || R.sig!==sig){ R.panel=panel; R.sig=sig; R.queue=[]; R.hist=[]; R.cur=null; R.round=0; }
-  R.pool=pool;
-  ov.classList.add('active');
+  R.panel=panel; R.pool=pool;
+  card.style.display='block';
+  const tw2=panel.querySelector('.tw'); if(tw2) tw2.style.display='none';
+  const sb2=panel.querySelector('.sb'); if(sb2) sb2.style.display='none';
   document.removeEventListener('keydown',refRandKey,true);
   document.addEventListener('keydown',refRandKey,true);
   if(!pool.length){
-    document.getElementById('refRandBody').innerHTML='<div class="rr-line">Tidak ada keyword yang cocok dengan pencarian saat ini.</div>';
-    document.getElementById('refRandInfo').textContent='0 / 0 · '+REF_RAND_VER;
+    refRandQ('.rr-body').innerHTML='<div class="rr-line">Tidak ada keyword yang cocok dengan pencarian saat ini.</div>';
+    refRandQ('.rr-info').textContent='0 / 0 · '+REF_RAND_VER;
     return;
   }
   if(R.cur===null) refRandAdvance(); else refRandRender();
@@ -2801,7 +2797,7 @@ function addOrReplaceReferenceTab(title, rows){
       <input type="text" data-ref-filter2 placeholder="Filter tambahan di Ref./Note2 (mis. kode sheet)...">
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
       <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select>
-      <button class="btn btn-en" type="button" data-ref-random title="Kartu acak dari hasil pencarian saat ini (kosong = seluruh bank)" style="font-size:.74rem;padding:4px 10px">🎲 Random</button>
+      <button class="btn btn-en" type="button" data-ref-random title="Test: kartu soal acak dari hasil pencarian saat ini (kosong = seluruh bank)" style="font-size:.74rem;padding:4px 10px">Test</button>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
@@ -4129,9 +4125,6 @@ document.addEventListener('touchstart', (e) => {
   lastScrollTop = window.scrollY;
 }, true);
 document.addEventListener('touchmove', (e) => {
-  // Kartu Random (fixed overlay) dikecualikan: gerak jari sedikit ke bawah saat menekan tombol
-  // tadinya di-preventDefault sehingga klik tombol batal dan kartu "macet" di HP.
-  if (e.target && e.target.closest && e.target.closest('#refRandOverlay')) return;
   const scrollTop = window.scrollY;
   const touchY = e.touches[0].clientY;
   if (lastScrollTop <= 0 && scrollTop <= 0 && e.touches.length === 1 && touchY > touchStartY) {
