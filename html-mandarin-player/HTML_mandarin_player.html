@@ -48,7 +48,7 @@ td.cn:not(:first-child){width:100px; min-width:100px; max-width:100px; text-alig
 .btn-icon{padding:5px 10px;min-width:36px;font-size:.95rem;line-height:1}
 #adminPanel{position:fixed;right:12px;top:12px;z-index:99999;background:white;border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:10px;max-width:320px;font-size:.78rem;color:var(--ink);display:none}#adminPanel.active{display:block}.lock-title{font-weight:700;color:var(--red);margin-bottom:6px}.lock-row{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px}.admin-delay{margin-top:10px;padding-top:8px;border-top:1px solid var(--border)}.admin-delay-title{font-weight:700;color:var(--blue);margin-bottom:6px}.delay-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.delay-row label{display:flex;align-items:center;gap:4px;white-space:nowrap}.delay-row input{width:72px;border:1px solid var(--border);border-radius:8px;padding:4px 6px;font-family:inherit;font-size:.76rem}
 #uploadFilterOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#uploadFilterOverlay.active{display:flex}#uploadFilterModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#uploadFilterModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#uploadFilterModal .ufm-files{font-size:.74rem;color:#777;background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:6px 8px;margin-bottom:14px;max-height:72px;overflow-y:auto;word-break:break-all}#uploadFilterModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#uploadFilterModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:2.4rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:.95rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-inline{display:none;background:white;border:1px solid var(--border);border-radius:8px;padding:12px 10px;margin-top:6px;text-align:center}.rr-body{min-height:150px}.rr-btns .btn{touch-action:manipulation;padding:14px 22px;font-size:.95rem;min-width:130px;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
+.rr-top{display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#888;margin-bottom:8px}.rr-q{font-size:1.7rem;font-weight:700;color:var(--ink);line-height:1.3;margin:28px 0 14px}.rr-kw{font-size:1.5rem;font-weight:700;color:var(--red);line-height:1.25;margin:10px 0}.rr-line{font-size:1.12rem;line-height:1.5;margin:2px 0}.rr-py{color:var(--blue)}.rr-en{color:#666}.rr-sep{border-top:1px dashed var(--border);margin:12px 0}.rr-sent{font-size:1.5rem;line-height:1.5;margin-bottom:4px}.rr-btns{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}.rr-inline{display:none;background:white;border:1px solid var(--border);border-radius:8px;padding:12px 10px;margin-top:6px;text-align:center}.rr-body{min-height:150px}.rr-btns .btn{touch-action:manipulation;padding:8px 18px;font-size:.85rem;justify-content:center}.rr-btns .btn:disabled{opacity:.45;cursor:default}
 #csvFillOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:199998;align-items:center;justify-content:center}#csvFillOverlay.active{display:flex}#csvFillModal{background:white;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.22);padding:22px 24px;max-width:360px;width:90%;font-family:'IBM Plex Sans',Arial,sans-serif;color:var(--ink)}#csvFillModal .ufm-title{font-weight:700;font-size:.95rem;color:var(--red);margin-bottom:6px}#csvFillModal .ufm-desc{font-size:.8rem;color:#555;margin-bottom:16px;line-height:1.5}#csvFillModal .ufm-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sr input[data-filter-from], .sr input[data-filter-to] {
   width:52px; padding:4px 4px; border:1px solid var(--border); border-radius:4px;
@@ -2346,7 +2346,7 @@ function dropdownPlayControlsHTML(tid){
     <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
       <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="${tid}">${voiceOptionsHTML('mandarin')}</select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="${tid}">${voiceOptionsHTML('english')}</select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('${tid}', this.value)"><option value="A1" selected>A1</option><option value="A2">A2</option><option value="V1">V1</option><option value="V2">V2</option><option value="S1">S1</option><option value="S2">S2</option></select></label>
     </div>
-    <label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button>`;
+    <label class="final-play-option"><input type="checkbox" data-final-loop="${tid}" checked> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="${tid}"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="${tid}" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="${tid}" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="${tid}" type="button" title="Ke baris yang lagi diputar">🎯</button><button class="btn btn-en" data-sheet-test="${tid}" type="button" style="font-size:.74rem;padding:4px 10px" title="Test: kartu soal acak dari baris yang sedang tampil">Test</button>`;
 }
 
 function toolbarHTML(tid){
@@ -2650,6 +2650,10 @@ function attachReferenceEvents(panel){
   if(randBtn) randBtn.onclick=()=>openRefRandomCard(panel);
 }
 
+document.addEventListener('click',e=>{
+  const t=e.target.closest && e.target.closest('[data-sheet-test]'); if(!t) return;
+  const panel=t.closest('.panel'); if(panel) openRefRandomCard(panel);
+});
 // ===== Kartu Random Bank Referensi (Done) =====
 // Gaya Anki: Soal = English KW. "Next" pertama = tampilkan jawaban, "Next" kedua = soal berikutnya.
 // Murni tampilan: baca panel._refPool (diisi applyReferenceBankFilter), TIDAK menyentuh mesin
@@ -2660,11 +2664,12 @@ function attachReferenceEvents(panel){
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r5';
+const REF_RAND_VER='r6';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
 function refGroupKey(r){
+  if(r._gk!==undefined) return r._gk;
   const p=refNoParts(r.no); if(!p) return null;
   const m=/^\s*(\d{3})/.exec(String(r.note2||''));
   return (m?m[1]:'')+'|'+p.n;
@@ -2682,13 +2687,34 @@ function refSentenceIndex(rows){
   });
   REF_SENT_IDX.set(rows,idx); return idx;
 }
+function refRandLessonNum(r){ const m=/^\s*(\d{3})/.exec(String(r.note2||'')); return m?parseInt(m[1],10):null; }
 function refRandPool(panel){
-  applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
   const table=panel.querySelector('table');
-  REF_RAND.all=(table && REFERENCE_DATA.get(table.id))||[];
-  const rows=panel._refPool||[];
-  // Hanya baris keyword (baris kalimat murni tidak jadi soal)
-  return rows.filter(r=>String(r.englishKeyword||'').trim()||String(r.hanziKeyword||'').trim());
+  const isKw=r=>String(r.englishKeyword||'').trim()||String(r.hanziKeyword||'').trim();
+  REF_RAND.extra='';
+  if(panel.dataset.tabType==='reference'){
+    applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
+    REF_RAND.all=(table && REFERENCE_DATA.get(table.id))||[];
+    let rows=panel._refPool||[];
+    const fromV=parseInt((panel.querySelector('[data-ref-lfrom]')||{}).value,10);
+    const toV=parseInt((panel.querySelector('[data-ref-lto]')||{}).value,10);
+    if(!isNaN(fromV)||!isNaN(toV)){
+      REF_RAND.extra=fromV+'-'+toV;
+      rows=rows.filter(r=>{ const n=refRandLessonNum(r); if(n===null) return false; return (isNaN(fromV)||n>=fromV)&&(isNaN(toV)||n<=toV); });
+    }
+    // Hanya baris keyword (baris kalimat murni tidak jadi soal)
+    return rows.filter(isKw);
+  }
+  // Sheet biasa: pool = baris yang sedang tampil (ikut kotak cari / filter ☑), kalimat dicari di
+  // SEMUA baris sheet itu. Satu sheet = satu pelajaran, jadi kelompok cukup dari angka No.
+  const all=Array.from(table.querySelectorAll('tbody tr')).map(tr=>{
+    const td=tr.querySelectorAll('td'); const g=i=>td[i]?String(td[i].textContent||'').trim():'';
+    const r={no:g(0),keyword:g(2),arti:g(3),hanziKeyword:g(4),englishKeyword:g(5),pinyin:g(6),indo:g(7),mandarin:g(8),english:g(9),note2:g(11)};
+    const np=refNoParts(r.no); r._gk=np?np.n:null; r._vis=!tr.classList.contains('hidden');
+    return r;
+  });
+  REF_RAND.all=all;
+  return all.filter(r=>r._vis && isKw(r));
 }
 function refRandShuffle(n){
   const a=Array.from({length:n},(_,i)=>i);
@@ -2763,9 +2789,9 @@ function openRefRandomCard(panel){
     const dbgEl=card.querySelector('.rr-dbg'); let cnt=0;
     const bind=(sel,name,fn)=>{
       const b=card.querySelector(sel);
-      b.addEventListener('touchstart',()=>{ dbgEl.textContent='touchstart '+name+' #'+(++cnt); },{passive:true});
+      b.addEventListener('touchstart',()=>{ ++cnt; },{passive:true});
       b.addEventListener('click',()=>{
-        try{ fn(); dbgEl.textContent='click '+name+' OK #'+(++cnt)+' stage='+REF_RAND.stage; }
+        try{ fn(); dbgEl.textContent=''; }
         catch(e){ dbgEl.textContent='ERR '+name+': '+(e&&e.message); }
       });
     };
@@ -2775,7 +2801,7 @@ function openRefRandomCard(panel){
   }
   const R=REF_RAND;
   // Antrean dibuat ulang bila pool berubah (isi kotak cari/tab beda); kalau sama, lanjutkan.
-  const sig=pool.length+'|'+(pool[0]&&pool[0].no)+'|'+(pool[pool.length-1]&&pool[pool.length-1].no);
+  const sig=pool.length+'|'+(pool[0]&&pool[0].no)+'|'+(pool[pool.length-1]&&pool[pool.length-1].no)+'|'+REF_RAND.extra;
   if(R.panel!==panel || R.sig!==sig){ R.panel=panel; R.sig=sig; R.queue=[]; R.hist=[]; R.cur=null; R.round=0; }
   R.panel=panel; R.pool=pool;
   card.style.display='block';
@@ -2808,6 +2834,7 @@ function addOrReplaceReferenceTab(title, rows){
       <button class="sr-clear-btn" type="button" data-ref-clear2 title="Kosongkan filter tambahan">✕</button>
       <select class="search-mode-select" data-ref-mode2 title="Mode filter tambahan: Normal / Or (salah satu, mis. dua kode sheet sekaligus) / == (persis sama) / ≠ (kecualikan)"><option value="general" selected>Normal</option><option value="or-han">Or</option><option value="exact">==</option><option value="exclude">≠</option></select>
       <button class="btn btn-en" type="button" data-ref-random title="Test: kartu soal acak dari hasil pencarian saat ini (kosong = seluruh bank)" style="font-size:.74rem;padding:4px 10px">Test</button>
+      <span style="font-size:.72rem;color:#666;display:inline-flex;align-items:center;gap:4px">Lesson <input type="number" min="0" inputmode="numeric" data-ref-lfrom placeholder="dari" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"> s/d <input type="number" min="0" inputmode="numeric" data-ref-lto placeholder="sampai" style="width:58px;padding:4px 6px;border:1.5px solid var(--border);border-radius:12px;font-size:.78rem"></span>
     </div>
   <div class="sb"></div>
     <div class="tw"><table id="${tid}"><thead><tr>${SHEET_HEADERS.slice(0,12).map(h=>`<th>${h}</th>`).join('')}<th></th></tr></thead><tbody></tbody></table></div>
@@ -4354,7 +4381,7 @@ document.getElementById('downloadCombWavBtn').style.visibility = 'hidden';
       <div style="display:flex;gap:6px;align-items:center;flex-wrap:nowrap;">
         <label class="final-play-select">V3: <select autocomplete="off" data-final-voice3="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin" selected="">Mandarin</option><option value="english">English</option></select></label><label class="final-play-select">V4: <select autocomplete="off" data-final-voice4="dyn_000datatesting"><option value="">Diam</option><option value="arti-keyword">Indo KW</option><option value="hanzi-keyword">Mand KW</option><option value="english-keyword">Eng KW</option><option value="indo">Indonesia</option><option value="mandarin">Mandarin</option><option value="english" selected="">English</option></select></label><label class="final-play-select">P: <select autocomplete="off" onchange="applyVoicePreset('dyn_000datatesting', this.value)"><option value="A1" selected>A1</option><option value="A2">A2</option><option value="V1">V1</option><option value="V2">V2</option><option value="S1">S1</option><option value="S2">S2</option></select></label>
       </div>
-      <label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button>
+      <label class="final-play-option"><input type="checkbox" data-final-loop="dyn_000datatesting" checked=""> Loop</label><label class="final-play-option"><input type="checkbox" data-final-random="dyn_000datatesting"> Rand</label><button class="btn btn-exp btn-icon" style="margin-left:8px" data-final-pause="dyn_000datatesting" type="button">▶⏸</button><button class="btn btn-exp btn-icon" data-final-stop="dyn_000datatesting" type="button">■</button><button class="btn btn-check btn-icon" data-goto-active="dyn_000datatesting" type="button" title="Ke baris yang lagi diputar">🎯</button><button class="btn btn-en" data-sheet-test="dyn_000datatesting" type="button" style="font-size:.74rem;padding:4px 10px" title="Test: kartu soal acak dari baris yang sedang tampil">Test</button>
     </div>
   </div><div class="sb">Menampilkan 12 dari 17 · 12 ditandai ✓</div><div class="tw"><table id="dyn_000datatesting" data-loop="1" data-random="0"><thead><tr><th>No</th><th>Pilih</th><th>Pin Yin KW</th><th class="col-hidden">Indo KW</th><th>Mand KW</th><th>Eng KW</th><th>Pin Yin</th><th class="col-hidden">Indonesia</th><th>Mandarin</th><th>English</th><th class="col-hidden">Ref.</th><th class="col-hidden">Note2</th><th>▶</th></tr></thead><tbody><tr data-pilih="1">
     <td class="cn">1a</td>
