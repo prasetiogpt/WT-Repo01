@@ -2578,6 +2578,10 @@ function applyReferenceBankFilter(panel){
   // metadata, bukan konten Vocab/Sentence utama (lihat DATA_COL_INDICES). Tanpa ini, baris yang
   // cuma punya Ref./Note2 terisi tetap muncul di Bank Referensi walau kolom KW/Kal-nya kosong -
   // beda dari sheet biasa.
+  const lr=refLessonRange(panel);
+  if(!isNaN(lr.from)||!isNaN(lr.to)){
+    matches=matches.filter(r=>{ const n=refRandLessonNum(r); return n!==null && (isNaN(lr.from)||n>=lr.from) && (isNaN(lr.to)||n<=lr.to); });
+  }
   panel._refPoolRaw=matches; // kartu Test: hasil cocok sebelum disaring visibilitas kolom
   const headers=table.querySelectorAll('thead th');
   const visibleDataCols=DATA_COL_INDICES.filter(i => headers[i] && !headers[i].classList.contains('col-hidden'));
@@ -2648,6 +2652,10 @@ function attachReferenceEvents(panel){
   if(mode2Sel) mode2Sel.onchange=()=>applyReferenceBankFilter(panel);
   const clear2Btn=panel.querySelector('[data-ref-clear2]');
   if(clear2Btn && filter2) clear2Btn.onclick=()=>{ filter2.value=''; applyReferenceBankFilter(panel); };
+  ['[data-ref-lfrom]','[data-ref-lto]'].forEach(sel=>{
+    const el=panel.querySelector(sel);
+    if(el) el.oninput=debounce(()=>applyReferenceBankFilter(panel), 500);
+  });
   const randBtn=panel.querySelector('[data-ref-random]');
   if(randBtn) randBtn.onclick=()=>openRefRandomCard(panel);
 }
@@ -2666,7 +2674,6 @@ document.addEventListener('click',e=>{
 // No). Kalimat ada di baris dengan huruf TERAKHIR dalam kelompok itu (yang kolom Mandarin-nya
 // terisi). Dicari di SELURUH bank (bukan hanya hasil filter), karena baris kalimat sering tidak
 // ikut cocok dengan kata kunci yang diketik.
-const REF_RAND_VER='r14';
 const REF_RAND={panel:null,sig:'',pool:[],all:[],queue:[],hist:[],cur:null,stage:0,round:1,shown:0};
 const REF_SENT_IDX=new WeakMap();
 function refNoParts(no){ const m=/^\s*(\d+)\s*([a-z]*)/i.exec(String(no||'')); return m?{n:m[1],l:m[2].toLowerCase()}:null; }
@@ -2689,6 +2696,11 @@ function refSentenceIndex(rows){
   });
   REF_SENT_IDX.set(rows,idx); return idx;
 }
+// Rentang lesson "Txt [dari] to [sampai]" di baris filter Done: kosong / 0 / bukan angka = tidak dibatasi.
+function refLessonRange(panel){
+  const num=sel=>{ const el=panel.querySelector(sel); const t=el?String(el.value==null?'':el.value).trim():''; const v=/^\d+$/.test(t)?parseInt(t,10):NaN; return v>0?v:NaN; };
+  return {from:num('[data-ref-lfrom]'), to:num('[data-ref-lto]')};
+}
 function refRandLessonNum(r){ const m=/^\s*(\d{3})/.exec(String(r.note2||'')); return m?parseInt(m[1],10):null; }
 function refRandPool(panel){
   const table=panel.querySelector('table');
@@ -2699,9 +2711,7 @@ function refRandPool(panel){
     applyReferenceBankFilter(panel); // pastikan pool sesuai isi kotak cari saat ini
     all=(table && REFERENCE_DATA.get(table.id))||[];
     base=panel._refPoolRaw||panel._refPool||[];
-    // Kosong / 0 / bukan angka = tidak dibatasi (semua lesson)
-    const lnum=sel=>{ const el=panel.querySelector(sel); const t=el?String(el.value==null?'':el.value).trim():''; const v=/^\d+$/.test(t)?parseInt(t,10):NaN; return v>0?v:NaN; };
-    const fromV=lnum('[data-ref-lfrom]'), toV=lnum('[data-ref-lto]');
+    const lr0=refLessonRange(panel), fromV=lr0.from, toV=lr0.to;
     if(!isNaN(fromV)||!isNaN(toV)){
       REF_RAND.extra=fromV+'-'+toV;
       base=base.filter(r=>{ const n=refRandLessonNum(r); if(n===null) return false; return (isNaN(fromV)||n>=fromV)&&(isNaN(toV)||n<=toV); });
@@ -2785,7 +2795,7 @@ function refRandRender(){
   }
   refRandQ('.rr-ans').innerHTML=h;
   refRandQ('.rr-ans').scrollTop=0;
-  refRandQ('.rr-info').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'')+` · ${REF_RAND_VER}`;
+  refRandQ('.rr-info').textContent=`${R.shown} / ${R.pool.length}`+(R.round>1?` · putaran ${R.round}`:'')+(has(r.note2)?` · ${r.note2}`:'');
   refRandQ('.rr-prev').disabled = !(st===1 || R.hist.length);
 }
 function refRandQ(sel){ return REF_RAND.panel.querySelector(sel); }
@@ -2837,7 +2847,7 @@ function openRefRandomCard(panel){
   document.addEventListener('keydown',refRandKey,true);
   if(!pool.length){
     refRandQ('.rr-qbox').innerHTML=''; refRandQ('.rr-ans').innerHTML='<div class="rr-line">'+escapeHTML(REF_RAND.diag||'Tidak ada keyword yang cocok dengan pencarian saat ini.')+'</div>';
-    refRandQ('.rr-info').textContent='0 / 0 · '+REF_RAND_VER;
+    refRandQ('.rr-info').textContent='0 / 0';
     return;
   }
   if(R.cur===null) refRandAdvance(); else refRandRender();
